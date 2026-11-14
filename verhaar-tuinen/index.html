@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verhaar Tuinen · Tuinarchitectuur, aanleg en onderhoud in Breda</title>
+<meta name="description" content="Tuinen met klasse, klasse door eenvoud. Ontwerp, aanleg en onderhoud van tuinen voor particulieren en bedrijven in Breda. Showtuin aan de Heilaarstraat 209, op afspraak.">
+<meta name="theme-color" content="#2C2F1F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 120'%3E%3Cpath d='M52 4 L100 96 H4 Z' fill='%232C2F1F'/%3E%3Cpath d='M60 20 H156 L108 112 Z' fill='%237E6B4D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Marcellus&family=Marcellus+SC&display=swap" rel="stylesheet">
+<style>
+:root{
+  --zwart:#000;
+  --taupe:#7E6B4D;
+  --taupe-licht:#B3A283;
+  --taxus:#2C2F1F;
+  --buxus:#4C5F31;
+  --kalksteen:#E9E8E3;
+  --grind:#C0BF9E;
+  --inkt:#23251a;
+  --tekst:#2C2F1F;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --display:"Marcellus",Georgia,serif;
+  --sc:"Marcellus SC","Marcellus",Georgia,serif;
+  --sans:"Jost",system-ui,sans-serif;
+  --gutter:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--taupe) var(--kalksteen)}
+body{margin:0;background:var(--kalksteen);color:var(--taxus);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+::selection{background:var(--taxus);color:var(--kalksteen)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-color:var(--taupe);text-decoration-thickness:1px;text-underline-offset:.22em}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:2px solid var(--taupe);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--taxus);text-wrap:balance;margin:0;letter-spacing:-.005em}
+p{margin:0}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;background:var(--taxus);color:#fff;padding:8px 12px;z-index:5}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:48px;padding:.7em 1.3em;border-radius:2px;font:500 1rem/1.2 var(--sans);letter-spacing:.02em;text-decoration:none;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-vol{background:var(--taxus);color:#fff;border:1px solid var(--taxus)}
+.btn-lijn{color:var(--taxus);border:1px solid var(--taupe)}
+@media (hover:hover) and (pointer:fine){
+  .btn-vol:hover{background:var(--buxus);border-color:var(--buxus)}
+  .btn-lijn:hover{background:var(--taxus);color:#fff;border-color:var(--taxus)}
+}
+
+/* ---------- first screen: the plan ---------- */
+.plan-scherm{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;padding:20px var(--gutter) 56px;max-width:1440px;margin:0 auto}
+.intro{display:flex;flex-direction:column;gap:22px}
+.logo{display:inline-flex;align-items:center;gap:18px;justify-self:start;background:var(--zwart);padding:12px 16px 12px 18px;text-decoration:none}
+.logo-tekst{display:flex;flex-direction:column;gap:3px}
+.logo-naam{font:400 1.375rem/1.05 var(--sc);color:#fff;letter-spacing:.02em}
+.logo-sub{font:400 .8125rem/1.2 var(--sc);color:#A8977A;letter-spacing:.03em}
+.logo-mark{width:62px;height:auto;flex:none}
+.intro h1{font-size:clamp(2.35rem,8.6vw,4.4rem);line-height:1.04;margin-top:18px}
+.intro h1 span{display:block}
+.intro .lead{max-width:34ch;font-size:1.125rem;color:var(--taxus)}
+.acties{display:flex;flex-wrap:wrap;gap:10px}
+.showtuin-regel{font-size:1rem;color:#3b3d30}
+
+.vel{background:var(--taxus);color:var(--kalksteen);border-radius:2px;padding:14px;display:grid;gap:14px}
+.plan-wrap{position:relative}
+.plan{display:block;width:100%;height:auto}
+.kiezer{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0;padding:0;list-style:none}
+.kies{appearance:none;font:500 .875rem/1 var(--sans);letter-spacing:.04em;color:var(--taxus);background:var(--kalksteen);border:1px solid var(--kalksteen);border-radius:2px;min-height:44px;padding:0 .5em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.45em;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.kies::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--taupe);flex:none;transition:background-color .2s ease}
+.kies[aria-pressed="true"]{background:var(--buxus);border-color:var(--buxus);color:#fff}
+.kies[aria-pressed="true"]::before{background:#fff}
+@media (hover:hover) and (pointer:fine){.kies:hover{border-color:var(--taupe-licht)}}
+.kies:focus-visible{outline-color:var(--kalksteen)}
+
+.foto{position:relative;margin:0}
+.foto-raam{position:relative;aspect-ratio:4/3;overflow:hidden;background:#1f2116;border-radius:1px}
+.foto-raam img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .32s var(--ease-out)}
+.foto-raam img.aan{opacity:1}
+.foto figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:10px;font:400 .9rem/1.4 var(--sans);color:var(--grind)}
+.foto figcaption b{font-weight:500;color:var(--kalksteen);letter-spacing:.04em}
+
+/* plan highlight per element */
+.plan .hl{opacity:0;transition:opacity .2s ease}
+.plan-wrap[data-actief="vijver"] #p-vijver .hl,
+.plan-wrap[data-actief="buxus"] #p-buxus .hl,
+.plan-wrap[data-actief="zwembad"] #p-zwembad .hl,
+.plan-wrap[data-actief="terras"] #p-terras .hl{opacity:1}
+
+@media (min-width:1000px){
+  .plan-scherm{grid-template-columns:minmax(320px,4fr) minmax(0,8fr);column-gap:clamp(32px,4vw,64px);row-gap:48px;align-items:center;padding-top:32px;padding-bottom:40px}
+  .plan-scherm>.logo{grid-column:1/-1}
+  .intro{gap:26px}
+  .intro h1{font-size:clamp(2.6rem,3.4vw,3.5rem)}
+  .vel{grid-template-columns:minmax(0,3fr) minmax(0,2fr);align-items:stretch;padding:22px;gap:22px;height:min(78vh,720px)}
+  .plan-wrap{height:100%;aspect-ratio:640/820;max-width:100%;justify-self:center;align-self:center;min-height:0}
+  .plan{width:100%;height:100%}
+  .foto{align-self:center;min-height:0}
+  /* labels float on their plan elements */
+  .kiezer{display:block;position:absolute;inset:0;pointer-events:none}
+  .kiezer li{position:absolute;left:var(--x);top:var(--y);translate:-50% -50%;pointer-events:auto}
+  .kies{min-height:34px;padding:0 .8em;font-size:.82rem;box-shadow:0 2px 8px rgba(0,0,0,.28)}
+  .foto-raam{aspect-ratio:4/5}
+}
+
+/* ---------- section scaffolding ---------- */
+.sectie{max-width:1280px;margin:0 auto;padding:clamp(72px,10vw,136px) var(--gutter) 0}
+.sectie h2{font-size:clamp(2rem,4.4vw,3.25rem);line-height:1.08}
+.sectie .tekst{max-width:62ch}
+
+/* wandeling */
+.wandeling-kop{display:grid;gap:18px;margin-bottom:clamp(32px,4vw,56px)}
+@media (min-width:900px){.wandeling-kop{grid-template-columns:5fr 6fr;align-items:end;gap:64px}}
+.strook{margin:0 auto 28px;max-width:1280px}
+.strook img{width:100%;aspect-ratio:2/1;object-fit:cover}
+@media (min-width:700px){.strook img{aspect-ratio:1180/440}}
+.strook figcaption{display:flex;align-items:center;gap:.6em;padding:12px var(--gutter) 0;font:500 .9rem/1.3 var(--sans);letter-spacing:.04em;color:var(--taxus)}
+.strook figcaption::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--taupe)}
+.wandeling{padding-left:0;padding-right:0}
+.wandeling .wandeling-kop{padding:0 var(--gutter)}
+
+/* wat wij doen */
+.doen{display:grid;gap:40px;border-top:1px solid var(--grind);padding-top:clamp(40px,5vw,64px)}
+.doen h2{margin-bottom:22px}
+.doen .tekst p+p{margin-top:1em}
+.ook h3{font:500 .9rem/1.3 var(--sans);letter-spacing:.04em;color:#6B5A3F;margin-bottom:14px}
+.ook ul{list-style:none;margin:0;padding:0}
+.ook li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--grind);font-size:1.0625rem;color:var(--inkt)}
+.ook li:first-child{border-top:1px solid var(--grind)}
+.ook li small{font-size:.875rem;color:#4a4b3c;text-align:right}
+@media (min-width:900px){.doen{grid-template-columns:6fr 5fr;gap:clamp(48px,7vw,112px)}}
+.sectie.doen-wrap{padding-top:clamp(72px,9vw,120px)}
+
+/* showtuin */
+.showtuin{display:grid;gap:32px;align-items:center}
+.showtuin img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.showtuin h2{margin-bottom:22px}
+.showtuin .tekst p+p{margin-top:1em}
+.showtuin .acties{margin-top:28px}
+@media (min-width:900px){.showtuin{grid-template-columns:7fr 5fr;gap:clamp(48px,6vw,96px)}}
+
+/* ---------- title block footer ---------- */
+.titelblok{background:var(--zwart);color:#e8e6df;margin-top:clamp(80px,10vw,144px);padding:clamp(40px,5vw,72px) var(--gutter)}
+.blok{max-width:1280px;margin:0 auto;border:1px solid var(--taupe);display:grid;grid-template-columns:1fr}
+.cel{padding:16px 18px;border-bottom:1px solid var(--taupe);min-width:0}
+.cel:last-child{border-bottom:0}
+.cel dt{font:400 .8rem/1.3 var(--sans);letter-spacing:.04em;color:var(--taupe-licht);margin-bottom:6px}
+.cel dd{margin:0;font:400 1.0625rem/1.45 var(--sans);overflow-wrap:anywhere}
+.cel a{text-decoration-color:var(--taupe)}
+.cel a:hover{text-decoration-color:#fff}
+.naam dd{display:flex;align-items:center;gap:18px}
+.naam svg{width:76px;flex:none}
+.naam strong{display:block;font:400 1.6rem/1.1 var(--sc);color:#fff;letter-spacing:.02em}
+.naam span{display:block;font:400 .95rem/1.3 var(--sc);color:var(--taupe-licht);letter-spacing:.04em;margin-top:6px}
+.naam small{display:block;font:400 .85rem/1.3 var(--sans);color:#9c968a;margin-top:10px}
+.colofon{max-width:1280px;margin:14px auto 0;font-size:.8rem;color:#9c968a}
+@media (min-width:640px){
+  .blok{grid-template-columns:1fr 1fr}
+  .cel{border-right:1px solid var(--taupe)}
+  .cel:nth-child(2n){border-right:0}
+  .cel.naam{grid-column:1/-1;border-right:0}
+  .cel:nth-last-child(-n+2){border-bottom:0}
+}
+@media (min-width:1000px){
+  .blok{grid-template-columns:1.4fr 1fr 1fr 1fr}
+  .cel{border-right:1px solid var(--taupe);border-bottom:1px solid var(--taupe)}
+  .cel:nth-child(2n){border-right:1px solid var(--taupe)}
+  .cel.naam{grid-column:1;grid-row:1/3;border-bottom:0}
+  .cel:nth-child(4),.cel:nth-child(7){border-right:0}
+  .cel:nth-child(n+5){border-bottom:0}
+}
+
+/* ---------- motion ---------- */
+@keyframes rijs{from{transform:translateY(12px)}}
+@keyframes zet{from{transform:scale(1.04)}}
+@keyframes teken{from{stroke-dashoffset:1}}
+.rijs{animation:rijs .52s var(--ease-out) backwards}
+.r2{animation-delay:.05s}.r3{animation-delay:.1s}.r4{animation-delay:.15s}
+.foto-raam{animation:zet .6s var(--ease-out) backwards}
+.plan .ln{stroke-dasharray:1;animation:teken 1.1s var(--ease-out) backwards}
+.plan .d1{animation-delay:.1s}.plan .d2{animation-delay:.2s}.plan .d3{animation-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  .rijs,.foto-raam,.plan .ln{animation:none}
+  .foto-raam img,.plan .hl{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
+
+<main id="inhoud">
+<section class="plan-scherm" aria-labelledby="kop">
+  <a class="logo rijs" href="#inhoud" aria-label="Arno Verhaar, tuinarchitectuur, aanleg en onderhoud">
+    <span class="logo-tekst"><span class="logo-naam">Arno Verhaar</span><span class="logo-sub">Tuinarchitectuur, aanleg en onderhoud</span></span>
+    <svg class="logo-mark" viewBox="0 0 160 120" aria-hidden="true">
+      <defs>
+        <mask id="la"><rect width="160" height="120" fill="#fff"/><circle cx="52" cy="62" r="13" fill="#000"/><rect x="49" y="62" width="6" height="30" fill="#000"/></mask>
+        <mask id="lv"><rect width="160" height="120" fill="#fff"/><circle cx="108" cy="46" r="13" fill="#000"/><rect x="105" y="20" width="6" height="26" fill="#000"/></mask>
+      </defs>
+      <path d="M52 4 L100 96 H4 Z" fill="#fff" mask="url(#la)"/>
+      <path d="M60 20 H156 L108 112 Z" fill="#fff" mask="url(#lv)"/>
+    </svg>
+  </a>
+  <div class="intro">
+    <div>
+      <h1 id="kop" class="rijs r2"><span>Tuinen met klasse.</span> <span>Klasse door eenvoud.</span></h1>
+    </div>
+    <p class="lead rijs r3">Ontwerp, aanleg en onderhoud van tuinen voor particulieren en bedrijven, vanuit Breda.</p>
+    <div class="rijs r4">
+      <div class="acties">
+        <a class="btn btn-vol" href="tel:+31765213683"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5Z"/></svg>Bel 076 521 3683</a>
+        <a class="btn btn-lijn" href="mailto:info@verhaartuinen.nl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Mail ons</a>
+      </div>
+      <p class="showtuin-regel" style="margin-top:14px">Showtuin aan de Heilaarstraat 209, op afspraak.</p>
+    </div>
+  </div>
+
+  <div class="vel" role="group" aria-label="Tuinplan: kies een onderdeel om de foto te zien">
+    <div class="plan-wrap" data-actief="vijver">
+      <svg class="plan" viewBox="0 0 640 820" role="img" aria-labelledby="plan-titel">
+        <title id="plan-titel">Getekend tuinplan in bovenaanzicht met hagen, een ronde vijver, buxusbollen, een zwembad en een terras. Een schets ter illustratie, geen ontwerp van een bestaande tuin.</title>
+        <defs>
+          <pattern id="arcering" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#7E6B4D" stroke-width="1.4"/></pattern>
+          <pattern id="kruis" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0 8 8M8 0 0 8" stroke="#7E6B4D" stroke-width=".8"/></pattern>
+          <pattern id="grind" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".9" fill="#C0BF9E"/><circle cx="6.5" cy="6" r=".7" fill="#C0BF9E"/></pattern>
+          <pattern id="tegels" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0V30H0" fill="none" stroke="#7E6B4D" stroke-width=".6" opacity=".7"/></pattern>
+          <symbol id="boom" viewBox="-30 -30 60 60"><circle r="26" fill="none" stroke="#C0BF9E" stroke-width="1" stroke-dasharray="3 3"/><circle r="17" fill="none" stroke="#7E6B4D" stroke-width="1"/><circle r="2.5" fill="#C0BF9E"/></symbol>
+        </defs>
+
+        <!-- sheet border -->
+        <rect class="ln" pathLength="1" x="12" y="12" width="616" height="796" fill="none" stroke="#7E6B4D" stroke-width="1"/>
+
+        <!-- hedges (taxus) -->
+        <g>
+          <rect x="40" y="40" width="560" height="20" fill="url(#arcering)"/>
+          <rect x="40" y="60" width="20" height="670" fill="url(#arcering)"/>
+          <rect x="580" y="60" width="20" height="670" fill="url(#arcering)"/>
+          <path class="ln d1" pathLength="1" d="M40 730V40H600V730M60 730V60H580V730" fill="none" stroke="#B3A283" stroke-width="1"/>
+        </g>
+
+        <!-- gravel -->
+        <rect x="392" y="74" width="176" height="160" fill="url(#grind)"/>
+        <rect x="300" y="74" width="34" height="536" fill="url(#grind)"/>
+        <path class="ln d2" pathLength="1" d="M300 610V74H568V234H392V74M334 610V234" fill="none" stroke="#C0BF9E" stroke-width=".8" opacity=".8"/>
+
+        <!-- trees -->
+        <use href="#boom" x="200" y="510" width="60" height="60"/>
+        <!-- gazon + leibomen (middle of the plan) -->
+        <rect class="ln d2" pathLength="1" x="84" y="306" width="196" height="284" fill="none" stroke="#7E6B4D" stroke-width="1"/>
+        <text x="182" y="452" text-anchor="middle" font-family="Jost, sans-serif" font-size="13" letter-spacing="1.5" fill="#C0BF9E">gazon</text>
+        <use href="#boom" x="400" y="276" width="60" height="60"/><use href="#boom" x="500" y="276" width="60" height="60"/>
+        <use href="#boom" x="400" y="376" width="60" height="60"/><use href="#boom" x="500" y="376" width="60" height="60"/>
+        <rect x="392" y="470" width="176" height="14" fill="url(#arcering)"/>
+        <rect class="ln d3" pathLength="1" x="392" y="470" width="176" height="14" fill="none" stroke="#B3A283" stroke-width="1"/>
+        <use href="#boom" x="226" y="70" width="60" height="60"/>
+
+        <!-- vijver -->
+        <g id="p-vijver">
+          <circle cx="180" cy="196" r="70" fill="none" stroke="#7E6B4D" stroke-width="12" stroke-dasharray="4 2" opacity=".75"/>
+          <circle cx="180" cy="196" r="60" fill="#3b4130"/>
+          <circle class="ln d1" pathLength="1" cx="180" cy="196" r="76" fill="none" stroke="#B3A283" stroke-width="1"/>
+          <circle class="ln d1" pathLength="1" cx="180" cy="196" r="60" fill="none" stroke="#E9E8E3" stroke-width="1.6"/>
+          <path d="M150 190q15-8 30 0t30 0M158 206q12-6 24 0t24 0" fill="none" stroke="#C0BF9E" stroke-width=".8"/>
+          <circle class="hl" cx="180" cy="196" r="86" fill="none" stroke="#E9E8E3" stroke-width="1.5" stroke-dasharray="6 5"/>
+        </g>
+
+        <!-- buxus -->
+        <g id="p-buxus" fill="#4C5F31" stroke="#B3A283" stroke-width="1">
+          <circle cx="420" cy="110" r="22"/><circle cx="458" cy="98" r="16"/><circle cx="452" cy="134" r="20"/>
+          <circle cx="494" cy="118" r="24"/><circle cx="532" cy="100" r="15"/><circle cx="536" cy="136" r="19"/>
+          <circle cx="418" cy="160" r="17"/><circle cx="472" cy="172" r="22"/><circle cx="512" cy="174" r="14"/>
+          <circle cx="546" cy="180" r="13"/><circle cx="440" cy="204" r="14"/><circle cx="500" cy="208" r="12"/>
+          <rect class="hl" x="388" y="70" width="184" height="168" fill="none" stroke="#E9E8E3" stroke-width="1.5" stroke-dasharray="6 5"/>
+        </g>
+
+        <g transform="translate(0 260)">
+        <!-- zwembad -->
+        <g id="p-zwembad">
+          <rect x="414" y="262" width="146" height="190" fill="none" stroke="#7E6B4D" stroke-width="8" opacity=".55"/>
+          <rect x="422" y="270" width="130" height="174" fill="#33473f"/>
+          <rect class="ln d2" pathLength="1" x="422" y="270" width="130" height="174" fill="none" stroke="#E9E8E3" stroke-width="1.4"/>
+          <rect x="465" y="270" width="44" height="14" fill="none" stroke="#C0BF9E" stroke-width=".8"/>
+          <path d="M440 330q12-6 24 0t24 0t24 0t24 0M440 372q12-6 24 0t24 0t24 0t24 0M440 414q12-6 24 0t24 0t24 0t24 0" fill="none" stroke="#C0BF9E" stroke-width=".7" opacity=".7"/>
+          <rect class="hl" x="404" y="252" width="166" height="210" fill="none" stroke="#E9E8E3" stroke-width="1.5" stroke-dasharray="6 5"/>
+        </g>
+
+        <!-- terras -->
+        <g id="p-terras">
+          <rect x="80" y="362" width="300" height="100" fill="url(#tegels)"/>
+          <rect class="ln d3" pathLength="1" x="80" y="362" width="300" height="100" fill="none" stroke="#B3A283" stroke-width="1"/>
+          <rect x="146" y="398" width="168" height="28" fill="#2C2F1F" stroke="#E9E8E3" stroke-width="1.2"/>
+          <g fill="none" stroke="#C0BF9E" stroke-width="1">
+            <rect x="156" y="384" width="16" height="11"/><rect x="186" y="384" width="16" height="11"/><rect x="216" y="384" width="16" height="11"/><rect x="246" y="384" width="16" height="11"/><rect x="276" y="384" width="16" height="11"/>
+            <rect x="156" y="429" width="16" height="11"/><rect x="186" y="429" width="16" height="11"/><rect x="216" y="429" width="16" height="11"/><rect x="246" y="429" width="16" height="11"/><rect x="276" y="429" width="16" height="11"/>
+          </g>
+          <rect class="hl" x="70" y="352" width="320" height="120" fill="none" stroke="#E9E8E3" stroke-width="1.5" stroke-dasharray="6 5"/>
+        </g>
+
+        <!-- house -->
+        <rect x="40" y="470" width="560" height="26" fill="url(#kruis)"/>
+        <rect class="ln d3" pathLength="1" x="40" y="470" width="560" height="26" fill="none" stroke="#B3A283" stroke-width="1"/>
+        <text x="320" y="487" text-anchor="middle" font-family="Jost, sans-serif" font-size="11" letter-spacing="1.5" fill="#E9E8E3" style="paint-order:stroke" stroke="#2C2F1F" stroke-width="5">woning</text>
+
+        <!-- scale bar 1:100 -->
+        <g transform="translate(40 520)" font-family="Jost, sans-serif" font-size="13" fill="#C0BF9E">
+          <rect width="20" height="5" fill="#C0BF9E"/><rect x="20" width="20" height="5" fill="none" stroke="#C0BF9E" stroke-width=".8"/><rect x="40" width="20" height="5" fill="#C0BF9E"/><rect x="60" width="20" height="5" fill="none" stroke="#C0BF9E" stroke-width=".8"/>
+          <text x="0" y="20">0</text><text x="72" y="22">4 m</text><text x="96" y="8">schaal 1:100</text>
+        </g>
+        <text x="330" y="531" text-anchor="middle" font-family="Jost, sans-serif" font-size="13" letter-spacing=".6" fill="#C0BF9E">Schets ter illustratie</text>
+        <!-- north arrow -->
+        <g transform="translate(588 524)">
+          <circle r="13" fill="none" stroke="#7E6B4D" stroke-width="1"/>
+          <path d="M0-11 5 6 0 2-5 6Z" fill="#E9E8E3"/>
+          <text x="-22" y="4" text-anchor="end" font-family="Jost, sans-serif" font-size="13" fill="#C0BF9E">N</text>
+        </g>
+        </g>
+      </svg>
+
+      <ul class="kiezer" aria-label="Kies een onderdeel van het plan">
+        <li style="--x:28.1%;--y:23.9%"><button class="kies" type="button" data-kies="vijver" aria-pressed="true">vijver</button></li>
+        <li style="--x:74.5%;--y:18.3%"><button class="kies" type="button" data-kies="buxus" aria-pressed="false">buxus</button></li>
+        <li style="--x:76.1%;--y:75.2%"><button class="kies" type="button" data-kies="zwembad" aria-pressed="false">zwembad</button></li>
+        <li style="--x:35.9%;--y:82%"><button class="kies" type="button" data-kies="terras" aria-pressed="false">terras</button></li>
+      </ul>
+    </div>
+
+    <figure class="foto">
+      <div class="foto-raam">
+        <img class="aan" data-foto="vijver" src="images/vijver.jpg" width="1600" height="1200" alt="Ronde witte vijver op een cirkel van klinkers, met buxus, vaste planten en een parasol" fetchpriority="high">
+        <img data-foto="buxus" src="images/buxus.jpg" width="1180" height="440" alt="Buxusbollen onder jonge bomen, met grind en hagen" loading="lazy" style="object-position:30% 50%">
+        <img data-foto="zwembad" src="images/zwembad.jpg" width="1180" height="440" alt="Zwembad met terras, tafel en zwarte parasols tussen hoge hagen" loading="lazy" style="object-position:42% 50%">
+        <img data-foto="terras" src="images/terras.jpg" width="1600" height="1195" alt="Teakhouten tafel met loungestoelen op een terras naast het zwembad" loading="lazy">
+      </div>
+      <figcaption aria-live="polite"><b id="foto-naam">Vijver</b><span id="foto-tekst">Ronde vijver met klinkers en buxus</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sectie wandeling" aria-labelledby="wandeling-kop">
+  <div class="wandeling-kop">
+    <h2 id="wandeling-kop">Tuinen die passen, voor nu én later</h2>
+    <p class="tekst">Herkenbaar maar altijd uniek: passend bij het type huis en bij de stijl van de opdrachtgever. Met de juiste mix van warme en duurzame materialen, strakke lijnen en bijzondere details.</p>
+  </div>
+  <figure class="strook">
+    <img src="images/buxus.jpg" width="1180" height="440" alt="Golvende buxusbollen onder jonge bomen, met een grindpad" loading="lazy">
+    <figcaption>Buxusbollen en grind</figcaption>
+  </figure>
+  <figure class="strook">
+    <img src="images/zwembad.jpg" width="1180" height="440" alt="Zwembad met een terras en zwarte parasols, omringd door hoge hagen" loading="lazy">
+    <figcaption>Zwembad tussen hagen</figcaption>
+  </figure>
+</section>
+
+<section class="sectie doen-wrap" aria-labelledby="doen-kop">
+  <div class="doen">
+    <div class="tekst">
+      <h2 id="doen-kop">Ontwerp, aanleg en onderhoud</h2>
+      <p>Wij ontwerpen, realiseren en onderhouden particuliere tuinen en bedrijfstuinen, en onderhouden ook bedrijfsterreinen in de omgeving van Breda. Naast ontwerp, aanleg en onderhoud hebben wij een adviserende rol.</p>
+      <p>De basis zijn altijdgroene structuurelementen: golvende buxusvolumes en strakke taxus- en fagushagen. Stijlvol buitenmeubilair, mooie accessoires en de juiste tuinverlichting maken de tuin af.</p>
+    </div>
+    <div class="ook">
+      <h3>Ook bij ons</h3>
+      <ul>
+        <li>Groene daken <small>officieel dealer Groen Dak Compleet</small></li>
+        <li>Gras en kunstgras</li>
+        <li>Zwembaden en vijvers</li>
+        <li>Terrassen en dakterrassen</li>
+        <li>Veranda's en overkappingen</li>
+        <li>Buitenkeukens en poolhouses</li>
+        <li>Subtiele buitenverlichting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sectie" aria-labelledby="showtuin-kop">
+  <div class="showtuin">
+    <img src="images/terras.jpg" width="1600" height="1195" alt="Teakhouten tafel met loungestoelen op een terras naast het zwembad" loading="lazy">
+    <div class="tekst">
+      <h2 id="showtuin-kop">Showtuin en tuinmeubilair</h2>
+      <p>In onze showtuin aan de Heilaarstraat 209 in Breda bent u op afspraak welkom.</p>
+      <p>Wij zijn dealer van exclusieve tuinmeubelen, zoals de Piet Boon Outdoor Collection en Gandia Blasco. Een deel van beide collecties is in de showtuin te zien.</p>
+      <div class="acties">
+        <a class="btn btn-vol" href="tel:+31765213683">Bel voor een afspraak</a>
+        <a class="btn btn-lijn" href="mailto:info@verhaartuinen.nl">info@verhaartuinen.nl</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="titelblok" aria-label="Contactgegevens">
+  <dl class="blok">
+    <div class="cel naam"><dt class="skip">Bedrijf</dt><dd><svg viewBox="0 0 160 120" aria-hidden="true">
+        <defs>
+          <mask id="fa"><rect width="160" height="120" fill="#fff"/><circle cx="52" cy="62" r="13" fill="#000"/><rect x="49" y="62" width="6" height="30" fill="#000"/></mask>
+          <mask id="fv"><rect width="160" height="120" fill="#fff"/><circle cx="108" cy="46" r="13" fill="#000"/><rect x="105" y="20" width="6" height="26" fill="#000"/></mask>
+        </defs>
+        <path d="M52 4 L100 96 H4 Z" fill="#fff" mask="url(#fa)"/>
+        <path d="M60 20 H156 L108 112 Z" fill="#fff" mask="url(#fv)"/>
+      </svg><div><strong>Verhaar Tuinen</strong><span>Tuinarchitectuur, aanleg en onderhoud</span><small>KvK 20052338</small></div></dd></div>
+    <div class="cel"><dt>Adres</dt><dd>Heilaarstraat 209<br>4814 NX Breda</dd></div>
+    <div class="cel"><dt>Telefoon</dt><dd><a href="tel:+31765213683">076 521 3683</a></dd></div>
+    <div class="cel"><dt>Mobiel</dt><dd><a href="tel:+31653347943">06 53 34 79 43</a></dd></div>
+    <div class="cel"><dt>E-mail</dt><dd><a href="mailto:info@verhaartuinen.nl">info@verhaartuinen.nl</a></dd></div>
+    <div class="cel"><dt>Telefonisch bereikbaar</dt><dd>ma t/m vr, 09:00–16:00</dd></div>
+    <div class="cel"><dt>Route</dt><dd><a href="https://www.google.com/maps/place/Verhaar+Tuinen/data=!4m7!3m6!1s0x47c6a0010217c795:0x1183a265c5066765!8m2!3d51.5850553!4d4.736021!16s%2Fg%2F1tfdcp6p!19sChIJlccXAgGgxkcRZWcGxWWigxE?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener">Open in Google Maps</a></dd></div>
+  </dl>
+</footer>
+
+<script>
+(function(){
+  var wrap=document.querySelector('.plan-wrap');
+  var knoppen=document.querySelectorAll('.kies');
+  var fotos=document.querySelectorAll('.foto-raam img');
+  var namen={vijver:['Vijver','Ronde vijver met klinkers en buxus'],buxus:['Buxus','Buxusbollen onder jonge bomen'],zwembad:['Zwembad','Zwembad met terras tussen hagen'],terras:['Terras','Teakhouten tafel naast het zwembad']};
+  knoppen.forEach(function(k){
+    k.addEventListener('click',function(){
+      var keus=k.getAttribute('data-kies');
+      wrap.setAttribute('data-actief',keus);
+      knoppen.forEach(function(b){b.setAttribute('aria-pressed',b===k?'true':'false')});
+      fotos.forEach(function(f){
+        var aan=f.getAttribute('data-foto')===keus;
+        if(aan){f.loading='eager'}
+        f.classList.toggle('aan',aan);
+      });
+      document.getElementById('foto-naam').textContent=namen[keus][0];document.getElementById('foto-tekst').textContent=namen[keus][1];
+    });
+  });
+})();
+</script>
+</body>
+</html>

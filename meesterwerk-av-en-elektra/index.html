@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meesterwerk AV en Elektra, elektricien in Breda</title>
+<meta name="description" content="Elektricien in Breda voor storingen, verbouwingen en onderhoud. Bel 06 12134027. Ma–vr 07:00–21:00, za 08:00–18:00.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --charcoal:#383A3C;
+  --charcoal-soft:#4F5254;
+  --kabel:#D9DBD8;
+  --kabel-deep:#C9CCC8;
+  --wit:#F6F7F5;
+  --bruin:#7A4A2A;
+  --blauw:#1F5FA8;
+  --blauw-diep:#174A85;
+  --geel:#E3C21C;
+  --groen:#2E8B3A;
+  --groen-tekst:#22692C;
+  --display:"Unbounded", "Atkinson Hyperlegible", sans-serif;
+  --text:"Atkinson Hyperlegible", system-ui, sans-serif;
+  --ease-out:cubic-bezier(0.23, 1, 0.32, 1);
+  --rail:132px;
+  --gutter:clamp(16px, 4vw, 48px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kabel);color:var(--charcoal);font:400 1.125rem/1.55 var(--text);overflow-x:hidden}
+::selection{background:var(--charcoal);color:var(--wit)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--blauw);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--blauw-diep)}
+:focus-visible{outline:3px solid var(--blauw);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+p{margin:0}
+.num{font-family:var(--display);font-weight:500;font-size:.9em;letter-spacing:-0.01em;font-variant-numeric:tabular-nums}
+h1 .num,h2 .num,h3 .num,.bignum .num,.score strong .num{font:inherit;letter-spacing:inherit}
+.call .num{font-weight:600}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;background:var(--wit);padding:8px 12px;z-index:9}
+
+/* ---------- top bar ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--charcoal);text-decoration:none;font:700 .95rem/1.2 var(--text)}
+.brand svg{width:36px;height:36px;flex:none}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.95rem;font-weight:700;padding:6px 12px 6px 10px;border-radius:999px;background:var(--wit);white-space:nowrap}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--groen);box-shadow:0 0 0 3px rgba(46,139,58,.18)}
+.status.dicht .dot{background:var(--charcoal-soft);box-shadow:0 0 0 3px rgba(56,58,60,.14)}
+
+/* ---------- fault-finder ---------- */
+.finder{padding-top:clamp(28px,7vh,72px);padding-bottom:0}
+.finder h1{font-size:clamp(2.25rem,7.4vw,5.2rem);font-weight:800;max-width:14ch}
+.finder .lead{margin-top:16px;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:46ch;color:var(--charcoal-soft)}
+.choices{list-style:none;margin:clamp(24px,4vh,40px) 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:10px}
+.choice{width:100%;min-height:64px;display:flex;align-items:center;gap:14px;text-align:left;cursor:pointer;
+  font:700 1.1rem/1.25 var(--text);color:var(--charcoal);background:transparent;
+  border:2px solid var(--charcoal);border-radius:14px;padding:14px 18px;
+  transition:background-color .18s ease, color .18s ease, transform .12s var(--ease-out)}
+.choice:active{transform:scale(.98)}
+.choice .core{flex:none;width:22px;height:6px;border-radius:3px;background:var(--c)}
+.choice .core.strip{background:repeating-linear-gradient(90deg,var(--groen) 0 6px,var(--geel) 6px 12px)}
+.choice[aria-pressed="true"]{background:var(--charcoal);color:var(--wit)}
+.choice[aria-pressed="true"] .core[style*="charcoal"]{background:var(--wit)}
+@media (hover:hover) and (pointer:fine){
+  .choice:hover{background:var(--wit)}
+  .choice[aria-pressed="true"]:hover{background:var(--charcoal)}
+}
+.panel{position:relative;z-index:2;margin-top:14px;background:var(--wit);border:2px solid var(--charcoal);border-radius:18px;padding:clamp(22px,3.4vw,40px)}
+.panel-inner{display:grid;gap:18px}
+.panel h2{font-size:clamp(1.25rem,2.4vw,1.75rem)}
+.panel .answer{max-width:58ch;font-size:1.15rem}
+.panel .small{color:var(--charcoal-soft);font-size:1rem}
+.bignum{font:800 clamp(2rem,7vw,4rem)/1 var(--display);letter-spacing:-0.03em;color:var(--charcoal);text-decoration:none;font-variant-numeric:tabular-nums}
+.bignum:hover{color:var(--blauw)}
+.call{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:12px;
+  background:var(--blauw);color:#fff;text-decoration:none;font:700 1.1rem/1 var(--text);justify-self:start;
+  transition:background-color .18s ease, transform .12s var(--ease-out)}
+.call svg{width:20px;height:20px}
+.call:hover{background:var(--blauw-diep);color:#fff}
+.call:active{transform:scale(.97)}
+
+/* ---------- cable ---------- */
+main{position:relative}
+#cable{position:absolute;inset:0 auto auto 0;pointer-events:none;z-index:1;overflow:visible}
+#cable path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.drawing .core-path{stroke-dasharray:1 1;stroke-dashoffset:1;animation:draw .8s var(--ease-out) forwards}
+.drawing .core-path.c2{animation-delay:50ms}
+.drawing .core-path.c3{animation-delay:100ms}
+.drawing .stripe{opacity:0;animation:show .25s ease-out .6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes show{to{opacity:1}}
+
+/* ---------- wired sections ---------- */
+.wired{padding-left:calc(var(--gutter) + var(--rail));position:relative;z-index:2}
+section.block{padding-top:clamp(72px,11vh,128px)}
+.block h2{font-size:clamp(1.75rem,3.6vw,2.75rem);max-width:18ch}
+.node{display:block}
+
+.doen{display:grid;gap:32px;margin-top:28px;align-items:start}
+.doen ul{list-style:none;margin:0;padding:0;border-top:2px solid var(--charcoal)}
+.doen li{display:grid;grid-template-columns:28px 1fr;gap:4px 14px;padding:18px 0;border-bottom:1px solid rgba(56,58,60,.28)}
+.doen li .core{grid-row:1 / span 2;width:28px;height:6px;border-radius:3px;margin-top:10px;background:var(--c)}
+.doen li .core.strip{background:repeating-linear-gradient(90deg,var(--groen) 0 7px,var(--geel) 7px 14px)}
+.doen h3{font-size:1.15rem;font-weight:700}
+.doen li p{color:var(--charcoal-soft)}
+.doen .av{margin-top:18px;font-weight:700}
+
+figure{margin:0;position:relative}
+figure img{border-radius:16px;width:100%}
+.tag{position:absolute;left:12px;bottom:12px;background:rgba(56,58,60,.86);color:var(--wit);font:700 .8rem/1 var(--text);padding:6px 10px;border-radius:999px}
+
+.klanten{margin-top:28px;display:grid;gap:14px;list-style:none;padding:0}
+@media (max-width:719px){.klanten .label{margin-left:12px;--lead:36px}}
+.label{position:relative;background:var(--wit);border-radius:10px;padding:16px 18px 16px 22px;max-width:52ch;font-size:1.1rem;
+  box-shadow:0 1px 0 rgba(56,58,60,.08), 0 10px 24px -18px rgba(56,58,60,.5)}
+.label::before{content:"";position:absolute;right:100%;top:50%;width:var(--lead,18px);height:4px;margin-top:-2px;border-radius:2px 0 0 2px;background:var(--c)}
+.label.strip::before{background:repeating-linear-gradient(90deg,var(--groen) 0 7px,var(--geel) 7px 14px)}
+.label{padding-left:18px}
+.score{margin-top:22px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.score .more{flex-basis:100%;font-weight:700}
+.score strong{font:800 2rem/1 var(--display)}
+.stars{display:inline-flex;gap:3px;color:var(--charcoal)}
+.stars svg{width:18px;height:18px}
+
+.bereik{display:grid;gap:32px;margin-top:28px;align-items:start}
+table{border-collapse:collapse;width:100%;max-width:440px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid rgba(56,58,60,.28);font-size:1.05rem}
+th{font-weight:400}
+td{text-align:right}
+tr.today{background:var(--wit)}
+tr.today th{font-weight:700}
+tr.today th::after{content:"vandaag";margin-left:10px;padding:2px 8px;border-radius:999px;background:var(--groen-tekst);color:#fff;font-size:.8rem;font-weight:700;vertical-align:2px}
+.facts{margin-top:22px;display:grid;gap:8px}
+.bereik figure{max-width:420px}
+
+/* ---------- end ---------- */
+.end{padding-top:clamp(72px,11vh,120px);padding-bottom:56px}
+.end-row{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px}
+.endlogo{width:96px;height:96px;flex:none;margin-left:calc(-1 * var(--rail) + 40px - 24px)}
+.end h2{font-size:clamp(1.6rem,3.4vw,2.5rem);max-width:16ch}
+.end p{margin-top:10px;color:var(--charcoal-soft)}
+footer{border-top:1px solid rgba(56,58,60,.3);padding-top:20px;padding-bottom:28px;font-size:.95rem;color:var(--charcoal-soft);display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{color:inherit}
+
+/* ---------- entrance ---------- */
+.rise{animation:rise .52s var(--ease-out) both}
+.d1{animation-delay:40ms}.d2{animation-delay:80ms}.d3{animation-delay:120ms}.d4{animation-delay:160ms}.d5{animation-delay:200ms}
+@keyframes rise{from{transform:translateY(12px)}}
+
+/* ---------- responsive ---------- */
+@media (max-width:719px){
+  :root{--rail:22px}
+  .top{padding-top:14px}
+  .brand{font-size:.85rem;gap:8px}
+  .brand svg{width:30px;height:30px}
+  .status{font-size:.85rem;padding:5px 10px 5px 8px}
+  .endlogo{width:64px;height:64px;margin-left:-26px}
+}
+@media (min-width:720px){
+  .choices{grid-template-columns:1fr 1fr}
+  .doen{grid-template-columns:1fr 1fr}
+  .bereik{grid-template-columns:1fr 1fr}
+  .klanten .label{--lead:86px}
+  .klanten .label:nth-child(2){margin-left:48px;--lead:134px}
+  .klanten .label:nth-child(3){margin-left:96px;--lead:182px}
+}
+@media (min-width:1100px){
+  .choices{grid-template-columns:repeat(4,1fr)}
+  .choice{min-height:96px;align-items:flex-start;flex-direction:column;gap:12px}
+  .doen{grid-template-columns:5fr 6fr;gap:56px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise,.drawing .core-path,.drawing .stripe{animation:none!important}
+  .drawing .core-path{stroke-dashoffset:0}
+  .drawing .stripe{opacity:1}
+  .choice,.call{transition:background-color .18s ease}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#hulp">Naar de inhoud</a>
+
+<header class="wrap top rise">
+  <a class="brand" href="#hulp" aria-label="Meesterwerk AV en Elektra">
+    <svg viewBox="0 0 250 250" fill="none" stroke="#383A3C" stroke-linecap="round" stroke-linejoin="round" stroke-width="25" aria-hidden="true"><path d="M17 108v28"/><path d="M62 84v74"/><path d="M110 210V72a19 19 0 0 1 38 0v108a15 15 0 0 0 30 0V72a17 17 0 0 1 34 0v138"/></svg>
+    <span>Meesterwerk AV en Elektra</span>
+  </a>
+  <p class="status" id="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="status-text">Ma–vr <span class="num">07:00–21:00</span></span></p>
+</header>
+
+<main id="hulp">
+  <svg id="cable" aria-hidden="true" focusable="false"></svg>
+
+  <section class="wrap finder" aria-labelledby="vraag">
+    <h1 id="vraag" class="rise d1">Wat is er aan de hand?</h1>
+    <p class="lead rise d2">Kies wat er speelt. Je krijgt een kort antwoord en kunt meteen bellen. Elektricien in Breda.</p>
+
+    <ul class="choices rise d3" role="list">
+      <li><button class="choice" type="button" aria-pressed="false" aria-controls="panel" data-k="storing"><span class="core" style="--c:var(--bruin)" aria-hidden="true"></span>Stroom uit of storing</button></li>
+      <li><button class="choice" type="button" aria-pressed="false" aria-controls="panel" data-k="aardlek"><span class="core" style="--c:var(--blauw)" aria-hidden="true"></span>Aardlekschakelaar springt steeds</button></li>
+      <li><button class="choice" type="button" aria-pressed="false" aria-controls="panel" data-k="verbouw"><span class="core strip" aria-hidden="true"></span>Verbouwing of nieuwe groep</button></li>
+      <li><button class="choice" type="button" aria-pressed="false" aria-controls="panel" data-k="klus"><span class="core" style="--c:var(--charcoal)" aria-hidden="true"></span>Onderhoud of klein klusje</button></li>
+    </ul>
+
+    <div class="panel rise d4" id="panel" aria-live="polite">
+      <div class="panel-inner" id="panel-inner">
+        <a class="bignum" href="tel:+31612134027"><span class="num">06 12134027</span></a>
+        <p class="answer">Bel direct, of kies hierboven wat er aan de hand is.</p>
+        <p class="small">Ma–vr <span class="num">07:00–21:00</span>, za <span class="num">08:00–18:00</span>, zo gesloten</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap wired">
+    <section class="block" aria-labelledby="doen-h">
+      <h2 id="doen-h" class="node" data-node>Wat we doen</h2>
+      <div class="doen">
+        <div>
+          <ul>
+            <li><span class="core" style="--c:var(--bruin)" aria-hidden="true"></span><h3>Storingen en spoed</h3><p>Stroom uitgevallen of een storing in de installatie. Ook voor spoedklussen.</p></li>
+            <li><span class="core" style="--c:var(--blauw)" aria-hidden="true"></span><h3>Verbouwen en (her)bedraden</h3><p>Nieuwe of vernieuwde bedrading tijdens je verbouwing.</p></li>
+            <li><span class="core strip" aria-hidden="true"></span><h3>Onderhoud</h3><p>Onderhoud en kleine klussen, thuis en bij bedrijven.</p></li>
+          </ul>
+          <p class="av">Ook AV-werk: vraag ernaar.</p>
+        </div>
+        <figure>
+          <img src="images/renovatie.jpg" width="1264" height="848" loading="lazy" alt="Illustratie, geen foto van Meesterwerk: handen in werkhandschoenen strippen een installatiekabel bij een inbouwdoos.">
+          <span class="tag">Illustratie</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="klant-h">
+      <h2 id="klant-h" class="node" data-node>Wat klanten zeggen</h2>
+      <ul class="klanten" role="list">
+        <li class="label" style="--c:var(--bruin)">Kwam binnen een half uur toen ’s avonds de stroom uitviel.</li>
+        <li class="label" style="--c:var(--blauw)">Een spoedklus nog dezelfde dag gedaan.</li>
+        <li class="label strip">Eerlijk advies, duidelijke communicatie en geen verrassingen in de kosten.</li>
+      </ul>
+      <p class="score">
+        <strong><span class="num">4,9</span></strong>
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>
+        </span>
+        <span><span class="num">4,9</span> uit <span class="num">13</span> Google-reviews</span>
+        <a class="more" href="https://www.google.com/maps/place/Meesterwerk+AV+en+Elektra/data=!4m7!3m6!1s0x2e96c3d03ce4e897:0xce6d9aacb84d6b2f!8m2!3d51.5941452!4d4.7936202!16s%2Fg%2F11ydl8k7w5!19sChIJl-jkPNDDli4RL2tNuKyabc4?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" rel="noopener" target="_blank">Lees ze op Google</a>
+      </p>
+    </section>
+
+    <section class="block" aria-labelledby="bereik-h">
+      <h2 id="bereik-h" class="node" data-node>Bereikbaar</h2>
+      <div class="bereik">
+        <div>
+          <table aria-label="Openingstijden">
+            <tbody id="week">
+              <tr data-d="1"><th scope="row">Maandag</th><td><span class="num">07:00–21:00</span></td></tr>
+              <tr data-d="2"><th scope="row">Dinsdag</th><td><span class="num">07:00–21:00</span></td></tr>
+              <tr data-d="3"><th scope="row">Woensdag</th><td><span class="num">07:00–21:00</span></td></tr>
+              <tr data-d="4"><th scope="row">Donderdag</th><td><span class="num">07:00–21:00</span></td></tr>
+              <tr data-d="5"><th scope="row">Vrijdag</th><td><span class="num">07:00–21:00</span></td></tr>
+              <tr data-d="6"><th scope="row">Zaterdag</th><td><span class="num">08:00–18:00</span></td></tr>
+              <tr data-d="0"><th scope="row">Zondag</th><td>Gesloten</td></tr>
+            </tbody>
+          </table>
+          <div class="facts">
+            <p><strong>Werkgebied:</strong> Breda</p>
+            <p><strong>Adres:</strong> Tuinbouwlaan, Breda</p>
+            <p><a href="https://www.google.com/maps/place/Meesterwerk+AV+en+Elektra/data=!4m7!3m6!1s0x2e96c3d03ce4e897:0xce6d9aacb84d6b2f!8m2!3d51.5941452!4d4.7936202!16s%2Fg%2F11ydl8k7w5!19sChIJl-jkPNDDli4RL2tNuKyabc4?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" rel="noopener" target="_blank">Bekijk op Google Maps</a></p>
+          </div>
+        </div>
+        <figure>
+          <img src="images/groepenkast.jpg" width="928" height="1152" loading="lazy" alt="Illustratie, geen foto van Meesterwerk: een open groepenkast met nette bruine, blauwe en geelgroene bedrading.">
+          <span class="tag">Illustratie</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="end" aria-labelledby="end-h">
+      <div class="end-row">
+        <svg class="endlogo" id="endlogo" viewBox="0 0 250 250" fill="none" stroke="#383A3C" stroke-linecap="round" stroke-linejoin="round" stroke-width="25" aria-hidden="true"><path d="M17 108v28"/><path d="M62 84v74"/><path d="M110 210V72a19 19 0 0 1 38 0v108a15 15 0 0 0 30 0V72a17 17 0 0 1 34 0v138"/></svg>
+        <div>
+          <h2 id="end-h">Even overleggen? Bel gewoon.</h2>
+          <p>Ma–vr <span class="num">07:00–21:00</span><br>Za <span class="num">08:00–18:00</span></p>
+        </div>
+        <a class="call" href="tel:+31612134027"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Bel <span class="num">06 12134027</span></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="wrap">
+  <span>Meesterwerk AV en Elektra</span>
+  <a href="tel:+31612134027"><span class="num">06 12134027</span></a>
+  <span>Tuinbouwlaan, Breda</span>
+  <span>Foto’s: illustratie</span>
+</footer>
+
+<script>
+(function(){
+  /* ---------- open / closed, Europe/Amsterdam ---------- */
+  var HOURS = {0:null,1:[7,21],2:[7,21],3:[7,21],4:[7,21],5:[7,21],6:[8,18]};
+  var NAMES = ["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"];
+  function num(t){return t.replace(/\d[\d:–]*(?: \d[\d:–]*)*/g,function(x){return '<span class="num">'+x+'</span>'})}
+  function pad(h){return (h<10?"0":"")+h+":00"}
+  function now(){
+    try{
+      var parts = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Amsterdam",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+      var o={}; parts.forEach(function(p){o[p.type]=p.value});
+      var day=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday);
+      var h=parseInt(o.hour,10)%24, m=parseInt(o.minute,10);
+      return {day:day, t:h+m/60};
+    }catch(e){var d=new Date();return {day:d.getDay(),t:d.getHours()+d.getMinutes()/60}}
+  }
+  function nextOpen(day){
+    for(var i=1;i<=7;i++){var d=(day+i)%7; if(HOURS[d]) return {i:i,d:d};}
+  }
+  function status(){
+    var n=now(), h=HOURS[n.day], el=document.getElementById("status"), tx=document.getElementById("status-text"), txt, open=false;
+    if(h && n.t>=h[0] && n.t<h[1]){ txt="Nu bereikbaar tot "+pad(h[1]); open=true; }
+    else if(h && n.t<h[0]){ txt="Vandaag vanaf "+pad(h[0]); }
+    else { var x=nextOpen(n.day); txt=(x.i===1?"Morgen":NAMES[x.d].charAt(0).toUpperCase()+NAMES[x.d].slice(1))+" weer vanaf "+pad(HOURS[x.d][0]); }
+    tx.innerHTML=num(txt); el.classList.toggle("dicht",!open);
+    var rows=document.querySelectorAll("#week tr");
+    for(var i=0;i<rows.length;i++){rows[i].classList.toggle("today", +rows[i].getAttribute("data-d")===n.day)}
+  }
+  status(); setInterval(status,60000);
+
+  /* ---------- fault-finder ---------- */
+  var CALL='<a class="call" href="tel:+31612134027"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Bel <span class="num">06 12134027</span></a>';
+  var A={
+    storing:["Stroom uit of storing","Check eerst of de hoofdschakelaar of een groep in je meterkast is uitgeschakeld. Springt hij meteen weer uit? Niet blijven proberen: bel."],
+    aardlek:["Aardlekschakelaar springt steeds","Haal alle stekkers op die groep eruit en zet hem terug. Springt hij nog? Dan zit de fout vast in de installatie: bel."],
+    verbouw:["Verbouwing of nieuwe groep","Vertel wat je gaat verbouwen of welke groep erbij moet. Klanten noemen het advies eerlijk en de kosten zonder verrassingen."],
+    klus:["Onderhoud of klein klusje","Ook voor kleine klussen. Bel en vertel wat er moet gebeuren."]
+  };
+  var inner=document.getElementById("panel-inner"), btns=document.querySelectorAll(".choice"), reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches, anim;
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  Array.prototype.forEach.call(btns,function(b){
+    b.addEventListener("click",function(){
+      var k=b.getAttribute("data-k"), a=A[k];
+      Array.prototype.forEach.call(btns,function(o){o.setAttribute("aria-pressed", o===b?"true":"false")});
+      inner.innerHTML='<h2>'+esc(a[0])+'</h2><p class="answer">'+esc(a[1])+'</p>'+CALL+'<p class="small">'+num('Ma–vr 07:00–21:00, za 08:00–18:00, zo gesloten')+'</p>';
+      if(!reduce && inner.animate){
+        if(anim) anim.cancel();
+        anim=inner.animate([{transform:"translateY(-8px)",clipPath:"inset(0 0 40% 0)"},{transform:"none",clipPath:"inset(0 0 0 0)"}],{duration:240,easing:"cubic-bezier(0.23, 1, 0.32, 1)"});
+      }
+      requestAnimationFrame(drawCable);
+    });
+  });
+
+  /* ---------- three-core cable ---------- */
+  var svg=document.getElementById("cable"), main=document.getElementById("hulp"), NS="http://www.w3.org/2000/svg", firstDraw=true;
+  function off(pts,d){
+    var out=[];
+    for(var i=0;i<pts.length;i++){
+      var nIn=null,nOut=null;
+      if(i>0){var a=pts[i-1],b=pts[i],dx=b[0]-a[0],dy=b[1]-a[1],L=Math.hypot(dx,dy)||1;nIn=[-dy/L,dx/L]}
+      if(i<pts.length-1){var a2=pts[i],b2=pts[i+1],dx2=b2[0]-a2[0],dy2=b2[1]-a2[1],L2=Math.hypot(dx2,dy2)||1;nOut=[-dy2/L2,dx2/L2]}
+      var n;
+      if(!nIn) n=nOut; else if(!nOut) n=nIn;
+      else if(Math.abs(nIn[0]-nOut[0])<1e-6&&Math.abs(nIn[1]-nOut[1])<1e-6) n=nIn;
+      else n=[nIn[0]+nOut[0],nIn[1]+nOut[1]];
+      out.push([pts[i][0]+n[0]*d,pts[i][1]+n[1]*d]);
+    }
+    return out;
+  }
+  function rounded(p,r){
+    var s="M"+p[0][0].toFixed(1)+" "+p[0][1].toFixed(1);
+    for(var i=1;i<p.length-1;i++){
+      var a=p[i-1],b=p[i],c=p[i+1];
+      var l1=Math.hypot(b[0]-a[0],b[1]-a[1]),l2=Math.hypot(c[0]-b[0],c[1]-b[1]);
+      var rr=Math.min(r,l1/2,l2/2);
+      var p1=[b[0]+(a[0]-b[0])*rr/l1,b[1]+(a[1]-b[1])*rr/l1], p2=[b[0]+(c[0]-b[0])*rr/l2,b[1]+(c[1]-b[1])*rr/l2];
+      s+=" L"+p1[0].toFixed(1)+" "+p1[1].toFixed(1)+" Q"+b[0].toFixed(1)+" "+b[1].toFixed(1)+" "+p2[0].toFixed(1)+" "+p2[1].toFixed(1);
+    }
+    var z=p[p.length-1]; return s+" L"+z[0].toFixed(1)+" "+z[1].toFixed(1);
+  }
+  function el(d,cls,stroke,w,extra){
+    var e=document.createElementNS(NS,"path"); e.setAttribute("d",d); if(cls) e.setAttribute("class",cls);
+    e.setAttribute("stroke",stroke); e.setAttribute("stroke-width",w);
+    if(cls && cls.indexOf("core-path")>-1) e.setAttribute("pathLength",1);
+    if(extra) for(var k in extra) e.setAttribute(k,extra[k]);
+    svg.appendChild(e); return e;
+  }
+  function drawCable(){
+    var mob=window.innerWidth<720, mr=main.getBoundingClientRect(), W=main.scrollWidth, H=main.offsetHeight;
+    svg.setAttribute("width",W); svg.setAttribute("height",H); svg.setAttribute("viewBox","0 0 "+W+" "+H);
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var wired=document.querySelector(".wired"), wr=wired.getBoundingClientRect(), gut=parseFloat(getComputedStyle(wired).paddingRight)||16;
+    var x=wr.left-mr.left+(mob?Math.max(gut-6,10):gut+40);
+    var panel=document.getElementById("panel").getBoundingClientRect();
+    var y0=panel.bottom-mr.top-4;
+    var A=mob?9:46, G=mob?13:26, R=mob?5:12, D=mob?3:7, CW=mob?2.4:5, SH=mob?11:22;
+    var pts=[[x,y0]];
+    var nodes=document.querySelectorAll("[data-node]");
+    for(var i=0;i<nodes.length;i++){
+      var r=nodes[i].getBoundingClientRect(), y=r.top-mr.top+Math.min(r.height,56)/2-G;
+      pts.push([x,y],[x+A,y],[x+A,y+G],[x,y+G],[x,y+2*G]);
+    }
+    var lg=document.getElementById("endlogo").getBoundingClientRect(), s=lg.width/250;
+    var ex=lg.left-mr.left+62*s, ey=lg.top-mr.top+84*s-(mob?6:10);
+    /* drop from the rail across to the logo's tall waveform bar */
+    if(Math.abs(ex-x)>1){ pts.push([x,ey-28],[ex,ey-28]); }
+    pts.push([ex,ey]);
+    var split=y0+(mob?28:64);
+    /* sheath */
+    var sheath="M"+x+" "+y0+" L"+x+" "+split;
+    el(sheath,"core-path","#8E928F",SH+3); el(sheath,"core-path","#EDEEEB",SH);
+    var cores=[[-D,"#7A4A2A","c1"],[0,"#1F5FA8","c2"],[D,"#2E8B3A","c3"]];
+    var corePts=pts.slice(); corePts[0]=[x,split-6];
+    cores.forEach(function(c){
+      var d=rounded(off(corePts,c[0]),R+c[0]);
+      el(d,"core-path "+c[2],c[1],CW,{pathLength:1});
+      if(c[2]==="c3") el(d,"stripe","#E3C21C",CW,{"stroke-dasharray":(mob?"5 5":"9 9"),"stroke-linecap":"butt"});
+    });
+    /* sheath cut ring */
+    el("M"+(x-SH/2-1.5)+" "+split+" L"+(x+SH/2+1.5)+" "+split,"core-path","#8E928F",mob?2:3);
+    if(firstDraw && !reduce){ svg.classList.add("drawing"); setTimeout(function(){svg.classList.remove("drawing")},1100); }
+    firstDraw=false;
+  }
+  var t; function later(){clearTimeout(t); t=setTimeout(drawCable,120)}
+  drawCable();
+  window.addEventListener("resize",later);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(drawCable);
+  window.addEventListener("load",drawCable);
+})();
+</script>
+</body>
+</html>
