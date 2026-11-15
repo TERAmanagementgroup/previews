@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garage AKG Breda — wij halen uw auto op</title>
+<meta name="description" content="Garage AKG Breda, Weidehek 32F: APK, onderhoud, winterbanden en reparatie voor ieder merk. Wij halen uw auto gratis op, ook bij uw werk en na kantoortijd. Bel 076 541 2351.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#1E2124; --asphalt-2:#2A2E32; --mark:#F4F4F0; --blue:#1F6FC0; --blue-l:#4BA3F5; --concrete:#E6E8EA; --concrete-2:#D5D8DB;
+  --ink:#1E2124; --ink-soft:#4C5258;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --disp:"League Gothic",Impact,sans-serif; --text:"Readex Pro",system-ui,sans-serif;
+  --tex:radial-gradient(circle at 20% 30%,rgba(255,255,255,.025) 0 1px,transparent 1.5px) 0 0/7px 7px,radial-gradient(circle at 70% 80%,rgba(0,0,0,.18) 0 1px,transparent 1.5px) 0 0/5px 5px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--text);font-weight:300;line-height:1.6;background:var(--concrete);color:var(--ink);overflow-x:hidden}
+::selection{background:var(--blue-l);color:var(--asphalt)}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--blue-l);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:.6em;font:500 1rem/1 var(--text);text-decoration:none;padding:1em 1.5em;border-radius:999px;transition:transform .16s var(--ease-out),background-color .2s ease}
+.btn svg{width:1.1em;height:1.1em}
+.btn-b{background:var(--blue);color:#fff}
+.btn-w{border:1.5px solid rgba(244,244,240,.55);color:var(--mark)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn-b:hover{background:#185DA3}.btn-w:hover{background:rgba(244,244,240,.08)}}
+.ill{position:absolute;right:12px;bottom:12px;z-index:3;font:500 .66rem/1 var(--text);letter-spacing:.14em;text-transform:uppercase;background:rgba(30,33,36,.75);color:var(--mark);padding:.55em .8em;border-radius:4px}
+.paint{font-family:var(--disp);text-transform:uppercase;line-height:.86;letter-spacing:.01em;font-weight:400}
+.h2{font-size:clamp(3.4rem,7vw,6.2rem)}
+.h2 .b{color:var(--blue)}
+.dark .h2 .b{color:var(--blue-l)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;background:var(--asphalt);color:var(--mark);display:flex;flex-direction:column;overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:75% center;animation:settle .6s var(--ease-out) both}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,33,36,.55),rgba(30,33,36,0) 55%),linear-gradient(0deg,rgba(30,33,36,.85),transparent 30%)}
+.top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px}
+.logo{font:400 2.1rem/1 var(--disp);letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:.4em}
+.logo i{display:inline-block;width:.5em;height:.9em;border:3px solid var(--mark);border-bottom:0;font-style:normal}
+.logo span{font:500 .78rem/1.2 var(--text);letter-spacing:.14em;color:#C9CDD1}
+.top a.ph{font:500 .95rem/1 var(--text);text-decoration:none;border-bottom:2px solid var(--blue-l);padding-bottom:3px}
+.hero-body{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 0}
+.h1{font-size:clamp(5rem,12vw,11rem);text-shadow:0 1px 0 rgba(0,0,0,.15)}
+.h1 .ln{display:block;white-space:nowrap;animation:rise .6s var(--ease-out) both}
+.h1 .ln:nth-child(2){animation-delay:.06s}
+.lead{max-width:40ch;font-size:clamp(1.05rem,1.5vw,1.25rem);margin:24px 0 30px;color:#DADDE0}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--mark);margin-bottom:26px}
+.stats div{padding:16px 16px 0 0;border-right:2px solid rgba(244,244,240,.0)}
+.stats b{display:block;font:400 clamp(2.2rem,3.6vw,3rem)/1 var(--disp);text-transform:uppercase}
+.stats span{font-size:.85rem;color:#C9CDD1}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* BAYS (asphalt) */
+.dark{background:var(--asphalt);background-image:var(--tex);color:var(--mark)}
+.pickup{padding:clamp(80px,10vw,130px) 0}
+.pickup-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:50px}
+.pickup-head p{max-width:40ch;color:#C9CDD1}
+.lot{display:grid;grid-template-columns:repeat(3,1fr);position:relative}
+.bay{position:relative;padding:30px clamp(18px,3vw,36px) 40px;min-height:430px;display:flex;flex-direction:column}
+.bay::before,.bay::after{content:"";position:absolute;background:var(--mark);transform-origin:top}
+.bay::before{left:0;top:0;bottom:0;width:4px}
+.lot .bay:last-child{box-shadow:inset -4px 0 0 var(--mark)}
+.bay::after{left:0;right:0;bottom:0;height:4px;transform-origin:left}
+.in .bay::before{animation:drawY .5s var(--ease-out) both;animation-delay:calc(var(--i)*60ms)}
+.in .bay::after{animation:drawX .5s var(--ease-out) both;animation-delay:calc(var(--i)*60ms + 120ms)}
+@keyframes drawY{from{transform:scaleY(0)}to{transform:none}}
+@keyframes drawX{from{transform:scaleX(0)}to{transform:none}}
+.bay .num{font:400 4.4rem/1 var(--disp);color:var(--mark);opacity:.9}
+.bay h3{font:400 clamp(2.4rem,3.6vw,3.2rem)/.95 var(--disp);text-transform:uppercase;margin-top:auto}
+.bay p{color:#C9CDD1;margin-top:10px;max-width:30ch}
+.car{width:64%;max-width:190px;margin:16px auto 22px;display:block}
+.in .car{animation:roll .6s var(--ease-out) both;animation-delay:calc(var(--i)*80ms + 200ms)}
+@keyframes roll{from{transform:translateY(24px)}to{transform:none}}
+.uturn{width:56px;height:56px;color:var(--mark)}
+.pickup-foot{margin-top:34px;color:#C9CDD1}
+
+/* WORKSHOP */
+.shop{padding:clamp(80px,10vw,130px) 0}
+.shop .h2{margin-bottom:46px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--ink)}
+.cell{padding:26px 22px 30px;border-left:3px solid var(--ink);display:flex;flex-direction:column;gap:10px;min-height:340px}
+.cell:last-child{border-right:3px solid var(--ink)}
+.cell .num{font:400 3.4rem/1 var(--disp);color:var(--blue)}
+.cell h3{font:400 2.4rem/.95 var(--disp);text-transform:uppercase;margin-top:auto}
+.cell p{color:var(--ink-soft);font-size:.98rem}
+.cell.photo{padding:0;position:relative;overflow:hidden;border-left:3px solid var(--ink)}
+.cell.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.cell.photo .over{position:relative;z-index:2;margin-top:auto;padding:26px 22px 30px;color:var(--mark);background:linear-gradient(0deg,rgba(30,33,36,.92),rgba(30,33,36,0))}
+.cell.photo .over p{color:#DADDE0}
+.cell.photo .num{color:var(--blue-l);position:relative;z-index:2;padding:26px 22px 0}
+.temp{display:inline-block;font:400 1.6rem/1 var(--disp);color:var(--blue-l)}
+
+/* TRAILER */
+.trailer{display:grid;grid-template-columns:1.2fr 1fr;background:var(--concrete-2)}
+.trailer-img{position:relative;min-height:520px}
+.trailer-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.trailer-txt{padding:clamp(56px,7vw,100px) clamp(20px,5vw,80px);display:flex;flex-direction:column;justify-content:center;gap:22px}
+.trailer-txt p{max-width:38ch;color:var(--ink-soft);font-size:1.1rem}
+
+/* REVIEWS */
+.rev{padding:clamp(80px,10vw,130px) 0}
+.rev-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,7vw,100px);align-items:start}
+.score{font:400 clamp(9rem,20vw,15rem)/.8 var(--disp)}
+.score small{display:block;font:400 1rem/1.4 var(--text);color:var(--ink-soft);margin-top:12px}
+.big-q{font:400 clamp(2.2rem,4vw,3.4rem)/1 var(--disp);text-transform:uppercase;max-width:22ch}
+.big-q .b{color:var(--blue)}
+.praise{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 36px;margin-top:30px}
+.praise li{padding:16px 0;border-top:2px solid var(--ink);font-size:1.08rem}
+.src{margin-top:14px;font-size:.88rem;color:var(--ink-soft)}
+
+/* CONTACT */
+.contact{padding:clamp(80px,10vw,130px) 0 40px}
+.c-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,90px);align-items:end}
+.phone{display:inline-block;font:400 clamp(4rem,10vw,8rem)/.9 var(--disp);text-decoration:none;color:var(--mark);margin:18px 0 26px;white-space:nowrap}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;border-top:4px solid var(--mark)}
+.hours td{padding:12px 0;border-bottom:1px solid rgba(244,244,240,.2)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--blue-l);font-weight:500}
+.addr{margin-top:22px;display:grid;gap:6px;color:#C9CDD1}
+.addr a{color:var(--mark);text-underline-offset:4px}
+.motto{margin-top:60px;font:400 clamp(1.8rem,3.4vw,2.8rem)/1 var(--disp);text-transform:uppercase;color:#C9CDD1;max-width:30ch}
+.foot{margin-top:50px;padding-top:20px;border-top:1px solid rgba(244,244,240,.2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem;color:#9CA2A8}
+
+@media (max-width:900px){
+  .lot{grid-template-columns:1fr}
+  .bay{min-height:0}
+  .lot .bay:last-child{box-shadow:none}
+  .bay{box-shadow:inset -4px 0 0 var(--mark)}
+  .grid4{grid-template-columns:1fr 1fr}
+  .cell{min-height:280px;border-bottom:3px solid var(--ink)}
+  .cell:nth-child(2n){border-right:3px solid var(--ink)}
+  .trailer,.rev-grid,.c-grid{grid-template-columns:1fr}
+  .trailer-img{min-height:300px}
+  .stats{grid-template-columns:1fr 1fr}
+  .praise{grid-template-columns:1fr}
+  .hero-img img{object-position:88% center}
+  .hero>.ill{top:70px;bottom:auto}
+  .car{max-width:84px;margin:0 0 14px}
+  .uturn{width:36px;height:36px;position:absolute;right:20px;top:26px}
+  .bay{padding:24px 20px 28px}
+  .hero-img::after{background:linear-gradient(0deg,rgba(30,33,36,.92),rgba(30,33,36,.35) 60%,rgba(30,33,36,.2))}
+}
+@media (max-width:520px){.grid4{grid-template-columns:1fr}.cell{border-right:3px solid var(--ink)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="car" viewBox="0 0 100 190"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"><rect x="10" y="6" width="80" height="178" rx="26"/><path d="M20 58c10-8 50-8 60 0l-6 26H26z"/><path d="M24 140h52l4 20c-14 6-46 6-60 0z"/><path d="M26 84v56M74 84v56"/></g><g fill="currentColor"><rect x="2" y="34" width="8" height="26" rx="3"/><rect x="90" y="34" width="8" height="26" rx="3"/><rect x="2" y="132" width="8" height="26" rx="3"/><rect x="90" y="132" width="8" height="26" rx="3"/></g></symbol>
+  <symbol id="uturn" viewBox="0 0 56 56"><path d="M14 50V24a14 14 0 0 1 28 0v10" fill="none" stroke="currentColor" stroke-width="6"/><path d="M32 30l10 14 10-14z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="hero-img"><img src="images/hero-illustratie.jpg" width="1376" height="768" alt="Illustratie, geen foto van de garage: van bovenaf een blauwe auto in een parkeervak op donker asfalt"></div>
+  <span class="ill">Illustratie</span>
+  <div class="wrap top">
+    <a class="logo" href="#"><i aria-hidden="true"></i>AKG<span>Garage<br>Breda</span></a>
+    <a class="ph" href="tel:+31765412351">076 541 2351</a>
+  </div>
+  <div class="wrap hero-body">
+    <h1 class="paint h1"><span class="ln">Wij halen</span><span class="ln">hem op.</span></h1>
+    <p class="lead">APK, onderhoud en reparatie voor ieder merk. Wij halen uw auto op, ook bij uw werk en na kantoortijd.</p>
+    <div class="cta">
+      <a class="btn btn-b" href="tel:+31765412351"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bel 076 541 2351</a>
+      <a class="btn btn-w" href="https://www.google.com/maps/search/Garage+AKG+Breda+Weidehek+32+Breda" target="_blank" rel="noopener">Route naar Weidehek 32F</a>
+    </div>
+  </div>
+  <div class="wrap stats" aria-label="In het kort">
+    <div><b>4,8</b><span>gemiddeld op Google</span></div>
+    <div><b>24</b><span>Google-reviews</span></div>
+    <div><b>08:15–17:00</b><span>maandag t/m vrijdag</span></div>
+    <div><b>Ieder merk</b><span>APK, onderhoud, reparatie</span></div>
+  </div>
+</header>
+
+<section class="pickup dark rv" aria-labelledby="p-h">
+  <div class="wrap">
+    <div class="pickup-head">
+      <h2 class="paint h2" id="p-h">Halen <span class="b">&amp;</span> brengen</h2>
+      <p>U kunt uw auto zelf brengen. Maar wij kunnen hem ook gewoon voor u ophalen, en weer terugbrengen.</p>
+    </div>
+    <div class="lot">
+      <div class="bay" style="--i:0"><svg class="uturn"><use href="#uturn"/></svg><svg class="car" viewBox="0 0 100 190" style="--i:0;color:#F4F4F0"><use href="#car"/></svg><h3>Bij u thuis</h3><p>Wij halen de auto op voor de deur en zetten hem daar ook weer neer.</p></div>
+      <div class="bay" style="--i:1"><svg class="uturn"><use href="#uturn"/></svg><svg class="car" viewBox="0 0 100 190" style="--i:1;color:#4BA3F5"><use href="#car"/></svg><h3>Op uw werk</h3><p>Dan hoeft u er geen vrij voor te nemen.</p></div>
+      <div class="bay" style="--i:2"><svg class="uturn"><use href="#uturn"/></svg><svg class="car" viewBox="0 0 100 190" style="--i:2;color:#F4F4F0"><use href="#car"/></svg><h3>Na kantoortijd</h3><p>Ophalen of brengen kan ook buiten de kantooruren.</p></div>
+    </div>
+    <p class="pickup-foot">Liever zelf langskomen? Dat kan ook: Weidehek 32F, Breda. Bel even om af te spreken: <a href="tel:+31765412351" style="color:#F4F4F0">076 541 2351</a>.</p>
+  </div>
+</section>
+
+<section class="shop" aria-labelledby="w-h">
+  <div class="wrap">
+    <h2 class="paint h2" id="w-h">In de <span class="b">werkplaats</span></h2>
+    <div class="grid4">
+      <div class="cell"><span class="num paint">01</span><h3>APK-keuring</h3><p>De wettelijk verplichte keuring, voor de veiligheid op de weg en voor het milieu.</p></div>
+      <div class="cell"><span class="num paint">02</span><h3>Onderhoud</h3><p>Iedere auto heeft onderhoud nodig. Wanneer, dat staat in het instructieboekje van de fabrikant.</p></div>
+      <div class="cell photo"><span class="num paint">03</span><img src="images/winter-illustratie.jpg" width="928" height="1152" alt="Illustratie, geen foto van de garage: een winterband met rijp op het profiel"><span class="ill" style="top:12px;bottom:auto">Illustratie</span><div class="over"><h3 class="paint" style="font-size:2.4rem">Winterbanden</h3><p>Bij <strong style="color:#fff;font-weight:600">7 °C</strong> of kouder presteren winterbanden beter dan zomerbanden.</p></div></div>
+      <div class="cell"><span class="num paint">04</span><h3>Ieder merk</h3><p>Een garage die alle merken repareert. Wat voor reparatie het ook is.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="trailer" aria-labelledby="a-h">
+  <div class="trailer-img"><img src="images/trailer-illustratie.jpg" width="1200" height="896" alt="Illustratie, geen foto van de garage: een open aanhangwagen op een betonnen plein"><span class="ill">Illustratie</span></div>
+  <div class="trailer-txt">
+    <h2 class="paint h2" id="a-h">Aanhanger <span class="b">huren</span></h2>
+    <p>Heeft u maar even een aanhangwagen nodig? Dan is huren natuurlijk veel goedkoper dan kopen. Bel ons en vraag wat er kan.</p>
+    <div class="cta"><a class="btn btn-b" href="tel:+31765412351">Bel over een aanhanger</a></div>
+  </div>
+</section>
+
+<section class="rev" aria-labelledby="r-h">
+  <div class="wrap rev-grid">
+    <div class="score paint" id="r-h">4,8<small>gemiddeld uit 24 Google-reviews</small></div>
+    <div>
+      <p class="big-q">“Een reparatie bleek niet nodig, dus ging de prijs <span class="b">omlaag</span>.”</p>
+      <ul class="praise">
+        <li>Heel goede service, vriendelijk en behulpzaam.</li>
+        <li>Snel een afspraak.</li>
+        <li>De auto rijdt weer goed.</li>
+        <li>Overgestapt van een andere garage, en blij.</li>
+      </ul>
+      <p class="src">Wat klanten vertellen in hun Google-reviews, in onze woorden.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="contact dark" aria-labelledby="c-h">
+  <div class="wrap">
+    <div class="c-grid">
+      <div>
+        <h2 class="paint h2" id="c-h">Bel <span class="b">even.</span></h2>
+        <a class="phone" href="tel:+31765412351">076 541 2351</a>
+        <div class="cta"><a class="btn btn-b" href="tel:+31765412351">Bel nu</a><a class="btn btn-w" href="https://www.google.com/maps/search/Garage+AKG+Breda+Weidehek+32+Breda" target="_blank" rel="noopener">Route</a></div>
+        <div class="addr"><a href="https://www.google.com/maps/search/Garage+AKG+Breda+Weidehek+32+Breda" target="_blank" rel="noopener">Weidehek 32F, 4824 AS Breda</a></div>
+      </div>
+      <table class="hours" aria-label="Openingstijden">
+        <tbody id="hours">
+          <tr><td>Maandag</td><td>08:15–17:00</td></tr><tr><td>Dinsdag</td><td>08:15–17:00</td></tr><tr><td>Woensdag</td><td>08:15–17:00</td></tr><tr><td>Donderdag</td><td>08:15–17:00</td></tr><tr><td>Vrijdag</td><td>08:15–17:00</td></tr><tr><td>Zaterdag</td><td>Gesloten</td></tr><tr><td>Zondag</td><td>Gesloten</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="motto">Wij behandelen klanten zoals wij zelf ook behandeld willen worden.</p>
+    <div class="foot"><span>Garage AKG Breda · Weidehek 32F</span><span>Beelden op deze pagina zijn illustraties.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=(new Date().getDay()+6)%7, rows=document.querySelectorAll('#hours tr'); if(rows[d])rows[d].classList.add('today');
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
