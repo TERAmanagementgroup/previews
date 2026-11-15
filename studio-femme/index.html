@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Femme · Visual stories of love, life &amp; woman</title>
+<meta name="description" content="Studio Femme, fotografie door Sharon uit Etten-Leur. Bruiloften, birth &amp; motherhood, female empowerment en branding. Ongedwongen, met tegenlicht en veel gevoel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Familjen+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121110; --paper:#EEEAE4; --graphite:#2A2725; --taupe:#8A7F74; --taupe-dk:#5E554D; --sand:#C9C0B6;
+  --gold:#D99A4E; --ease-out:cubic-bezier(0.23,1,0.32,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Familjen Grotesk",system-ui,sans-serif;font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden}
+::selection{background:var(--gold);color:var(--ink)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Gilda Display",serif;font-weight:400;line-height:.95;letter-spacing:-0.02em}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;font:500 16px/1 "Familjen Grotesk",sans-serif;padding:17px 26px;border-radius:999px;text-decoration:none;border:1px solid transparent;transition:transform .16s var(--ease-out),background-color .2s ease,border-color .2s ease,color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--paper);color:var(--ink)}
+.btn-o{border-color:rgba(238,234,228,.5);color:var(--paper)}
+.btn-i{background:var(--ink);color:var(--paper)}
+.btn-oi{border-color:rgba(18,17,16,.35);color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.btn-p:hover{background:#fff}.btn-o:hover{border-color:var(--paper)}.btn-i:hover{background:var(--graphite)}.btn-oi:hover{border-color:var(--ink)}}
+.ico{width:18px;height:18px;flex:none}
+.caps{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5;padding:26px 0;color:var(--paper)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:40px;height:40px}
+.logo b{font:400 21px/1 "Gilda Display",serif;letter-spacing:.22em}
+.nav{display:flex;gap:28px;list-style:none}
+.nav a{text-decoration:none;font-size:15px;opacity:.85}
+.nav a:hover{opacity:1}
+
+/* hero */
+.hero{position:relative;min-height:100svh;color:var(--paper);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:var(--ink)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 40%;z-index:-2;animation:settle .6s var(--ease-out) both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(18,17,16,.92) 0%,rgba(18,17,16,.45) 42%,rgba(18,17,16,.1) 70%),linear-gradient(90deg,rgba(18,17,16,.55),transparent 55%)}
+.hero-in{padding:0 0 76px;display:grid;grid-template-columns:1.4fr .6fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(68px,10.5vw,168px);animation:rise .55s var(--ease-out) both}
+.amp{color:var(--gold);position:relative;display:inline-block}
+.amp::before{content:"";position:absolute;inset:-40% -60%;background:radial-gradient(closest-side,rgba(217,154,78,.45),transparent);z-index:-1;pointer-events:none}
+.hero .sub{font-size:20px;line-height:1.45;max-width:30ch;color:#E2DCD3}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.chip{display:inline-flex;gap:8px;align-items:center;margin-top:22px;font-size:14px;color:#D8D1C7}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px 3px rgba(217,154,78,.6)}
+@keyframes settle{from{transform:scale(1.05)}}
+@keyframes rise{from{transform:translateY(12px)}}
+
+/* hi */
+.hi{padding:130px 0 120px;background:var(--paper)}
+.hi-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:start}
+.mono{width:min(260px,100%);aspect-ratio:1;color:var(--ink)}
+.hi .caps{color:var(--taupe-dk);margin-top:22px}
+.hi h2{font-size:clamp(44px,5vw,72px);margin-bottom:30px}
+.letter{font:400 clamp(24px,2.3vw,32px)/1.35 "Gilda Display",serif;max-width:30ch}
+.letter + .letter{margin-top:22px}
+.small-p{margin-top:28px;color:var(--taupe-dk);max-width:52ch}
+.sign{margin-top:28px;font:400 30px/1 "Gilda Display",serif}
+.sign small{display:block;font:500 13px "Familjen Grotesk",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe-dk);margin-top:10px}
+
+/* chapters */
+.ch{position:relative;min-height:100svh;padding:120px 0;overflow:hidden;display:flex;align-items:center;isolation:isolate}
+.ch.dark{background:var(--ink);color:var(--paper)}
+.ch.mid{background:var(--graphite);color:var(--paper)}
+.ch.light{background:var(--paper);color:var(--ink)}
+.giant{position:absolute;top:50%;left:0;right:0;font:400 clamp(150px,29vw,460px)/.8 "Gilda Display",serif;letter-spacing:-0.04em;white-space:nowrap;transform:translateY(-50%);z-index:-1;pointer-events:none;text-align:center}
+.giant span{display:inline-block}
+.dark .giant{color:#2B2826}.mid .giant{color:#423C39}.light .giant{color:#DDD5CA}
+.ch-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;width:min(1240px,100% - 48px)}
+.ch.rev .photo{order:2}
+.photo{position:relative;justify-self:center;width:min(440px,100%)}
+.photo img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;filter:grayscale(1) contrast(1.05)}
+.photo::after{content:"";position:absolute;width:70%;aspect-ratio:1;top:-18%;right:-22%;background:radial-gradient(closest-side,rgba(217,154,78,.42),transparent);mix-blend-mode:screen;pointer-events:none}
+.light .photo::after{mix-blend-mode:multiply;background:radial-gradient(closest-side,rgba(217,154,78,.35),transparent)}
+.photo figcaption{margin-top:12px;font-size:14px;color:var(--taupe)}
+.ch .caps{color:var(--gold)}
+.light .caps{color:#8E5A1E}
+.ch h2{font-size:clamp(46px,5.4vw,80px);margin:16px 0 24px}
+.ch p{max-width:46ch;color:inherit;opacity:.88}
+.ch p + p{margin-top:14px}
+.ch ul{list-style:none;margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.ch li{font-size:15px;padding:8px 14px;border-radius:999px;border:1px solid currentColor;opacity:.8}
+.ch .acts{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* sessions */
+.sess{background:var(--paper);padding:120px 0}
+.ticket{display:grid;grid-template-columns:auto 1fr auto;gap:56px;align-items:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:44px 0}
+.date{text-align:center;font-family:"Gilda Display",serif;line-height:.9}
+.date b{display:block;font-weight:400;font-size:clamp(110px,12vw,170px)}
+.date span{font-size:24px;letter-spacing:.2em;text-transform:uppercase}
+.ticket h2{font-size:clamp(40px,4.4vw,64px);margin-bottom:14px}
+.ticket p{color:var(--taupe-dk);max-width:48ch}
+
+/* words */
+.words{background:var(--ink);color:var(--paper);padding:130px 0}
+.words-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:start}
+.words blockquote{font:400 clamp(34px,3.8vw,56px)/1.15 "Gilda Display",serif}
+.words blockquote::before{content:"“";color:var(--gold);display:block;font-size:1.6em;line-height:.6;margin-bottom:10px}
+.words cite{display:block;margin-top:26px;font-style:normal;color:var(--sand)}
+.score{border-top:1px solid rgba(238,234,228,.25);padding-top:26px}
+.score b{display:block;font:400 clamp(90px,9vw,130px)/.85 "Gilda Display",serif}
+.score .caps{color:var(--sand);display:block;margin:12px 0 26px}
+.praise{list-style:none}
+.praise li{padding:14px 0;border-top:1px solid rgba(238,234,228,.15);color:#DDD6CC}
+.note{margin-top:18px;font-size:13px;color:var(--taupe)}
+
+/* contact */
+.contact{background:var(--paper);padding:130px 0 90px;overflow:hidden}
+.contact h2{font-size:clamp(56px,8vw,128px)}
+.contact h2 .amp::before{inset:-30% -50%}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;border-top:1px solid var(--ink);padding-top:30px}
+.c-grid .caps{color:var(--taupe-dk);display:block;margin-bottom:10px}
+.c-grid a{text-underline-offset:5px;text-decoration-color:var(--gold)}
+.contact .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:44px}
+.foot{background:var(--ink);color:var(--taupe);font-size:14px;padding:28px 0}
+.foot .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .giant span{animation:glide linear both;animation-timeline:view(block);animation-range:cover 0% cover 100%}
+    .ch.rev .giant span{animation-name:glide-r}
+    .photo::after{animation:glow linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+  }
+}
+@keyframes glide{from{transform:translateX(8%)}to{transform:translateX(-8%)}}
+@keyframes glide-r{from{transform:translateX(-8%)}to{transform:translateX(8%)}}
+@keyframes glow{from{transform:translate(-10%,10%) scale(.85)}to{transform:translate(8%,-6%) scale(1.1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .hero-in,.hi-grid,.ch-grid,.words-grid,.c-grid{grid-template-columns:1fr}
+  .ch.rev .photo{order:0}
+  .ch-grid{gap:44px}
+  .ticket{grid-template-columns:1fr;gap:20px;text-align:left}
+  .date{text-align:left}
+  .mono{width:120px}
+}
+@media (max-width:600px){
+  body{font-size:17px}
+  .wrap,.ch-grid{width:calc(100% - 32px)}
+  .hero-in{padding-bottom:52px}
+  .hi,.sess,.words,.contact{padding:84px 0}
+  .ch{padding:84px 0;min-height:auto}
+  .giant{top:110px;transform:none;font-size:42vw}
+  .photo{width:82%}
+  .photo::after{right:-14%}
+  .btn{padding:15px 22px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+  <symbol id="sf" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="50" y="66" text-anchor="middle" font-family="Gilda Display, serif" font-size="46" fill="currentColor" letter-spacing="-2">SF</text></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Studio Femme"><svg aria-hidden="true"><use href="#sf"/></svg><b>STUDIO FEMME</b></a>
+    <ul class="nav"><li><a href="#love">Love</a></li><li><a href="#life">Life</a></li><li><a href="#woman">Woman</a></li><li><a href="#contact">Contact</a></li></ul>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <img src="images/hero-strand-tegenlicht.jpg" alt="Een vrouw in een lichte jurk loopt in tegenlicht over het strand, foto door Studio Femme" width="2400" height="1597" fetchpriority="high">
+  <div class="wrap hero-in">
+    <h1 id="h1">Love, life<br><span class="amp">&amp;</span> woman.</h1>
+    <div>
+      <p class="sub">Fotografie voor momenten die je niet alleen wilt herinneren, maar blijven voelen.</p>
+      <div class="acts">
+        <a class="btn btn-p" href="mailto:info@studio-femme.nl"><svg class="ico"><use href="#i-mail"/></svg>Mail Sharon</a>
+        <a class="btn btn-o" href="tel:+31631046001"><svg class="ico"><use href="#i-tel"/></svg>06 31 04 60 01</a>
+      </div>
+      <p class="chip"><i></i>5,0 op Google · 57 reviews</p>
+    </div>
+  </div>
+</section>
+
+<section class="hi" aria-labelledby="h-hi">
+  <div class="wrap hi-grid">
+    <div>
+      <svg class="mono" aria-hidden="true"><use href="#sf"/></svg>
+      <p class="caps">Het gezicht achter Studio Femme</p>
+    </div>
+    <div>
+      <h2 id="h-hi">Hi! Ik ben Sharon.</h2>
+      <p class="letter">De mooiste beelden worden niet gemaakt, ze ontstaan. In een blik, een aanraking, een klein moment dat eigenlijk alles zegt.</p>
+      <p class="letter">Ik hou van tegenlicht, van zachte doorkijkjes en van beelden die voelen zoals het moment was.</p>
+      <p class="small-p">Van de eerste ontmoeting met jullie kindje tot de knuffel van je liefste oma op jullie bruiloft. In het dagelijks leven ben ik een trotse boys mom. Mijn rust vind ik in yoga en de natuur, mijn dag begint met koffie, en in de zomer loop ik het liefst op blote voeten.</p>
+      <p class="sign">Liefs, Sharon<small>Studio Femme · Etten-Leur</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="ch dark" id="love" aria-labelledby="h-love">
+  <div class="giant" aria-hidden="true"><span>Love</span></div>
+  <div class="wrap ch-grid">
+    <figure class="photo"><img src="images/love-bruidspaar-laan.jpg" alt="Een bruidspaar loopt hand in hand over een bomenlaan, foto door Studio Femme" width="1367" height="2048" loading="lazy"><figcaption>Bruiloft, foto door Studio Femme</figcaption></figure>
+    <div>
+      <span class="caps">Love · Weddings</span>
+      <h2 id="h-love">Jullie dag, zoals hij voelde.</h2>
+      <p>Voor bruidsparen die hun dag willen laten vastleggen met emotie, verbinding en beelden die een beetje mogen schuren.</p>
+      <p>Sharon beweegt mee tussen jullie gasten en legt de momenten vast zoals ze ontstaan. Voor wie niet bang is voor een dansje voor de camera, en de kracht van zwart-wit weet te waarderen.</p>
+      <ul><li>Nederland</li><li>België</li><li>Bruiloft in het buitenland</li><li>Zwart-wit</li></ul>
+      <div class="acts"><a class="btn btn-p" href="mailto:info@studio-femme.nl?subject=Onze%20bruiloft">Vraag je datum aan</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="ch light rev" id="life" aria-labelledby="h-life">
+  <div class="giant" aria-hidden="true"><span>Life</span></div>
+  <div class="wrap ch-grid">
+    <figure class="photo"><img src="images/life-zwangerschap.jpg" alt="Zwart-witfoto van een zwangere buik met handen erop, foto door Studio Femme" width="1297" height="1950" loading="lazy"><figcaption>Zwangerschap, foto door Studio Femme</figcaption></figure>
+    <div>
+      <span class="caps">Life · Birth &amp; motherhood</span>
+      <h2 id="h-life">Van de eerste schopjes tot het gewone gezinsleven.</h2>
+      <p>Een shoot draait om spontaniteit, connectie en de schoonheid van het alledaagse. Leg de kleine en grote momenten vast zoals ze écht zijn.</p>
+      <p>Buiten in het gouden uur, of bij een geboorte, ook thuis.</p>
+      <ul><li>Zwangerschap</li><li>Geboorte</li><li>Newborn</li><li>Gezin</li><li>Gender reveal</li></ul>
+      <div class="acts"><a class="btn btn-i" href="mailto:info@studio-femme.nl?subject=Birth%20%26%20motherhood%20shoot">Plan je shoot</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="ch mid" id="woman" aria-labelledby="h-woman">
+  <div class="giant" aria-hidden="true"><span>Woman</span></div>
+  <div class="wrap ch-grid">
+    <figure class="photo"><img src="images/woman-empowerment.jpg" alt="Zwart-witfoto van een vrouw met krullen voor haar gezicht, foto door Studio Femme" width="1300" height="1950" loading="lazy"><figcaption>Female empowerment, foto door Studio Femme</figcaption></figure>
+    <div>
+      <span class="caps">Woman · Empowerment &amp; branding</span>
+      <h2 id="h-woman">Er is niets krachtigers dan een vrouw.</h2>
+      <p>Wil jij je lijf vieren, je kracht centraal zetten of iets een plekje geven? Samen maken we die reis, op een creatieve manier.</p>
+      <p>Ondernemer? Achter ieder bedrijf zit een verhaal, en dat begint bij jou. Met branding-beelden laat je zien hoe het voelt om met jou te werken.</p>
+      <ul><li>Female empowerment</li><li>Branding</li></ul>
+      <div class="acts"><a class="btn btn-p" href="mailto:info@studio-femme.nl?subject=Empowerment%20of%20branding%20shoot">Vertel je verhaal</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sess" aria-labelledby="h-sess">
+  <div class="wrap ticket">
+    <div class="date" aria-hidden="true"><b>21</b><span>nov</span></div>
+    <div>
+      <span class="caps" style="color:#8E5A1E">Zaterdag 21 november · Studio Flow, Breda</span>
+      <h2 id="h-sess" style="margin-top:12px">Studio Sessions</h2>
+      <p>Een korte studiosessie voor jullie samen, met alle ruimte om gewoon jezelf te zijn.</p>
+    </div>
+    <a class="btn btn-i" href="mailto:info@studio-femme.nl?subject=Studio%20Sessions%2021%20november">Plek aanvragen</a>
+  </div>
+</section>
+
+<section class="words" aria-labelledby="h-words">
+  <div class="wrap words-grid">
+    <div>
+      <h2 id="h-words" class="caps" style="font-family:'Familjen Grotesk';color:var(--gold);margin-bottom:28px;line-height:1.4">Loving words</h2>
+      <blockquote>We konden lekker vrij bewegen en hoefden niet te poseren.</blockquote>
+      <cite>Kelly &amp; Ralph, gezinsshoot in het Cadettenkamp</cite>
+    </div>
+    <div class="score">
+      <b>5,0</b><span class="caps">57 Google-reviews</span>
+      <ul class="praise">
+        <li>De foto's zijn er snel.</li>
+        <li>Ontspannen shoots, zonder geforceerd poseren.</li>
+        <li>Vanaf het eerste contact duidelijke communicatie.</li>
+        <li>Klanten komen terug: gender reveal, newborn, gezin.</li>
+      </ul>
+      <p class="note">Samengevat uit Google-reviews.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <h2 id="h-contact">Voelt het <span style="white-space:nowrap"><span class="amp">goed</span>?</span> Laat het weten.</h2>
+    <div class="c-grid">
+      <div><span class="caps">Mail en bel</span><a href="mailto:info@studio-femme.nl">info@studio-femme.nl</a><br><a href="tel:+31631046001">06 31 04 60 01</a></div>
+      <div><span class="caps">Studio Femme</span><a href="https://www.google.com/maps/search/Studio+Femme+Binnenhof+74+Etten-Leur" target="_blank" rel="noopener">Binnenhof 74, 4871 BP Etten-Leur</a><br>Ma–za 09:00–21:00</div>
+      <div><span class="caps">Werkgebied</span>Etten-Leur, Breda, Rijsbergen en Noord-Brabant. Bruiloften in Nederland, België en het buitenland.</div>
+    </div>
+    <div class="acts">
+      <a class="btn btn-i" href="mailto:info@studio-femme.nl"><svg class="ico"><use href="#i-mail"/></svg>Mail Sharon</a>
+      <a class="btn btn-oi" href="tel:+31631046001"><svg class="ico"><use href="#i-tel"/></svg>Bel 06 31 04 60 01</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap"><span>Studio Femme · Sharon · Etten-Leur</span><span>Visual stories of love, life &amp; woman</span></div></footer>
+</body>
+</html>
