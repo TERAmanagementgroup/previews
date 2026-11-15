@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McFlek Service Point Breda — schoenen, horloges, sleutels en telefoons</title>
+<meta name="description" content="McFlek Service Point in de Ginnekenstraat 29, Breda: schoenreparatie, horlogereparatie, sleutels en sloten, telefoonreparatie. 6 maanden garantie op reparaties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@112.5..125,700..900&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#FF5F00; --orange-d:#C24600; --slate:#1B1C1E; --slate-2:#26282B; --leather:#9A6236;
+  --paper:#F4EFE6; --paper-2:#E8E1D4; --steel:#A7A9AC; --ink:#1B1C1E; --ink-soft:#55504A;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --disp:"Mona Sans",system-ui,sans-serif; --text:"Inclusive Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--text);background:var(--paper);color:var(--ink);line-height:1.55;font-size:1.0625rem;overflow-x:hidden}
+::selection{background:var(--orange);color:var(--slate)}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.d{font-family:var(--disp);font-stretch:125%;font-weight:900;letter-spacing:-.02em;line-height:.92}
+.btn{display:inline-flex;align-items:center;gap:.6em;font:600 1rem/1 var(--text);text-decoration:none;padding:1em 1.45em;border-radius:999px;transition:transform .16s var(--ease-out),background-color .2s ease}
+.btn svg{width:1.1em;height:1.1em}
+.btn-o{background:var(--orange);color:var(--slate)}
+.btn-l{border:1.5px solid rgba(244,239,230,.45);color:var(--paper)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn-o:hover{background:#FF7A2B}.btn-l:hover{background:rgba(244,239,230,.08)}}
+.ill{position:absolute;right:12px;bottom:12px;z-index:4;font:600 .66rem/1 var(--text);letter-spacing:.14em;text-transform:uppercase;background:rgba(27,28,30,.75);color:var(--paper);padding:.55em .8em;border-radius:4px}
+
+/* tag */
+.tag{--rot:0deg;position:relative;display:inline-flex;align-items:center;gap:.5em;background:var(--paper);color:var(--slate);font:700 .8rem/1 var(--disp);font-stretch:112.5%;letter-spacing:.02em;padding:.6em .8em .6em 1.5em;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+.tag::before{content:"";position:absolute;left:9px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--slate)}
+.tag.o{background:var(--orange)}
+.tag small{font:400 .7rem/1 var(--text);opacity:.75;font-variant-numeric:tabular-nums}
+
+/* HERO */
+.hero{background:var(--slate);color:var(--paper);position:relative}
+.top{position:absolute;inset:0 0 auto 0;z-index:5;padding:20px 0}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font:900 1.25rem/1 var(--disp);font-stretch:125%;text-decoration:none;letter-spacing:-.01em}
+.brand span{color:var(--orange)}
+.top a.ph{font:600 .95rem/1 var(--text);text-decoration:none;border-bottom:1.5px solid var(--orange);padding-bottom:3px}
+.bench{position:relative;aspect-ratio:1376/768;overflow:hidden;max-height:100svh;min-height:560px}
+.bench img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;animation:settle .6s var(--ease-out) both}
+.bench::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,28,30,.75),rgba(27,28,30,.1) 48%,transparent 60%);pointer-events:none}
+.hero-copy{position:absolute;z-index:3;left:max(20px,calc((100% - 1240px)/2));top:50%;transform:translateY(-46%);width:min(620px,50%)}
+.h1{font-size:clamp(2.6rem,5.2vw,5rem)}
+.h1{line-height:.98}.h1 .ln{white-space:nowrap}
+.h1 .ln{display:block;animation:rise .6s var(--ease-out) both}
+.h1 .ln:nth-child(2){animation-delay:.06s}.h1 .ln:nth-child(3){animation-delay:.12s}
+.h1 em{font-style:normal;color:var(--orange)}
+.lead{margin:22px 0 28px;max-width:36ch;color:#DDD6CA;font-size:1.15rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.spot{position:absolute;z-index:3;transform:translate(-8px,-50%);border:0;cursor:pointer;background:none;padding:0;transform-origin:0 50%}
+.spot .tag{animation:swing .5s var(--ease-out) both;animation-delay:calc(.35s + var(--i)*80ms);transform-origin:12px 50%}
+.spot[aria-pressed="true"] .tag{background:var(--orange)}
+@media (hover:hover) and (pointer:fine){.spot:hover .tag{animation:swing2 .5s var(--ease-out)}}
+@keyframes settle{from{transform:scale(1.04)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes swing{from{transform:rotate(-8deg)}to{transform:none}}
+@keyframes swing2{0%{transform:rotate(0)}40%{transform:rotate(-6deg)}100%{transform:rotate(0)}}
+
+/* COUNTER */
+.counter{padding:clamp(70px,9vw,120px) 0;background:var(--paper)}
+.counter-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.h2{font-size:clamp(2.6rem,5.4vw,4.6rem)}
+.h2 em{font-style:normal;color:var(--orange-d)}
+.counter-head p{max-width:38ch;color:var(--ink-soft)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:800 1rem/1 var(--disp);font-stretch:112.5%;padding:1em 1.3em;border-radius:999px;border:1.5px solid var(--slate);background:transparent;color:var(--slate);cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.tab[aria-selected="true"]{background:var(--slate);color:var(--paper)}
+@media (hover:hover) and (pointer:fine){.tab:hover{background:var(--paper-2)}.tab[aria-selected="true"]:hover{background:var(--slate)}}
+.panel{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,70px);background:var(--slate);color:var(--paper);border-radius:22px;padding:clamp(28px,5vw,60px);min-height:340px}
+.panel[hidden]{display:none}
+.panel.show{animation:pin .22s var(--ease-out)}
+@keyframes pin{from{transform:translateY(8px);opacity:.4}to{transform:none;opacity:1}}
+.panel h3{font-size:clamp(2.2rem,4.4vw,3.6rem);margin-bottom:16px}
+.panel p{color:#CFC8BC;max-width:40ch}
+.items{list-style:none;display:grid;gap:0;align-content:start}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(167,169,172,.3);font-size:1.1rem}
+.items li span{color:var(--orange);font:700 .8rem/1.6 var(--disp);font-stretch:112.5%}
+.guar{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* SPLITS */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:min(90vh,820px)}
+.split-img{position:relative;overflow:hidden}
+.split-img img{width:100%;height:100%;object-fit:cover}
+.split-txt{padding:clamp(56px,8vw,110px) clamp(20px,6vw,90px);display:flex;flex-direction:column;justify-content:center;gap:22px}
+.big-list{list-style:none}
+.big-list li{font:900 clamp(1.8rem,3.4vw,2.8rem)/1.05 var(--disp);font-stretch:125%;letter-spacing:-.02em;padding:12px 0;border-bottom:1.5px solid currentColor;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.big-list li small{font:400 .9rem/1.3 var(--text);letter-spacing:0;opacity:.75;text-align:right;max-width:20ch}
+.split.dark{background:var(--slate);color:var(--paper)}
+.split.dark .split-img{order:2}
+.note{color:var(--ink-soft);max-width:44ch}
+.dark .note{color:#CFC8BC}
+
+/* WATCH */
+.watch{padding:clamp(70px,9vw,120px) 0;background:var(--paper-2)}
+.watch-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.dial{width:min(460px,100%);aspect-ratio:1;margin-inline:auto;filter:drop-shadow(0 30px 40px rgba(27,28,30,.25))}
+.dial .hand{transform-origin:200px 200px;transition:transform .9s var(--ease-out)}
+.dial .hh{transform:rotate(305deg)} .dial .mh{transform:rotate(60deg)}
+.in .dial .hand{animation:h0 .9s var(--ease-out) both}
+@keyframes h0{from{transform:rotate(0)}}
+.wlist{list-style:none;counter-reset:w;margin-top:26px}
+.wlist li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:14px 0;border-top:1.5px solid var(--slate);align-items:baseline}
+.wlist li b{font:900 1.6rem/1 var(--disp);font-stretch:125%}
+.wlist li span{font-size:1.1rem}
+
+/* MARQUEE */
+.marq{background:var(--orange);color:var(--slate);overflow:hidden;padding:22px 0;white-space:nowrap}
+.marq-in{display:inline-flex;gap:40px;animation:marq 32s linear infinite;font:900 clamp(1.8rem,4vw,3rem)/1 var(--disp);font-stretch:125%;letter-spacing:-.02em}
+.marq-in span::after{content:"";display:inline-block;width:.32em;height:.32em;border-radius:50%;background:var(--slate);margin-left:40px;vertical-align:middle}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* REVIEWS */
+.rev{padding:clamp(70px,9vw,120px) 0}
+.rev-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.score{font-size:clamp(7rem,16vw,12rem)}
+.score small{display:block;font:400 1rem/1.4 var(--text);letter-spacing:0;color:var(--ink-soft);margin-top:12px}
+.praise{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.praise li{padding:20px 0;border-top:1.5px solid var(--slate);font-size:1.25rem;line-height:1.35}
+.src{margin-top:18px;font-size:.9rem;color:var(--ink-soft)}
+
+/* VISIT */
+.visit{background:var(--slate);color:var(--paper);padding:clamp(70px,9vw,120px) 0 40px}
+.v-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,80px)}
+.phone{display:inline-block;white-space:nowrap;font-size:clamp(2.4rem,6vw,5rem);color:var(--orange);text-decoration:none;margin:18px 0 26px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:13px 0;border-bottom:1px solid rgba(167,169,172,.3)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--orange);font-weight:700}
+.addr{margin-top:26px;display:grid;gap:8px}
+.addr a{text-underline-offset:4px}
+.foot{margin-top:70px;padding-top:20px;border-top:1px solid rgba(167,169,172,.3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:var(--steel)}
+
+@media (max-width:860px){
+  .bench{aspect-ratio:auto;min-height:0;height:auto;max-height:none}
+  .bench img{position:relative;height:auto;aspect-ratio:1376/768;object-fit:cover}
+  .bench::after{display:none}
+  .hero-copy{position:relative;left:auto;top:auto;transform:none;width:auto;padding:96px 20px 36px}
+  .hero{display:flex;flex-direction:column}
+  .hero-wrap{display:flex;flex-direction:column-reverse}
+  .spot{display:none}
+  .bench img{aspect-ratio:4/3;object-position:85% center}
+  .panel,.split,.watch-grid,.rev-grid,.v-grid{grid-template-columns:1fr}
+  .split.dark .split-img{order:0}
+  .split-img{height:420px}
+  .praise{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="top"><div class="wrap"><a class="brand" href="#">McFlek <span>Service Point</span></a><a class="ph" href="tel:+31765144821">076 514 4821</a></div></div>
+  <div class="hero-wrap">
+    <div class="bench" id="bench">
+      <img src="images/flatlay-illustratie.jpg" width="1376" height="768" alt="Illustratie, geen foto van de winkel: van bovenaf een schoen, rubber hak, oranje zolen, hamer, horloge, sleutels, autosleutel en telefoon met gebarsten scherm, netjes neergelegd op leisteen">
+      <span class="ill">Illustratie</span>
+      <button class="spot" style="left:63%;top:17%;--i:0" data-t="schoenen" aria-pressed="false"><span class="tag o">Schoenen <small>Nº 01</small></span></button>
+      <button class="spot" style="left:56%;top:76%;--i:1" data-t="horloges" aria-pressed="false"><span class="tag">Horloges <small>Nº 02</small></span></button>
+      <button class="spot" style="left:70%;top:90%;--i:2" data-t="sleutels" aria-pressed="false"><span class="tag">Sleutels <small>Nº 03</small></span></button>
+      <button class="spot" style="left:86%;top:68%;--i:3" data-t="telefoons" aria-pressed="false"><span class="tag">Telefoons <small>Nº 04</small></span></button>
+    </div>
+    <div class="hero-copy">
+      <h1 class="d h1"><span class="ln">Kapot?</span><span class="ln">Wij maken <em>het</em></span><span class="ln">weer heel.</span></h1>
+      <p class="lead">Schoenen, horloges, sleutels en telefoons. In de Ginnekenstraat 29 in Breda.</p>
+      <div class="cta">
+        <a class="btn btn-o" href="tel:+31765144821"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bel 076 514 4821</a>
+        <a class="btn btn-l" href="https://www.google.com/maps/search/McFlek+Service+Point+Ginnekenstraat+29+Breda" target="_blank" rel="noopener">Route</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="counter" id="balie" aria-labelledby="c-h">
+  <div class="wrap">
+    <div class="counter-head">
+      <h2 class="d h2" id="c-h">Wat moet er<br><em>gemaakt</em> worden?</h2>
+      <p>Kies wat er kapot is, of tik op een label op de werkbank hierboven. Op reparaties zit 6 maanden garantie.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Soort reparatie">
+      <button class="tab" role="tab" id="t-schoenen" aria-controls="p-schoenen" aria-selected="true">Schoenen</button>
+      <button class="tab" role="tab" id="t-horloges" aria-controls="p-horloges" aria-selected="false" tabindex="-1">Horloges</button>
+      <button class="tab" role="tab" id="t-sleutels" aria-controls="p-sleutels" aria-selected="false" tabindex="-1">Sleutels &amp; sloten</button>
+      <button class="tab" role="tab" id="t-telefoons" aria-controls="p-telefoons" aria-selected="false" tabindex="-1">Telefoons</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p-schoenen" aria-labelledby="t-schoenen">
+      <div><h3 class="d">Schoenen</h3><p>Van een losse hak tot je beste paar. Ook luxe schoenen en sneakers.</p><div class="guar"><span class="tag o">6 maanden garantie</span><a class="btn btn-l" href="tel:+31765144821">Bel even</a></div></div>
+      <ul class="items"><li>Hakken<span>Nº 01</span></li><li>Zolen<span>Nº 02</span></li><li>Luxe schoenen<span>Nº 03</span></li><li>Sneakers<span>Nº 04</span></li></ul>
+    </div>
+    <div class="panel" role="tabpanel" id="p-horloges" aria-labelledby="t-horloges" hidden>
+      <div><h3 class="d">Horloges</h3><p>Stil blijven staan, band te groot of glas kapot? Breng hem langs.</p><div class="guar"><span class="tag o">6 maanden garantie</span><a class="btn btn-l" href="tel:+31765144821">Bel even</a></div></div>
+      <ul class="items"><li>Batterij vervangen<span>Nº 01</span></li><li>Band<span>Nº 02</span></li><li>Glas<span>Nº 03</span></li><li>Waterdichtheidstest<span>Nº 04</span></li></ul>
+    </div>
+    <div class="panel" role="tabpanel" id="p-sleutels" aria-labelledby="t-sleutels" hidden>
+      <div><h3 class="d">Sleutels &amp; sloten</h3><p>Een extra huissleutel, of een nieuwe autosleutel met afstandsbediening en chip.</p><div class="guar"><span class="tag o">6 maanden garantie</span><a class="btn btn-l" href="tel:+31765144821">Bel even</a></div></div>
+      <ul class="items"><li>Huissleutels<span>Nº 01</span></li><li>Autosleutels met afstandsbediening en chip<span>Nº 02</span></li><li>Certificaatsleutels<span>Nº 03</span></li><li>Kluissleutels<span>Nº 04</span></li></ul>
+    </div>
+    <div class="panel" role="tabpanel" id="p-telefoons" aria-labelledby="t-telefoons" hidden>
+      <div><h3 class="d">Telefoons</h3><p>Telefoonreparatie, en ook voor een simkaart of accessoires kun je hier terecht.</p><div class="guar"><span class="tag o">6 maanden garantie</span><a class="btn btn-l" href="tel:+31765144821">Bel even</a></div></div>
+      <ul class="items"><li>Telefoonreparatie<span>Nº 01</span></li><li>Simkaarten<span>Nº 02</span></li><li>Telefoonaccessoires<span>Nº 03</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="split" aria-labelledby="s-h">
+  <div class="split-img"><img src="images/heel-illustratie.jpg" width="928" height="1152" alt="Illustratie, geen foto van de winkel: handen lijmen een nieuwe rubber hak onder een leren schoen"><span class="ill">Illustratie</span></div>
+  <div class="split-txt">
+    <h2 class="d h2" id="s-h">Nieuwe hak,<br><em>nieuwe</em> zool.</h2>
+    <ul class="big-list"><li>Hakken<small>losgeraakt of afgesleten</small></li><li>Zolen<small>dun gelopen</small></li><li>Luxe schoenen<small>met zorg</small></li><li>Sneakers<small>ook die</small></li></ul>
+    <p class="note">Schoenen weggooien omdat de hak eraf is, hoeft niet.</p>
+  </div>
+</section>
+
+<section class="split dark" aria-labelledby="k-h">
+  <div class="split-img"><img src="images/keys-illustratie.jpg" width="928" height="1152" alt="Illustratie, geen foto van de winkel: een sleutel wordt gefreesd in een sleutelmachine, met vonken"><span class="ill">Illustratie</span></div>
+  <div class="split-txt">
+    <h2 class="d h2" id="k-h">Sleutel<br><em style="color:var(--orange)">bijmaken.</em></h2>
+    <ul class="big-list"><li>Huis<small>huissleutels</small></li><li>Auto<small>met afstandsbediening en chip</small></li><li>Certificaat<small>certificaatsleutels</small></li><li>Kluis<small>kluissleutels</small></li></ul>
+    <p class="note">Klanten noemen het bijmaken van sleutels als iets dat hier goed gaat.</p>
+  </div>
+</section>
+
+<section class="watch rv" aria-labelledby="w-h">
+  <div class="wrap watch-grid">
+    <svg class="dial" viewBox="0 0 400 400" aria-hidden="true">
+      <circle cx="200" cy="200" r="190" fill="#1B1C1E"/>
+      <circle cx="200" cy="200" r="172" fill="#F4EFE6"/>
+      <g stroke="#1B1C1E" stroke-linecap="round">
+        <line x1="200" y1="40" x2="200" y2="70" stroke-width="7"/><line x1="360" y1="200" x2="330" y2="200" stroke-width="7"/>
+        <line x1="200" y1="360" x2="200" y2="330" stroke-width="7"/><line x1="40" y1="200" x2="70" y2="200" stroke-width="7"/>
+        <g stroke-width="3"><line x1="280" y1="61.4" x2="272" y2="75.3"/><line x1="338.6" y1="120" x2="324.7" y2="128"/><line x1="338.6" y1="280" x2="324.7" y2="272"/><line x1="280" y1="338.6" x2="272" y2="324.7"/><line x1="120" y1="338.6" x2="128" y2="324.7"/><line x1="61.4" y1="280" x2="75.3" y2="272"/><line x1="61.4" y1="120" x2="75.3" y2="128"/><line x1="120" y1="61.4" x2="128" y2="75.3"/></g>
+      </g>
+      <text x="200" y="128" text-anchor="middle" font-family="Mona Sans, sans-serif" font-weight="900" font-size="22" fill="#1B1C1E">McFLEK</text>
+      <text x="200" y="290" text-anchor="middle" font-family="Inclusive Sans, sans-serif" font-size="13" fill="#55504A" letter-spacing="3">GINNEKENSTRAAT</text>
+      <rect class="hand hh" x="194" y="105" width="12" height="105" rx="6" fill="#1B1C1E"/>
+      <rect class="hand mh" x="196" y="60" width="8" height="150" rx="4" fill="#FF5F00"/>
+      <circle cx="200" cy="200" r="11" fill="#1B1C1E"/><circle cx="200" cy="200" r="4" fill="#FF5F00"/>
+    </svg>
+    <div>
+      <h2 class="d h2" id="w-h">Horloge<br><em>stil</em> blijven staan?</h2>
+      <ol class="wlist">
+        <li><b>01</b><span>Nieuwe batterij</span></li>
+        <li><b>02</b><span>Band vervangen of op maat maken</span></li>
+        <li><b>03</b><span>Nieuw glas</span></li>
+        <li><b>04</b><span>Waterdichtheidstest</span></li>
+      </ol>
+      <p class="src">Een klant vertelt dat de horlogeband hier gratis werd aangepast.</p>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-label="Ook in de winkel: telefoonreparatie, simkaarten, telefoonaccessoires, reisartikelen">
+  <div class="marq-in" aria-hidden="true"><span>Telefoonreparatie</span><span>Simkaarten</span><span>Telefoonaccessoires</span><span>Reisartikelen</span><span>Telefoonreparatie</span><span>Simkaarten</span><span>Telefoonaccessoires</span><span>Reisartikelen</span></div>
+</div>
+
+<section class="rev" aria-labelledby="r-h">
+  <div class="wrap rev-grid">
+    <div class="d score" id="r-h">4,1<small>gemiddeld uit 226 Google-reviews</small></div>
+    <div>
+      <ul class="praise">
+        <li>Heel vriendelijk geholpen.</li>
+        <li>Sleutels goed bijgemaakt.</li>
+        <li>Horlogeband gratis aangepast.</li>
+        <li>Snel en behulpzaam, en ze denken mee.</li>
+      </ul>
+      <p class="src">Wat klanten vertellen in hun Google-reviews, in onze woorden.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="visit" id="langskomen" aria-labelledby="v-h">
+  <div class="wrap v-grid">
+    <div>
+      <h2 class="d h2" id="v-h">Breng het<br><em style="color:var(--orange)">langs.</em></h2>
+      <a class="d phone" href="tel:+31765144821">076 514 4821</a>
+      <div class="cta"><a class="btn btn-o" href="tel:+31765144821">Bel nu</a><a class="btn btn-l" href="https://www.google.com/maps/search/McFlek+Service+Point+Ginnekenstraat+29+Breda" target="_blank" rel="noopener">Route</a></div>
+      <div class="addr"><a href="https://www.google.com/maps/search/McFlek+Service+Point+Ginnekenstraat+29+Breda" target="_blank" rel="noopener">Ginnekenstraat 29, 4811 JD Breda</a><span style="color:var(--steel)">Een vestiging van McFlek Service Point.</span></div>
+    </div>
+    <table class="hours" aria-label="Openingstijden">
+      <tbody id="hours">
+        <tr><td>Maandag</td><td>11:00–18:00</td></tr>
+        <tr><td>Dinsdag</td><td>09:00–18:00</td></tr>
+        <tr><td>Woensdag</td><td>09:00–18:00</td></tr>
+        <tr><td>Donderdag</td><td>09:00–18:00</td></tr>
+        <tr><td>Vrijdag</td><td>09:00–18:00</td></tr>
+        <tr><td>Zaterdag</td><td>09:00–17:00</td></tr>
+        <tr><td>Zondag</td><td>Gesloten</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="wrap foot"><span>McFlek Service Point · Ginnekenstraat 29, Breda</span><span>Beelden op deze pagina zijn illustraties.</span></div>
+</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab')), spots=[].slice.call(document.querySelectorAll('.spot'));
+  function pick(name,focus){
+    tabs.forEach(function(t){var on=t.id==='t-'+name;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;var p=document.getElementById(t.getAttribute('aria-controls'));p.hidden=!on;if(on){p.classList.remove('show');void p.offsetWidth;p.classList.add('show');if(focus)t.focus();}});
+    spots.forEach(function(s){s.setAttribute('aria-pressed',s.dataset.t===name);});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t.id.slice(2));});
+    t.addEventListener('keydown',function(e){var k=e.key,j=-1;if(k==='ArrowRight')j=(i+1)%tabs.length;if(k==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;if(j>-1){e.preventDefault();pick(tabs[j].id.slice(2),true);}});
+  });
+  spots.forEach(function(s){s.addEventListener('click',function(){pick(s.dataset.t);document.getElementById('balie').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});});
+  var d=(new Date().getDay()+6)%7, rows=document.querySelectorAll('#hours tr'); if(rows[d])rows[d].classList.add('today');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.3});document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});}
+  else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
+</body>
+</html>
