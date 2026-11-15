@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATB Auto Totaalservice Breda · APK, onderhoud en reparatie</title>
+<meta name="description" content="Erkend RDW-keurstation aan de Weidehek 87 in Breda. APK, onderhoud, reparatie, airco, schadeherstel, accessoires en occasions. Bel 076 542 2286.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#151B26; --slate:#2B3445; --slate-2:#222A38; --steel:#9AA3AE; --steel-lt:#C4CAD2;
+  --orange:#F28C00; --plate:#F7C600; --off:#F2F4F6; --ink:#151B26; --ink-2:#4A5466; --line:#D5DAE1;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --chequer:conic-gradient(#F2F4F6 25%,#0B0F16 0 50%,#F2F4F6 0 75%,#0B0F16 0);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Inter Tight",system-ui,sans-serif;font-size:17px;line-height:1.55;color:var(--ink);background:var(--off);overflow-x:hidden}
+::selection{background:var(--orange);color:var(--night)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Chakra Petch",sans-serif;line-height:1.02;letter-spacing:-0.01em;text-wrap:balance}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px/1 "Inter Tight",sans-serif;padding:16px 24px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .16s var(--ease-out),background-color .2s ease,border-color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-o{background:var(--orange);color:var(--night)}
+.btn-line{border-color:rgba(242,244,246,.45);color:var(--off)}
+.btn-dark{background:var(--night);color:var(--off)}
+@media (hover:hover) and (pointer:fine){.btn-o:hover{background:#FFA21F}.btn-line:hover{border-color:var(--off)}.btn-dark:hover{background:var(--slate)}}
+.ico{width:18px;height:18px;flex:none}
+.tag-ill{position:absolute;font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.02em;background:rgba(11,15,22,.78);color:var(--off);padding:7px 10px;border-radius:6px}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5;padding:22px 0}
+.top .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--off)}
+.logo b{font:700 30px/1 "Chakra Petch",sans-serif;letter-spacing:.02em}
+.logo span{font-size:13px;line-height:1.2;color:var(--steel-lt);max-width:110px}
+.logo i{width:30px;height:30px;background:var(--chequer) 0 0/10px 10px;border-radius:3px}
+.top-tel{color:var(--off);text-decoration:none;font:600 17px "Chakra Petch",sans-serif;display:flex;gap:8px;align-items:center}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--night);color:var(--off);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-img{position:absolute;inset:0;z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:62% 50%;animation:settle .6s var(--ease-out) both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(21,27,38,.96) 0%,rgba(21,27,38,.86) 38%,rgba(21,27,38,.25) 70%,rgba(21,27,38,.1)),linear-gradient(0deg,rgba(21,27,38,.9),transparent 40%)}
+.hero-flag{position:absolute;top:0;right:0;width:46%;height:20px;background:var(--chequer) 0 0/20px 20px;-webkit-mask:linear-gradient(90deg,transparent,#000 70%);mask:linear-gradient(90deg,transparent,#000 70%);animation:flagin .6s var(--ease-out) both}
+.hero .tag-ill{right:20px;bottom:20px}
+.hero-in{padding:150px 0 84px;width:min(1240px,100% - 40px)}
+.hero h1{font-size:clamp(42px,6vw,86px);font-weight:700;max-width:14ch;animation:rise .55s var(--ease-out) both}
+.hero h1 em{font-style:normal;color:var(--orange);display:block}
+.lede{margin:20px 0 34px;font-size:19px;color:var(--steel-lt);max-width:44ch}
+@keyframes settle{from{transform:scale(1.06)}}
+@keyframes rise{from{transform:translateY(14px)}}
+@keyframes flagin{from{transform:translateX(40px)}}
+
+/* plate */
+.apk{max-width:620px;animation:rise .6s var(--ease-out) both}
+.apk label{display:block;font:600 15px "Chakra Petch",sans-serif;letter-spacing:.04em;color:var(--off);margin-bottom:10px}
+.plate-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.plate{flex:1 1 320px;display:flex;align-items:stretch;background:var(--plate);border:3px solid #0B0F16;border-radius:10px;overflow:hidden;box-shadow:0 18px 40px -12px rgba(0,0,0,.6),inset 0 0 0 2px var(--plate),inset 0 0 0 4px #0B0F16}
+.plate .eu{width:46px;background:#1340A8;color:#F7C600;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:6px 0 8px;font:700 16px "Chakra Petch",sans-serif;color:#fff;margin:4px 0 4px 4px;border-radius:5px 0 0 5px}
+.plate .eu svg{width:24px;height:24px;margin-bottom:auto;margin-top:4px}
+.plate input{flex:1;min-width:0;border:0;background:transparent;font:700 clamp(30px,4.6vw,46px)/1 "Chakra Petch",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#0B0F16;padding:14px 16px;caret-color:#0B0F16}
+.plate input::placeholder{color:rgba(11,15,22,.32)}
+.plate input:focus{outline:none}
+.plate:focus-within{outline:3px solid var(--orange);outline-offset:4px}
+.plate-row .btn{flex:0 0 auto;padding-inline:26px}
+.note{font-size:13px;color:var(--steel);margin-top:10px}
+.result{margin-top:16px;min-height:0}
+.result .card{background:rgba(43,52,69,.92);border:1px solid rgba(154,163,174,.3);border-radius:14px;padding:18px 20px;display:grid;gap:4px;transition:transform .22s var(--ease-out),opacity .22s var(--ease-out)}
+@starting-style{.result .card{transform:translateY(8px);opacity:0}}
+.result .car{font:600 22px "Chakra Petch",sans-serif;color:var(--off)}
+.result .date{font-size:17px;color:var(--steel-lt)}
+.result .date strong{color:var(--off)}
+.result .warn{color:var(--orange);font-weight:600;margin-top:4px}
+.result .card .btn{margin-top:10px;justify-self:start}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{font-size:14px;padding:8px 14px;border-radius:999px;background:rgba(242,244,246,.08);border:1px solid rgba(242,244,246,.18);color:var(--steel-lt)}
+.chip b{color:var(--off);font-weight:600}
+
+/* werkplaats pit board */
+.pit{background:var(--slate);color:var(--off);padding:110px 0 120px;position:relative}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(38px,5vw,68px);font-weight:700}
+.sec-head p{color:var(--steel-lt);max-width:46ch;font-size:18px}
+.board{list-style:none;border-top:1px solid rgba(154,163,174,.35)}
+.board li{display:grid;grid-template-columns:150px 1fr 1.2fr;gap:28px;align-items:baseline;padding:26px 0;border-bottom:1px solid rgba(154,163,174,.35)}
+.board .code{font:700 15px "Chakra Petch",sans-serif;letter-spacing:.12em;color:var(--orange)}
+.board h3{font-size:clamp(24px,2.6vw,34px);font-weight:600}
+.board p{color:var(--steel-lt)}
+.board .bosch{display:inline-block;margin-top:2px}
+.pit-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:44px;color:var(--steel-lt)}
+
+/* accessoires */
+.acc{background:var(--night);color:var(--off);padding:120px 0;overflow:hidden}
+.acc-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.wheel{position:relative;border-radius:18px;overflow:visible}
+.wheel img{border-radius:18px;width:100%;aspect-ratio:1000/746;object-fit:cover}
+.wheel .tag-ill{left:16px;bottom:16px}
+.spec{position:absolute;display:flex;align-items:center;gap:0;font:600 14px "Chakra Petch",sans-serif;letter-spacing:.04em;white-space:nowrap}
+.spec::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(242,140,0,.25);flex:none}
+.spec i{display:block;height:1px;background:var(--steel-lt);width:var(--w,70px);transform-origin:left}
+.spec span{background:var(--off);color:var(--night);padding:7px 11px;border-radius:6px}
+.spec.l{flex-direction:row-reverse}
+.spec.l i{transform-origin:right}
+.acc h2{font-size:clamp(38px,4.6vw,64px);font-weight:700}
+.acc p{color:var(--steel-lt);margin:18px 0 26px;font-size:18px}
+.acc-list{list-style:none;columns:2;column-gap:24px}
+.acc-list li{padding:9px 0;border-bottom:1px solid rgba(154,163,174,.28);break-inside:avoid;font-weight:500}
+.fit{margin-top:26px;font:600 22px "Chakra Petch",sans-serif;color:var(--orange)}
+
+/* occasions */
+.occ{padding:120px 0;background:var(--off)}
+.occ-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.occ h2{font-size:clamp(38px,4.8vw,66px);font-weight:700}
+.occ .big{font:600 clamp(22px,2.2vw,28px)/1.25 "Chakra Petch",sans-serif;color:var(--ink-2);margin:20px 0}
+.occ p{color:var(--ink-2);max-width:44ch}
+.steps{list-style:none;margin-top:30px;display:grid;gap:14px}
+.steps li{display:flex;gap:14px;align-items:baseline}
+.steps b{font:700 14px "Chakra Petch",sans-serif;color:var(--night);background:var(--plate);border:2px solid var(--night);border-radius:5px;padding:2px 8px}
+form.zoek{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:0 24px 48px -28px rgba(21,27,38,.35)}
+.zoek h3{font-size:28px;margin-bottom:6px}
+.zoek .sub{color:var(--ink-2);font-size:15px;margin-bottom:22px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.f input,.f select{width:100%;font:500 16px "Inter Tight",sans-serif;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--off);color:var(--ink);transition:border-color .2s ease}
+.f input:focus,.f select:focus{outline:none;border-color:var(--night);background:#fff}
+.zoek .btn{margin-top:22px}
+.zoek .small{font-size:13px;color:var(--ink-2);margin-top:12px}
+
+/* wagenpark */
+.fleet{position:relative;background:var(--night);color:var(--off);padding:96px 0;overflow:hidden}
+.fleet-flag{position:absolute;inset:0 0 0 auto;width:52%;background:var(--chequer) 0 0/56px 56px;opacity:.16;-webkit-mask:linear-gradient(90deg,transparent,#000 85%);mask:linear-gradient(90deg,transparent,#000 85%)}
+.fleet .wrap{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end}
+.fleet h2{font-size:clamp(34px,4.2vw,58px);font-weight:700}
+.fleet p{color:var(--steel-lt);font-size:19px;margin-top:16px;max-width:48ch}
+.fleet-cta{justify-self:end;display:grid;gap:12px;text-align:right}
+
+/* klanten */
+.klant{padding:120px 0;background:var(--off)}
+.score{display:flex;align-items:baseline;gap:18px;margin-bottom:48px;flex-wrap:wrap}
+.score .n{font:700 clamp(80px,10vw,140px)/.9 "Chakra Petch",sans-serif;color:var(--night)}
+.score .of{font:600 22px "Chakra Petch",sans-serif}
+.score .of small{display:block;font:500 15px "Inter Tight",sans-serif;color:var(--ink-2)}
+.stars{display:flex;gap:4px;margin-bottom:8px}
+.stars svg{width:20px;height:20px}
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--night)}
+.quotes figure{padding:30px 32px 30px 0;border-bottom:1px solid var(--line)}
+.quotes figure:nth-child(odd){border-right:1px solid var(--line)}
+.quotes figure:nth-child(even){padding-left:32px}
+.quotes blockquote{font:600 clamp(22px,2.3vw,30px)/1.2 "Chakra Petch",sans-serif}
+.quotes figcaption{margin-top:10px;color:var(--ink-2);font-size:15px}
+.paraph{margin-top:18px;font-size:13px;color:var(--ink-2)}
+
+/* langskomen */
+.visit{background:var(--slate);color:var(--off);padding:0}
+.visit-grid{display:grid;grid-template-columns:1.1fr .9fr;min-height:620px}
+.visit-img{position:relative}
+.visit-img img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.visit-img .tag-ill{left:20px;bottom:20px}
+.visit-txt{padding:90px 56px}
+.visit h2{font-size:clamp(38px,4.6vw,62px);font-weight:700}
+.dl{margin:34px 0;display:grid;gap:0;border-top:1px solid rgba(154,163,174,.35)}
+.dl div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(154,163,174,.35)}
+.dl dt{color:var(--steel);font-size:15px}
+.dl dd a{text-decoration-color:var(--orange);text-underline-offset:4px}
+.hours{color:var(--plate)}
+.visit .btns{display:flex;gap:12px;flex-wrap:wrap}
+.foot{background:var(--night);color:var(--steel);font-size:14px;padding:0 0 30px}
+.foot-flag{height:14px;background:var(--chequer) 0 0/14px 14px;-webkit-mask:linear-gradient(90deg,transparent,#000 60%);mask:linear-gradient(90deg,transparent,#000 60%);margin-bottom:28px}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* scroll moments (transform only; content always visible) */
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .spec i{animation:draw linear both;animation-timeline:view();animation-range:entry 10% cover 40%}
+    .fleet-flag{animation:flagslide linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
+    .board li{animation:rowin linear both;animation-timeline:view();animation-range:entry 0% entry 90%}
+  }
+}
+@keyframes draw{from{transform:scaleX(0)}}
+@keyframes flagslide{from{transform:translateX(18%)}}
+@keyframes rowin{from{transform:translateX(-18px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:900px){
+  .sec-head,.acc-grid,.occ-grid,.fleet .wrap,.visit-grid{grid-template-columns:1fr}
+  .board li{grid-template-columns:1fr;gap:6px}
+  .spec{display:none}
+  .fleet-cta{justify-self:start;text-align:left}
+  .visit-img{min-height:300px}
+  .visit-txt{padding:64px 20px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .logo span{display:none}
+  .hero-in{padding:120px 0 64px;width:calc(100% - 32px)}
+  .lede{font-size:17px}
+  .plate-row .btn{width:100%;justify-content:center}
+  .pit,.acc,.occ,.klant{padding:80px 0}
+  .acc-list{columns:1}
+  .fields{grid-template-columns:1fr}
+  form.zoek{padding:24px 20px}
+  .quotes{grid-template-columns:1fr}
+  .quotes figure,.quotes figure:nth-child(even){padding:24px 0;border-right:0}
+  .dl div{grid-template-columns:1fr;gap:2px}
+  .hero-flag{width:70%}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="#F28C00" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="ATB Auto Totaalservice Breda"><i aria-hidden="true"></i><b>ATB</b><span>Auto Totaalservice Breda</span></a>
+    <a class="top-tel" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>076 542 2286</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-img"><img src="images/hero-werkplaats-illustratie.jpg" alt="Illustratie, geen foto van ATB: een donkere werkplaats met een auto op een blauwe brug" width="1600" height="893" fetchpriority="high"></div>
+  <div class="hero-flag" aria-hidden="true"></div>
+  <span class="tag-ill">Illustratie</span>
+  <div class="hero-in wrap">
+    <h1 id="h1">APK, onderhoud en reparatie. <em>Voor een eerlijke prijs.</em></h1>
+    <p class="lede">Erkend RDW-keurstation op bedrijventerrein Achter-Emer. Vul uw kenteken in en zie direct tot wanneer uw APK geldig is.</p>
+
+    <form class="apk" id="apk" action="https://ovi.rdw.nl/" target="_blank" novalidate>
+      <label for="kenteken">Wanneer moet mijn APK?</label>
+      <div class="plate-row">
+        <div class="plate">
+          <div class="eu" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="#F7C600"><circle cx="12" cy="4" r="1.2"/><circle cx="16" cy="5.1" r="1.2"/><circle cx="18.9" cy="8" r="1.2"/><circle cx="20" cy="12" r="1.2"/><circle cx="18.9" cy="16" r="1.2"/><circle cx="16" cy="18.9" r="1.2"/><circle cx="12" cy="20" r="1.2"/><circle cx="8" cy="18.9" r="1.2"/><circle cx="5.1" cy="16" r="1.2"/><circle cx="4" cy="12" r="1.2"/><circle cx="5.1" cy="8" r="1.2"/><circle cx="8" cy="5.1" r="1.2"/></g></svg>NL</div>
+          <input id="kenteken" name="kenteken" placeholder="XX-123-X" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="10" aria-describedby="apk-note">
+        </div>
+        <button class="btn btn-o" type="submit">Check APK</button>
+      </div>
+      <p class="note" id="apk-note">Gegevens: RDW open data.</p>
+      <div class="result" id="result" aria-live="polite"></div>
+    </form>
+
+    <div class="meta">
+      <span class="chip"><b>Erkend RDW-keurstation</b></span>
+      <span class="chip">Weidehek 87, Breda</span>
+      <span class="chip">4,7 op Google · 26 reviews</span>
+      <a class="btn btn-line" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>Bel 076 542 2286</a>
+    </div>
+  </div>
+</section>
+
+<section class="pit" aria-labelledby="h-pit">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-pit">De werkplaats</h2>
+      <p>Betrouwbaar, uitstekende service, kennis, en alles voor een redelijke prijs. Zo omschrijft ATB het zelf, en zo zeggen klanten het ook.</p>
+    </div>
+    <ul class="board">
+      <li><span class="code">APK</span><h3>APK-keuring</h3><p>Erkend RDW-keurstation: uw APK-keuring gebeurt in onze eigen werkplaats.</p></li>
+      <li><span class="code">ONDERHOUD</span><h3>Onderhoud en reparatie</h3><p>Periodiek onderhoud en reparaties, uitgevoerd met moderne Bosch-apparatuur.</p></li>
+      <li><span class="code">AIRCO</span><h3>Airco-service</h3><p>Service en onderhoud van de airco in uw auto.</p></li>
+      <li><span class="code">SCHADE</span><h3>Schadeherstel</h3><p>Ook voor schade aan uw auto kunt u bij ons terecht.</p></li>
+      <li><span class="code">VERVOER</span><h3>Vervangend vervoer</h3><p>Vervangend vervoer is mogelijk. Vraag ernaar bij uw afspraak.</p></li>
+      <li><span class="code">SERVICEBUS</span><h3>Eigen servicebus</h3><p>ATB heeft een eigen servicebus. Bel ons voor de mogelijkheden.</p></li>
+    </ul>
+    <div class="pit-cta"><a class="btn btn-o" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>Afspraak maken</a><span>Bel even, dan plannen we het samen in.</span></div>
+  </div>
+</section>
+
+<section class="acc" aria-labelledby="h-acc">
+  <div class="wrap acc-grid">
+    <div class="wheel">
+      <img src="images/velg-illustratie.jpg" alt="Illustratie, geen foto van ATB: een lichtmetalen velg met rode remklauw" width="1000" height="746" loading="lazy">
+      <span class="tag-ill">Illustratie</span>
+      <div class="spec" style="left:58%;top:16%;--w:90px" aria-hidden="true"><i></i><span>Lichtmetalen velgen</span></div>
+      <div class="spec" style="left:46%;top:44%;--w:150px" aria-hidden="true"><i></i><span>Verlagingssets</span></div>
+      <div class="spec" style="left:64%;top:72%;--w:70px" aria-hidden="true"><i></i><span>Sportuitlaten</span></div>
+      <div class="spec l" style="right:84%;top:30%;--w:40px" aria-hidden="true"><i></i><span>Spoilers</span></div>
+    </div>
+    <div>
+      <h2 id="h-acc">Accessoires, verkocht én gemonteerd.</h2>
+      <p>Wilt u uw auto mooier, sportiever of handiger maken? ATB verkoopt de onderdelen en zet ze er ook op.</p>
+      <ul class="acc-list">
+        <li>Lichtmetalen velgen</li><li>Verlagingssets</li><li>Sportuitlaten</li><li>Spoilers</li>
+        <li>Hifi</li><li>Carkits</li><li>Cruise control</li><li>Navigatie</li>
+      </ul>
+      <p class="fit">Verkoop én montage.</p>
+    </div>
+  </div>
+</section>
+
+<section class="occ" aria-labelledby="h-occ">
+  <div class="wrap occ-grid">
+    <div>
+      <h2 id="h-occ">Occasions</h2>
+      <p class="big">Snel wisselende voorraad. Zoekt u iets specifieks? Geef een zoekopdracht.</p>
+      <p>Omdat de voorraad steeds verandert, staan er hier geen auto's. ATB neemt zoekopdrachten aan: vertel wat u zoekt.</p>
+      <ol class="steps">
+        <li><b>1</b>Vul merk, model en budget in.</li>
+        <li><b>2</b>Uw mailprogramma opent met een kant-en-klaar bericht.</li>
+        <li><b>3</b>U verstuurt het bericht naar ATB.</li>
+      </ol>
+    </div>
+    <form class="zoek" id="zoek">
+      <h3>Zoekopdracht geven</h3>
+      <p class="sub">Gaat naar info@autototaalservicebreda.nl</p>
+      <div class="fields">
+        <div class="f"><label for="z-merk">Merk</label><input id="z-merk" name="merk" placeholder="Bijv. Volkswagen"></div>
+        <div class="f"><label for="z-model">Model</label><input id="z-model" name="model" placeholder="Bijv. Golf Variant"></div>
+        <div class="f"><label for="z-jaar">Bouwjaar vanaf</label><input id="z-jaar" name="jaar" inputmode="numeric" placeholder="Bijv. 2016"></div>
+        <div class="f"><label for="z-budget">Budget</label><select id="z-budget" name="budget"><option>Tot € 5.000</option><option>€ 5.000 – € 10.000</option><option>€ 10.000 – € 15.000</option><option>€ 15.000 – € 25.000</option><option>Meer dan € 25.000</option></select></div>
+        <div class="f" style="grid-column:1/-1"><label for="z-tel">Uw telefoonnummer</label><input id="z-tel" name="tel" type="tel" inputmode="tel" placeholder="06 …"></div>
+      </div>
+      <button class="btn btn-dark" type="submit"><svg class="ico"><use href="#i-mail"/></svg>Zoekopdracht mailen</button>
+      <p class="small">Liever bellen? 076 542 2286.</p>
+    </form>
+  </div>
+</section>
+
+<section class="fleet" aria-labelledby="h-fleet">
+  <div class="fleet-flag" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h2 id="h-fleet">Zakelijk rijden? Wij beheren uw wagenpark.</h2>
+      <p>Voor grote en kleine bedrijven verzorgt ATB het complete wagenparkbeheer.</p>
+    </div>
+    <div class="fleet-cta"><a class="btn btn-o" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>Bel voor een afspraak</a></div>
+  </div>
+</section>
+
+<section class="klant" aria-labelledby="h-klant">
+  <div class="wrap">
+    <div class="score">
+      <span class="n">4,7</span>
+      <div class="of"><div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><h2 id="h-klant" style="font-size:inherit">Wat klanten zeggen</h2><small>Gemiddeld op Google, uit 26 reviews</small></div>
+    </div>
+    <div class="quotes">
+      <figure><blockquote>Een eerlijke prijs voor goed werk.</blockquote><figcaption>Uit de reviews</figcaption></figure>
+      <figure><blockquote>Rody en Romeo zeggen waar het op staat en denken mee.</blockquote><figcaption>Over de monteurs</figcaption></figure>
+      <figure><blockquote>Ze maakten tijd voor een spoedklus, zelfs na sluitingstijd.</blockquote><figcaption>Een gestrande automobilist</figcaption></figure>
+      <figure><blockquote>Ze vonden een storing die andere garages misten.</blockquote><figcaption>Over de diagnose</figcaption></figure>
+    </div>
+    <p class="paraph">Samengevat uit Google-reviews, niet letterlijk geciteerd.</p>
+  </div>
+</section>
+
+<section class="visit" aria-labelledby="h-visit">
+  <div class="visit-grid">
+    <div class="visit-img">
+      <img src="images/gevel-illustratie.jpg" alt="Illustratie, geen foto van ATB: een bedrijfshal met blauwe deuren en een geblokte banner" width="1600" height="893" loading="lazy">
+      <span class="tag-ill">Illustratie</span>
+    </div>
+    <div class="visit-txt">
+      <h2 id="h-visit">Langskomen</h2>
+      <dl class="dl">
+        <div><dt>Adres</dt><dd><a href="https://www.google.com/maps/search/ATB+Auto+Totaalservice+Breda+Weidehek+87+Breda" target="_blank" rel="noopener">Weidehek 87, 4824 AT Breda</a><br>Bedrijventerrein Achter-Emer</dd></div>
+        <div><dt>Telefoon</dt><dd><a href="tel:+31765422286">076 542 2286</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:info@autototaalservicebreda.nl">info@autototaalservicebreda.nl</a></dd></div>
+        <div><dt>Open</dt><dd class="hours">Bel even voor de openingstijden.</dd></div>
+      </dl>
+      <div class="btns">
+        <a class="btn btn-o" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>Bel 076 542 2286</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/ATB+Auto+Totaalservice+Breda+Weidehek+87+Breda" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Route</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-flag" aria-hidden="true"></div>
+  <div class="wrap"><span>ATB Auto Totaalservice Breda · Weidehek 87, 4824 AT Breda</span><span>Erkend RDW-keurstation</span></div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('apk'), inp=document.getElementById('kenteken'), out=document.getElementById('result');
+  var TEL='<a class="btn btn-o" href="tel:+31765422286"><svg class="ico"><use href="#i-tel"/></svg>Bel 076 542 2286</a>';
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function card(html){out.innerHTML='<div class="card">'+html+'</div>'}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var k=inp.value.toUpperCase().replace(/[^A-Z0-9]/g,'');
+    if(k.length<4||k.length>8){card('<span class="date">Vul een geldig kenteken in, bijvoorbeeld 12-ABC-3.</span>');inp.focus();return}
+    card('<span class="date">Even zoeken bij de RDW…</span>');
+    fetch('https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken='+k+'&$select=kenteken,merk,handelsbenaming,vervaldatum_apk_dt')
+      .then(function(r){if(!r.ok)throw 0;return r.json()})
+      .then(function(d){
+        if(!d.length){card('<span class="date">Dit kenteken vinden we niet bij de RDW. Controleer de letters en cijfers.</span>');return}
+        var c=d[0], m=c.merk||'', h=c.handelsbenaming||'', car=esc((h.indexOf(m)===0?h:(m+' '+h)).trim()||k);
+        if(!c.vervaldatum_apk_dt){card('<span class="car">'+car+'</span><span class="date">De RDW geeft voor deze auto geen APK-datum.</span>'+TEL);return}
+        var dt=new Date(c.vervaldatum_apk_dt.slice(0,10)+'T12:00:00'), days=Math.ceil((dt-new Date())/864e5);
+        var nice=dt.toLocaleDateString('nl-NL',{day:'numeric',month:'long',year:'numeric'});
+        var html='<span class="car">'+car+'</span>';
+        if(days<0){html+='<span class="date">APK verlopen op <strong>'+nice+'</strong>.</span><span class="warn">Tijd voor een afspraak.</span>'+TEL}
+        else{html+='<span class="date">APK geldig tot <strong>'+nice+'</strong>, nog '+days+' dagen.</span>';
+          html+= days<60 ? '<span class="warn">Tijd voor een afspraak.</span>'+TEL : '<span class="date">Ruim op tijd. Plan de keuring gerust vooruit.</span>'}
+        card(html);
+      })
+      .catch(function(){card('<span class="date">De RDW-gegevens zijn nu niet bereikbaar. Bel ons gerust: 076 542 2286.</span>'+TEL)});
+  });
+  document.getElementById('zoek').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target, v=function(n){return f.elements[n].value.trim()||'-'};
+    var body='Zoekopdracht occasion\n\nMerk: '+v('merk')+'\nModel: '+v('model')+'\nBouwjaar vanaf: '+v('jaar')+'\nBudget: '+v('budget')+'\nTelefoon: '+v('tel')+'\n';
+    location.href='mailto:info@autototaalservicebreda.nl?subject='+encodeURIComponent('Zoekopdracht occasion')+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
