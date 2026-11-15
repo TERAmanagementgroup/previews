@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Yoga Loft Breda · Boutique yoga studio</title>
+<meta name="description" content="The Yoga Loft Breda: a boutique yoga studio founded by three senior teachers. Aerial, vinyasa, yin and more. Book by the website or the Eversports app.">
+<meta name="theme-color" content="#121816">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#121816; --night-2:#18201d; --sage:#7DB8A5; --sage-d:#2F6B5B; --chalk:#EEF1EF; --ink:#121816;
+  --saffron:#E89B2D; --teal:#1F5E63; --on-dark:#EEF1EF; --on-dark-2:#B9C6C1; --ink-2:#3f4a46;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --serif:"Hedvig Letters Serif",Georgia,serif; --sans:"Geist",ui-sans-serif,system-ui,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--night);color:var(--on-dark);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+::selection{background:var(--saffron);color:var(--night)}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter);position:relative}
+.icon{width:1.1em;height:1.1em;flex:none}
+section{position:relative}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.6vw,80px);line-height:1;letter-spacing:-.025em;text-wrap:balance}
+.lede{margin-top:18px;max-width:54ch;font-size:18px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:500;font-size:16px;text-decoration:none;transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .14s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn-saf{background:var(--saffron);color:var(--night)}
+.btn-saf:hover{background:#f2ad4a}
+.btn-line{border:1.5px solid rgba(238,241,239,.7);color:var(--on-dark)}
+.btn-line:hover{background:var(--on-dark);color:var(--night)}
+
+/* hanging silk (signature) */
+.silk{position:absolute;top:0;width:56px;height:clamp(260px,46vh,460px);z-index:2;pointer-events:none;transform-origin:50% 0;animation:sway 7s ease-in-out infinite alternate}
+.silk svg{width:100%;height:100%;display:block}
+@keyframes sway{from{transform:rotate(-1.2deg)}to{transform:rotate(1.2deg)}}
+@media (prefers-reduced-motion:reduce){.silk{animation:none}}
+@media (max-width:899px){.finder .silk,.visit .silk{height:80px;width:40px}}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+.mark{text-decoration:none;display:flex;align-items:baseline;gap:8px}
+.mark span{font-family:var(--serif);font-size:22px;letter-spacing:-.01em}
+.mark small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
+.top-link{font-size:15px;font-weight:500;text-decoration:none;padding:10px 0}
+.top-link:hover{color:var(--saffron)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-img{position:absolute;inset:0;z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:86% 50%;animation:settle .6s var(--ease-out) both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(18,24,22,.55) 0%,rgba(18,24,22,.2) 30%,rgba(18,24,22,.78) 62%,rgba(18,24,22,.96) 100%)}
+.hero .wrap{width:100%;padding-top:120px;padding-bottom:clamp(40px,7vh,88px)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(46px,7.4vw,112px);line-height:.98;letter-spacing:-.03em;max-width:12ch}
+.hero h1 span{display:block;animation:rise .55s var(--ease-out) both}
+.hero h1 span+span{color:var(--sage);animation-delay:.06s}
+.hero .sub{margin-top:22px;max-width:42ch;font-size:clamp(17px,1.4vw,20px);color:var(--on-dark-2)}
+.cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+.illu{position:absolute;right:var(--gutter);bottom:14px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark-2);background:rgba(18,24,22,.72);padding:3px 8px;border-radius:4px}
+.hero .silk{display:none}
+@media (min-width:900px){
+  .hero::before{background:linear-gradient(90deg,rgba(18,24,22,.94) 0%,rgba(18,24,22,.78) 34%,rgba(18,24,22,.15) 64%,rgba(18,24,22,0) 100%),linear-gradient(0deg,rgba(18,24,22,.7),rgba(18,24,22,0) 40%)}
+  .hero{align-items:center}
+  .hero-img img{object-position:50% 50%}
+  .hero .silk{display:block;left:68%;height:clamp(240px,40vh,420px)}
+  .hero h1{font-size:clamp(56px,5.8vw,92px);max-width:none}
+  .hero h1 span{white-space:nowrap}
+}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.04)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){.hero h1 span,.hero-img img{animation:none}}
+
+/* style wall */
+.wall{background:var(--chalk);color:var(--ink);padding:clamp(80px,10vw,150px) 0}
+.styles{display:flex;flex-wrap:wrap;align-items:center;gap:.08em .32em;font-size:clamp(40px,7.4vw,112px);line-height:1.04;letter-spacing:-.03em}
+.styles .s{font-family:var(--serif)}
+.styles .g{font-family:var(--sans);font-weight:400;color:var(--sage-d);letter-spacing:-.05em}
+.pill{display:inline-block;width:2.1em;height:.86em;border-radius:999px;overflow:hidden;vertical-align:middle;flex:none}
+.pill img{width:100%;height:100%;object-fit:cover}
+.wall .h2{font-size:clamp(22px,2vw,28px);font-family:var(--sans);font-weight:500;letter-spacing:0;color:var(--sage-d);margin-bottom:28px}
+.wall-foot{margin-top:40px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;font-size:18px;color:var(--ink-2)}
+.wall-foot a{color:var(--sage-d);font-weight:500}
+
+/* pass finder */
+.finder{background:var(--night);padding:clamp(96px,11vw,160px) 0 clamp(80px,10vw,140px);overflow:hidden}
+.finder .silk{right:clamp(16px,8vw,140px)}
+.finder .lede{color:var(--on-dark-2)}
+.f-grid{margin-top:48px;display:grid;gap:40px}
+@media (min-width:980px){.f-grid{grid-template-columns:1.1fr 1fr;gap:72px;align-items:start}}
+.q{border:0;margin:0 0 30px}
+.q legend{font-family:var(--serif);font-size:24px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{appearance:none;font:inherit;font-size:16px;font-weight:500;min-height:46px;padding:0 20px;border-radius:999px;cursor:pointer;background:transparent;color:var(--on-dark);border:1.5px solid rgba(125,184,165,.55);
+  transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .14s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.chip:hover{border-color:var(--sage);background:rgba(125,184,165,.1)}}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"]{background:var(--teal);border-color:var(--sage);color:#fff}
+.pick{background:var(--night-2);border:1px solid rgba(125,184,165,.25);border-radius:22px;padding:clamp(28px,4vw,44px);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.pick .lab{font-size:15px;color:var(--sage)}
+.pick h3{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.04;margin-top:8px;letter-spacing:-.02em}
+.pick .price{margin-top:18px;display:flex;align-items:baseline;gap:10px;font-variant-numeric:tabular-nums}
+.pick .price b{font-family:var(--serif);font-weight:400;font-size:clamp(64px,8vw,104px);line-height:.9;color:var(--saffron);letter-spacing:-.03em}
+.pick .price span{font-size:18px;color:var(--on-dark-2)}
+.pick .detail{margin-top:12px;font-size:18px}
+.pick .cmp{margin-top:20px;padding-top:18px;border-top:1px solid rgba(125,184,165,.25);color:var(--on-dark-2);display:grid;gap:4px;font-size:16px;font-variant-numeric:tabular-nums}
+.pick .btn{margin-top:26px}
+.pick .ind{margin-top:14px;font-size:14px;color:var(--on-dark-2)}
+.all{margin-top:56px}
+.all summary{cursor:pointer;font-weight:500;color:var(--sage);display:inline-flex;gap:8px;align-items:center;min-height:44px}
+.all summary::marker{content:""}
+.all summary::before{content:"+";font-size:22px;line-height:1;width:20px}
+.all[open] summary::before{content:"\2212"}
+.plist{margin-top:14px;display:grid;gap:0 56px;max-width:900px}
+@media (min-width:760px){.plist{grid-template-columns:1fr 1fr}}
+.plist div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(125,184,165,.18);font-variant-numeric:tabular-nums}
+.plist b{font-weight:500;white-space:nowrap}
+.no-js .all{display:block}
+
+/* aerial */
+.aerial{background:var(--chalk);color:var(--ink);padding:clamp(80px,10vw,140px) 0}
+.a-grid{display:grid;gap:44px}
+@media (min-width:900px){.a-grid{grid-template-columns:5fr 6fr;gap:80px;align-items:center}}
+.a-photo{border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:4/5.6;max-height:820px;box-shadow:0 30px 60px rgba(18,24,22,.18)}
+.a-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.aerial p{margin-top:18px;max-width:46ch;font-size:18px;color:var(--ink-2)}
+.big-price{margin-top:30px;display:flex;align-items:baseline;gap:14px;font-variant-numeric:tabular-nums}
+.big-price b{font-family:var(--serif);font-weight:400;font-size:clamp(56px,6vw,84px);line-height:.9;color:var(--sage-d)}
+.big-price span{font-size:17px;color:var(--ink-2);max-width:20ch;line-height:1.35}
+.ws{margin-top:34px;display:grid;gap:0}
+.ws div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-top:1px solid #c9d3cf;font-size:19px}
+.ws div:last-child{border-bottom:1px solid #c9d3cf}
+.ws span{color:var(--ink-2);font-size:16px;white-space:nowrap}
+.ws-note{margin-top:14px;font-size:15px;color:var(--ink-2)}
+
+/* more */
+.more{background:var(--night-2);padding:clamp(80px,10vw,140px) 0}
+.m-list{margin-top:44px;list-style:none;display:grid;gap:0 72px;counter-reset:m}
+@media (min-width:820px){.m-list{grid-template-columns:1fr 1fr}}
+.m-list li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid rgba(125,184,165,.22);font-family:var(--serif);font-size:clamp(24px,2.4vw,32px);line-height:1.15}
+.m-list li span{font-family:var(--sans);font-size:15px;color:var(--sage);white-space:nowrap}
+
+/* community */
+.comm{background:var(--chalk);color:var(--ink);padding:0 0 clamp(80px,10vw,140px)}
+.comm-img{height:clamp(320px,62vw,720px);overflow:hidden}
+.comm-img img{width:100%;height:100%;object-fit:cover}
+.c-grid{margin-top:clamp(48px,6vw,80px);display:grid;gap:36px}
+@media (min-width:900px){.c-grid{grid-template-columns:1fr 1.1fr;gap:80px}}
+.claims{list-style:none;display:grid;gap:0}
+.claims li{font-family:var(--serif);font-size:clamp(24px,2.6vw,34px);line-height:1.15;padding:16px 0;border-bottom:1px solid #c9d3cf}
+.claims li:first-child{padding-top:0}
+.offer{margin-top:26px;font-size:18px;color:var(--ink-2)}
+.offer b{color:var(--ink);font-weight:500}
+.offer a{color:var(--sage-d);font-weight:500}
+
+/* visit */
+.visit{background:var(--night);padding:clamp(120px,13vw,180px) 0 0;overflow:hidden}
+.visit .silk{left:clamp(16px,6vw,110px);height:clamp(200px,34vh,360px)}
+.v-grid{margin-top:48px;display:grid;gap:48px}
+@media (min-width:900px){.v-grid{grid-template-columns:1fr 1fr;gap:80px}}
+.facts{display:grid;gap:24px}
+.fact h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);font-weight:500;margin-bottom:6px}
+.fact a,.fact p{font-size:18px}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 28px;font-variant-numeric:tabular-nums;font-size:17px;max-width:340px}
+.hours dt{color:var(--on-dark-2)}
+.v-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.v-cta p{color:var(--on-dark-2);font-size:15px}
+.foot{margin-top:clamp(80px,10vw,130px);border-top:1px solid rgba(125,184,165,.22);padding:30px 0 36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;color:var(--on-dark-2);font-size:14px}
+.foot q{font-family:var(--serif);font-size:20px;color:var(--on-dark);quotes:"\201C" "\201D"}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="silkA" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c97a16"/><stop offset=".45" stop-color="#f2b257"/><stop offset="1" stop-color="#d48722"/></linearGradient>
+    <linearGradient id="silkB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a95f0c"/><stop offset=".55" stop-color="#E89B2D"/><stop offset="1" stop-color="#b8690f"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".7" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <mask id="silkFade" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#fade)"/></mask>
+  </defs>
+  <symbol id="silk" viewBox="0 0 56 600" preserveAspectRatio="none">
+    <g mask="url(#silkFade)">
+      <path fill="url(#silkA)" d="M10 0H46C46 140 42 236 30 300C28 302 28 302 26 300C14 236 10 140 10 0Z"/>
+      <path fill="url(#silkB)" d="M28 299C40 356 50 430 50 600H6C6 430 16 356 28 299Z"/>
+    </g>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l1.1-3.6A8 8 0 1 1 8.7 19l-4.2.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9.2 9.3c.3 1.9 2.2 3.9 4.6 4.6"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="14" rx="2.5"/><path d="M8 3.5v4M16 3.5v4M4 10h16"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top"><span>The Yoga Loft</span><small>Breda</small></a>
+    <a class="top-link" href="https://www.eversports.nl/sv/the-yoga-loft">Book a class</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="The Yoga Loft Breda">
+    <div class="hero-img"><img src="images/hero-aerial-loft-illustratie.jpg" width="1920" height="1072" alt="Illustration of a loft with aerial hammocks and a person hanging upside down in an orange silk; not a photo of the studio" fetchpriority="high"></div>
+    <div class="silk" aria-hidden="true"><svg><use href="#silk"/></svg></div>
+    <div class="wrap">
+      <h1><span>First and foremost,</span><span>we are a community.</span></h1>
+      <p class="sub">A boutique yoga studio in Breda, founded by three senior teachers. Aerial, vinyasa, yin and more.</p>
+      <div class="cta">
+        <a class="btn btn-saf" href="https://www.eversports.nl/sv/the-yoga-loft"><svg class="icon" aria-hidden="true"><use href="#cal"/></svg>Book a class</a>
+        <a class="btn btn-line" href="#passes">Try 3 classes for €29</a>
+      </div>
+    </div>
+    <span class="illu">Illustratie</span>
+  </section>
+
+  <section class="wall" aria-labelledby="wall-h">
+    <div class="wrap">
+      <h2 class="h2" id="wall-h">Twelve ways to move</h2>
+      <p class="styles">
+        <span class="s">Aerial</span><span class="g">Hatha</span><span class="pill"><img src="images/class-chair-pose.jpg" width="1920" height="1281" alt="A class at The Yoga Loft holding chair pose"></span><span class="s">Ashtanga</span>
+        <span class="g">Vinyasa</span><span class="s">Pilates</span><span class="g">Yin Yang</span>
+        <span class="s">Yin</span><span class="g">Meditation</span><span class="s">Nidra</span>
+        <span class="g">Handstand Lab</span><span class="s">Mobility</span><span class="g">Sound Bath</span>
+      </p>
+      <div class="wall-foot">
+        <span>Book by the website or the Eversports app.</span>
+        <a href="https://www.eversports.nl/sv/the-yoga-loft">See the schedule in Eversports</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder" id="passes" aria-labelledby="pass-h">
+    <div class="silk" aria-hidden="true"><svg><use href="#silk"/></svg></div>
+    <div class="wrap">
+      <h2 class="h2" id="pass-h">Find your pass</h2>
+      <p class="lede">Three quick questions and we point you to the card or membership that fits.</p>
+      <div class="f-grid" id="finder-ui" hidden>
+        <div>
+          <fieldset class="q"><legend>How often?</legend><div class="chips" data-q="freq">
+            <button type="button" class="chip" data-v="try" aria-pressed="true">Just trying</button>
+            <button type="button" class="chip" data-v="1" aria-pressed="false">About once a week</button>
+            <button type="button" class="chip" data-v="2" aria-pressed="false">2× a week</button>
+            <button type="button" class="chip" data-v="3" aria-pressed="false">3+× a week</button>
+          </div></fieldset>
+          <fieldset class="q"><legend>When?</legend><div class="chips" data-q="when">
+            <button type="button" class="chip" data-v="any" aria-pressed="true">Any time</button>
+            <button type="button" class="chip" data-v="morn" aria-pressed="false">Mornings only</button>
+          </div></fieldset>
+          <fieldset class="q"><legend>Together?</legend><div class="chips" data-q="who">
+            <button type="button" class="chip" data-v="me" aria-pressed="true">Just me</button>
+            <button type="button" class="chip" data-v="two" aria-pressed="false">Two of us</button>
+          </div></fieldset>
+        </div>
+        <div class="pick" aria-live="polite">
+          <p class="lab">Your pick</p>
+          <h3 id="p-name">Introduction card</h3>
+          <p class="price"><b id="p-price">€29</b><span id="p-unit"></span></p>
+          <p class="detail" id="p-detail">3 classes in 2 weeks</p>
+          <div class="cmp"><span id="p-cmp">Compare: 5-class card €70</span><span>Single class €18</span></div>
+          <a class="btn btn-saf" href="https://www.eversports.nl/sv/the-yoga-loft"><svg class="icon" aria-hidden="true"><use href="#cal"/></svg>Book in Eversports</a>
+          <p class="ind">Indication — check the studio's current prices.</p>
+        </div>
+      </div>
+      <details class="all" id="all-prices" open>
+        <summary>All prices</summary>
+        <div class="plist">
+          <div><span>Single class</span><b>€18</b></div>
+          <div><span>Introduction card · 3 classes, 2 weeks</span><b>€29</b></div>
+          <div><span>5-class card</span><b>€70</b></div>
+          <div><span>10-class card</span><b>€135</b></div>
+          <div><span>Limited · 4 classes</span><b>€49 / month</b></div>
+          <div><span>Unlimited</span><b>€75 / month</b></div>
+          <div><span>Off-peak mornings</span><b>€39 / month</b></div>
+          <div><span>Family pass · for 2</span><b>€135 / month</b></div>
+          <div><span>Aerial or handstand single class</span><b>€20</b></div>
+          <div><span>Running Club</span><b>€25 / month</b></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="aerial" aria-labelledby="aer-h">
+    <div class="wrap a-grid">
+      <div class="a-photo"><img src="images/aerial-teacher.jpg" width="1278" height="1920" alt="A teacher at The Yoga Loft smiling in an aerial hammock"></div>
+      <div>
+        <h2 class="h2" id="aer-h">Aerial</h2>
+        <p>Yoga in a hammock that hangs from the ceiling. It is what sets the loft apart, and there is a handstand lab too.</p>
+        <div class="big-price"><b>€20</b><span>aerial or handstand single class</span></div>
+        <div class="ws">
+          <div>Aerial Restore &amp; Recharge<span>2 hours</span></div>
+          <div>Aerial Yoga Flow<span>2 hours</span></div>
+        </div>
+        <p class="ws-note">Weekend workshops. See the dates in Eversports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="more" aria-labelledby="more-h">
+    <div class="wrap">
+      <h2 class="h2" id="more-h">More than classes</h2>
+      <ul class="m-list">
+        <li>Mini retreats</li>
+        <li>Wellness and breathing coaching</li>
+        <li>Private sessions</li>
+        <li>Yoga teacher training<span>ask for info</span></li>
+        <li>Tea corner</li>
+        <li>Goodies shop</li>
+        <li>Weekly Running Club<span>€25 / month</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="comm" aria-labelledby="comm-h">
+    <div class="comm-img"><img src="images/community-circle.jpg" width="1920" height="1080" alt="A group sitting in a circle in the studio at The Yoga Loft"></div>
+    <div class="wrap c-grid">
+      <h2 class="h2" id="comm-h">The community</h2>
+      <div>
+        <ul class="claims">
+          <li>A welcoming community.</li>
+          <li>Highly experienced teachers.</li>
+          <li>Personal attention in every class.</li>
+          <li>Open to every background and language.</li>
+        </ul>
+        <p class="offer"><b>Special offer for students and refugees</b> — ask us at <a href="mailto:support@theyogaloft.nl">support@theyogaloft.nl</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="silk" aria-hidden="true"><svg><use href="#silk"/></svg></div>
+    <div class="wrap">
+      <h2 class="h2" id="visit-h">Visit the loft</h2>
+      <div class="v-grid">
+        <div class="facts">
+          <div class="fact"><h3>Address</h3><a href="https://www.google.com/maps/search/The+Yoga+Loft+Breda+Meerten+Verhoffstraat+1">Meerten Verhoffstraat 1, 4811 AM Breda</a></div>
+          <div class="fact"><h3>WhatsApp Boban</h3><a href="https://wa.me/31681324402">06 81324402</a></div>
+          <div class="fact"><h3>Email</h3><a href="mailto:support@theyogaloft.nl">support@theyogaloft.nl</a></div>
+          <div class="v-cta">
+            <a class="btn btn-saf" href="https://www.eversports.nl/sv/the-yoga-loft"><svg class="icon" aria-hidden="true"><use href="#cal"/></svg>See the full schedule in Eversports</a>
+            <a class="btn btn-line" href="https://wa.me/31681324402"><svg class="icon" aria-hidden="true"><use href="#wa"/></svg>WhatsApp us</a>
+          </div>
+        </div>
+        <div class="fact"><h3>Studio open</h3>
+          <dl class="hours">
+            <dt>Mon</dt><dd>06:30 – 21:30</dd>
+            <dt>Tue</dt><dd>09:00 – 21:30</dd>
+            <dt>Wed</dt><dd>07:30 – 21:00</dd>
+            <dt>Thu</dt><dd>07:00 – 20:30</dd>
+            <dt>Fri</dt><dd>08:00 – 19:00</dd>
+            <dt>Sat</dt><dd>11:30 – 13:00</dd>
+            <dt>Sun</dt><dd>14:00 – 21:30</dd>
+          </dl>
+          <p style="margin-top:12px;color:var(--on-dark-2);font-size:15px">Class times change weekly: the schedule is in Eversports.</p>
+        </div>
+      </div>
+      <div class="foot"><q>First and foremost, we are a community.</q><span>The Yoga Loft · Breda</span></div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var ui=document.getElementById("finder-ui"),all=document.getElementById("all-prices");
+  ui.hidden=false; all.open=false;
+  var st={freq:"try",when:"any",who:"me"};
+  var $=function(id){return document.getElementById(id)};
+  function solo(){
+    var f=st.freq,m=st.when==="morn";
+    if(f==="try")return{n:"Introduction card",p:"€29",u:"",d:"3 classes in 2 weeks",c:"Compare: 5-class card €70"};
+    if(m)return{n:"Off-peak mornings",p:"€39",u:"/ month",d:"Membership for morning classes",c:f==="1"?"Compare: Limited €49 / month (4 classes)":"Compare: Unlimited €75 / month"};
+    if(f==="1")return{n:"Limited membership",p:"€49",u:"/ month",d:"4 classes a month",c:"Compare: 5-class card €70"};
+    if(f==="2")return{n:"Unlimited membership",p:"€75",u:"/ month",d:"Come as often as you like",c:"Compare: 10-class card €135"};
+    return{n:"Unlimited membership",p:"€75",u:"/ month",d:"Come as often as you like",c:"Compare: 10-class card €135"};
+  }
+  function render(){
+    var r=solo();
+    if(st.who==="two"){
+      if(st.freq==="try"){r.d="3 classes in 2 weeks, one card each";}
+      else{r={n:"Family pass",p:"€135",u:"/ month",d:"One membership for the two of you",c:"On your own: "+r.n+" "+r.p+(r.u?" "+r.u:"")};}
+    }
+    $("p-name").textContent=r.n;$("p-price").textContent=r.p;$("p-unit").textContent=r.u;$("p-detail").textContent=r.d;$("p-cmp").textContent=r.c;
+  }
+  [].forEach.call(document.querySelectorAll("[data-q]"),function(g){
+    g.addEventListener("click",function(e){
+      var b=e.target.closest("button");if(!b)return;
+      st[g.dataset.q]=b.dataset.v;
+      [].forEach.call(g.children,function(c){c.setAttribute("aria-pressed",c===b?"true":"false")});
+      render();
+    });
+  });
+  render();
+})();
+</script>
+</body>
+</html>
