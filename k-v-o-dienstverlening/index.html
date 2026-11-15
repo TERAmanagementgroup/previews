@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K.v.O Dienstverlening — glazenwasser in Breda</title>
+<meta name="description" content="Glazenwasser in Breda. Kevin wast je ramen en dakkapel, snel en netjes. 4,8 op Google. Bel of app 06 44740788.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800&family=Readex+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--hour:#0F2233;--night:#08131D;--frost:#DCE8EE;--glass:#F5F9FB;--amber:#FFA94D;--muted:#55697A;--muted-d:#A9BCCB;
+  --display:"Gabarito",system-ui,sans-serif;--text:"Readex Pro",system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--text);font-size:1.0625rem;line-height:1.6;color:var(--hour);background:var(--glass);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+::selection{background:var(--amber);color:var(--night)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1220px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;letter-spacing:-.03em;text-wrap:balance}
+h2{font-size:clamp(2.8rem,6.5vw,5.4rem)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .2s var(--ease),background-color .2s,border-color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn-amber{background:var(--amber);color:var(--night)}
+.btn-amber:hover{background:#FFBB70}
+.btn-line{border:1px solid rgba(245,249,251,.5);color:var(--glass);background:transparent}
+.btn-line:hover{border-color:var(--glass);background:rgba(245,249,251,.08)}
+.btn-ink{background:var(--hour);color:var(--glass)}
+.btn-ink:hover{background:var(--night)}
+.ill{position:absolute;right:.8rem;bottom:.8rem;background:rgba(8,19,29,.75);color:var(--glass);font-size:.75rem;font-weight:500;letter-spacing:.04em;padding:.25rem .6rem;border-radius:999px;z-index:2}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5;padding:1.2rem 0}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;color:var(--glass);text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.45rem;letter-spacing:-.02em}
+.logo svg{width:34px;height:20px;color:var(--amber)}
+.logo small{font-family:var(--text);font-weight:400;font-size:.85rem;color:var(--muted-d);letter-spacing:0}
+@media(max-width:560px){.logo small{display:none}.top .btn .t{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--night);color:var(--glass);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero svg.scene{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,19,29,.55) 0%,rgba(8,19,29,0) 25%,rgba(8,19,29,0) 50%,rgba(8,19,29,.88) 85%),linear-gradient(90deg,rgba(8,19,29,.7) 0%,rgba(8,19,29,0) 55%);pointer-events:none}
+.wipe{stroke-dasharray:3000;stroke-dashoffset:0;animation:wipe 1.3s .15s var(--ease) both}
+@keyframes wipe{from{stroke-dashoffset:3000}to{stroke-dashoffset:0}}
+.hero-body{padding:8rem 0 3.2rem}
+.hero h1{font-size:clamp(3.4rem,9.5vw,8.6rem)}
+.hero h1 span{display:block;animation:rise .5s var(--ease) both}
+.hero h1 span+span{color:var(--amber);animation-delay:.07s}
+.hero .sub{margin-top:1.3rem;font-size:1.18rem;max-width:40ch;color:#DCE6EE}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.rating{margin-top:1.4rem;display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:#DCE6EE}
+.rating svg{width:18px;height:18px;color:var(--amber)}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* stroke bullet */
+.sb{width:44px;height:18px;flex:none;color:var(--amber)}
+.sb path{fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round}
+
+/* doet */
+.sec{padding:clamp(4.5rem,9vw,7.5rem) 0}
+.doet .wrap{display:grid;gap:3rem;align-items:center}
+@media(min-width:960px){.doet .wrap{grid-template-columns:1.1fr .9fr;gap:5rem}}
+.doet .lead{font-size:1.2rem;color:var(--muted);margin-top:1.2rem;max-width:44ch}
+.svc{list-style:none;margin-top:2.4rem;border-top:2px solid var(--hour)}
+.svc li{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1.2rem;padding:1.4rem 0;border-bottom:1px solid rgba(15,34,51,.14);align-items:center}
+.svc h3{font-size:clamp(2rem,3.6vw,2.8rem)}
+.svc p{grid-column:2;color:var(--muted)}
+.doet figure{position:relative}
+.doet figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+.ask{margin-top:1.8rem;font-weight:500}
+.ask a{color:var(--hour);text-underline-offset:4px;text-decoration-color:var(--amber);text-decoration-thickness:2px}
+
+/* zo werkt */
+.zo{background:var(--hour);color:var(--glass);position:relative;overflow:hidden}
+.zo .wrap{display:grid;gap:3rem}
+@media(min-width:960px){.zo .wrap{grid-template-columns:1.25fr .75fr;gap:4rem;align-items:start}}
+.lines{list-style:none;margin-top:2.2rem}
+.lines li{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,4.2vw,3.4rem);line-height:1.05;letter-spacing:-.025em;padding:.9rem 0;position:relative}
+.lines li::after{content:"";position:absolute;left:0;bottom:.35rem;height:3px;width:100%;background:linear-gradient(90deg,var(--amber),rgba(255,169,77,0));transform:scaleX(1);transform-origin:left}
+.js .lines li::after{transform:scaleX(0);transition:transform .5s var(--ease)}
+.js .lines li.on::after{transform:scaleX(1)}
+.lines li span{color:var(--muted-d)}
+.zo figure{position:relative;margin-top:.6rem}
+.zo figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.zo .src{margin-top:1.4rem;color:var(--muted-d);font-size:.92rem}
+
+/* hours */
+.uren{background:var(--frost)}
+.uren .wrap{display:grid;gap:2.5rem;align-items:end}
+@media(min-width:960px){.uren .wrap{grid-template-columns:.9fr 1.1fr;gap:5rem}}
+.uren p{color:var(--muted);margin-top:1rem;max-width:40ch}
+.board{list-style:none}
+.board li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.1rem 0;border-bottom:1px solid rgba(15,34,51,.18)}
+.board li:first-child{border-top:2px solid var(--hour)}
+.board span{font-weight:500}
+.board b{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.board li.off b{color:var(--muted)}
+
+/* reviews */
+.rev .wrap{display:grid;gap:3rem}
+@media(min-width:960px){.rev .wrap{grid-template-columns:.75fr 1.25fr;gap:5rem}}
+.score{font-family:var(--display);font-weight:800;font-size:clamp(7rem,15vw,11rem);line-height:.8;letter-spacing:-.05em}
+.score+p{color:var(--muted);margin-top:.8rem}
+.quotes{list-style:none}
+.quotes li{display:flex;gap:1rem;font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.4;padding:1.1rem 0;border-bottom:1px solid rgba(15,34,51,.14)}
+.quotes li:first-child{padding-top:0}
+.rev small{display:block;margin-top:1rem;color:var(--muted)}
+
+/* composer */
+.prijs{background:var(--night);color:var(--glass)}
+.prijs .wrap{display:grid;gap:3rem}
+@media(min-width:960px){.prijs .wrap{grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start}}
+.prijs .lead{color:var(--muted-d);margin-top:1rem;max-width:42ch}
+fieldset{border:0;margin-top:2rem}
+legend{font-weight:600;margin-bottom:.8rem;font-size:1rem}
+.opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.opt{font-family:inherit;font-size:.98rem;font-weight:500;cursor:pointer;padding:.7rem 1.1rem;border-radius:999px;border:1px solid rgba(220,232,238,.35);background:transparent;color:var(--glass);transition:background-color .2s,border-color .2s,color .2s}
+.opt:hover{border-color:var(--frost)}
+.opt[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--night)}
+.msg{background:var(--hour);border:1px solid rgba(220,232,238,.18);border-radius:18px;padding:clamp(1.4rem,3vw,2.2rem);position:sticky;top:1.5rem}
+.msg h3{font-family:var(--text);font-weight:500;font-size:.95rem;color:var(--muted-d);margin-bottom:1rem;letter-spacing:0}
+.bubble{background:#DCF5D9;color:#0E2A13;border-radius:16px 16px 4px 16px;padding:1rem 1.2rem;font-size:1.05rem;line-height:1.5;transition:opacity .15s}
+.bubble.fade{opacity:.35}
+.msg .ctas{margin-top:1.4rem}
+.msg small{display:block;margin-top:1rem;color:var(--muted-d)}
+
+/* contact */
+.contact{background:var(--hour);color:var(--glass);padding:clamp(4.5rem,9vw,7rem) 0 2.5rem}
+.contact h2 span{color:var(--amber)}
+.contact .g{display:grid;gap:2.5rem;margin-top:2.6rem}
+@media(min-width:900px){.contact .g{grid-template-columns:repeat(3,1fr)}}
+.contact h3{font-family:var(--text);font-weight:500;font-size:.92rem;color:var(--muted-d);margin-bottom:.4rem;letter-spacing:0}
+.contact p{font-size:1.15rem}
+.contact a{text-underline-offset:4px;text-decoration-color:rgba(255,169,77,.6)}
+footer{margin-top:4.5rem;padding-top:1.4rem;border-top:1px solid rgba(220,232,238,.18);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem 2rem;font-size:.86rem;color:var(--muted-d)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .lines li::after{transform:scaleX(1)}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js");</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="s" viewBox="0 0 44 18"><path d="M3 14C10 2 18 2 22 9s12 7 19-5"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 14.5V18a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.2-3.7A8.5 8.5 0 1 1 20 11.5Z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9Z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><svg class="sb" aria-hidden="true"><use href="#s"/></svg>K.v.O <small>Dienstverlening · glazenwasser</small></a>
+    <a class="btn btn-line" href="tel:+31644740788" style="padding:.6rem 1.1rem" aria-label="Bel Kevin: 06 44740788"><svg aria-hidden="true"><use href="#phone"/></svg><span class="t">06 44740788</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <svg class="scene" viewBox="0 0 1376 768" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustratie, geen foto van K.v.O: een glazenwasser trekt met een wisser een schone baan over een ingezeept raam in een Bredase straat bij het blauwe uur">
+    <defs>
+      <filter id="frost" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="7"/></filter>
+      <mask id="clean" maskUnits="userSpaceOnUse" x="0" y="0" width="1376" height="768">
+        <rect width="1376" height="768" fill="#000"/>
+        <path class="wipe" d="M420,860 C620,560 760,330 960,360 S1180,620 1460,60" fill="none" stroke="#fff" stroke-width="250" stroke-linecap="round"/>
+      </mask>
+    </defs>
+    <image href="images/raam-blauw-uur.jpg" width="1376" height="768" filter="url(#frost)"/>
+    <rect width="1376" height="768" fill="#DCE8EE" opacity=".3"/>
+    <image href="images/raam-blauw-uur.jpg" width="1376" height="768" mask="url(#clean)"/>
+  </svg>
+  <span class="ill">Illustratie</span>
+  <div class="hero-body wrap">
+    <h1 id="h1"><span>Helder glas.</span><span>Afspraak is afspraak.</span></h1>
+    <p class="sub">Glazenwasser in Breda. Kevin wast je ramen en dakkapel, snel en netjes.</p>
+    <div class="ctas">
+      <a class="btn btn-amber" href="tel:+31644740788"><svg aria-hidden="true"><use href="#phone"/></svg>Bel 06 44740788</a>
+      <a class="btn btn-line" href="#prijs">Vraag een prijs</a>
+    </div>
+    <p class="rating"><svg aria-hidden="true"><use href="#star"/></svg>4,8 op Google, uit 12 reviews</p>
+  </div>
+</section>
+
+<section class="sec doet" aria-labelledby="doet-h">
+  <div class="wrap">
+    <div>
+      <h2 id="doet-h">Wat Kevin wast</h2>
+      <p class="lead">Geen lange lijst met beloftes. Dit is wat klanten van Kevin terugzien.</p>
+      <ul class="svc">
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg><h3>Ramen</h3><p>Glazenwassen, snel en netjes.</p></li>
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg><h3>Dakkapellen</h3><p>Ook de dakkapel boven je raam wordt weer schoon.</p></li>
+      </ul>
+      <p class="ask">Iets anders schoon te maken? <a href="https://wa.me/31644740788?text=Hoi%20Kevin%2C%20doe%20je%20ook%3A%20">Vraag het Kevin</a>.</p>
+    </div>
+    <figure>
+      <img src="images/dakkapel.jpg" alt="Illustratie, geen foto van K.v.O: een schone dakkapel op een bakstenen huis met een telescoopsteel ertegen" width="928" height="1152" loading="lazy">
+      <span class="ill">Illustratie</span>
+    </figure>
+  </div>
+</section>
+
+<section class="sec zo" aria-labelledby="zo-h">
+  <div class="wrap">
+    <div>
+      <h2 id="zo-h">Zo werkt Kevin</h2>
+      <ul class="lines" id="lines">
+        <li>Beleefd en vriendelijk.</li>
+        <li>Snel, en vakkundig.</li>
+        <li>Met goed materiaal.</li>
+        <li>Afspraak is afspraak.</li>
+        <li>Netjes. <span>En de prijs past bij de kwaliteit.</span></li>
+      </ul>
+      <p class="src">Zo omschrijven klanten Kevin in hun reviews op Google.</p>
+    </div>
+    <figure>
+      <img src="images/gereedschap.jpg" alt="Illustratie, geen foto van K.v.O: een wisser, een microvezeldoek en een inwasser op een leisteen met waterdruppels" width="1200" height="896" loading="lazy">
+      <span class="ill">Illustratie</span>
+    </figure>
+  </div>
+</section>
+
+<section class="sec uren" aria-labelledby="uren-h">
+  <div class="wrap">
+    <div>
+      <h2 id="uren-h">Vanaf zeven uur aan het werk</h2>
+      <p>Op deze tijden is Kevin aan het werk en bereikbaar. Bel of app 06 44740788.</p>
+    </div>
+    <ul class="board" aria-label="Werktijden">
+      <li><span>Maandag t/m vrijdag</span><b>07:00 – 16:00</b></li>
+      <li><span>Zaterdag</span><b>11:00 – 14:00</b></li>
+      <li class="off"><span>Zondag</span><b>Gesloten</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec rev" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div>
+      <h2 id="rev-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-bottom:1.4rem">Wat klanten zeggen</h2>
+      <div class="score">4,8</div>
+      <p>op Google, uit 12 reviews</p>
+    </div>
+    <div>
+      <ul class="quotes">
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg>Snel en vakkundig gewerkt, met goed materiaal.</li>
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg>Komt zijn afspraken na.</li>
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg>Netjes resultaat, ook de dakkapel is weer schoon.</li>
+        <li><svg class="sb" aria-hidden="true"><use href="#s"/></svg>Eén reviewer zegt er expliciet bij: gewoon klant, geen familie of vriend.</li>
+      </ul>
+      <small>Samengevat uit reviews op Google.</small>
+    </div>
+  </div>
+</section>
+
+<section class="sec prijs" id="prijs" aria-labelledby="prijs-h">
+  <div class="wrap">
+    <div>
+      <h2 id="prijs-h">Vraag een prijs</h2>
+      <p class="lead">Kies wat bij je huis past. Je appje staat dan klaar voor Kevin, met alles wat hij nodig heeft voor een prijs.</p>
+      <fieldset><legend>Wat voor pand?</legend>
+        <div class="opts" data-g="pand">
+          <button class="opt" type="button" aria-pressed="true" data-v="een tussenwoning">Tussenwoning</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="een hoekwoning">Hoekwoning</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="een vrijstaand huis">Vrijstaand</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="een appartement">Appartement</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="een bedrijfspand">Bedrijfspand</button>
+        </div>
+      </fieldset>
+      <fieldset><legend>Ook een dakkapel?</legend>
+        <div class="opts" data-g="dak">
+          <button class="opt" type="button" aria-pressed="false" data-v="met dakkapel">Ja</button>
+          <button class="opt" type="button" aria-pressed="true" data-v="">Nee</button>
+        </div>
+      </fieldset>
+      <fieldset><legend>Hoe vaak?</legend>
+        <div class="opts" data-g="vaak">
+          <button class="opt" type="button" aria-pressed="true" data-v="een keer">Eén keer</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="regelmatig">Regelmatig</button>
+          <button class="opt" type="button" aria-pressed="false" data-v="weet ik nog niet">Weet ik nog niet</button>
+        </div>
+      </fieldset>
+    </div>
+    <div class="msg">
+      <h3>Je appje aan Kevin</h3>
+      <p class="bubble" id="bubble" aria-live="polite">Hoi Kevin, ik wil graag een prijs voor het glazenwassen van een tussenwoning. Een keer. Mijn adres is: </p>
+      <div class="ctas">
+        <a class="btn btn-amber" id="send" href="https://wa.me/31644740788"><svg aria-hidden="true"><use href="#wa"/></svg>Stuur via WhatsApp</a>
+        <a class="btn btn-line" href="tel:+31644740788"><svg aria-hidden="true"><use href="#phone"/></svg>Of bel</a>
+      </div>
+      <small>Je adres vul je zelf aan in WhatsApp. Er wordt niets verstuurd voordat jij op verzenden drukt.</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact" aria-labelledby="c-h">
+  <div class="wrap">
+    <h2 id="c-h">Schone ramen? <span>Bel Kevin.</span></h2>
+    <div class="g">
+      <div><h3>Telefoon en WhatsApp</h3><p><a href="tel:+31644740788">06 44740788</a></p></div>
+      <div><h3>Gevestigd</h3><p><a href="https://www.google.com/maps/search/K.v.O+Dienstverlening+Zorgvlietstraat+Breda">Zorgvlietstraat, Breda</a></p></div>
+      <div><h3>Werktijden</h3><p>Ma–vr 07:00–16:00 · za 11:00–14:00</p></div>
+    </div>
+    <footer><span>K.v.O Dienstverlening · glazenwasser · Breda</span><span>Beelden op deze pagina zijn illustraties</span></footer>
+  </div>
+</section>
+</main>
+<script>
+(function(){
+  var S={pand:"een tussenwoning",dak:"",vaak:"een keer"};
+  var b=document.getElementById("bubble"),send=document.getElementById("send");
+  function txt(){
+    var t="Hoi Kevin, ik wil graag een prijs voor het glazenwassen van "+S.pand+(S.dak?" "+S.dak:"")+". ";
+    t+= S.vaak==="weet ik nog niet"?"Hoe vaak weet ik nog niet. ":(S.vaak==="regelmatig"?"Het liefst regelmatig. ":"Een keer. ");
+    return t+"Mijn adres is: ";
+  }
+  function render(){
+    var t=txt();b.classList.add("fade");
+    setTimeout(function(){b.textContent=t;b.classList.remove("fade")},120);
+    send.href="https://wa.me/31644740788?text="+encodeURIComponent(t);
+  }
+  document.querySelectorAll(".opts").forEach(function(g){
+    g.addEventListener("click",function(e){
+      var o=e.target.closest(".opt");if(!o)return;
+      g.querySelectorAll(".opt").forEach(function(x){x.setAttribute("aria-pressed",x===o?"true":"false")});
+      S[g.dataset.g]=o.dataset.v;render();
+    });
+  });
+  send.href="https://wa.me/31644740788?text="+encodeURIComponent(txt());
+  var L=document.querySelectorAll("#lines li");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.6});
+    L.forEach(function(l){io.observe(l)});
+  } else L.forEach(function(l){l.classList.add("on")});
+})();
+</script>
+</body>
+</html>
