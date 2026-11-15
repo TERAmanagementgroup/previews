@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Been Installatietechniek · Installateur en loodgieter in Breda</title>
+<meta name="description" content="Installateur en loodgieter in Breda en omgeving, al meer dan 15 jaar. Cv-ketels, radiatoren, boilers, loodgieterswerk, lekkages en duurzame installaties. Bel 06 30 80 41 05.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@1&family=Schibsted+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1F2F4; --white:#FFFFFF; --ink:#0B1F5C; --ink-soft:#3A4A7A;
+  --flame:#D1570F; --flame-btn:#B84A0A; --water:#8FB8DE; --pipe:#C9CCD3;
+  --display:"Libre Caslon Display", Georgia, serif;
+  --italic:"Libre Caslon Text", Georgia, serif;
+  --text:"Schibsted Grotesk", system-ui, sans-serif;
+  --ease-out:cubic-bezier(0.23, 1, 0.32, 1);
+  --wrap:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--text);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--ink);color:var(--paper)}
+:focus-visible{outline:2px solid var(--flame-btn);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,3.6vw,3.1rem)}
+h3{font-size:1.75rem}
+p{margin:0 0 1em}
+em.it{font-family:var(--italic);font-style:italic;color:var(--flame)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.tabnum{font-variant-numeric:tabular-nums}
+.ill{display:inline-block;font:600 11px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:var(--white);border:1px solid var(--pipe);padding:5px 8px;border-radius:999px}
+
+/* markers */
+.mk{width:18px;height:18px;flex:none}
+.mk-flame{color:var(--flame)} .mk-drop{color:#3F7FB8}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:50px;padding:6px 8px 6px 22px;border-radius:999px;font:600 16px/1 var(--text);text-decoration:none;border:1.5px solid var(--ink);transition:background-color .2s ease,color .2s ease,transform .14s var(--ease-out)}
+.btn .arr{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.18)}
+.btn .arr svg{width:16px;height:16px}
+.btn-hot{background:var(--flame-btn);border-color:var(--flame-btn);color:#fff}
+.btn-line{color:var(--ink);background:transparent}
+.btn-line .arr{background:var(--ink);color:var(--paper)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){
+  .btn-hot:hover{background:#9C3F08;border-color:#9C3F08}
+  .btn-line:hover{background:var(--ink);color:var(--paper)}
+  .btn-line:hover .arr{background:var(--paper);color:var(--ink)}
+}
+
+/* header */
+.top{padding:22px 0 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:58px;height:48px}
+.logo b{display:block;font:400 26px/1 var(--display);letter-spacing:.06em}
+.logo small{display:block;font:600 11px/1.3 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px}
+.top-tel{font:600 16px/1 var(--text);text-decoration:none;display:flex;align-items:center;gap:8px;padding:10px 0}
+.top-tel svg{width:18px;height:18px;color:var(--flame-btn)}
+
+/* hero */
+.hero{padding:28px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5vw,4.6rem);margin-bottom:22px}
+.hero .lead{font-size:1.2rem;max-width:30ch;color:var(--ink);margin-bottom:28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.proof{display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--ink-soft);padding-top:20px;border-top:1px solid var(--pipe);max-width:420px}
+.proof span{display:flex;align-items:center;gap:10px}
+.proof .star{width:16px;height:16px;color:var(--flame)}
+.hero-copy{animation:rise .55s var(--ease-out) both}
+.explorer{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:16px;align-items:center}
+.house{position:relative;animation:settle .6s var(--ease-out) both}
+.house img{width:100%}
+.house .ill{position:absolute;left:0;bottom:2px}
+.hs{position:absolute;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;border:1.5px solid var(--ink);background:var(--white);display:grid;place-items:center;cursor:pointer;padding:0;box-shadow:0 2px 6px rgba(11,31,92,.22);transition:background-color .18s ease,transform .16s var(--ease-out),box-shadow .18s ease}
+.hs svg{width:18px;height:18px}
+.hs.hot svg{color:var(--flame)} .hs.cold svg{color:#3F7FB8}
+.hs::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid currentColor;opacity:0;animation:ping 1.1s var(--ease-out) .5s 1}
+.hs.hot{color:var(--flame)} .hs.cold{color:#3F7FB8}
+.hs[aria-pressed="true"].hot{background:var(--flame-btn);border-color:var(--flame-btn)}
+.hs[aria-pressed="true"].cold{background:var(--ink);border-color:var(--ink)}
+.hs[aria-pressed="true"] svg{color:#fff}
+.hs[aria-pressed="true"]{transform:translate(-50%,-50%) scale(1.12);box-shadow:0 4px 12px rgba(11,31,92,.3)}
+@media (hover:hover) and (pointer:fine){.hs:hover{transform:translate(-50%,-50%) scale(1.1)}}
+.panel{background:var(--white);border:1px solid var(--pipe);border-radius:14px;padding:22px 20px 20px;box-shadow:0 6px 24px rgba(11,31,92,.07);min-height:100%;display:flex;flex-direction:column}
+.panel .where{font:600 12px/1 var(--text);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:8px;margin:0 0 10px}
+.panel h3{font-size:1.6rem;margin-bottom:12px}
+.panel ul{list-style:none;margin:0 0 16px;padding:0;font-size:15px;line-height:1.5}
+.panel li{padding:7px 0;border-top:1px solid #E4E6EB}
+.panel .pcall{margin-top:auto;font:600 15px/1.2 var(--text);display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--flame-btn)}
+.panel .pcall svg{width:16px;height:16px}
+.panel .hint{font-size:15px;color:var(--ink-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 16px}
+.chip{font:600 13px/1 var(--text);color:var(--ink);background:var(--paper);border:1px solid var(--pipe);border-radius:999px;padding:8px 11px 8px 9px;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.chip svg{width:13px;height:13px}
+.chip.hot svg{color:var(--flame)} .chip.cold svg{color:#3F7FB8}
+.chip:focus-visible{outline:2px solid var(--flame-btn);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.chip:hover{background:var(--white);border-color:var(--ink);text-decoration:underline;text-underline-offset:3px}}
+.chip[aria-pressed="true"],.chip[aria-pressed="true"]:hover{background:var(--ink);color:#fff;border-color:var(--ink);text-decoration:none}
+.chip[aria-pressed="true"] svg{color:#fff}
+.panel-body{transition:opacity .2s ease}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.03)}to{transform:none}}
+@keyframes ping{0%{opacity:.8;transform:scale(.8)}100%{opacity:0;transform:scale(1.5)}}
+
+/* pipe divider */
+.pipe{display:flex;align-items:flex-start;height:34px;margin:0 auto;max-width:var(--wrap);padding:0 32px}
+.pipe i{flex:1;height:6px;border:1.5px solid var(--pipe);border-right:0;border-radius:3px 0 0 3px;margin-top:0}
+.pipe svg{width:40px;height:34px;flex:none;color:var(--pipe)}
+
+/* storing */
+.storing{padding:48px 0 56px}
+.storing .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center}
+.storing .drop-big{width:84px;height:100px}
+.storing h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:10px}
+.storing p{max-width:58ch;margin:0;color:var(--ink-soft)}
+.bigtel{font:400 clamp(2rem,3.6vw,3rem)/1 var(--display);text-decoration:none;white-space:nowrap;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.bigtel small{font:600 13px/1 var(--text);letter-spacing:.1em;text-transform:uppercase;color:var(--flame-btn)}
+
+/* trades */
+.sec{padding:72px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:40px}
+.sec-head p{max-width:44ch;margin:0;color:var(--ink-soft)}
+.trades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.trade{background:var(--white);border:1px solid var(--pipe);border-radius:16px;padding:26px 28px 30px;display:flex;flex-direction:column}
+.vig{height:230px;display:flex;align-items:flex-end;justify-content:center;position:relative;margin-bottom:22px;border-bottom:1px solid #E4E6EB;padding-bottom:16px}
+.vig img{max-height:210px;width:auto}
+.vig .ill{position:absolute;right:0;top:0}
+.vig svg.sun{width:200px;height:200px}
+.trade h3{margin-bottom:6px}
+.trade .sub{font-family:var(--italic);font-style:italic;color:var(--ink-soft);margin-bottom:16px}
+.trade ul{list-style:none;padding:0;margin:0}
+.trade li{display:flex;gap:12px;padding:10px 0;border-top:1px solid #E4E6EB;font-size:16px;line-height:1.45}
+.trade li .mk{margin-top:2px}
+
+/* besparen */
+.save{background:var(--white);border-block:1px solid var(--pipe)}
+.save .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px}
+.save h2{margin-bottom:18px}
+.save .intro{color:var(--ink-soft);max-width:40ch}
+.note-box{margin-top:28px;display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border:1px dashed var(--ink-soft);border-radius:12px;font-size:15px;max-width:44ch}
+.note-box svg{width:22px;height:22px;flex:none;margin-top:1px}
+.checklist{list-style:none;margin:0;padding:0;counter-reset:c}
+.checklist li{display:grid;grid-template-columns:28px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--pipe);font-size:1.15rem;line-height:1.45}
+.checklist li:first-child{border-top:1px solid var(--pipe)}
+.checklist li .mk{width:22px;height:22px;margin-top:3px}
+.checklist small{display:block;font-size:15px;color:var(--ink-soft);margin-top:4px}
+
+/* praktijk */
+.prak .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
+.prak figure{margin:0}
+.prak figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 70%;border-radius:14px}
+.prak figcaption{font-family:var(--italic);font-style:italic;font-size:15px;color:var(--ink-soft);margin-top:12px}
+.steps{list-style:none;margin:28px 0 0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;left:21px;top:22px;bottom:22px;width:6px;border:1.5px solid var(--pipe);border-radius:3px}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:20px;padding:0 0 26px;position:relative}
+.steps .n{width:48px;height:48px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink);display:grid;place-items:center;font:400 22px/1 var(--display);position:relative}
+.steps b{display:block;font:400 1.5rem/1.2 var(--display);margin:8px 0 4px}
+.steps p{margin:0;color:var(--ink-soft);max-width:46ch}
+
+/* reviews */
+.revs{background:var(--white);border-block:1px solid var(--pipe)}
+.score{display:flex;align-items:baseline;gap:14px}
+.score b{font:400 clamp(3.4rem,6vw,5rem)/1 var(--display)}
+.score span{color:var(--ink-soft)}
+.stars{display:flex;gap:3px;color:var(--flame);margin-top:8px}
+.stars svg{width:18px;height:18px}
+.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.notecard{background:var(--paper);border-radius:14px;padding:28px 26px;position:relative;border:1px solid var(--pipe)}
+.notecard::before{content:"";position:absolute;top:-1px;left:26px;width:46px;height:5px;background:var(--ink);border-radius:0 0 3px 3px}
+.notecard p{font:400 1.45rem/1.3 var(--display);margin:6px 0 14px}
+.notecard small{color:var(--ink-soft);font-size:14px}
+.revs-foot{margin-top:22px;font-size:14px;color:var(--ink-soft)}
+
+/* werkgebied */
+.area .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:center}
+.area h2{margin-bottom:16px}
+.area p{color:var(--ink-soft);max-width:40ch}
+.ring{position:relative;width:min(100%,560px);aspect-ratio:1;margin:0 auto}
+.ring svg.rose{position:absolute;inset:0;width:100%;height:100%}
+.ring .place{position:absolute;transform:translate(-50%,-50%);font:400 clamp(1.05rem,1.9vw,1.5rem)/1 var(--display);white-space:nowrap;background:var(--paper);padding:4px 8px}
+.ring .center{font-size:clamp(1.6rem,3vw,2.3rem);background:transparent}
+.ring .center em{display:block;font:italic 14px/1 var(--italic);color:var(--flame-btn);text-align:center;margin-top:6px}
+
+/* contact */
+.contact{background:var(--ink);color:#E6EAF5;padding:80px 0 40px}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px}
+.contact h2{color:#fff;margin-bottom:18px}
+.contact .lead{max-width:40ch;color:#C6CDE3}
+.contact .ctas{margin-top:28px}
+.contact .btn-line{border-color:#E6EAF5;color:#fff}
+.contact .btn-line .arr{background:#fff;color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.contact .btn-line:hover{background:#fff;color:var(--ink)}.contact .btn-line:hover .arr{background:var(--ink);color:#fff}}
+.dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+.dl dt,.dl dd{padding:14px 0;border-top:1px solid rgba(201,204,211,.28);margin:0}
+.dl dt{font:600 12px/1.9 var(--text);letter-spacing:.12em;text-transform:uppercase;color:#9FAACB;padding-right:24px}
+.dl dd{font-size:17px;color:#fff}
+.dl a{color:#fff}
+.foot{margin-top:64px;padding-top:24px;border-top:1px solid rgba(201,204,211,.28);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#9FAACB}
+.foot b{font:400 18px/1 var(--display);color:#fff;letter-spacing:.06em}
+
+/* mobile */
+@media (max-width:1100px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero .lead{max-width:40ch}
+}
+@media (max-width:860px){
+  .wrap,.pipe{padding:0 20px}
+  .explorer{grid-template-columns:1fr}
+  .storing .wrap{grid-template-columns:1fr;gap:18px}
+  .storing .drop-big{width:56px;height:68px}
+  .bigtel{align-items:flex-start}
+  .sec{padding:56px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px}
+  .trades,.notes{grid-template-columns:1fr}
+  .save .wrap,.prak .wrap,.area .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
+  .ring{width:100%}
+  .ring .place{font-size:1rem;padding:3px 5px}
+  .hs{width:34px;height:34px}
+  .hs svg{width:16px;height:16px}
+}
+@media (max-width:420px){
+  .hero h1{font-size:2.45rem}
+  .btn{font-size:15px;padding-left:18px}
+  .logo b{font-size:22px}
+  .top-tel span{display:none}
+  .dl{grid-template-columns:1fr}
+  .dl dd{border-top:0;padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flame" viewBox="0 0 24 24"><path fill="currentColor" d="M12.6 2.2c.4 3-1.3 4.6-2.8 6.2C8.4 9.9 7 11.4 7 14.2a5 5 0 0 0 10 0c0-1.7-.6-3-1.4-4.1-.2 1.2-.9 2-1.9 2.4.6-3.4-.2-6.8-1.1-10.3Z"/></symbol>
+  <symbol id="drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5S5.5 10 5.5 14.6a6.5 6.5 0 0 0 13 0C18.5 10 12 2.5 12 2.5Z"/></symbol>
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.7 1.7 0 0 1-1.8 1.7C10.9 20.2 3.8 13.1 3.3 5.3A1.7 1.7 0 0 1 5 3.5Z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8Z"/></symbol>
+  <symbol id="elbow" viewBox="0 0 40 34"><path d="M0 1.5h22a10 10 0 0 1 10 10V34M0 7.5h22a4 4 0 0 1 4 4V34" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="18" y="0" width="4" height="9" fill="#F1F2F4" stroke="currentColor" stroke-width="1.2"/><rect x="25" y="16" width="8" height="4" fill="#F1F2F4" stroke="currentColor" stroke-width="1.2"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="De Been Installatietechniek">
+      <svg viewBox="0 0 58 48" aria-hidden="true">
+        <path d="M6 24 29 4l23 20" fill="none" stroke="#C9CCD3" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M2 34h8a4 4 0 0 0 4-4v-3M56 34h-8a4 4 0 0 1-4-4v-3" fill="none" stroke="#C9CCD3" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M29 14s-8 9-8 15a8 8 0 0 0 16 0c0-6-8-15-8-15Z" fill="#8FB8DE" stroke="#0B1F5C" stroke-width="1.6"/>
+        <path d="M29.5 22.5c.3 2-1 3.1-1.9 4.1-.8.9-1.6 1.8-1.6 3.4a3 3 0 0 0 6 0c0-1-.4-1.8-.8-2.4-.1.7-.5 1.2-1.1 1.4.3-2-.1-4.2-.6-6.5Z" fill="#D1570F"/>
+        <path d="M24.5 19.5l2 1.2M33.5 19.5l-2 1.2" stroke="#fff" stroke-width="1.1" stroke-linecap="round"/>
+      </svg>
+      <span><b>DE BEEN</b><small>Installatietechniek</small></span>
+    </a>
+    <a class="top-tel tabnum" href="tel:0630804105"><svg aria-hidden="true"><use href="#phone"/></svg><span>06 30 80 41 05</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1 id="h1">Van druppende <em class="it">kraan</em> tot nieuwe cv-ketel</h1>
+      <p class="lead">Installateur en loodgieter in Breda en omgeving, al meer dan 15 jaar.</p>
+      <div class="ctas">
+        <a class="btn btn-hot tabnum" href="tel:0630804105">Bel 06 30 80 41 05 <span class="arr"><svg><use href="#arr"/></svg></span></a>
+        <a class="btn btn-line" href="#contact">Vraag een offerte <span class="arr"><svg><use href="#arr"/></svg></span></a>
+      </div>
+      <div class="proof">
+        <span><svg class="star" aria-hidden="true"><use href="#star"/></svg><strong>4,9</strong>&nbsp;uit 14 Google-reviews</span>
+        <span><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Storingsdienst voor onze klanten</span>
+      </div>
+    </div>
+
+    <div class="explorer" id="explorer">
+      <div class="house">
+        <img src="images/huis-cutaway.png" width="832" height="833" alt="Illustratie, geen foto: een doorsnede van een woonhuis met zonnepanelen, cv-ketel op zolder, badkamer, keuken, woonkamer met radiator, kruipruimte met rioolbuizen en een warmtepomp buiten.">
+        <span class="ill">Illustratie</span>
+        <!-- hotspots injected by script; fallback list in panel -->
+      </div>
+      <div class="panel" id="panel" aria-live="polite">
+        <p class="where" id="p-where"><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Waar in huis?</p>
+        <div class="panel-body" id="p-body">
+          <h3 id="p-title">Tik op een plek in huis</h3>
+          <p class="hint" id="p-hint">Van zolder tot kruipruimte: kies een plek en zie wat we daar voor u doen.</p>
+          <ul id="p-list" hidden></ul>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Plekken in huis"></div>
+        <a class="pcall tabnum" href="tel:0630804105"><svg aria-hidden="true"><use href="#phone"/></svg>Bel 06 30 80 41 05</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pipe" aria-hidden="true"><i></i><svg><use href="#elbow"/></svg></div>
+
+<section class="storing" aria-labelledby="h-storing">
+  <div class="wrap">
+    <svg class="drop-big" viewBox="0 0 84 100" aria-hidden="true">
+      <path d="M42 4S8 44 8 66a34 34 0 0 0 68 0C76 44 42 4 42 4Z" fill="#8FB8DE" stroke="#0B1F5C" stroke-width="2"/>
+      <path d="M24 64a18 18 0 0 0 12 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h2 id="h-storing">Lekkage of storing?</h2>
+      <p>Bij een lekkage telt elk uur: snel handelen beperkt waterschade, ook bij de buren. Voor onze klanten hebben we een storingsdienst.</p>
+    </div>
+    <a class="bigtel tabnum" href="tel:0630804105"><small>Bel direct</small>06 30 80 41 05</a>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="h-vak">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-vak">Drie vakgebieden, één vaste installateur</h2>
+      <p>Uw wens staat centraal. We denken mee en zoeken de oplossing die bij uw woonsituatie past.</p>
+    </div>
+    <div class="trades">
+      <article class="trade">
+        <div class="vig"><img src="images/cv-ketel.png" width="723" height="741" alt="Illustratie, geen foto: een gravure van een cv-ketel aan de muur." loading="lazy"><span class="ill">Illustratie</span></div>
+        <h3>Verwarming</h3>
+        <p class="sub">Cv-ketels, radiatoren en boilers</p>
+        <ul>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Cv-ketels van o.a. Intergas en Nefit, met advies bij uw keuze</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Radiatoren leveren, plaatsen, ontluchten en waterzijdig inregelen</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Boilers: indirect gestookt, gas of elektrisch, meestal in te stellen tot 80 °C</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Close-in boiler met kokendwaterkraan in de keuken</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Onderhoudscontract voor een bescheiden bedrag</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Lekkages aan cv-leidingen en radiatorkranen</li>
+        </ul>
+      </article>
+      <article class="trade">
+        <div class="vig"><img src="images/kraan.png" width="542" height="665" alt="Illustratie, geen foto: een gravure van een kraan met leidingen." loading="lazy"><span class="ill">Illustratie</span></div>
+        <h3>Loodgieterswerk</h3>
+        <p class="sub">Water, riool, ventilatie en gas</p>
+        <ul>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Water-, riolerings-, ventilatie- en gasinstallaties</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Een kraan vervangen of een gesprongen leiding</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Lekkages snel verholpen, om waterschade te beperken</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Sanitair en problemen met het riool</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Bij nieuwbouw én in oudere gebouwen</li>
+        </ul>
+      </article>
+      <article class="trade">
+        <div class="vig">
+          <svg class="sun" viewBox="0 0 200 200" role="img" aria-label="Getekend teken: een zon boven een waterdruppel">
+            <g fill="none" stroke="#0B1F5C" stroke-width="1.5" stroke-linecap="round">
+              <circle cx="100" cy="70" r="30"/>
+              <circle cx="100" cy="70" r="22" stroke-dasharray="2 4"/>
+              <path d="M100 22v12M100 106v6M52 70h12M136 70h12M66 36l8 8M126 96l8 8M134 36l-8 8M74 96l-8 8"/>
+              <path d="M100 116s-30 34-30 52a30 30 0 0 0 60 0c0-18-30-52-30-52Z" fill="#8FB8DE"/>
+              <path d="M84 166a16 16 0 0 0 10 14" stroke="#fff" stroke-width="3"/>
+              <path d="M30 196h140" stroke="#C9CCD3"/>
+            </g>
+            <path d="M100 52c1 6-2 9-5 12-3 3-5 5-5 9a10 10 0 0 0 20 0c0-3-1-6-3-8-.4 2.4-1.8 4-3.8 4.8 1.2-6.8-.4-12-3.2-17.8Z" fill="#D1570F"/>
+          </svg>
+        </div>
+        <h3>Duurzaam</h3>
+        <p class="sub">Goed voor de wereld en uw energierekening</p>
+        <ul>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Warmtepompen, met advies bij de keuze</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>De Hoon-zonnepanelen, afgestemd op uw dak, omgeving en ligging: zonder kleine lettertjes</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Zonneboilers: tot wel 60% van het water duurzaam verwarmd door de zon. Op temperatuur is het tapwater gratis</li>
+          <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Mechanische ventilatie en de MV-box</li>
+          <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg>Airconditioning</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec save" aria-labelledby="h-save">
+  <div class="wrap">
+    <div>
+      <h2 id="h-save">Besparen begint klein</h2>
+      <p class="intro">U hoeft niet meteen aan een warmtepomp te denken. Met eenvoudige ingrepen is de investering beperkt en de besparing relatief hoog.</p>
+      <div class="note-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z" fill="none" stroke="#0B1F5C" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#B84A0A" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>In verband met garantie en aansprakelijkheid installeren we alleen materialen die we zelf leveren.</span>
+      </div>
+    </div>
+    <ol class="checklist">
+      <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg><div>Cv-leidingen isoleren in onverwarmde ruimtes</div></li>
+      <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg><div>Thermostatische radiatorkranen in ruimtes buiten de woonkamer</div></li>
+      <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg><div>De cv- en ventilatie-installatie goed inregelen<small>Er gaat dan niet meer in dan nodig is. Dat levert vaak al een grote besparing op.</small></div></li>
+      <li><svg class="mk mk-flame" aria-hidden="true"><use href="#flame"/></svg><div>Een slimmere regeling<small>Van een modulerende kamerthermostaat tot een vraaggestuurde cv- of ventilatieregeling.</small></div></li>
+      <li><svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg><div>Zuinige circulatiepompen en gelijkstroom-ventilatieboxen</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec prak" aria-labelledby="h-prak">
+  <div class="wrap">
+    <figure>
+      <img src="images/praktijk-duotone.jpg" width="1400" height="2486" alt="Foto van De Been Installatietechniek: nieuw leidingwerk van een installatie op zolder." loading="lazy">
+      <figcaption>Een installatie van ons op zolder: nieuw leidingwerk.</figcaption>
+    </figure>
+    <div>
+      <h2 id="h-prak">Zo gaat een klus</h2>
+      <ol class="steps">
+        <li><span class="n">1</span><div><b>U belt of mailt</b><p>Robin is bereikbaar op 06 30 80 41 05 en via info@de-been.nl.</p></div></li>
+        <li><span class="n">2</span><div><b>We komen vrijblijvend langs</b><p>Voor advies, en om samen te kiezen wat past bij uw woonsituatie.</p></div></li>
+        <li><span class="n">3</span><div><b>U krijgt snel een duidelijke offerte</b><p>U weet direct waar u aan toe bent.</p></div></li>
+        <li><span class="n">4</span><div><b>Netjes en vlot uitgevoerd</b><p>Vakkundig en veilig. U hoeft niet altijd thuis te zijn.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec revs" aria-labelledby="h-revs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 id="h-revs">Wat klanten zeggen</h2>
+      </div>
+      <div>
+        <div class="score"><b>4,9</b><span>uit 14 Google-reviews</span></div>
+        <div class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+      </div>
+    </div>
+    <div class="notes">
+      <div class="notecard"><p>Snel langs om te kijken, en snel een offerte.</p><small>Uit de Google-reviews</small></div>
+      <div class="notecard"><p>Netjes en snel gewerkt. Je hoeft er niet voor thuis te zijn.</p><small>Uit de Google-reviews</small></div>
+      <div class="notecard"><p>Duidelijke communicatie en een eerlijke prijs.</p><small>Robin en Anton worden bij naam genoemd</small></div>
+    </div>
+    <p class="revs-foot">Samengevat in onze eigen woorden uit de Google-reviews.</p>
+  </div>
+</section>
+
+<section class="sec area" aria-labelledby="h-area">
+  <div class="wrap">
+    <div>
+      <h2 id="h-area">Breda en omstreken</h2>
+      <p>Vanuit Breda werken we in de hele regio. Woont u in een van deze plaatsen? Dan komen we graag bij u langs.</p>
+      <a class="btn btn-line" href="tel:0630804105">Bel voor een afspraak <span class="arr"><svg><use href="#arr"/></svg></span></a>
+    </div>
+    <div class="ring" role="img" aria-label="Werkgebied: Breda, Prinsenbeek, Etten-Leur, Terheijden, Teteringen, Bavel, Ulvenhout en Rijsbergen">
+      <svg class="rose" viewBox="0 0 400 400" aria-hidden="true">
+        <g fill="none" stroke="#C9CCD3" stroke-width="1.2">
+          <circle cx="200" cy="200" r="150"/>
+          <circle cx="200" cy="200" r="144" stroke-dasharray="1 5"/>
+          <circle cx="200" cy="200" r="70"/>
+        </g>
+        <g stroke="#0B1F5C" stroke-width="1.2" fill="none">
+          <path d="M200 36v10"/>
+        </g>
+        <g transform="translate(200 170)"><path d="M0-52 7-7 0 0-7-7Z" fill="#0B1F5C"/><path d="M0-52 7-7 0 0Z" fill="#3A4A7A"/><path d="M0 36 7 7 0 0-7 7Z" fill="none" stroke="#0B1F5C" stroke-width="1.2"/><path d="M-40 0-7-7 0 0-7 7Z" fill="none" stroke="#0B1F5C" stroke-width="1.2"/><path d="M40 0 7-7 0 0 7 7Z" fill="none" stroke="#0B1F5C" stroke-width="1.2"/><circle r="2.5" fill="#D1570F"/></g>
+        <text x="200" y="30" text-anchor="middle" font-family="Libre Caslon Display, Georgia, serif" font-size="16" fill="#0B1F5C">N</text>
+      </svg>
+      <span class="place" style="left:50%;top:13%">Teteringen</span>
+      <span class="place" style="left:81%;top:24%">Terheijden</span>
+      <span class="place" style="left:84%;top:62%">Bavel</span>
+      <span class="place" style="left:66%;top:87%">Ulvenhout</span>
+      <span class="place" style="left:28%;top:84%">Rijsbergen</span>
+      <span class="place" style="left:15%;top:52%">Etten-Leur</span>
+      <span class="place" style="left:22%;top:22%">Prinsenbeek</span>
+      <span class="place center" style="left:50%;top:61%">Breda<em>vestiging</em></span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <div>
+      <h2 id="h-contact">Vraag vrijblijvend een offerte</h2>
+      <p class="lead">Meer weten over een cv-ketel, loodgieterswerk, warmtepompen of zonnepanelen? Bel of mail Robin; we komen graag langs voor advies.</p>
+      <div class="ctas">
+        <a class="btn btn-hot" href="tel:0630804105">Bel Robin <span class="arr"><svg><use href="#arr"/></svg></span></a>
+        <a class="btn btn-line" href="mailto:info@de-been.nl?subject=Offerte%20aanvraag">Mail voor een offerte <span class="arr"><svg><use href="#arr"/></svg></span></a>
+      </div>
+    </div>
+    <dl class="dl">
+      <dt>Contact</dt><dd>Robin de Been</dd>
+      <dt>Telefoon</dt><dd class="tabnum"><a href="tel:0630804105">06 30 80 41 05</a></dd>
+      <dt>E-mail</dt><dd><a href="mailto:info@de-been.nl?subject=Offerte%20aanvraag">info@de-been.nl</a></dd>
+      <dt>Open</dt><dd>Maandag t/m vrijdag 08:00–17:00<br>Storingsdienst voor klanten</dd>
+      <dt>Plaats</dt><dd><a href="https://www.google.com/maps/place/De+Been+Installatietechniek/data=!4m7!3m6!1s0x47c69f9cb82a5725:0x322e71ca963a04da!8m2!3d51.6012224!4d4.7449194" target="_blank" rel="noopener">Laagbos, Breda</a></dd>
+    </dl>
+  </div>
+  <div class="wrap">
+    <div class="foot"><b>DE BEEN</b><span>Installatietechniek · Breda</span></div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var spots=[
+    {id:'zon',  name:'Dak',         title:'Zonnepanelen en zonneboiler', t:'hot',  x:40, y:22, items:['De Hoon-zonnepanelen, afgestemd op uw dak, omgeving en ligging','Geen offertes met kleine lettertjes','Zonneboiler: tot wel 60% van het water duurzaam verwarmd door de zon','Op temperatuur is het tapwater gratis']},
+    {id:'cv',   name:'Zolder',      title:'De cv-ketel',                 t:'hot',  x:57, y:27, items:['Cv-ketels van o.a. Intergas en Nefit','Advies bij het kiezen van de juiste ketel','Onderhoudscontract voor een bescheiden bedrag']},
+    {id:'mv',   name:'Zolder',      title:'Ventilatiebox',               t:'cold', x:66, y:27, items:['Mechanische ventilatie voert vervuilde lucht af uit keuken, badkamer en toilet','Onderhoud of vervanging van de MV-box','Zuinige gelijkstroom-ventilatieboxen']},
+    {id:'bad',  name:'Badkamer',    title:'Sanitair en kranen',          t:'cold', x:55, y:45, items:['Sanitair','Een kraan vervangen','Lekkage? Snel handelen beperkt de waterschade']},
+    {id:'keuken',name:'Keuken',     title:'Kraan en heet water',         t:'cold', x:33, y:63, items:['Een kraan vervangen of een gesprongen leiding','Close-in boiler met kokendwaterkraan']},
+    {id:'rad',  name:'Woonkamer',   title:'Radiatoren',                  t:'hot',  x:66, y:63, items:['Radiatoren leveren en plaatsen','Ontluchten en waterzijdig inregelen','Thermostatische kranen in de andere kamers']},
+    {id:'riool',name:'Kruipruimte', title:'Riool en leidingen',          t:'cold', x:45, y:88, items:['Riolering en gesprongen leidingen','Cv-leidingen isoleren in onverwarmde ruimtes']},
+    {id:'wp',   name:'Buiten',      title:'Warmtepomp of airco',         t:'hot',  x:92, y:74, items:['Warmtepompen: veel keuze, we adviseren u graag','Airconditioning']}
+  ];
+  var house=document.querySelector('.house'), chipsEl=document.getElementById('chips');
+  var where=document.getElementById('p-where'), title=document.getElementById('p-title'), hint=document.getElementById('p-hint'), list=document.getElementById('p-list');
+  var btns=[], chips=[], current=-1;
+  function icon(t){return '<svg aria-hidden="true"><use href="#'+(t==='hot'?'flame':'drop')+'"/></svg>';}
+  spots.forEach(function(s,i){
+    var b=document.createElement('button');
+    b.type='button'; b.className='hs '+s.t; b.style.left=s.x+'%'; b.style.top=s.y+'%';
+    b.setAttribute('aria-pressed','false'); b.setAttribute('aria-label',s.name+': '+s.title);
+    b.setAttribute('aria-controls','panel');
+    b.innerHTML=icon(s.t);
+    b.addEventListener('click',function(){select(i)});
+    b.addEventListener('keydown',function(e){
+      var k=e.key, n=null;
+      if(k==='ArrowRight'||k==='ArrowDown') n=(i+1)%spots.length;
+      if(k==='ArrowLeft'||k==='ArrowUp') n=(i-1+spots.length)%spots.length;
+      if(n!==null){e.preventDefault(); btns[n].focus(); select(n);}
+    });
+    house.appendChild(b); btns.push(b);
+    var c=document.createElement('button');
+    c.type='button'; c.className='chip '+s.t; c.setAttribute('aria-pressed','false');
+    c.innerHTML=icon(s.t)+(s.id==='mv'?'Ventilatie':s.id==='cv'?'Cv-ketel':s.id==='zon'?'Zonnepanelen':s.id==='wp'?'Warmtepomp':s.name);
+    c.addEventListener('click',function(){select(i)});
+    chipsEl.appendChild(c); chips.push(c);
+  });
+  function select(i){
+    current=i; var s=spots[i];
+    btns.forEach(function(b,j){b.setAttribute('aria-pressed',j===i?'true':'false')});
+    chips.forEach(function(c,j){c.setAttribute('aria-pressed',j===i?'true':'false')});
+    where.innerHTML='<svg class="mk mk-'+(s.t==='hot'?'flame':'drop')+'" aria-hidden="true"><use href="#'+(s.t==='hot'?'flame':'drop')+'"/></svg>'+s.name;
+    title.textContent=s.title; hint.hidden=true;
+    list.innerHTML=s.items.map(function(x){return '<li>'+x+'</li>'}).join(''); list.hidden=false;
+  }
+  function reset(){
+    current=-1;
+    btns.concat(chips).forEach(function(b){b.setAttribute('aria-pressed','false')});
+    where.innerHTML='<svg class="mk mk-drop" aria-hidden="true"><use href="#drop"/></svg>Waar in huis?';
+    title.textContent='Tik op een plek in huis'; hint.hidden=false; list.hidden=true; list.innerHTML='';
+  }
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&current>-1){var b=btns[current]; reset(); if(document.activeElement&&document.activeElement.classList.contains('chip')) return; b&&b.focus();}});
+})();
+</script>
+</body>
+</html>

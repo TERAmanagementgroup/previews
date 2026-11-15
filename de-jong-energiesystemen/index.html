@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Jong Energiesystemen · Warmtepompen en thuisbatterijen in Breda</title>
+<meta name="description" content="Warmtepompen en thuisbatterijen uit Breda, van advies tot oplevering. Bel 076 206 6018.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Fraunces:ital,opsz,wght@1,144,400&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#18793D; --deep:#0F3D24; --leaf:#24AA4B; --lime:#8EC74F;
+  --stone:#E9EBE6; --stone-2:#DDE1DA; --white:#FFFFFF; --ink:#2E3236; --ink-2:#4F555B;
+  --on-deep:#E6EFE8; --on-deep-2:#B9CDBF;
+  --display:"Big Shoulders Display", "Arial Narrow", sans-serif;
+  --text:"Instrument Sans", system-ui, sans-serif;
+  --serif:"Fraunces", Georgia, serif;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --gutter:clamp(16px,4vw,56px);
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--stone);color:var(--ink);font:400 17px/1.6 var(--text);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--lime);color:var(--deep)}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:3px;border-radius:6px}
+html{scrollbar-color:var(--forest) var(--stone)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;letter-spacing:-.005em;margin:0;text-wrap:balance;color:var(--forest)}
+h2{font-size:clamp(2.6rem,6vw,4.75rem)}
+h3{font-size:clamp(2rem,4vw,3.25rem)}
+em.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--forest);font-variation-settings:"opsz" 144}
+.picker h2 em.serif{color:var(--leaf)}
+p{margin:0 0 1em;max-width:62ch}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* buttons */
+.pill{display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:6px 8px 6px 22px;border-radius:999px;background:var(--forest);color:#fff;font:600 16px/1.2 var(--text);text-decoration:none;border:1.5px solid var(--forest);transition:background-color .2s ease,color .2s ease,transform .15s var(--ease-out)}
+.pill .arr{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--forest);display:grid;place-items:center;flex:none;transition:transform .2s var(--ease-out)}
+.pill .arr svg{width:14px;height:14px}
+.pill.ghost{background:transparent;color:var(--forest);padding:6px 22px}
+.pill.light{background:#fff;color:var(--deep);border-color:#fff}
+.pill.light .arr{background:var(--forest);color:#fff}
+.pill.ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.pill.ghost-light .arr{background:#fff;color:var(--deep)}
+.pill:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){
+  .pill:hover{background:var(--deep);border-color:var(--deep)}
+  .pill:hover .arr{transform:translateX(3px)}
+  .pill.ghost:hover{background:var(--forest);color:#fff}
+  .pill.light:hover{background:var(--on-deep);border-color:var(--on-deep)}
+  .pill.ghost-light:hover{background:rgba(255,255,255,.1);border-color:#fff}
+}
+
+/* header */
+.top{position:relative;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:8px}
+.top .logo img{width:clamp(150px,18vw,210px);height:auto}
+.top nav{display:flex;align-items:center;gap:28px;font-weight:600;font-size:15px}
+.top nav a{text-decoration:none}
+.top nav a:not(.pill):hover{color:var(--forest);text-decoration:underline}
+.top .pill{min-height:42px;font-size:15px}
+@media (max-width:860px){.top nav a:not(.pill){display:none}.top .pill{padding:6px 16px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-bottom:clamp(28px,4vw,48px)}
+.hero-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-top:clamp(18px,3vw,36px)}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.6rem);font-weight:800;color:var(--ink)}
+.hero h1 em.serif{font-size:1.04em}
+.hero-meta{font-size:15px;color:var(--ink-2);text-align:right;line-height:1.5;padding-bottom:6px}
+.hero-meta strong{color:var(--ink)}
+.stage{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;margin-top:clamp(8px,1.4vw,18px)}
+.word{grid-area:1/1/2/3;font-family:var(--display);font-weight:900;color:var(--forest);font-size:18.2vw;line-height:.8;letter-spacing:-.012em;text-align:center;white-space:nowrap;margin:0 -10vw;position:relative;z-index:1;user-select:none}
+.grille-bg{position:absolute;z-index:0;color:var(--forest);opacity:.08;pointer-events:none}
+.unit{grid-area:1/2/3/3;position:relative;z-index:2;width:min(37vw,580px);justify-self:start;margin-top:6.4vw;margin-left:-2vw}
+.unit img{width:100%;height:auto;filter:drop-shadow(0 28px 30px rgba(15,61,36,.22)) drop-shadow(0 6px 8px rgba(46,50,54,.18))}
+.unit .grille-bg{width:250%;left:41%;top:48%;transform:translate(-50%,-50%)}
+.illu{display:inline-block;font:600 11px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.92);color:var(--ink);padding:5px 8px;border-radius:999px}
+.unit .illu{position:absolute;left:4%;bottom:-6px;z-index:3}
+.tag{position:absolute;z-index:3;display:flex;align-items:center;font:600 14px/1.2 var(--text);color:var(--ink);white-space:nowrap}
+.tag .dot{width:12px;height:12px;border-radius:50%;background:var(--leaf);box-shadow:0 0 0 4px rgba(36,170,75,.25);flex:none}
+.tag .line{width:56px;height:1px;background:var(--ink);flex:none}
+.tag .lbl{background:#fff;border-radius:999px;padding:8px 14px;box-shadow:0 6px 18px rgba(15,61,36,.12)}
+.tag .lbl b{font-family:var(--display);font-weight:800;font-size:20px;color:var(--forest);margin-right:4px;letter-spacing:0}
+.tag.t1{left:84%;top:9%;transform:translate(-6px,-50%)}
+.tag.t2{right:75%;top:74%;flex-direction:row-reverse;transform:translate(6px,-50%)}
+.copy{grid-area:2/1/3/2;position:relative;z-index:3;padding-top:clamp(20px,2.4vw,34px);padding-right:24px}
+.copy p{font-size:clamp(17px,1.5vw,20px);max-width:30ch;color:var(--ink)}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:clamp(24px,3vw,40px);position:relative;z-index:3}
+.spec{background:#fff;border-radius:18px;padding:16px 18px 18px;display:flex;flex-direction:column;justify-content:space-between;min-height:104px}
+.spec small{font-size:13px;color:var(--ink-2);display:block}
+.spec strong{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.6vw,34px);line-height:1;color:var(--ink);display:flex;align-items:center;gap:8px}
+.spec strong svg{width:.75em;height:.75em;color:var(--leaf)}
+
+/* hero entrance: transform only, from visible */
+@media (prefers-reduced-motion:no-preference){
+  .hero h1,.hero-meta{animation:rise .5s var(--ease-out) both}
+  .word{animation:rise .55s var(--ease-out) 40ms both}
+  .unit{animation:settle .6s var(--ease-out) both}
+  .copy{animation:rise .5s var(--ease-out) 90ms both}
+  .specs{animation:rise .5s var(--ease-out) 140ms both}
+}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.045) translateY(8px)}to{transform:none}}
+
+@media (max-width:760px){
+  .hero-head{display:block}
+  .hero-meta{display:none}
+  .stage{grid-template-columns:1fr}
+  .word{grid-area:1/1/2/2;font-size:18.4vw;margin:0 -14vw}
+  .unit{grid-area:1/1/3/2;width:82vw;justify-self:center;margin:6.5vw 0 0}
+  .tag{display:none}
+  .copy{grid-area:3/1/4/2;padding-top:22px}
+  .stage{grid-template-rows:auto auto auto}
+  .copy p{max-width:none}
+  .spec{min-height:0;padding:12px 12px 14px;border-radius:14px}
+  .spec small{font-size:12px}
+  .spec strong{font-size:20px}
+  .specs{gap:8px}
+  .mtags{display:flex!important}
+}
+.mtags{display:none;flex-wrap:wrap;gap:8px;margin:18px 0 4px;position:relative;z-index:3}
+.mtags span{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:7px 12px;font-weight:600;font-size:14px}
+.mtags span::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--leaf)}
+
+/* sections */
+section{position:relative}
+.sec{padding:clamp(72px,10vw,140px) 0}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:56ch;margin-top:18px}
+
+/* picker */
+.picker{background:#fff}
+.pick-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.q{border-top:1px solid var(--stone-2);padding:22px 0 24px}
+.q:last-child{border-bottom:1px solid var(--stone-2)}
+.q-h{font-family:var(--display);font-weight:800;font-size:26px;color:var(--ink);margin:0 0 14px;display:flex;gap:12px;align-items:baseline}
+.q-h span{font-family:var(--text);font-weight:600;font-size:13px;color:var(--ink-2)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:600 16px/1.2 var(--text);color:var(--ink);background:var(--stone);border:1.5px solid transparent;border-radius:999px;min-height:46px;padding:10px 18px;cursor:pointer;display:inline-flex;align-items:center;gap:10px;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .12s var(--ease-out)}
+.opt::before{content:"";width:14px;height:14px;border-radius:50%;border:1.5px solid currentColor;flex:none;transition:background-color .18s ease,box-shadow .18s ease}
+.opt[aria-pressed="true"]{background:var(--forest);color:#fff}
+.opt[aria-pressed="true"]::before{background:#fff;box-shadow:inset 0 0 0 3px var(--forest)}
+.opt:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.opt:hover:not([aria-pressed="true"]){border-color:var(--forest)}}
+.result{background:var(--stone);border-radius:28px;padding:clamp(22px,3vw,36px);position:relative;overflow:hidden;min-height:100%}
+.result .ring{width:132px;height:132px;color:var(--forest);position:absolute;right:-18px;top:-18px;opacity:.35;transition:opacity .4s ease}
+.result.lit .ring{opacity:1}
+.result .ring circle,.result .ring line{fill:none;stroke:currentColor;stroke-width:1.5}
+.result .ring .hub{fill:var(--leaf);stroke:none}
+.r-intro{font-family:var(--display);font-weight:800;font-size:clamp(26px,2.6vw,34px);line-height:1;color:var(--ink);max-width:15ch;margin:0 0 20px}
+.sys-list{list-style:none;margin:0 0 22px;padding:0}
+.sys-list li{display:grid;grid-template-columns:20px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--stone-2)}
+.sys-list li svg{width:18px;height:18px;color:var(--forest);margin-top:4px}
+.sys-list b{display:block;font-weight:600}
+.sys-list span{color:var(--ink-2);font-size:15px}
+.card{background:#fff;border-radius:20px;padding:20px 22px;margin-bottom:12px}
+.card .k{font-size:13px;color:var(--ink-2);display:block;margin-bottom:4px}
+.card h4{font-family:var(--display);font-weight:800;font-size:30px;line-height:1;margin:0 0 10px;color:var(--forest)}
+.card p{font-size:16px;margin:0 0 10px}
+.card .note{border-top:1px solid var(--stone-2);padding-top:10px;color:var(--ink-2);font-size:15px}
+.card a.more{font-weight:600;font-size:15px;color:var(--forest)}
+.disc{font-size:15px;color:var(--ink-2);margin:18px 0 14px}
+
+/* spreads */
+.systems{background:var(--stone)}
+.spread{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(48px,7vw,96px) 0;border-top:1px solid var(--stone-2)}
+.spread:first-of-type{border-top:0}
+.spread.flip .diagram{order:-1}
+.spread .tagline{font-weight:600;color:var(--forest);margin:14px 0 18px;font-size:17px}
+.spread p{color:var(--ink)}
+.stiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0 18px}
+.stile{background:#fff;border-radius:16px;padding:14px 14px 16px}
+.stile strong{display:block;font-family:var(--display);font-weight:800;font-size:clamp(24px,2.6vw,34px);line-height:1;color:var(--ink);margin-bottom:8px}
+.stile small{font-size:13px;line-height:1.35;color:var(--ink-2);display:block}
+.fit{font-size:15px;color:var(--ink-2);margin:0}
+.fit b{color:var(--ink)}
+.diagram{background:#fff;border-radius:28px;padding:clamp(14px,2vw,28px);position:relative}
+.diagram svg{width:100%;height:auto}
+.diagram .cap{position:absolute;left:22px;bottom:16px;font-size:13px;color:var(--ink-2)}
+.dg text{font-family:var(--text);font-size:14px;fill:var(--ink)}
+.dg .t-s{font-size:12px;fill:var(--ink-2)}
+.dg .t-b{font-family:var(--display);font-weight:800;font-size:22px;fill:var(--forest)}
+.dg .house{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linejoin:round}
+.dg .box{fill:var(--stone);stroke:var(--ink);stroke-width:1.5}
+.dg .pipe{fill:none;stroke:var(--leaf);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.dg .pipe2{fill:none;stroke:var(--lime);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.dg .dash{fill:none;stroke:var(--ink-2);stroke-width:1.5;stroke-dasharray:5 5}
+.dg .thin{fill:none;stroke:var(--ink);stroke-width:1}
+.dg .earth{fill:url(#earth)}
+.dg .fan{fill:none;stroke:var(--ink);stroke-width:1}
+.band{position:relative;margin:clamp(24px,4vw,48px) 0;border-radius:28px;overflow:hidden;min-height:clamp(320px,48vw,560px);display:flex;align-items:flex-end}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,61,36,0) 35%,rgba(15,61,36,.82) 100%)}
+.band .in{position:relative;z-index:1;padding:clamp(20px,4vw,48px);color:#fff;max-width:720px}
+.band h3{color:#fff;font-size:clamp(2rem,4.6vw,3.6rem)}
+.band p{margin:12px 0 0;color:var(--on-deep)}
+.band .illu{position:absolute;top:16px;left:16px;z-index:2}
+
+/* batteries */
+.batt{background:#fff}
+.batt-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.photo{position:relative;border-radius:24px;overflow:hidden;background:var(--stone)}
+.photo img{width:100%;height:auto}
+.photo .illu{position:absolute;left:12px;top:12px}
+.photo-cap{font-size:13px;color:var(--ink-2);margin:10px 2px 0}
+.more-box{margin-top:22px;background:var(--stone);border-radius:20px;padding:20px 22px}
+.more-box h3{font-size:26px;color:var(--ink);margin-bottom:12px}
+.more-box ul{margin:0;padding:0;list-style:none}
+.more-box li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:6px 0;font-size:16px}
+.more-box li svg{width:16px;height:16px;color:var(--forest);margin-top:5px}
+table.cmp{width:100%;border-collapse:collapse;font-size:15px;table-layout:fixed}
+.cmp th,.cmp td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--stone-2);vertical-align:top}
+.cmp thead th{border-bottom:2px solid var(--ink);padding-bottom:16px}
+.cmp thead th:first-child{width:26%}
+.cmp .brand{font-size:13px;color:var(--ink-2);font-weight:600;display:block}
+.cmp .model{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.4vw,30px);color:var(--ink);line-height:1;display:block;margin:2px 0 10px}
+.cmp .big{font-family:var(--display);font-weight:900;font-size:clamp(44px,6vw,80px);color:var(--forest);line-height:.85;display:block}
+.cmp .big small{font-size:.4em;font-weight:800;margin-left:4px}
+.cmp .cap2{font-size:13px;color:var(--ink-2);font-weight:400}
+.cmp tbody th{font-weight:600;color:var(--ink-2);font-size:14px}
+.cmp td.both{color:var(--ink)}
+.batt-intro p{color:var(--ink)}
+
+/* install */
+.proof{background:var(--stone)}
+.proof-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.proof .photo{aspect-ratio:4/5}
+.proof .photo img{height:100%;object-fit:cover;object-position:50% 62%}
+.rating{display:flex;align-items:flex-end;gap:16px;margin:26px 0 22px}
+.rating .big{font-family:var(--display);font-weight:900;font-size:clamp(72px,9vw,120px);line-height:.8;color:var(--forest)}
+.rating .stars{display:flex;gap:3px;color:var(--leaf);margin-bottom:6px}
+.rating .stars svg{width:20px;height:20px}
+.rating small{display:block;font-size:15px;color:var(--ink-2)}
+.story{list-style:none;margin:0;padding:0;border-top:1px solid var(--stone-2)}
+.story li{padding:12px 0;border-bottom:1px solid var(--stone-2);display:grid;grid-template-columns:18px 1fr;gap:12px}
+.story li svg{width:16px;height:16px;color:var(--forest);margin-top:5px}
+.src{font-size:13px;color:var(--ink-2);margin-top:12px}
+
+/* waarom */
+.why{background:#fff;overflow:hidden}
+.why .bigring{position:absolute;right:-180px;top:50%;width:620px;height:620px;transform:translateY(-50%);color:var(--forest);opacity:.07;pointer-events:none}
+.why-list{list-style:none;margin:clamp(32px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(28px,5vw,80px);position:relative}
+.why-list li{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:20px 0;border-top:1px solid var(--stone-2)}
+.why-list li svg{width:24px;height:24px;color:var(--forest);margin-top:2px}
+.why-list b{display:block;font-family:var(--display);font-weight:800;font-size:26px;line-height:1.05;color:var(--ink);margin-bottom:6px}
+.why-list span{color:var(--ink-2);font-size:16px}
+.creds{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.creds span{background:var(--stone);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px}
+
+/* steps */
+.steps-sec{background:var(--stone)}
+.steps{list-style:none;margin:clamp(36px,5vw,64px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.steps::before{content:"";position:absolute;left:24px;right:12%;top:24px;height:3px;background:var(--lime);border-radius:3px}
+.steps li{position:relative}
+.steps .node{width:50px;height:50px;border-radius:50%;background:#fff;color:var(--forest);display:grid;place-items:center;position:relative;z-index:1;box-shadow:0 0 0 6px var(--stone)}
+.steps .node svg{width:34px;height:34px}
+.steps h3{font-size:28px;color:var(--ink);margin:22px 0 10px}
+.steps p{font-size:16px;color:var(--ink-2);margin:0}
+.steps li:last-child .node{background:var(--forest);color:#fff}
+
+/* contact */
+.contact{background:var(--deep);color:var(--on-deep);overflow:hidden}
+.contact .bigring{position:absolute;left:-200px;bottom:-260px;width:760px;height:760px;color:var(--lime);opacity:.09;pointer-events:none}
+.contact h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);position:relative;align-items:end}
+.contact .logo-w{width:200px;filter:brightness(0) invert(1);margin-bottom:clamp(32px,5vw,56px)}
+.tel{display:block;font-family:var(--display);font-weight:900;font-size:clamp(48px,7.5vw,104px);line-height:.9;color:#fff;text-decoration:none;margin:22px 0 10px;letter-spacing:-.005em}
+@media (hover:hover) and (pointer:fine){.tel:hover{color:var(--lime)}}
+.mail{font-size:clamp(17px,1.8vw,22px);font-weight:600;color:#fff}
+.contact .ctas{margin-top:26px}
+.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:16px;border-top:1px solid rgba(255,255,255,.18);padding-top:22px}
+.facts dt{color:var(--on-deep-2);font-size:14px;padding-top:2px}
+.facts dd{margin:0;color:#fff}
+.facts a{color:#fff}
+.vac{margin-top:22px;font-size:16px;color:var(--on-deep)}
+.vac a{color:#fff;font-weight:600}
+footer{background:var(--deep);color:var(--on-deep-2);font-size:13px;border-top:1px solid rgba(255,255,255,.12)}
+footer .wrap{padding-top:18px;padding-bottom:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+@media (max-width:900px){
+  .pick-grid,.batt-grid,.proof-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .spread{grid-template-columns:minmax(0,1fr)}
+  .spread.flip .diagram{order:0}
+  .why-list{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps::before{left:24px;right:auto;top:24px;bottom:24px;width:3px;height:auto}
+  .steps li{display:grid;grid-template-columns:50px 1fr;gap:18px;padding-bottom:28px}
+  .steps h3{margin:10px 0 6px}
+}
+@media (max-width:560px){
+  .stiles{gap:6px}
+  .stile{padding:12px 10px 12px;border-radius:12px}
+  .stile strong{font-size:22px}
+  .stile small{font-size:12px}
+  .cmp th,.cmp td{padding:10px 5px;font-size:13px;hyphens:auto;overflow-wrap:break-word}
+  .cmp tbody th{font-size:12px}
+  .cmp thead th:first-child{width:28%}
+  .cmp .model{font-size:20px}
+  .pill{font-size:15px}
+  .result .ring{width:96px;height:96px}
+  .q-h{font-size:23px}
+  .opt{font-size:15px;padding:10px 14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:0s!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="grille" viewBox="-50 -50 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke">
+        <circle r="48" vector-effect="non-scaling-stroke"/><circle r="40" vector-effect="non-scaling-stroke"/><circle r="32" vector-effect="non-scaling-stroke"/><circle r="24" vector-effect="non-scaling-stroke"/><circle r="16" vector-effect="non-scaling-stroke"/>
+        <line x1="0" y1="-9" x2="0" y2="-48" vector-effect="non-scaling-stroke"/>
+        <line x1="8.56" y1="-2.78" x2="45.65" y2="-14.83" vector-effect="non-scaling-stroke"/>
+        <line x1="5.29" y1="7.28" x2="28.22" y2="38.83" vector-effect="non-scaling-stroke"/>
+        <line x1="-5.29" y1="7.28" x2="-28.22" y2="38.83" vector-effect="non-scaling-stroke"/>
+        <line x1="-8.56" y1="-2.78" x2="-45.65" y2="-14.83" vector-effect="non-scaling-stroke"/>
+      </g>
+      <circle r="9" fill="currentColor"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow-dn" viewBox="0 0 16 16"><path d="M8 2v11M3.5 9 8 13.5 12.5 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="phone" viewBox="0 0 16 16"><path d="M5.2 1.8 6.6 5 5 6.3a8.3 8.3 0 0 0 4.7 4.7L11 9.4l3.2 1.4-.6 2.7c-.1.5-.6.8-1.1.8C6.8 14 2 9.2 2 3.5c0-.5.3-1 .8-1.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="star" viewBox="0 0 20 20"><path d="m10 1.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z" fill="currentColor"/></symbol>
+    <symbol id="check" viewBox="0 0 16 16"><path d="m2.5 8.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <pattern id="earth" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#8EC74F" stroke-width="1.2" opacity=".55"/></pattern>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="De Jong Energiesystemen, naar boven"><img src="images/logo.svg" alt="De Jong Energiesystemen" width="210" height="79"></a>
+    <nav aria-label="Hoofdmenu">
+      <a href="#kiezen">Welk systeem?</a>
+      <a href="#warmtepompen">Warmtepompen</a>
+      <a href="#thuisbatterijen">Thuisbatterijen</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="tel:0762066018"><svg width="16" height="16" aria-hidden="true"><use href="#phone"/></svg>076 206 6018</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-head">
+    <h1 id="hero-h">Klaar voor de <em class="serif">toekomst</em>?</h1>
+    <p class="hero-meta">Minervum 7446-E, Breda<br><strong>Ma–vr 08:30–17:00</strong></p>
+  </div>
+  <div class="stage">
+    <div class="word" aria-hidden="true">WARMTEPOMP</div>
+    <div class="unit">
+      <svg class="grille-bg" viewBox="-50 -50 100 100" aria-hidden="true" style="stroke-width:3"><use href="#grille"/></svg>
+      <img src="images/hero-unit.png" width="848" height="757" alt="Illustratie van een warmtepomp-buitendeel, geen foto van een installatie van De Jong Energiesystemen">
+      <span class="illu">Illustratie</span>
+      <div class="tag t1"><span class="dot"></span><span class="line"></span><span class="lbl">werkt tot <b class="num">−10 °C</b></span></div>
+      <div class="tag t2"><span class="dot"></span><span class="line"></span><span class="lbl">warm water op <b class="num">~55 °C</b></span></div>
+    </div>
+    <div class="copy wrap">
+      <div class="mtags"><span>werkt tot −10 °C</span><span>warm water op ~55 °C</span></div>
+      <p>De Jong Energiesystemen: warmtepompen en thuisbatterijen uit Breda, van advies tot oplevering.</p>
+      <div class="ctas">
+        <a class="pill" href="#contact">Vraag vrijblijvend advies <span class="arr"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a>
+        <a class="pill ghost" href="tel:0762066018">Bel 076 206 6018</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="specs">
+      <div class="spec"><small>31 Google-reviews</small><strong class="num"><svg aria-hidden="true"><use href="#star"/></svg>4,7</strong></div>
+      <div class="spec"><small>Lid van</small><strong>Techniek Nederland</strong></div>
+      <div class="spec"><small>We werken alleen met</small><strong>gevestigde merken</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="picker sec" id="kiezen" aria-labelledby="kiezen-h">
+  <div class="wrap">
+    <h2 id="kiezen-h">Welk systeem past bij jouw <em class="serif">huis</em>?</h2>
+    <p class="lede">Drie vragen over je woning. Je ziet meteen welke kant het op kan, met dezelfde afwegingen die we in een adviesgesprek maken.</p>
+    <div class="pick-grid">
+      <div class="qs">
+        <div class="q" role="group" aria-labelledby="q1">
+          <p class="q-h" id="q1">Je woning <span>vraag 1</span></p>
+          <div class="opts" data-q="woning">
+            <button type="button" class="opt" data-v="nieuw" aria-pressed="false">Nieuwbouw</button>
+            <button type="button" class="opt" data-v="goed" aria-pressed="false">Bestaand, goed geïsoleerd</button>
+            <button type="button" class="opt" data-v="beperkt" aria-pressed="false">Bestaand, beperkt geïsoleerd</button>
+          </div>
+        </div>
+        <div class="q" role="group" aria-labelledby="q2">
+          <p class="q-h" id="q2">Je verwarming nu <span>vraag 2</span></p>
+          <div class="opts" data-q="afgifte">
+            <button type="button" class="opt" data-v="vloer" aria-pressed="false">Vloerverwarming</button>
+            <button type="button" class="opt" data-v="rad" aria-pressed="false">Radiatoren</button>
+          </div>
+        </div>
+        <div class="q" role="group" aria-labelledby="q3">
+          <p class="q-h" id="q3">Zonnepanelen <span>vraag 3</span></p>
+          <div class="opts" data-q="zon">
+            <button type="button" class="opt" data-v="ja" aria-pressed="false">Ja</button>
+            <button type="button" class="opt" data-v="nee" aria-pressed="false">Nee</button>
+          </div>
+        </div>
+      </div>
+      <div class="result" id="result">
+        <svg class="ring" id="ring" viewBox="-50 -50 100 100" aria-hidden="true">
+          <g class="rings"><circle r="48" pathLength="1"/><circle r="40" pathLength="1"/><circle r="32" pathLength="1"/><circle r="24" pathLength="1"/><circle r="16" pathLength="1"/></g>
+          <g class="spokes"><line x1="0" y1="-9" x2="0" y2="-48"/><line x1="8.56" y1="-2.78" x2="45.65" y2="-14.83"/><line x1="5.29" y1="7.28" x2="28.22" y2="38.83"/><line x1="-5.29" y1="7.28" x2="-28.22" y2="38.83"/><line x1="-8.56" y1="-2.78" x2="-45.65" y2="-14.83"/><circle class="hub" r="9"/></g>
+        </svg>
+        <div id="result-body" aria-live="polite">
+          <p class="r-intro">Kies je situatie, wij laten zien waar je aan kunt denken.</p>
+          <ul class="sys-list">
+            <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>All-electric lucht-water</b><span>Binnendeel en buitendeel, ook bij −10 °C en sneeuw.</span></div></li>
+            <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>All-electric water-water</b><span>Op basis van bodemenergie.</span></div></li>
+            <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Hybride, ‘all electric ready’</b><span>Je cv-ketel blijft eerst, later kun je gasloos.</span></div></li>
+            <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Thuisbatterij</b><span>Je eigen stroom krijgt voorrang.</span></div></li>
+          </ul>
+        </div>
+        <p class="disc">Dit is een eerste indicatie. Het echte advies krijg je na een gesprek.</p>
+        <a class="pill" href="#contact">Plan een adviesgesprek <span class="arr"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="systems sec" id="warmtepompen" aria-labelledby="wp-h">
+  <div class="wrap">
+    <h2 id="wp-h">Drie soorten warmtepomp</h2>
+    <p class="lede">Voor je bestaande woning of nieuwbouwproject. We adviseren het systeem dat past bij je situatie en je wensen, met aandacht voor duurzaamheid, functionaliteit en rendement.</p>
+
+    <article class="spread" id="lucht-water">
+      <div>
+        <h3>All-electric lucht-water</h3>
+        <p class="tagline">Verwarming én warm water, zonder gas.</p>
+        <p>De installatie bestaat uit een binnendeel en een buitendeel. Het buitendeel haalt de energie uit de buitenlucht, ook bij −10 °C en sneeuw. De warmtepomp maakt ook je warme water; dat wordt op ongeveer 55 °C bewaard in een geïsoleerd boilervat.</p>
+        <p>Onze all-electric installaties krijgen altijd een magneet-/vuilfilter en non-ferro of RVS-leidingwerk.</p>
+        <div class="stiles">
+          <div class="stile"><strong class="num">−10 °C</strong><small>werkt ook bij vorst en sneeuw</small></div>
+          <div class="stile"><strong class="num">~55 °C</strong><small>warm water in een geïsoleerd boilervat</small></div>
+          <div class="stile"><strong>2 delen</strong><small>binnendeel en buitendeel</small></div>
+        </div>
+        <p class="fit"><b>Geschikt voor:</b> veel toegepast in nieuwbouw. Ook bestaande woningen kunnen vaak, met aandacht voor ontwerp, afgiftesysteem en isolatie.</p>
+      </div>
+      <figure class="diagram" style="margin:0">
+        <svg class="dg" viewBox="0 0 400 320" role="img" aria-label="Schema: buitendeel buiten de woning, leiding naar het binnendeel, boilervat en radiator binnen">
+          <path class="house" d="M30 130 L160 50 L290 130 M50 118 V280 H270 V118"/>
+          <line class="thin" x1="10" y1="280" x2="390" y2="280"/>
+          <rect class="box" x="310" y="212" width="74" height="68" rx="4"/>
+          <g transform="translate(339 246)" class="fan"><circle r="22"/><circle r="15"/><circle r="8"/><line x1="0" y1="-4" x2="0" y2="-22"/><line x1="3.8" y1="1.2" x2="20.9" y2="6.8"/><line x1="-3.8" y1="1.2" x2="-20.9" y2="6.8"/><line x1="2.4" y1="3.2" x2="12.9" y2="17.8"/><line x1="-2.4" y1="3.2" x2="-12.9" y2="17.8"/></g>
+          <path class="pipe" d="M310 236 H262 V200 H232"/>
+          <path class="pipe2" d="M310 256 H254 V214 H232"/>
+          <rect class="box" x="186" y="176" width="46" height="70" rx="4"/>
+          <text x="209" y="264" text-anchor="middle" class="t-s">binnendeel</text>
+          <rect class="box" x="130" y="196" width="38" height="84" rx="19"/>
+          <text x="149" y="300" text-anchor="middle" class="t-s">boilervat</text>
+          <text x="149" y="242" text-anchor="middle" class="t-b" style="font-size:15px">55°</text>
+          <path class="pipe" d="M186 226 H168"/>
+          <path class="pipe" d="M186 196 V150 H96 V214"/>
+          <rect class="box" x="66" y="214" width="62" height="40" rx="3"/>
+          <path class="thin" d="M78 220 V248 M90 220 V248 M102 220 V248 M114 220 V248"/>
+          <text x="94" y="272" text-anchor="middle" class="t-s">radiator</text>
+          <text x="347" y="196" text-anchor="middle" class="t-b">−10 °C</text>
+          <text x="347" y="300" text-anchor="middle" class="t-s">buitendeel</text>
+        </svg>
+      </figure>
+    </article>
+
+    <div class="band">
+      <img src="images/woning.jpg" width="1376" height="768" alt="Illustratie van een bestaande rijwoning met zonnepanelen en een buitendeel naast het huis, geen foto van een klant" loading="lazy">
+      <span class="illu">Illustratie</span>
+      <div class="in">
+        <h3>Bestaande woningen kunnen vaak ook</h3>
+        <p>Ook een bestaande woning kan in veel gevallen comfortabel en energiezuinig een all-electric warmtepomp krijgen. Dan kijken we goed naar het ontwerp, het afgiftesysteem en de isolatie.</p>
+      </div>
+    </div>
+
+    <article class="spread flip" id="water-water">
+      <div>
+        <h3>All-electric water-water</h3>
+        <p class="tagline">Warmte uit de bodem.</p>
+        <p>Een water-water warmtepomp werkt op bodemenergie. We zijn opgeleid op ISSO 72, het ontwerpen van bodemgebonden water/water-warmtepompen in woningen, en op vakmanschap Bodemenergie.</p>
+        <p>Een klant van ons verwarmt met een water-water warmtepomp op de bestaande radiatoren.</p>
+        <div class="stiles">
+          <div class="stile"><strong>Bodem</strong><small>energie uit de bodem</small></div>
+          <div class="stile"><strong>ISSO 72</strong><small>opgeleid voor het ontwerp</small></div>
+          <div class="stile"><strong>All-electric</strong><small>verwarmen zonder gas</small></div>
+        </div>
+        <p class="fit"><b>Geschikt voor:</b> wie all-electric wil met bodemenergie. Of het bij jouw huis past, bekijken we in het adviesgesprek.</p>
+      </div>
+      <figure class="diagram" style="margin:0">
+        <svg class="dg" viewBox="0 0 400 320" role="img" aria-label="Schema: bodemlus in de grond, aangesloten op een water-water warmtepomp en radiatoren in de woning">
+          <rect class="earth" x="10" y="214" width="380" height="100"/>
+          <path class="house" d="M40 110 L170 30 L300 110 M60 98 V214 H280 V98"/>
+          <line class="thin" x1="10" y1="214" x2="390" y2="214"/>
+          <rect class="box" x="186" y="140" width="56" height="74" rx="4"/>
+          <text x="214" y="130" text-anchor="middle" class="t-s">warmtepomp</text>
+          <path class="pipe" d="M228 214 V300 Q228 310 238 310 H330 Q340 310 340 300 V228"/>
+          <path class="pipe2" d="M212 214 V292 Q212 298 218 298 H316 Q322 298 322 292 V228"/>
+          <path class="pipe" d="M340 228 Q340 214 326 214 H300"/>
+          <text x="334" y="250" text-anchor="end" class="t-b" style="font-size:17px">bodemlus</text>
+          <rect class="box" x="84" y="160" width="62" height="40" rx="3"/>
+          <path class="thin" d="M96 166 V194 M108 166 V194 M120 166 V194 M132 166 V194"/>
+          <path class="pipe" d="M186 160 H170 V146 H115 V160"/>
+          <text x="115" y="134" text-anchor="middle" class="t-s">radiatoren</text>
+        </svg>
+      </figure>
+    </article>
+
+    <article class="spread" id="hybride">
+      <div>
+        <h3>Hybride, ‘all electric ready’</h3>
+        <p class="tagline">Nu al veel minder gas, later gasloos.</p>
+        <p>Je cv-ketel blijft eerst. De warmtepomp verwarmt het grootste deel van het jaar je huis, dus je gebruikt meteen veel minder gas. Bij beperkte isolatie of een verouderd afgiftesysteem kan het lonen om de ketel nog even te houden.</p>
+        <p>We plaatsen alleen volwaardige systemen: qua vermogen en uitvoering gelijk aan een volledig elektrische warmtepomp. Na een renovatie of betere isolatie breid je eenvoudig uit naar gasloos.</p>
+        <div class="stiles">
+          <div class="stile"><strong>Eerst</strong><small>cv-ketel blijft als ondersteuning</small></div>
+          <div class="stile"><strong>Gelijk</strong><small>vermogen als volledig elektrisch</small></div>
+          <div class="stile"><strong>Later</strong><small>uit te breiden naar gasloos</small></div>
+        </div>
+        <p class="fit"><b>Geschikt voor:</b> woningen met beperkte isolatie en/of een verouderd afgiftesysteem.</p>
+      </div>
+      <figure class="diagram" style="margin:0">
+        <svg class="dg" viewBox="0 0 400 320" role="img" aria-label="Schema: buitendeel en cv-ketel samen op de radiatoren; de cv-ketel kan later weg">
+          <path class="house" d="M30 130 L160 50 L290 130 M50 118 V280 H270 V118"/>
+          <line class="thin" x1="10" y1="280" x2="390" y2="280"/>
+          <rect class="box" x="310" y="212" width="74" height="68" rx="4"/>
+          <g transform="translate(339 246)" class="fan"><circle r="22"/><circle r="15"/><circle r="8"/><line x1="0" y1="-4" x2="0" y2="-22"/><line x1="3.8" y1="1.2" x2="20.9" y2="6.8"/><line x1="-3.8" y1="1.2" x2="-20.9" y2="6.8"/><line x1="2.4" y1="3.2" x2="12.9" y2="17.8"/><line x1="-2.4" y1="3.2" x2="-12.9" y2="17.8"/></g>
+          <text x="347" y="300" text-anchor="middle" class="t-s">warmtepomp</text>
+          <path class="pipe" d="M310 236 H220 V176"/>
+          <rect class="box" x="168" y="130" width="52" height="46" rx="4" style="stroke-dasharray:5 4"/>
+          <text x="194" y="158" text-anchor="middle" class="t-s">cv-ketel</text>
+          <path class="dash" d="M168 152 H130"/>
+          <text x="124" y="114" text-anchor="middle" class="t-b" style="font-size:16px">later gasloos</text>
+          <path class="pipe" d="M220 236 V250 H128"/>
+          <rect class="box" x="66" y="214" width="62" height="40" rx="3"/>
+          <path class="thin" d="M78 220 V248 M90 220 V248 M102 220 V248 M114 220 V248"/>
+          <text x="97" y="272" text-anchor="middle" class="t-s">radiatoren</text>
+          <text x="212" y="212" text-anchor="end" class="t-s">eerst samen</text>
+        </svg>
+      </figure>
+    </article>
+  </div>
+</section>
+
+<section class="batt sec" id="thuisbatterijen" aria-labelledby="bat-h">
+  <div class="wrap">
+    <h2 id="bat-h">Thuisbatterijen, naast elkaar</h2>
+    <div class="batt-intro">
+      <p class="lede">We verwarmen met warmtepompen, koken elektrisch en laden onze auto's. Zelf opgewekte zonnestroom wil je het liefst zelf gebruiken, en het einde van de salderingsregeling is in zicht. We zijn partner van Sigenergy en EcoFlow, op maat geadviseerd en geïnstalleerd volgens de geldende normen.</p>
+    </div>
+    <div class="batt-grid">
+      <div>
+        <div class="photo">
+          <img src="images/batterij.jpg" width="928" height="1152" alt="Illustratie van een gestapelde thuisbatterij in een garage, geen foto van een installatie van De Jong Energiesystemen" loading="lazy">
+          <span class="illu">Illustratie</span>
+        </div>
+        <div class="more-box">
+          <h3>Meer dan zonnestroom bewaren</h3>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#check"/></svg><span>Je eigen stroom krijgt voorrang, zodat je die niet hoeft in te kopen.</span></li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg><span>Stroom opslaan voor later, als de dynamische prijs laag is.</span></li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg><span>In sommige gevallen noodstroom: bij een netstoring houdt je woning stroom.</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <table class="cmp">
+          <caption class="sr">Vergelijking Sigenergy Sigenstore en EcoFlow PowerOcean</caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="cap2">Per systeem voor woningen</span></th>
+              <th scope="col"><span class="brand">Sigenergy</span><span class="model">Sigenstore</span><span class="big num">54<small>kWh</small></span><span class="cap2">max.</span></th>
+              <th scope="col"><span class="brand">EcoFlow</span><span class="model">PowerOcean</span><span class="big num">45<small>kWh</small></span><span class="cap2">max.</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Aansluiting</th><td>1 fase &amp; 3 fase</td><td>1 fase &amp; 3 fase</td></tr>
+            <tr><th scope="row">Techniek</th><td>LFP (LiFePO4), ingebouwde bescherming</td><td>LFP (LiFePO4), ingebouwde bescherming</td></tr>
+            <tr><th scope="row">Zonnepanelen</th><td>Geïntegreerde MPPT</td><td>Geïntegreerde MPPT</td></tr>
+            <tr><th scope="row">Modules</th><td>Werken onafhankelijk</td><td>Werken onafhankelijk</td></tr>
+            <tr><th scope="row">Buiten plaatsen</th><td>Kan, door ingebouwde verwarming</td><td>Kan, door ingebouwde verwarming</td></tr>
+            <tr><th scope="row">Aansturing</th><td>Gebruiksvriendelijk EMS</td><td>Gebruiksvriendelijk EMS</td></tr>
+            <tr><th scope="row">Optie</th><td>DC-snellader tot 25 kW</td><td>Powerinsight-tablet</td></tr>
+          </tbody>
+        </table>
+        <p class="src">EMS staat voor Energie Management Systeem: het laat gekoppelde producten samenwerken. Bron: specificaties op onze eigen website.</p>
+        <div class="ctas" style="margin-top:20px">
+          <a class="pill" href="mailto:info@dejongenergiesystemen.nl?subject=Advies%20over%20een%20thuisbatterij">Vraag advies over een thuisbatterij <span class="arr"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof sec" aria-labelledby="proof-h">
+  <div class="wrap proof-grid">
+    <figure style="margin:0">
+      <div class="photo"><img src="images/install-nibe.jpg" width="1050" height="1400" alt="Foto van een warmtepomp-buitendeel op een bestrate ondergrond tegen een bakstenen gevel, van de website van De Jong Energiesystemen" loading="lazy"></div>
+      <figcaption class="photo-cap">Een buitendeel van een van onze installaties.</figcaption>
+    </figure>
+    <div>
+      <h2 id="proof-h">Een installatie van ons</h2>
+      <div class="rating">
+        <span class="big num">4,7</span>
+        <div><div class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><small>uit 31 Google-reviews</small></div>
+      </div>
+      <p>Wat klanten in hun reviews noemen:</p>
+      <ul class="story">
+        <li><svg aria-hidden="true"><use href="#check"/></svg><span>Complete begeleiding, van advies tot installatie.</span></li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg><span>Echte kennis bij het kiezen van het juiste systeem, zoals een water-water warmtepomp op bodemenergie op de bestaande radiatoren.</span></li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg><span>Een heldere offerte zonder kleine lettertjes, en de vergunning geregeld.</span></li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg><span>Goede communicatie.</span></li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg><span>Een controle na de installatie liet zien dat het werk goed was gedaan.</span></li>
+      </ul>
+      <p class="src">Samengevat uit Google-reviews, in onze eigen woorden.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why sec" aria-labelledby="why-h">
+  <svg class="bigring" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#grille"/></svg>
+  <div class="wrap">
+    <h2 id="why-h">Waarom De Jong</h2>
+    <ul class="why-list">
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>We leveren een goede installatie</b><span>Hoge eisen aan esthetiek en kwaliteit van de onderdelen, en vakmanschap in het werk.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Gedegen, helder advies</b><span>Met aandacht voor hoe jij het beleeft.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Stipt</b><span>We komen op tijd, of laten het vooraf weten. Na afloop laten we het netjes achter.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Ook bij een klacht staan we klaar</b><span>Gaat er toch iets mis, dan lossen we dat goed op. Die belofte geven we.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Klantgedreven en realistisch</b><span>Een systeem op maat, op basis van je situatie en je wensen.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Een hoog serviceniveau</b><span>We zetten ons volledig in voor tevreden klanten.</span></div></li>
+      <li><svg aria-hidden="true"><use href="#grille"/></svg><div><b>Een groen hart</b><span>We zijn gepassioneerd over de energietransitie, en rijden zelf 100% elektrisch.</span></div></li>
+    </ul>
+    <div class="creds"><span>Lid van Techniek Nederland</span><span>Opgeleid op ISSO 98 en ISSO 72</span><span>Vakmanschap Bodemenergie</span><span>Alleen gevestigde merken</span></div>
+  </div>
+</section>
+
+<section class="steps-sec sec" aria-labelledby="steps-h">
+  <div class="wrap">
+    <h2 id="steps-h">Van advies tot oplevering, en daarna</h2>
+    <ol class="steps">
+      <li><span class="node"><svg aria-hidden="true"><use href="#grille"/></svg></span><div><h3>Adviesgesprek</h3><p>We kijken naar je situatie en je wensen, en adviseren een systeem op maat.</p></div></li>
+      <li><span class="node"><svg aria-hidden="true"><use href="#grille"/></svg></span><div><h3>Offerte</h3><p>Je krijgt een vrijblijvende offerte.</p></div></li>
+      <li><span class="node"><svg aria-hidden="true"><use href="#grille"/></svg></span><div><h3>Installatie</h3><p>Onze ervaren monteurs installeren vakkundig, volgens de geldende normen.</p></div></li>
+      <li><span class="node"><svg aria-hidden="true"><use href="#grille"/></svg></span><div><h3>Oplevering en daarna</h3><p>We laten het netjes achter. Daarna staan we klaar met ondersteuning, advies, service en onderhoud.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact sec" id="contact" aria-labelledby="contact-h">
+  <svg class="bigring" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#grille"/></svg>
+  <div class="wrap">
+    <img class="logo-w" src="images/logo.svg" alt="De Jong Energiesystemen" width="200" height="75" loading="lazy">
+    <div class="contact-grid">
+      <div>
+        <h2 id="contact-h">Vraag vrijblijvend advies</h2>
+        <a class="tel num" href="tel:0762066018">076 206 6018</a>
+        <a class="mail" href="mailto:info@dejongenergiesystemen.nl">info@dejongenergiesystemen.nl</a>
+        <div class="ctas">
+          <a class="pill light" href="mailto:info@dejongenergiesystemen.nl?subject=Advies%20over%20een%20warmtepomp">Vraag advies over een warmtepomp <span class="arr"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a>
+          <a class="pill ghost-light" href="mailto:info@dejongenergiesystemen.nl?subject=Advies%20over%20een%20thuisbatterij">…over een thuisbatterij <span class="arr"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a>
+        </div>
+      </div>
+      <div>
+        <dl class="facts">
+          <dt>Adres</dt><dd><a href="https://www.google.com/maps/place/De+Jong+Energiesystemen+B.V./data=!4m7!3m6!1s0x2d7e78ab7dd1b8bd:0x9cb7a2ef5f76e671!8m2!3d51.5895195!4d4.8364899" target="_blank" rel="noopener">Minervum 7446-E<br>4817 ZG Breda</a></dd>
+          <dt>Open</dt><dd class="num">Ma–vr 08:30–17:00<br>Za–zo gesloten</dd>
+          <dt>KvK</dt><dd class="num">85188506</dd>
+          <dt>Lid van</dt><dd>Techniek Nederland</dd>
+        </dl>
+        <p class="vac">We zoeken collega's. <a href="https://www.dejongenergiesystemen.nl/vacature" target="_blank" rel="noopener">Bekijk de vacature</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap"><span>© De Jong Energiesystemen B.V., Breda</span><span>Beelden met het label ‘Illustratie’ zijn geen foto's van ons werk.</span></div>
+</footer>
+
+<script>
+(function(){
+  var state={woning:null,afgifte:null,zon:null};
+  var body=document.getElementById('result-body');
+  var panel=document.getElementById('result');
+  var ring=document.getElementById('ring');
+  var lit=false;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function card(k,name,text,note,href){
+    return '<div class="card"><span class="k">'+k+'</span><h4>'+name+'</h4><p>'+text+'</p>'+(note?'<p class="note">'+note+'</p>':'')+'<a class="more" href="'+href+'">Bekijk de specificaties</a></div>';
+  }
+  function render(){
+    var h='';
+    var w=state.woning,a=state.afgifte,z=state.zon;
+    if(!w&&!a&&!z){return;}
+    if(w==='nieuw'){
+      h+=card('Waar je aan kunt denken','All-electric','In nieuwbouw wordt een all-electric warmtepomp veel toegepast: lucht-water, of water-water op bodemenergie.',a==='rad'?'Met radiatoren kijken we samen naar het afgiftesysteem.':'','#lucht-water');
+    }else if(w==='goed'){
+      h+=card('Waar je aan kunt denken','All-electric','In een goed geïsoleerde bestaande woning is all-electric vaak goed mogelijk, met aandacht voor het ontwerp en het afgiftesysteem.',a==='rad'?'Een klant van ons verwarmt met een water-water warmtepomp op bestaande radiatoren.':'','#lucht-water');
+    }else if(w==='beperkt'){
+      h+=card('Waar je aan kunt denken','Hybride, ‘all electric ready’','Je cv-ketel blijft eerst als ondersteuning. De warmtepomp verwarmt het grootste deel van het jaar, dus je gebruikt meteen veel minder gas.','Na een renovatie of betere isolatie breid je uit naar gasloos.','#hybride');
+    }else{
+      h+='<p class="r-intro">Kies eerst je woning bij vraag 1.</p>';
+    }
+    if(z==='ja'){
+      h+=card('En met zonnepanelen','Thuisbatterij','Geef je eigen zonnestroom voorrang, en sla stroom op als de dynamische prijs laag is.','','#thuisbatterijen');
+    }
+    body.innerHTML=h;
+    if(w&&!lit){
+      lit=true;panel.classList.add('lit');
+      if(!reduce&&ring.animate){
+        var c=ring.querySelectorAll('.rings circle');
+        for(var i=0;i<c.length;i++){
+          c[i].style.strokeDasharray='1';
+          c[i].animate([{strokeDashoffset:1},{strokeDashoffset:0}],{duration:600,delay:i*50,easing:'cubic-bezier(0.23,1,0.32,1)',fill:'backwards'});
+        }
+        ring.querySelector('.spokes').animate([{transform:'rotate(-72deg)'},{transform:'rotate(0deg)'}],{duration:900,easing:'cubic-bezier(0.23,1,0.32,1)'});
+      }
+    }
+  }
+  var groups=document.querySelectorAll('.opts');
+  Array.prototype.forEach.call(groups,function(g){
+    var q=g.getAttribute('data-q');
+    var btns=g.querySelectorAll('.opt');
+    function pick(b){
+      Array.prototype.forEach.call(btns,function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      state[q]=b.getAttribute('data-v');render();
+    }
+    Array.prototype.forEach.call(btns,function(b,i){
+      b.addEventListener('click',function(){pick(b);});
+      b.addEventListener('keydown',function(e){
+        var n=null;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown')n=btns[(i+1)%btns.length];
+        if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=btns[(i-1+btns.length)%btns.length];
+        if(n){e.preventDefault();n.focus();pick(n);}
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

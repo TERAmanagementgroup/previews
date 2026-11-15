@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="nl" class="no-js">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drive 4 Success · Rijschool in Breda, Bergen op Zoom en Tholen</title>
+<meta name="description" content="Rijschool Drive 4 Success in Breda. Autorijbewijs B, rijbewijs BE in één dag, faalangstinstructie, 2toDrive. Gratis proefles, geen wachtlijst. Bel 06 2428 0404.">
+<meta name="theme-color" content="#1D2229">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&family=Instrument+Serif:ital@1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dusk:#1D2229; --asphalt:#2A3038; --orange:#F47321; --light:#EDEDEA; --ink:#222222; --tint:#FFD1A4;
+  --on-dusk:#F2F1EE; --on-dusk-2:#B9BEC6; --ink-2:#4A4C50; --line-dark:rgba(242,241,238,.14); --line-light:rgba(34,34,34,.16);
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --gut:clamp(16px,4.2vw,56px); --max:1240px;
+  --display:"Anybody","Manrope",system-ui,sans-serif; --text:"Manrope",system-ui,sans-serif; --serif:"Instrument Serif",Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--orange) var(--dusk)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--dusk);color:var(--on-dusk);font-family:var(--text);font-size:17px;line-height:1.6;overflow-x:clip}
+@media (min-width:900px){body{font-size:18px}}
+::selection{background:var(--orange);color:var(--dusk)}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+h1,h2,h3{font-family:var(--display);font-style:italic;font-weight:800;font-stretch:115%;line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.1rem,5.2vw,4rem)}
+h3{font-size:clamp(1.35rem,2.2vw,1.7rem);font-weight:750;line-height:1.1}
+p{margin:0 0 1em;max-width:62ch;text-wrap:pretty}
+em.serif{font-family:var(--serif);font-style:italic;font-weight:400;font-stretch:100%;letter-spacing:0;color:var(--orange);font-size:1.12em;line-height:.9}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:var(--orange);color:var(--dusk);padding:10px 16px;border-radius:999px;font-weight:700}
+.skip:focus{left:12px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* buttons */
+.pill{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:6px 6px 6px 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;line-height:1.2;transition:background-color .2s ease,color .2s ease,transform .16s var(--ease-out)}
+.pill:active{transform:scale(.97)}
+.pill-ico{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;flex:none;transition:transform .25s var(--ease-out)}
+.pill-ico svg{width:18px;height:18px}
+.pill--solid{background:var(--orange);color:var(--dusk)}
+.pill--solid .pill-ico{background:var(--dusk);color:var(--orange)}
+.pill--line{border:1.5px solid rgba(242,241,238,.5);color:var(--on-dusk);padding-right:22px}
+.pill--line svg{width:18px;height:18px}
+.light .pill--line{border-color:rgba(34,34,34,.4);color:var(--ink)}
+@media (hover:hover) and (pointer:fine){
+  .pill--solid:hover{background:#ff8838}
+  .pill--solid:hover .pill-ico{transform:translateX(3px)}
+  .pill--line:hover{background:rgba(242,241,238,.1)}
+  .light .pill--line:hover{background:rgba(34,34,34,.06)}
+}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* labels on generated images */
+.fig{position:relative;margin:0}
+.ill{position:absolute;right:14px;bottom:14px;z-index:2;font:600 12px/1 var(--text);letter-spacing:.02em;background:rgba(29,34,41,.82);color:var(--on-dusk);padding:6px 10px;border-radius:999px}
+
+/* header */
+.top{position:absolute;inset:0 0 auto 0;z-index:10}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.brand{position:relative;isolation:isolate;display:flex;align-items:center;text-decoration:none;font-family:var(--display);font-style:italic;font-weight:800;font-stretch:118%;font-size:21px;letter-spacing:-.01em;white-space:nowrap}
+.brand-4{position:relative;display:inline-block;margin:0 .32em;color:var(--orange);font-size:1.25em}
+.brand-4 .mark-svg{position:absolute;left:50%;top:50%;width:60px;max-width:none;transform:translate(-50%,-62%);z-index:-1;opacity:.95}
+.mark-svg .g-needle{transform:rotate(40deg)}
+.nav{display:none;gap:28px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none;color:var(--on-dusk-2);transition:color .2s ease}
+.nav a:hover{color:var(--on-dusk)}
+.top-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:rgba(29,34,41,.6);border:1.5px solid rgba(242,241,238,.35);text-decoration:none;font-weight:700;font-size:15px}
+.top-call svg{width:16px;height:16px;color:var(--orange)}
+.top-call .long{display:none}
+@media (min-width:600px){.top-call .long{display:inline}.top-call .short{display:none}}
+@media (min-width:980px){.nav{display:flex}}
+
+/* gauges */
+.g-arc{fill:none;stroke:rgba(242,241,238,.55);stroke-width:1.5}
+.g-tick{stroke:rgba(242,241,238,.6);stroke-linecap:round}
+.g-major{stroke:var(--on-dusk)}
+.g-num{fill:var(--on-dusk-2);font-family:var(--display);font-style:italic;font-weight:700;font-stretch:110%;text-anchor:middle;transition:fill .3s ease}
+.g-num.is-on{fill:var(--orange)}
+.g-needle-body{fill:var(--orange)}
+.g-hub{fill:var(--dusk);stroke:var(--orange);stroke-width:2.5}
+.g-needle{transition:transform .6s var(--ease-out)}
+@media (prefers-reduced-motion:reduce){.g-needle{transition:none}}
+
+/* hero */
+.hero{position:relative;min-height:max(640px,100svh);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero .fig{position:absolute;inset:0;z-index:-1}
+.hero-img{width:100%;height:100%;object-fit:cover;object-position:70% 50%;animation:settle .6s var(--ease-out) both}
+.hero .fig::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(29,34,41,.6) 0%,rgba(29,34,41,.3) 12%,rgba(29,34,41,.86) 26%,rgba(29,34,41,.9) 62%,#1D2229 100%)}
+.hero .ill{bottom:auto;top:88px}
+.hero-copy{position:relative;padding-top:120px;padding-bottom:28px;width:100%}
+.hero h1{font-size:clamp(2.6rem,7.6vw,5.6rem);max-width:13ch;margin-bottom:22px}
+.hero h1 em{display:inline-block;margin-top:.08em}
+.hero-sub{font-size:clamp(17px,1.6vw,20px);color:#DDE0E4;max-width:40ch;margin-bottom:26px}
+.hero-copy > *{animation:rise .5s var(--ease-out) both}
+.hero-copy > :nth-child(2){animation-delay:.05s}
+.hero-copy > :nth-child(3){animation-delay:.1s}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin:34px 0 0;padding:18px 0 0;border-top:1px solid var(--line-dark);list-style:none;font-weight:600;font-size:15px;color:var(--on-dusk)}
+.stats li{display:flex;align-items:center;gap:8px}
+.stats svg{width:16px;height:16px;color:var(--orange)}
+.stats b{font-family:var(--display);font-style:italic;font-stretch:115%;font-size:18px;color:var(--orange)}
+@keyframes rise{from{transform:translateY(12px)}}
+@keyframes settle{from{transform:scale(1.05)}}
+@media (min-width:900px){
+  .hero .fig::after{background:
+    linear-gradient(90deg,rgba(29,34,41,.9) 0%,rgba(29,34,41,.55) 38%,rgba(29,34,41,0) 62%),
+    linear-gradient(180deg,rgba(29,34,41,.5) 0%,rgba(29,34,41,0) 20%,rgba(29,34,41,0) 62%,#1D2229 100%)}
+  .hero-img{object-position:70% 50%}
+  .hero .ill{top:auto;bottom:28px}
+  .hero-copy{padding-bottom:56px}
+}
+@media (prefers-reduced-motion:reduce){.hero-img,.hero-copy > *{animation:none}}
+
+/* tempo dial */
+.tempo{padding:clamp(72px,10vw,140px) 0}
+.tempo-head{display:grid;gap:18px;margin-bottom:clamp(36px,5vw,64px)}
+.tempo-head p{color:var(--on-dusk-2);font-size:clamp(17px,1.5vw,19px)}
+.tempo-grid{display:grid;gap:32px;grid-template-columns:minmax(0,1fr)}
+.dial-col{display:grid;gap:26px;align-content:start}
+.dial-svg{width:100%;max-width:440px;margin:0 auto;overflow:visible}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{appearance:none;font:600 15px/1.25 var(--text);color:var(--on-dusk);background:var(--asphalt);border:1.5px solid transparent;border-radius:999px;min-height:46px;padding:10px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-align:left;transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .16s var(--ease-out)}
+.chip:active{transform:scale(.97)}
+.chip small{font:700 12px/1 var(--display);font-style:italic;font-stretch:110%;color:var(--on-dusk-2)}
+.chip[aria-checked="true"]{background:var(--orange);color:var(--dusk);border-color:var(--orange)}
+.chip[aria-checked="true"] small{color:var(--dusk)}
+@media (hover:hover) and (pointer:fine){.chip:hover{border-color:rgba(242,241,238,.4)}}
+.panel{background:var(--asphalt);border-radius:28px;padding:clamp(24px,3vw,40px);display:grid;align-content:start;gap:4px;min-height:100%}
+.answer h3{margin-bottom:14px}
+.answer .kind{display:block;font:700 14px/1.2 var(--text);color:var(--tint);margin-bottom:10px}
+.answer p{color:#D5D9DE}
+.facts{list-style:none;margin:18px 0 24px;padding:0;display:grid;gap:0;border-top:1px solid var(--line-dark)}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line-dark);font-size:16px}
+.facts li span:last-child{font-family:var(--display);font-style:italic;font-weight:700;font-stretch:110%;color:var(--orange);white-space:nowrap}
+.js .answer{display:none}
+.js .answer.is-on{display:block}
+.answer-default{display:none}
+.js .answer-default.is-on{display:block}
+.answer.is-on{animation:fadein .25s ease-out}
+@keyframes fadein{from{opacity:.4}}
+@media (prefers-reduced-motion:reduce){.answer.is-on{animation:none}}
+.answer + .answer{margin-top:28px}
+.js .answer + .answer{margin-top:0}
+@media (min-width:960px){
+  .tempo-head{grid-template-columns:1.1fr 1fr;align-items:end}
+  .tempo-grid{grid-template-columns:1.05fr 1fr;gap:56px;align-items:stretch}
+}
+
+/* chapters */
+.route{position:relative;padding-bottom:clamp(40px,6vw,80px)}
+.route-intro{padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(20px,3vw,40px)}
+.route-intro p{color:var(--on-dusk-2);margin-top:16px}
+.chapter{position:relative;padding:clamp(56px,6vw,88px) 0;overflow-x:clip}
+.chapter .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+.ghost{position:absolute;top:-.12em;left:var(--gut);font-family:var(--display);font-weight:900;font-style:italic;font-stretch:150%;font-size:clamp(9rem,22vw,20rem);line-height:1;color:var(--on-dusk);opacity:.06;pointer-events:none;user-select:none;letter-spacing:-.04em}
+.chapter.flip .ghost{left:auto;right:var(--gut)}
+.ch-text{position:relative}
+.ch-no{display:inline-block;font:800 15px/1 var(--display);font-style:italic;font-stretch:120%;color:var(--orange);margin-bottom:14px}
+.ch-text h3{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;margin-bottom:20px}
+.ch-text p{color:#D5D9DE}
+.data{display:flex;flex-wrap:wrap;gap:12px 32px;margin:24px 0 0;padding:0;list-style:none}
+.data li{display:grid;gap:2px;font-size:14px;color:var(--on-dusk-2);line-height:1.35}
+.data b{font-family:var(--display);font-style:italic;font-weight:800;font-stretch:115%;font-size:clamp(1.6rem,2.4vw,2.1rem);color:var(--orange);line-height:1.05}
+.ch-visual{position:relative}
+.pillfig{--bleed:max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)));--h:70svh;border-radius:999px;overflow:hidden;height:var(--h);margin-left:calc(-1 * var(--bleed));width:calc(100% + var(--bleed))}
+.pillfig img{width:100%;height:100%;object-fit:cover}
+.pillfig .ill{right:auto;left:calc(var(--bleed) + (100% - var(--bleed)) / 2);transform:translateX(-50%);bottom:5%}
+.drawn{background:var(--asphalt);border-radius:32px;padding:clamp(24px,4vw,44px);display:grid;place-items:center;gap:22px;min-height:340px}
+.drawn svg{width:min(100%,380px);height:auto}
+.drawn figcaption{font-size:15px;color:var(--on-dusk-2);text-align:center;max-width:34ch}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:16px;width:100%;max-width:360px}
+.checks li{display:flex;gap:14px;align-items:flex-start;font-weight:600;font-size:18px}
+.checks svg{width:28px;height:28px;flex:none;color:var(--orange)}
+.ring{--t:8;position:relative;width:min(260px,70vw);aspect-ratio:1;border-radius:50%;
+  background:conic-gradient(var(--orange) 0 300deg,rgba(242,241,238,.12) 300deg 360deg);display:grid;place-items:center}
+.ring::before{content:"";position:absolute;inset:14px;border-radius:50%;background:var(--asphalt)}
+.ring span{position:relative;text-align:center;font-family:var(--display);font-style:italic;font-weight:900;font-stretch:130%;font-size:clamp(4.5rem,10vw,6rem);line-height:.9;color:var(--on-dusk)}
+.ring small{display:block;font:700 15px/1.2 var(--text);color:var(--on-dusk-2);letter-spacing:0;margin-top:8px}
+.ring-ticks{position:absolute;inset:-12px;width:calc(100% + 24px);height:calc(100% + 24px)}
+@media (min-width:900px){
+  .chapter .wrap{grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,110px);min-height:min(66vh,640px)}
+  .chapter.flip .ch-text{order:2}
+  .chapter.flip .ch-visual{order:1}
+  .ch-text{padding-top:clamp(40px,5vw,80px)}
+  .pillfig{--h:min(86vh,800px);width:calc(var(--h) * .62);max-width:calc(100% + var(--bleed))}
+}
+/* right-edge chapter gauge */
+.gauge-rail{position:absolute;top:0;bottom:0;right:14px;width:120px;pointer-events:none;display:none;z-index:5}
+.gauge{position:sticky;top:calc(50vh - 70px);display:grid;justify-items:center;gap:4px;padding:14px 10px 10px;background:rgba(29,34,41,.82);border:1px solid var(--line-dark);border-radius:18px;backdrop-filter:blur(6px)}
+.gauge-svg{width:96px}
+.gauge-txt{font:800 13px/1 var(--display);font-style:italic;font-stretch:115%;color:var(--on-dusk-2)}
+.gauge-txt b{color:var(--orange);font-size:18px}
+@media (min-width:1280px){.gauge-rail{display:block}}
+
+/* light sections */
+.light{background:var(--light);color:var(--ink)}
+.light ::selection{background:var(--orange);color:var(--ink)}
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(32px,5vw,60px)}
+.sec-head p{color:var(--ink-2);font-size:clamp(17px,1.5vw,19px)}
+@media (min-width:960px){.sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:56px}}
+.special{display:grid;gap:0;border-top:1px solid var(--line-light)}
+.special article{padding:26px 0;border-bottom:1px solid var(--line-light);display:grid;gap:10px}
+.special h3{font-size:clamp(1.3rem,2vw,1.6rem)}
+.special p{margin:0;color:var(--ink-2)}
+.special .tag{font:700 14px/1.2 var(--text);color:#A0460A}
+.be{display:grid;gap:24px;margin-top:clamp(40px,6vw,72px);align-items:center}
+.be .fig{border-radius:32px;overflow:hidden}
+.be img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.be h3{font-size:clamp(1.8rem,3.6vw,2.8rem);margin-bottom:16px}
+.be p{color:var(--ink-2)}
+.be .big{font-family:var(--display);font-style:italic;font-weight:900;font-stretch:130%;font-size:clamp(2.2rem,3.6vw,3rem);line-height:1.05;color:var(--ink);margin:6px 0 12px}
+.be .big span{color:#A0460A}
+@media (min-width:900px){
+  .special{grid-template-columns:1fr 1fr;column-gap:56px}
+  .be{grid-template-columns:1.3fr 1fr;gap:56px}
+}
+
+/* tarieven */
+.tarieven{background:var(--light);color:var(--ink);padding:0 0 clamp(72px,10vw,140px)}
+.tarieven .top-line{border-top:1px solid var(--line-light);padding-top:clamp(72px,10vw,120px)}
+.packs{display:grid;gap:16px;margin-bottom:clamp(32px,5vw,56px)}
+.pack{background:#fff;border-radius:28px;padding:28px 26px;display:grid;gap:10px;align-content:start;box-shadow:0 12px 30px -18px rgba(29,34,41,.35)}
+.pack h3{font-size:1.5rem}
+.pack .price{font-family:var(--display);font-style:italic;font-weight:900;font-stretch:120%;font-size:clamp(2.6rem,4vw,3.2rem);line-height:1;color:var(--ink);margin:8px 0 4px}
+.pack ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px;font-size:16px;color:var(--ink-2)}
+.pack li{display:flex;gap:10px;align-items:flex-start}
+.pack li svg{width:18px;height:18px;flex:none;margin-top:4px;color:#A0460A}
+.pack--dark{background:var(--dusk);color:var(--on-dusk)}
+.pack--dark .price{color:var(--orange)}
+.pack--dark ul{color:#D5D9DE}
+.pack--dark li svg{color:var(--orange)}
+.pricelist{display:grid;gap:32px}
+.pl{width:100%;border-collapse:collapse;font-size:16px}
+.pl caption{text-align:left;font-family:var(--display);font-style:italic;font-weight:800;font-stretch:115%;font-size:1.3rem;padding-bottom:12px}
+.pl td{padding:12px 0;border-bottom:1px solid var(--line-light)}
+.pl td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:16px}
+.notes{font-size:15px;color:var(--ink-2);margin:0;padding-left:1.1em;display:grid;gap:6px}
+.notes li::marker{color:#A0460A}
+.src{font-size:14px;color:var(--ink-2);margin-top:18px}
+@media (min-width:900px){
+  .packs{grid-template-columns:repeat(3,1fr)}
+  .pricelist{grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+}
+
+/* reviews */
+.reviews{background:var(--dusk);padding:clamp(72px,10vw,140px) 0}
+.rev-grid{display:grid;gap:40px;align-items:center}
+.score{display:grid;gap:12px}
+.score .num{font-family:var(--display);font-style:italic;font-weight:900;font-stretch:140%;font-size:clamp(6rem,16vw,11rem);line-height:.85;color:var(--on-dusk);letter-spacing:-.03em}
+.stars{display:flex;gap:6px;color:var(--orange)}
+.stars svg{width:30px;height:30px}
+.score p{color:var(--on-dusk-2);margin:0}
+.score a{color:var(--on-dusk)}
+.said{list-style:none;padding:0;margin:0;display:grid;gap:0;border-top:1px solid var(--line-dark)}
+.said li{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line-dark);font-size:clamp(18px,1.8vw,22px);font-weight:600;line-height:1.4}
+.said svg{width:26px;height:26px;color:var(--orange);margin-top:2px}
+.said-note{font-size:14px;color:var(--on-dusk-2);margin-top:16px}
+@media (min-width:900px){.rev-grid{grid-template-columns:.9fr 1.1fr;gap:80px}}
+
+/* gratis rijles band */
+.band{background:var(--orange);color:var(--dusk);padding:clamp(48px,7vw,88px) 0;overflow:hidden}
+.band .wrap{display:grid;gap:28px;align-items:center}
+.band h2{font-size:clamp(2rem,4.6vw,3.6rem);max-width:18ch}
+.band p{font-weight:600;font-size:clamp(17px,1.6vw,20px);margin:14px 0 0}
+.tokens{display:flex;gap:16px;align-items:center}
+.token{width:clamp(96px,12vw,140px);aspect-ratio:1;border-radius:50%;border:3px solid var(--dusk);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;font-family:var(--display);font-style:italic;font-weight:900;font-stretch:120%;font-size:clamp(1.6rem,3vw,2.2rem);line-height:.95}
+.token small{display:block;font:700 13px/1.2 var(--text);font-style:normal}
+.token--2{background:var(--dusk);color:var(--orange)}
+@media (min-width:900px){.band .wrap{grid-template-columns:1fr auto;gap:56px}}
+
+/* contact */
+.contact{background:var(--dusk);padding:clamp(72px,10vw,140px) 0 40px;position:relative;overflow:hidden}
+.contact-grid{display:grid;gap:48px}
+.contact h2{margin-bottom:20px}
+.contact .lead{color:var(--on-dusk-2);font-size:clamp(17px,1.5vw,19px);margin-bottom:28px}
+.info{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:0;border-top:1px solid var(--line-dark)}
+.info li{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-dark)}
+.info svg{width:20px;height:20px;color:var(--orange);margin-top:4px}
+.info strong{display:block;font-size:14px;color:var(--on-dusk-2);font-weight:600}
+.info a{font-weight:700}
+.faq h3{font-size:1.6rem;margin-bottom:12px}
+.faq details{border-bottom:1px solid var(--line-dark)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:700;font-size:18px;min-height:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{width:22px;height:22px;flex:none;color:var(--orange);transition:transform .25s var(--ease-out)}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq details p{color:#D5D9DE;margin:0 0 20px}
+.area{margin-top:36px}
+.area h3{font-size:1.3rem;margin-bottom:10px}
+.area ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.area li{border:1.5px solid var(--line-dark);border-radius:999px;padding:8px 16px;font-weight:600;font-size:15px}
+.foot{margin-top:clamp(56px,8vw,96px);padding-top:24px;border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;font-size:14px;color:var(--on-dusk-2)}
+.foot p{margin:0;max-width:none}
+@media (min-width:960px){.contact-grid{grid-template-columns:1fr 1fr;gap:80px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tempo">Naar de inhoud</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.5 4.2-2 1.4a12 12 0 0 0 6.2 6.2l1.4-2 4.2 1.5v2.6a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7.5 12.3l3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-road" viewBox="0 0 24 24"><path d="M8 3L4 21M16 3l4 18M12 4v3M12 10.5v3M12 17v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Drive 4 Success, naar boven">Drive<span class="brand-4"><svg class="mark-svg" viewBox="0 0 64 43" aria-hidden="true" focusable="false"><path d="M2.0 34.0 A30 30 0 0 1 62.0 34.0" class="g-arc"/><line x1="2.8" y1="27.3" x2="6.6" y2="28.2" class="g-tick g-major" stroke-width="2.2"/><line x1="8.5" y1="15.3" x2="11.6" y2="17.7" class="g-tick g-major" stroke-width="2.2"/><line x1="19.0" y1="7.0" x2="20.7" y2="10.5" class="g-tick g-major" stroke-width="2.2"/><line x1="32.0" y1="4.0" x2="32.0" y2="7.9" class="g-tick g-major" stroke-width="2.2"/><line x1="45.0" y1="7.0" x2="43.3" y2="10.5" class="g-tick g-major" stroke-width="2.2"/><line x1="55.5" y1="15.3" x2="52.4" y2="17.7" class="g-tick g-major" stroke-width="2.2"/><line x1="61.2" y1="27.3" x2="57.4" y2="28.2" class="g-tick g-major" stroke-width="2.2"/><g class="g-needle"  style="transform-origin:32px 34px"><path d="M30.9 34 L32 8.2 L33.1 34 L32 38.5 Z" class="g-needle-body"/></g><circle cx="32" cy="34" r="3.2" class="g-hub"/></svg>4</span>Success</a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#tempo">Jouw tempo</a>
+      <a href="#route">Van proefles tot rijbewijs</a>
+      <a href="#tarieven">Tarieven</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="top-call" href="tel:0624280404"><svg><use href="#i-phone"/></svg><span class="long">06 2428 0404</span><span class="short">Bel</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- 1 HERO -->
+<section class="hero" aria-labelledby="h1">
+  <figure class="fig">
+    <img class="hero-img" src="images/hero-mirror.jpg" width="1376" height="768" alt="Illustratie, geen foto van Drive 4 Success: een autospiegel bij zonsondergang op de snelweg." fetchpriority="high">
+    <figcaption class="ill">Illustratie</figcaption>
+  </figure>
+  <div class="wrap hero-copy">
+    <h1 id="h1">Jouw rijbewijs, onze gezamenlijke <em class="serif">eindbestemming</em></h1>
+    <p class="hero-sub">Rijschool Drive 4 Success uit Breda. Les in Breda e.o., Bergen op Zoom en Tholen. Je begint met een gratis proefles.</p>
+    <div>
+      <div class="ctas">
+        <a class="pill pill--solid" href="#contact">Plan je gratis proefles <span class="pill-ico"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="pill pill--line" href="tel:0624280404"><svg><use href="#i-phone"/></svg>Bel 06 2428 0404</a>
+      </div>
+      <ul class="stats">
+        <li><b>5,0</b><svg><use href="#i-star"/></svg>94 Google-reviews</li>
+        <li><svg><use href="#i-check"/></svg>Geen wachtlijst</li>
+        <li><svg><use href="#i-clock"/></svg>Elke dag 08:00–20:00</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 2 TEMPO DIAL -->
+<section class="tempo" id="tempo" aria-labelledby="tempo-h">
+  <div class="wrap">
+    <div class="tempo-head">
+      <h2 id="tempo-h">Welk <em class="serif">tempo</em> past bij jou?</h2>
+      <p>Iedereen leert anders. Kies wat bij je past en de naald wijst je de opleiding. Bij Drive 4 Success is in overleg alles mogelijk.</p>
+    </div>
+    <div class="tempo-grid">
+      <div class="dial-col">
+        <svg class="dial-svg" viewBox="0 0 440 241" aria-hidden="true" focusable="false"><path d="M20.0 222.0 A200 200 0 0 1 420.0 222.0" class="g-arc"/><line x1="20.0" y1="222.0" x2="34.0" y2="222.0" class="g-tick" stroke-width="1.8"/><line x1="25.0" y1="177.5" x2="50.4" y2="183.3" class="g-tick g-major" stroke-width="3.0"/><text x="72.6" y="196.8" class="g-num" font-size="24" data-v="40">40</text><line x1="39.8" y1="135.2" x2="52.4" y2="141.3" class="g-tick" stroke-width="1.8"/><line x1="63.6" y1="97.3" x2="84.0" y2="113.5" class="g-tick g-major" stroke-width="3.0"/><text x="101.8" y="136.1" class="g-num" font-size="24" data-v="60">60</text><line x1="95.3" y1="65.6" x2="104.0" y2="76.6" class="g-tick" stroke-width="1.8"/><line x1="133.2" y1="41.8" x2="144.5" y2="65.2" class="g-tick g-major" stroke-width="3.0"/><text x="154.4" y="94.2" class="g-num" font-size="24" data-v="80">80</text><line x1="175.5" y1="27.0" x2="178.6" y2="40.7" class="g-tick" stroke-width="1.8"/><line x1="220.0" y1="22.0" x2="220.0" y2="48.0" class="g-tick g-major" stroke-width="3.0"/><text x="220.0" y="79.2" class="g-num" font-size="24" data-v="100">100</text><line x1="264.5" y1="27.0" x2="261.4" y2="40.7" class="g-tick" stroke-width="1.8"/><line x1="306.8" y1="41.8" x2="295.5" y2="65.2" class="g-tick g-major" stroke-width="3.0"/><text x="285.6" y="94.2" class="g-num" font-size="24" data-v="120">120</text><line x1="344.7" y1="65.6" x2="336.0" y2="76.6" class="g-tick" stroke-width="1.8"/><line x1="376.4" y1="97.3" x2="356.0" y2="113.5" class="g-tick g-major" stroke-width="3.0"/><text x="338.2" y="136.1" class="g-num" font-size="24" data-v="140">140</text><line x1="400.2" y1="135.2" x2="387.6" y2="141.3" class="g-tick" stroke-width="1.8"/><line x1="415.0" y1="177.5" x2="389.6" y2="183.3" class="g-tick g-major" stroke-width="3.0"/><text x="367.4" y="196.8" class="g-num" font-size="24" data-v="160">160</text><line x1="420.0" y1="222.0" x2="406.0" y2="222.0" class="g-tick" stroke-width="1.8"/><g class="g-needle" id="dialNeedle" style="transform-origin:220px 222px"><path d="M215.4 222 L220 50.0 L224.6 222 L220 240.2 Z" class="g-needle-body"/></g><circle cx="220" cy="222" r="13" class="g-hub"/></svg>
+        <div class="chips" role="radiogroup" aria-label="Wat past bij jou?" id="chips">
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="40" aria-controls="panel"><small>40</small>Ik word snel zenuwachtig</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="60" aria-controls="panel"><small>60</small>Ik heb ADHD of autisme</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="80" aria-controls="panel"><small>80</small>Ik heb jaren niet gereden</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="100" aria-controls="panel"><small>100</small>Ik ben 16,5 of 17</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="120" aria-controls="panel"><small>120</small>In mijn eigen tempo</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="140" aria-controls="panel"><small>140</small>Ik wil een aanhanger rijden</button>
+          <button type="button" class="chip" role="radio" aria-checked="false" data-v="160" aria-controls="panel"><small>160</small>Zo snel mogelijk</button>
+        </div>
+      </div>
+      <div class="panel" id="panel" aria-live="polite">
+        <div class="answer answer-default is-on" data-v="0">
+          <span class="kind">Kies wat bij je past</span>
+          <h3>Twijfel je nog? Begin met een gratis proefles.</h3>
+          <p>De naald staat stil tot je kiest. In de proefles leer je de instructeur en de manier van lesgeven kennen, en krijg je gratis lesadvies.</p>
+          <ul class="facts">
+            <li><span>Proefles</span><span>Gratis</span></li>
+            <li><span>Wachtlijst</span><span>Geen</span></li>
+            <li><span>Een les duurt</span><span>50 min</span></li>
+          </ul>
+        </div>
+        <div class="answer" data-v="40">
+          <span class="kind">Ik word snel zenuwachtig</span>
+          <h3>Faalangstinstructie</h3>
+          <p>Een beetje spanning houdt je alert. Word je zo zenuwachtig dat het je prestatie in de weg staat? Met faalangstinstructie stap je zelfverzekerder achter het stuur. Is een individueel theorie-examen beter dan een klassikaal examen, dan regelt Drive 4 Success dat voor je.</p>
+          <ul class="facts"><li><span>Individueel theorie-examen</span><span>€ 129</span></li><li><span>Proefles</span><span>Gratis</span></li></ul>
+        </div>
+        <div class="answer" data-v="60">
+          <span class="kind">Ik heb ADHD of autisme</span>
+          <h3>Een lesmethode die bij jou past</h3>
+          <p>Kun je de verkeersregels leren en ben je fysiek in staat om auto te rijden, dan heb je recht op een rijbewijs. Ook met ADHD of autisme. We nemen uitgebreid de tijd om je te leren kennen en passen de lesmethode aan op wat jij nodig hebt en fijn vindt.</p>
+          <ul class="facts"><li><span>Individueel theorie-examen</span><span>€ 129</span></li><li><span>Proefles</span><span>Gratis</span></li></ul>
+        </div>
+        <div class="answer" data-v="80">
+          <span class="kind">Ik heb jaren niet gereden</span>
+          <h3>Opfriscursus</h3>
+          <p>De verkeersregels veranderen steeds. Of je moet na jaren weer zelf rijden. Met een opfriscursus frissen je kennis en vaardigheden grondig op, voor zowel theorie als praktijk.</p>
+          <ul class="facts"><li><span>Voor</span><span>theorie en praktijk</span></li><li><span>Proefles</span><span>Gratis</span></li></ul>
+        </div>
+        <div class="answer" data-v="100">
+          <span class="kind">Ik ben 16,5 of 17</span>
+          <h3>2toDrive, begeleid rijden</h3>
+          <p>Vanaf 16,5 jaar doe je theorie-examen. Vanaf 17 jaar haal je je rijbewijs B, en tot je 18e rij je onder begeleiding van een coach. Tot je 18 bent is het rijbewijs niet geldig in het buitenland.</p>
+          <ul class="facts"><li><span>Theorie-examen vanaf</span><span>16,5 jaar</span></li><li><span>Rijbewijs B vanaf</span><span>17 jaar</span></li><li><span>Met coach tot</span><span>18 jaar</span></li></ul>
+        </div>
+        <div class="answer" data-v="120">
+          <span class="kind">In mijn eigen tempo</span>
+          <h3>Een lespakket</h3>
+          <p>Elke les begint met doelen en eindigt met een evaluatie. Zo bepaal je samen met je instructeur het leertempo.</p>
+          <ul class="facts"><li><span>Instappakket</span><span>€ 1210</span></li><li><span>Compact pakket (RIS)</span><span>€ 1429</span></li><li><span>All-in pakket (RIS)</span><span>€ 1939</span></li></ul>
+        </div>
+        <div class="answer" data-v="140">
+          <span class="kind">Ik wil een aanhanger rijden</span>
+          <h3>Rijbewijs BE in één dag</h3>
+          <p>De BE-dagopleiding duurt 6 uur, inclusief praktijkexamen. Je rijdt in een Volkswagen Transporter. Je hebt al wel een autorijbewijs B nodig.</p>
+          <ul class="facts"><li><span>BE-dagopleiding</span><span>vanaf € 649</span></li><li><span>Duur, incl. examen</span><span>6 uur</span></li></ul>
+        </div>
+        <div class="answer" data-v="160">
+          <span class="kind">Zo snel mogelijk</span>
+          <h3>Spoedopleiding</h3>
+          <p>Bij een spoedcursus is een intake verplicht. Daarin kijk je met de instructeur naar je vaardigheden en leertempo. Zo bepalen jullie hoe lang je spoedopleiding duurt.</p>
+          <ul class="facts"><li><span>Intake spoedcursus (100 min)</span><span>€ 95</span></li><li><span>Duur</span><span>na de intake</span></li></ul>
+        </div>
+        <div class="ctas">
+          <a class="pill pill--solid" href="#contact">Plan je gratis proefles <span class="pill-ico"><svg><use href="#i-arrow"/></svg></span></a>
+          <a class="pill pill--line" href="tel:0624280404"><svg><use href="#i-phone"/></svg>Bel 06 2428 0404</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 CHAPTERS -->
+<section class="route" id="route" aria-labelledby="route-h">
+  <div class="gauge-rail" aria-hidden="true">
+    <div class="gauge"><svg class="gauge-svg" viewBox="0 0 120 75" aria-hidden="true" focusable="false"><path d="M6.0 64.0 A54 54 0 0 1 114.0 64.0" class="g-arc"/><line x1="6.0" y1="64.0" x2="9.8" y2="64.0" class="g-tick" stroke-width="1.4"/><line x1="7.4" y1="52.0" x2="14.2" y2="53.5" class="g-tick g-major" stroke-width="2.4"/><line x1="11.3" y1="40.6" x2="14.8" y2="42.2" class="g-tick" stroke-width="1.4"/><line x1="17.8" y1="30.3" x2="23.3" y2="34.7" class="g-tick g-major" stroke-width="2.4"/><line x1="26.3" y1="21.8" x2="28.7" y2="24.7" class="g-tick" stroke-width="1.4"/><line x1="36.6" y1="15.3" x2="39.6" y2="21.7" class="g-tick g-major" stroke-width="2.4"/><line x1="48.0" y1="11.4" x2="48.8" y2="15.0" class="g-tick" stroke-width="1.4"/><line x1="60.0" y1="10.0" x2="60.0" y2="17.0" class="g-tick g-major" stroke-width="2.4"/><line x1="72.0" y1="11.4" x2="71.2" y2="15.0" class="g-tick" stroke-width="1.4"/><line x1="83.4" y1="15.3" x2="80.4" y2="21.7" class="g-tick g-major" stroke-width="2.4"/><line x1="93.7" y1="21.8" x2="91.3" y2="24.7" class="g-tick" stroke-width="1.4"/><line x1="102.2" y1="30.3" x2="96.7" y2="34.7" class="g-tick g-major" stroke-width="2.4"/><line x1="108.7" y1="40.6" x2="105.2" y2="42.2" class="g-tick" stroke-width="1.4"/><line x1="112.6" y1="52.0" x2="105.8" y2="53.5" class="g-tick g-major" stroke-width="2.4"/><line x1="114.0" y1="64.0" x2="110.2" y2="64.0" class="g-tick" stroke-width="1.4"/><g class="g-needle" id="gaugeNeedle" style="transform-origin:60px 64px"><path d="M58.2 64 L60 17.6 L61.8 64 L60 71.0 Z" class="g-needle-body"/></g><circle cx="60" cy="64" r="5" class="g-hub"/></svg><span class="gauge-txt"><b id="gaugeNo">01</b> / 05</span></div>
+  </div>
+  <div class="wrap route-intro">
+    <h2 id="route-h">Van proefles tot rijbewijs</h2>
+    <p>Vijf stappen, van je eerste kennismaking tot de uitslag van je examen.</p>
+  </div>
+
+  <article class="chapter" data-ch="1" aria-labelledby="c1">
+    <div class="ghost" aria-hidden="true">01</div>
+    <div class="wrap">
+      <div class="ch-text">
+        <span class="ch-no">01</span>
+        <h3 id="c1">Gratis proefles</h3>
+        <p>Eerst kennismaken. In een gratis proefles merk je of de instructeur en de manier van lesgeven bij je passen. Je krijgt uitgebreid lesadvies. Bevalt het? Dan begin je meteen met je opleiding, want er is geen wachtlijst.</p>
+        <ul class="data"><li><b>€ 0</b>proefles</li><li><b>Geen</b>wachtlijst</li></ul>
+      </div>
+      <figure class="ch-visual drawn">
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Kennismaken met de instructeur en de manier van lesgeven</li>
+          <li><svg><use href="#i-check"/></svg>Rijopleiding op maat</li>
+          <li><svg><use href="#i-check"/></svg>Gratis en uitgebreid lesadvies</li>
+        </ul>
+        <figcaption>De voordelen van een proefles, volgens Drive 4 Success.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <article class="chapter flip" data-ch="2" aria-labelledby="c2">
+    <div class="ghost" aria-hidden="true">02</div>
+    <div class="wrap">
+      <div class="ch-text">
+        <span class="ch-no">02</span>
+        <h3 id="c2">Lessen van 50 minuten</h3>
+        <p>Je wordt thuis opgehaald, of op je werk of school als je dat wilt. Je instructeur houdt een persoonlijk lesrapport bij: aan het begin van de les bespreek je de doelen, aan het eind volgt een evaluatie. Zo bepaal je samen het tempo.</p>
+        <ul class="data"><li><b>50 min</b>per les</li><li><b>€ 50</b>losse les</li></ul>
+      </div>
+      <div class="ch-visual">
+        <figure class="fig pillfig">
+          <img src="images/les.jpg" width="896" height="1120" loading="lazy" style="object-position:center 70%" alt="Illustratie, geen foto van Drive 4 Success: een leerling achter het stuur tijdens een rijles.">
+          <figcaption class="ill">Illustratie</figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="chapter" data-ch="3" aria-labelledby="c3">
+    <div class="ghost" aria-hidden="true">03</div>
+    <div class="wrap">
+      <div class="ch-text">
+        <span class="ch-no">03</span>
+        <h3 id="c3">Theorie</h3>
+        <p>Vanaf 16,5 jaar mag je theorie-examen doen. Het duurt ongeveer 45 minuten. Bij gevaarherkenning krijg je 25 vragen en heb je 8 seconden per vraag. Daarna volgen 40 vragen over verkeersregels en verkeersinzicht. Geslaagd? Dan blijft je uitslag 1,5 jaar geldig.</p>
+        <ul class="data"><li><b>13 / 25</b>goed bij gevaarherkenning</li><li><b>35 / 40</b>goed bij regels en inzicht</li><li><b>€ 50</b>complete digitale opleiding</li></ul>
+      </div>
+      <figure class="ch-visual drawn">
+        <div class="ring" role="img" aria-label="8 seconden per vraag bij gevaarherkenning">
+          <svg class="ring-ticks" viewBox="0 0 100 100" aria-hidden="true">
+            <g stroke="#F2F1EE" stroke-width=".8" stroke-linecap="round" opacity=".5">
+              <line x1="50" y1="2" x2="50" y2="6"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(45 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(90 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(135 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(180 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(225 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(270 50 50)"/><line x1="50" y1="2" x2="50" y2="6" transform="rotate(315 50 50)"/>
+            </g>
+          </svg>
+          <span>8<small>seconden per vraag</small></span>
+        </div>
+        <figcaption>Dat lijkt kort, maar op de weg moet je vaak nog sneller beslissen.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <article class="chapter flip" data-ch="4" aria-labelledby="c4">
+    <div class="ghost" aria-hidden="true">04</div>
+    <div class="wrap">
+      <div class="ch-text">
+        <span class="ch-no">04</span>
+        <h3 id="c4">Tussentijdse toets of RIS</h3>
+        <p>Met de Rijopleiding in Stappen (RIS) leer je rijden in vier toetsen. De eerste twee doe je bij de rijschool, de RIS-toets en het RIS-examen bij het CBR. Doe je de bijzondere verrichtingen bij de RIS-toets goed, dan krijg je vrijstelling en hoef je ze op het examen niet meer te doen.</p>
+        <ul class="data"><li><b>4</b>toetsen in de RIS</li><li><b>€ 230</b>tussentijdse toets</li></ul>
+      </div>
+      <div class="ch-visual">
+        <figure class="fig pillfig">
+          <img src="images/lesrapport.jpg" width="928" height="1152" loading="lazy" alt="Illustratie, geen foto van Drive 4 Success: een instructeur en leerling bespreken een lesrapport in de auto.">
+          <figcaption class="ill">Illustratie</figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="chapter" data-ch="5" aria-labelledby="c5">
+    <div class="ghost" aria-hidden="true">05</div>
+    <div class="wrap">
+      <div class="ch-text">
+        <span class="ch-no">05</span>
+        <h3 id="c5">Het examen</h3>
+        <p>Je rijdt het examen in je eigen lesauto, en als je wilt rijdt je instructeur mee. Eerst een ogentest: een kenteken lezen op ongeveer 25 meter. Dan heb je ongeveer 40 minuten. De examinator let op zeven onderdelen en je rijdt 10 tot 15 minuten zelfstandig naar een bestemming. Je hoeft niet foutloos te rijden om te slagen.</p>
+        <ul class="data"><li><b>40 min</b>examenrit</li><li><b>7</b>examenonderdelen</li><li><b>€ 275</b>praktijkexamen</li></ul>
+      </div>
+      <figure class="ch-visual drawn">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Ogentest: een kenteken lezen op ongeveer 25 meter">
+          <g fill="none" stroke="#F2F1EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 100c22-30 46-44 70-44s48 14 70 44c-22 30-46 44-70 44s-48-14-70-44z"/>
+            <circle cx="90" cy="100" r="22"/>
+          </g>
+          <circle cx="90" cy="100" r="9" fill="#F47321"/>
+          <path d="M126 100h104" stroke="#F47321" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <path d="M222 92l10 8-10 8" fill="none" stroke="#F47321" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="178" y="84" text-anchor="middle" fill="#B9BEC6" font-family="Anybody, sans-serif" font-style="italic" font-weight="800" font-size="20">± 25 m</text>
+          <rect x="244" y="80" width="104" height="40" rx="6" fill="none" stroke="#F2F1EE" stroke-width="2.5"/>
+          <rect x="244" y="80" width="16" height="40" rx="3" fill="#F47321"/>
+          <g fill="#F2F1EE"><rect x="270" y="97" width="12" height="6" rx="2"/><rect x="288" y="97" width="22" height="6" rx="2"/><rect x="316" y="97" width="22" height="6" rx="2"/></g>
+        </svg>
+        <figcaption>De ogentest op de parkeerplaats, voor de examenrit begint.</figcaption>
+      </figure>
+    </div>
+  </article>
+</section>
+
+<!-- 4 BIJZONDERE RIJOPLEIDINGEN -->
+<section class="light sec" id="bijzonder" aria-labelledby="bij-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="bij-h">Bijzondere rijopleidingen</h2>
+      <p>Naast de gewone lessen voor rijbewijs B kun je bij Drive 4 Success ook terecht voor deze opleidingen.</p>
+    </div>
+    <div class="special">
+      <article><span class="tag">Spanning</span><h3>Faalangstinstructie</h3><p>Zo stap je zelfverzekerder achter het stuur, als examenkandidaat en daarna. Een individueel theorie-examen regelen we als dat nodig is.</p></article>
+      <article><span class="tag">Op maat</span><h3>ADHD en autisme</h3><p>We nemen uitgebreid de tijd om je te leren kennen en passen de lesmethode aan op wat jij nodig hebt.</p></article>
+      <article><span class="tag">Vanaf 16,5 jaar</span><h3>2toDrive, begeleid rijden</h3><p>Theorie-examen vanaf 16,5, rijbewijs B vanaf 17, en tot je 18e rijden met een coach.</p></article>
+      <article><span class="tag">Snel</span><h3>Spoedopleiding</h3><p>Na de eerste les bepaal je met de instructeur hoe lang je spoedopleiding duurt, op basis van je vaardigheden en leertempo.</p></article>
+      <article><span class="tag">Theorie en praktijk</span><h3>Opfriscursussen</h3><p>Al jaren niet gereden of wil je de nieuwe regels kennen? Fris je kennis en vaardigheden grondig op.</p></article>
+      <article><span class="tag">Alles in 1 dag</span><h3>Rijbewijs BE</h3><p>Lessen in een Volkswagen Transporter. Voor rijbewijs BE heb je eerst een autorijbewijs B nodig.</p></article>
+    </div>
+    <div class="be">
+      <figure class="fig">
+        <img src="images/be-transporter.jpg" width="1376" height="768" loading="lazy" alt="Illustratie, geen foto van Drive 4 Success: een bestelbus met aanhanger op een oefenterrein.">
+        <figcaption class="ill">Illustratie</figcaption>
+      </figure>
+      <div>
+        <h3>BE-dagopleiding: in 1 dag, rijbewijs voor het leven</h3>
+        <p class="big">6 uur <span>·</span> vanaf € 649</p>
+        <p>Inclusief praktijkexamen. Je rijdt in een Volkswagen Transporter.</p>
+        <div class="ctas"><a class="pill pill--line" href="tel:0624280404"><svg><use href="#i-phone"/></svg>Bel voor de BE-dag</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 TARIEVEN -->
+<section class="tarieven" id="tarieven" aria-labelledby="tar-h">
+  <div class="wrap top-line">
+    <div class="sec-head">
+      <h2 id="tar-h">Tarieven 2026</h2>
+      <p>Scherpe tarieven bij een pakket, en losse lessen kunnen ook. De eerste les is altijd een gratis proefles.</p>
+    </div>
+    <div class="packs">
+      <article class="pack">
+        <h3>Instappakket</h3>
+        <p class="price tnum">€ 1210</p>
+        <ul><li><svg><use href="#i-check"/></svg>20 rijlessen</li><li><svg><use href="#i-check"/></svg>Praktijkexamen</li></ul>
+      </article>
+      <article class="pack pack--dark">
+        <h3>Compact pakket</h3>
+        <p class="price tnum">€ 1429</p>
+        <ul><li><svg><use href="#i-check"/></svg>20 rijlessen</li><li><svg><use href="#i-check"/></svg>RIS-toets</li><li><svg><use href="#i-check"/></svg>RIS-praktijkexamen</li><li><svg><use href="#i-check"/></svg>RIS-boek</li></ul>
+      </article>
+      <article class="pack">
+        <h3>All-in pakket</h3>
+        <p class="price tnum">€ 1939</p>
+        <ul><li><svg><use href="#i-check"/></svg>30 rijlessen</li><li><svg><use href="#i-check"/></svg>RIS-toets</li><li><svg><use href="#i-check"/></svg>RIS-praktijkexamen</li><li><svg><use href="#i-check"/></svg>RIS-boek</li><li><svg><use href="#i-check"/></svg>Theoriebox</li></ul>
+      </article>
+    </div>
+    <div class="pricelist">
+      <table class="pl">
+        <caption>Losse onderdelen</caption>
+        <tbody>
+          <tr><td>Proefles</td><td>Gratis</td></tr>
+          <tr><td>Losse les (50 min)</td><td>€ 50</td></tr>
+          <tr><td>BE-dagopleiding, 6 uur incl. praktijkexamen</td><td>vanaf € 649</td></tr>
+          <tr><td>Theorie-examen</td><td>€ 55</td></tr>
+          <tr><td>Individueel theorie-examen</td><td>€ 129</td></tr>
+          <tr><td>Theorie: complete digitale opleiding</td><td>€ 50</td></tr>
+          <tr><td>Praktijkexamen</td><td>€ 275</td></tr>
+          <tr><td>Tussentijdse toets</td><td>€ 230</td></tr>
+          <tr><td>Intake spoedcursus (100 min)</td><td>€ 95</td></tr>
+          <tr><td>Administratiekosten</td><td>€ 15</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <h3 style="font-size:1.3rem;margin-bottom:14px">Goed om te weten</h3>
+        <ul class="notes">
+          <li>Pakketten zijn exclusief eigen verklaring en administratiekosten.</li>
+          <li>Is je pakket op, dan gaan je lessen verder als losse lessen.</li>
+          <li>Een les duurt 50 minuten. Door de drukte op de weg is een langere les vaak efficiënter.</li>
+          <li>Bij een spoedcursus is een intake verplicht. Die zit niet in de prijs.</li>
+        </ul>
+        <p class="src">Tarieven 2026 volgens drive4success.nl.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 REVIEWS -->
+<section class="reviews" aria-labelledby="rev-h">
+  <div class="wrap rev-grid">
+    <div class="score">
+      <h2 id="rev-h">Wat leerlingen zeggen</h2>
+      <p class="num tnum" aria-hidden="true">5,0</p>
+      <div class="stars" role="img" aria-label="5 van 5 sterren"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+      <p>5,0 uit 94 reviews op <a href="https://www.google.com/maps/place/Drive+4+Success/data=!4m7!3m6!1s0x47c6a1e85ccdb729:0x3bf50c4caabd045d!8m2!3d51.5785875!4d4.7917178!16s%2Fg%2F11bbrh4gyw!19sChIJKbfNXOihxkcRXQS9qkwM9Ts" target="_blank" rel="noopener">Google Maps</a>.</p>
+    </div>
+    <div>
+      <ul class="said">
+        <li><svg><use href="#i-check"/></svg>Instructeur Jasmin is geduldig, precies en grappig.</li>
+        <li><svg><use href="#i-check"/></svg>Ze legt fouten duidelijk uit en laat je zelf nadenken.</li>
+        <li><svg><use href="#i-check"/></svg>Ze spreekt Engels met leerlingen die geen Nederlands spreken.</li>
+        <li><svg><use href="#i-check"/></svg>Meerdere leerlingen schrijven dat ze in één keer slaagden.</li>
+      </ul>
+      <p class="said-note">Samengevat uit de Google-reviews, geen letterlijke citaten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 GRATIS RIJLES -->
+<section class="band" aria-labelledby="band-h">
+  <div class="wrap">
+    <div>
+      <h2 id="band-h">Gratis rijles? Dat kan!</h2>
+      <p>Meld een nieuwe leerling aan en verdien een gratis rijles. Elke nieuwe inschrijving geeft recht op één gratis les, met een maximum van twee aanmeldingen.</p>
+    </div>
+    <div class="tokens" aria-hidden="true">
+      <div class="token">1<small>gratis les</small></div>
+      <div class="token token--2">2<small>gratis lessen</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 CONTACT + FAQ -->
+<section class="contact" id="contact" aria-labelledby="con-h">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2 id="con-h">Plan je gratis proefles</h2>
+        <p class="lead">Bel of mail gerust, ook als je eerst een vraag hebt. Onze drive is jouw succes.</p>
+        <div class="ctas">
+          <a class="pill pill--solid" href="mailto:info@drive4success.nl?subject=Gratis%20proefles">Mail voor een proefles <span class="pill-ico"><svg><use href="#i-arrow"/></svg></span></a>
+          <a class="pill pill--line" href="tel:0624280404"><svg><use href="#i-phone"/></svg>Bel 06 2428 0404</a>
+        </div>
+        <ul class="info">
+          <li><svg><use href="#i-pin"/></svg><div><strong>Adres</strong><a href="https://www.google.com/maps/place/Drive+4+Success/data=!4m7!3m6!1s0x47c6a1e85ccdb729:0x3bf50c4caabd045d!8m2!3d51.5785875!4d4.7917178!16s%2Fg%2F11bbrh4gyw!19sChIJKbfNXOihxkcRXQS9qkwM9Ts" target="_blank" rel="noopener">Poolseweg 102, 4818 CD Breda</a></div></li>
+          <li><svg><use href="#i-phone"/></svg><div><strong>Telefoon</strong><a href="tel:0624280404">06 2428 0404</a></div></li>
+          <li><svg><use href="#i-mail"/></svg><div><strong>E-mail</strong><a href="mailto:info@drive4success.nl">info@drive4success.nl</a></div></li>
+          <li><svg><use href="#i-clock"/></svg><div><strong>Open (volgens Google Maps)</strong>Elke dag 08:00–20:00</div></li>
+        </ul>
+        <div class="area">
+          <h3>Lesgebied</h3>
+          <ul><li>Breda e.o.</li><li>Bergen op Zoom</li><li>Tholen</li></ul>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>Vragen</h3>
+        <details open><summary>Hoe lang duurt een les?<svg><use href="#i-plus"/></svg></summary><p>Een les duurt 50 minuten. Je wordt thuis opgehaald, of op je werk of school.</p></details>
+        <details><summary>Vanaf welke leeftijd kan ik beginnen?<svg><use href="#i-plus"/></svg></summary><p>Theorie-examen mag vanaf 16,5 jaar. Via 2toDrive haal je je rijbewijs B vanaf 17 jaar.</p></details>
+        <details><summary>Is er een wachtlijst?<svg><use href="#i-plus"/></svg></summary><p>Nee. Bevalt de proefles, dan begin je direct.</p></details>
+        <details><summary>Kan ik mijn theorie-examen apart doen?<svg><use href="#i-plus"/></svg></summary><p>Ja. Een individueel theorie-examen kost € 129. Drive 4 Success regelt het voor je als dat nodig is.</p></details>
+        <details><summary>Wat neem ik mee naar het examen?<svg><use href="#i-plus"/></svg></summary><p>Je geldige identiteitsbewijs en het ingevulde formulier ‘Zelfreflectie’. Dat formulier krijg je bij Drive 4 Success.</p></details>
+      </div>
+    </div>
+    <footer class="foot">
+      <p>© 2026 Rijschool Drive 4 Success · Poolseweg 102, 4818 CD Breda</p>
+      <p>Foto’s op deze pagina zijn illustraties, geen foto’s van de rijschool.</p>
+    </footer>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement; root.classList.remove('no-js'); root.classList.add('js');
+  function ang(v){return (v-100)*180/140;}
+  var needle=document.getElementById('dialNeedle');
+  var REST=ang(30);
+  if(needle) needle.style.transform='rotate('+REST+'deg)';
+  var chips=[].slice.call(document.querySelectorAll('#chips .chip'));
+  var answers=[].slice.call(document.querySelectorAll('#panel .answer'));
+  var nums=[].slice.call(document.querySelectorAll('.dial-svg .g-num'));
+  chips.forEach(function(c,i){c.tabIndex=i===0?0:-1;});
+  function select(chip,focus){
+    var v=chip.getAttribute('data-v');
+    chips.forEach(function(c){var on=c===chip;c.setAttribute('aria-checked',on?'true':'false');c.tabIndex=on?0:-1;});
+    answers.forEach(function(a){a.classList.toggle('is-on',a.getAttribute('data-v')===v);});
+    nums.forEach(function(n){n.classList.toggle('is-on',n.getAttribute('data-v')===v);});
+    if(needle) needle.style.transform='rotate('+ang(+v)+'deg)';
+    if(focus) chip.focus();
+  }
+  chips.forEach(function(c,i){
+    c.addEventListener('click',function(){select(c,false);});
+    c.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowRight'||k==='ArrowDown') n=chips[(i+1)%chips.length];
+      else if(k==='ArrowLeft'||k==='ArrowUp') n=chips[(i-1+chips.length)%chips.length];
+      else if(k==='Home') n=chips[0]; else if(k==='End') n=chips[chips.length-1];
+      if(n){e.preventDefault();select(n,true);}
+    });
+  });
+  // chapter gauge
+  var g=document.getElementById('gaugeNeedle'), no=document.getElementById('gaugeNo');
+  var CH=[40,70,100,130,160];
+  function setCh(i){ if(g) g.style.transform='rotate('+ang(CH[i-1])+'deg)'; if(no) no.textContent='0'+i; }
+  setCh(1);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting) setCh(+e.target.getAttribute('data-ch'));});},{rootMargin:'-45% 0px -45% 0px'});
+    [].forEach.call(document.querySelectorAll('.chapter'),function(c){io.observe(c);});
+  }
+})();
+</script>
+</body>
+</html>
