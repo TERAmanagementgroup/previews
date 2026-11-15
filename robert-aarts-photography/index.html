@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robert Aarts Photography · Fotograaf in Breda</title>
+<meta name="description" content="Robert Aarts, fotograaf in Breda. Evenementen, hospitality en bedrijven, in Nederland en ver daarbuiten.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Hanken+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --darkroom:#1C1A18; --darkroom-2:#24211F; --ra-grey:#918E87; --proof:#F4F3F1; --ink:#2A2826;
+  --ink-soft:#4A4642; --grease:#B3262E; --grease-light:#E86A70; --paper-line:#CFCBC5; --on-dark:#EDEAE5; --on-dark-soft:#BDB8B1;
+  --display:"Bodoni Moda", "Didot", Georgia, serif; --text:"Hanken Grotesk", system-ui, sans-serif;
+  --ease-out:cubic-bezier(0.23,1,0.32,1); --ease-in-out:cubic-bezier(0.77,0,0.175,1);
+  --gutter:clamp(16px,5vw,72px); --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--proof);color:var(--ink);font:400 1.0625rem/1.6 var(--text);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+::selection{background:var(--grease);color:#fff}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--grease);outline-offset:3px;border-radius:2px}
+.dark :focus-visible{outline-color:var(--grease-light)}
+html{scrollbar-color:var(--ra-grey) var(--darkroom)}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--ink);padding:10px 14px;z-index:20}
+.skip:focus{left:8px}
+
+/* grease pencil marks */
+.mark{fill:none;stroke:var(--grease);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.dark .mark{stroke:var(--grease-light)}
+.js .draw .mark{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .9s var(--ease-out)}
+.js .draw.in .mark{stroke-dashoffset:0}
+.js .draw.in .mark:nth-child(2){transition-delay:.12s}.js .draw.in .mark:nth-child(3){transition-delay:.24s}.js .draw.in .mark:nth-child(4){transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){.js .draw .mark{stroke-dashoffset:0;transition:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:48px;padding:.75em 1.3em;font:600 1rem/1 var(--text);text-decoration:none;border-radius:2px;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--grease);color:#fff}
+.btn-line{border:1px solid currentColor}
+@media (hover:hover) and (pointer:fine){.btn-red:hover{background:#951E25}.dark .btn-line:hover{background:#fff;color:var(--darkroom)}.btn-line.on-light:hover{background:var(--ink);color:#fff}}
+.btn:active{transform:scale(.98)}
+
+/* header */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand svg{width:46px;height:auto}
+.brand span{font:600 .78rem/1.25 var(--text);letter-spacing:.16em;text-transform:uppercase}
+.nav{display:flex;gap:28px;font-size:.95rem}
+.nav a{text-decoration:none;padding:10px 0;border-bottom:1px solid transparent}
+@media (hover:hover) and (pointer:fine){.nav a:hover{border-bottom-color:currentColor}}
+.call-mini{display:none;min-height:44px;align-items:center;padding:0 14px;border:1px solid rgba(255,255,255,.7);text-decoration:none;font-weight:600;font-size:.95rem}
+@media (max-width:860px){.nav{display:none}.call-mini{display:inline-flex}.brand span{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:max(640px,100svh);display:flex;align-items:flex-end;background:var(--darkroom);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;animation:settle .6s var(--ease-out) both}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(20,18,16,.3),rgba(20,18,16,.3)),linear-gradient(15deg,rgba(20,18,16,.94) 0%,rgba(20,18,16,.78) 34%,rgba(20,18,16,.15) 70%,rgba(20,18,16,.05) 100%),linear-gradient(180deg,rgba(20,18,16,.55) 0%,rgba(20,18,16,0) 22%)}
+.hero-copy{position:relative;z-index:2;padding-bottom:clamp(40px,9vh,96px);width:100%}
+.hero h1{font-size:clamp(2.5rem,6.4vw,5.6rem);font-weight:500;max-width:13ch;letter-spacing:-.02em}
+.h1-line{display:inline-block;position:relative}
+.h1-line svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.32em;overflow:visible}
+.h1-line .mark{stroke-width:3.2;stroke-dasharray:1;animation:draw .7s var(--ease-out) .25s backwards}
+.hero .sub{margin-top:28px;font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--on-dark);max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.proof-line{margin-top:22px;font-size:.92rem;color:var(--on-dark-soft);display:flex;align-items:center;gap:10px}
+.stars{display:inline-flex;gap:2px}.stars svg{width:14px;height:14px;fill:currentColor}
+.hero-copy>*{animation:rise .52s var(--ease-out) backwards}
+.hero-copy>*:nth-child(2){animation-delay:.05s}.hero-copy>*:nth-child(3){animation-delay:.1s}.hero-copy>*:nth-child(4){animation-delay:.14s}
+@keyframes rise{from{transform:translateY(12px)}}
+@keyframes settle{from{transform:scale(1.05)}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@media (prefers-reduced-motion:reduce){.hero-copy>*,.hero-img img,.h1-line .mark{animation:none}}
+
+/* section base */
+section{position:relative}
+.dark{background:var(--darkroom);color:var(--on-dark)}
+.pad{padding:clamp(72px,11vw,140px) 0}
+.h2{font-size:clamp(2.2rem,4.6vw,3.8rem)}
+.lede{font-size:clamp(1.05rem,1.4vw,1.2rem)}
+
+/* draaiboek */
+.db-head{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(40px,6vw,72px)}
+.db-head p{color:var(--on-dark);margin:0}
+.rail-wrap{position:relative}
+.rail{position:relative;display:grid;grid-template-columns:repeat(5,1fr);touch-action:none;user-select:none;-webkit-user-select:none;padding-top:28px}
+.rail::before{content:"";position:absolute;left:10%;right:10%;top:36px;height:1px;background:var(--ra-grey)}
+.stop{position:relative;z-index:1;appearance:none;background:none;border:0;color:var(--on-dark-soft);font:inherit;cursor:pointer;padding:30px 8px 14px;min-height:96px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px;transition:color .2s ease}
+.stop::before{content:"";position:absolute;top:3px;left:50%;width:11px;height:11px;margin-left:-5.5px;border-radius:50%;background:var(--darkroom);border:1px solid var(--ra-grey);transition:background-color .2s ease,border-color .2s ease}
+.stop .t{font:600 .95rem/1 var(--text);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.stop .n{font:400 1.25rem/1.15 var(--display)}
+.stop[aria-pressed="true"]{color:#fff}
+.stop[aria-pressed="true"]::before{background:var(--grease-light);border-color:var(--grease-light)}
+@media (hover:hover) and (pointer:fine){.stop:hover{color:#fff}}
+.knob{position:absolute;top:25px;left:0;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--grease);box-shadow:0 2px 8px rgba(0,0,0,.45);z-index:2;pointer-events:none;transition:transform .32s var(--ease-in-out)}
+.ring{position:absolute;left:0;top:0;pointer-events:none;z-index:0;overflow:visible;transition:transform .32s var(--ease-in-out)}
+.ring .mark{stroke-width:2.4}
+.no-js-hide{display:none}
+.js .no-js-hide{display:block}
+.rail-note{margin:18px 0 0;font-size:.88rem;color:var(--on-dark-soft);text-align:center;max-width:none}
+
+.db-body{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);margin-top:clamp(36px,5vw,56px);align-items:center}
+.sheet{background:var(--proof);color:var(--ink);padding:26px 28px 30px;transform:rotate(-1.2deg);box-shadow:0 18px 40px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);position:relative}
+.sheet h3{font:600 .78rem/1 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);display:flex;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.sheet ol{list-style:none;margin:0;padding:0}
+.sheet li{display:grid;grid-template-columns:78px 1fr 26px;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--paper-line);font-size:.98rem;position:relative}
+.sheet li .t{font-variant-numeric:tabular-nums;font-weight:600}
+.sheet li svg{width:24px;height:20px;overflow:visible}
+.sheet li .tick{opacity:0;transition:opacity .2s ease}
+.sheet li.done .tick{opacity:1}
+.sheet li .row-ring{position:absolute;left:-12px;top:3px;width:calc(100% + 22px);height:calc(100% - 6px);opacity:0;transition:opacity .2s ease}
+.sheet li.now .row-ring{opacity:1}
+.sheet li.now{font-weight:600}
+.sheet .foot{margin:16px 0 0;font-size:.82rem;color:var(--ink-soft)}
+.panels{position:relative}
+.panel{padding:4px 0}
+.js .panel{display:none}
+.js .panel.on{display:block;animation:panel-in .32s var(--ease-out)}
+@keyframes panel-in{from{transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){.js .panel.on{animation:none}}
+.panel .big{font:400 clamp(4.5rem,9vw,7.5rem)/.9 var(--display);color:#fff;font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.03em}
+.panel h3{font-size:clamp(1.8rem,3vw,2.5rem);color:#fff;margin:18px 0 14px}
+.panel p{color:var(--on-dark);font-size:1.1rem}
+.panel figure{margin:0 0 20px;position:relative}
+.panel figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.panel+.panel{margin-top:48px}.js .panel+.panel{margin-top:0}
+
+/* specialismen */
+.spec{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,6vw,96px);align-items:start}
+.spec ul{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--ink)}
+.spec li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:16px;padding:16px 0 14px;border-bottom:1px solid var(--paper-line);position:relative}
+.spec li b{font:400 clamp(1.6rem,3.2vw,2.6rem)/1.05 var(--display);letter-spacing:-.015em;position:relative}
+.spec li>span{font-size:.92rem;color:var(--ink-soft);text-align:right;max-width:30ch}
+.spec li .tk{position:absolute;left:-34px;top:50%;width:24px;height:20px;margin-top:-10px;overflow:visible}
+.spec li .tk .mark{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .3s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.spec li:hover .tk .mark{stroke-dashoffset:0}}
+.spec li.lead .tk .mark{stroke-dashoffset:0}
+.circled{position:relative;display:inline-block}
+.circled svg{position:absolute;left:-10%;top:-22%;width:120%;height:144%;overflow:visible}
+.quote{margin:0;align-self:center;padding-top:28px}
+.quote blockquote{margin:0;font:italic 400 clamp(1.7rem,2.7vw,2.4rem)/1.2 var(--display);letter-spacing:-.01em}
+.quote blockquote::before{content:"\201C";display:block;font:500 7rem/1 var(--display);color:var(--grease);height:.5em}
+.quote figcaption{margin-top:18px;font-size:.92rem;color:var(--ink-soft)}
+.quote .lede{margin-top:32px;color:var(--ink)}
+
+/* hospitality */
+.hosp{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,88px);align-items:center}
+.crop{position:relative;margin:0;padding:18px}
+.crop img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.crop .brackets{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.crop figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:10px}
+.checks{list-style:none;margin:26px 0 0;padding:0}
+.checks li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:12px 0;border-top:1px solid var(--paper-line)}
+.checks svg{width:22px;height:18px;margin-top:4px;overflow:visible}
+
+/* world */
+.world{background:#ECEAE6}
+.world-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center}
+.map{width:100%;height:auto;overflow:visible}
+.map .land{fill:url(#dots)}
+.map .home{fill:var(--ink)}
+.map .dest{fill:var(--grease)}
+.map text{font:600 5.4px var(--text);fill:var(--ink);letter-spacing:.04em}
+.map .mark{stroke-width:.9}
+.places{display:flex;flex-wrap:wrap;gap:8px 18px;margin:20px 0 0;padding:0;list-style:none;font-weight:600}
+.places li{display:flex;align-items:center;gap:8px}
+.places li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--grease)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,96px)}
+.pull{font:italic 400 clamp(1.7rem,3vw,2.6rem)/1.18 var(--display);margin:34px 0 0;padding:0;max-width:22ch}
+.pull cite{display:block;margin-top:14px;font:400 .92rem/1.4 var(--text);font-style:normal;color:var(--ink-soft)}
+.studio h3,.reviews h3{font-size:1.7rem;margin:22px 0 10px}
+.studio .crop{padding:14px}
+.reviews{margin-top:clamp(48px,6vw,72px);padding-top:28px;border-top:1px solid var(--ink);display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.score{font:400 clamp(4rem,7vw,6rem)/.9 var(--display);letter-spacing:-.03em}
+.score small{display:block;font:400 .92rem/1.5 var(--text);letter-spacing:0;margin-top:10px;color:var(--ink-soft)}
+.score .stars{color:var(--grease);margin-top:12px}.score .stars svg{width:18px;height:18px}
+.said{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.said li{padding:14px 0;border-bottom:1px solid var(--paper-line);font:400 1.125rem/1.4 var(--text);color:var(--ink)}
+
+/* contact */
+.contact{background:var(--darkroom)}
+.last-row{display:grid;grid-template-columns:160px minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);border-top:2px solid var(--on-dark);padding-top:28px;align-items:start}
+.last-row .t{font:600 .95rem/1.3 var(--text);letter-spacing:.04em;color:var(--on-dark-soft)}
+.last-row h2{color:#fff}
+.last-row p{color:var(--on-dark)}
+.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0;font-size:1.02rem}
+.facts dt,.facts dd{padding:12px 0;border-bottom:1px solid #3B3733;margin:0}
+.facts dt{color:var(--on-dark-soft);padding-right:24px;font-size:.92rem;padding-top:14px}
+.facts dd{color:#fff}
+.facts a{text-decoration-color:rgba(255,255,255,.4)}
+@media (hover:hover) and (pointer:fine){.facts a:hover{text-decoration-color:var(--grease-light)}}
+.contact-mono{position:absolute;right:var(--gutter);bottom:32px;width:clamp(90px,12vw,160px);opacity:.12;pointer-events:none}
+footer{background:#141210;color:var(--on-dark-soft);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:24px}
+
+/* responsive */
+@media (max-width:900px){
+  .db-head,.spec,.hosp,.world-grid,.about,.db-body{grid-template-columns:1fr}
+  .sheet{display:none}
+  .quote{position:static}
+  .reviews{grid-template-columns:1fr}
+  .last-row{grid-template-columns:1fr}
+  .contact-mono{display:none}
+}
+@media (max-width:640px){
+  .rail{grid-template-columns:1fr;padding-top:0;padding-left:44px;touch-action:pan-y}
+  .rail::before{left:15px;right:auto;top:24px;bottom:24px;width:1px;height:auto}
+  .stop{flex-direction:row;align-items:baseline;gap:14px;text-align:left;padding:12px 10px;min-height:52px}
+  .stop::before{top:50%;left:-34px;margin:-5.5px 0 0}
+  .stop .n{font-size:1.2rem}
+  .knob{top:0;left:15px}
+  .rail-note{text-align:left}
+  .said{grid-template-columns:1fr}
+  .spec li{grid-template-columns:1fr}
+  .spec li>span{text-align:left}
+  .spec li .tk{left:auto;right:0}
+  .facts{grid-template-columns:1fr}
+  .facts dt{border-bottom:0;padding-bottom:0}
+  .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}
+  .hero::after{background:linear-gradient(0deg,rgba(20,18,16,.95) 0%,rgba(20,18,16,.85) 55%,rgba(20,18,16,.35) 100%)}
+  .map text{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#draaiboek">Naar de inhoud</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Robert Aarts Photography, naar boven">
+      <svg viewBox="0 0 230 145" aria-hidden="true" fill="#fff"><rect x="0" y="0" width="36" height="145"/><rect x="0" y="0" width="82" height="32"/><rect x="50" y="0" width="32" height="68"/><rect x="98" y="0" width="36" height="145"/><rect x="194" y="0" width="36" height="145"/><rect x="98" y="0" width="132" height="32"/><rect x="134" y="70" width="60" height="30"/></svg>
+      <span>Robert Aarts<br>Photography</span>
+    </a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="#draaiboek">Draaiboek</a><a href="#specialismen">Specialismen</a><a href="#over">Over Robert</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="call-mini" href="tel:+31653435820">Bel Robert</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero dark" aria-labelledby="h1">
+  <div class="hero-img"><img src="images/event-laser.jpg" width="1300" height="867" alt="Een zaal vol laserlicht boven een publiek tijdens een groot evenement, gefotografeerd door Robert Aarts." fetchpriority="high"></div>
+  <div class="hero-copy wrap">
+    <h1 id="h1">Een goede foto bekijk je niet, <span class="h1-line">die beleef je.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path class="mark" pathLength="1" d="M4 13 C 60 6, 140 4, 200 8 S 282 12, 296 6"/></svg></span></h1>
+    <p class="sub">Robert Aarts, fotograaf in Breda. Evenementen, hospitality en bedrijven, in Nederland en ver daarbuiten.</p>
+    <div class="cta">
+      <a class="btn btn-red" href="tel:+31653435820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Bel Robert</a>
+      <a class="btn btn-line" href="mailto:info@robertaarts.nl?subject=Opdracht%20fotografie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Mail een opdracht</a>
+    </div>
+    <p class="proof-line"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span>5,0 op Google · 25 reviews</p>
+  </div>
+</section>
+
+<section id="draaiboek" class="dark pad" aria-labelledby="db-h">
+  <div class="wrap">
+    <div class="db-head">
+      <h2 id="db-h" class="h2">Eén avond, geen tweede kans</h2>
+      <p class="lede">Een event heb je maar één keer. Robert werkt vanuit het draaiboek en houdt het overzicht, van de ontvangst tot de levering de volgende ochtend. Loop de avond door.</p>
+    </div>
+
+    <div class="rail-wrap no-js-hide">
+      <div class="rail" id="rail" role="group" aria-label="Momenten van een voorbeeldavond">
+        <button class="stop" type="button" aria-pressed="true" aria-controls="p0"><span class="t">17:30</span><span class="n">Ontvangst</span></button>
+        <button class="stop" type="button" aria-pressed="false" aria-controls="p1"><span class="t">19:00</span><span class="n">Keynote</span></button>
+        <button class="stop" type="button" aria-pressed="false" aria-controls="p2"><span class="t">20:30</span><span class="n">Diner</span></button>
+        <button class="stop" type="button" aria-pressed="false" aria-controls="p3"><span class="t">22:00</span><span class="n">Show</span></button>
+        <button class="stop" type="button" aria-pressed="false" aria-controls="p4"><span class="t">Ochtend</span><span class="n">Levering</span></button>
+        <span class="knob" id="knob" aria-hidden="true"></span>
+        <svg class="ring" id="ring" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><path class="mark" d="M52 4 C 20 2, 3 14, 4 31 S 30 58, 54 57 S 97 44, 96 27 S 70 3, 40 6"/></svg>
+      </div>
+      <p class="rail-note">Een voorbeeldavond. Elk draaiboek is anders. Tik een moment aan, sleep over de lijn of gebruik de pijltjestoetsen.</p>
+    </div>
+
+    <div class="db-body">
+      <div class="sheet" aria-hidden="true">
+        <h3><span>Draaiboek</span><span>Foto</span></h3>
+        <ol id="sheet">
+          <li class="now"><span class="t">17:30</span><span>Ontvangst gasten</span><svg class="tick" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" d="M3 11 L9 17 L22 3"/></svg><svg class="row-ring" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="mark" style="stroke-width:2" vector-effect="non-scaling-stroke" d="M50 2 C 18 1, 2 7, 2 15 S 26 29, 52 28 S 98 23, 98 14 S 72 2, 36 4"/></svg></li>
+          <li><span class="t">19:00</span><span>Keynote</span><svg class="tick" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" d="M3 11 L9 17 L22 3"/></svg><svg class="row-ring" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="mark" style="stroke-width:2" vector-effect="non-scaling-stroke" d="M50 2 C 18 1, 2 7, 2 15 S 26 29, 52 28 S 98 23, 98 14 S 72 2, 36 4"/></svg></li>
+          <li><span class="t">20:30</span><span>Diner</span><svg class="tick" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" d="M3 11 L9 17 L22 3"/></svg><svg class="row-ring" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="mark" style="stroke-width:2" vector-effect="non-scaling-stroke" d="M50 2 C 18 1, 2 7, 2 15 S 26 29, 52 28 S 98 23, 98 14 S 72 2, 36 4"/></svg></li>
+          <li><span class="t">22:00</span><span>Show</span><svg class="tick" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" d="M3 11 L9 17 L22 3"/></svg><svg class="row-ring" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="mark" style="stroke-width:2" vector-effect="non-scaling-stroke" d="M50 2 C 18 1, 2 7, 2 15 S 26 29, 52 28 S 98 23, 98 14 S 72 2, 36 4"/></svg></li>
+          <li><span class="t">Ochtend</span><span>Beeld geleverd</span><svg class="tick" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" d="M3 11 L9 17 L22 3"/></svg><svg class="row-ring" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="mark" style="stroke-width:2" vector-effect="non-scaling-stroke" d="M50 2 C 18 1, 2 7, 2 15 S 26 29, 52 28 S 98 23, 98 14 S 72 2, 36 4"/></svg></li>
+        </ol>
+        <p class="foot">Een voorbeeldavond. Elk draaiboek is anders.</p>
+      </div>
+      <div class="panels" aria-live="polite">
+        <article class="panel on" id="p0"><div class="big">17:30</div><h3>Ontvangst</h3><p>De gasten komen binnen. Wil je meer, dan zet Robert een mobiele fotostudio neer op je event, voor profiel- of groepsfoto's die gasten meteen meenemen.</p></article>
+        <article class="panel" id="p1"><div class="big">19:00</div><h3>Keynote</h3><p>De spreker vastleggen zonder te storen. Robert kent het draaiboek en houdt het overzicht.</p></article>
+        <article class="panel" id="p2"><div class="big">20:30</div><h3>Diner</h3><p>Een donkere ruimte, en toch geen flits. Robert fotografeert het diner zonder flitslicht.</p></article>
+        <article class="panel" id="p3"><div class="big">22:00</div><h3>Show</h3><p>Hoog tempo, niets in scène gezet. Er is één kans en die mag je niet missen. Daar komt zijn ervaring uit de concertfotografie van pas.</p></article>
+        <article class="panel" id="p4"><figure><img src="images/event-tallships.jpg" width="2000" height="1333" alt="Verlichte tallships bij avond, met bootjes vol publiek op het water, gefotografeerd door Robert Aarts."></figure><h3>De volgende ochtend</h3><p>Snel geleverd, zodat persberichten en social media op tijd beeld hebben. Je krijgt een webgalerie, en als je wilt een fotoalbum, boek of fotocollage als relatiegeschenk.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="specialismen" class="pad" aria-labelledby="sp-h">
+  <div class="wrap spec">
+    <div>
+      <h2 id="sp-h" class="h2">Specialismen</h2>
+      <ul>
+        <li class="lead"><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b><span class="circled draw">Evenementen<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M55 3 C 22 1, 3 10, 4 21 S 28 39, 55 38 S 98 30, 96 18 S 72 2, 38 5"/></svg></span></b><span>Toonaangevend. Opening, relatie-event, jubileum, seminar, congres</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Hospitality &amp; interieur</b><span>Hotels, restaurants, horeca</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Bedrijfsfotografie</b><span>Helder communiceren</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Food</b><span>Ook samen met interieur</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Portret</b><span>Zakelijk inzetbaar</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Bruidsfotografie</b><span>Net een stap verder</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Incentivereizen</b><span>Wereldwijd</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Concerten</b><span>Jarenlange ervaring</span></li>
+        <li><svg class="tk" viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><b>Feest &amp; destination</b><span>In Nederland en daarbuiten</span></li>
+      </ul>
+    </div>
+    <figure class="quote">
+      <blockquote>Iemand die zegt dat hij alles kan, kan waarschijnlijk niets.</blockquote>
+      <figcaption>Robert Aarts</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0" aria-labelledby="ho-h">
+  <div class="wrap hosp">
+    <figure class="crop draw">
+      <img src="images/hospitality-gewelf.jpg" width="2000" height="1335" loading="lazy" alt="Een interieur onder een gewelf, gefotografeerd door Robert Aarts voor hospitality.">
+      <svg class="brackets" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M1 12 L1 1 L9 1.2"/><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M91 1 L99 1.3 L99 12"/><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M99 88 L98.8 99 L91 99"/><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M9 99 L1.2 98.8 L1 88"/></svg>
+    </figure>
+    <div>
+      <h2 id="ho-h" class="h2">De eerste drie foto's beslissen</h2>
+      <p class="lede" style="margin-top:22px">Op boekingssites kiezen gasten op de eerste drie foto's. Bij Robert staan verticale lijnen recht en zie je detail in de diepste schaduwen en de felste lichten.</p>
+      <ul class="checks draw">
+        <li><svg viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><span>Hij fotografeert tijdens openingstijden, zonder je gasten te storen.</span></li>
+        <li><svg viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><span>Moeten er mensen in beeld? Hij werkt met modellenbureaus en visagisten.</span></li>
+        <li><svg viewBox="0 0 24 20" aria-hidden="true"><path class="mark" pathLength="1" d="M3 11 L9 17 L22 3"/></svg><span>Te combineren met food- of bedrijfsfotografie.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="world pad" aria-labelledby="wo-h">
+  <div class="wrap world-grid">
+    <div>
+      <h2 id="wo-h" class="h2" style="font-size:clamp(2.1rem,3.4vw,3.1rem)">Waar Robert al fotografeerde</h2>
+      <p class="lede" style="margin-top:22px">Voor incentivereizen gaat Robert mee, ook ver weg.</p>
+      <p>Zijn uitrusting is compact en hij kan dagen achter elkaar fotograferen zonder computer of stroom. Door zijn open karakter ontspannen groepen voor de camera. De foto's laten het effect van de reis langer doorwerken.</p>
+      <ul class="places"><li>Marokko</li><li>Dubai</li><li>China</li><li>Canada</li></ul>
+    </div>
+    <svg class="map draw" viewBox="32 8 296 128" role="img" aria-label="Wereldkaart met lijnen vanuit Breda naar Marokko, Dubai, China en Canada">
+      <defs><pattern id="dots" width="2.2" height="2.2" patternUnits="userSpaceOnUse"><circle cx="1.1" cy="1.1" r=".58" fill="#B5B0A9"/></pattern></defs>
+      <path class="land" d="M15.0,25.0 L40.0,20.0 L85.0,18.0 L100.0,22.0 L118.0,30.0 L125.0,40.0 L113.0,45.0 L105.0,52.0 L99.0,59.0 L100.0,65.0 L83.0,64.0 L83.0,70.0 L93.0,69.0 L97.0,80.0 L102.0,82.0 L90.0,75.0 L75.0,70.0 L65.0,60.0 L55.0,50.0 L55.0,41.0 L45.0,32.0 L30.0,30.0 L15.0,30.0Z M125.0,8.0 L155.0,8.0 L160.0,20.0 L138.0,30.0 L125.0,20.0Z M102.0,82.0 L120.0,80.0 L130.0,90.0 L145.0,96.0 L140.0,112.0 L122.0,128.0 L112.0,145.0 L105.0,135.0 L109.0,108.0 L99.0,95.0Z M170.0,54.0 L171.0,47.0 L178.0,46.0 L175.0,42.0 L182.0,39.0 L188.0,36.0 L190.0,32.0 L185.0,28.0 L195.0,21.0 L208.0,19.0 L220.0,23.0 L240.0,22.0 L240.0,45.0 L220.0,48.0 L208.0,49.0 L206.0,52.0 L200.0,50.0 L195.0,52.0 L192.0,46.0 L188.0,46.0 L183.0,48.0 L175.0,54.0Z M240.0,22.0 L260.0,17.0 L285.0,12.0 L320.0,18.0 L360.0,22.0 L350.0,30.0 L340.0,32.0 L320.0,36.0 L315.0,47.0 L308.0,55.0 L302.0,60.0 L300.0,68.0 L288.0,72.0 L285.0,80.0 L280.0,77.0 L278.0,82.0 L272.0,68.0 L260.0,75.0 L257.0,82.0 L252.0,70.0 L246.0,65.0 L237.0,65.0 L236.0,68.0 L232.0,73.0 L224.0,78.0 L222.0,74.0 L215.0,62.0 L216.0,54.0 L208.0,49.0 L220.0,48.0 L230.0,45.0 L240.0,45.0Z M163.0,69.0 L170.0,60.0 L174.0,54.0 L190.0,53.0 L200.0,58.0 L212.0,59.0 L215.0,62.0 L224.0,78.0 L231.0,78.0 L220.0,92.0 L220.0,105.0 L215.0,114.0 L200.0,125.0 L197.0,120.0 L192.0,105.0 L193.0,95.0 L189.0,86.0 L172.0,85.0 L163.0,76.0Z M294.0,112.0 L310.0,102.0 L322.0,101.0 L333.0,117.0 L326.0,129.0 L315.0,124.0 L295.0,124.0Z M175.0,40.0 L181.0,39.0 L178.0,33.0 L174.0,32.0 L175.0,35.0Z M310.0,59.0 L321.0,54.0 L322.0,45.0 L318.0,50.0 L311.0,56.0Z"/>
+      <path class="mark" pathLength="1" d="M184.8 38.4 Q 168 42 174 58"/>
+      <path class="mark" pathLength="1" d="M184.8 38.4 Q 216 36 235.3 64.8"/>
+      <path class="mark" pathLength="1" d="M184.8 38.4 Q 236 16 284 55"/>
+      <path class="mark" pathLength="1" d="M184.8 38.4 Q 134 6 85 33"/>
+      <circle class="dest" cx="174" cy="58" r="1.6"/><circle class="dest" cx="235.3" cy="64.8" r="1.6"/><circle class="dest" cx="284" cy="55" r="1.6"/><circle class="dest" cx="85" cy="33" r="1.6"/>
+      <circle class="home" cx="184.8" cy="38.4" r="2.2"/>
+      <text x="188" y="34">BREDA</text><text x="150" y="63">MAROKKO</text><text x="238" y="70">DUBAI</text><text x="288" y="59">CHINA</text><text x="70" y="27">CANADA</text>
+    </svg>
+  </div>
+</section>
+
+<section id="over" class="pad" aria-labelledby="ov-h">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <h2 id="ov-h" class="h2">Over Robert</h2>
+        <p class="lede" style="margin-top:22px">Robert is geboren in 1970 in Oisterwijk. Hij ging naar het Grafisch Lyceum en daarna naar de Kunstacademie St.&nbsp;Joost.</p>
+        <p>Zijn vader leerde hem kijken naar het licht door de bomen, tijdens het fietsen door Brabant. Robert is een verhalenverteller met oog voor detail.</p>
+        <blockquote class="pull">Je moet het willen zien en het op waarde weten te schatten.<cite>Robert Aarts</cite></blockquote>
+      </div>
+      <div class="studio">
+        <figure class="crop draw" style="margin:0">
+          <img src="images/food-studio.jpg" width="1300" height="867" loading="lazy" alt="Foodfoto gemaakt in de studio van Robert Aarts.">
+          <svg class="brackets" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M1 14 L1 1 L10 1.2"/><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M99 86 L98.8 99 L90 99"/></svg>
+        </figure>
+        <h3>De studio</h3>
+        <p>Een moderne studio van ruim 100 m², op zo'n 300 meter van Breda CS. Voor productfoto's en zakelijke portretten.</p>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="score">5,0<span class="stars" aria-hidden="true" style="display:flex"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><small>Google, 25 reviews.<br>Allemaal vijf sterren.</small></div>
+      <div>
+        <h3 style="margin-top:0">Wat klanten zeggen</h3>
+        <ul class="said">
+          <li>Professioneel</li>
+          <li>Communiceert goed</li>
+          <li>Bedacht zelf een locatie voor een bandfoto</li>
+          <li>Het resultaat: fantastisch</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact dark pad" aria-labelledby="co-h">
+  <div class="wrap">
+    <div class="last-row">
+      <div class="t">Na afloop</div>
+      <div>
+        <h2 id="co-h" class="h2">Jouw <span class="circled draw">verhaal<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="mark" pathLength="1" vector-effect="non-scaling-stroke" d="M55 3 C 22 1, 3 10, 4 21 S 28 39, 55 38 S 98 30, 96 18 S 72 2, 38 5"/></svg></span></h2>
+        <p class="lede" style="margin-top:22px">Vertel wat je organiseert en wanneer. Bel Robert, of mail je opdracht.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="tel:+31653435820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Bel 06 53 43 58 20</a>
+          <a class="btn btn-line" href="mailto:info@robertaarts.nl?subject=Opdracht%20fotografie">Mail een opdracht</a>
+        </div>
+      </div>
+      <dl class="facts">
+        <dt>Adres</dt><dd><a href="https://www.google.com/maps/place/Robert+Aarts+Photography/data=!4m7!3m6!1s0x47c69f9adaa6784b:0xd18f48ce8c34c383!8m2!3d51.5977717!4d4.7761225!16s%2Fg%2F1vfp7dzx!19sChIJS3im2pqfxkcRg8M0jM5Ij9E?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener">Speelhuislaan 80<br>4815 CG Breda</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:info@robertaarts.nl">info@robertaarts.nl</a></dd>
+        <dt>Mobiel</dt><dd><a href="tel:+31653435820">06 53 43 58 20</a></dd>
+        <dt>Studio</dt><dd><a href="tel:+31765152495">076 515 24 95</a></dd>
+        <dt>Bereikbaar</dt><dd>Maandag t/m zaterdag 09:00–18:00<br>Zondag gesloten</dd>
+      </dl>
+    </div>
+  </div>
+  <svg class="contact-mono" viewBox="0 0 230 145" aria-hidden="true" fill="#918E87"><rect x="0" y="0" width="36" height="145"/><rect x="0" y="0" width="82" height="32"/><rect x="50" y="0" width="32" height="68"/><rect x="98" y="0" width="36" height="145"/><rect x="194" y="0" width="36" height="145"/><rect x="98" y="0" width="132" height="32"/><rect x="134" y="70" width="60" height="30"/></svg>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Robert Aarts Photography · Breda</span><span>Alle foto's: Robert Aarts</span></div></footer>
+
+<script>
+(function(){
+  // draw grease-pencil marks once when they enter
+  var marks=document.querySelectorAll('.draw');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.25});
+    marks.forEach(function(m){io.observe(m)});
+  } else marks.forEach(function(m){m.classList.add('in')});
+
+  // draaiboek scrubber
+  var rail=document.getElementById('rail'); if(!rail) return;
+  var stops=[].slice.call(rail.querySelectorAll('.stop'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  var rows=[].slice.call(document.querySelectorAll('#sheet li'));
+  var knob=document.getElementById('knob'), ring=document.getElementById('ring');
+  var cur=0;
+  function place(){
+    var b=stops[cur], r=rail.getBoundingClientRect(), s=b.getBoundingClientRect();
+    var vertical=getComputedStyle(rail).gridTemplateColumns.split(' ').length===1;
+    var cx=s.left-r.left+s.width/2, cy=s.top-r.top+s.height/2;
+    var t=b.querySelector('.t'), n=b.querySelector('.n'), tr=t.getBoundingClientRect(), nr=n.getBoundingClientRect();
+    var L=Math.min(tr.left,nr.left)-r.left, R=Math.max(tr.right,nr.right)-r.left, T=Math.min(tr.top,nr.top)-r.top, B=Math.max(tr.bottom,nr.bottom)-r.top;
+    var w=R-L+30, h=B-T+18;
+    ring.style.width=w+'px'; ring.style.height=h+'px';
+    ring.style.transform='translate('+(L-15)+'px,'+(T-9)+'px)';
+    knob.style.transform=vertical?'translateY('+(cy-11)+'px)':'translateX('+cx+'px)';
+  }
+  function set(i,focus){
+    i=Math.max(0,Math.min(stops.length-1,i)); if(i===cur&&!focus){place();return;}
+    cur=i;
+    stops.forEach(function(b,k){b.setAttribute('aria-pressed',k===i?'true':'false');});
+    panels.forEach(function(p,k){p.classList.toggle('on',k===i);});
+    rows.forEach(function(r,k){r.classList.toggle('now',k===i);r.classList.toggle('done',k<i);});
+    if(focus) stops[i].focus();
+    place();
+  }
+  stops.forEach(function(b,k){
+    b.addEventListener('click',function(){set(k)});
+    b.addEventListener('keydown',function(e){
+      var d={ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];
+      if(e.key==='Home'){e.preventDefault();set(0,true)} else if(e.key==='End'){e.preventDefault();set(stops.length-1,true)}
+      else if(d){e.preventDefault();set(cur+d,true)}
+    });
+  });
+  // drag along the rail
+  var drag=false;
+  function nearest(e){
+    var vertical=getComputedStyle(rail).gridTemplateColumns.split(' ').length===1, best=0, bd=1e9;
+    stops.forEach(function(b,k){var s=b.getBoundingClientRect();var c=vertical?s.top+s.height/2:s.left+s.width/2;var d=Math.abs((vertical?e.clientY:e.clientX)-c);if(d<bd){bd=d;best=k}});
+    return best;
+  }
+  rail.addEventListener('pointerdown',function(e){ if(e.pointerType!=='mouse'&&getComputedStyle(rail).touchAction==='pan-y') return; drag=true; set(nearest(e)); try{rail.setPointerCapture(e.pointerId)}catch(_){} });
+  rail.addEventListener('pointermove',function(e){ if(drag) set(nearest(e)); });
+  ['pointerup','pointercancel'].forEach(function(t){rail.addEventListener(t,function(){drag=false})});
+  window.addEventListener('resize',place);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(place);
+  set(0); place();
+})();
+</script>
+</body>
+</html>

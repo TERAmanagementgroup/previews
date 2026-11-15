@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fysiotherapie Ruitersbos · Breda en Oosterhout</title>
+<meta name="description" content="Fysiotherapie, revalidatie, sportmassage en training onder begeleiding in Breda en Oosterhout. Bel 076 521 5141 of boek online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#D5AF36; --gold-deep:#7A5E00; --black:#000; --ground:#EDEFF5; --white:#fff; --oak:#B98A5A;
+  --ink:#000; --ink-2:#3b3d45; --line:#d4d7e0;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --text:"Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --gutter:clamp(16px,4vw,56px);
+  --radius:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--text);font-size:18px;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--gold-deep);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.dark :focus-visible{outline-color:#fff}
+h1,h2,h3{font-family:var(--display);font-stretch:125%;font-weight:800;letter-spacing:-0.02em;line-height:1.04;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4.2vw,56px)}
+h3{font-size:clamp(19px,1.6vw,22px);letter-spacing:-0.01em;line-height:1.15}
+p{margin:0}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--gutter)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- buttons ---------- */
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;border:2px solid #000;color:#000;background:transparent;transition:transform .16s var(--ease-out),background-color .2s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn--gold{background:var(--gold);border-color:var(--gold)}
+.btn--gold:hover{background:#e2be4a;text-decoration:none}
+.btn--ghost:hover{background:#fff;text-decoration:none}
+.dark .btn{border-color:#fff;color:#fff}
+.dark .btn--gold{border-color:var(--gold);color:#000}
+.dark .btn--ghost:hover{background:#fff;color:#000}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);grid-template-areas:"text map" "photo map";grid-template-rows:auto 1fr;gap:clamp(24px,3vw,48px);padding:28px var(--gutter) 32px;max-width:1520px;margin:0 auto;align-items:stretch}
+.hero__text{grid-area:text;display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero__logo{width:clamp(92px,8vw,116px);height:auto;margin-left:-8px}
+.hero h1{font-size:clamp(36px,4.1vw,62px);animation:rise .56s var(--ease-out) both}
+.hero__lead{font-size:clamp(18px,1.4vw,21px);color:var(--ink-2);max-width:34ch;animation:rise .56s .04s var(--ease-out) both}
+.hero .actions{animation:rise .56s .08s var(--ease-out) both}
+.status{display:flex;align-items:center;gap:10px;font-size:16px;color:var(--ink-2)}
+.status__dot{width:10px;height:10px;border-radius:50%;background:var(--oak);flex:none}
+.status.is-open .status__dot{background:#1f8a4c;box-shadow:0 0 0 4px rgba(31,138,76,.16)}
+.status strong{color:#000;font-weight:600}
+.hero__photo{grid-area:photo;position:relative;min-height:220px;border-radius:var(--radius);overflow:hidden}
+.hero__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 55%;animation:settle .6s var(--ease-out) both}
+.stamp{position:absolute;left:14px;bottom:14px;background:#fff;color:#000;border-radius:var(--radius);padding:10px 14px 9px;display:flex;align-items:baseline;gap:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.stamp b{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:28px;line-height:1}
+.stamp span{font-size:14px;line-height:1.25;color:var(--ink-2)}
+.stamp .stars{display:block;color:var(--gold-deep);letter-spacing:2px;font-size:13px}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+
+/* ---------- body map ---------- */
+.map{grid-area:map;display:grid;grid-template-columns:minmax(240px,0.8fr) minmax(0,1.2fr);gap:clamp(16px,2vw,32px);background:#fff;border-radius:var(--radius);padding:clamp(18px,2vw,30px);min-width:0;position:relative;overflow:hidden}
+.map__q{grid-column:1/-1;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.map__q h2{font-size:clamp(26px,2.5vw,38px)}
+.map__q p{font-size:15px;color:var(--ink-2)}
+.figure{position:relative;align-self:center;height:min(72svh,660px);aspect-ratio:196/566;max-width:100%;margin:0 auto}
+.figure svg{width:100%;height:100%;overflow:visible}
+.figure circle{fill:#000;transform-box:fill-box;transform-origin:center;transition:fill .22s ease,transform .26s var(--ease-out)}
+.figure circle.g{fill:var(--gold)}
+.figure .z-trail circle{opacity:.9}
+.figure .zone circle{fill:#2a2a2a}
+.figure .zone circle.g{fill:var(--gold)}
+.figure[data-sel="nek"] [data-zone="nek"] circle,
+.figure[data-sel="schouder"] [data-zone="schouder"] circle,
+.figure[data-sel="elleboog"] [data-zone="elleboog"] circle,
+.figure[data-sel="rug"] [data-zone="rug"] circle,
+.figure[data-sel="heup"] [data-zone="heup"] circle,
+.figure[data-sel="knie"] [data-zone="knie"] circle,
+.figure[data-sel="enkel"] [data-zone="enkel"] circle{fill:var(--gold);transform:scale(1.35)}
+.figure[data-sel]:not([data-sel="extra"]) .z-body circle.g{fill:#cfcfcf}
+.hot{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;border:0;background:transparent;cursor:pointer;padding:0;display:grid;place-items:center}
+.hot::before{content:"";width:20px;height:20px;border-radius:50%;border:2px solid #000;background:radial-gradient(circle,var(--gold) 0 3px,#fff 3.6px);transition:transform .2s var(--ease-out),background-color .2s ease,border-color .2s ease}
+.hot:hover::before{transform:scale(1.15)}
+.hot[aria-pressed="true"]::before{background:var(--gold);border-color:#000;transform:scale(1.25)}
+.hot .lab{position:absolute;left:38px;white-space:nowrap;font-size:14px;font-weight:600;background:#000;color:#fff;padding:3px 9px;border-radius:999px;pointer-events:none;opacity:0;transform:translateX(-4px);transition:opacity .18s ease,transform .18s var(--ease-out)}
+.hot.left .lab{left:auto;right:38px;transform:translateX(4px)}
+.hot:hover .lab,.hot:focus-visible .lab,.hot[aria-pressed="true"] .lab{opacity:1;transform:none}
+.hot--hint::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;border:2px solid var(--gold);animation:ping 1.4s var(--ease-out) 2}
+@keyframes ping{from{transform:scale(1);opacity:1}to{transform:scale(2.6);opacity:0}}
+.hint{position:absolute;font-size:14px;font-weight:600;color:var(--gold-deep);transform:translate(26px,-50%);white-space:nowrap;pointer-events:none}
+
+.panel{display:flex;flex-direction:column;gap:16px;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--ground);font:600 15px/1 var(--text);color:#000;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background-color .2s ease,border-color .2s ease,transform .16s var(--ease-out)}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:#000}
+.chip:hover{border-color:#000}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold)}
+.chip--extra{background:#fff;border-style:dashed}
+.chip--extra::before{background:var(--gold)}
+.answers{min-height:250px}
+.answer h3{font-size:clamp(22px,2vw,28px);margin-bottom:12px}
+.answer h3 small{display:block;font:600 14px/1.3 var(--text);color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.answer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.answer li{display:grid;grid-template-columns:14px 1fr;gap:10px;font-size:16.5px;line-height:1.4}
+.answer li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--gold);margin-top:7px}
+.answer li b{font-weight:600}
+.answer .who{margin-top:14px;padding:10px 14px;background:var(--ground);border-radius:var(--radius);font-size:15.5px}
+.answer--intro p{color:var(--ink-2);font-size:17px;max-width:40ch}
+.answer--intro .mini{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:4px 22px;margin-top:16px;font-size:15px}
+.answer--intro .mini b{font-family:var(--display);font-stretch:125%;font-size:24px;display:block;line-height:1.1}
+.js .answer{display:none}
+.js .answer.on{display:block;animation:fadeup .24s var(--ease-out)}
+@keyframes fadeup{from{transform:translateY(6px)}to{transform:none}}
+.nojs-note{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.panel .actions .btn{min-height:44px;font-size:15.5px;padding:0 16px}
+.disclaim{font-size:14px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px}
+.js .answer:not(.on) + .answer{margin:0}
+html:not(.js) .answer{margin-bottom:22px}
+
+/* ---------- section scaffolding ---------- */
+section{position:relative}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.trail{display:block;width:180px;height:26px;color:#000}
+.trail--gold{color:var(--gold)}
+.sec__head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec__head p{color:var(--ink-2);max-width:52ch}
+
+/* behandelingen */
+.treat{background:#fff}
+.groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,3vw,48px)}
+.group h3{padding-bottom:14px;border-bottom:2px solid #000;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.group h3 i{display:inline-block;border-radius:50%;background:var(--gold);flex:none}
+.group dl{margin:0}
+.group dl>div{display:grid;grid-template-columns:12px 1fr;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.group dt{font-weight:600;grid-column:2}
+.group dd{margin:0;grid-column:2;color:var(--ink-2);font-size:16px;line-height:1.45}
+.group .ask{background:#000;color:#fff;border-radius:var(--radius);padding:26px 24px;margin-top:28px;border:0}
+.ask h3{border:0;padding:0;margin:0 0 8px;color:#fff}
+.ask p{color:#d9d9d9;font-size:16px;margin-bottom:18px}
+.ask .actions .btn{min-height:44px;font-size:15.5px;padding:0 16px}
+.group dl>div::before{content:"";grid-row:1;width:7px;height:7px;border-radius:50%;background:#000;margin-top:10px}
+.group dl>div:nth-child(3n+2)::before{width:9px;height:9px;background:var(--gold);margin-top:9px}
+
+/* stappen */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2.5vw,40px);list-style:none;padding:0;margin:0;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:36px;height:2px;background:repeating-linear-gradient(90deg,#000 0 2px,transparent 2px 10px)}
+.step{position:relative}
+.step__dot{height:72px;display:flex;align-items:center}
+.step__dot span{display:block;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px var(--ground)}
+.step:nth-child(1) .step__dot span{width:14px;height:14px;background:#000}
+.step:nth-child(2) .step__dot span{width:26px;height:26px}
+.step:nth-child(3) .step__dot span{width:42px;height:42px;background:#000}
+.step:nth-child(4) .step__dot span{width:64px;height:64px}
+.step h3{margin:18px 0 10px}
+.step p{color:var(--ink-2);font-size:17px}
+
+/* oefenzaal */
+.gym{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center}
+.gym__img{border-radius:var(--radius);overflow:hidden;aspect-ratio:5/4}
+.gym__img img{width:100%;height:100%;object-fit:cover;object-position:88% 45%}
+.gym__text{display:flex;flex-direction:column;gap:18px}
+.gym__text p{color:var(--ink-2)}
+.facts{list-style:none;margin:6px 0 0;padding:0;border-top:1px solid var(--line)}
+.facts li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline}
+.facts li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;transform:translateY(-2px)}
+.quote-s{font-size:16px;color:#000;border-left:0;padding:16px 18px;background:#fff;border-radius:var(--radius)}
+.quote-s cite{display:block;font-style:normal;font-size:14px;color:var(--ink-2);margin-top:6px}
+
+/* sport */
+.dark{background:#000;color:#fff}
+.dark .sec__head p,.dark p{color:#d9d9d9}
+.dark a{color:var(--gold)}
+.sport__grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(16px,2vw,24px)}
+.sport__wide{border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9;grid-row:span 2}
+.sport__wide img,.sport__tall img{width:100%;height:100%;object-fit:cover}
+.sport__tall{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
+.sport__tall img{object-position:40% 50%}
+.offer{display:flex;flex-wrap:wrap;gap:10px 10px;margin-top:clamp(28px,4vw,48px);padding:0;list-style:none}
+.offer li{border:1.5px solid #3a3a3a;border-radius:999px;padding:8px 16px;font-size:16px;color:#fff}
+.offer li.big{border-color:var(--gold);color:var(--gold);font-family:var(--display);font-stretch:125%;font-weight:800;font-size:20px;padding:8px 20px}
+.sotm{display:flex;gap:18px;align-items:center;background:#111;border-radius:var(--radius);padding:20px 22px}
+.sotm svg{flex:none;width:56px;height:56px}
+.sotm h3{font-size:19px;margin-bottom:4px;color:#fff}
+.sotm p{font-size:16px}
+
+/* team */
+.team{display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:center}
+.team__img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;position:relative}
+.team__img img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.who-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:0;border-top:2px solid #000}
+.who-list li{display:grid;grid-template-columns:minmax(120px,0.45fr) 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.who-list b{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:20px}
+.who-list span{color:var(--ink-2);font-size:16.5px}
+.badge{display:flex;align-items:center;gap:14px;margin-top:28px;font-size:16px;color:var(--ink-2)}
+.badge svg{width:64px;height:64px;flex:none}
+.badge strong{color:#000;display:block}
+
+/* reviews */
+.reviews{background:#fff}
+.rev{display:grid;grid-template-columns:minmax(0,0.75fr) minmax(0,1.6fr);gap:clamp(28px,5vw,80px)}
+.score b{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(96px,11vw,168px);line-height:.9;letter-spacing:-0.04em;display:block}
+.score .stars{display:flex;gap:6px;margin:14px 0 10px}
+.score .stars i{width:18px;height:18px;border-radius:50%;background:var(--gold)}
+.score p{color:var(--ink-2)}
+.rev__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2vw,28px)}
+.rv{padding:24px 0 0;border-top:2px solid #000}
+.rv p{font-size:18px}
+.rv footer{margin-top:14px;font-size:15px;color:var(--ink-2);display:flex;gap:8px;align-items:center}
+.rv footer b{color:#000}
+.rv--hl{background:var(--ground);border-top:0;padding:24px;border-radius:var(--radius)}
+.rv--hl p{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(22px,2vw,28px);line-height:1.15}
+
+/* locaties */
+.loc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:start}
+.mapart{background:#fff;border-radius:var(--radius);padding:12px;position:relative}
+.mapart svg{width:100%;height:auto}
+.mapart figcaption{font-size:13px;color:var(--ink-2);padding:4px 8px 2px}
+.addr{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:0;border-top:2px solid #000}
+.addr li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:12px}
+.addr li i{width:18px;height:18px;border-radius:50%;background:var(--gold);border:3px solid #000;margin-top:3px}
+.addr b{display:block}
+.addr span{color:var(--ink-2);font-size:16px}
+.hours{width:100%;border-collapse:collapse;font-size:17px;margin-bottom:24px}
+.hours th{text-align:left;font-weight:400;padding:8px 0;border-bottom:1px solid var(--line)}
+.hours td{text-align:right;padding:8px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.hours tr.today th,.hours tr.today td{font-weight:600}
+.hours tr.today th::after{content:" · vandaag";color:var(--gold-deep);font-weight:600}
+.contact-lines{display:grid;gap:6px;margin-bottom:22px;font-size:17px}
+.contact-lines a{color:#000;font-weight:600}
+
+/* footer */
+.foot{background:#000;color:#bdbdbd;padding:56px 0 40px;font-size:15px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:28px 48px;align-items:center;justify-content:space-between}
+.foot img{width:96px;height:auto}
+.foot a{color:#fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .hero{grid-template-columns:1fr;grid-template-areas:"text" "map" "photo";grid-template-rows:auto;min-height:0}
+  .hero__photo{min-height:0;aspect-ratio:16/9;width:100%}
+  .groups{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .sec__head,.gym,.team,.rev,.loc,.sport__grid{grid-template-columns:1fr}
+  .groups{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+  .steps::before{display:none}
+  .rev__list{grid-template-columns:1fr}
+  .team__img{aspect-ratio:4/4.4;max-width:520px}
+  .sport__wide{grid-row:auto}
+}
+@media (max-width:760px){
+  .steps{grid-template-columns:1fr;row-gap:24px}
+  .steps::before{display:block;left:31px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#000 0 2px,transparent 2px 10px)}
+  .step{display:grid;grid-template-columns:64px 1fr;column-gap:18px;align-items:start}
+  .step__dot{height:auto;width:64px;justify-content:center;grid-row:span 2;padding-top:4px}
+  .step h3{margin:6px 0 6px}
+  .step:nth-child(4) .step__dot span{width:52px;height:52px}
+}
+@media (max-width:720px){
+  body{font-size:17px}
+  .hero{padding-top:18px;gap:28px}
+  .hero__text{gap:18px}
+  .hero .actions .btn{flex:1 1 auto;justify-content:center}
+  .map{grid-template-columns:1fr;padding:18px 16px}
+  .figure{height:min(62svh,480px)}
+  .hot .lab,.hint{display:none}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px;padding:2px 16px 8px;scroll-snap-type:x proximity;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none;scroll-snap-align:start;min-height:48px}
+  .answers{min-height:0}
+  .who-list li{grid-template-columns:1fr;gap:2px}
+}
+@media (max-width:480px){
+  .steps{grid-template-columns:1fr}
+  .answer--intro .mini{grid-template-columns:repeat(3,auto);gap:4px 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="trail" viewBox="0 0 180 26"><circle cx="13" cy="13" r="11"/><circle cx="40" cy="11" r="8"/><circle cx="62" cy="15" r="6"/><circle cx="80" cy="10" r="5"/><circle cx="96" cy="14" r="3.8"/><circle cx="110" cy="11" r="3"/><circle cx="122" cy="15" r="2.4"/><circle cx="133" cy="12" r="1.9"/><circle cx="143" cy="14" r="1.5"/><circle cx="152" cy="11" r="1.2"/><circle cx="160" cy="14" r="1"/><circle cx="167" cy="12" r=".8"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.7 4.4-2.2 1.4a11 11 0 0 0 6.2 6.2l1.4-2.2L20 14.5V18a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9.2 9.3c.2 2.4 2.6 4.8 5.3 5.4l1-1.3-1.7-.9-.8.7c-.9-.4-1.6-1.1-2-2l.7-.8-.9-1.7z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8.5 14.5l2 2 4-4"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+</svg>
+
+<!-- 1 · Waar heb je last van? -->
+<header class="hero" id="top">
+  <div class="hero__text">
+    <img class="hero__logo" src="images/logo.png" width="640" height="640" alt="Logo Fysiotherapie Ruitersbos">
+    <h1>Fysiotherapie in Breda en Oosterhout</h1>
+    <p class="hero__lead">Fysiotherapie, revalidatie, sportmassage en training onder begeleiding. Op drie locaties.</p>
+    <div class="actions">
+      <a class="btn btn--gold" href="tel:+31765215141"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel 076 521 5141</a>
+      <a class="btn btn--ghost" href="https://wa.me/31613938320"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+      <a class="btn btn--ghost" href="https://www.fysiotherapieruitersbos.nl/afspraak-maken"><svg aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+    </div>
+    <p class="status" id="status"><span class="status__dot" aria-hidden="true"></span><span id="status-text">Ma–do 08:00–20:00 · vr 08:00–17:00 · za 08:00–13:00</span></p>
+  </div>
+
+  <div class="map" id="lichaam">
+    <div class="map__q">
+      <h2>Waar heb je last van?</h2>
+      <p>Kies een plek en zie wat we daarvoor doen.</p>
+    </div>
+    <div class="figure" id="figure">
+      <svg viewBox="56 14 196 566" role="img" aria-label="Lichaamsfiguur opgebouwd uit stippen, zoals in het logo">
+        <!--FIG--><g class="z-body"><circle cx="175.0" cy="46.0" r="2.3"/><circle cx="173.6" cy="54.1" r="2.3"/><circle cx="169.7" cy="61.4" r="2.3"/><circle cx="133.1" cy="64.4" r="2.3"/><circle cx="128.0" cy="57.9" r="2.3"/><circle cx="125.3" cy="50.1" r="2.3"/><circle cx="125.3" cy="41.9" r="2.3"/><circle cx="128.0" cy="34.1" r="2.3" class="g"/><circle cx="133.1" cy="27.6" r="2.3"/><circle cx="140.0" cy="23.1" r="2.3"/><circle cx="147.9" cy="21.1" r="2.3"/><circle cx="156.1" cy="21.8" r="2.3"/><circle cx="163.7" cy="25.1" r="2.3"/><circle cx="169.7" cy="30.6" r="2.3"/><circle cx="173.6" cy="37.9" r="2.3" class="g"/><circle cx="124.5" cy="108.0" r="2.3"/><circle cx="133.0" cy="108.0" r="2.3"/><circle cx="167.0" cy="108.0" r="2.3"/><circle cx="175.5" cy="108.0" r="2.3"/><circle cx="187.8" cy="154.8" r="2.3"/><circle cx="187.0" cy="163.0" r="2.3"/><circle cx="186.2" cy="171.2" r="2.3"/><circle cx="185.5" cy="179.5" r="2.3"/><circle cx="184.8" cy="187.8" r="2.3" class="g"/><circle cx="115.2" cy="187.8" r="2.3"/><circle cx="114.5" cy="179.5" r="2.3"/><circle cx="113.8" cy="171.2" r="2.3" class="g"/><circle cx="113.0" cy="163.0" r="2.3" class="g"/><circle cx="112.2" cy="154.8" r="2.3"/><circle cx="92.4" cy="142.6" r="2.3"/><circle cx="91.3" cy="150.6" r="2.3"/><circle cx="90.3" cy="158.6" r="2.3"/><circle cx="89.2" cy="166.6" r="2.3" class="g"/><circle cx="88.1" cy="174.6" r="2.3" class="g"/><circle cx="87.0" cy="182.6" r="2.3"/><circle cx="107.8" cy="185.4" r="2.3"/><circle cx="85.9" cy="190.6" r="2.3" class="g"/><circle cx="106.7" cy="193.4" r="2.3" class="g"/><circle cx="84.8" cy="198.6" r="2.3"/><circle cx="105.7" cy="201.4" r="2.3"/><circle cx="83.8" cy="206.6" r="2.3" class="g"/><circle cx="104.6" cy="209.4" r="2.3"/><circle cx="207.6" cy="142.6" r="2.3"/><circle cx="208.7" cy="150.6" r="2.3"/><circle cx="209.7" cy="158.6" r="2.3" class="g"/><circle cx="210.8" cy="166.6" r="2.3" class="g"/><circle cx="211.9" cy="174.6" r="2.3" class="g"/><circle cx="192.2" cy="185.4" r="2.3"/><circle cx="213.0" cy="182.6" r="2.3"/><circle cx="193.3" cy="193.4" r="2.3"/><circle cx="214.1" cy="190.6" r="2.3" class="g"/><circle cx="194.3" cy="201.4" r="2.3"/><circle cx="215.2" cy="198.6" r="2.3" class="g"/><circle cx="195.4" cy="209.4" r="2.3" class="g"/><circle cx="216.2" cy="206.6" r="2.3" class="g"/><circle cx="81.2" cy="243.6" r="2.3"/><circle cx="98.0" cy="246.0" r="2.3" class="g"/><circle cx="80.0" cy="252.0" r="2.3" class="g"/><circle cx="96.8" cy="254.4" r="2.3"/><circle cx="78.8" cy="260.4" r="2.3" class="g"/><circle cx="95.6" cy="262.8" r="2.3"/><circle cx="77.6" cy="268.8" r="2.3" class="g"/><circle cx="94.4" cy="271.2" r="2.3"/><circle cx="76.4" cy="277.2" r="2.3"/><circle cx="93.2" cy="279.6" r="2.3" class="g"/><circle cx="75.2" cy="285.6" r="2.3"/><circle cx="92.0" cy="288.0" r="2.3"/><circle cx="74.0" cy="294.0" r="2.3"/><circle cx="90.8" cy="296.4" r="2.3"/><circle cx="72.8" cy="302.4" r="2.3"/><circle cx="89.6" cy="304.8" r="2.3"/><circle cx="202.0" cy="246.0" r="2.3"/><circle cx="218.8" cy="243.6" r="2.3"/><circle cx="203.2" cy="254.4" r="2.3"/><circle cx="220.0" cy="252.0" r="2.3" class="g"/><circle cx="204.4" cy="262.8" r="2.3" class="g"/><circle cx="221.2" cy="260.4" r="2.3"/><circle cx="205.6" cy="271.2" r="2.3"/><circle cx="222.4" cy="268.8" r="2.3"/><circle cx="206.8" cy="279.6" r="2.3"/><circle cx="223.6" cy="277.2" r="2.3"/><circle cx="208.0" cy="288.0" r="2.3"/><circle cx="224.8" cy="285.6" r="2.3" class="g"/><circle cx="209.2" cy="296.4" r="2.3"/><circle cx="226.0" cy="294.0" r="2.3" class="g"/><circle cx="210.4" cy="304.8" r="2.3"/><circle cx="227.2" cy="302.4" r="2.3" class="g"/><circle cx="88.0" cy="332.0" r="2.3"/><circle cx="84.2" cy="339.8" r="2.3"/><circle cx="75.8" cy="341.7" r="2.3"/><circle cx="69.0" cy="336.3" r="2.3" class="g"/><circle cx="69.0" cy="327.7" r="2.3"/><circle cx="232.0" cy="332.0" r="2.3" class="g"/><circle cx="228.2" cy="339.8" r="2.3"/><circle cx="219.8" cy="341.7" r="2.3"/><circle cx="213.0" cy="336.3" r="2.3"/><circle cx="115.8" cy="320.2" r="2.3"/><circle cx="149.8" cy="320.8" r="2.3"/><circle cx="115.7" cy="328.6" r="2.3"/><circle cx="149.7" cy="329.2" r="2.3"/><circle cx="115.5" cy="337.1" r="2.3"/><circle cx="149.5" cy="337.7" r="2.3"/><circle cx="115.4" cy="345.5" r="2.3"/><circle cx="149.4" cy="346.2" r="2.3"/><circle cx="115.2" cy="354.0" r="2.3"/><circle cx="149.2" cy="354.6" r="2.3"/><circle cx="115.1" cy="362.5" r="2.3"/><circle cx="149.1" cy="363.1" r="2.3"/><circle cx="114.9" cy="370.9" r="2.3" class="g"/><circle cx="148.9" cy="371.5" r="2.3"/><circle cx="114.8" cy="379.4" r="2.3"/><circle cx="148.8" cy="380.0" r="2.3"/><circle cx="114.6" cy="387.8" r="2.3"/><circle cx="148.6" cy="388.5" r="2.3" class="g"/><circle cx="114.5" cy="396.3" r="2.3"/><circle cx="148.5" cy="396.9" r="2.3"/><circle cx="114.3" cy="404.8" r="2.3"/><circle cx="148.3" cy="405.4" r="2.3" class="g"/><circle cx="184.2" cy="320.2" r="2.3"/><circle cx="184.3" cy="328.6" r="2.3"/><circle cx="184.5" cy="337.1" r="2.3"/><circle cx="184.6" cy="345.5" r="2.3"/><circle cx="184.8" cy="354.0" r="2.3"/><circle cx="184.9" cy="362.5" r="2.3"/><circle cx="185.1" cy="370.9" r="2.3" class="g"/><circle cx="185.2" cy="379.4" r="2.3"/><circle cx="185.4" cy="387.8" r="2.3" class="g"/><circle cx="185.5" cy="396.3" r="2.3" class="g"/><circle cx="185.7" cy="404.8" r="2.3"/><circle cx="119.5" cy="442.7" r="2.3"/><circle cx="142.5" cy="442.7" r="2.3"/><circle cx="119.5" cy="451.0" r="2.3"/><circle cx="142.5" cy="451.0" r="2.3"/><circle cx="119.5" cy="459.3" r="2.3"/><circle cx="142.5" cy="459.3" r="2.3"/><circle cx="119.5" cy="467.7" r="2.3"/><circle cx="142.5" cy="467.7" r="2.3"/><circle cx="119.5" cy="476.0" r="2.3"/><circle cx="142.5" cy="476.0" r="2.3" class="g"/><circle cx="119.5" cy="484.3" r="2.3"/><circle cx="142.5" cy="484.3" r="2.3"/><circle cx="119.5" cy="492.7" r="2.3" class="g"/><circle cx="142.5" cy="492.7" r="2.3" class="g"/><circle cx="119.5" cy="501.0" r="2.3"/><circle cx="142.5" cy="501.0" r="2.3"/><circle cx="157.5" cy="442.7" r="2.3"/><circle cx="180.5" cy="442.7" r="2.3"/><circle cx="157.5" cy="451.0" r="2.3"/><circle cx="180.5" cy="451.0" r="2.3"/><circle cx="157.5" cy="459.3" r="2.3"/><circle cx="180.5" cy="459.3" r="2.3"/><circle cx="157.5" cy="467.7" r="2.3"/><circle cx="180.5" cy="467.7" r="2.3"/><circle cx="157.5" cy="476.0" r="2.3"/><circle cx="180.5" cy="476.0" r="2.3"/><circle cx="157.5" cy="484.3" r="2.3"/><circle cx="180.5" cy="484.3" r="2.3"/><circle cx="157.5" cy="492.7" r="2.3"/><circle cx="180.5" cy="492.7" r="2.3"/><circle cx="157.5" cy="501.0" r="2.3" class="g"/><circle cx="180.5" cy="501.0" r="2.3"/><circle cx="155.1" cy="51.2" r="2.8" class="g"/><circle cx="142.3" cy="172.9" r="1.6"/><circle cx="116.7" cy="145.9" r="1.6"/><circle cx="200.1" cy="168.3" r="1.6" class="g"/><circle cx="98.3" cy="168.3" r="2.8"/><circle cx="167.4" cy="181.4" r="2.8"/><circle cx="140.2" cy="51.7" r="2.8"/><circle cx="123.3" cy="399.6" r="1.6"/><circle cx="164.9" cy="357.1" r="2.8" class="g"/><circle cx="146.6" cy="146.2" r="2.8"/><circle cx="141.9" cy="31.8" r="2.8"/><circle cx="173.4" cy="382.9" r="2.8"/><circle cx="145.5" cy="117.5" r="2.8"/><circle cx="130.8" cy="459.1" r="1.6" class="g"/><circle cx="127.8" cy="334.8" r="3.4"/><circle cx="163.1" cy="129.9" r="2.8"/><circle cx="124.0" cy="363.2" r="2.8"/><circle cx="132.5" cy="399.7" r="3.4"/><circle cx="175.0" cy="365.6" r="1.6"/><circle cx="125.8" cy="177.2" r="2.8" class="g"/><circle cx="139.7" cy="390.0" r="2.8"/><circle cx="142.0" cy="164.0" r="2.8" class="g"/><circle cx="166.5" cy="370.6" r="1.6"/><circle cx="204.5" cy="187.8" r="2.8"/><circle cx="157.9" cy="334.1" r="2.2"/><circle cx="176.8" cy="154.7" r="2.8"/><circle cx="167.1" cy="142.7" r="2.2"/><circle cx="130.6" cy="389.3" r="2.2"/><circle cx="160.9" cy="165.3" r="2.8"/><circle cx="128.7" cy="347.7" r="2.8" class="g"/><circle cx="172.3" cy="401.9" r="2.8"/><circle cx="154.7" cy="151.2" r="2.8" class="g"/><circle cx="165.4" cy="43.6" r="2.8"/><circle cx="145.1" cy="133.0" r="1.6"/><circle cx="160.1" cy="377.2" r="2.2"/><circle cx="149.8" cy="37.7" r="1.6"/><circle cx="162.4" cy="320.6" r="2.8" class="g"/><circle cx="125.6" cy="138.5" r="2.2"/><circle cx="130.7" cy="184.0" r="3.4"/><circle cx="101.4" cy="159.0" r="2.8" class="g"/><circle cx="130.7" cy="487.6" r="3.4"/><circle cx="130.9" cy="150.7" r="1.6" class="g"/><circle cx="158.7" cy="365.8" r="2.2"/><circle cx="180.5" cy="146.7" r="2.2"/><circle cx="172.6" cy="170.6" r="2.8"/><circle cx="125.9" cy="162.6" r="2.8"/><circle cx="125.6" cy="373.4" r="2.2"/><circle cx="168.1" cy="337.0" r="2.8"/><circle cx="132.4" cy="501.2" r="2.8"/><circle cx="152.2" cy="181.7" r="2.8"/><circle cx="199.9" cy="155.5" r="3.4" class="g"/><circle cx="133.2" cy="359.0" r="3.4"/><circle cx="169.7" cy="346.3" r="2.8" class="g"/><circle cx="154.9" cy="120.8" r="2.2" class="g"/><circle cx="132.5" cy="379.9" r="3.4"/><circle cx="156.7" cy="31.5" r="2.8"/><circle cx="157.8" cy="342.8" r="2.8"/><circle cx="168.0" cy="498.3" r="1.6"/><circle cx="134.5" cy="120.1" r="3.4"/><circle cx="168.6" cy="477.1" r="3.4"/><circle cx="140.0" cy="182.4" r="2.8"/><circle cx="96.3" cy="179.9" r="2.8" class="g"/><circle cx="161.6" cy="173.7" r="1.6"/><circle cx="153.7" cy="131.2" r="2.8"/><circle cx="126.4" cy="191.3" r="3.4"/><circle cx="94.0" cy="193.7" r="1.6"/><circle cx="138.3" cy="350.0" r="2.8"/><circle cx="151.7" cy="169.1" r="2.2"/><circle cx="176.4" cy="191.0" r="1.6" class="g"/><circle cx="162.6" cy="155.6" r="2.2"/><circle cx="169.0" cy="326.0" r="1.6"/><circle cx="175.7" cy="352.3" r="2.2"/><circle cx="198.3" cy="178.7" r="3.4"/><circle cx="130.4" cy="448.4" r="2.8"/><circle cx="122.7" cy="153.2" r="3.4"/><circle cx="130.1" cy="478.6" r="2.8"/><circle cx="165.4" cy="393.4" r="2.8"/><circle cx="136.9" cy="340.1" r="2.2" class="g"/><circle cx="171.0" cy="451.0" r="2.2"/><circle cx="178.4" cy="163.8" r="1.6"/><circle cx="164.6" cy="52.4" r="2.8"/><circle cx="214.9" cy="273.7" r="2.8"/><circle cx="89.6" cy="249.8" r="2.8"/><circle cx="141.8" cy="325.7" r="2.8"/><circle cx="157.0" cy="140.5" r="2.8"/><circle cx="130.1" cy="468.8" r="2.8"/><circle cx="192.1" cy="145.5" r="2.2"/><circle cx="87.0" cy="267.3" r="3.4"/><circle cx="103.2" cy="149.2" r="2.8" class="g"/><circle cx="141.9" cy="155.6" r="1.6"/><circle cx="167.5" cy="485.5" r="1.6" class="g"/><circle cx="138.2" cy="40.9" r="2.8" class="g"/><circle cx="157.4" cy="398.9" r="2.2"/><circle cx="211.6" cy="251.1" r="2.2" class="g"/><circle cx="207.0" cy="207.5" r="1.6"/><circle cx="137.7" cy="138.5" r="2.2"/><circle cx="82.2" cy="297.0" r="2.2" class="g"/><circle cx="133.2" cy="129.7" r="2.2"/><circle cx="139.2" cy="368.7" r="2.2" class="g"/><circle cx="206.0" cy="197.4" r="2.8"/><circle cx="169.6" cy="464.6" r="2.2"/><circle cx="175.7" cy="394.3" r="1.6"/><circle cx="148.3" cy="46.3" r="2.2"/><circle cx="134.2" cy="167.1" r="3.4"/><circle cx="95.1" cy="204.5" r="2.2"/><circle cx="83.8" cy="281.3" r="2.2" class="g"/><circle cx="216.7" cy="289.9" r="3.4"/><circle cx="175.7" cy="332.8" r="2.2"/><circle cx="159.6" cy="386.5" r="2.2"/><circle cx="176.0" cy="181.9" r="2.2" class="g"/><circle cx="104.6" cy="175.5" r="3.4"/><circle cx="122.7" cy="384.0" r="2.8"/><circle cx="88.1" cy="258.6" r="2.8"/><circle cx="158.4" cy="351.6" r="2.2"/><circle cx="217.9" cy="299.4" r="2.8"/><circle cx="149.8" cy="160.3" r="2.2"/><circle cx="132.6" cy="325.6" r="1.6"/><circle cx="223.5" cy="332.1" r="3.4" class="g"/><circle cx="139.4" cy="405.7" r="2.8" class="g"/><circle cx="160.1" cy="186.5" r="2.8"/><circle cx="212.8" cy="260.6" r="2.8" class="g"/><circle cx="123.8" cy="326.1" r="2.8"/><circle cx="169.9" cy="160.5" r="2.2"/><circle cx="177.0" cy="341.1" r="3.4"/></g>
+<g class="z-trail"><circle cx="200.5" cy="112.4" r="3.2" class="g"/><circle cx="203.0" cy="104.3" r="3.0"/><circle cx="210.7" cy="101.4" r="2.7" class="g"/><circle cx="212.4" cy="94.2" r="2.5"/><circle cx="217.5" cy="90.0" r="2.3" class="g"/><circle cx="221.8" cy="84.6" r="2.1"/><circle cx="225.6" cy="82.3" r="1.8" class="g"/><circle cx="232.0" cy="74.2" r="1.6"/><circle cx="233.4" cy="71.2" r="1.4" class="g"/><circle cx="237.7" cy="64.1" r="1.1"/><circle cx="242.2" cy="57.9" r="0.9" class="g"/></g>
+<g class="zone" data-zone="nek"><circle cx="163.7" cy="66.9" r="2.3"/><circle cx="140.0" cy="68.9" r="2.3"/><circle cx="140.0" cy="78.0" r="2.3" class="g"/><circle cx="160.0" cy="78.0" r="2.3"/><circle cx="140.0" cy="86.0" r="2.3"/><circle cx="160.0" cy="86.0" r="2.3" class="g"/><circle cx="140.0" cy="94.0" r="2.3"/><circle cx="160.0" cy="94.0" r="2.3"/><circle cx="140.0" cy="102.0" r="2.3"/><circle cx="160.0" cy="102.0" r="2.3" class="g"/><circle cx="153.8" cy="61.0" r="2.8"/><circle cx="155.5" cy="70.0" r="2.8"/><circle cx="150.6" cy="88.6" r="3.4" class="g"/><circle cx="149.1" cy="105.2" r="2.2"/><circle cx="149.4" cy="76.5" r="2.2" class="g"/><circle cx="143.4" cy="60.7" r="3.4"/><circle cx="154.6" cy="112.2" r="3.4"/></g>
+<g class="zone" data-zone="schouder"><circle cx="116.0" cy="108.0" r="2.3"/><circle cx="184.0" cy="108.0" r="2.3"/><circle cx="98.6" cy="117.8" r="2.3"/><circle cx="103.2" cy="110.7" r="2.3"/><circle cx="193.2" cy="108.4" r="2.3"/><circle cx="199.6" cy="113.9" r="2.3" class="g"/><circle cx="94.6" cy="126.6" r="2.3"/><circle cx="93.5" cy="134.6" r="2.3"/><circle cx="205.4" cy="126.6" r="2.3"/><circle cx="206.5" cy="134.6" r="2.3" class="g"/><circle cx="104.9" cy="123.7" r="1.6"/><circle cx="183.2" cy="129.0" r="2.2"/><circle cx="188.6" cy="117.8" r="2.8"/><circle cx="195.6" cy="123.7" r="2.8"/><circle cx="172.9" cy="128.2" r="2.2"/><circle cx="118.5" cy="117.0" r="2.2" class="g"/><circle cx="193.5" cy="135.7" r="1.6"/><circle cx="175.9" cy="136.2" r="3.4"/><circle cx="124.4" cy="127.3" r="2.8" class="g"/><circle cx="104.0" cy="139.3" r="2.8" class="g"/><circle cx="110.2" cy="131.1" r="2.2" class="g"/><circle cx="170.6" cy="117.7" r="2.8"/><circle cx="179.8" cy="116.5" r="3.4"/><circle cx="110.1" cy="116.2" r="2.2"/><circle cx="116.8" cy="137.0" r="2.8"/></g>
+<g class="zone" data-zone="elleboog"><circle cx="82.7" cy="214.6" r="2.3"/><circle cx="103.5" cy="217.4" r="2.3" class="g"/><circle cx="81.6" cy="222.6" r="2.3" class="g"/><circle cx="102.4" cy="225.4" r="2.3"/><circle cx="196.5" cy="217.4" r="2.3" class="g"/><circle cx="217.3" cy="214.6" r="2.3" class="g"/><circle cx="197.6" cy="225.4" r="2.3" class="g"/><circle cx="218.4" cy="222.6" r="2.3" class="g"/><circle cx="82.4" cy="235.2" r="2.3"/><circle cx="99.2" cy="237.6" r="2.3"/><circle cx="71.6" cy="310.8" r="2.3"/><circle cx="88.4" cy="313.2" r="2.3"/><circle cx="84.2" cy="319.4" r="2.3"/><circle cx="75.8" cy="319.4" r="2.3"/><circle cx="200.8" cy="237.6" r="2.3"/><circle cx="217.6" cy="235.2" r="2.3"/><circle cx="211.6" cy="313.2" r="2.3" class="g"/><circle cx="228.4" cy="310.8" r="2.3"/><circle cx="224.2" cy="319.4" r="2.3"/><circle cx="215.8" cy="319.4" r="2.3"/><circle cx="213.0" cy="327.7" r="2.3" class="g"/><circle cx="91.7" cy="223.4" r="1.6"/><circle cx="205.8" cy="223.5" r="2.8" class="g"/><circle cx="91.5" cy="212.5" r="3.4"/><circle cx="209.5" cy="240.5" r="3.4"/><circle cx="78.7" cy="327.8" r="2.8"/><circle cx="80.0" cy="311.8" r="3.4"/><circle cx="90.9" cy="234.3" r="3.4" class="g"/><circle cx="218.7" cy="308.0" r="2.2" class="g"/><circle cx="209.2" cy="232.0" r="2.2"/></g>
+<g class="zone" data-zone="knie"><circle cx="114.2" cy="413.2" r="2.3"/><circle cx="148.2" cy="413.8" r="2.3"/><circle cx="114.0" cy="421.7" r="2.3"/><circle cx="148.0" cy="422.3" r="2.3" class="g"/><circle cx="146.1" cy="429.9" r="2.3"/><circle cx="118.3" cy="433.3" r="2.3"/><circle cx="185.8" cy="413.2" r="2.3"/><circle cx="186.0" cy="421.7" r="2.3"/><circle cx="184.1" cy="429.9" r="2.3" class="g"/><circle cx="156.3" cy="433.3" r="2.3" class="g"/><circle cx="170.6" cy="439.2" r="2.2"/><circle cx="175.5" cy="417.7" r="2.8"/><circle cx="170.8" cy="429.5" r="2.2"/><circle cx="124.4" cy="422.4" r="2.2"/><circle cx="163.8" cy="406.3" r="2.8" class="g"/><circle cx="122.3" cy="409.9" r="2.2"/><circle cx="165.5" cy="415.1" r="2.2"/><circle cx="157.6" cy="424.8" r="2.8"/><circle cx="134.4" cy="412.6" r="2.8"/><circle cx="133.5" cy="430.5" r="3.4"/><circle cx="136.5" cy="420.9" r="2.2" class="g"/><circle cx="156.9" cy="413.9" r="2.2"/><circle cx="134.3" cy="440.5" r="1.6"/><circle cx="126.8" cy="436.0" r="2.8"/><circle cx="178.3" cy="409.3" r="1.6" class="g"/></g>
+<g class="zone" data-zone="enkel"><circle cx="119.5" cy="509.3" r="2.3"/><circle cx="142.5" cy="509.3" r="2.3"/><circle cx="119.5" cy="517.7" r="2.3"/><circle cx="142.5" cy="517.7" r="2.3" class="g"/><circle cx="119.5" cy="526.0" r="2.3" class="g"/><circle cx="142.5" cy="526.0" r="2.3"/><circle cx="139.8" cy="533.4" r="2.3"/><circle cx="157.5" cy="509.3" r="2.3"/><circle cx="180.5" cy="509.3" r="2.3" class="g"/><circle cx="157.5" cy="517.7" r="2.3" class="g"/><circle cx="180.5" cy="517.7" r="2.3"/><circle cx="157.5" cy="526.0" r="2.3"/><circle cx="180.5" cy="526.0" r="2.3"/><circle cx="177.8" cy="533.4" r="2.3"/><circle cx="120.6" cy="539.7" r="2.3" class="g"/><circle cx="136.9" cy="544.3" r="2.3"/><circle cx="118.3" cy="547.7" r="2.3"/><circle cx="134.7" cy="552.3" r="2.3"/><circle cx="116.1" cy="555.7" r="2.3"/><circle cx="132.4" cy="560.3" r="2.3"/><circle cx="113.8" cy="563.7" r="2.3"/><circle cx="130.2" cy="568.3" r="2.3"/><circle cx="117.8" cy="573.4" r="2.3" class="g"/><circle cx="160.8" cy="536.3" r="2.3"/><circle cx="163.1" cy="544.3" r="2.3"/><circle cx="165.3" cy="552.3" r="2.3"/><circle cx="181.7" cy="547.7" r="2.3"/><circle cx="167.6" cy="560.3" r="2.3"/><circle cx="183.9" cy="555.7" r="2.3"/><circle cx="169.8" cy="568.3" r="2.3"/><circle cx="186.2" cy="563.7" r="2.3" class="g"/><circle cx="182.2" cy="573.4" r="2.3"/><circle cx="130.2" cy="517.9" r="2.8"/><circle cx="129.2" cy="535.6" r="3.4"/><circle cx="170.9" cy="512.4" r="2.2"/><circle cx="169.9" cy="525.5" r="3.4"/><circle cx="123.6" cy="559.6" r="2.8"/><circle cx="127.6" cy="546.3" r="1.6"/><circle cx="128.3" cy="509.3" r="2.2" class="g"/><circle cx="134.1" cy="527.2" r="2.8"/><circle cx="176.1" cy="561.9" r="1.6"/><circle cx="174.4" cy="541.9" r="1.6"/><circle cx="173.8" cy="552.0" r="2.8"/></g>
+<g class="zone" data-zone="rug"><circle cx="184.0" cy="196.0" r="2.3"/><circle cx="183.5" cy="204.2" r="2.3" class="g"/><circle cx="183.0" cy="212.5" r="2.3"/><circle cx="182.5" cy="220.8" r="2.3" class="g"/><circle cx="182.0" cy="229.0" r="2.3"/><circle cx="181.5" cy="237.2" r="2.3" class="g"/><circle cx="181.0" cy="245.5" r="2.3"/><circle cx="180.5" cy="253.8" r="2.3"/><circle cx="180.0" cy="262.0" r="2.3"/><circle cx="120.0" cy="262.0" r="2.3"/><circle cx="119.5" cy="253.8" r="2.3" class="g"/><circle cx="119.0" cy="245.5" r="2.3"/><circle cx="118.5" cy="237.2" r="2.3"/><circle cx="118.0" cy="229.0" r="2.3"/><circle cx="117.5" cy="220.8" r="2.3" class="g"/><circle cx="117.0" cy="212.5" r="2.3"/><circle cx="116.5" cy="204.2" r="2.3"/><circle cx="116.0" cy="196.0" r="2.3"/><circle cx="172.5" cy="231.0" r="3.4" class="g"/><circle cx="165.0" cy="194.3" r="2.8"/><circle cx="157.0" cy="248.5" r="2.8"/><circle cx="145.8" cy="194.7" r="2.2" class="g"/><circle cx="127.6" cy="248.3" r="2.8"/><circle cx="152.8" cy="257.6" r="1.6" class="g"/><circle cx="156.0" cy="235.0" r="2.2"/><circle cx="164.8" cy="251.7" r="2.8"/><circle cx="137.0" cy="223.7" r="2.2" class="g"/><circle cx="131.2" cy="233.9" r="2.8" class="g"/><circle cx="131.0" cy="206.2" r="1.6" class="g"/><circle cx="162.2" cy="203.0" r="2.2"/><circle cx="144.6" cy="247.2" r="2.8"/><circle cx="133.6" cy="259.7" r="2.2"/><circle cx="131.5" cy="216.6" r="2.8" class="g"/><circle cx="132.6" cy="197.1" r="2.2"/><circle cx="144.5" cy="219.5" r="2.8"/><circle cx="161.9" cy="212.3" r="2.8"/><circle cx="142.9" cy="203.2" r="2.2" class="g"/><circle cx="150.5" cy="208.8" r="2.2"/><circle cx="172.3" cy="247.0" r="2.2" class="g"/><circle cx="148.5" cy="228.4" r="2.8"/><circle cx="170.5" cy="215.3" r="2.2"/><circle cx="154.5" cy="216.5" r="2.8"/><circle cx="165.3" cy="240.4" r="2.2"/><circle cx="137.1" cy="241.9" r="2.8"/><circle cx="139.0" cy="211.3" r="1.6"/><circle cx="174.4" cy="206.0" r="2.8"/><circle cx="154.2" cy="195.3" r="1.6" class="g"/><circle cx="164.6" cy="227.2" r="2.8"/><circle cx="136.4" cy="250.6" r="3.4"/><circle cx="139.7" cy="233.5" r="3.4"/><circle cx="165.6" cy="260.1" r="3.4"/><circle cx="143.5" cy="258.1" r="3.4"/><circle cx="126.1" cy="224.7" r="3.4" class="g"/><circle cx="146.6" cy="238.9" r="3.4" class="g"/></g>
+<g class="zone" data-zone="heup"><circle cx="181.3" cy="270.3" r="2.3"/><circle cx="182.7" cy="278.7" r="2.3"/><circle cx="184.0" cy="287.0" r="2.3"/><circle cx="185.3" cy="295.3" r="2.3"/><circle cx="186.7" cy="303.7" r="2.3"/><circle cx="188.0" cy="312.0" r="2.3"/><circle cx="112.0" cy="312.0" r="2.3"/><circle cx="113.3" cy="303.7" r="2.3"/><circle cx="114.7" cy="295.3" r="2.3"/><circle cx="116.0" cy="287.0" r="2.3"/><circle cx="117.3" cy="278.7" r="2.3"/><circle cx="118.7" cy="270.3" r="2.3"/><circle cx="150.0" cy="312.3" r="2.3" class="g"/><circle cx="160.7" cy="267.2" r="2.8"/><circle cx="172.6" cy="293.1" r="2.2" class="g"/><circle cx="175.0" cy="309.2" r="2.2"/><circle cx="156.5" cy="298.3" r="2.8"/><circle cx="137.3" cy="284.0" r="2.8"/><circle cx="172.4" cy="271.8" r="2.2" class="g"/><circle cx="127.2" cy="284.6" r="2.2" class="g"/><circle cx="161.6" cy="288.1" r="1.6"/><circle cx="146.4" cy="279.0" r="2.8"/><circle cx="127.7" cy="318.7" r="3.4"/><circle cx="123.5" cy="296.7" r="2.2"/><circle cx="139.3" cy="312.3" r="2.2"/><circle cx="165.5" cy="279.2" r="2.2"/><circle cx="133.6" cy="272.4" r="1.6" class="g"/><circle cx="166.5" cy="307.6" r="2.2"/><circle cx="140.8" cy="266.8" r="2.2"/><circle cx="132.4" cy="307.4" r="2.8"/><circle cx="136.5" cy="298.8" r="3.4"/><circle cx="148.3" cy="288.3" r="2.8"/><circle cx="175.0" cy="319.6" r="3.4"/><circle cx="149.0" cy="269.0" r="2.8"/><circle cx="146.6" cy="302.9" r="2.2"/><circle cx="156.0" cy="274.8" r="1.6"/><circle cx="122.9" cy="305.6" r="1.6"/><circle cx="172.9" cy="284.3" r="2.8"/><circle cx="127.4" cy="266.6" r="2.2"/><circle cx="177.6" cy="300.8" r="2.2"/><circle cx="132.9" cy="291.2" r="3.4" class="g"/><circle cx="159.2" cy="312.4" r="2.8" class="g"/></g><!--/FIG-->
+      </svg>
+      <button class="hot" type="button" data-zone="nek" aria-pressed="false" style="left:48%;top:13.1%"><span class="lab">Nek</span><span class="sr">Nek</span></button>
+      <button class="hot" type="button" data-zone="schouder" aria-pressed="false" style="left:68.4%;top:19.4%"><span class="lab">Schouder</span><span class="sr">Schouder</span></button>
+      <button class="hot left" type="button" data-zone="elleboog" aria-pressed="false" style="left:18.4%;top:37.5%"><span class="lab">Elleboog en pols</span><span class="sr">Elleboog en pols</span></button>
+      <button class="hot" type="button" data-zone="rug" aria-pressed="false" style="left:48%;top:37.5%"><span class="lab">Rug</span><span class="sr">Rug</span></button>
+      <button class="hot" type="button" data-zone="heup" aria-pressed="false" style="left:48%;top:49.1%"><span class="lab">Heup</span><span class="sr">Heup</span></button>
+      <button class="hot hot--hint" type="button" data-zone="knie" aria-pressed="false" style="left:57.7%;top:72.4%"><span class="lab">Knie</span><span class="sr">Knie</span></button>
+      <span class="hint" id="hint" style="left:57.7%;top:72.4%" aria-hidden="true">Tik op een plek</span>
+      <button class="hot left" type="button" data-zone="enkel" aria-pressed="false" style="left:38.3%;top:94.3%"><span class="lab">Enkel, voet en hiel</span><span class="sr">Enkel, voet en hiel</span></button>
+    </div>
+
+    <div class="panel">
+      <div class="chips" role="group" aria-label="Kies een plek op het lichaam">
+        <button class="chip" type="button" data-zone="nek" aria-pressed="false">Nek</button>
+        <button class="chip" type="button" data-zone="schouder" aria-pressed="false">Schouder</button>
+        <button class="chip" type="button" data-zone="elleboog" aria-pressed="false">Elleboog en pols</button>
+        <button class="chip" type="button" data-zone="rug" aria-pressed="false">Rug</button>
+        <button class="chip" type="button" data-zone="heup" aria-pressed="false">Heup</button>
+        <button class="chip" type="button" data-zone="knie" aria-pressed="false">Knie</button>
+        <button class="chip" type="button" data-zone="enkel" aria-pressed="false">Enkel, voet en hiel</button>
+        <button class="chip chip--extra" type="button" data-zone="extra" aria-pressed="false">Geen plek op de kaart</button>
+      </div>
+
+      <div class="answers" id="answers" aria-live="polite">
+        <article class="answer answer--intro on" data-answer="intro">
+          <h3>Begin bij de plek die pijn doet</h3>
+          <p>Tik op het figuur of kies hierboven een plek. Je ziet welke behandelingen we daarvoor in huis hebben en wie zich erin heeft gespecialiseerd.</p>
+          <div class="mini"><div><b class="num">7</b>plekken</div><div><b class="num">3</b>locaties</div><div><b class="num">4,9</b>op Google</div></div>
+        </article>
+        <article class="answer" data-answer="nek">
+          <h3>Nek<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Manuele therapie</b> · zodat gewrichten weer beter werken, met name in de wervelkolom</span></li>
+            <li><span><b>Mulligan-techniek</b> · mobilisaties gecombineerd met actieve bewegingen</span></li>
+            <li><span><b>Dry needling</b> · gericht op triggerpoints (spierknopen)</span></li>
+            <li><span><b>Sportmassage</b> · eventueel samen met dry needling of acupunctuur</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="schouder">
+          <h3>Schouder<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Schoudernetwerk West-Brabant</b> · Imme is aangesloten bij het schoudernetwerk van het Amphia en heeft jarenlange ervaring met complexe schouderproblemen</span></li>
+            <li><span><b>Manuele therapie</b> · ook voor schouders</span></li>
+            <li><span><b>Echografie</b> · banden, pezen en slijmbeurzen in beeld</span></li>
+          </ul>
+          <p class="who">Specialist: <b>Imme</b>, schoudernetwerk West-Brabant</p>
+        </article>
+        <article class="answer" data-answer="elleboog">
+          <h3>Elleboog en pols<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Shockwave</b> · bij aanhoudende peesklachten, zoals een tenniselleboog</span></li>
+            <li><span><b>Echografie</b> · pezen en slijmbeurzen in beeld</span></li>
+            <li><span><b>Dry needling</b> · gericht op spierknopen</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="rug">
+          <h3>Rug<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Manuele therapie</b> · zodat gewrichten weer beter werken, met name in de wervelkolom</span></li>
+            <li><span><b>Mulligan-techniek</b> · mobilisaties gecombineerd met actieve bewegingen</span></li>
+            <li><span><b>Dry needling</b> · gericht op triggerpoints (spierknopen)</span></li>
+            <li><span><b>Sportmassage</b> · eventueel samen met dry needling of acupunctuur</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="heup">
+          <h3>Heup<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Manuele therapie</b> · ook voor heupen</span></li>
+            <li><span><b>Revalidatie</b> · binnen en buiten</span></li>
+            <li><span><b>Oefenzaal</b> · medische fitness onder begeleiding</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="knie">
+          <h3>Knie<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Sportfysiotherapie</b> · om je snel en veilig terug te laten keren naar je sport</span></li>
+            <li><span><b>Revalidatie</b> · binnen, buiten en in het water (aquagym)</span></li>
+            <li><span><b>Oefenzaal</b> · medische fitness onder begeleiding</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="enkel">
+          <h3>Enkel, voet en hiel<small>Wat we hiervoor doen</small></h3>
+          <ul>
+            <li><span><b>Shockwave</b> · bij hielspoor of achillespeesontsteking</span></li>
+            <li><span><b>Echografie</b> · ook hielsporen in beeld</span></li>
+            <li><span><b>Sportfysiotherapie</b> · terug naar je sport</span></li>
+          </ul>
+        </article>
+        <article class="answer" data-answer="extra">
+          <h3>Geen plek op de kaart<small>Zorg die niet bij één plek hoort</small></h3>
+          <ul>
+            <li><span><b>Parkinson en MS</b> · Milou is ParkinsonNet-therapeut en ingeschreven in het MS Netwerk</span></li>
+            <li><span><b>Oncologische revalidatie</b></span></li>
+            <li><span><b>Oedeemtherapie</b> · manuele lymfedrainage en compressietherapie</span></li>
+            <li><span><b>Geriatrische fysiotherapie</b> en <b>fysiotherapie aan huis</b></span></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn--gold" href="tel:+31765215141"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel</a>
+        <a class="btn btn--ghost" href="https://wa.me/31613938320"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.fysiotherapieruitersbos.nl/afspraak-maken"><svg aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+      </div>
+      <p class="disclaim">Dit is een eerste richting. Bij je eerste afspraak kijkt de fysiotherapeut wat bij jou past.</p>
+    </div>
+  </div>
+  <div class="hero__photo">
+      <img src="images/oefenzaal.jpg" width="2000" height="1333" alt="De oefenzaal van Fysiotherapie Ruitersbos met crosstrainers, een krachtrek en het logo op de muur">
+      <div class="stamp"><b class="num">4,9</b><span><span class="stars" aria-hidden="true">●●●●●</span>op Google · 67 reviews</span></div>
+    </div>
+</header>
+
+<main>
+<!-- 2 · Behandelingen -->
+<section class="treat sec" id="behandelingen">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><svg class="trail" aria-hidden="true"><use href="#trail"/></svg><h2 style="margin-top:18px">Alles wat we behandelen</h2></div>
+      <p>Van een stijve nek tot revalidatie na een operatie. Waar het helpt, kijken we met echografie mee, zodat de diagnose zo scherp mogelijk is.</p>
+    </div>
+    <div class="groups">
+      <div class="group">
+        <h3><i style="width:12px;height:12px"></i>Pijn en beweging</h3>
+        <dl>
+          <div><dt>Manuele therapie</dt><dd>Gewrichten weer beter laten werken: wervelkolom, schouders, heupen.</dd></div>
+          <div><dt>Mulligan-techniek</dt><dd>Mobilisaties gecombineerd met actieve bewegingen.</dd></div>
+          <div><dt>Dry needling</dt><dd>Voor aanhoudende spierklachten, gericht op spierknopen.</dd></div>
+          <div><dt>Acupunctuur</dt><dd>Fijne naalden op specifieke punten, door Hannah en Britt.</dd></div>
+          <div><dt>Shockwave</dt><dd>Bij peesklachten: tenniselleboog, hielspoor, achillespees.</dd></div>
+          <div><dt>Echografie</dt><dd>Banden, pezen, slijmbeurzen en hielsporen in beeld.</dd></div>
+          <div><dt>EPTE</dt><dd>Beschikbaar op locatie Ruitersbos.</dd></div>
+        </dl>
+      </div>
+      <div class="group">
+        <h3><i style="width:16px;height:16px"></i>Herstel en revalidatie</h3>
+        <dl>
+          <div><dt>Sportfysiotherapie</dt><dd>Snel en veilig terug naar je sport, fanatiek of gewoon actief.</dd></div>
+          <div><dt>Revalidatie</dt><dd>Sportspecifiek, binnen en buiten, en in het water (aquagym).</dd></div>
+          <div><dt>Sportmassage</dt><dd>Eventueel in combinatie met dry needling en acupunctuur.</dd></div>
+          <div><dt>Oncologische revalidatie</dt><dd>Gespecialiseerde zorg bij oncologische revalidatie.</dd></div>
+          <div><dt>Oedeemtherapie</dt><dd>Manuele lymfedrainage en compressietherapie tegen vochtophoping.</dd></div>
+          <div><dt>Geriatrische fysiotherapie</dt><dd>Gespecialiseerde zorg voor ouderen.</dd></div>
+          <div><dt>Fysiotherapie aan huis</dt><dd>Voor wie niet naar de praktijk kan komen.</dd></div>
+        </dl>
+      </div>
+      <div class="group">
+        <h3><i style="width:20px;height:20px"></i>Specialisten en netwerken</h3>
+        <dl>
+          <div><dt>Schoudernetwerk West-Brabant</dt><dd>Imme, aangesloten bij het netwerk van het Amphia.</dd></div>
+          <div><dt>ParkinsonNet</dt><dd>Milou is Parkinson Netwerktherapeut.</dd></div>
+          <div><dt>MS Netwerk</dt><dd>Milou is ingeschreven in het MS Netwerk.</dd></div>
+          <div><dt>Bedrijfsfysiotherapie</dt><dd>Fysiotherapie ook voor bedrijven.</dd></div>
+        </dl>
+        <div class="ask dark">
+          <h3>Twijfel je wat je nodig hebt?</h3>
+          <p>Wijs de plek aan op de kaart, of bel ons en we denken met je mee.</p>
+          <div class="actions">
+            <a class="btn btn--gold" href="#lichaam">Kies een plek op de kaart</a>
+            <a class="btn btn--ghost" href="tel:+31765215141"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel 076 521 5141</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Zo gaat het -->
+<section class="sec" id="zo-gaat-het">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Zo gaat het</h2>
+      <p>Van je eerste telefoontje tot de oefenzaal. Hoe lang een traject duurt, bespreek je met je fysiotherapeut.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><div class="step__dot"><span></span></div><h3>Afspraak maken</h3><p>Bel, stuur een WhatsApp of boek online. Online boeken kan voor Boeimeerweg in Breda en De Waard in Oosterhout.</p></li>
+      <li class="step"><div class="step__dot"><span></span></div><h3>Onderzoek en uitleg</h3><p>We zoeken uit waar de klacht vandaan komt, waar nodig met echografie. Patiënten noemen vaak de duidelijke uitleg.</p></li>
+      <li class="step"><div class="step__dot"><span></span></div><h3>Behandeling op maat</h3><p>Een behandelplan dat past bij jouw klacht en jouw doel.</p></li>
+      <li class="step"><div class="step__dot"><span></span></div><h3>Verder in de oefenzaal</h3><p>Medische fitness en fysiofitness, onder begeleiding van een therapeut.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4 · De oefenzaal -->
+<section class="sec" id="oefenzaal" style="padding-top:0">
+  <div class="wrap gym">
+    <div class="gym__img"><img src="images/oefenzaal.jpg" width="2000" height="1333" alt="Krachtrek en loopbanden in de oefenzaal, met het logo van de praktijk op de zwarte muur"></div>
+    <div class="gym__text">
+      <h2>De oefenzaal</h2>
+      <p>Op locatie Ruitersbos train je in een moderne oefenzaal. Hier ga je na je behandeling verder, onder begeleiding van therapeuten.</p>
+      <ul class="facts">
+        <li>Medische fitness</li>
+        <li>Fysiofitness</li>
+        <li>Begeleiding door therapeuten</li>
+      </ul>
+      <blockquote class="quote-s">Moderne fitnessapparaten en deskundige begeleiding, en je voelt je er altijd welkom.<cite>Rick, op Google (samengevat)</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Sport -->
+<section class="sec dark" id="sport">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><svg class="trail trail--gold" aria-hidden="true"><use href="#trail"/></svg><h2 style="margin-top:18px">Ook voor sport. Niet alleen voor herstel.</h2></div>
+      <p>In de zaal van de Hyrox Training Club train je in een groep of één op één. Van bootcamp tot boksen.</p>
+    </div>
+    <div class="sport__grid">
+      <div class="sport__wide"><img src="images/hyrox-zaal.jpg" width="2000" height="1333" alt="De Hyrox Training Club-zaal met zeshoekige lampen, halterbanken en bokszakken"></div>
+      <div class="sport__tall"><img src="images/boksen.jpg" width="2000" height="1333" alt="Bokstraining bij een bokszak met het logo van Fysiotherapie Ruitersbos, voor een groene plantenwand"></div>
+      <div class="sotm">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="26" fill="none" stroke="#D5AF36" stroke-width="2"/><circle cx="28" cy="22" r="7" fill="#D5AF36"/><circle cx="18" cy="36" r="3" fill="#fff"/><circle cx="26" cy="38" r="4" fill="#D5AF36"/><circle cx="35" cy="36" r="3" fill="#fff"/><circle cx="41" cy="31" r="2" fill="#D5AF36"/></svg>
+        <div><h3>Sporter van de maand</h3><p>Elke maand zetten we een sporter uit Breda en een uit Oosterhout in het zonnetje.</p></div>
+      </div>
+    </div>
+    <ul class="offer">
+      <li class="big">Hyrox training</li>
+      <li class="big">Boks-HIIT</li>
+      <li>Bootcamp</li>
+      <li>Kickbokstraining</li>
+      <li>Boksfitness</li>
+      <li>Personal training</li>
+      <li>Krachttraining onder begeleiding</li>
+      <li>Kracht- en conditietraining</li>
+      <li>Buitentraining</li>
+      <li>Functionele training</li>
+      <li>Lifestylecoaching</li>
+      <li>Blood Flow Restriction training</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 · Team -->
+<section class="sec" id="team">
+  <div class="wrap team">
+    <div class="team__img"><img src="images/team.jpg" width="1500" height="2000" alt="Twee fysiotherapeuten van Ruitersbos in jassen met het praktijklogo, voor een eikenhouten lattenwand"></div>
+    <div>
+      <svg class="trail" aria-hidden="true"><use href="#trail"/></svg>
+      <h2 style="margin-top:18px">Wie doet wat</h2>
+      <p style="color:var(--ink-2);margin-top:16px;max-width:52ch">Een team met eigen specialisaties. Een paar collega's en waar ze zich in hebben verdiept.</p>
+      <ul class="who-list">
+        <li><b>Imme</b><span>Schouderklachten · schoudernetwerk West-Brabant (Amphia)</span></li>
+        <li><b>Milou</b><span>Parkinson en MS · ParkinsonNet en MS Netwerk</span></li>
+        <li><b>Hannah en Britt</b><span>Acupunctuur, als onderdeel van je behandelplan</span></li>
+        <li><b>Noah</b><span>Volgde de scholing Blood Flow Restriction training</span></li>
+      </ul>
+      <div class="badge">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#000" stroke-width="2"/><circle cx="32" cy="32" r="23" fill="none" stroke="#D5AF36" stroke-width="2" stroke-dasharray="2 4"/><path d="M22 33l7 7 13-15" fill="none" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><strong>Visitatie keurmerk behaald</strong>De praktijk heeft het keurmerk van de visitatie behaald.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Reviews -->
+<section class="reviews sec" id="reviews">
+  <div class="wrap rev">
+    <div class="score">
+      <b class="num">4,9</b>
+      <div class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <p>Gemiddeld op Google, uit 67 reviews.</p>
+    </div>
+    <div class="rev__list">
+      <article class="rv rv--hl"><p>Na drie behandelingen pijnvrij.</p><footer>Een patiënt op Google</footer></article>
+      <article class="rv"><p>Kwam binnen met een knieblessure. Noemt de diagnose nauwkeurig en de uitleg gedetailleerd, van de klacht tot het behandelplan.</p><footer><b>Bram</b> · samengevat</footer></article>
+      <article class="rv"><p>Moderne fitnessapparaten, deskundige begeleiding, en je voelt je er altijd welkom. De sfeer is top.</p><footer><b>Rick</b> · samengevat</footer></article>
+      <article class="rv"><p>Kundig en vriendelijk personeel dat het juiste plekje vindt, met een doelgerichte oplossing.</p><footer><b>Maikel</b> · samengevat</footer></article>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Locaties + contact -->
+<section class="sec" id="locaties">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><svg class="trail" aria-hidden="true"><use href="#trail"/></svg><h2 style="margin-top:18px">Drie locaties</h2></div>
+      <p>Twee in Breda, één in Oosterhout. De oefenzaal vind je op locatie Ruitersbos.</p>
+    </div>
+    <div class="loc">
+      <figure class="mapart" style="margin:0">
+        <svg viewBox="0 0 600 440" role="img" aria-label="Schematische kaart met de drie locaties: twee in Breda en één in Oosterhout, verbonden door de A27">
+          <defs><pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.3" fill="#B98A5A" opacity=".45"/></pattern></defs>
+          <rect width="600" height="440" fill="#fff"/>
+          <path d="M140 250c10-60 70-95 130-92 70 3 110 40 116 95 6 60-30 120-110 130-80 10-150-40-136-133z" fill="url(#dots)" stroke="#B98A5A" stroke-width="1.5"/>
+          <path d="M392 70c30-22 88-18 110 10 22 30 6 70-30 82-40 13-92 0-98-34-3-22 4-44 18-58z" fill="url(#dots)" stroke="#B98A5A" stroke-width="1.5"/>
+          <path d="M240 440c8-40 18-80 26-120s-6-80-10-120-20-90-36-200" fill="none" stroke="#9cb3cf" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+          <path d="M566 0c-14 60-30 110-50 150s-40 90-46 140-6 100-18 150" fill="none" stroke="#000" stroke-width="3"/>
+          <rect x="490" y="214" width="44" height="22" rx="4" fill="#000"/><text x="512" y="230" text-anchor="middle" font-family="Archivo,Arial" font-weight="800" font-size="13" fill="#fff">A27</text>
+          <text x="248" y="232" font-family="Archivo,Arial" font-stretch="125%" font-weight="800" font-size="22" fill="#000" opacity=".85">Breda</text>
+          <text x="400" y="60" font-family="Archivo,Arial" font-stretch="125%" font-weight="800" font-size="20" fill="#000" opacity=".85">Oosterhout</text>
+          <text x="214" y="122" font-family="Source Sans 3,Arial" font-size="13" fill="#5a6f88" font-style="italic">Mark</text>
+          <g font-family="Source Sans 3,Arial" font-size="14" font-weight="600">
+            <circle cx="290" cy="352" r="11" fill="#D5AF36" stroke="#000" stroke-width="3"/><circle cx="290" cy="352" r="22" fill="none" stroke="#D5AF36" stroke-width="1.5" opacity=".7"/>
+            <text x="314" y="348" fill="#000">Boeimeerweg 4A2</text><text x="314" y="365" fill="#5a5a5a" font-weight="400">locatie Ruitersbos</text>
+            <circle cx="248" cy="268" r="9" fill="#D5AF36" stroke="#000" stroke-width="3"/>
+            <text x="114" y="296" fill="#000">Pieter-Christiaanstraat 2</text>
+            <circle cx="452" cy="112" r="9" fill="#D5AF36" stroke="#000" stroke-width="3"/>
+            <text x="436" y="140" fill="#000" text-anchor="end">De Waard 5A</text>
+          </g>
+        </svg>
+        <figcaption>Schematische kaart, niet op schaal.</figcaption>
+      </figure>
+      <div>
+        <ul class="addr">
+          <li><i aria-hidden="true"></i><div><b>Boeimeerweg 4A2, 4837 AM Breda</b><span>Locatie Ruitersbos, met oefenzaal · <a href="https://www.google.com/maps/place/Fysiotherapie+Ruitersbos+Breda/data=!4m7!3m6!1s0x47c6a032a99582e7:0x159adf8937c07115!8m2!3d51.5711175!4d4.7722479!16s%2Fg%2F1tfcmkck!19sChIJ54KVqTKgxkcRFXHAN4nfmhU?authuser=0&amp;hl=nl">Route in Google Maps</a></span></div></li>
+          <li><i aria-hidden="true"></i><div><b>Pieter-Christiaanstraat 2, 4811 PS Breda</b></div></li>
+          <li><i aria-hidden="true"></i><div><b>De Waard 5A, 4906 BC Oosterhout</b></div></li>
+        </ul>
+        <table class="hours" aria-label="Openingstijden">
+          <tbody>
+            <tr data-days="1,2,3,4"><th scope="row">Maandag t/m donderdag</th><td>08:00–20:00</td></tr>
+            <tr data-days="5"><th scope="row">Vrijdag</th><td>08:00–17:00</td></tr>
+            <tr data-days="6"><th scope="row">Zaterdag</th><td>08:00–13:00</td></tr>
+            <tr data-days="0"><th scope="row">Zondag</th><td>gesloten</td></tr>
+          </tbody>
+        </table>
+        <div class="contact-lines">
+          <span>Telefoon: <a href="tel:+31765215141">076 521 5141</a></span>
+          <span>WhatsApp: <a href="https://wa.me/31613938320">06 13 93 83 20</a></span>
+          <span>E-mail: <a href="mailto:info@fysiotherapieruitersbos.nl">info@fysiotherapieruitersbos.nl</a></span>
+        </div>
+        <div class="actions">
+          <a class="btn btn--gold" href="tel:+31765215141"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel 076 521 5141</a>
+          <a class="btn btn--ghost" href="https://www.fysiotherapieruitersbos.nl/afspraak-maken"><svg aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="images/logo-white.png" width="453" height="552" alt="Logo Fysiotherapie Ruitersbos">
+    <p>Fysiotherapie Ruitersbos · Breda en Oosterhout<br><a href="tel:+31765215141">076 521 5141</a> · <a href="mailto:info@fysiotherapieruitersbos.nl">info@fysiotherapieruitersbos.nl</a></p>
+    <svg class="trail trail--gold" aria-hidden="true"><use href="#trail"/></svg>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // body map
+  var fig=document.getElementById('figure'), answers=document.querySelectorAll('.answer'),
+      btns=document.querySelectorAll('[data-zone]'), hint=document.getElementById('hint');
+  function select(zone){
+    fig.setAttribute('data-sel',zone);
+    btns.forEach(function(b){ if(b.tagName==='BUTTON') b.setAttribute('aria-pressed', b.dataset.zone===zone ? 'true':'false'); });
+    answers.forEach(function(a){ a.classList.toggle('on', a.dataset.answer===zone); });
+    if(hint) hint.remove();
+    var k=fig.querySelector('.hot--hint'); if(k) k.classList.remove('hot--hint');
+  }
+  btns.forEach(function(b){ if(b.tagName==='BUTTON') b.addEventListener('click',function(){ select(b.dataset.zone); }); });
+
+  // open status (Europe/Amsterdam)
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++) if(parts[i].type===t) return parts[i].value;};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var mins=parseInt(get('hour'),10)%24*60+parseInt(get('minute'),10);
+    var close={0:0,1:1200,2:1200,3:1200,4:1200,5:1020,6:780}, names=['zo','ma','di','wo','do','vr','za'];
+    var open=day!==0 && mins>=480 && mins<close[day];
+    var el=document.getElementById('status'), tx=document.getElementById('status-text');
+    if(open){ el.classList.add('is-open'); tx.innerHTML='<strong>Nu open</strong> · tot '+String(close[day]/60).padStart(2,'0')+':00'; }
+    else{
+      var nd=day, before=(day!==0 && mins<480);
+      if(!before){ nd=(day+1)%7; if(nd===0) nd=1; }
+      var label = before ? 'vandaag' : (nd===(day+1)%7 ? 'morgen' : names[nd]);
+      tx.innerHTML='<strong>Nu gesloten</strong> · open '+label+' vanaf 08:00';
+    }
+    document.querySelectorAll('.hours tr').forEach(function(r){ if(r.dataset.days.split(',').indexOf(String(day))>-1) r.classList.add('today'); });
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

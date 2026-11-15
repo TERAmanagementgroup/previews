@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon Bijdehand — Beauty & Wellness en Hairstyling & Barbershop, Ginnekenmarkt Breda</title>
+<meta name="description" content="Salon Bijdehand aan de Ginnekenmarkt in Breda: Beauty & Wellness op nummer 5, Hairstyling & Barbershop op nummer 13bis. Boek online, bel of app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000;--white:#fff;--ground:#F1F1EF;--line:#D9D8D2;
+  --khaki:#8B8660;--khaki-text:#6B6745;--gold:#C2A55A;--gold-hi:#E6CE8A;
+  --ink-2:#3d3d3a;
+  --display:"Oswald","Arial Narrow",sans-serif;
+  --text:"Newsreader",Georgia,serif;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --ease-in-out:cubic-bezier(0.77,0,0.175,1);
+  --bar:64px;
+  --gut:clamp(16px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--black);font-family:var(--text);font-size:18px;line-height:1.6;font-optical-sizing:auto;overflow-x:hidden}
+::selection{background:var(--gold);color:var(--black)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;letter-spacing:-.01em;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--khaki-text);outline-offset:3px}
+html{scrollbar-color:var(--khaki) var(--ground)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gut)}
+.icon{width:1.1em;height:1.1em;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:0 1.25em;font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--black);background:var(--black);color:var(--white);cursor:pointer;transition:background-color .2s ease,color .2s ease,transform .12s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn--ghost{background:transparent;color:var(--black)}
+.btn--light{background:var(--white);color:var(--black);border-color:var(--white)}
+.btn--line-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,.7)}
+@media (hover:hover) and (pointer:fine){
+  .btn:hover{background:var(--khaki-text);border-color:var(--khaki-text);color:var(--white)}
+  .btn--light:hover,.btn--line-light:hover{background:var(--gold-hi);border-color:var(--gold-hi);color:var(--black)}
+}
+
+/* ---------- wordmark (rebuilt) ---------- */
+.wm{position:relative;display:inline-block;color:currentColor;border:2px solid currentColor;border-bottom:0;padding:.42em .9em .62em;font-family:var(--display);font-weight:600;text-transform:uppercase;line-height:1;letter-spacing:.015em;white-space:nowrap;text-decoration:none}
+.wm-est{position:absolute;left:-2px;right:-2px;bottom:0;transform:translateY(50%);display:flex;align-items:center;gap:.55em;font-weight:400;font-size:.36em;letter-spacing:.14em}
+.wm-est::before,.wm-est::after{content:"";flex:1;height:2px;background:currentColor}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:50;height:var(--bar);background:var(--white);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 var(--gut)}
+.bar-place{font-family:var(--display);font-size:15px;letter-spacing:.04em;color:var(--ink-2);display:flex;align-items:center;gap:14px}
+.bar-place .wm{font-size:15px;color:var(--black)}
+.bar-actions{display:flex;gap:8px}
+.bar-actions .btn{min-height:42px;padding:0 1em;font-size:15px}
+
+/* ---------- section 1: two doors ---------- */
+.doors{position:relative;display:grid;grid-template-columns:1fr 1fr;height:calc(100svh - var(--bar));min-height:600px;max-height:980px;background:var(--black);overflow:hidden;transition:grid-template-columns 420ms var(--ease-in-out)}
+.doors[data-open="beauty"]{grid-template-columns:7fr 3fr}
+.doors[data-open="hair"]{grid-template-columns:3fr 7fr}
+.door{position:relative;overflow:hidden;color:var(--white);min-width:0}
+.door-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1);animation:settle 600ms var(--ease-out) both}
+.door--beauty .door-img{object-position:50% 40%}
+.door--hair .door-img{object-position:62% 30%}
+.door::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.15) 55%,rgba(0,0,0,.82) 100%);pointer-events:none;transition:background-color .3s ease}
+.door-hit{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:clamp(24px,4vw,56px);padding-bottom:clamp(28px,5vh,56px);background:none;border:0;color:inherit;font:inherit;text-align:left;text-decoration:none;cursor:pointer}
+.door--beauty .door-hit{align-items:flex-start}
+.door--hair .door-hit{align-items:flex-end;text-align:right}
+.door-hit:focus-visible{outline:3px solid var(--white);outline-offset:-10px}
+.door-no{font-family:var(--display);font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi)}
+.door-name{font-family:var(--display);font-weight:500;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-.01em}
+.door-teaser{font-size:17px;line-height:1.5;max-width:30ch;color:rgba(255,255,255,.9)}
+.door-cue{margin-top:8px;display:inline-flex;align-items:center;gap:.6em;min-height:46px;padding:0 1.1em;border:1.5px solid rgba(255,255,255,.75);font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:.02em;transition:background-color .2s ease,color .2s ease}
+.door-cue .icon{transition:transform .2s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .door-hit:hover .door-cue{background:var(--white);color:var(--black)}
+  .door-hit:hover .door-cue .icon{transform:translateX(3px)}
+}
+.door-hit > *{animation:rise 520ms var(--ease-out) both}
+.door-hit > :nth-child(2){animation-delay:40ms}
+.door-hit > :nth-child(3){animation-delay:80ms}
+.door-hit > :nth-child(4){animation-delay:120ms}
+
+/* open + narrow states */
+.door.is-narrow .door-teaser,.door.is-narrow .door-cue{display:none}
+.door.is-narrow .door-hit{justify-content:flex-end}
+.door.is-narrow .door-name{font-size:clamp(28px,3vw,44px)}
+.door.is-narrow::after{background-color:rgba(0,0,0,.35)}
+.door.is-open .door-hit > *{visibility:hidden}
+.door.is-open .door-hit{cursor:zoom-out}
+.door-panel{position:absolute;z-index:3;top:0;bottom:0;margin:auto 0;height:fit-content;max-height:calc(100% - 56px);width:min(600px,calc(100% - 210px));overflow:auto;overscroll-behavior:contain;background:var(--white);color:var(--black);padding:32px 36px 28px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.door--beauty .door-panel{left:clamp(20px,3vw,44px)}
+.door--hair .door-panel{right:clamp(20px,3vw,44px)}
+.door-panel:not([hidden]){animation:panelIn 280ms var(--ease-out) 160ms both}
+.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
+.panel-head h2{font-size:34px}
+.panel-head p{margin:4px 0 0;font-size:16px;color:var(--khaki-text)}
+.panel-x{flex:none;width:44px;height:44px;display:grid;place-items:center;border:1.5px solid var(--black);background:var(--white);cursor:pointer;color:var(--black)}
+.panel-groups{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;margin:0 0 22px;padding:18px 0 0;border-top:1px solid var(--line)}
+.panel-groups h3{font-size:17px;font-weight:600;letter-spacing:.02em;margin-bottom:4px}
+.panel-groups p{font-size:16px;line-height:1.5;margin:0;color:var(--ink-2)}
+.panel-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.panel-more{font-size:16px;margin-left:4px}
+.door-back{margin-top:16px;background:none;border:0;padding:8px 0;font-family:var(--display);font-size:15px;letter-spacing:.04em;color:var(--black);text-decoration:underline;text-underline-offset:.25em;cursor:pointer}
+
+/* the seam */
+.seam{position:absolute;z-index:4;top:0;bottom:0;left:50%;width:28px;transform:translateX(-50%);pointer-events:none;transition:left 420ms var(--ease-in-out)}
+.doors[data-open="beauty"] .seam{left:70%}
+.doors[data-open="hair"] .seam{left:30%}
+.seam-v{position:absolute;inset:0;width:100%;height:100%}
+.seam-h{display:none}
+.seam .wm{position:absolute;top:clamp(36px,9vh,90px);left:50%;transform:translateX(-50%);font-size:clamp(22px,2.2vw,32px);color:var(--white);background:rgba(0,0,0,.85);animation:drop 560ms var(--ease-out) both}
+.crack{fill:none;stroke:var(--gold);stroke-width:2.4;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.crack-hi{fill:none;stroke:var(--gold-hi);stroke-width:.8;vector-effect:non-scaling-stroke;opacity:.8}
+.crack-wide{fill:none;stroke:var(--gold);stroke-width:1.4;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.crack-thin{fill:none;stroke:var(--gold);stroke-width:1.1;vector-effect:non-scaling-stroke;stroke-linecap:round}
+
+@keyframes settle{from{transform:scale(1.06)}to{transform:scale(1)}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes drop{from{transform:translate(-50%,-8px)}to{transform:translate(-50%,0)}}
+@keyframes panelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ---------- shared section bits ---------- */
+section{position:relative}
+.sec{padding:clamp(72px,10vw,136px) 0}
+.sec-title{font-size:clamp(38px,5.4vw,76px)}
+.lede{font-size:clamp(19px,1.6vw,22px);line-height:1.55;max-width:60ch}
+.seam-rule{display:block;width:100%;height:22px;color:var(--gold)}
+.muted{color:var(--khaki-text)}
+
+/* ---------- section 2: welkom + beloftes ---------- */
+.welkom{background:var(--white)}
+.welkom-top{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,6vw,96px);align-items:end;margin-bottom:clamp(48px,6vw,80px)}
+.promises{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--khaki)}
+.promise{padding:30px 28px 34px 0;border-bottom:1px solid var(--khaki)}
+.promise + .promise{padding-left:28px}
+.promise:nth-child(3n+1){padding-left:0}
+.promise:not(:nth-child(3n)){border-right:1px solid var(--khaki)}
+.promise .icon{width:30px;height:30px;color:var(--khaki-text);margin-bottom:18px;stroke-width:1.4}
+.promise h3{font-size:24px;margin-bottom:8px}
+.promise p{margin:0;font-size:17px;color:var(--ink-2);max-width:32ch}
+
+/* ---------- section 3: beauty menu ---------- */
+.beauty{background:var(--ground)}
+.beauty-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,80px);align-items:start}
+.beauty-fig,.team-fig{position:sticky;top:96px;margin:0}
+.fig-note{margin-top:22px;padding-top:18px;border-top:1px solid var(--khaki);font-size:17px;line-height:1.5;color:var(--ink-2)}
+.fig-note strong{display:block;font-family:var(--display);font-weight:500;font-size:20px;color:var(--black);margin-bottom:4px}
+.fig-note a{font-family:var(--display);font-size:16px;color:var(--black);display:inline-flex;align-items:center;gap:.4em;min-height:44px}
+.beauty-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:38% 50%}
+.beauty-fig figcaption{margin-top:12px;font-family:var(--display);font-size:15px;letter-spacing:.06em;color:var(--khaki-text)}
+.beauty-head{margin-bottom:36px}
+.beauty-head .lede{margin-top:18px}
+.menu{border-top:2px solid var(--black)}
+.menu-group{display:grid;grid-template-columns:200px 1fr;gap:12px 32px;padding:26px 0;border-bottom:1px solid var(--line)}
+.menu-group h3{font-size:26px}
+.menu-group ul{list-style:none;margin:0;padding:0}
+.menu-group li{padding:4px 0;font-size:18px}
+.menu-group li small{display:block;font-size:16px;font-style:italic;color:var(--ink-2);line-height:1.45;margin-top:2px}
+.menu-foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:32px}
+
+/* ---------- section 4: medisch tatoeëren ---------- */
+.kintsugi{background:var(--black);color:var(--white);overflow:hidden}
+.kintsugi-crack{position:absolute;left:0;right:0;top:clamp(20px,3vw,40px);width:100%;height:clamp(90px,10vw,140px);pointer-events:none}
+.kintsugi.sec{padding-top:clamp(150px,17vw,230px)}
+.kintsugi .wrap{position:relative;z-index:1;display:grid;grid-template-columns:6fr 5fr;gap:clamp(32px,6vw,96px);align-items:start}
+.kintsugi .sec-title{font-weight:400;font-size:clamp(36px,4.8vw,66px)}
+.kintsugi-label{display:block;font-family:var(--display);font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:22px}
+.kintsugi-story{font-style:italic;font-size:clamp(20px,1.7vw,23px);line-height:1.55;color:rgba(255,255,255,.88);margin-top:32px;max-width:40ch}
+.kintsugi-body p{color:rgba(255,255,255,.86)}
+.kintsugi-body h3{font-size:22px;margin:28px 0 12px;color:var(--white)}
+.uses{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid rgba(139,134,96,.7)}
+.uses li{padding:12px 0;border-bottom:1px solid rgba(139,134,96,.7);font-size:18px}
+.kintsugi .btn-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* ---------- section 5: hair & barber ---------- */
+.hair{background:var(--white)}
+.hair-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,5vw,72px);align-items:center;margin-bottom:clamp(40px,5vw,64px)}
+.scissors{width:clamp(140px,18vw,240px);height:auto;color:var(--gold)}
+.hair-top .lede{margin-top:16px}
+.hair-cols{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--black)}
+.hair-col{padding:28px 28px 32px 0}
+.hair-col + .hair-col{padding-left:28px;border-left:1px solid var(--line)}
+.hair-col h3{font-size:28px;margin-bottom:10px}
+.hair-col p{margin:0;color:var(--ink-2)}
+.hair-foot{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;margin-top:36px;padding:24px 28px;background:var(--ground)}
+.hair-foot strong{font-family:var(--display);font-weight:500;font-size:22px}
+.hair-foot .btns{display:flex;flex-wrap:wrap;gap:10px}
+
+/* ---------- section 6: team ---------- */
+.team{background:var(--ground)}
+.team-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,80px);align-items:start}
+.team-fig .team-photo{position:relative}
+.team-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1)}
+.team-photo figcaption{position:absolute;left:0;bottom:0;background:var(--white);padding:10px 16px;font-family:var(--display);font-size:15px;letter-spacing:.04em}
+.team-intro{margin:18px 0 32px}
+.member{display:grid;grid-template-columns:1fr auto;gap:6px 24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+.member:first-of-type{border-top:2px solid var(--black)}
+.member h3{font-size:30px}
+.member .role{grid-column:1/-1;margin:0;color:var(--ink-2);font-size:17px;max-width:56ch}
+.member a{font-family:var(--display);font-size:16px;letter-spacing:.02em;color:var(--black);display:inline-flex;align-items:center;gap:.4em;min-height:44px}
+.team-more{margin-top:20px;font-size:17px;color:var(--ink-2)}
+
+/* ---------- section 7: reviews ---------- */
+.reviews{background:var(--white)}
+.reviews-grid{display:grid;grid-template-columns:4fr 7fr;gap:clamp(32px,6vw,96px);align-items:start}
+.score{font-family:var(--display);font-weight:500;font-size:clamp(96px,12vw,168px);line-height:.9;letter-spacing:-.03em}
+.stars{display:flex;gap:6px;margin:18px 0 10px}
+.stars svg{width:30px;height:30px}
+.score-note{font-size:17px;color:var(--ink-2)}
+.themes{list-style:none;margin:0;padding:0;border-top:2px solid var(--black)}
+.themes li{display:grid;grid-template-columns:34px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(19px,1.6vw,22px);line-height:1.45}
+.themes li svg{width:30px;height:20px;margin-top:7px;color:var(--khaki)}
+.reviews-src{margin-top:20px;font-size:16px;color:var(--ink-2)}
+
+/* ---------- section 8: contact ---------- */
+.contact{background:var(--ground)}
+.contact-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(32px,5vw,80px);align-items:start}
+.plan{background:var(--white);padding:clamp(16px,2.5vw,28px)}
+.plan svg{width:100%;height:auto;display:block}
+.plan p{margin:12px 0 0;font-size:15px;color:var(--ink-2)}
+.addr{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0;padding-top:24px;border-top:2px solid var(--black)}
+.addr h3{font-size:22px;margin-bottom:8px}
+.addr .no{font-family:var(--display);color:var(--khaki-text);font-size:15px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:6px}
+.addr p{margin:0;font-size:17px;line-height:1.55}
+.hours{width:100%;border-collapse:collapse;font-size:17px;font-variant-numeric:tabular-nums}
+.hours th{text-align:left;font-weight:400;padding:7px 0;border-bottom:1px solid var(--line)}
+.hours td{text-align:right;padding:7px 0;border-bottom:1px solid var(--line)}
+.hours tr.closed td{color:var(--khaki-text)}
+.hours-note{font-size:15px;color:var(--ink-2);margin:12px 0 26px}
+.contact-btns{display:flex;flex-wrap:wrap;gap:10px}
+.contact-lines{margin:22px 0 0;font-size:17px}
+.contact-lines a{display:inline-block;padding:4px 0}
+
+/* ---------- footer ---------- */
+.foot{background:var(--black);color:var(--white);padding:56px 0 40px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:28px 48px;align-items:flex-end;justify-content:space-between}
+.foot .wm{font-size:30px;color:var(--white)}
+.foot-sign{font-style:italic;font-size:22px;margin:30px 0 0}
+.foot-meta{font-size:15px;color:rgba(255,255,255,.75);display:flex;flex-direction:column;gap:6px}
+.foot-meta a{color:var(--white)}
+.foot-social{display:flex;gap:18px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .panel-groups{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .welkom-top,.beauty-grid,.kintsugi .wrap,.team-grid,.reviews-grid,.contact-grid{grid-template-columns:1fr}
+  .beauty-fig,.team-fig{position:relative;top:0}
+  .beauty-fig img{aspect-ratio:16/10}
+  .team-fig img{aspect-ratio:4/5;max-height:620px}
+  .promises{grid-template-columns:1fr 1fr}
+  .promise,.promise + .promise{padding:26px 20px 28px 0;border-right:0}
+  .promise:nth-child(2n){padding-left:20px;border-left:1px solid var(--khaki)}
+  .promise:not(:nth-child(3n)){border-right:0}
+  .hair-cols{grid-template-columns:1fr}
+  .hair-col,.hair-col + .hair-col{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:760px){
+  :root{--bar:58px}
+  body{font-size:17px}
+  .bar-place{display:none}
+  .bar-actions{flex:1;display:grid;grid-template-columns:1.2fr 1fr 1fr}
+  .bar-actions .btn{padding:0 .5em;min-height:42px}
+  .doors,.doors[data-open="beauty"],.doors[data-open="hair"]{display:flex;flex-direction:column;height:auto;min-height:0;max-height:none}
+  .door{flex:none;display:flex;flex-direction:column}
+  .door:not(.is-open):not(.is-narrow){min-height:calc((100svh - var(--bar)) / 2)}
+  .door-hit,.door--hair .door-hit{position:relative;inset:auto;flex:1;align-items:flex-start;text-align:left;padding:24px 20px 22px;gap:8px}
+  .door-name{font-size:38px}
+  .door-teaser{font-size:16px}
+  .door-cue{margin-top:4px;min-height:44px}
+  .door.is-narrow .door-hit{padding:18px 20px}
+  .door.is-narrow .door-name{font-size:26px}
+  .door.is-narrow .door-no{font-size:13px}
+  .door.is-open .door-hit{padding:20px 20px 14px;flex:none}
+  .door.is-open .door-hit > *{visibility:visible}
+  .door.is-open .door-teaser,.door.is-open .door-cue{display:none}
+  .door.is-open .door-hit{cursor:pointer}
+  .door-panel,.door--beauty .door-panel,.door--hair .door-panel{position:relative;inset:auto;width:auto;margin:0 12px 14px;padding:22px 20px 18px;overflow:visible}
+  .panel-head h2{font-size:28px}
+  .seam{position:relative;left:auto;transform:none;width:100%;height:0;z-index:4;transition:none}
+  .doors[data-open] .seam{left:auto}
+  .doors[data-open="beauty"] .seam .wm,.doors[data-open="hair"] .seam .wm{display:none}
+  .seam-v{display:none}
+  .seam-h{display:block;position:absolute;left:0;right:0;top:-11px;width:100%;height:22px}
+  .seam .wm{top:0;transform:translate(-50%,-50%);font-size:20px;background:rgba(0,0,0,.72);animation:none}
+  .promises{grid-template-columns:1fr}
+  .promise,.promise + .promise,.promise:nth-child(2n){padding:22px 0 24px;border-left:0}
+  .menu-group{grid-template-columns:1fr;gap:6px}
+  .member{grid-template-columns:1fr}
+  .addr{grid-template-columns:1fr}
+  .hair-top{grid-template-columns:1fr}
+  .scissors{width:150px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:0s!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.6 19z"/><path d="M9 10.5c.5 2 2 3.5 4.5 4.5"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M4 6.5l8 6 8-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-4 3.6-6 7-6s6.2 2 7 6"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5s-5.5 6-5.5 10a5.5 5.5 0 0 0 11 0c0-4-5.5-10-5.5-10z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5L12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5L12 11.5l8.5-4M12 11.5v9"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r=".6"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14a3.5 3.5 0 0 0-3.5 3.5V11H8v3.5h2.5V21H14v-6.5h2.5L17 11h-3V9a.5.5 0 0 1 .5-.5z"/></symbol>
+    <symbol id="crack-h" viewBox="0 0 1000 22" preserveAspectRatio="none">
+      <path class="crack" d="M0 11 L70 9 L118 14 L190 8 L246 12 L318 6 L372 13 L440 10 L497 15 L560 9 L618 12 L690 7 L742 14 L815 10 L870 13 L934 8 L1000 11"/>
+      <path class="crack-hi" d="M0 11 L70 9 L118 14 L190 8 L246 12 L318 6 L372 13 L440 10 L497 15 L560 9 L618 12 L690 7 L742 14 L815 10 L870 13 L934 8 L1000 11"/>
+      <path class="crack-thin" d="M318 6 L336 1 M560 9 L580 18 M815 10 L826 20"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <div class="bar-place">
+    <a class="wm" href="#deuren" aria-label="Salon Bijdehand, naar boven">Salon Bijdehand<span class="wm-est" aria-hidden="true">EST. BREDA 2013</span></a>
+    <span>Ginnekenmarkt 5 &amp; 13bis · Breda</span>
+  </div>
+  <nav class="bar-actions" aria-label="Afspraak maken">
+    <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+    <a class="btn btn--ghost" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+    <a class="btn btn--ghost" href="tel:+31613083783"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1 · Two doors -->
+<section class="doors" id="deuren" data-open="" aria-label="Kies je deur: Beauty &amp; Wellness of Hairstyling &amp; Barbershop">
+  <h1 class="sr">Salon Bijdehand aan de Ginnekenmarkt in Breda</h1>
+
+  <div class="door door--beauty" data-key="beauty">
+    <img class="door-img" src="images/behandeling.jpg" alt="Zwart-witfoto uit de studio van Salon Bijdehand: handen in zwarte handschoenen op het gezicht van een vrouw tijdens een gezichtsbehandeling" width="1600" height="664">
+    <a class="door-hit" href="#beauty" data-door="beauty" aria-controls="panel-beauty">
+      <span class="door-no">Ginnekenmarkt 5</span>
+      <span class="door-name">Beauty &amp; Wellness</span>
+      <span class="door-teaser">Huidverbetering · PMU &amp; lashlift · Medisch tatoeëren · Manicure &amp; pedicure · Massage</span>
+      <span class="door-cue">Kies deze deur <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+    </a>
+    <div class="door-panel" id="panel-beauty" hidden>
+      <div class="panel-head">
+        <div><h2>Beauty &amp; Wellness</h2><p>Ginnekenmarkt 5</p></div>
+        <button class="panel-x" type="button" data-close aria-label="Terug naar beide deuren"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      </div>
+      <div class="panel-groups">
+        <div><h3>Huid</h3><p>Huidverbetering: peelings, microneedling, acne, littekens, pigment, couperose en rosacea. Gezichtsbehandelingen.</p></div>
+        <div><h3>PMU &amp; lashes</h3><p>Wenkbrauwen, lippen, eyeliner, lashlift en PMU-opfrisbehandeling.</p></div>
+        <div><h3>Handen &amp; voeten</h3><p>Manicure, gellak, gel- of acrylnagels, nagelbijtersarrangement, pedicure.</p></div>
+        <div><h3>Lichaam</h3><p>Massage, lichaamsscrub, ontharing, IPL definitief ontharen, spray-tan.</p></div>
+        <div><h3>Gezicht &amp; look</h3><p>Visagie, ook workshops. Botox &amp; fillers.</p></div>
+        <div><h3>Medisch tatoeëren</h3><p>Pigment dat littekens en pigmentverlies optisch herstelt.</p></div>
+      </div>
+      <div class="panel-actions">
+        <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+        <a class="btn btn--ghost" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="panel-more" href="#beauty">Hele menu lezen</a>
+      </div>
+      <button class="door-back" type="button" data-close>Terug naar beide deuren</button>
+    </div>
+  </div>
+
+  <div class="seam" aria-hidden="true">
+    <svg class="seam-v" viewBox="0 0 28 1000" preserveAspectRatio="none">
+      <path class="crack" d="M14 0 L11 70 L17 128 L12 196 L18 262 L9 340 L15 410 L11 470 L19 548 L12 618 L16 690 L10 760 L17 832 L12 904 L15 1000"/>
+      <path class="crack-hi" d="M14 0 L11 70 L17 128 L12 196 L18 262 L9 340 L15 410 L11 470 L19 548 L12 618 L16 690 L10 760 L17 832 L12 904 L15 1000"/>
+      <path class="crack-thin" d="M18 262 L26 290 M9 340 L2 372 M19 548 L27 566 M10 760 L1 790"/>
+    </svg>
+    <svg class="seam-h"><use href="#crack-h"/></svg>
+    <span class="wm">Salon Bijdehand<span class="wm-est">EST. BREDA 2013</span></span>
+  </div>
+
+  <div class="door door--hair" data-key="hair">
+    <img class="door-img" src="images/barber.jpg" alt="Zwart-witfoto uit de studio van Salon Bijdehand: een man met platte pet houdt een gouden schaar en een gouden scheermes omhoog" width="1600" height="1063">
+    <a class="door-hit" href="#hair" data-door="hair" aria-controls="panel-hair">
+      <span class="door-no">Ginnekenmarkt 13bis</span>
+      <span class="door-name">Hairstyling &amp; Barbershop</span>
+      <span class="door-teaser">Knippen · Kleuren · Opsteken · Baard trimmen · Scheerbeurt</span>
+      <span class="door-cue">Kies deze deur <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+    </a>
+    <div class="door-panel" id="panel-hair" hidden>
+      <div class="panel-head">
+        <div><h2>Hairstyling &amp; Barbershop</h2><p>Ginnekenmarkt 13bis</p></div>
+        <button class="panel-x" type="button" data-close aria-label="Terug naar beide deuren"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      </div>
+      <div class="panel-groups">
+        <div><h3>Voor haar</h3><p>Knippen, kleuren, permanenten, opsteken en föhnen, met advies.</p></div>
+        <div><h3>For Him</h3><p>Knippen, baard trimmen en een scheerbeurt.</p></div>
+        <div><h3>Kids</h3><p>Ook kinderen zijn welkom in de stoel.</p></div>
+        <div><h3>Bellen?</h3><p>Hairstyling &amp; barber: <a href="tel:+31765620352">076 562 0352</a></p></div>
+      </div>
+      <div class="panel-actions">
+        <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+        <a class="btn btn--ghost" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="panel-more" href="#hair">Meer over hair &amp; barber</a>
+      </div>
+      <button class="door-back" type="button" data-close>Terug naar beide deuren</button>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Welkom + 6 beloftes -->
+<section class="welkom sec" id="welkom">
+  <div class="wrap">
+    <div class="welkom-top">
+      <div>
+        <h2 class="sec-title">Welkom bij Salon Bijdehand</h2>
+      </div>
+      <div>
+        <p class="lede">Twee deuren aan de Ginnekenmarkt, één salon. Bij elk bezoek krijg je een persoonlijke behandeling van hoge kwaliteit, of je nu komt voor je huid, je nagels, permanente make-up of je haar.</p>
+        <p class="lede">Bij veel behandelingen werken we met een verzorgingsset die speciaal voor jou is samengesteld. Alles in één, want jij verdient het allerbeste.</p>
+      </div>
+    </div>
+    <h3 class="sr">De 6 beloftes van Salon Bijdehand</h3>
+    <div class="promises">
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg><h3>24 uur per dag plannen</h3><p>Maak online een afspraak, waar en wanneer jij dat wilt.</p></div>
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-person"/></svg><h3>Jij kiest je behandelaar</h3><p>Je bepaalt zelf door wie je geholpen wordt.</p></div>
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg><h3>Styling inbegrepen</h3><p>Styling- en finishproducten zitten bij je behandeling.</p></div>
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg><h3>Nooit een afspraak missen</h3><p>Je krijgt een herinnering per e-mail.</p></div>
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><h3>WhatsApp-service</h3><p>Een vraag of een afspraak? Je bereikt ons via WhatsApp.</p></div>
+      <div class="promise"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg><h3>Webshop in 48 uur</h3><p>Bestellingen uit de webshop heb je binnen 48 uur thuis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Beauty menu -->
+<section class="beauty sec" id="beauty">
+  <div class="wrap beauty-grid">
+    <figure class="beauty-fig">
+      <img src="images/kintsugi-lippen.jpg" alt="Zwart-witfoto uit de studio van Salon Bijdehand: lippen met een strikje van bladgoud, aangebracht met een penseel" width="1600" height="876" loading="lazy">
+      <figcaption>Ginnekenmarkt 5 · Beauty &amp; Wellness</figcaption>
+      <div class="fig-note"><strong>Ginnekenmarkt 5</strong>Open van dinsdag tot en met zaterdag. Twijfel je welke behandeling bij je past? Stuur een appje, berichten kun je 24/7 sturen.<br><a href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>06 13 08 37 83</a></div>
+    </figure>
+    <div>
+      <div class="beauty-head">
+        <h2 class="sec-title">Het beautymenu</h2>
+        <p class="lede">Van een frisse huid tot nagels en permanente make-up. Prijzen en vrije tijden vind je bij online boeken.</p>
+      </div>
+      <div class="menu">
+        <div class="menu-group"><h3>Huid</h3><ul>
+          <li>Huidverbetering<small>Peelings, microneedling, acne, littekens, pigment, couperose, rosacea en collageenstimulatie.</small></li>
+          <li>Gezichtsbehandelingen</li></ul></div>
+        <div class="menu-group"><h3>PMU &amp; lashes</h3><ul>
+          <li>Wenkbrauwen</li><li>Lippen</li>
+          <li>Eyeliner<small>Infralash of graphic, ca. 1,5 tot 2 uur. Eerst tekenen we in, tot je tevreden bent.</small></li>
+          <li>Lashlift</li><li>PMU-opfrisbehandeling</li></ul></div>
+        <div class="menu-group"><h3>Handen &amp; voeten</h3><ul>
+          <li>Manicure, basis en luxe</li>
+          <li>Gellak<small>Alessandro en Pronails, 100 kleuren, houdt ongeveer 3 weken.</small></li>
+          <li>Gel- of acrylnagels</li>
+          <li>Nagelbijtersarrangement<small>Met gratis intake.</small></li>
+          <li>Pedicure</li></ul></div>
+        <div class="menu-group"><h3>Lichaam</h3><ul>
+          <li>Massage</li><li>Lichaamsscrub</li><li>Ontharing</li><li>IPL definitief ontharen</li><li>Spray-tan</li></ul></div>
+        <div class="menu-group"><h3>Gezicht &amp; look</h3><ul>
+          <li>Visagie<small>Make-up en/of hairstyling, ook als workshop.</small></li>
+          <li>Botox &amp; fillers</li></ul></div>
+      </div>
+      <div class="menu-foot">
+        <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener">Bekijk prijzen en boek online <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Vraag het via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Medisch tatoeëren -->
+<section class="kintsugi sec" id="medisch-tatoeeren">
+  <svg class="kintsugi-crack" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path class="crack" d="M-10 22 L58 30 L71 27 L196 44 L203 52 L262 55 L405 61 L412 70 L431 68 L556 84 L571 81 L590 92 L760 98 L772 106 L779 103 L918 111 L1006 121 L1013 128 L1102 132 L1214 129 L1226 135 L1338 133 L1450 139"/>
+    <path class="crack-hi" d="M-10 22 L58 30 L71 27 L196 44 L203 52 L262 55 L405 61"/>
+    <path class="crack-wide" d="M412 70 L431 68 L556 84 L571 81 L590 92 L760 98"/>
+    <path class="crack-thin" d="M203 52 L214 66 L211 74"/>
+    <path class="crack-thin" d="M556 84 L561 70 L570 64"/>
+    <path class="crack-thin" d="M772 106 L781 118"/>
+    <path class="crack-thin" d="M1006 121 L1018 112 L1033 110"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="kintsugi-label">Medisch tatoeëren</span>
+      <h2 class="sec-title">Wat heel mocht worden, hoeft geen litteken te blijven.</h2>
+      <p class="kintsugi-story">In Japan repareren ze gebroken keramiek met goud. Dat heet Kintsugi. De breuk wordt geen schaamte, maar het mooiste lijntje van het hele stuk.</p>
+    </div>
+    <div class="kintsugi-body">
+      <p>Met medisch tatoeëren kunnen we de huid optisch herstellen. Met een fijne naald brengen we pigment aan in de bovenste huidlaag, in een kleur die past bij jouw huid. Zo wordt het resultaat zo echt en egaal mogelijk.</p>
+      <h3>Waarvoor</h3>
+      <ul class="uses">
+        <li>Tepelhofreconstructie na borstkanker</li>
+        <li>Littekens</li>
+        <li>Pigmentverlies door vitiligo</li>
+      </ul>
+      <p>Vaak zijn meerdere behandelingen nodig. Het resultaat blijft lang zichtbaar. De behandeling wordt gedaan door Simone, huidspecialist en eigenaresse.</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:+31613083783"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel 06 13 08 37 83</a>
+        <a class="btn btn--line-light" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Stel je vraag via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Hair & barber -->
+<section class="hair sec" id="hair">
+  <div class="wrap">
+    <div class="hair-top">
+      <svg class="scissors" viewBox="0 0 240 160" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="46" cy="44" r="26"/><circle cx="46" cy="116" r="26"/>
+        <path d="M68 58 L230 132 M68 102 L230 28"/>
+        <path d="M138 80 l0 0"/><circle cx="140" cy="80" r="4"/>
+        <path d="M72 50 L104 64 M72 110 L104 96" stroke-width="1.2"/>
+      </svg>
+      <div>
+        <h2 class="sec-title">Hairstyling &amp; Barbershop</h2>
+        <p class="lede">Op Ginnekenmarkt 13bis knippen we mannen, vrouwen en kinderen. Een nieuwe kleur, een strakke baard of iets heel anders: the sky is the limit!</p>
+      </div>
+    </div>
+    <div class="hair-cols">
+      <div class="hair-col"><h3>Voor haar</h3><p>Knippen, kleuren, permanenten, opsteken en föhnen. Je krijgt er advies bij over wat bij je haar past.</p></div>
+      <div class="hair-col"><h3>For Him</h3><p>Knippen bij de barber, je baard laten trimmen of een scheerbeurt.</p></div>
+      <div class="hair-col"><h3>Kids</h3><p>Ook kinderen zijn welkom. Klanten schrijven dat de eerste knipbeurt van hun kind goed werd begeleid.</p></div>
+    </div>
+    <div class="hair-foot">
+      <strong>Hairstyling &amp; barber: 076 562 0352</strong>
+      <div class="btns">
+        <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+        <a class="btn btn--ghost" href="tel:+31765620352"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel de kapsalon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Team -->
+<section class="team sec" id="team">
+  <div class="wrap team-grid">
+    <figure class="team-fig">
+      <div class="team-photo"><img src="images/simone.jpg" alt="Zwart-witportret van Simone, eigenaresse van Salon Bijdehand, lachend in een zwart jasje" width="1000" height="1429" loading="lazy">
+      <figcaption>Simone · eigenaresse sinds 2013</figcaption></div>
+      <div class="fig-note"><strong>Jij kiest door wie</strong>Bij het online boeken kies je zelf je behandelaar. Liever eerst even overleggen? Bel of app 06 13 08 37 83.</div>
+    </figure>
+    <div>
+      <h2 class="sec-title">De bijdehandjes</h2>
+      <p class="lede team-intro">Gediplomeerde specialisten met ruime ervaring. Je kiest zelf door wie je geholpen wordt.</p>
+      <div class="member"><h3>Simone</h3><a href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener">Boek bij Simone <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="role">Eigenaresse sinds 2013 en huidspecialist: medische tatoeage, definitief ontharen en huidverbetering.</p></div>
+      <div class="member"><h3>Teddy</h3><a href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener">Boek bij Teddy <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="role">Meer dan 42 jaar in het vak, voor voet- en gezichtsverzorging.</p></div>
+      <div class="member"><h3>Mairys</h3><a href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener">Boek bij Mairys <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="role">Nagelstyliste voor manicure en pedicure. Werkte eerst op Curaçao.</p></div>
+      <div class="member"><h3>Suze</h3><a href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener">Boek bij Suze <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="role">Schoonheidsspecialiste. Ze noemt zichzelf de rechterhand van de salon: je kunt haar alles vragen.</p></div>
+      <p class="team-more">Verder in het team: Krisha (schoonheidsspecialiste), Nina en Jade (nagels).</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Reviews -->
+<section class="reviews sec" id="reviews">
+  <div class="wrap reviews-grid">
+    <div>
+      <h2 class="sr">Wat klanten zeggen</h2>
+      <div class="score" aria-hidden="true">4,6</div>
+      <div class="stars" role="img" aria-label="4,6 van 5 sterren">
+        <svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="#000"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="#000"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="#000"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="#000"/></svg>
+        <svg viewBox="0 0 24 24"><defs><clipPath id="part"><rect x="0" y="0" width="14.4" height="24"/></clipPath></defs><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="none" stroke="#000" stroke-width="1.2"/><path clip-path="url(#part)" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3L2.8 9.5l6.4-.8z" fill="#000"/></svg>
+      </div>
+      <p class="score-note">Gemiddeld 4,6 uit 82 Google-reviews.</p>
+    </div>
+    <div>
+      <h2 class="sec-title" style="margin-bottom:28px">Wat klanten zeggen</h2>
+      <ul class="themes">
+        <li><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M1 11 L9 8 L14 12 L21 9 L29 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Persoonlijk advies, afgestemd op wat jij wilt.</span></li>
+        <li><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M1 11 L9 8 L14 12 L21 9 L29 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Simone krijgt complimenten voor PMU en wenkbrauwen.</span></li>
+        <li><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M1 11 L9 8 L14 12 L21 9 L29 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Bereikbaar, ook op een vrije dag, en flexibel als een afspraak moest schuiven.</span></li>
+        <li><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M1 11 L9 8 L14 12 L21 9 L29 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Mooie manicures en een fijne pedicure.</span></li>
+        <li><svg viewBox="0 0 30 20" aria-hidden="true"><path d="M1 11 L9 8 L14 12 L21 9 L29 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>De eerste knipbeurt van een kind werd goed begeleid.</span></li>
+      </ul>
+      <p class="reviews-src">Samengevat uit de reviews op <a href="https://www.google.com/maps/place/Salon+Bijdehand/data=!4m7!3m6!1s0x47c6a1d0c0824ead:0x28d31b434cbf43e2!8m2!3d51.5676124!4d4.7854176!16s%2Fg%2F11b6dd8xbv!19sChIJrU6CwNChxkcR4kO_TEMb0yg?authuser=0&amp;hl=nl" target="_blank" rel="noopener">Google Maps</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Twee adressen + contact -->
+<section class="contact sec" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 class="sec-title" style="margin-bottom:28px">Twee adressen, één plein</h2>
+      <div class="plan">
+        <svg viewBox="0 0 600 420" role="img" aria-labelledby="plan-t">
+          <title id="plan-t">Schets van de Ginnekenmarkt met de twee deuren van Salon Bijdehand: nummer 5 en nummer 13bis</title>
+          <rect width="600" height="420" fill="#fff"/>
+          <!-- streets -->
+          <path d="M0 70 H600 M0 356 H600" stroke="#D9D8D2" stroke-width="22"/>
+          <path d="M70 0 V420 M528 0 V420" stroke="#D9D8D2" stroke-width="18"/>
+          <!-- square -->
+          <path d="M110 108 L492 96 L512 322 L96 334 Z" fill="#F1F1EF" stroke="#000" stroke-width="2"/>
+          <!-- terraces -->
+          <g fill="#8B8660">
+            <circle cx="170" cy="160" r="5"/><circle cx="200" cy="160" r="5"/><circle cx="230" cy="160" r="5"/><circle cx="185" cy="186" r="5"/><circle cx="215" cy="186" r="5"/>
+            <circle cx="360" cy="150" r="5"/><circle cx="390" cy="150" r="5"/><circle cx="420" cy="150" r="5"/><circle cx="375" cy="176" r="5"/><circle cx="405" cy="176" r="5"/>
+            <circle cx="180" cy="270" r="5"/><circle cx="210" cy="270" r="5"/><circle cx="240" cy="270" r="5"/><circle cx="195" cy="294" r="5"/>
+            <circle cx="380" cy="262" r="5"/><circle cx="410" cy="262" r="5"/><circle cx="440" cy="262" r="5"/><circle cx="395" cy="288" r="5"/><circle cx="425" cy="288" r="5"/>
+          </g>
+          <!-- gold seam between the two doors -->
+          <path d="M186 102 L230 116 L270 98 L318 114 L360 99 L404 110" fill="none" stroke="#C2A55A" stroke-width="2.4" stroke-linejoin="round"/>
+          <!-- doors -->
+          <g font-family="Oswald, Arial Narrow, sans-serif" font-weight="600" text-anchor="middle">
+            <rect x="158" y="76" width="56" height="34" fill="#000"/><text x="186" y="100" fill="#fff" font-size="20">5</text>
+            <rect x="370" y="72" width="70" height="34" fill="#000"/><text x="405" y="96" fill="#fff" font-size="20">13bis</text>
+            <text x="186" y="58" font-size="14" font-weight="500" fill="#000">Beauty &amp; Wellness</text>
+            <text x="405" y="54" font-size="14" font-weight="500" fill="#000">Hair &amp; Barber</text>
+            <text x="302" y="232" font-size="22" font-weight="500" fill="#6B6745" letter-spacing="3">GINNEKENMARKT</text>
+          </g>
+        </svg>
+        <p>Schets, niet op schaal. Voor de precieze plek: gebruik de routelink.</p>
+      </div>
+    </div>
+    <div>
+      <div class="addr">
+        <div><span class="no">Nummer 5</span><h3>Beauty &amp; Wellness</h3><p>Ginnekenmarkt 5<br>4835 JC Breda<br><a href="tel:+31613083783">06 13 08 37 83</a></p></div>
+        <div><span class="no">Nummer 13bis</span><h3>Hairstyling &amp; Barbershop</h3><p>Ginnekenmarkt 13bis<br>4835 JC Breda<br><a href="tel:+31765620352">076 562 0352</a></p></div>
+      </div>
+      <h3 style="font-size:22px;margin-bottom:8px">Openingstijden</h3>
+      <table class="hours">
+        <tbody>
+          <tr class="closed"><th scope="row">Maandag</th><td>Gesloten</td></tr>
+          <tr><th scope="row">Dinsdag</th><td>09:00 – 18:00</td></tr>
+          <tr><th scope="row">Woensdag</th><td>09:00 – 18:00</td></tr>
+          <tr><th scope="row">Donderdag</th><td>09:00 – 21:00</td></tr>
+          <tr><th scope="row">Vrijdag</th><td>09:00 – 18:30</td></tr>
+          <tr><th scope="row">Zaterdag</th><td>10:00 – 16:00</td></tr>
+          <tr class="closed"><th scope="row">Zondag</th><td>Gesloten</td></tr>
+        </tbody>
+      </table>
+      <p class="hours-note">Tijden volgens Google Maps. Openingstijden kunnen per behandelaar verschillen — boek online voor beschikbare tijden.</p>
+      <div class="contact-btns">
+        <a class="btn" href="https://www.salonbijdehand.nl/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Boek online</a>
+        <a class="btn btn--ghost" href="https://wa.me/31613083783" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/place/Salon+Bijdehand/data=!4m7!3m6!1s0x47c6a1d0c0824ead:0x28d31b434cbf43e2!8m2!3d51.5676124!4d4.7854176!16s%2Fg%2F11b6dd8xbv!19sChIJrU6CwNChxkcR4kO_TEMb0yg?authuser=0&amp;hl=nl" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Route</a>
+      </div>
+      <p class="contact-lines">Bel &amp; WhatsApp: <a href="tel:+31613083783">06 13 08 37 83</a> — berichten kun je 24/7 sturen, we antwoorden zo snel mogelijk.<br>
+      Mail: <a href="mailto:info@salonbijdehand.nl">info@salonbijdehand.nl</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <span class="wm">Salon Bijdehand<span class="wm-est">EST. BREDA 2013</span></span>
+      <p class="foot-sign">Liefs, Team Salon Bijdehand</p>
+    </div>
+    <div class="foot-meta">
+      <span>Ginnekenmarkt 5 &amp; 13bis, 4835 JC Breda</span>
+      <span>KvK 57808163</span>
+      <div class="foot-social">
+        <a href="https://www.instagram.com/salonbijdehand/" target="_blank" rel="noopener" aria-label="Salon Bijdehand op Instagram"><svg class="icon" style="width:26px;height:26px" aria-hidden="true"><use href="#i-insta"/></svg></a>
+        <a href="https://www.facebook.com/salonbijdehand" target="_blank" rel="noopener" aria-label="Salon Bijdehand op Facebook"><svg class="icon" style="width:26px;height:26px" aria-hidden="true"><use href="#i-fb"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var doors=document.querySelector('.doors');
+  if(!doors) return;
+  var btns=[];
+  // Upgrade the no-JS anchor links into real toggle buttons.
+  Array.prototype.forEach.call(doors.querySelectorAll('a.door-hit'),function(a){
+    var b=document.createElement('button');
+    b.type='button';b.className=a.className;
+    b.setAttribute('data-door',a.getAttribute('data-door'));
+    b.setAttribute('aria-controls',a.getAttribute('aria-controls'));
+    b.setAttribute('aria-expanded','false');
+    while(a.firstChild) b.appendChild(a.firstChild);
+    a.parentNode.replaceChild(b,a);
+    btns.push(b);
+  });
+  function setOpen(key,focusBtn){
+    doors.setAttribute('data-open',key||'');
+    btns.forEach(function(b){
+      var k=b.getAttribute('data-door'),open=k===key;
+      var door=b.closest('.door'),panel=document.getElementById(b.getAttribute('aria-controls'));
+      b.setAttribute('aria-expanded',open?'true':'false');
+      b.setAttribute('aria-label',open?'Sluit '+door.querySelector('.door-name').textContent:'Open '+door.querySelector('.door-name').textContent);
+      panel.hidden=!open;
+      door.classList.toggle('is-open',open);
+      door.classList.toggle('is-narrow',!!key&&!open);
+    });
+    if(focusBtn) focusBtn.focus();
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.getAttribute('data-door');
+      var isOpen=b.getAttribute('aria-expanded')==='true';
+      setOpen(isOpen?'':k);
+      if(!isOpen && window.matchMedia('(max-width:760px)').matches){
+        b.closest('.door').scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+      }
+    });
+  });
+  doors.addEventListener('click',function(e){
+    var c=e.target.closest('[data-close]');
+    if(!c) return;
+    var b=c.closest('.door').querySelector('.door-hit');
+    setOpen('',b);
+  });
+  doors.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&doors.getAttribute('data-open')){
+      var b=doors.querySelector('.door-hit[aria-expanded="true"]');
+      setOpen('',b);
+    }
+  });
+  // Panel links that jump down the page close the doors first.
+  doors.addEventListener('click',function(e){
+    var a=e.target.closest('.panel-more');
+    if(a) setOpen('');
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les4you · Rijschool in Breda · auto, motor en aanhanger</title>
+<meta name="description" content="Rijbewijs halen in Breda, in je eigen tempo. Autorijles, motorrijles en aanhangwagen (BE) bij Les4you. Gratis proefles. 5,0 uit 269 Google-reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --sign-blue:#0E6BA8; --sign-blue-deep:#0B5A8E; --les-blue:#2DAAE1; --chevron:#F27100; --chevron-2:#F39200;
+  --asphalt:#2B2F33; --asphalt-2:#22262A; --ground:#F2F5F7; --hecto:#1E6B3A; --ink:#141617; --ink-2:#3E4449;
+  --steel:#9AA3AA; --line:#D5DCE1; --white:#fff;
+  --display:'Barlow Condensed','Arial Narrow',sans-serif; --text:'Karla',system-ui,sans-serif;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --gutter:20px; --max:1200px; --focus:var(--sign-blue);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--sign-blue) var(--ground);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 17px/1.6 var(--text);overflow-x:hidden}
+::selection{background:var(--chevron);color:var(--ink)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--sign-blue);text-underline-offset:3px;text-decoration-thickness:1.5px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.dark{--focus:var(--chevron-2)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:.005em;text-wrap:balance;margin:0}
+p{margin:0 0 1em;max-width:62ch}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;border-radius:8px;font:700 17px/1 var(--text);text-decoration:none;transition:transform 140ms var(--ease-out),background-color 160ms ease,box-shadow 160ms ease}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--chevron);color:var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.2),0 8px 16px -8px rgba(0,0,0,.45)}
+.btn-ghost{color:#fff;border:2px solid rgba(255,255,255,.55)}
+.btn-ghost.on-light{color:var(--ink);border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){
+  .btn-primary:hover{background:var(--chevron-2)}
+  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .btn-ghost.on-light:hover{background:rgba(20,22,23,.06)}
+}
+.chev{width:22px;height:16px;flex:none}
+
+/* ---------- route sign (section headers) ---------- */
+.routesign{display:inline-flex;align-items:center;gap:14px;background:var(--sign-blue);color:#fff;border-radius:10px;padding:14px 20px 13px;box-shadow:inset 0 0 0 4px var(--sign-blue),inset 0 0 0 6px #fff,0 6px 14px -10px rgba(20,22,23,.55);font-size:clamp(30px,6.4vw,46px);text-transform:none}
+.routesign .chev{width:30px;height:22px}
+.sec{padding:76px 0 84px}
+.sec-head{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:34px}
+.sec-head p{font-size:18px;color:var(--ink-2);margin:0}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--asphalt);color:#fff;overflow:hidden;isolation:isolate}
+.topbar{position:relative;z-index:3;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:10px}
+.topbar img{width:96px;height:auto}
+.topbar a.tel{color:#fff;font:700 17px/1 var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.topbar a.tel svg{width:18px;height:18px}
+/* gantry */
+.gantry{position:relative;z-index:3;padding:0 var(--gutter)}
+.beam{position:relative;max-width:var(--max);margin:0 auto;height:22px;border-top:4px solid #B8C0C6;border-bottom:4px solid #B8C0C6;background:
+  repeating-linear-gradient(55deg,transparent 0 9px,#8E979E 9px 12px,transparent 12px 22px),#3A3F44}
+.beam::before,.beam::after{content:"";position:absolute;top:-4px;width:12px;height:30px;background:#B8C0C6;border-radius:2px}
+.beam::before{left:-2px}.beam::after{right:-2px}
+.signs{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0}
+.signs li{list-style:none;position:relative;padding-top:14px}
+.signs li::before,.signs li::after{content:"";position:absolute;top:0;width:4px;height:16px;background:#B8C0C6}
+.signs li::before{left:22%}.signs li::after{right:22%}
+.dsign{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;height:100%;padding:10px 10px 10px;background:var(--sign-blue);color:#fff;text-decoration:none;border-radius:8px;box-shadow:inset 0 0 0 3px var(--sign-blue),inset 0 0 0 5px #fff,0 10px 18px -10px rgba(0,0,0,.7);transition:background-color 160ms ease,transform 160ms var(--ease-out)}
+.dsign .pict{width:46px;height:24px;color:#fff}
+.dsign b{font:700 19px/1 var(--display);letter-spacing:.01em}
+.dsign small{font:600 15px/1.1 var(--display);opacity:.92}
+.dsign .chev{position:absolute;right:9px;top:12px;width:20px;height:15px;transform:rotate(90deg)}
+@media (hover:hover) and (pointer:fine){.dsign:hover{background:var(--sign-blue-deep);transform:translateY(2px)}}
+.dsign:active{transform:translateY(3px)}
+.hero-photo{position:relative;z-index:1;height:clamp(250px,72vw,420px);margin-top:-6px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 6%}
+.hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--asphalt) 0%,rgba(43,47,51,.55) 14%,rgba(43,47,51,0) 34%,rgba(43,47,51,0) 70%,var(--asphalt) 100%)}
+.hero-copy{position:relative;z-index:2;padding-top:4px;padding-bottom:40px}
+.hero-copy h1{font-size:clamp(38px,9.6vw,68px);max-width:14ch}
+.hero-copy .lede{font-size:clamp(17px,2.2vw,20px);margin:14px 0 22px;color:#E5EAEE;max-width:40ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.1);font:500 15px/1.2 var(--text);color:#fff}
+.stars{display:inline-flex;gap:2px}.stars svg{width:15px;height:15px;color:var(--chevron-2)}
+/* entrance */
+@keyframes signDrop{from{transform:translateY(-10px) rotate(-.6deg)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.045)}to{transform:none}}
+.signs li{animation:signDrop 460ms var(--ease-out) both;transform-origin:50% 0}
+.signs li:nth-child(2){animation-delay:50ms}.signs li:nth-child(3){animation-delay:100ms}
+.hero-photo img{animation:settle 600ms var(--ease-out) both}
+.hero-copy{animation:rise 480ms var(--ease-out) 80ms both}
+@media (prefers-reduced-motion:reduce){
+  .signs li,.hero-photo img,.hero-copy{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- TARIEVEN ---------- */
+.switch{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;background:var(--asphalt);border-radius:12px;max-width:640px}
+.switch button{min-height:52px;border:0;border-radius:8px;background:transparent;color:#D9E0E5;font:700 20px/1 var(--display);letter-spacing:.01em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;padding:6px 8px;transition:background-color 160ms ease,color 160ms ease}
+.switch button svg{width:34px;height:18px;flex:none}
+.switch button[aria-selected="true"]{background:var(--sign-blue);color:#fff;box-shadow:inset 0 0 0 2px var(--sign-blue),inset 0 0 0 4px #fff}
+@media (hover:hover) and (pointer:fine){.switch button:not([aria-selected="true"]):hover{background:rgba(255,255,255,.1);color:#fff}}
+.switch{--focus:var(--chevron-2)}
+.boardwrap{position:relative;margin-top:22px;padding-bottom:44px}
+.boardwrap::before,.boardwrap::after{content:"";position:absolute;bottom:0;width:14px;height:56px;background:linear-gradient(90deg,#8E979E,#C4CBD0 45%,#8E979E);z-index:0}
+.boardwrap::before{left:14%}.boardwrap::after{right:14%}
+.board{position:relative;z-index:1;background:#fff;border-radius:10px;border:2px solid var(--ink);box-shadow:0 18px 30px -22px rgba(20,22,23,.55);overflow:hidden}
+.board + .board{margin-top:18px}
+.js .board[hidden]{display:none}
+.board-head{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--sign-blue);color:#fff;padding:14px 18px}
+.board-head h3{font-size:28px}
+.board-head .pict{width:56px;height:28px;color:#fff;flex:none}
+.board-body{display:grid;gap:0}
+.pk{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:18px;border-bottom:1px solid var(--line)}
+.pk h4{margin:0;font:700 24px/1 var(--display);letter-spacing:.01em}
+.pk .price{grid-row:span 2;align-self:center;font:700 clamp(34px,8vw,44px)/1 var(--display);font-variant-numeric:tabular-nums;color:var(--ink)}
+.pk .price span{font-size:.6em;vertical-align:.32em;margin-right:2px}
+.pk p{margin:0;color:var(--ink-2);font-size:16px}
+.loose{padding:18px;background:#F7F9FA}
+.loose h4{margin:0 0 10px;font:700 21px/1 var(--display);display:flex;align-items:center;gap:8px}
+.loose h4 .chev{width:16px;height:12px}
+.loose ul{margin:0;padding:0;list-style:none}
+.loose li{display:flex;align-items:baseline;gap:8px;padding:7px 0;font-size:16px}
+.loose li::after{content:"";order:1;flex:1;border-bottom:2px dotted #B5BEC5;transform:translateY(-4px)}
+.loose li b{order:2;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.loose .note{margin:12px 0 0;font-size:15px;color:var(--ink-2)}
+.fineprint{margin-top:16px;font-size:15px;color:var(--ink-2)}
+
+/* ---------- STAPPEN ---------- */
+.steps-sec{background:#fff}
+.steps-grid{display:grid;gap:40px}
+.road{position:relative;margin:0;padding:6px 0 6px;list-style:none}
+.road::before{content:"";position:absolute;left:0;top:0;bottom:0;width:64px;border-radius:4px;background:
+  linear-gradient(90deg,transparent 30px,transparent 34px),
+  repeating-linear-gradient(180deg,#fff 0 22px,transparent 22px 44px) 30px 0/4px 100% no-repeat,
+  linear-gradient(90deg,#fff 0 3px,var(--asphalt) 3px calc(100% - 3px),#fff calc(100% - 3px));}
+.road li{position:relative;padding:4px 0 34px 92px;min-height:96px}
+.road li:last-child{padding-bottom:6px}
+.hecto{position:absolute;left:12px;top:0;width:40px;height:58px;background:var(--hecto);color:#fff;border-radius:6px 6px 2px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 26px/1 var(--display);box-shadow:inset 0 0 0 2px var(--hecto),inset 0 0 0 3px rgba(255,255,255,.85),0 4px 8px -4px rgba(0,0,0,.6)}
+.hecto::before{content:"";width:18px;height:3px;background:var(--chevron);border-radius:2px;margin-bottom:5px}
+.road h3{font-size:30px;margin-bottom:8px}
+.road p{margin:0;color:var(--ink-2)}
+.figure{margin:0}
+.figure img{width:100%;aspect-ratio:1376/768;object-fit:cover;border-radius:10px}
+.figure figcaption,.illus-label{display:inline-flex;margin-top:10px;font:700 13px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);background:var(--ground);padding:7px 10px;border-radius:4px}
+.figure .cap{display:block;margin-top:8px;font-size:15px;color:var(--ink-2)}
+
+/* ---------- MOTOR ---------- */
+.motor-grid{display:grid;gap:18px}
+.ph{margin:0;border-radius:10px;overflow:hidden;background:#cfd6db}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-wide{aspect-ratio:4/3}
+.ph-tall{aspect-ratio:3/4}
+.motor-copy p{font-size:18px}
+.xp{margin-top:8px;background:var(--asphalt);color:#fff;border-radius:12px;padding:24px 22px 24px;position:relative;overflow:hidden}
+.xp h3{font-size:34px;margin-bottom:6px;display:flex;align-items:center;gap:12px}
+.xp h3 .chev{width:24px;height:18px}
+.xp ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.xp li{display:flex;gap:10px;align-items:baseline}
+.xp li .chev{width:13px;height:10px;transform:translateY(1px)}
+.xp .ask{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.2);font-weight:700;color:#FFD3A8}
+.xp .ask a{color:#fff}
+
+/* ---------- 2toDrive ---------- */
+.td-sec{background:#fff}
+.timeline{position:relative;margin:8px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:20px;height:40px;border-radius:4px;background:
+  repeating-linear-gradient(90deg,#fff 0 22px,transparent 22px 44px) 0 18px/100% 4px no-repeat,
+  linear-gradient(180deg,#fff 0 3px,var(--asphalt) 3px calc(100% - 3px),#fff calc(100% - 3px))}
+.timeline li{position:relative;padding-top:0}
+.agepost{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:62px;height:80px;margin-left:8px;background:var(--hecto);color:#fff;border-radius:6px 6px 2px 2px;font:700 28px/1 var(--display);box-shadow:inset 0 0 0 2px var(--hecto),inset 0 0 0 3px rgba(255,255,255,.85),0 6px 10px -6px rgba(0,0,0,.6)}
+.agepost.half{font-size:23px}
+.timeline .what{display:none}
+.agelist{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.agelist li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:baseline}
+.agelist b{font:700 26px/1 var(--display);color:var(--hecto)}
+.coach{margin-top:28px;padding:20px;border-radius:12px;background:var(--ground);display:grid;gap:6px}
+.coach h3{font-size:26px}
+.coach ul{margin:6px 0 0;padding-left:20px}
+
+/* ---------- WAAROM + REVIEWS ---------- */
+.why-grid{display:grid;gap:28px}
+.promises{margin:0;padding:0;list-style:none;display:grid;gap:0;background:#fff;border-radius:12px;border:1px solid var(--line);overflow:hidden}
+.promises li{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line);font:700 22px/1.1 var(--display)}
+.promises li:last-child{border-bottom:0}
+.promises .chev{width:20px;height:15px}
+.score{background:var(--sign-blue);color:#fff;border-radius:12px;padding:26px 22px;box-shadow:inset 0 0 0 5px var(--sign-blue),inset 0 0 0 7px #fff;--focus:var(--chevron-2)}
+.score .big{display:flex;align-items:flex-end;gap:14px}
+.score .big strong{font:700 112px/.82 var(--display);font-variant-numeric:tabular-nums}
+.score .stars svg{width:24px;height:24px}
+.score .sub{margin:12px 0 18px;font-size:17px;color:#E3F0F8}
+.score .bar{height:10px;border-radius:5px;background:rgba(255,255,255,.25);overflow:hidden;margin-bottom:20px}
+.score .bar i{display:block;height:100%;width:98.5%;background:var(--chevron-2);border-radius:5px}
+.themes{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.themes li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;font-size:17px}
+.themes svg{width:22px;height:22px;margin-top:2px}
+.score a{color:#fff}
+
+/* ---------- LESGEBIED / CONTACT ---------- */
+.foot{background:var(--asphalt);color:#E5EAEE}
+.foot .routesign{box-shadow:inset 0 0 0 4px var(--sign-blue),inset 0 0 0 6px #fff,0 8px 20px -10px rgba(0,0,0,.8)}
+.foot .sec-head p{color:#C9D1D7}
+.foot a{color:#fff}
+.area-grid{display:grid;gap:30px}
+.map{background:#34393E;border-radius:12px;padding:10px}
+.map svg{width:100%;height:auto;display:block}
+.info{display:grid;gap:26px;align-content:start}
+.info h3{font-size:26px;color:#fff;margin-bottom:10px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.hours td:last-child{text-align:right;font-weight:700;color:#fff}
+.addr p{margin:0 0 6px}
+.final{margin-top:44px;padding:28px 22px;border-radius:12px;background:var(--chevron);color:var(--ink);display:grid;gap:16px;align-items:center;--focus:var(--ink)}
+.final h2{font-size:clamp(32px,6vw,48px)}
+.final p{margin:0;font-size:18px}
+.final .btn-dark{background:var(--ink);color:#fff}
+.final .btn-dark:hover{background:#000}
+.final a.plain{color:var(--ink);font-weight:700}
+.legal{margin-top:36px;padding:20px 0 30px;border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#AEB7BE;display:flex;flex-wrap:wrap;gap:6px 18px}
+
+/* ---------- ≥ 760 ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .signs{gap:14px}
+  .dsign{padding:14px 16px 14px;gap:8px}
+  .dsign .pict{width:58px;height:30px}
+  .dsign b{font-size:28px}
+  .dsign small{font-size:18px}
+  .dsign .chev{top:auto;right:14px;bottom:14px;width:26px;height:20px}
+  .board-body{grid-template-columns:repeat(3,1fr)}
+  .pk{grid-template-columns:1fr;grid-template-rows:auto 1fr auto;gap:8px;border-bottom:0;border-right:1px solid var(--line);padding:22px}
+  .pk .price{grid-row:auto;order:3;padding-top:10px;border-top:2px solid var(--ink)}
+  .loose{grid-column:1/-1;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:0 40px;padding:22px}
+  .loose h4{grid-column:1/-1}
+  .loose ul{columns:2;column-gap:40px;grid-column:1/-1}
+  .loose li{break-inside:avoid}
+  .loose .note{grid-column:1/-1}
+  .motor-grid{grid-template-columns:1.25fr .75fr;align-items:stretch}
+  .motor-copy{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .ph-wide,.ph-tall{aspect-ratio:auto;height:520px}
+  .timeline .what{display:block;margin-top:14px;padding-right:18px;font-size:16px;color:var(--ink-2)}
+  .timeline .what b{display:block;font:700 22px/1.1 var(--display);color:var(--ink);margin-bottom:4px}
+  .agelist{display:none}
+  .area-grid{grid-template-columns:1.2fr .8fr;align-items:start}
+  .final{grid-template-columns:1fr auto;padding:34px 36px}
+}
+@media (min-width:1024px){
+  :root{--gutter:56px}
+  body{font-size:18px}
+  .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+  .hero-photo{position:absolute;inset:0;top:150px;height:auto;margin:0}
+  .hero-photo img{object-position:50% 0%}
+  .hero-photo::before{background:
+    linear-gradient(180deg,var(--asphalt) 0%,rgba(43,47,51,.4) 12%,rgba(43,47,51,0) 26%),
+    linear-gradient(90deg,rgba(28,31,34,.94) 0%,rgba(28,31,34,.8) 34%,rgba(28,31,34,.15) 58%,rgba(28,31,34,0) 70%),
+    linear-gradient(0deg,rgba(28,31,34,.6) 0%,rgba(28,31,34,0) 30%)}
+  .hero-copy{margin-top:auto;padding-bottom:64px;width:100%}
+  .hero-copy h1{max-width:15ch}
+  .gantry .signs{grid-template-columns:repeat(3,minmax(0,300px));justify-content:end}
+  .steps-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .figure{position:sticky;top:30px}
+  .why-grid{grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}
+  .promises{grid-template-columns:1fr 1fr}
+  .promises li:nth-child(odd){border-right:1px solid var(--line)}
+  .promises li:nth-last-child(2):nth-child(odd){border-bottom:0}
+  .promises li:last-child{grid-column:1/-1;border-top:1px solid var(--line);border-right:0}
+  .promises li:nth-child(6){border-bottom:0}
+  .sec{padding:104px 0 112px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="chev" viewBox="0 0 30 22"><path d="M2 2l9 9-9 9M15 2l9 9-9 9" fill="none" stroke="#F27100" stroke-width="4.2" stroke-linecap="square"/></symbol>
+    <symbol id="chev-w" viewBox="0 0 30 22"><path d="M2 2l9 9-9 9M15 2l9 9-9 9" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="square"/></symbol>
+    <symbol id="car" viewBox="0 0 48 24"><path fill="currentColor" d="M3 17.5v-5.2c0-1 .7-1.8 1.7-2l6.4-1.2 5.6-4.7c.6-.5 1.3-.8 2.1-.8h11.4c.9 0 1.7.4 2.3 1l4.9 4.7 5 .9c1.3.3 2.3 1.4 2.3 2.8v4.5h-3.3a4.3 4.3 0 0 0-8.5 0H16a4.3 4.3 0 0 0-8.5 0zm16-11.6-4 3.3h8.8V5.9zm7.2 0v3.3h9.4l-3.2-3a1 1 0 0 0-.7-.3z"/><circle cx="11.8" cy="18.4" r="3.3" fill="currentColor"/><circle cx="36.5" cy="18.4" r="3.3" fill="currentColor"/></symbol>
+    <symbol id="moto" viewBox="0 0 48 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="17" r="5.2"/><circle cx="38" cy="17" r="5.2"/><path d="M10 17l7-7h10l4 4h-9l-4 3h-8M31 14l7 3M30 5h4l4 12M17 10l-3-3h-4"/></g></symbol>
+    <symbol id="trailer" viewBox="0 0 56 24"><path fill="currentColor" d="M2 17.5v-5c0-.9.6-1.6 1.5-1.8l5-1 4.4-4c.5-.4 1.1-.7 1.8-.7h8.6c.8 0 1.5.3 2 .9l3.8 3.8 1.9.4c1.1.2 1.9 1.2 1.9 2.3v5.1h-2.3a3.7 3.7 0 0 0-7.3 0h-9.2a3.7 3.7 0 0 0-7.3 0zm13-11.2-3 2.8h6.6V6.3zm5.7 0v2.8h6.3l-2.3-2.4a.7.7 0 0 0-.5-.4zM33 14.8h4.5V16H33zM37.5 7.5h16v9.3h-4a3.5 3.5 0 0 0-7 0h-5z"/><circle cx="8.6" cy="18.4" r="3" fill="currentColor"/><circle cx="25.7" cy="18.4" r="3" fill="currentColor"/><circle cx="46" cy="18.4" r="3" fill="currentColor"/></symbol>
+    <symbol id="star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8l-5.4 2.9 1.2-5.9L1.4 7.7l6-.7z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+    <symbol id="check" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" fill="#F39200"/><path d="M6.5 11.3l3 3 6-6.2" fill="none" stroke="#141617" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- 1 · SIGN GANTRY -->
+<header class="hero dark">
+  <div class="wrap topbar">
+    <a href="#top" id="top" aria-label="Les4you, naar boven"><img src="images/logo.png" width="200" height="117" alt="Les4you"></a>
+    <a class="tel" href="tel:+31624595499"><svg aria-hidden="true"><use href="#phone"/></svg><span class="num">06 24 59 54 99</span></a>
+  </div>
+  <nav class="gantry" aria-label="Kies je rijbewijs">
+    <div class="beam" aria-hidden="true"></div>
+    <ul class="signs">
+      <li><a class="dsign" href="#tarieven" data-licence="auto"><svg class="pict" aria-hidden="true"><use href="#car"/></svg><b>Autorijbewijs</b><small>B · 20 tot 45 lessen</small><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></a></li>
+      <li><a class="dsign" href="#tarieven" data-licence="motor"><svg class="pict" aria-hidden="true"><use href="#moto"/></svg><b>Motorrijbewijs</b><small>A · AVB en AVD</small><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></a></li>
+      <li><a class="dsign" href="#tarieven" data-licence="aanhanger"><svg class="pict" aria-hidden="true" viewBox="0 0 56 24"><use href="#trailer"/></svg><b>Aanhanger</b><small>BE · dagopleiding</small><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="hero-photo"><img src="images/rijschool-pand.jpg" width="1800" height="1350" alt="Het pand van Les4you aan de Terheijdenseweg in Breda, met het Les4you-spandoek op de gevel en vier lesmotoren ervoor"></div>
+  <div class="wrap hero-copy">
+    <h1>Rijbewijs halen in Breda, in je eigen tempo</h1>
+    <p class="lede">Auto, motor en aanhanger. Lessen ook ’s avonds en op zaterdag.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="mailto:info@les4you.nl?subject=Gratis%20proefles%20aanvragen">Gratis proefles aanvragen <svg class="chev" aria-hidden="true"><use href="#chev-w"/></svg></a>
+      <a class="btn btn-ghost" href="tel:+31624595499"><svg class="chev" style="width:20px;height:20px" aria-hidden="true"><use href="#phone"/></svg><span class="num">06 24 59 54 99</span></a>
+    </div>
+    <a class="rating" href="https://www.google.com/maps/place/Les4you/data=!4m7!3m6!1s0x47c69f69eb9a5fcf:0x84ca9606b0ee15cf!8m2!3d51.617698!4d4.7713296!16s%2Fg%2F11k1jfj1mn!19sChIJz1-a62mfxkcRzxXusAaWyoQ?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" style="text-decoration:none">
+      <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+      <span><b>5,0</b> uit 269 Google-reviews</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- 2 · TARIEVEN -->
+<section class="sec" id="tarieven" aria-labelledby="h-tarieven">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-tarieven">Kies je rijbewijs <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+      <p>Drie routes, drie tariefborden. Kies er één en je ziet direct de pakketten en losse prijzen.</p>
+    </div>
+
+    <div class="switch" role="tablist" aria-label="Rijbewijs">
+      <button role="tab" id="tab-auto" aria-controls="board-auto" aria-selected="true"><svg aria-hidden="true"><use href="#car"/></svg>Auto B</button>
+      <button role="tab" id="tab-motor" aria-controls="board-motor" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#moto"/></svg>Motor A</button>
+      <button role="tab" id="tab-aanhanger" aria-controls="board-aanhanger" aria-selected="false" tabindex="-1"><svg aria-hidden="true" viewBox="0 0 56 24"><use href="#trailer"/></svg>BE</button>
+    </div>
+
+    <div class="boardwrap">
+      <article class="board" id="board-auto" role="tabpanel" aria-labelledby="tab-auto" tabindex="0">
+        <div class="board-head"><h3>Autorijbewijs B</h3><svg class="pict" aria-hidden="true"><use href="#car"/></svg></div>
+        <div class="board-body">
+          <div class="pk"><h4>Small</h4><p>20 rijlessen + praktijkexamen</p><div class="price"><span>€</span>1395</div></div>
+          <div class="pk"><h4>Medium</h4><p>30 rijlessen + praktijkexamen</p><div class="price"><span>€</span>2025</div></div>
+          <div class="pk"><h4>Pro</h4><p>45 rijlessen + praktijkexamen</p><div class="price"><span>€</span>2900</div></div>
+          <div class="loose">
+            <h4><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Losse prijzen</h4>
+            <ul>
+              <li>Intakeles, 50 min <b>gratis</b></li>
+              <li>Praktijkles, 50 min <b>€ 60</b></li>
+              <li>Tussentijdse toets <b>€ 250</b></li>
+              <li>Praktijkexamen B <b>€ 299</b></li>
+              <li>Theoriepakket: boek, digiboek, 10 uur examentraining <b>€ 65</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="board" id="board-motor" role="tabpanel" aria-labelledby="tab-motor" tabindex="0" hidden>
+        <div class="board-head"><h3>Motorrijbewijs A</h3><svg class="pict" aria-hidden="true"><use href="#moto"/></svg></div>
+        <div class="board-body">
+          <div class="pk"><h4>Small</h4><p>10 motorrijlessen + praktijkexamens AVB en AVD</p><div class="price"><span>€</span>1090</div></div>
+          <div class="pk"><h4>Medium</h4><p>15 motorrijlessen + praktijkexamens AVB en AVD</p><div class="price"><span>€</span>1325</div></div>
+          <div class="pk"><h4>Pro</h4><p>20 motorrijlessen + praktijkexamens AVB en AVD</p><div class="price"><span>€</span>1650</div></div>
+          <div class="loose">
+            <h4><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Losse prijzen</h4>
+            <ul>
+              <li>Intakeles, 50 min <b>gratis</b></li>
+              <li>Praktijkles, 50 min <b>€ 62,50</b></li>
+              <li>Praktijkexamen AVB <b>€ 175</b></li>
+              <li>Praktijkexamen AVD <b>€ 299</b></li>
+              <li>Theoriepakket <b>€ 65</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="board" id="board-aanhanger" role="tabpanel" aria-labelledby="tab-aanhanger" tabindex="0" hidden>
+        <div class="board-head"><h3>Aanhangwagen BE</h3><svg class="pict" aria-hidden="true" viewBox="0 0 56 24"><use href="#trailer"/></svg></div>
+        <div class="board-body">
+          <div class="pk"><h4>Dagopleiding</h4><p>Intake van 90 min, 3,5 uur les, praktijkexamen CBR</p><div class="price"><span>€</span>600</div></div>
+          <div class="pk"><h4>Dagopleiding</h4><p>Intake, 5 uur les, lunch, praktijkexamen CBR</p><div class="price"><span>€</span>710</div></div>
+          <div class="pk"><h4>Meerdaags</h4><p>Intake, 4 uur + 3 uur les verdeeld over 2 dagen, praktijkexamen CBR</p><div class="price"><span>€</span>855</div></div>
+          <div class="loose">
+            <h4><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Losse prijzen</h4>
+            <ul>
+              <li>Intakeles, 90 min <b>€ 90</b></li>
+              <li>BE-rijles, 60 min <b>€ 78</b></li>
+              <li>Praktijkexamen BE <b>€ 265</b></li>
+              <li>Theorieboek <b>€ 25</b></li>
+            </ul>
+            <p class="note">Voor BE heb je eerst een geldig rijbewijs B nodig.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="fineprint">Prijzen volgens les4you.nl (november 2026). Vraag bij de proefles naar het pakket dat bij je past.</p>
+  </div>
+</section>
+
+<!-- 3 · STAPPEN -->
+<section class="sec steps-sec" id="stappen" aria-labelledby="h-stappen">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-stappen">Zo haal je je rijbewijs <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+      <p>Vier paaltjes langs de weg, van proefles tot examen.</p>
+    </div>
+    <div class="steps-grid">
+      <ol class="road">
+        <li><span class="hecto" aria-hidden="true">1</span><h3>Gratis proefles</h3><p>Je begint met een intake. Les4you bepaalt dan je niveau. Stop je daarna, dan betaal je niks.</p></li>
+        <li><span class="hecto" aria-hidden="true">2</span><h3>Samen een pakket kiezen</h3><p>Je kiest samen een lespakket dat past bij je aanleg, je motivatie en je leeftijd.</p></li>
+        <li><span class="hecto" aria-hidden="true">3</span><h3>Theorie</h3><p>Het theoriepakket heeft een digiboek en 10 uur examentraining. Het theorie-examen doe je klassikaal (Nederlands of Engels) of individueel.</p></li>
+        <li><span class="hecto" aria-hidden="true">4</span><h3>Lessen en examen</h3><p>Je lest in je eigen tempo, ook ’s avonds en op zaterdag. Daarna volgt het praktijkexamen bij het CBR.</p></li>
+      </ol>
+      <figure class="figure">
+        <img src="images/lesauto-illustratie.jpg" width="1376" height="768" loading="lazy" alt="Illustratie, geen foto van Les4you: een lesauto met L-bord rijdt door een Nederlandse woonstraat">
+        <figcaption>Illustratie</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · MOTOR -->
+<section class="sec" id="motor" aria-labelledby="h-motor">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-motor">Motor: van nul tot rijbewijs <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+    </div>
+    <div class="motor-grid">
+      <figure class="ph ph-wide"><img src="images/lesmotor-suzuki.jpg" width="1400" height="1050" loading="lazy" alt="Lesmotoren van Les4you op de stoep bij de rijschool, vooraan een blauw-witte Suzuki met Les4you-sticker"></figure>
+      <figure class="ph ph-tall"><img src="images/oefenterrein.jpg" width="788" height="1400" loading="lazy" alt="Een lesmotor op een groot oefenterrein; op de achtergrond oefent een leerling met de instructeur"></figure>
+      <div class="motor-copy">
+        <div>
+          <p>Je leert motorrijden voor beide praktijkexamens: AVB, de bijzondere verrichtingen, en AVD, het verkeersexamen.</p>
+          <p>Leerlingen schrijven in hun reviews dat ze zonder enige ervaring begonnen en zich toch zeker voelden op de motor.</p>
+          <a class="btn btn-ghost on-light" href="#tarieven" data-licence="motor">Bekijk het motortarief <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></a>
+        </div>
+        <div class="xp dark">
+          <h3>Motor Experience dag <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h3>
+          <p style="margin:0;color:#D3DAE0">Drie uur op een motoroefenterrein, van de weg af. Van 10:00 tot 13:00 of van 13:00 tot 16:00.</p>
+          <ul>
+            <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Schakelen, scherpe bochten en slalom</li>
+            <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Jas, handschoenen en helm worden geregeld; neem zelf een stevige broek en schoenen mee</li>
+            <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Vanaf 18 jaar</li>
+            <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Ook te geven als cadeaubon</li>
+          </ul>
+          <p class="ask">Prijs: vraag het even na via <a href="tel:+31624595499" class="num">06 24 59 54 99</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · 2toDrive -->
+<section class="sec td-sec" id="2todrive" aria-labelledby="h-td">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-td">Al rijden vanaf 16,5 jaar <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+      <p>Met 2toDrive begin je eerder. Zo ziet de route eruit.</p>
+    </div>
+    <ol class="timeline">
+      <li><span class="agepost">16</span><div class="what"><b>Theorie-examen</b>Vanaf 16 jaar mag je je theorie-examen doen.</div></li>
+      <li><span class="agepost half">16,5</span><div class="what"><b>Eerste rijles</b>Vanaf 16,5 jaar begin je met rijlessen.</div></li>
+      <li><span class="agepost">17</span><div class="what"><b>Praktijkexamen</b>Vanaf 17 jaar doe je praktijkexamen.</div></li>
+      <li><span class="agepost">18</span><div class="what"><b>Alleen de weg op</b>Tot je 18e rijd je met een coach naast je.</div></li>
+    </ol>
+    <ul class="agelist">
+      <li><b>16</b><span>Theorie-examen doen</span></li>
+      <li><b>16,5</b><span>Beginnen met rijlessen</span></li>
+      <li><b>17</b><span>Praktijkexamen doen</span></li>
+      <li><b>18</b><span>Tot dan rijd je met een coach naast je</span></li>
+    </ul>
+    <div class="coach">
+      <h3>Wie mag je coach zijn?</h3>
+      <ul>
+        <li>Je kunt tot 5 coaches hebben.</li>
+        <li>Een coach is minstens 27 jaar.</li>
+        <li>En heeft minstens 5 jaar rijbewijs B.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · WAAROM + REVIEWS -->
+<section class="sec" id="waarom" aria-labelledby="h-waarom">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-waarom">Waarom Les4you <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+      <p>Zeven beloftes van de rijschool, en wat leerlingen erover zeggen.</p>
+    </div>
+    <div class="why-grid">
+      <ul class="promises">
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Vrijblijvende intake</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Passend advies</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Lespakket op maat</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Nooit te veel betalen</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Een vaste instructeur</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Hulp van begin tot slagen</li>
+        <li><svg class="chev" aria-hidden="true"><use href="#chev"/></svg>Complete opleiding van a tot z</li>
+      </ul>
+      <div class="score dark">
+        <div class="big"><strong>5,0</strong><span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></div>
+        <p class="sub">269 reviews op Google, 265 met vijf sterren.</p>
+        <div class="bar" role="img" aria-label="265 van de 269 reviews hebben vijf sterren"><i></i></div>
+        <ul class="themes">
+          <li><svg aria-hidden="true"><use href="#check"/></svg><span>Geduldig en persoonlijk. Instructeur Ahmed wordt in reviews bij naam genoemd.</span></li>
+          <li><svg aria-hidden="true"><use href="#check"/></svg><span>Professioneel.</span></li>
+          <li><svg aria-hidden="true"><use href="#check"/></svg><span>Motorleerlingen zonder ervaring voelen zich zeker.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 7 · LESGEBIED + CONTACT -->
+<footer class="foot dark sec" id="contact" aria-labelledby="h-gebied">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="routesign" id="h-gebied">Lesgebied en contact <svg class="chev" aria-hidden="true"><use href="#chev"/></svg></h2>
+      <p>Je lest in Breda en in Bavel, Oosterhout, Prinsenbeek, Rijsbergen, Roosendaal, Terheijden, Teteringen, Ulvenhout en Zevenbergen.</p>
+    </div>
+    <div class="area-grid">
+      <div class="map">
+        <svg viewBox="0 0 440 380" role="img" aria-label="Schematische kaart van het lesgebied: Breda in het midden, met Bavel, Oosterhout, Prinsenbeek, Rijsbergen, Roosendaal, Terheijden, Teteringen, Ulvenhout en Zevenbergen eromheen">
+          <g stroke="#1E2226" stroke-width="10" stroke-linecap="round" fill="none">
+            <path d="M220 200L58 214"/><path d="M220 200L96 64"/><path d="M220 200L150 136"/><path d="M220 200L262 78"/><path d="M220 200L366 98"/><path d="M220 200L318 176"/><path d="M220 200L300 288"/><path d="M220 200L214 320"/><path d="M220 200L118 300"/>
+          </g>
+          <g stroke="#5B6268" stroke-width="2" stroke-dasharray="7 7" fill="none">
+            <path d="M220 200L58 214"/><path d="M220 200L96 64"/><path d="M220 200L150 136"/><path d="M220 200L262 78"/><path d="M220 200L366 98"/><path d="M220 200L318 176"/><path d="M220 200L300 288"/><path d="M220 200L214 320"/><path d="M220 200L118 300"/>
+          </g>
+          <circle cx="220" cy="200" r="46" fill="#2DAAE1" opacity=".16"/>
+          <circle cx="220" cy="200" r="13" fill="#2DAAE1"/>
+          <circle cx="220" cy="200" r="5" fill="#fff"/>
+          <g font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="17" text-anchor="middle">
+            <g transform="translate(220 246)"><rect x="-38" y="-15" width="76" height="28" rx="5" fill="#F27100"/><text y="5" fill="#141617">BREDA</text></g>
+          </g>
+          <g font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="16" text-anchor="middle" fill="#fff">
+            <g transform="translate(58 214)"><rect x="-48" y="-14" width="96" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Roosendaal</text></g>
+            <g transform="translate(96 54)"><rect x="-50" y="-14" width="100" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Zevenbergen</text></g>
+            <g transform="translate(144 128)"><rect x="-48" y="-14" width="96" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Prinsenbeek</text></g>
+            <g transform="translate(262 70)"><rect x="-46" y="-14" width="92" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Terheijden</text></g>
+            <g transform="translate(372 92)"><rect x="-46" y="-14" width="92" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Oosterhout</text></g>
+            <g transform="translate(366 176)"><rect x="-44" y="-14" width="88" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Teteringen</text></g>
+            <g transform="translate(324 292)"><rect x="-30" y="-14" width="60" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Bavel</text></g>
+            <g transform="translate(214 334)"><rect x="-44" y="-14" width="88" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Ulvenhout</text></g>
+            <g transform="translate(96 312)"><rect x="-44" y="-14" width="88" height="26" rx="5" fill="#0E6BA8" stroke="#fff" stroke-width="1.5"/><text y="5">Rijsbergen</text></g>
+          </g>
+          <text x="430" y="372" text-anchor="end" font-family="Karla, sans-serif" font-size="12" fill="#AEB7BE">schematisch, niet op schaal</text>
+        </svg>
+      </div>
+      <div class="info">
+        <div>
+          <h3>Lestijden</h3>
+          <table class="hours">
+            <tr><td>Maandag t/m vrijdag</td><td>09:00 – 21:00</td></tr>
+            <tr><td>Zaterdag</td><td>09:00 – 17:00</td></tr>
+            <tr><td>Zondag</td><td>gesloten</td></tr>
+          </table>
+        </div>
+        <div class="addr">
+          <h3>Les4you</h3>
+          <p><a href="https://www.google.com/maps/place/Les4you/data=!4m7!3m6!1s0x47c69f69eb9a5fcf:0x84ca9606b0ee15cf!8m2!3d51.617698!4d4.7713296!16s%2Fg%2F11k1jfj1mn!19sChIJz1-a62mfxkcRzxXusAaWyoQ?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1">Terheijdenseweg 465 B<br>4825 BK Breda</a></p>
+          <p><a href="tel:+31624595499" class="num">06 24 59 54 99</a></p>
+          <p><a href="mailto:info@les4you.nl">info@les4you.nl</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="final">
+      <div>
+        <h2>Begin met een gratis proefles</h2>
+        <p>Stop je daarna, dan betaal je niks.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-dark" href="mailto:info@les4you.nl?subject=Gratis%20proefles%20aanvragen">Gratis proefles aanvragen <svg class="chev" aria-hidden="true"><use href="#chev-w"/></svg></a>
+        <a class="plain num" href="tel:+31624595499">of bel 06 24 59 54 99</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Les4you</span><span>KvK 59180633</span><span>Rijschoolnummer 3736N1</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.switch [role="tab"]'));
+  function select(tab,focus){
+    tabs.forEach(function(t){
+      var on=t===tab;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(focus)tab.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t,false);});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+      else if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      else if(e.key==='Home')n=tabs[0];
+      else if(e.key==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();select(n,true);}
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-licence]'),function(a){
+    a.addEventListener('click',function(){
+      var t=document.getElementById('tab-'+a.getAttribute('data-licence'));
+      if(t)select(t,false);
+    });
+  });
+})();
+</script>
+</body>
+</html>

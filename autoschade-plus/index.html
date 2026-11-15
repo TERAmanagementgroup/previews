@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autoschade Plus — schadeherstel, spuitwerk en spot repair in Breda</title>
+<meta name="description" content="Autoschade Plus (Autospuiterij Plus) aan het Spinveld in Breda: schadeherstel, spuitwerk en spot repair voor particulier en zakelijk. Bel 076 571 26 26.">
+<script>document.documentElement.className='js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Saira:ital,wdth,wght@0,100..125,600..800;1,100..125,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E2A6E; --navy-deep:#141D52; --red:#C8202F; --white:#fff; --grey:#EEF0F3; --grey-2:#DDE1E8;
+  --tape:#EFE3C2; --orange:#E8742A; --ink:#1A1F3A; --ink-2:#4A5172;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --display:"Saira","Arial Narrow",sans-serif; --text:"IBM Plex Sans",system-ui,sans-serif;
+  --wrap:1240px; --gut:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--navy) var(--grey)}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.6 var(--text);overflow-x:hidden}
+::selection{background:var(--navy);color:#fff}
+img,svg{display:block;max-width:100%}
+a{color:var(--navy);text-underline-offset:.2em;text-decoration-thickness:1.5px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-stretch:112%;line-height:1.05;margin:0;color:var(--navy);text-wrap:balance}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* chequer (signature) */
+.chq{height:16px;background:conic-gradient(var(--red) 25%,#fff 0 50%,var(--red) 0 75%,#fff 0) 0 0/16px 16px}
+.chq--thin{height:12px;background-size:12px 12px}
+
+/* masking tape (signature) */
+.tape{display:inline-block;position:relative;background:
+  linear-gradient(90deg,rgba(255,255,255,.25),rgba(0,0,0,.03) 40%,rgba(255,255,255,.18) 70%,rgba(0,0,0,.04)),
+  repeating-linear-gradient(0deg,rgba(120,100,60,.05) 0 1px,transparent 1px 3px),var(--tape);
+  color:var(--navy);padding:.42em 1.15em .38em;transform:rotate(-1.5deg);
+  clip-path:polygon(0 6%,2.5% 0,40% 3%,97% 0,100% 8%,98.6% 30%,100% 52%,98.4% 76%,100% 100%,60% 97%,3% 100%,0 94%,1.4% 70%,0 46%,1.6% 22%);
+  font:800 clamp(1.5rem,3.2vw,2.35rem)/1.1 var(--display);font-stretch:112%;filter:drop-shadow(0 2px 3px rgba(20,29,82,.12))}
+.tape small{display:block;font:600 .8rem/1.2 var(--text);letter-spacing:.02em;color:#A51B28;margin-bottom:.15em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:52px;padding:.7em 1.3em;border-radius:6px;font:600 1rem/1.1 var(--text);text-decoration:none;border:2px solid var(--navy);transition:background-color .18s ease,color .18s ease,transform .12s var(--ease-out)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn--solid{background:var(--navy);color:#fff}
+.btn--line{background:#fff;color:var(--navy)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){
+  .btn--solid:hover{background:var(--navy-deep);border-color:var(--navy-deep)}
+  .btn--line:hover{background:var(--grey)}
+}
+
+/* header = rebuilt façade sign */
+.top{background:#fff;position:relative;z-index:3}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.sign{display:flex;align-items:center;gap:12px;text-decoration:none}
+.sign__plate{position:relative;display:flex;align-items:center;padding:6px 14px 6px 46px;margin-left:22px;border:2px solid var(--navy);border-radius:3px;
+  background:conic-gradient(rgba(200,32,47,.92) 25%,#fff 0 50%,rgba(200,32,47,.92) 0 75%,#fff 0) 0 0/22px 22px}
+.sign__badge{position:absolute;left:-22px;top:50%;width:58px;height:58px;margin-top:-29px}
+.sign__word{font:800 1.28rem/1 var(--display);font-stretch:118%;color:var(--navy);background:rgba(255,255,255,.94);padding:5px 8px 4px;border-radius:2px;white-space:nowrap}
+.sign__word span{color:var(--red)}
+.top__call{min-height:46px;padding:.55em 1em}
+@media (max-width:560px){.top__call .lbl{display:none}.top__call{padding:.55em .8em}.sign__word{font-size:1.05rem}}
+
+/* hero */
+.hero{background:var(--grey);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,4vw,64px);align-items:center;padding-top:clamp(28px,5vh,56px);padding-bottom:clamp(36px,6vh,64px);min-height:calc(100vh - 92px)}
+.hero h1{font-style:italic;font-size:clamp(2.35rem,5.2vw,4.5rem);letter-spacing:-.015em;margin-bottom:.45em}
+.hero__lead{font-size:clamp(1.05rem,1.4vw,1.22rem);color:var(--ink-2);margin-bottom:1.4em}
+.hero__lead strong{color:var(--ink);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.95rem;color:var(--ink-2);padding:0;margin:0;list-style:none}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts svg{width:18px;height:18px;color:var(--navy);flex:none}
+.rating{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:6px 16px 6px 8px;margin-bottom:22px;font-size:.95rem;color:var(--ink);text-decoration:none;box-shadow:0 2px 10px rgba(20,29,82,.08)}
+.rating b{font:800 1.15rem/1 var(--display);color:var(--navy)}
+.stars{display:flex;gap:2px}.stars svg{width:16px;height:16px}
+
+.hero__right{position:relative}
+.booth{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:16/8.4;box-shadow:0 14px 34px rgba(20,29,82,.18)}
+.booth img{width:100%;height:100%;object-fit:cover}
+.label-ai{position:absolute;left:10px;top:10px;background:rgba(20,29,82,.86);color:#fff;font:600 .78rem/1 var(--text);padding:6px 9px;border-radius:3px;letter-spacing:.02em}
+
+/* picker */
+.picker{position:relative;background:#fff;border-radius:8px;margin:-56px 18px 0;padding:22px 22px 20px;box-shadow:0 18px 40px rgba(20,29,82,.16);z-index:2}
+.picker__head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.picker__title{font:800 1.3rem/1.1 var(--display);font-stretch:112%;color:var(--navy);margin:0}
+.prog{display:flex;gap:5px}
+.prog i{width:18px;height:18px;border:2px solid var(--red);background:#fff;transition:background-color .2s var(--ease-out)}
+.prog i.on{background:var(--red)}
+.picker__step{font-size:.85rem;color:var(--ink-2);margin:0 0 4px}
+.picker h3{font:700 1.15rem/1.25 var(--text);color:var(--ink);margin:0 0 12px;font-stretch:100%}
+.picker h3:focus{outline:none}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{min-height:56px;text-align:left;padding:10px 14px;border-radius:6px;border:2px solid var(--grey-2);background:var(--grey);color:var(--ink);font:500 .98rem/1.25 var(--text);cursor:pointer;transition:border-color .15s ease,background-color .15s ease,transform .12s var(--ease-out)}
+.opt[aria-pressed="true"]{border-color:var(--navy);background:#fff}
+.opt:active{transform:scale(.98)}
+@media (hover:hover) and (pointer:fine){.opt:hover{border-color:var(--navy);background:#fff}}
+.picker__nav{display:flex;justify-content:space-between;align-items:center;margin-top:12px;min-height:28px}
+.linkbtn{background:none;border:0;padding:4px 0;color:var(--navy);font:600 .92rem var(--text);text-decoration:underline;text-underline-offset:.2em;cursor:pointer}
+.linkbtn[hidden]{display:none}
+.picker__note{font-size:.82rem;color:var(--ink-2);margin:0}
+.q{animation:step .24s var(--ease-out)}
+@keyframes step{from{transform:translateX(10px)}}
+.result{border-top:4px solid var(--red);padding-top:12px}
+.result__tag{display:inline-block;font:600 .78rem/1 var(--text);background:var(--tape);color:var(--navy);padding:5px 8px;border-radius:2px;margin-bottom:10px}
+.result h3{font:800 1.55rem/1.1 var(--display);font-stretch:112%;color:var(--navy);margin-bottom:6px}
+.result p{margin-bottom:12px;font-size:.98rem}
+.result .ctas{margin-bottom:6px;gap:8px}.result .btn{min-height:46px;padding:.55em 1em;font-size:.95rem}
+.picker-fallback{margin:0;padding-left:1.1em;font-size:.95rem}
+html.js .picker-fallback{display:none}
+html:not(.js) .picker-live{display:none}
+
+/* hero entrance — transform only, already visible */
+@media (prefers-reduced-motion:no-preference){
+  .hero h1,.hero__lead,.hero .ctas,.hero .rating,.hero .facts{animation:rise .5s var(--ease-out) both}
+  .hero__lead{animation-delay:.04s}.hero .ctas{animation-delay:.08s}.hero .facts{animation-delay:.1s}
+  .booth img{animation:settle .58s var(--ease-out) both}
+  .picker{animation:rise .5s var(--ease-out) .06s both}
+}
+@media (prefers-reduced-motion:reduce){.q{animation:none}html{scroll-behavior:auto}}
+@keyframes rise{from{transform:translateY(12px)}}
+@keyframes settle{from{transform:scale(1.05)}}
+
+/* stations */
+.route-intro{background:var(--navy);color:#fff}
+.route-intro .wrap{display:grid;grid-template-columns:auto 1fr;gap:20px 48px;align-items:center;padding-top:44px;padding-bottom:44px}
+.route-intro h2{color:#fff;font-size:clamp(1.7rem,3.4vw,2.6rem)}
+.route-intro p{color:#D7DBEE;margin:0}
+.route{display:flex;gap:8px;list-style:none;margin:18px 0 0;padding:0;flex-wrap:wrap}
+.route a{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px 6px 6px;font-size:.92rem;transition:border-color .15s ease}
+.route a b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--tape);color:var(--navy);font:800 .85rem var(--display)}
+@media (hover:hover) and (pointer:fine){.route a:hover{border-color:#fff}}
+
+.station{scroll-margin-top:0;padding:clamp(56px,9vw,104px) 0;position:relative}
+.station:nth-of-type(even){background:var(--grey)}
+.station .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,5vw,72px);align-items:center}
+.station--flip .wrap{grid-template-columns:6fr 5fr}
+.station--flip .wrap>.st-text{order:2}
+.st-text h2{margin-bottom:22px}
+.st-text .big{font:700 clamp(1.25rem,2vw,1.55rem)/1.3 var(--display);font-stretch:108%;color:var(--navy);margin-bottom:.7em}
+.ticks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks li::before{content:"";flex:none;width:12px;height:12px;margin-top:.5em;background:conic-gradient(var(--red) 25%,#fff 0 50%,var(--red) 0 75%,#fff 0) 0 0/12px 12px;outline:1.5px solid var(--red)}
+.frame{position:relative;border-radius:6px;overflow:visible}
+.frame img{border-radius:6px;width:100%;height:100%;object-fit:cover;box-shadow:0 14px 34px rgba(20,29,82,.16)}
+.frame figcaption{font-size:.85rem;color:var(--ink-2);margin-top:10px}
+.frame .label-ai{left:auto;right:10px}
+.strip{position:absolute;width:120px;height:30px;background:var(--tape);opacity:.94;clip-path:polygon(0 8%,4% 0,96% 6%,100% 0,97% 50%,100% 100%,3% 94%,0 100%,2% 50%);z-index:2}
+.strip--tl{top:-12px;left:-26px;transform:rotate(-32deg)}
+.strip--br{bottom:-12px;right:-26px;transform:rotate(-32deg)}
+.strip--tr{top:-10px;right:-22px;transform:rotate(28deg)}
+
+/* station 1 drawing */
+.bay{background:#fff;border-radius:8px;padding:24px 22px 18px;box-shadow:0 14px 34px rgba(20,29,82,.1)}
+.bay svg{width:100%;height:auto}
+.bay__key{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.88rem;color:var(--ink-2);margin-top:10px}
+.bay__key span{display:flex;align-items:center;gap:8px}
+.bay__key i{width:22px;height:22px;border-radius:50%;border:2px dashed var(--red);display:grid;place-items:center;font:800 .75rem var(--display);font-style:normal;color:var(--red)}
+
+/* station 2 flow */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr auto 1.25fr auto 1fr;align-items:stretch;gap:10px}
+.node{background:#fff;border-radius:8px;padding:18px 16px;border:2px solid var(--grey-2);display:flex;flex-direction:column;gap:6px}
+.node svg{width:34px;height:34px;color:var(--navy)}
+.node b{font:800 1.12rem/1.1 var(--display);font-stretch:110%;color:var(--navy)}
+.node span{font-size:.88rem;color:var(--ink-2);line-height:1.4}
+.node--us{background:var(--navy);border-color:var(--navy)}
+.node--us b,.node--us span{color:#fff}.node--us svg{color:var(--tape)}
+.arrow{display:grid;place-items:center;color:var(--red)}
+.arrow svg{width:30px;height:30px}
+.flow-note{display:flex;gap:12px;align-items:center;margin-top:16px;background:var(--tape);color:var(--navy);padding:12px 16px;border-radius:4px;font-weight:500;font-size:.95rem}
+.flow-note svg{width:26px;height:26px;flex:none}
+
+/* station 3 parts choice */
+.choice{margin-top:26px;border-top:2px solid var(--navy);padding-top:18px}
+.choice h3{font-size:1.35rem;margin-bottom:12px}
+.parts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+.parts li{font:700 1rem/1 var(--display);font-stretch:110%;color:var(--navy);border:2px solid var(--navy);border-radius:999px;padding:9px 16px}
+.parts li:last-child{background:var(--navy);color:#fff}
+
+/* station 4 spray */
+.spray-words{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.spray-words li{font:800 clamp(1.4rem,2.6vw,2rem)/1.15 var(--display);font-stretch:116%;color:var(--navy)}
+.spray-words li:nth-child(even){color:var(--red)}
+.booth-shot{position:relative}
+.booth-shot img{aspect-ratio:4/3;max-height:560px}
+.booth-shot .chq{position:absolute;left:-14px;right:45%;top:-8px;z-index:1}
+
+/* reviews */
+.reviews{background:var(--navy);color:#fff;padding:clamp(56px,9vw,100px) 0}
+.reviews .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.score{text-align:left}
+.score b{display:block;font:800 clamp(5rem,12vw,8.5rem)/.9 var(--display);font-stretch:118%;font-style:italic;color:#fff}
+.score .stars{margin:12px 0 10px}.score .stars svg{width:26px;height:26px}
+.score span{color:#D7DBEE}
+.score a{color:#fff}
+.reviews h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:24px}
+.themes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.themes li{padding:18px 18px 18px 0;border-top:1.5px solid rgba(255,255,255,.22)}
+.themes b{display:block;font:700 1.2rem/1.2 var(--display);font-stretch:110%;color:var(--tape);margin-bottom:4px}
+.themes span{color:#D7DBEE;font-size:.96rem}
+.reviews small{display:block;color:#AEB4D6;font-size:.82rem;margin-top:18px}
+
+/* contact */
+.contact{padding:clamp(56px,9vw,100px) 0;background:var(--grey)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,5vw,64px);align-items:start}
+.facade{background:#fff;border-radius:8px;padding:14px;box-shadow:0 14px 34px rgba(20,29,82,.12)}
+.facade svg{width:100%;height:auto;border-radius:4px}
+.facade p{font-size:.85rem;color:var(--ink-2);margin:10px 4px 0}
+.contact h2{margin-bottom:20px}
+.cdl{display:grid;grid-template-columns:auto 1fr;gap:12px 16px;margin:0}
+.c-right{position:sticky;top:24px;padding-top:clamp(0px,9vw,120px)}
+@media (max-width:980px){.c-right{position:static;padding-top:0}}
+.cdl dt{font-weight:600;color:var(--navy)}
+.cdl dd{margin:0}
+.hours{display:grid;grid-template-columns:auto auto;justify-content:start;gap:2px 20px;font-variant-numeric:tabular-nums}
+form{background:#fff;border-radius:8px;padding:22px;display:grid;gap:14px;box-shadow:0 8px 24px rgba(20,29,82,.08)}
+form h3{font-size:1.3rem}
+label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+label span em{font-style:normal;color:var(--ink-2);font-weight:400}
+input,textarea{font:400 1rem var(--text);color:var(--ink);padding:12px 14px;border:2px solid var(--grey-2);border-radius:6px;background:#fff;caret-color:var(--red);width:100%}
+input:focus,textarea:focus{border-color:var(--navy);outline:none;box-shadow:0 0 0 3px rgba(30,42,110,.18)}
+textarea{min-height:110px;resize:vertical}
+.form-note{font-size:.85rem;color:var(--ink-2);margin:0}
+.form-err{color:var(--red);font-size:.9rem;font-weight:500;margin:0}
+
+footer{background:var(--navy-deep);color:#C9CEE6;font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;padding-top:28px;padding-bottom:32px}
+footer a{color:#fff}
+footer b{color:#fff;font-family:var(--display);font-stretch:112%}
+
+/* responsive */
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;min-height:0}
+  .station .wrap,.contact .wrap{grid-template-columns:1fr}
+  .station--flip .wrap{grid-template-columns:1fr}.station--flip .wrap>.st-text{order:0}
+  .reviews .wrap{grid-template-columns:1fr}
+  .route-intro .wrap{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .flow{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg);height:28px}
+  .themes{grid-template-columns:1fr}
+  .picker{margin:-40px 8px 0;padding:18px 16px 16px}
+  .opts{grid-template-columns:1fr}
+  .strip{width:86px;height:24px}
+  .strip--tl{left:-10px}.strip--br{right:-10px}.strip--tr{right:-8px}
+  .booth-shot .chq{left:0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.6V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="#E8742A" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-gun" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 18h20l6 6-6 6H24z"/><path d="M50 24h7"/><path d="M58 19l3-2M58 29l3 2M59 24h3"/><path d="M30 30l-4 18h7l3-18"/><path d="M33 18v-7h-6"/><rect x="21" y="5" width="12" height="7" rx="2"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="badge" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="#1E2A6E"/><circle cx="32" cy="32" r="26.5" fill="none" stroke="#fff" stroke-width="2"/><g transform="translate(13 14) scale(.6)" color="#fff"><use href="#i-gun" width="64" height="64"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="sign" href="#top" aria-label="Autoschade Plus, naar boven">
+      <span class="sign__plate"><svg class="sign__badge" aria-hidden="true"><use href="#badge"/></svg><span class="sign__word">Autoschade <span>Plus</span></span></span>
+    </a>
+    <a class="btn btn--solid top__call" href="tel:+31765712626"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl">076 571 26 26</span><span class="sr">Bel 076 571 26 26</span></a>
+  </div>
+</header>
+<div class="chq" aria-hidden="true"></div>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero__left">
+      <h1 id="h1">Schade aan je auto? Zo staat hij er weer strak bij.</h1>
+      <p class="hero__lead"><strong>Schadeherstel, spuitwerk en spot repair</strong> aan het Spinveld in Breda. Voor particulier en zakelijk, en we werken met alle Nederlandse verzekeraars.</p>
+      <div class="ctas">
+        <a class="btn btn--solid" href="tel:+31765712626"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel 076 571 26 26</a>
+        <a class="btn btn--line" href="mailto:info@autospuiterijplus.nl?subject=Schade%20aanvragen"><svg aria-hidden="true"><use href="#i-mail"/></svg>Mail je foto's</a>
+      </div>
+      <a class="rating" href="https://www.google.com/maps/place/Autoschade+Plus/data=!4m7!3m6!1s0x47c69fee09518967:0xd213d95743e2051b!8m2!3d51.599099!4d4.7539568!16s%2Fg%2F11c6yclby9!19sChIJZ4lRCe6fxkcRGwXiQ1fZE9I?authuser=0&hl=nl" target="_blank" rel="noopener">
+        <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <span><b>4,7</b> op Google · 76 reviews</span>
+      </a>
+      <ul class="facts">
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Spinveld 32A, Breda</li>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg>Ma–vr 08:30–18:00 · za 09:00–16:00</li>
+      </ul>
+    </div>
+
+    <div class="hero__right">
+      <figure class="booth" style="margin:0">
+        <img src="images/spuitcabine-illustratie.jpg" width="1376" height="768" alt="Illustratie, geen foto van Autoschade Plus: een spuiter lakt een afgeplakte blauwe auto in een spuitcabine.">
+        <figcaption class="label-ai">Illustratie</figcaption>
+      </figure>
+
+      <div class="picker" id="picker" aria-labelledby="picker-title">
+        <div class="picker__head">
+          <h2 class="picker__title" id="picker-title">Spot repair of spuiten?</h2>
+          <div class="prog" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <div class="picker-live">
+          <div id="stage" aria-live="polite"></div>
+          <div class="picker__nav">
+            <button type="button" class="linkbtn" id="back" hidden>← Vorige vraag</button>
+            <p class="picker__note">Drie vragen, een eerste indicatie.</p>
+          </div>
+        </div>
+        <ul class="picker-fallback">
+          <li><b>Spot repair</b> bij kleine lakschade: vaak tot 70% goedkoper en meestal binnen een dag klaar.</li>
+          <li><b>Spuitwerk</b> bij grotere schade aan een paneel: herstellen en spuiten in de spuitcabine.</li>
+          <li><b>Onderdeel vervangen</b> als het kapot is: jij kiest nieuw, gebruikt of gereviseerd.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="route-intro" aria-labelledby="route-h">
+  <div class="wrap">
+    <div>
+      <h2 id="route-h">Zo gaat je auto door de werkplaats</h2>
+      <ol class="route">
+        <li><a href="#station-1"><b>1</b>Ontvangst</a></li>
+        <li><a href="#station-2"><b>2</b>Verzekering</a></li>
+        <li><a href="#station-3"><b>3</b>Herstel</a></li>
+        <li><a href="#station-4"><b>4</b>Spuitcabine</a></li>
+        <li><a href="#station-5"><b>5</b>Afleveren</a></li>
+      </ol>
+    </div>
+    <p>Met schade binnen aan het Spinveld, strak en schoon weer naar buiten. Niet elke klus doet elke stap, maar dit is de route die een auto bij ons aflegt.</p>
+  </div>
+</section>
+<div class="chq chq--thin" aria-hidden="true"></div>
+
+<section class="station" id="station-1" aria-labelledby="st1-h">
+  <div class="wrap">
+    <div class="st-text">
+      <h2 id="st1-h" class="tape"><small>Station 1</small>Ontvangst en opname</h2>
+      <p class="big">Eerst kijken we samen naar de schade. Daarna weet je waar je aan toe bent.</p>
+      <p>Klanten noemen vooral hoe snel ze terecht konden: vaak binnen ongeveer een week. Advies is vrijblijvend.</p>
+      <ul class="ticks">
+        <li>Schade bekijken en vrijblijvend advies</li>
+        <li>Snel een afspraak, voor particulier en zakelijk</li>
+        <li>In sommige gevallen komen we bij je langs en werken we op locatie</li>
+      </ul>
+    </div>
+    <div class="bay">
+      <svg viewBox="0 0 600 270" role="img" aria-label="Tekening van een hatchback van opzij met twee schadeplekken omcirkeld: een kras op de achterbumper en een deukje in het portier">
+        <rect x="0" y="230" width="600" height="40" fill="#EEF0F3"/>
+        <path d="M0 230h600" stroke="#DDE1E8" stroke-width="2"/>
+        <g fill="none" stroke="#1E2A6E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke">
+          <path fill="#fff" d="M60 196V150q0-18 14-24l22-8 18-32q8-12 26-13l190-4q26 0 44 13l64 44 76 12q32 6 36 26l2 30h-48a38 38 0 0 0-76 0H188a38 38 0 0 0-76 0z" vector-effect="non-scaling-stroke"/>
+          <path fill="#DDE1E8" d="M122 118l14-28q6-9 20-9l134-2v40z" vector-effect="non-scaling-stroke"/>
+          <path fill="#DDE1E8" d="M304 79l18-1q22 0 38 11l52 36-108-3z" vector-effect="non-scaling-stroke"/>
+          <path d="M297 124l3 66M412 128q-4 30-12 60" vector-effect="non-scaling-stroke"/>
+          <path d="M252 140h20M364 142h20" vector-effect="non-scaling-stroke"/>
+          <path d="M74 146l470 10" opacity=".4" vector-effect="non-scaling-stroke"/>
+          <path fill="#EEF0F3" d="M532 152q16 2 22 14h-26z" vector-effect="non-scaling-stroke"/>
+          <path fill="#EEF0F3" d="M62 134h10v16H62" vector-effect="non-scaling-stroke"/>
+        </g>
+        <g fill="#141D52"><circle cx="150" cy="198" r="32"/><circle cx="462" cy="198" r="32"/></g>
+        <g fill="#C9CEDA"><circle cx="150" cy="198" r="13"/><circle cx="462" cy="198" r="13"/></g>
+        <g fill="none" stroke="#C8202F" stroke-width="2.5" stroke-dasharray="6 5"><circle cx="78" cy="176" r="22"/><circle cx="240" cy="162" r="26"/></g>
+        <g font-family="Saira, sans-serif" font-weight="800" font-size="20" fill="#C8202F" text-anchor="middle"><text x="78" y="140">1</text><text x="240" y="124" fill="#C8202F" style="paint-order:stroke" stroke="#fff" stroke-width="5">2</text></g>
+        <g transform="translate(470 18) rotate(4)"><rect width="110" height="34" fill="#EFE3C2"/><text x="55" y="23" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="15" fill="#1E2A6E" text-anchor="middle">opname</text></g>
+      </svg>
+      <div class="bay__key"><span><i>1</i>bumper: kras</span><span><i>2</i>portier: deukje</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="station station--flip" id="station-2" aria-labelledby="st2-h">
+  <div class="wrap">
+    <div class="st-text">
+      <h2 id="st2-h" class="tape"><small>Station 2</small>Verzekering</h2>
+      <p class="big">We werken met alle Nederlandse verzekeraars, en ook met goed beoordeelde Europese verzekeraars.</p>
+      <p>Door jarenlange, vertrouwde contacten zijn we voor veel verzekeraars een vast aanspreekpunt. In sommige gevallen helpt dat om de afhandeling te versnellen.</p>
+    </div>
+    <div>
+      <ol class="flow" aria-label="Zo loopt de schademelding">
+        <li class="node"><svg aria-hidden="true"><use href="#i-user"/></svg><b>Jij</b><span>Meldt de schade en brengt de auto</span></li>
+        <li class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></li>
+        <li class="node node--us"><svg aria-hidden="true"><use href="#i-gun"/></svg><b>Autoschade Plus</b><span>Bekijkt de schade en is het aanspreekpunt</span></li>
+        <li class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></li>
+        <li class="node"><svg aria-hidden="true"><use href="#i-shield"/></svg><b>Verzekeraar</b><span>Nederlands of Europees</span></li>
+      </ol>
+      <p class="flow-note"><svg aria-hidden="true"><use href="#i-bolt"/></svg>Is er een expert nodig? Die roepen we razendsnel op.</p>
+    </div>
+  </div>
+</section>
+
+<section class="station" id="station-3" aria-labelledby="st3-h">
+  <div class="wrap">
+    <div class="st-text">
+      <h2 id="st3-h" class="tape"><small>Station 3</small>Herstel: spot repair of onderdeel</h2>
+      <p class="big">Herstel zonder het hele paneel te spuiten? Met spot repair kan dat.</p>
+      <p>Spot repair is tot 70% goedkoper en meestal binnen een dag klaar. Dankzij nieuwe technieken en apparatuur valt er meer onder dan alleen lakschade en krassen.</p>
+      <div class="choice">
+        <h3>Vrijheid van keuze</h3>
+        <ul class="parts"><li>Nieuw</li><li>Gebruikt</li><li>Gereviseerd</li><li>Of een combinatie</li></ul>
+        <p>Moet er een carrosseriedeel vervangen worden? Jij kiest waarmee we aan de slag gaan. <strong>Garantie:</strong> onderdelen kopen we bij zakelijke leveranciers met goede garantievoorwaarden.</p>
+      </div>
+    </div>
+    <figure class="frame" style="margin:0">
+      <span class="strip strip--tl" aria-hidden="true"></span>
+      <img src="images/spotrepair-illustratie.jpg" width="1264" height="848" loading="lazy" alt="Illustratie, geen foto van Autoschade Plus: een kleine lakreparatie wordt gepolijst binnen afplaktape.">
+      <span class="label-ai">Illustratie</span>
+      <figcaption>Spot repair: alleen de plek zelf wordt hersteld.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="station station--flip" id="station-4" aria-labelledby="st4-h">
+  <div class="wrap">
+    <div class="st-text">
+      <h2 id="st4-h" class="tape"><small>Station 4</small>Spuitcabine</h2>
+      <p class="big">Grotere schade wordt hersteld, afgeplakt en gespoten in de cabine.</p>
+      <p>Wat klanten in hun reviews noemen:</p>
+      <ul class="spray-words"><li>bumpers</li><li>zijkanten</li><li>krassen</li><li>lakschade</li></ul>
+    </div>
+    <figure class="frame booth-shot" style="margin:0">
+      <span class="strip strip--tr" aria-hidden="true"></span>
+      <img src="images/resultaat-lak.jpg" width="2000" height="1506" loading="lazy" alt="Glanzende donkerblauwe achterkant van een auto na herstel bij Autoschade Plus.">
+      <div class="chq" aria-hidden="true"></div>
+      <figcaption>Resultaat uit de werkplaats: donkerblauwe lak, weer in de glans.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="station" id="station-5" aria-labelledby="st5-h">
+  <div class="wrap">
+    <div class="st-text">
+      <h2 id="st5-h" class="tape"><small>Station 5</small>Poetsen en afleveren</h2>
+      <p class="big">Klanten noemen het vaak: de auto komt ook vanbinnen schoongemaakt terug.</p>
+      <p>In de reviews lees je steeds weer: vriendelijke service van eigenaar Erdal en zijn team, en een nette prijs.</p>
+      <ul class="ticks">
+        <li>Auto schoon terug, ook de binnenkant</li>
+        <li>Autoruiten vervangen of ruitherstel: daarvoor werken we samen met specialisten</li>
+      </ul>
+    </div>
+    <figure class="frame" style="margin:0">
+      <span class="strip strip--tl" aria-hidden="true"></span>
+      <span class="strip strip--br" aria-hidden="true"></span>
+      <img src="images/resultaat-zijkant.jpg" width="2000" height="1126" loading="lazy" alt="Witte hatchback van opzij na herstel bij Autoschade Plus.">
+      <figcaption>Klaar om op te halen: de zijkant na herstel.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="chq" aria-hidden="true"></div>
+<section class="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="score">
+      <b>4,7</b>
+      <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+      <span>76 reviews op <a href="https://www.google.com/maps/place/Autoschade+Plus/data=!4m7!3m6!1s0x47c69fee09518967:0xd213d95743e2051b!8m2!3d51.599099!4d4.7539568!16s%2Fg%2F11c6yclby9!19sChIJZ4lRCe6fxkcRGwXiQ1fZE9I?authuser=0&hl=nl" target="_blank" rel="noopener">Google</a></span>
+    </div>
+    <div>
+      <h2 id="rev-h">Wat klanten zeggen</h2>
+      <ul class="themes">
+        <li><b>Snel een afspraak</b><span>Vaak al binnen ongeveer een week terecht.</span></li>
+        <li><b>Strak spuitwerk</b><span>Bumpers, zijkanten, krassen en lakschade.</span></li>
+        <li><b>Vriendelijk</b><span>Eigenaar Erdal en het team worden steeds genoemd.</span></li>
+        <li><b>Nette prijs, schone auto</b><span>Een eerlijke prijs, en de auto vanbinnen schoon terug.</span></li>
+      </ul>
+      <small>Samengevat uit de Google-reviews, in onze eigen woorden.</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="c-h">
+  <div class="wrap">
+    <div class="c-left">
+      <h2 id="c-h" class="tape"><small>Contact</small>Kom langs of mail je foto's</h2>
+      <figure class="facade" style="margin:24px 0 26px">
+      <svg viewBox="0 0 800 470" role="img" aria-label="Tekening van de gevel aan het Spinveld 32A: donkere bedrijfshal met het rood-witte geblokte bord, een witte roldeur met 32a en links het kantoor">
+        <defs>
+          <pattern id="rib" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#2A3150"/><rect y="0" width="12" height="2" fill="#343C60"/></pattern>
+          <pattern id="chk" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#fff"/><rect width="20" height="20" fill="#C8202F"/><rect x="20" y="20" width="20" height="20" fill="#C8202F"/></pattern>
+        </defs>
+        <rect width="800" height="470" fill="#DCE6F2"/>
+        <path d="M0 120 800 40v360H0z" fill="url(#rib)"/>
+        <g stroke="#1E2546" stroke-width="3"><path d="M90 110v290M310 88v312M600 60v340"/></g>
+        <rect x="508" y="66" width="270" height="102" fill="url(#chk)" stroke="#E4E8F2" stroke-width="5"/>
+        <circle cx="560" cy="117" r="38" fill="#1E2A6E" stroke="#fff" stroke-width="4"/>
+        <g transform="translate(538 96) scale(.68)" color="#fff"><use href="#i-gun" width="64" height="64"/></g>
+        <rect x="604" y="92" width="164" height="54" fill="rgba(255,255,255,.9)"/>
+        <text x="612" y="115" font-family="Saira, sans-serif" font-weight="800" font-size="19" fill="#1E2A6E">Autospuiterij</text>
+        <text x="612" y="139" font-family="Saira, sans-serif" font-weight="800" font-size="22" fill="#1E2A6E">PLUS</text>
+        <rect x="520" y="182" width="248" height="218" fill="#F3F4F6" stroke="#C9CDD6" stroke-width="2"/>
+        <g stroke="#DDE0E6" stroke-width="2"><path d="M520 212h248M520 242h248M520 272h248M520 302h248M520 332h248M520 362h248"/></g>
+        <text x="644" y="250" font-family="Saira, sans-serif" font-weight="700" font-size="58" fill="#1E2546" text-anchor="middle">32<tspan font-size="30" dy="-24">a</tspan></text>
+        <g fill="#3B4466"><rect x="534" y="290" width="30" height="14"/><rect x="574" y="290" width="30" height="14"/><rect x="614" y="290" width="30" height="14"/><rect x="654" y="290" width="30" height="14"/><rect x="694" y="290" width="30" height="14"/><rect x="734" y="290" width="26" height="14"/></g>
+        <rect x="40" y="250" width="440" height="150" fill="#3A4160"/>
+        <rect x="40" y="244" width="440" height="10" fill="#E6E8EE"/>
+        <rect x="70" y="276" width="56" height="124" fill="#D9E3EE" stroke="#E6E8EE" stroke-width="5"/>
+        <path d="M98 276v124" stroke="#E6E8EE" stroke-width="3"/>
+        <g fill="#D9E3EE" stroke="#E6E8EE" stroke-width="5"><rect x="170" y="276" width="120" height="76"/><rect x="330" y="276" width="120" height="76"/></g>
+        <path d="M230 276v76M390 276v76" stroke="#E6E8EE" stroke-width="3"/>
+        <rect x="0" y="400" width="800" height="70" fill="#9EA3AE"/>
+        <path d="M0 400h800" stroke="#7D838F" stroke-width="3"/>
+      </svg>
+      <p>Spinveld 32A: het geblokte bord en de roldeur met 32a. Kantoor links.</p>
+    </figure>
+      <dl class="cdl">
+        <dt>Adres</dt><dd><a href="https://www.google.com/maps/place/Autoschade+Plus/data=!4m7!3m6!1s0x47c69fee09518967:0xd213d95743e2051b!8m2!3d51.599099!4d4.7539568!16s%2Fg%2F11c6yclby9!19sChIJZ4lRCe6fxkcRGwXiQ1fZE9I?authuser=0&hl=nl" target="_blank" rel="noopener">Spinveld 32A, 4815 HS Breda</a></dd>
+        <dt>Telefoon</dt><dd><a href="tel:+31765712626">076 571 26 26</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:info@autospuiterijplus.nl">info@autospuiterijplus.nl</a></dd>
+        <dt>Open</dt><dd class="hours"><span>Ma–vr</span><span>08:30–18:00</span><span>Za</span><span>09:00–16:00</span><span>Zo</span><span>gesloten</span></dd>
+      </dl>
+    </div>
+    <div class="c-right">
+      <form id="form" novalidate>
+        <h3>Vrijblijvend advies vragen</h3>
+        <label><span>Naam</span><input name="naam" autocomplete="name" required></label>
+        <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Kenteken <em>(optioneel)</em></span><input name="kenteken" autocomplete="off"></label>
+        <label><span>Je vraag</span><textarea name="vraag" required placeholder="Wat is er beschadigd? Foto's kun je in de mail meesturen."></textarea></label>
+        <p class="form-err" id="form-err" role="alert" hidden></p>
+        <div><button class="btn btn--solid" type="submit"><svg aria-hidden="true"><use href="#i-mail"/></svg>Mail ons</button></div>
+        <p class="form-note">Dit opent je eigen mailprogramma met je bericht klaar. Foto's voeg je daar toe.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Autoschade Plus</b> · ook bekend als Autospuiterij Plus</span>
+    <span>Spinveld 32A, 4815 HS Breda · <a href="tel:+31765712626">076 571 26 26</a> · <a href="mailto:info@autospuiterijplus.nl">info@autospuiterijplus.nl</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var Q=[
+    {q:'Wat is er beschadigd?',o:[['bumper','Bumper'],['zijkant','Portier of zijkant'],['kap','Motorkap of dak'],['klein','Spiegel of klein onderdeel']]},
+    {q:'Hoe groot is de schade?',o:[['kras','Kras of steenslag'],['deuk','Deukje of schaafplek (kleiner dan een hand)'],['groot','Grotere deuk of scheur']]},
+    {q:'Is de lak door of het onderdeel kapot?',o:[['lak','Nee, alleen lak'],['kapot','Ja, lak door of onderdeel kapot'],['weet','Weet ik niet']]}
+  ];
+  var R={
+    spot:['Spot repair','Vaak tot 70% goedkoper en meestal binnen een dag klaar.'],
+    spuit:['Spuitwerk','Paneel herstellen en spuiten in de spuitcabine.'],
+    deel:['Onderdeel vervangen','Jij kiest: nieuw, gebruikt of gereviseerd.']
+  };
+  var stage=document.getElementById('stage'),back=document.getElementById('back'),
+      sq=document.querySelectorAll('.prog i'),a=[],step=0;
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function prog(){for(var i=0;i<sq.length;i++)sq[i].className=i<a.length?'on':'';}
+  function outcome(){
+    var small=a[1]!=='groot';
+    if(a[2]==='weet')return {weet:true,k:small?'spot':'spuit'};
+    if(a[2]==='lak')return {k:small?'spot':'spuit'};
+    return {k:(a[1]==='groot'||a[0]==='klein')?'deel':'spuit'};
+  }
+  function render(focus){
+    prog();back.hidden=step===0;
+    var h;
+    if(step<3){
+      var s=Q[step];
+      h='<div class="q"><p class="picker__step">Vraag '+(step+1)+' van 3</p><h3 tabindex="-1" id="qh">'+esc(s.q)+'</h3><div class="opts">';
+      s.o.forEach(function(o){h+='<button type="button" class="opt" data-v="'+o[0]+'" aria-pressed="'+(a[step]===o[0])+'">'+esc(o[1])+'</button>';});
+      h+='</div></div>';
+    }else{
+      var r=outcome(),t=R[r.k];
+      h='<div class="q result"><span class="result__tag">Indicatie — we bekijken het altijd eerst samen</span>'+
+        '<h3 tabindex="-1" id="qh">'+(r.weet?'Laat ons kijken':esc(t[0]))+'</h3>'+
+        '<p>'+(r.weet?'Waarschijnlijk <strong>'+esc(t[0].toLowerCase())+'</strong>: '+esc(t[1].charAt(0).toLowerCase()+t[1].slice(1)):esc(t[1]))+'</p>'+
+        '<div class="ctas"><a class="btn btn--solid" href="tel:+31765712626"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel</a>'+
+        '<a class="btn btn--line" href="mailto:info@autospuiterijplus.nl?subject=Schade%20aanvragen"><svg aria-hidden="true"><use href="#i-mail"/></svg>Mail je foto\'s</a></div>'+
+        '<button type="button" class="linkbtn" id="again">Opnieuw</button></div>';
+    }
+    stage.innerHTML=h;
+    if(focus){var f=document.getElementById('qh');if(f)f.focus();}
+  }
+  stage.addEventListener('click',function(e){
+    var b=e.target.closest('.opt');
+    if(b){a[step]=b.getAttribute('data-v');a.length=step+1;step++;render(true);return;}
+    if(e.target.id==='again'){a=[];step=0;render(true);}
+  });
+  back.addEventListener('click',function(){if(step>0){step--;a.length=step;render(true);}});
+  render(false);
+
+  var form=document.getElementById('form'),err=document.getElementById('form-err');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=form.naam.value.trim(),m=form.email.value.trim(),k=form.kenteken.value.trim(),v=form.vraag.value.trim();
+    if(!n||!v||!/^\S+@\S+\.\S+$/.test(m)){err.textContent='Vul je naam, een geldig e-mailadres en je vraag in.';err.hidden=false;return;}
+    err.hidden=true;
+    var body='Naam: '+n+'\nE-mail: '+m+(k?'\nKenteken: '+k:'')+'\n\n'+v;
+    window.location.href='mailto:info@autospuiterijplus.nl?subject='+encodeURIComponent('Vrijblijvend advies')+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

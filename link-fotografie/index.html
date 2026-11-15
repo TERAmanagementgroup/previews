@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="nl" class="no-js">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINK Fotografie — portretfotograaf in Breda en Utrecht</title>
+<meta name="description" content="Door coaching en aandacht ontspannen en echt op de foto. Zakelijke portretten, bedrijfsreportage, branding en LinkedIn-profielfoto's. Studio's in Breda en Utrecht.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#00607F;
+  --petrol-deep:#0B3F52;
+  --petrol-ink:#08313F;
+  --af-yellow:#F2C600;
+  --backdrop:#EEF0F0;
+  --paper:#F7F8F8;
+  --ink:#15191B;
+  --ink-2:#3B4448;
+  --rule:#C9CFD1;
+  --on-deep:#FFFFFF;
+  --on-deep-2:#C4D6DD;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --display:"League Spartan","Avenir Next","Futura",sans-serif;
+  --text:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(16px,4vw,56px);
+  --max:1240px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--backdrop);color:var(--ink);font:400 1.0625rem/1.6 var(--text);overflow-x:hidden}
+::selection{background:var(--af-yellow);color:var(--ink)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--petrol);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--af-yellow);outline-offset:3px;border-radius:2px}
+.on-deep :focus-visible{outline-color:var(--af-yellow)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,4.2vw,3.25rem)}
+h3{font-size:1.375rem;letter-spacing:-0.01em}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;z-index:20}
+.skip:focus{left:8px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:48px;padding:0 22px;font:600 1rem/1 var(--text);text-decoration:none;border:2px solid var(--petrol);border-radius:2px;cursor:pointer;transition:background-color .18s ease,color .18s ease,transform .12s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--petrol);color:#fff}
+.btn-primary:hover{background:var(--petrol-deep);border-color:var(--petrol-deep)}
+.btn-ghost{background:transparent;color:var(--petrol)}
+.btn-ghost:hover{background:var(--petrol);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.on-deep .btn-primary{background:var(--af-yellow);border-color:var(--af-yellow);color:var(--ink)}
+.on-deep .btn-primary:hover{background:#fff;border-color:#fff}
+
+/* ---------- AF point (signature) ---------- */
+.af{--s:44px;position:relative;display:inline-block;width:var(--s);height:var(--s);flex:none}
+.af::before,.af::after{content:"";position:absolute;inset:0;
+  background:
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) top left/30% 2px,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) top left/2px 30%,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) top right/30% 2px,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) top right/2px 30%,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) bottom left/30% 2px,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) bottom left/2px 30%,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) bottom right/30% 2px,
+   linear-gradient(var(--c,var(--af-yellow)),var(--c,var(--af-yellow))) bottom right/2px 30%;
+  background-repeat:no-repeat}
+.af::after{background:none;inset:38%;border-radius:1px;background-color:var(--c,var(--af-yellow));opacity:0;transition:opacity .2s ease}
+.af.is-locked::after{opacity:1}
+@keyframes af-lock{0%{transform:scale(1.7)}55%{transform:scale(.92)}100%{transform:scale(1)}}
+.af.lock-now{animation:af-lock .52s var(--ease-out) both}
+.af-sm{--s:18px}
+.af-sm::after{inset:34%;opacity:1}
+
+/* ---------- header ---------- */
+.top{position:relative;z-index:5;padding:18px 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:block;width:104px;color:var(--ink)}
+.logo svg{display:block;width:100%;height:auto;fill:currentColor}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a.navlink{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a.navlink:hover{color:var(--petrol)}
+.tel-mini{display:none}
+@media (max-width:860px){.nav a.navlink{display:none}}
+
+/* ---------- hero: in de zoeker ---------- */
+.hero{position:relative;padding:8px 0 0}
+.finder{position:relative;margin:0 auto;max-width:var(--max);padding:clamp(28px,4vw,52px) var(--gutter) 0}
+.corner{position:absolute;width:34px;height:34px;border-color:var(--ink);border-style:solid;border-width:0}
+.c-tl{top:0;left:calc(var(--gutter) - 14px);border-top-width:2px;border-left-width:2px}
+.c-tr{top:0;right:calc(var(--gutter) - 14px);border-top-width:2px;border-right-width:2px}
+.c-bl{bottom:0;left:calc(var(--gutter) - 14px);border-bottom-width:2px;border-left-width:2px}
+.c-br{bottom:0;right:calc(var(--gutter) - 14px);border-bottom-width:2px;border-right-width:2px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,4vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.75rem,6.4vw,5.75rem);font-weight:800;letter-spacing:-0.035em;line-height:.95}
+.hero h1 span{display:block}
+.hero .sub{font-size:clamp(1.0625rem,1.4vw,1.25rem);color:var(--ink-2);margin:22px 0 28px;max-width:34ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.shot{position:relative;margin:0;aspect-ratio:4/3;overflow:hidden;background:#d9d3cb}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot .af-hero{position:absolute;left:81%;top:47%;--s:clamp(52px,7vw,84px);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2)}
+.shot .grid3{position:absolute;inset:0;pointer-events:none;
+  background:
+   linear-gradient(90deg,transparent calc(33.333% - .5px),rgba(255,255,255,.35) calc(33.333% - .5px),rgba(255,255,255,.35) calc(33.333% + .5px),transparent calc(33.333% + .5px),transparent calc(66.666% - .5px),rgba(255,255,255,.35) calc(66.666% - .5px),rgba(255,255,255,.35) calc(66.666% + .5px),transparent calc(66.666% + .5px)),
+   linear-gradient(180deg,transparent calc(33.333% - .5px),rgba(255,255,255,.35) calc(33.333% - .5px),rgba(255,255,255,.35) calc(33.333% + .5px),transparent calc(33.333% + .5px),transparent calc(66.666% - .5px),rgba(255,255,255,.35) calc(66.666% - .5px),rgba(255,255,255,.35) calc(66.666% + .5px),transparent calc(66.666% + .5px))}
+.infoline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin-top:clamp(28px,4vw,44px);padding:14px 0 18px;border-top:1px solid var(--rule);font:600 .9375rem/1.3 var(--text);color:var(--ink)}
+.infoline .it{display:inline-flex;align-items:center;gap:9px}
+.infoline .stars{display:inline-flex;gap:2px}
+.infoline .stars svg{width:14px;height:14px;fill:var(--af-yellow)}
+.infoline .sep{width:1px;height:16px;background:var(--rule)}
+
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.045)}to{transform:none}}
+.hero h1,.hero .sub,.hero .cta-row{animation:rise .52s var(--ease-out) both}
+.hero .sub{animation-delay:.05s}
+.hero .cta-row{animation-delay:.09s}
+.shot img{animation:settle .6s var(--ease-out) both}
+@media (prefers-reduced-motion:reduce){
+  .hero h1,.hero .sub,.hero .cta-row,.shot img,.af.lock-now{animation:none}
+}
+
+/* ---------- section scaffolding ---------- */
+section{scroll-margin-top:12px}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,52px)}
+.sec-head p{color:var(--ink-2);margin:0;max-width:44ch}
+.strip{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:28px;padding-top:12px;border-top:1px solid var(--rule);font:600 .875rem/1.3 var(--text);color:var(--ink-2)}
+.strip b{color:var(--ink);font-weight:600}
+
+/* ---------- picker ---------- */
+.picker{background:var(--petrol-deep);color:var(--on-deep)}
+.picker h2{color:#fff}
+.picker .sec-head p{color:var(--on-deep-2)}
+.who{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 26px}
+.who-label{font-weight:600;color:var(--on-deep-2);margin-right:6px}
+.chip{min-height:44px;padding:0 18px;border:1.5px solid rgba(255,255,255,.4);background:transparent;color:#fff;font:600 .9375rem/1 var(--text);border-radius:999px;cursor:pointer;transition:background-color .18s ease,border-color .18s ease,color .18s ease}
+.chip:hover{border-color:#fff}
+.chip[aria-pressed="true"]{background:#fff;border-color:#fff;color:var(--petrol-deep)}
+.picker-body{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(20px,3vw,40px);align-items:stretch}
+.fgrid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(150px,1fr));gap:2px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);padding:0;list-style:none;margin:0}
+.fpoint{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:14px;width:100%;height:100%;min-height:150px;padding:20px 18px;background:var(--petrol-deep);color:#fff;border:0;text-align:left;cursor:pointer;font:inherit;transition:background-color .2s ease,opacity .2s ease}
+.fpoint .af{--s:40px;--c:rgba(255,255,255,.55);transition:--c .2s}
+.fpoint .lbl{font:700 1.1875rem/1.1 var(--display);letter-spacing:-0.01em;filter:blur(.8px);opacity:1;transition:filter .22s var(--ease-out),opacity .22s ease}
+.fpoint .meta{font-size:.8125rem;font-weight:600;color:var(--on-deep-2)}
+.fpoint:hover{background:#0F4A60}
+.fpoint:hover .lbl{filter:blur(.4px)}
+.fpoint[aria-pressed="true"]{background:var(--petrol)}
+.fpoint[aria-pressed="true"] .af{--c:var(--af-yellow)}
+.fpoint[aria-pressed="true"] .lbl{filter:none;opacity:1}
+.fpoint[aria-pressed="true"] .meta{color:#E3EEF2}
+.fpoint.dim{opacity:.62}
+.fpoint.dim .lbl{filter:none}
+.fpoint:focus-visible{outline-offset:-4px}
+.panel{background:var(--paper);color:var(--ink);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;position:relative}
+.panel .corner{border-color:var(--petrol);width:22px;height:22px}
+.panel .c-tl{left:10px;top:10px}.panel .c-tr{right:10px;top:10px}.panel .c-bl{left:10px;bottom:10px}.panel .c-br{right:10px;bottom:10px}
+.sess{display:flex;flex-direction:column;height:100%}
+.sess + .sess{margin-top:32px;padding-top:32px;border-top:1px solid var(--rule)}
+.js .sess + .sess{margin-top:0;padding-top:0;border-top:0}
+.sess h3{font-size:clamp(1.5rem,2.2vw,1.875rem);margin-bottom:14px}
+.sess dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0 0 20px;font-size:.9375rem}
+.sess dt{font-weight:600;color:var(--ink-2)}
+.sess dd{margin:0}
+.sess p{color:var(--ink)}
+.sess .btn{margin-top:auto;align-self:flex-start}
+.sess.enter{animation:rise .32s var(--ease-out) both}
+@media (prefers-reduced-motion:reduce){.sess.enter{animation:none}}
+.pick-hint{margin:14px 0 0;font-size:.875rem;color:var(--on-deep-2)}
+
+/* ---------- visie ---------- */
+.visie-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,5vw,80px);align-items:start}
+.visie-text{columns:2 300px;column-gap:40px}
+.visie-text p{break-inside:avoid}
+.pull{font:700 clamp(1.625rem,3vw,2.375rem)/1.15 var(--display);letter-spacing:-0.02em;margin:clamp(36px,5vw,56px) 0 0;padding:0;max-width:24ch;text-wrap:balance;position:relative;padding-left:46px}
+.pull .af{position:absolute;left:0;top:.18em;--s:28px;--c:var(--petrol)}
+.pull .af::after{opacity:1}
+.illus{margin:0;position:relative}
+.illus img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.illus figcaption{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:.875rem;color:var(--ink-2)}
+.tag{display:inline-block;padding:3px 8px;background:var(--ink);color:#fff;font:600 .75rem/1.3 var(--text);letter-spacing:.04em;text-transform:uppercase}
+.illus .tag-on{position:absolute;left:12px;top:12px}
+
+/* ---------- reportage ---------- */
+.reportage{background:var(--paper)}
+.wide{position:relative;margin:0}
+.wide img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 40%}
+.rep-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,5vw,80px);margin-top:clamp(28px,4vw,48px);align-items:start}
+.rep-points{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.rep-points li{display:grid;grid-template-columns:28px 1fr;gap:14px;align-items:start}
+.rep-points .af{margin-top:4px;--c:var(--petrol)}
+
+/* ---------- team ---------- */
+.team-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:start}
+.team-photo{margin:0;position:relative}
+.team-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:60% 30%}
+.role{font-weight:600;color:var(--petrol);margin:8px 0 18px}
+blockquote{margin:24px 0;padding:0;font:700 1.375rem/1.3 var(--display);letter-spacing:-0.01em;max-width:30ch}
+.note{font-size:.875rem;color:var(--ink-2)}
+.crew{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;margin-top:clamp(36px,5vw,56px);background:var(--rule);border:1px solid var(--rule)}
+.crew article{background:var(--backdrop);padding:clamp(22px,3vw,32px);display:grid;grid-template-columns:auto 1fr;gap:4px 18px}
+.crew .mono{grid-row:span 3;width:52px;height:52px;display:grid;place-items:center;background:var(--petrol-deep);color:#fff;font:800 1.125rem/1 var(--display);letter-spacing:.02em}
+.crew h3{font-size:1.25rem}
+.crew .role{margin:0 0 6px;font-size:.9375rem}
+.crew p{margin:0;font-size:.975rem}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--petrol-deep);color:#fff}
+.rev-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:center}
+.score{font:800 clamp(6rem,14vw,10.5rem)/.85 var(--display);letter-spacing:-0.04em}
+.score-sub{display:flex;align-items:center;gap:10px;margin-top:16px;font-weight:600;color:var(--on-deep-2)}
+.score-sub .stars{display:inline-flex;gap:3px}
+.score-sub svg{width:18px;height:18px;fill:var(--af-yellow)}
+.themes{list-style:none;margin:0;padding:0}
+.themes li{display:grid;grid-template-columns:30px 1fr;gap:16px;align-items:start;padding:20px 0;border-top:1px solid rgba(255,255,255,.18);font:700 clamp(1.1875rem,1.8vw,1.5rem)/1.25 var(--display);letter-spacing:-0.01em}
+.themes li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
+.themes .af{--s:24px;margin-top:2px}
+.themes .af.is-locked::after{opacity:1}
+.rev-foot{margin-top:22px;font-size:.875rem;color:var(--on-deep-2)}
+.reviews a{color:#fff}
+
+/* ---------- studios + contact ---------- */
+.studios-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(120px,.7fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:center}
+.studio h3{font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:10px}
+.studio address{font-style:normal;font-size:1.0625rem;line-height:1.5;margin-bottom:12px}
+.route svg{width:100%;height:auto;display:block;overflow:visible}
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;margin-top:clamp(40px,5vw,64px);background:var(--rule);border:1px solid var(--rule)}
+.contact-grid > div{background:var(--paper);padding:clamp(22px,3vw,32px)}
+.contact-grid h3{font-size:1.125rem;margin-bottom:12px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.975rem}
+.hours td{padding:3px 0}
+.hours td:last-child{text-align:right}
+.hours tr.closed td{color:var(--ink-2)}
+.big-link{display:block;font:700 1.375rem/1.3 var(--display);color:var(--ink);text-decoration:none;margin-bottom:6px;word-break:break-word}
+.big-link:hover{color:var(--petrol)}
+.final{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px);padding:clamp(28px,4vw,44px);background:var(--petrol);color:#fff}
+.final h2{color:#fff;font-size:clamp(1.75rem,3.4vw,2.5rem);max-width:20ch}
+.final .btn-primary{background:#fff;border-color:#fff;color:var(--petrol-deep)}
+.final .btn-primary:hover{background:var(--af-yellow);border-color:var(--af-yellow)}
+
+footer{background:var(--petrol-ink);color:var(--on-deep-2);padding:36px 0 44px;font-size:.875rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+footer .logo{color:#fff;width:84px}
+footer a{color:#fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid,.picker-body,.visie-grid,.rep-grid,.team-grid,.rev-grid{grid-template-columns:1fr}
+  .studios-grid{grid-template-columns:1fr}
+  .route{max-width:220px;transform:rotate(90deg);margin:-10px auto}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .hero h1{font-size:clamp(2.6rem,12vw,3.4rem)}
+  .fgrid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none}
+  .fpoint{min-height:128px;padding:16px 14px}
+  .fpoint .lbl{font-size:1.0625rem}
+  .crew{grid-template-columns:1fr}
+  .wide img{aspect-ratio:4/3}
+  .infoline .sep{display:none}
+  .btn{width:100%;justify-content:center}
+  .cta-row{flex-direction:column}
+  .nav .btn{width:auto;padding:0 14px}
+  .final .btn{width:100%}
+  .route{max-width:160px;margin:-30px auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sessies">Naar de fotosessies</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="LINK Fotografie, naar boven">
+      <svg viewBox="0 0 198.3 103.4" aria-hidden="true"><path d="M0,0h19.2v58.3h22.2v16.8H0V0z"/><path d="M44.8,0H64v75.1H44.8V0z"/><path d="M113.3,45.8V0h18v75.1h-16.6L85.9,29.8v45.3h-18V0h16.5L113.3,45.8z"/><path d="M135,0h19.2v33.8L175.6,0h20.1L171,37.4l27.3,37.8h-23.3l-20.7-32.5v32.5H135V0z"/><path d="M0,80.5h11.4v2.2H2.5v7.9h8.9v2.3H2.5V103H0V80.5z"/><path d="M15.8,91.8c0-6.9,5.4-11.7,11.7-11.7c6.6,0,11.7,5,11.7,11.6c0,6.6-5.1,11.6-11.7,11.6C20.9,103.4,15.8,98.3,15.8,91.8L15.8,91.8z M18.4,91.8c0,5.3,4,9.4,9.2,9.4c5.3,0,9.2-4.3,9.2-9.4c0-5.1-3.9-9.4-9.2-9.4C22.3,82.4,18.4,86.6,18.4,91.8L18.4,91.8z"/><path d="M46.8,82.8h-5.5v-2.2h13.6v2.2h-5.6V103h-2.5V82.8z"/><path d="M56.9,91.8c0-6.9,5.4-11.7,11.7-11.7c6.6,0,11.7,5,11.7,11.6c0,6.6-5.1,11.6-11.7,11.6C62,103.4,56.9,98.3,56.9,91.8L56.9,91.8z M59.4,91.8c0,5.3,4,9.4,9.2,9.4c5.3,0,9.2-4.3,9.2-9.4c0-5.1-3.9-9.4-9.2-9.4C63.3,82.4,59.4,86.6,59.4,91.8L59.4,91.8z"/><path d="M104.3,86.4c-0.7-1-1.5-1.8-2.5-2.4c-1.5-1-3.2-1.6-5.2-1.6c-4.9,0-9.2,3.8-9.2,9.4c0,5.7,4.3,9.5,9.2,9.5c2.4,0,4.5-0.8,6-2c1.6-1.2,2.7-2.9,3-4.7H94.5v-2.1h14.1c0,1.3-0.3,2.9-1,4.3c-1.9,4.2-6.4,6.7-11,6.7c-6.6,0-11.8-5-11.8-11.7c0-6.7,5.3-11.6,11.8-11.6c4.6,0,8.8,2.6,10.5,6.2H104.3z"/><path d="M113.7,80.5h5.9c3.5,0,5.2,0.4,6.3,1.2c1.8,1.1,3.1,3.5,3.1,6c0,1.5-0.4,3.1-1.3,4.4c-1.3,1.8-2.9,2.2-5,2.5l5.6,8.4h-2.7l-6.4-9.8h0.7c1.6,0,3.8,0,5-1.2c1.2-1.2,1.7-2.5,1.7-4.1c0-1.7-0.8-3.4-2.2-4.3c-1.1-0.7-2.5-0.8-4.6-0.8h-3.5V103h-2.5V80.5z"/><path d="M135.5,103h-2.7l9.4-22.5h2.4l9.3,22.5h-2.7l-2.6-6.3h-10.5L135.5,103z M143.3,83.4l-4.5,11.3h9L143.3,83.4z"/><path d="M158.8,80.5h11.4v2.2h-8.9v7.9h8.9v2.3h-8.9V103h-2.5V80.5z"/><path d="M176.3,80.5h2.5V103h-2.5V80.5z"/><path d="M185.8,80.5h12.5v2.2h-10v7.8h9.9v2.2h-9.9v8h10v2.2h-12.5V80.5z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a class="navlink" href="#sessies">Fotosessies</a>
+      <a class="navlink" href="#visie">Visie</a>
+      <a class="navlink" href="#team">Team</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a class="btn btn-ghost" href="tel:+31765212860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- 1 · In de zoeker -->
+<section class="hero" aria-labelledby="h1">
+  <div class="finder">
+    <span class="corner c-tl" aria-hidden="true"></span><span class="corner c-tr" aria-hidden="true"></span>
+    <span class="corner c-bl" aria-hidden="true"></span><span class="corner c-br" aria-hidden="true"></span>
+    <div class="hero-grid">
+      <div>
+        <h1 id="h1"><span>Iedereen is</span> <span>fotogeniek.</span></h1>
+        <p class="sub">Door coaching en aandacht ontspannen en echt op de foto. Studio's in Breda en Utrecht.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#sessies">Kies je fotosessie</a>
+          <a class="btn btn-ghost" href="tel:+31765212860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel 076 521 28 60</a>
+        </div>
+      </div>
+      <figure class="shot">
+        <img src="images/coaching-studio.jpg" width="1200" height="900" alt="Een fotograaf van LINK Fotografie geeft met zijn hand aanwijzingen aan een klant in de studio, de klant van achteren gezien">
+        <span class="grid3" aria-hidden="true"></span>
+        <span class="af af-hero" aria-hidden="true" data-lock></span>
+      </figure>
+    </div>
+    <div class="infoline" aria-label="Kort over LINK Fotografie">
+      <span class="it"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg></span>4,9 op Google</span>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="it">ruim 180 reviews</span>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="it">meer dan 200 bedrijven gingen je voor</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · Focus-grid picker -->
+<section class="picker sec on-deep" id="sessies" aria-labelledby="h-sessies">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-sessies">Waar stel je op scherp?</h2>
+      <p>Zes fotosessies. Kies voor wie je komt en tik een scherpstelpunt aan.</p>
+    </div>
+    <div class="who" role="group" aria-label="Voor wie?" hidden data-js>
+      <span class="who-label">Voor wie?</span>
+      <button type="button" class="chip" aria-pressed="true" data-who="alle">Iedereen</button>
+      <button type="button" class="chip" aria-pressed="false" data-who="bedrijven">Bedrijven</button>
+      <button type="button" class="chip" aria-pressed="false" data-who="ondernemers">Ondernemers</button>
+      <button type="button" class="chip" aria-pressed="false" data-who="professionals">Professionals</button>
+    </div>
+    <div class="picker-body">
+      <div hidden data-js>
+        <ul class="fgrid" role="list" aria-label="Fotosessies">
+          <li><button type="button" class="fpoint" data-s="portretten" data-who="bedrijven" aria-pressed="true" aria-controls="s-portretten"><span class="af" aria-hidden="true"></span><span><span class="lbl">Zakelijke portretten</span><br><span class="meta">op locatie · bedrijven</span></span></button></li>
+          <li><button type="button" class="fpoint" data-s="reportage" data-who="bedrijven" aria-pressed="false" aria-controls="s-reportage"><span class="af" aria-hidden="true"></span><span><span class="lbl">Bedrijfsreportage</span><br><span class="meta">op locatie · bedrijven</span></span></button></li>
+          <li><button type="button" class="fpoint" data-s="powersessie" data-who="ondernemers" aria-pressed="false" aria-controls="s-powersessie"><span class="af" aria-hidden="true"></span><span><span class="lbl">Branding powersessie</span><br><span class="meta">locatie geregeld · ondernemers</span></span></button></li>
+          <li><button type="button" class="fpoint" data-s="personal" data-who="ondernemers" aria-pressed="false" aria-controls="s-personal"><span class="af" aria-hidden="true"></span><span><span class="lbl">Personal branding shoot</span><br><span class="meta">ondernemers</span></span></button></li>
+          <li><button type="button" class="fpoint" data-s="linkedin" data-who="professionals" aria-pressed="false" aria-controls="s-linkedin"><span class="af" aria-hidden="true"></span><span><span class="lbl">LinkedIn profielfotodag</span><br><span class="meta">studio · professionals</span></span></button></li>
+          <li><button type="button" class="fpoint" data-s="charisma" data-who="professionals" aria-pressed="false" aria-controls="s-charisma"><span class="af" aria-hidden="true"></span><span><span class="lbl">Charisma portretsessie</span><br><span class="meta">studio · professionals</span></span></button></li>
+        </ul>
+        <p class="pick-hint">Pijltjestoetsen bewegen door het raster.</p>
+      </div>
+      <div class="panel" aria-live="polite">
+        <span class="corner c-tl" aria-hidden="true"></span><span class="corner c-tr" aria-hidden="true"></span>
+        <span class="corner c-bl" aria-hidden="true"></span><span class="corner c-br" aria-hidden="true"></span>
+        <article class="sess" id="s-portretten">
+          <h3>Zakelijke portretten</h3>
+          <dl><dt>Waar</dt><dd>Op locatie</dd><dt>Voor</dt><dd>Bedrijven: medewerkers, directie of management</dd></dl>
+          <p>Portretfoto's die je bedrijf persoonlijk maken. Voor bedrijven die geloven in de kracht van authenticiteit en persoonlijke aandacht.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Zakelijke%20portretten">Reserveer deze sessie</a>
+        </article>
+        <article class="sess" id="s-reportage">
+          <h3>Bedrijfsreportage</h3>
+          <dl><dt>Waar</dt><dd>Op locatie</dd><dt>Voor</dt><dd>Bedrijven</dd></dl>
+          <p>Je bedrijf professioneel in beeld, met de kwaliteit van stockfoto's. Maar dan geloofwaardig en echt. In één dag je hele website gevuld.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Bedrijfsreportage">Reserveer deze sessie</a>
+        </article>
+        <article class="sess" id="s-powersessie">
+          <h3>Branding powersessie</h3>
+          <dl><dt>Waar</dt><dd>Een fotogenieke locatie, voor je geregeld</dd><dt>Voor</dt><dd>Ondernemers</dd></dl>
+          <p>Alles is geregeld: een fotogenieke locatie, figuranten en professionele fotografen.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Branding%20powersessie">Reserveer deze sessie</a>
+        </article>
+        <article class="sess" id="s-personal">
+          <h3>Personal branding shoot</h3>
+          <dl><dt>Waar</dt><dd>In overleg</dd><dt>Voor</dt><dd>Ondernemers</dd></dl>
+          <p>Unieke, persoonlijke foto's voor ondernemers die naar buiten willen treden met hun website en social media.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Personal%20branding%20shoot">Reserveer deze sessie</a>
+        </article>
+        <article class="sess" id="s-linkedin">
+          <h3>LinkedIn profielfotodag</h3>
+          <dl><dt>Waar</dt><dd>Studio Breda of Utrecht</dd><dt>Voor</dt><dd>Professionals</dd></dl>
+          <p>Een korte fotoshoot voor een sterke profielfoto. Voor je LinkedIn, je cv of je boek.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20LinkedIn%20profielfotodag">Reserveer deze sessie</a>
+        </article>
+        <article class="sess" id="s-charisma">
+          <h3>Charisma portretsessie</h3>
+          <dl><dt>Waar</dt><dd>Studio Breda of Utrecht</dd><dt>Voor</dt><dd>Professionals</dd></dl>
+          <p>Jouw karakter vertaald naar een charismatisch portret, in de fotostudio in Breda of Utrecht.</p>
+          <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Charisma%20portretsessie">Reserveer deze sessie</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Visie -->
+<section class="sec" id="visie" aria-labelledby="h-visie">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-visie">Eerst ontspannen, dan de foto.</h2></div>
+    <div class="visie-grid">
+      <div>
+        <div class="visie-text">
+          <p>Wij geloven dat iedereen fotogeniek kan zijn. Daarvoor moeten vaak eerst een paar obstakels weg, zoals onzekerheid of spanning.</p>
+          <p>Met aandacht en coaching leer je die onzekerheid te overwinnen en roep je charisma op. We nemen de tijd om je te leren kennen, want alleen dan krijg jij de beste foto's.</p>
+          <p>Echte schoonheid zit in je karakter. Dát willen we vastleggen in een foto.</p>
+        </div>
+        <p class="pull"><span class="af" aria-hidden="true"></span>“We willen de wereld een stukje mooier maken door uiterlijk minder belangrijk te maken.”</p>
+      </div>
+      <figure class="illus">
+        <img src="images/studio-illustratie.jpg" width="1376" height="768" loading="lazy" alt="Illustratie, geen foto van LINK Fotografie: een lege fotostudio met licht en een kruk">
+        <figcaption><span class="tag">Illustratie</span> Een lege studio, klaar voor jou.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Bedrijfsreportage -->
+<section class="sec reportage" aria-labelledby="h-rep">
+  <div class="wrap">
+    <figure class="wide">
+      <img src="images/bedrijfsreportage-lasser.jpg" width="1600" height="1065" loading="lazy" alt="Bedrijfsreportage door LINK Fotografie: een lasser aan het werk, zijn gezicht zichtbaar achter het lasmasker">
+    </figure>
+    <div class="rep-grid">
+      <h2 id="h-rep">Bedrijfsreportage in beeld.</h2>
+      <div>
+        <ul class="rep-points">
+          <li><span class="af af-sm" aria-hidden="true"></span><span>In één dag je hele website gevuld met foto's van stockfoto-kwaliteit.</span></li>
+          <li><span class="af af-sm" aria-hidden="true"></span><span>Maar dan geloofwaardig en echt.</span></li>
+          <li><span class="af af-sm" aria-hidden="true"></span><span>Meer dan 200 bedrijven en duizenden mensen gingen je voor.</span></li>
+        </ul>
+        <div class="strip"><span><b>Waar</b> op locatie</span><span><b>Voor</b> bedrijven</span></div>
+        <p style="margin-top:22px"><a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%3A%20Bedrijfsreportage">Vraag een reportage aan</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Team -->
+<section class="sec" id="team" aria-labelledby="h-team">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-team">Het team.</h2></div>
+    <div class="team-grid">
+      <figure class="team-photo">
+        <img src="images/wijnand-geuze.jpg" width="1400" height="1050" loading="lazy" alt="Wijnand Geuze lachend achter zijn camera tijdens een fotoshoot op locatie">
+      </figure>
+      <div>
+        <h3 style="font-size:clamp(1.75rem,3vw,2.375rem)">Wijnand Geuze</h3>
+        <p class="role">Fotograaf, coach en spreker</p>
+        <p>Wijnand is gecertificeerd NLP-coach (neuro-linguïstisch programmeren: technieken voor communicatie en gedrag). Hij combineert dat met zijn ervaring als fotograaf: je krijgt een goed gevoel en foto's die je carrière ondersteunen.</p>
+        <p>Hij fotografeert karakters in plaats van ‘mooie plaatjes’ en geeft workshops en trainingen over de eerste indruk en charisma. Hij sprak bij TEDx Breda.</p>
+        <blockquote>“Als je charisma uitstraalt op een foto dan laat je de kracht van jouw persoonlijkheid zien.”</blockquote>
+      </div>
+    </div>
+    <div class="crew">
+      <article>
+        <span class="mono" aria-hidden="true">RJR</span>
+        <h3>Roland J. Reinders</h3>
+        <p class="role">Portret- en brandingfotograaf</p>
+        <p>Volgde een 4-jarige opleiding aan de Koninklijke Academie voor Beeldende Kunst en fotografeerde in opdracht voor bekende tijdschriften.</p>
+      </article>
+      <article>
+        <span class="mono" aria-hidden="true">MS</span>
+        <h3>Marijn Smid</h3>
+        <p class="role">Business- en HR-manager en trainer</p>
+        <p>Denkt met je mee over portret- of brandingfotografie alsof het haar eigen bedrijf is.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Reviews -->
+<section class="sec reviews on-deep" aria-labelledby="h-rev">
+  <div class="wrap">
+    <div class="rev-grid">
+      <div>
+        <h2 id="h-rev" class="score" aria-label="4,9 van 5 op Google">4,9</h2>
+        <div class="score-sub"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8 4.6 17.7l1.2-5.9L1.4 7.7l6-.7z"/></svg></span>ruim 180 Google-reviews</div>
+      </div>
+      <div>
+        <p style="color:var(--on-deep-2);margin-bottom:8px;font-weight:600">Wat klanten steeds weer noemen</p>
+        <ul class="themes">
+          <li><span class="af" aria-hidden="true" data-lock></span><span>Je bent zo snel op je gemak dat je de camera vergeet.</span></li>
+          <li><span class="af" aria-hidden="true" data-lock></span><span>Precieze aanwijzingen over hoe je in de lens kijkt.</span></li>
+          <li><span class="af" aria-hidden="true" data-lock></span><span>Veel kennis van lichaamstaal.</span></li>
+          <li><span class="af" aria-hidden="true" data-lock></span><span>Ook als je totaal geen fotomodel bent.</span></li>
+        </ul>
+        <p class="rev-foot">Samengevat uit de reviews op linkfotografie.nl. Alle reviews staan op <a href="https://www.google.com/maps/place/LINK+Fotografie/data=!4m7!3m6!1s0x47c69f9ca7fb9acb:0x62e9b9b03df98647!8m2!3d51.5945095!4d4.7896775!16s%2Fg%2F1v0lj_8c!19sChIJy5r7p5yfxkcRR4b5PbC56WI?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener">Google Maps</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Studios + contact -->
+<section class="sec" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-contact">Twee studio's.</h2><p>In Breda en in Utrecht. Of we komen naar je toe, op locatie.</p></div>
+    <div class="studios-grid">
+      <div class="studio">
+        <h3>Breda</h3>
+        <address>Ceresstraat 35<br>4811 CB Breda</address>
+        <a href="https://www.google.com/maps/place/LINK+Fotografie/data=!4m7!3m6!1s0x47c69f9ca7fb9acb:0x62e9b9b03df98647!8m2!3d51.5945095!4d4.7896775!16s%2Fg%2F1v0lj_8c!19sChIJy5r7p5yfxkcRR4b5PbC56WI?authuser=0&amp;hl=nl&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener">Route in Google Maps</a>
+      </div>
+      <div class="route" aria-hidden="true">
+        <svg viewBox="0 0 240 80">
+          <line x1="20" y1="40" x2="220" y2="40" stroke="var(--rule)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+          <g transform="translate(20 40)"><rect x="-12" y="-12" width="24" height="24" fill="none" stroke="var(--petrol)" stroke-width="2"/><rect x="-4" y="-4" width="8" height="8" fill="var(--af-yellow)"/></g>
+          <g transform="translate(220 40)"><rect x="-12" y="-12" width="24" height="24" fill="none" stroke="var(--petrol)" stroke-width="2"/><rect x="-4" y="-4" width="8" height="8" fill="var(--af-yellow)"/></g>
+        </svg>
+      </div>
+      <div class="studio">
+        <h3>Utrecht</h3>
+        <address>Computerweg 22<br>Utrecht</address>
+        <span class="note">Fotostudio</span>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h3>Bellen of mailen</h3>
+        <a class="big-link" href="tel:+31765212860">076 521 28 60</a>
+        <a class="big-link" href="mailto:info@linkfotografie.nl">info@linkfotografie.nl</a>
+      </div>
+      <div>
+        <h3>Openingstijden Breda</h3>
+        <table class="hours">
+          <tbody>
+            <tr><td>Maandag</td><td>13:00–18:00</td></tr>
+            <tr><td>Dinsdag</td><td>09:00–18:00</td></tr>
+            <tr><td>Woensdag</td><td>09:00–18:00</td></tr>
+            <tr><td>Donderdag</td><td>09:00–18:00</td></tr>
+            <tr><td>Vrijdag</td><td>09:00–18:00</td></tr>
+            <tr class="closed"><td>Zaterdag</td><td>Gesloten</td></tr>
+            <tr class="closed"><td>Zondag</td><td>Gesloten</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Op locatie</h3>
+        <p style="margin:0">Zakelijke portretten en bedrijfsreportages maken we op locatie. Voor de LinkedIn profielfotodag en de charisma portretsessie kom je naar de studio in Breda of Utrecht.</p>
+      </div>
+    </div>
+
+    <div class="final">
+      <h2>Klaar om op scherp te staan?</h2>
+      <a class="btn btn-primary" href="mailto:info@linkfotografie.nl?subject=Reservering%20fotosessie">Reserveer je sessie</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 198.3 75.1"><path d="M0,0h19.2v58.3h22.2v16.8H0V0z"/><path d="M44.8,0H64v75.1H44.8V0z"/><path d="M113.3,45.8V0h18v75.1h-16.6L85.9,29.8v45.3h-18V0h16.5L113.3,45.8z"/><path d="M135,0h19.2v33.8L175.6,0h20.1L171,37.4l27.3,37.8h-23.3l-20.7-32.5v32.5H135V0z"/></svg></span>
+    <span>LINK Fotografie · Ceresstraat 35, 4811 CB Breda · <a href="tel:+31765212860">076 521 28 60</a> · <a href="mailto:info@linkfotografie.nl">info@linkfotografie.nl</a></span>
+    <span>© 2026 LINK Fotografie</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.remove('no-js');root.classList.add('js');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function lock(el){
+    el.classList.add('is-locked');
+    if(reduce) return;
+    el.classList.remove('lock-now'); void el.offsetWidth; el.classList.add('lock-now');
+  }
+
+  /* hero AF point locks right after first paint (it is visible from the start) */
+  var heroAf=document.querySelector('.af-hero');
+  if(heroAf){ requestAnimationFrame(function(){ lock(heroAf); }); }
+
+  /* review bullets lock once when scrolled into view */
+  var bullets=document.querySelectorAll('.themes .af');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          var i=Array.prototype.indexOf.call(bullets,e.target);
+          setTimeout(function(){ lock(e.target); }, reduce?0:i*70);
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.6});
+    bullets.forEach(function(b){ io.observe(b); });
+  } else { bullets.forEach(function(b){ b.classList.add('is-locked'); }); }
+
+  /* focus-grid picker */
+  document.querySelectorAll('[data-js]').forEach(function(n){ n.hidden=false; });
+  var points=Array.prototype.slice.call(document.querySelectorAll('.fpoint'));
+  var sessions=document.querySelectorAll('.sess');
+  var chips=document.querySelectorAll('.chip');
+
+  function select(btn, focusIt){
+    points.forEach(function(p){
+      var on=p===btn;
+      p.setAttribute('aria-pressed', on?'true':'false');
+      p.tabIndex=on?0:-1;
+      var af=p.querySelector('.af');
+      if(on){ lock(af); } else { af.classList.remove('is-locked','lock-now'); }
+    });
+    var id='s-'+btn.dataset.s;
+    sessions.forEach(function(s){
+      var show=s.id===id;
+      s.hidden=!show;
+      if(show && !reduce){ s.classList.remove('enter'); void s.offsetWidth; s.classList.add('enter'); }
+    });
+    if(focusIt) btn.focus();
+  }
+  points.forEach(function(p,i){
+    p.addEventListener('click',function(){ select(p,false); });
+    p.addEventListener('keydown',function(e){
+      var cols=window.matchMedia('(max-width:640px)').matches?2:3, n=null;
+      if(e.key==='ArrowRight') n=i+1;
+      else if(e.key==='ArrowLeft') n=i-1;
+      else if(e.key==='ArrowDown') n=i+cols;
+      else if(e.key==='ArrowUp') n=i-cols;
+      else if(e.key==='Home') n=0;
+      else if(e.key==='End') n=points.length-1;
+      if(n===null) return;
+      e.preventDefault();
+      n=(n+points.length)%points.length;
+      select(points[n],true);
+    });
+  });
+
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', x===c?'true':'false'); });
+      var who=c.dataset.who, first=null;
+      points.forEach(function(p){
+        var fit= who==='alle' || p.dataset.who===who;
+        p.classList.toggle('dim', !fit);
+        if(fit && !first) first=p;
+      });
+      var cur=points.filter(function(p){ return p.getAttribute('aria-pressed')==='true'; })[0];
+      if(first && (!cur || cur.classList.contains('dim'))) select(first,false);
+    });
+  });
+
+  select(points[0],false);
+})();
+</script>
+</body>
+</html>

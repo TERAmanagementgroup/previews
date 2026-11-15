@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garage Mega Breda · onderhoud, reparatie en diagnose</title>
+<meta name="description" content="Garage Mega Breda, Smalle Reep 9A. Onderhoud, reparatie, remmen, accu en storing uitlezen, vaak terwijl je wacht. Bel 076 571 6407.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2E6DB4; --blue-deep:#24599A; --salmon:#EE9A6E; --white:#FFFFFF;
+  --concrete:#F1F1EE; --silver:#D9DCDF; --lift:#1597D3; --ink:#18212B; --ink-2:#3C4652;
+  --red:#D7262E; --amber:#F2A900;
+  --ease-out:cubic-bezier(0.23,1,0.32,1); --ease-io:cubic-bezier(0.77,0,0.175,1);
+  --display:"Bricolage Grotesque", "Libre Franklin", sans-serif;
+  --text:"Libre Franklin", system-ui, sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--blue) var(--silver)}
+body{margin:0;background:var(--concrete);color:var(--ink);font:400 17px/1.55 var(--text);overflow-x:hidden}
+@media (min-width:900px){body{font-size:18px}}
+::selection{background:var(--salmon);color:var(--ink)}
+img{max-width:100%;display:block}
+a{color:var(--blue-deep);text-underline-offset:3px;text-decoration-thickness:1.5px}
+:focus-visible{outline:3px solid var(--lift);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance;letter-spacing:-0.015em}
+p{margin:0 0 1em;text-wrap:pretty}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- signature: corrugated cladding + fascia ---------- */
+.cladding{height:22px;background:
+  repeating-linear-gradient(180deg,#EEF0F2 0 3px,#C7CBCF 3px 5px,#E3E6E9 5px 8px);
+  border-bottom:1px solid #B9BEC3}
+.fascia{background:var(--blue);color:#fff;position:relative;
+  background-image:linear-gradient(180deg,rgba(255,255,255,.07),rgba(0,0,0,.08));
+  border-bottom:4px solid var(--blue-deep)}
+.fascia .wrap{display:flex;align-items:center;gap:18px;min-height:76px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.logo{display:flex;align-items:baseline;gap:12px;color:#fff;text-decoration:none;margin-right:auto}
+.mega{font-family:var(--display);font-weight:800;font-stretch:76%;font-variation-settings:"opsz" 96;
+  font-size:clamp(40px,7vw,58px);line-height:.86;color:var(--salmon);letter-spacing:-0.02em;
+  display:inline-flex}
+.mega span{display:inline-block}
+.mega span:nth-child(1){transform:rotate(-2deg) translateY(1px)}
+.mega span:nth-child(2){transform:rotate(1.5deg)}
+.mega span:nth-child(3){transform:rotate(-1deg) translateY(2px)}
+.mega span:nth-child(4){transform:rotate(2deg)}
+.logo-name{font-family:var(--display);font-weight:700;font-stretch:85%;font-size:clamp(17px,2.2vw,22px);
+  text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.fascia-hours{font-size:15px;color:#E4EEF9;line-height:1.3}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 17px/1 var(--text);text-decoration:none;
+  border-radius:10px;padding:15px 20px;min-height:52px;border:0;cursor:pointer;
+  transition:transform 140ms var(--ease-out),background-color 160ms ease,box-shadow 160ms ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-call{background:var(--blue);color:#fff;box-shadow:0 2px 0 var(--blue-deep),0 8px 18px -8px rgba(36,89,154,.6)}
+.fascia .btn-call{background:#fff;color:var(--blue-deep);box-shadow:0 2px 0 #B9C7D8,0 8px 18px -10px rgba(0,0,0,.5)}
+@media (hover:hover) and (pointer:fine){
+  .btn-call:hover{background:var(--blue-deep)}
+  .fascia .btn-call:hover{background:#EAF2FB}
+}
+@media (max-width:640px){
+  .fascia .wrap{min-height:64px;gap:10px}
+  .fascia-hours{display:none}
+  .fascia .btn-call{padding:12px 14px;min-height:46px;font-size:15px}
+  .fascia .btn-call .long{display:none}
+  .logo-name{font-size:13px;white-space:normal;line-height:1.1;max-width:7em}
+  .logo{gap:8px}
+}
+@media (min-width:641px){.fascia .btn-call .short{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(28px,4vw,52px) 0 clamp(40px,5vw,64px);position:relative}
+.hero-grid{display:grid;gap:clamp(24px,4vw,56px);align-items:center}
+@media (min-width:1000px){.hero-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.hero h1{font-size:clamp(40px,6.4vw,82px);font-weight:800;font-stretch:88%;letter-spacing:-0.03em;line-height:.98;
+  animation:rise 520ms var(--ease-out) both}
+.hero-lede{font-size:clamp(18px,1.6vw,21px);max-width:34ch;margin:20px 0 26px;color:var(--ink-2);
+  animation:rise 520ms 60ms var(--ease-out) both}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;animation:rise 520ms 110ms var(--ease-out) both}
+.rating{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:17px;height:17px}
+.hero-facts{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:8px;font-size:16px;color:var(--ink-2)}
+.hero-facts li{display:flex;gap:10px;align-items:center}
+.hero-facts svg{width:20px;height:20px;flex:none;color:var(--blue)}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* ---------- dashboard ---------- */
+.cluster{background:var(--ink);border-radius:28px;padding:22px 22px 20px;color:#E8EEF4;
+  box-shadow:0 2px 0 #0B1016,0 30px 50px -28px rgba(24,33,43,.65), inset 0 1px 0 rgba(255,255,255,.08);
+  border:1px solid #2A3644;animation:rise 560ms 40ms var(--ease-out) both}
+.gauges{display:grid;grid-template-columns:1fr minmax(0,1.05fr) 1fr;align-items:center;gap:8px}
+.gauge{width:100%;max-width:200px;justify-self:center}
+.gauge .needle{transform-origin:100px 100px;transform:rotate(-120deg);animation:ignite 600ms 120ms var(--ease-io) both}
+@keyframes ignite{0%{transform:rotate(-120deg)}50%{transform:rotate(110deg)}100%{transform:rotate(-120deg)}}
+.display{background:#0E151D;border:1px solid #2D3A48;border-radius:14px;padding:12px 14px;text-align:center;min-height:96px;
+  display:flex;flex-direction:column;justify-content:center;gap:4px;box-shadow:inset 0 2px 8px rgba(0,0,0,.5)}
+.display small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#93A4B6}
+.display strong{font-family:var(--display);font-stretch:85%;font-size:clamp(17px,1.6vw,22px);line-height:1.1;color:#fff}
+.display .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:1px;background:var(--amber)}
+.display[data-tone=red] .dot{background:var(--red)}
+.lamps-label{margin:18px 2px 10px;font-size:14px;color:#AFBDCB;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.lamps{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;list-style:none;margin:0;padding:0}
+.lamp{appearance:none;width:100%;aspect-ratio:1;min-height:56px;border-radius:12px;border:1px solid #33414F;background:#121A23;
+  color:#4F5F70;display:grid;place-items:center;cursor:pointer;padding:8px;
+  transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease}
+.lamp svg{width:100%;height:100%;max-width:40px;max-height:40px}
+@media (hover:hover) and (pointer:fine){.lamp:hover{color:#8C9CAD;border-color:#4C5D6E}}
+.lamp[aria-pressed=true]{color:var(--tone);border-color:var(--tone);background:#1A1712;
+  box-shadow:0 0 0 1px var(--tone),0 0 22px -2px color-mix(in srgb,var(--tone) 70%,transparent)}
+.lamp[aria-pressed=true] svg{filter:drop-shadow(0 0 6px color-mix(in srgb,var(--tone) 80%,transparent));animation:glow 900ms var(--ease-out) 1}
+@keyframes glow{0%{transform:scale(.94)}40%{transform:scale(1.04)}100%{transform:none}}
+.lamp:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.lamp[data-tone=red]{--tone:var(--red)}
+.lamp[data-tone=amber]{--tone:var(--amber)}
+.answer{margin-top:16px;background:#fff;color:var(--ink);border-radius:16px;padding:18px 20px;display:grid;gap:12px 24px;
+  grid-template-columns:1fr;border-top:5px solid var(--amber)}
+.answer[data-tone=red]{border-top-color:var(--red)}
+@media (min-width:700px){.answer{grid-template-columns:1fr 1fr}}
+.answer h3{font-size:15px;font-family:var(--text);font-weight:700;margin:0 0 4px;color:var(--ink-2)}
+.answer p{margin:0;font-size:16px}
+.answer .go{font-weight:600}
+.answer-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;border-top:1px solid #E3E5E2;padding-top:12px}
+.answer-foot .btn{padding:12px 16px;min-height:48px;font-size:16px}
+.answer-foot p{font-size:15px;color:var(--ink-2)}
+.disclaimer{margin:12px 2px 0;font-size:13px;color:#AFBDCB}
+.nojs-list{background:#fff;color:var(--ink);border-radius:12px;padding:14px 18px;margin:0}
+.nojs-list dt{font-weight:700}
+.nojs-list dd{margin:0 0 8px}
+@media (max-width:700px){
+  .cluster{padding:16px 14px 14px;border-radius:22px}
+  .gauges{grid-template-columns:1fr 1.5fr 1fr;gap:6px}
+  .gauge{max-width:110px}
+  .gauge .g-ticks-minor,.gauge .g-label{display:none}
+  .display{min-height:76px;padding:8px}
+  .lamps{grid-template-columns:repeat(4,1fr)}
+  .lamp{min-height:64px}
+}
+
+/* ---------- section scaffolding ---------- */
+section{padding:clamp(56px,8vw,104px) 0}
+.band-head{margin-bottom:clamp(26px,3.5vw,44px)}
+.band-head .cladding{height:14px;max-width:420px}
+.band-head .band{display:inline-block;background:var(--blue);color:#fff;padding:12px 22px 12px 18px;border-bottom:3px solid var(--blue-deep)}
+.band-head h2{font-size:clamp(32px,4.4vw,56px);font-weight:800;font-stretch:84%}
+h2.plain{font-size:clamp(32px,4.4vw,56px);font-weight:800;font-stretch:86%;margin-bottom:18px}
+.lede{font-size:clamp(18px,1.5vw,20px);color:var(--ink-2);max-width:60ch}
+figure{margin:0}
+.fig-ill{position:relative}
+.fig-ill img,.fig-photo img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.tag-ill{position:absolute;left:12px;bottom:12px;background:rgba(24,33,43,.86);color:#fff;font-size:13px;font-weight:600;
+  padding:5px 10px;border-radius:6px;letter-spacing:.02em}
+figcaption{font-size:14px;color:var(--ink-2);margin-top:8px}
+
+/* ---------- 2. parts board ---------- */
+.board-grid{display:grid;gap:clamp(24px,4vw,48px);align-items:stretch}
+@media (min-width:960px){.board-grid{grid-template-columns:1.25fr 1fr}}
+.board{background:#fff;border:2px solid var(--ink);border-radius:6px;box-shadow:0 18px 40px -26px rgba(24,33,43,.5);overflow:hidden}
+.board-top{background:var(--blue);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;
+  font-family:var(--display);font-weight:800;font-stretch:80%;font-size:22px;text-transform:uppercase;letter-spacing:.03em}
+.board-top span:last-child{color:var(--salmon)}
+.board ul{list-style:none;margin:0;padding:6px 0}
+.board li{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding:16px 20px;border-bottom:1px dashed #C9CDD1;align-items:start}
+.board li:last-child{border-bottom:0}
+.board li svg{width:36px;height:36px;color:var(--blue);grid-row:span 2}
+.board strong{font-family:var(--display);font-weight:800;font-stretch:86%;font-size:clamp(21px,2vw,25px);line-height:1.1}
+.board li span{font-size:16px;color:var(--ink-2)}
+.board-fig{display:flex;flex-direction:column}
+.board-fig .fig-ill{flex:1;min-height:280px}
+.board-note{margin-top:18px;background:var(--blue);color:#fff;border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.board-note p{margin:0;font-weight:600}
+.board-note a{color:#fff;font-weight:700;white-space:nowrap}
+
+/* ---------- 3. koffie ---------- */
+.coffee{background:#fff;border-top:1px solid #E1E3E0;border-bottom:1px solid #E1E3E0}
+.coffee-grid{display:grid;gap:clamp(28px,4vw,56px);align-items:center}
+@media (min-width:960px){.coffee-grid{grid-template-columns:1fr 1fr}}
+.coffee .fig-ill{aspect-ratio:1264/848}
+.flow{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:0;border:1px solid #DADDDA;border-radius:16px;overflow:hidden}
+.flow li{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;padding:16px 18px;background:var(--concrete)}
+.flow li+li{border-top:1px solid #DADDDA}
+.flow svg{width:44px;height:44px;color:var(--blue)}
+.flow strong{display:block;font-size:18px}
+.flow span{font-size:16px;color:var(--ink-2)}
+
+/* ---------- 4. zelf sleutelen ---------- */
+.diy-split{display:grid;gap:0;border-radius:20px;overflow:hidden;box-shadow:0 22px 50px -32px rgba(24,33,43,.55)}
+@media (min-width:860px){.diy-split{grid-template-columns:1fr 1fr}}
+.diy-col{padding:clamp(24px,3.5vw,44px);position:relative}
+.diy-col.you{background:#fff;border:2px solid var(--ink)}
+.diy-col.us{background:var(--blue);color:#fff;border:2px solid var(--blue-deep)}
+@media (min-width:860px){.diy-col.you{border-right:0;border-radius:20px 0 0 20px}.diy-col.us{border-radius:0 20px 20px 0}}
+@media (max-width:859px){.diy-col.you{border-bottom:0;border-radius:20px 20px 0 0}.diy-col.us{border-radius:0 0 20px 20px}}
+.diy-col h3{font-size:clamp(28px,3vw,40px);font-weight:800;font-stretch:84%;margin-bottom:18px;display:flex;align-items:center;gap:14px}
+.diy-col.us h3{color:#fff}
+.diy-col.us h3 .accent{color:var(--salmon)}
+.diy-col h3 svg{width:48px;height:48px;flex:none}
+.diy-col ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.diy-col li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.diy-col li svg{width:24px;height:24px;margin-top:3px}
+.diy-col.you li svg{color:var(--blue)}
+.diy-col.us li svg{color:var(--salmon)}
+.diy-tools{display:flex;gap:18px;margin-top:26px;color:var(--silver)}
+.diy-col.you .diy-tools{color:#B7BDC3}
+.diy-tools svg{width:46px;height:46px}
+.diy-col.us .diy-tools{color:#8DB3E0}
+.diy-note{margin-top:20px;font-size:16px;color:var(--ink-2);max-width:70ch}
+
+/* ---------- 5. vader en zoon ---------- */
+.family{background:var(--blue);color:#fff;border-top:4px solid var(--blue-deep);border-bottom:4px solid var(--blue-deep)}
+.family h2.plain{color:#fff}
+.family .lede{color:#EAF2FB}
+.family-grid{display:grid;gap:clamp(28px,4vw,56px);align-items:center}
+@media (min-width:960px){.family-grid{grid-template-columns:1.25fr 1fr}}
+.family .fig-photo{aspect-ratio:1334/750}
+.family .fig-photo img{border-radius:16px;box-shadow:0 26px 50px -30px rgba(10,30,60,.8)}
+.family figcaption{color:#DCE8F6}
+.family-points{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:14px}
+.family-points li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;font-size:17px}
+.family-points svg{width:26px;height:26px;color:var(--salmon);margin-top:2px}
+.family strong{color:#fff}
+
+/* ---------- 6. reviews ---------- */
+.reviews-grid{display:grid;gap:clamp(24px,4vw,48px);align-items:center}
+@media (min-width:960px){.reviews-grid{grid-template-columns:.8fr 1.2fr}}
+.score{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:28px;display:grid;gap:12px;justify-items:start;position:relative;overflow:hidden}
+.score::before{content:"";position:absolute;inset:0 0 auto 0;height:14px;background:repeating-linear-gradient(180deg,#EEF0F2 0 3px,#C7CBCF 3px 5px,#E3E6E9 5px 7px)}
+.score .big{font-family:var(--display);font-weight:800;font-stretch:80%;font-size:clamp(88px,11vw,140px);line-height:.85;color:var(--blue);margin-top:14px}
+.score .stars svg{width:28px;height:28px}
+.score p{margin:0;font-size:17px}
+.themes{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media (min-width:640px){.themes{grid-template-columns:1fr 1fr}}
+.themes li{background:#fff;border-radius:16px;padding:20px 22px;border:1px solid #DADDDA;display:grid;gap:8px;align-content:start}
+.themes svg{width:34px;height:34px;color:var(--blue)}
+.themes strong{font-family:var(--display);font-weight:800;font-stretch:86%;font-size:23px;line-height:1.1}
+.themes span{font-size:16px;color:var(--ink-2)}
+.reviews-src{margin-top:14px;font-size:14px;color:var(--ink-2)}
+
+/* ---------- 7. contact ---------- */
+.contact{background:#fff;border-top:1px solid #E1E3E0;padding-bottom:clamp(40px,6vw,72px)}
+.contact-grid{display:grid;gap:clamp(24px,3.5vw,44px);grid-template-columns:minmax(0,1fr)}
+.contact-grid>*,.hero-grid>*,.board-grid>*,.coffee-grid>*,.family-grid>*,.reviews-grid>*{min-width:0}
+@media (min-width:1000px){.contact-grid{grid-template-columns:1fr 1fr 0.9fr;align-items:start}
+  .contact .fig-photo{aspect-ratio:auto;display:flex;flex-direction:column;align-self:stretch}
+  .contact .fig-photo img{flex:1;min-height:0;object-position:6% 50%}
+  .info{grid-column:3;grid-row:1 / span 2}
+  .callfirst{grid-column:1 / span 2;display:flex;gap:6px 18px;align-items:baseline;flex-wrap:wrap}
+  .callfirst strong{margin:0}}
+.contact .fig-photo{aspect-ratio:4/3}
+@media (min-width:1000px){.contact .fig-photo{aspect-ratio:auto;height:100%}.contact .fig-photo img{height:auto}}
+.map{background:var(--concrete);border:2px solid var(--ink);border-radius:16px;overflow:hidden}
+.map svg{width:100%;height:auto;display:block;aspect-ratio:400/300;max-height:320px}
+.map small{display:block;padding:8px 14px;font-size:13px;color:var(--ink-2);border-top:1px solid #D2D5D2;background:#fff}
+.info{display:grid;gap:18px;align-content:start}
+.info .btn-call{font-size:19px;padding:18px 22px;justify-content:center}
+.info address{font-style:normal;font-size:18px;line-height:1.45}
+.hours{width:100%;border-collapse:collapse;font-size:17px}
+.hours th{text-align:left;font-weight:600;padding:6px 0}
+.hours td{text-align:right;padding:6px 0;font-variant-numeric:tabular-nums}
+.hours tr+tr{border-top:1px dashed #CDD1D4}
+.info-line{display:flex;gap:10px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.info-line svg{width:22px;height:22px;color:var(--blue);flex:none;margin-top:2px}
+.callfirst{background:var(--concrete);border-radius:14px;padding:16px 18px;font-size:16px}
+.callfirst strong{display:block;font-family:var(--display);font-weight:800;font-stretch:86%;font-size:22px;margin-bottom:4px}
+
+footer{background:var(--blue);color:#fff;border-top:4px solid var(--blue-deep)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-top:26px;padding-bottom:26px;font-size:16px}
+footer a{color:#fff;font-weight:700}
+footer .mega{font-size:34px}
+footer .foot-name{display:flex;align-items:baseline;gap:10px;font-weight:600}
+
+.mobile-call{display:none}
+@media (max-width:640px){
+  .mobile-call{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;justify-content:center;border-radius:0;
+    padding:14px 16px calc(14px + env(safe-area-inset-bottom));min-height:60px;box-shadow:0 -8px 24px -12px rgba(24,33,43,.5);
+    transition:transform 220ms var(--ease-out)}
+  .mobile-call.is-hidden{transform:translateY(110%)}
+  body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition-duration:1ms !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17.1l-5.9 3.2 1.3-6.5L2.5 9.3l6.6-.8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.5l5 5 10-11"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" d="M30 6a10 10 0 0 0-9.4 13.4L7 33a4 4 0 0 0 5.7 5.7l13.6-13.6A10 10 0 0 0 40.4 14.2l-5.9 5.9-5.6-1-1-5.6 5.9-5.9A10 10 0 0 0 30 6z"/></symbol>
+    <symbol id="i-screwdriver" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M30 6l12 12-6 6-12-12z"/><path d="M27 21L10 38l-3 6 6-3 17-17"/></g></symbol>
+    <symbol id="i-socket" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="16" y="4" width="16" height="22" rx="3"/><path d="M20 26v6h8v-6M24 32v12"/><path d="M20 12h8M20 18h8"/></g></symbol>
+    <symbol id="i-hands" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M4 26l8-8 8 2 6-4 8 0 10 10"/><path d="M14 30l6 6M20 26l8 8M26 24l8 8"/><path d="M4 26l12 12 4 0"/></g></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="cladding" aria-hidden="true"></div>
+  <div class="fascia">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Garage Mega Breda">
+        <span class="mega" aria-hidden="true"><span>M</span><span>E</span><span>G</span><span>A</span></span>
+        <span class="logo-name">Garage Mega Breda</span>
+      </a>
+      <span class="fascia-hours num">ma–vr 08:00–18:00<br>za 09:00–15:00</span>
+      <a class="btn btn-call" href="tel:+31765716407"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="long num">Bel 076 571 6407</span><span class="short">Bel ons</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1. Hero + dashboard -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="h1">Lampje aan? Rammel, piep of tik? Kom langs.</h1>
+        <p class="hero-lede">Onderhoud, reparatie en diagnose in Breda-Noord. Vaak terwijl je wacht.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call" href="tel:+31765716407"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Bel 076 571 6407</span></a>
+          <span class="rating"><span class="stars" aria-hidden="true" style="color:var(--amber)"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span> 4,7 op Google · 92 reviews</span>
+        </div>
+        <ul class="hero-facts">
+          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span class="num">ma–vr 08:00–18:00 · za 09:00–15:00 · zo gesloten</span></li>
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Smalle Reep 9A, 4816 JB Breda</span></li>
+        </ul>
+      </div>
+
+      <div class="cluster" id="dashboard">
+        <div class="gauges" aria-hidden="true">
+          <svg class="gauge" viewBox="0 0 200 170">
+            <path d="M30 150 A85 85 0 1 1 170 150" fill="none" stroke="#2A3644" stroke-width="10" stroke-linecap="round"/>
+            <g stroke="#1597D3" stroke-width="3" stroke-linecap="round">
+              <path d="M100 100 m-74 43 l8 -5"/><path d="M100 100 m-85 0 l10 0"/><path d="M100 100 m-74 -43 l9 5"/><path d="M100 100 m-43 -74 l5 9"/><path d="M100 100 m0 -85 l0 10"/><path d="M100 100 m43 -74 l-5 9"/><path d="M100 100 m74 -43 l-9 5"/><path d="M100 100 m85 0 l-10 0"/>
+            </g>
+            <g class="g-ticks-minor" stroke="#4C5D6E" stroke-width="1.5"><path d="M100 100 m-82 -22 l6 1.6"/><path d="M100 100 m-60 -60 l4 4"/><path d="M100 100 m-22 -82 l1.6 6"/><path d="M100 100 m22 -82 l-1.6 6"/><path d="M100 100 m60 -60 l-4 4"/><path d="M100 100 m82 -22 l-6 1.6"/></g>
+            <path d="M100 100 m74 43 l-8 -5" stroke="#D7262E" stroke-width="4" stroke-linecap="round"/>
+            <text class="g-label" x="100" y="148" fill="#93A4B6" font-size="12" text-anchor="middle" font-family="Libre Franklin, sans-serif">×1000 tpm</text>
+            <g class="needle"><path d="M100 100 L100 30" stroke="#EE9A6E" stroke-width="4" stroke-linecap="round"/></g>
+            <circle cx="100" cy="100" r="9" fill="#2E6DB4" stroke="#0E151D" stroke-width="3"/>
+          </svg>
+          <div class="display" id="display" data-tone="amber" aria-live="polite">
+            <small>Brandt nu</small>
+            <strong><span class="dot"></span><span id="display-name">Motorstoring</span></strong>
+          </div>
+          <svg class="gauge" viewBox="0 0 200 170">
+            <path d="M30 150 A85 85 0 1 1 170 150" fill="none" stroke="#2A3644" stroke-width="10" stroke-linecap="round"/>
+            <g stroke="#1597D3" stroke-width="3" stroke-linecap="round">
+              <path d="M100 100 m-74 43 l8 -5"/><path d="M100 100 m-85 0 l10 0"/><path d="M100 100 m-74 -43 l9 5"/><path d="M100 100 m-43 -74 l5 9"/><path d="M100 100 m0 -85 l0 10"/><path d="M100 100 m43 -74 l-5 9"/><path d="M100 100 m74 -43 l-9 5"/><path d="M100 100 m85 0 l-10 0"/><path d="M100 100 m74 43 l-8 -5"/>
+            </g>
+            <g class="g-ticks-minor" stroke="#4C5D6E" stroke-width="1.5"><path d="M100 100 m-82 -22 l6 1.6"/><path d="M100 100 m-60 -60 l4 4"/><path d="M100 100 m-22 -82 l1.6 6"/><path d="M100 100 m22 -82 l-1.6 6"/><path d="M100 100 m60 -60 l-4 4"/><path d="M100 100 m82 -22 l-6 1.6"/></g>
+            <text class="g-label" x="100" y="148" fill="#93A4B6" font-size="12" text-anchor="middle" font-family="Libre Franklin, sans-serif">km/u</text>
+            <g class="needle"><path d="M100 100 L100 30" stroke="#EE9A6E" stroke-width="4" stroke-linecap="round"/></g>
+            <circle cx="100" cy="100" r="9" fill="#2E6DB4" stroke="#0E151D" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <h2 class="lamps-label" style="font:inherit;font-size:14px"><span><strong style="color:#fff;font-family:var(--display);font-size:20px;font-stretch:86%">Welk lampje brandt er?</strong></span><span>Tik op het lampje dat je ziet.</span></h2>
+
+        <ul class="lamps" id="lamps" role="list"></ul>
+
+        <div class="answer" id="answer" data-tone="amber" aria-live="polite">
+          <div><h3>Wat betekent het?</h3><p id="a-mean">De motorelektronica heeft een storing opgeslagen, bijvoorbeeld in de ontsteking, de brandstoftoevoer of de uitlaatgassen.</p></div>
+          <div><h3>Kun je doorrijden?</h3><p class="go" id="a-go">Meestal wel, rustig aan, maar laat hem snel uitlezen.</p></div>
+          <div class="answer-foot">
+            <a class="btn btn-call" href="tel:+31765716407"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Bel 076 571 6407</span></a>
+            <p>We lezen de storing uit, vaak terwijl je wacht.</p>
+          </div>
+        </div>
+        <noscript>
+          <dl class="nojs-list" style="margin-top:14px">
+            <dt>Motorstoring</dt><dd>Storing in de motorelektronica. Meestal kun je rustig doorrijden; laat hem snel uitlezen.</dd>
+            <dt>Accu / laadstroom</dt><dd>De accu wordt niet goed geladen. Liever niet doorrijden.</dd>
+            <dt>Remmen</dt><dd>Handrem aan, te weinig remvloeistof of een storing. Liever niet doorrijden.</dd>
+            <dt>Oliedruk</dt><dd>Te lage oliedruk. Liever niet doorrijden.</dd>
+            <dt>Koelvloeistoftemperatuur</dt><dd>Motor te warm of te weinig koelvloeistof. Liever niet doorrijden.</dd>
+            <dt>ABS</dt><dd>Het antiblokkeersysteem werkt niet. Meestal kun je rustig doorrijden; laat hem snel uitlezen.</dd>
+            <dt>Bandenspanning</dt><dd>Een band heeft te weinig druk. Rustig aan en laat het snel nakijken.</dd>
+            <dt>Airbag</dt><dd>Storing in het airbagsysteem. Laat het zo snel mogelijk nakijken.</dd>
+          </dl>
+        </noscript>
+        <p class="disclaimer">Algemene uitleg: elke auto is anders, kijk ook in je instructieboekje.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Wat we doen -->
+  <section aria-labelledby="h-doen" style="padding-top:clamp(32px,4vw,56px)">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="cladding" aria-hidden="true"></div>
+        <div class="band"><h2 id="h-doen">Wat we doen</h2></div>
+      </div>
+      <div class="board-grid">
+        <div class="board">
+          <div class="board-top"><span>Werkplaats</span><span>Mega</span></div>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-wrench"/></svg><strong>Onderhoud en reparatie</strong><span>Algemene reparaties en onderhoud aan je auto.</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="6"/><path d="M10 14a17 17 0 0 1 10-7" stroke-width="6" stroke-linecap="round"/></g></svg><strong>Remblokken en remschijven</strong><span>Vervangen als ze op zijn.</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M12 14v-4h6v4M30 14v-4h6v4"/><path d="M13 26h6M33 23v6M30 26h6" stroke-linecap="round"/></g></svg><strong>Accu vervangen</strong><span>Accu's op voorraad.</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="8" width="36" height="26" rx="3"/><path d="M12 26l7-8 6 5 9-10"/><path d="M18 40h12M24 34v6"/></g></svg><strong>Storing uitlezen en diagnose</strong><span>Vaak terwijl je wacht.</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M6 30l4-10c1-3 3-4 6-4h16c3 0 5 1 6 4l4 10v8H6z"/><circle cx="14" cy="38" r="4"/><circle cx="34" cy="38" r="4"/><path d="M26 16l-3 6 5 1-3 7"/></g></svg><strong>Schadeherstel</strong><span>Ook met opties om zelf een deel te doen.</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 10h32v22H22l-9 7v-7H8z"/><path d="M15 18h18M15 24h12"/></g></svg><strong>Advies en offerte</strong><span>Eerst horen wat er moet gebeuren.</span></li>
+          </ul>
+        </div>
+        <div class="board-fig">
+          <figure class="fig-ill">
+            <img src="images/remmen-illustratie.jpg" width="1264" height="848" alt="Illustratie, geen foto van Garage Mega: handen met werkhandschoenen monteren een remblok." loading="lazy">
+            <span class="tag-ill">Illustratie</span>
+          </figure>
+          <div class="board-note">
+            <p>Twijfel je wat het is? Bel even, dan kijken we mee.</p>
+            <a href="tel:+31765716407" class="num">076 571 6407</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Koffie -->
+  <section class="coffee" aria-labelledby="h-koffie">
+    <div class="wrap coffee-grid">
+      <figure class="fig-ill">
+        <img src="images/accu-illustratie.jpg" width="1264" height="848" alt="Illustratie, geen foto van Garage Mega: handen zetten een nieuwe accu in een auto, met een kop koffie op de werkbank." loading="lazy">
+        <span class="tag-ill">Illustratie</span>
+      </figure>
+      <div>
+        <h2 class="plain" id="h-koffie">Klaar terwijl je koffie drinkt</h2>
+        <p class="lede">Klussen zijn vaak klaar terwijl je wacht. Voor advies kun je vaak zonder afspraak binnenlopen.</p>
+        <ul class="flow">
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#i-phone" x="8" y="8" width="32" height="32"/></svg><div><strong>Bel even van tevoren</strong><span>Dan weet je zeker dat er tijd is. <a href="tel:+31765716407" class="num">076 571 6407</a></span></div></li>
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 20h26v10a10 10 0 0 1-10 10h-6A10 10 0 0 1 8 30z"/><path d="M34 23h3a5 5 0 0 1 0 10h-4"/><path d="M16 6c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8"/></g></svg><div><strong>Kom langs</strong><span>Smalle Reep 9A, Breda.</span></div></li>
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#i-check" x="8" y="8" width="32" height="32"/></svg><div><strong>Vaak klaar terwijl je wacht</strong><span>Soms al opgelost terwijl je een koffie drinkt. Accu's liggen op voorraad.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Zelf sleutelen -->
+  <section aria-labelledby="h-diy">
+    <div class="wrap">
+      <h2 class="plain" id="h-diy">Zelf sleutelen? Wij helpen.</h2>
+      <p class="lede" style="margin-bottom:clamp(24px,3vw,36px)">Doe je een deel van het werk zelf? Dan kun je ook bij ons langskomen.</p>
+      <div class="diy-split">
+        <div class="diy-col you">
+          <h3><svg aria-hidden="true"><use href="#i-wrench"/></svg>Jij doet</h3>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Het deel van het werk dat je zelf wilt doen.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Bij schadeherstel: kiezen wat je zelf oppakt.</span></li>
+          </ul>
+          <div class="diy-tools" aria-hidden="true"><svg><use href="#i-screwdriver"/></svg><svg><use href="#i-socket"/></svg><svg><use href="#i-wrench"/></svg></div>
+        </div>
+        <div class="diy-col us">
+          <h3><svg aria-hidden="true" style="color:var(--salmon)"><use href="#i-hands"/></svg>Wij doen</h3>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Helpen als je vastloopt.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Advies en een offerte.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Het werk dat je liever aan ons overlaat.</span></li>
+          </ul>
+          <div class="diy-tools" aria-hidden="true"><svg><use href="#i-socket"/></svg><svg><use href="#i-screwdriver"/></svg><svg><use href="#i-hands"/></svg></div>
+        </div>
+      </div>
+      <p class="diy-note">Bel even voordat je komt, dan spreken we af wat jij doet en wat wij doen.</p>
+    </div>
+  </section>
+
+  <!-- 5. Vader en zoon -->
+  <section class="family" aria-labelledby="h-family">
+    <div class="wrap family-grid">
+      <figure class="fig-photo">
+        <img src="images/werkplaats.jpg" width="1334" height="750" alt="De werkplaats van Garage Mega met blauwe hefbruggen en een auto erop; twee monteurs werken achterin aan een auto." loading="lazy">
+        <figcaption>De werkplaats, met de blauwe hefbruggen.</figcaption>
+      </figure>
+      <div>
+        <h2 class="plain" id="h-family">Vader en zoon</h2>
+        <p class="lede">Garage Mega is een familiegarage: Taha en zijn vader.</p>
+        <ul class="family-points">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ze denken mee</strong> en leggen helder uit wat er aan de hand is.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Geen poespas.</strong> Gewoon zeggen wat er moet gebeuren.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vaste klanten</strong> komen al jaren terug, soms vader en zoon.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Reviews -->
+  <section aria-labelledby="h-reviews">
+    <div class="wrap reviews-grid">
+      <div class="score">
+        <span class="big num" aria-hidden="true">4,7</span>
+        <span class="stars" aria-hidden="true" style="color:var(--amber)"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <h2 id="h-reviews" style="font-size:clamp(28px,3vw,38px);font-weight:800;font-stretch:86%">Wat klanten zeggen</h2>
+        <p><strong>4,7 uit 5</strong> op basis van 92 Google-reviews.</p>
+      </div>
+      <div>
+        <ul class="themes">
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 10h32v22H22l-9 7v-7H8z"/><path d="M15 18h18M15 24h12"/></g></svg><strong>Denkt mee en legt helder uit</strong><span>Geen poespas.</span></li>
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v36M10 14h28"/><path d="M10 14l-6 14h12zM38 14l-6 14h12z"/><path d="M16 42h16"/></g></svg><strong>Eerlijke prijs</strong><span>Zo noemen klanten het in hun reviews.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><strong>Snel geholpen</strong><span>Vaak terwijl je koffie drinkt.</span></li>
+          <li><svg aria-hidden="true" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M12 14v-4h6v4M30 14v-4h6v4"/><path d="M13 26h6M33 23v6M30 26h6" stroke-linecap="round"/></g></svg><strong>Accu direct op voorraad</strong><span>Accu's liggen op voorraad.</span></li>
+        </ul>
+        <p class="reviews-src">Samengevat uit de reviews op Google Maps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Contact -->
+  <section class="contact" aria-labelledby="h-contact">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="cladding" aria-hidden="true"></div>
+        <div class="band"><h2 id="h-contact">Bel eerst, dan kom je langs</h2></div>
+      </div>
+      <div class="contact-grid">
+        <figure class="fig-photo">
+          <img src="images/gevel.jpg" width="2000" height="1499" alt="De gevel van Garage Mega: blauw bord met MEGA en Autoschade Herstel boven een grijze roldeur." loading="lazy">
+          <figcaption>Zoek het blauwe bord met MEGA.</figcaption>
+        </figure>
+        <div class="map">
+          <svg viewBox="0 0 400 300" role="img" aria-labelledby="map-t">
+            <title id="map-t">Schematische kaart: Garage Mega aan de Smalle Reep 9A, op het bedrijventerrein ten noorden van het centrum van Breda.</title>
+            <rect width="400" height="300" fill="#F1F1EE"/>
+            <g fill="#DCDFE2" stroke="#C3C8CD">
+              <rect x="24" y="44" width="110" height="80" rx="4"/><rect x="286" y="44" width="90" height="80" rx="4"/>
+              <rect x="24" y="178" width="90" height="56" rx="4"/><rect x="132" y="178" width="120" height="56" rx="4"/><rect x="270" y="178" width="106" height="56" rx="4"/>
+            </g>
+            <path d="M0 152 H400" stroke="#fff" stroke-width="26"/>
+            <path d="M0 152 H400" stroke="#C3C8CD" stroke-width="1" stroke-dasharray="10 8"/>
+            <text x="28" y="157" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#18212B">Smalle Reep</text>
+            <rect x="152" y="44" width="116" height="80" rx="4" fill="#2E6DB4" stroke="#24599A"/>
+            <text x="210" y="78" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#EE9A6E" text-anchor="middle">MEGA</text>
+            <rect x="193" y="88" width="34" height="20" rx="4" fill="#18212B"/>
+            <text x="210" y="102" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">9A</text>
+            <g transform="translate(250 40)">
+              <path d="M0 0 C-12 -14 -12 -30 0 -30 C12 -30 12 -14 0 0z" fill="#D7262E"/>
+              <circle cx="0" cy="-19" r="4.5" fill="#fff"/>
+            </g>
+            <path d="M200 248 V288" stroke="#2E6DB4" stroke-width="3" stroke-linecap="round"/>
+            <path d="M192 279 L200 291 L208 279" fill="none" stroke="#2E6DB4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="214" y="274" font-family="Libre Franklin, sans-serif" font-size="13" fill="#3C4652">richting centrum Breda</text>
+            <g transform="translate(366 36)" font-family="Libre Franklin, sans-serif" font-size="12" fill="#3C4652" text-anchor="middle"><path d="M0 -22 L6 -6 L0 -10 L-6 -6z" fill="#18212B"/><text y="8">N</text></g>
+          </svg>
+          <small>Schematisch, niet op schaal. <a href="https://www.google.com/maps/place/Garage+Mega+Breda./data=!4m7!3m6!1s0x47c69f709fa7c40b:0x73161877ef8a527f!8m2!3d51.5964078!4d4.7947395!16s%2Fg%2F1tdgp12t!19sChIJC8Snn3CfxkcRf1KK73cYFnM?authuser=0&amp;hl=nl" target="_blank" rel="noopener">Route in Google Maps</a></small>
+        </div>
+        <div class="callfirst"><strong>Bel even van tevoren.</strong>Dan weet je zeker dat er tijd is voor je auto.</div>
+        <div class="info">
+          <a class="btn btn-call" href="tel:+31765716407"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Bel 076 571 6407</span></a>
+          <address>Garage Mega Breda<br>Smalle Reep 9A<br>4816 JB Breda</address>
+          <table class="hours">
+            <caption style="text-align:left;font-weight:700;font-family:var(--display);font-size:20px;font-stretch:86%;padding-bottom:4px">Openingstijden</caption>
+            <tr><th scope="row">Maandag – vrijdag</th><td>08:00 – 18:00</td></tr>
+            <tr><th scope="row">Zaterdag</th><td>09:00 – 15:00</td></tr>
+            <tr><th scope="row">Zondag</th><td>gesloten</td></tr>
+          </table>
+          <p class="info-line"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Rolstoeltoegankelijke ingang en parkeerplaats.</span></p>
+          <p class="info-line" style="margin-top:-8px"><svg aria-hidden="true"><use href="#i-pin"/></svg><a href="https://www.google.com/maps/place/Garage+Mega+Breda./data=!4m7!3m6!1s0x47c69f709fa7c40b:0x73161877ef8a527f!8m2!3d51.5964078!4d4.7947395!16s%2Fg%2F1tdgp12t!19sChIJC8Snn3CfxkcRf1KK73cYFnM?authuser=0&amp;hl=nl" target="_blank" rel="noopener">Plan je route in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="foot-name"><span class="mega" aria-hidden="true"><span>M</span><span>E</span><span>G</span><span>A</span></span> Garage Mega Breda</span>
+    <span>Smalle Reep 9A, 4816 JB Breda</span>
+    <a href="tel:+31765716407" class="num">076 571 6407</a>
+  </div>
+</footer>
+
+<a class="btn btn-call mobile-call is-hidden" id="mobile-call" href="tel:+31765716407"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Bel 076 571 6407</span></a>
+
+<script>
+(function(){
+  var RED_GO = "Liever niet: stop zodra het veilig kan en bel ons.";
+  var AMB_GO = "Meestal wel, rustig aan, maar laat hem snel uitlezen.";
+  var S = 'fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"';
+  var lamps = [
+    {id:"motor", name:"Motorstoring", tone:"amber",
+     mean:"De motorelektronica heeft een storing opgeslagen, bijvoorbeeld in de ontsteking, de brandstoftoevoer of de uitlaatgassen.",
+     svg:'<path '+S+' d="M10 18h6v-4h10v4h4l4 4h4v-4h4v14h-4v-4h-4l-4 6H14l-4-4h-4v-8h4z"/>'},
+    {id:"accu", name:"Accu / laadstroom", tone:"red",
+     mean:"De accu wordt niet goed geladen. Vaak zit het in de dynamo, de aandrijfriem of de accu zelf.",
+     svg:'<g '+S+'><rect x="6" y="14" width="36" height="24" rx="2"/><path d="M12 14v-4h6v4M30 14v-4h6v4M13 26h6M33 23v6M30 26h6"/></g>'},
+    {id:"rem", name:"Remmen", tone:"red",
+     mean:"Er is iets met de remmen: de handrem staat nog aan, er is te weinig remvloeistof of het remsysteem meldt een storing.",
+     svg:'<g '+S+'><circle cx="24" cy="24" r="12"/><path d="M24 17v9M24 31v.5"/><path d="M8 14a18 18 0 0 0 0 20M40 14a18 18 0 0 1 0 20"/></g>'},
+    {id:"olie", name:"Oliedruk", tone:"red",
+     mean:"De oliedruk in de motor is te laag. Zonder genoeg oliedruk kan de motor snel schade oplopen.",
+     svg:'<g '+S+'><path d="M8 22h6l4-4h14l8-4-6 14H18l-4-4H8z"/><path d="M14 18v-4h6M40 30c-2 3-2 5 0 6a2 2 0 0 0 0-6"/></g>'},
+    {id:"temp", name:"Koelvloeistoftemperatuur", tone:"red",
+     mean:"De motor wordt te warm of er zit te weinig koelvloeistof in het systeem.",
+     svg:'<g '+S+'><path d="M24 6v20M24 12h6M24 18h6"/><circle cx="24" cy="30" r="4"/><path d="M6 38c4-3 6 3 10 0s6 3 10 0 6 3 10 0 4 2 6 1"/></g>'},
+    {id:"abs", name:"ABS", tone:"amber",
+     mean:"Het antiblokkeersysteem werkt niet. Gewoon remmen werkt meestal nog, maar zonder hulp van ABS.",
+     svg:'<g '+S+'><circle cx="24" cy="24" r="13"/><path d="M8 14a18 18 0 0 0 0 20M40 14a18 18 0 0 1 0 20"/></g><text x="24" y="28.5" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="11" font-weight="700" fill="currentColor">ABS</text>'},
+    {id:"band", name:"Bandenspanning", tone:"amber",
+     mean:"Eén of meer banden hebben te weinig spanning. Dat kan een lekke band zijn of gewoon te weinig lucht.",
+     svg:'<g '+S+'><path d="M12 12c-4 6-4 18 0 24M36 12c4 6 4 18 0 24M12 36h24M12 12l2 4M36 12l-2 4"/><path d="M24 16v10M24 31v.5"/></g>'},
+    {id:"airbag", name:"Airbag", tone:"red",
+     mean:"Het airbagsysteem meldt een storing. De airbag gaat bij een aanrijding dan mogelijk niet goed af.",
+     svg:'<g '+S+'><circle cx="16" cy="10" r="4"/><path d="M14 16l-2 12h12l4 12M12 28l-4 10"/><circle cx="34" cy="22" r="8"/></g>'}
+  ];
+  var list = document.getElementById("lamps");
+  var dispName = document.getElementById("display-name");
+  var disp = document.getElementById("display");
+  var answer = document.getElementById("answer");
+  var mean = document.getElementById("a-mean");
+  var go = document.getElementById("a-go");
+  var btns = [];
+  lamps.forEach(function(l, i){
+    var li = document.createElement("li");
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "lamp";
+    b.setAttribute("data-tone", l.tone);
+    b.setAttribute("aria-pressed", i === 0 ? "true" : "false");
+    b.setAttribute("aria-label", l.name + (l.tone === "red" ? " (rood lampje)" : " (oranje lampje)"));
+    b.innerHTML = '<svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">' + l.svg + '</svg>';
+    b.addEventListener("click", function(){ select(i); });
+    b.addEventListener("keydown", function(e){
+      var k = e.key, n = null, cols = window.matchMedia("(max-width:700px)").matches ? 4 : 8;
+      if (k === "ArrowRight") n = (i + 1) % lamps.length;
+      else if (k === "ArrowLeft") n = (i - 1 + lamps.length) % lamps.length;
+      else if (k === "ArrowDown") n = (i + cols) % lamps.length;
+      else if (k === "ArrowUp") n = (i - cols + lamps.length) % lamps.length;
+      else if (k === "Home") n = 0;
+      else if (k === "End") n = lamps.length - 1;
+      if (n !== null){ e.preventDefault(); btns[n].focus(); }
+    });
+    li.appendChild(b); list.appendChild(li); btns.push(b);
+  });
+  function select(i){
+    var l = lamps[i];
+    btns.forEach(function(b, j){ b.setAttribute("aria-pressed", j === i ? "true" : "false"); });
+    dispName.textContent = l.name;
+    disp.setAttribute("data-tone", l.tone);
+    answer.setAttribute("data-tone", l.tone);
+    mean.textContent = l.mean;
+    go.textContent = l.tone === "red" ? RED_GO : AMB_GO;
+  }
+})();
+(function(){
+  var bar = document.getElementById("mobile-call"), dash = document.getElementById("dashboard"), hero = document.querySelector(".hero");
+  if (!("IntersectionObserver" in window)) { bar.classList.remove("is-hidden"); return; }
+  new IntersectionObserver(function(es){
+    es.forEach(function(e){ bar.classList.toggle("is-hidden", e.isIntersecting); });
+  }, {threshold:0}).observe(hero);
+})();
+</script>
+</body>
+</html>
