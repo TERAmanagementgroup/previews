@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GardenMaster Rijen · tuincentrum aan de Zwarte Dijk</title>
+<meta name="description" content="Tuincentrum GardenMaster Rijen: planten, snijbloemen, potterie en grond, kadowereld. Zwarte Dijk 60, Rijen. Ma–vr 9–18, za 9–17.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Rozha+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#0C3B24; --deep-2:#0f4a2e; --green:#00904B; --green-ink:#007A40;
+  --orange:#F3912D; --leaf:#F3F6F1; --ink:#13241A; --ink-2:#3d5446; --line:#d5dfd3;
+  --on-deep:#e7f0e9; --on-deep-2:#b9d1c1;
+  --ease-out:cubic-bezier(0.23,1,0.32,1); --ease-io:cubic-bezier(0.77,0,0.175,1);
+  --display:"Rozha One",Georgia,serif; --text:"Plus Jakarta Sans",system-ui,sans-serif;
+  --gut:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--leaf);color:var(--ink);font:400 1.0625rem/1.6 var(--text);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--orange);color:var(--ink)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.06;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.squiggle{display:block;width:120px;height:16px;margin:18px 0 0;color:var(--green)}
+.on-dark .squiggle{color:#5fc48d}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:50px;padding:.8em 1.4em;border-radius:999px;font:700 1rem/1.1 var(--text);text-decoration:none;transition:transform .16s var(--ease-out),background-color .2s ease,color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-orange{background:var(--orange);color:var(--ink)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn-green{background:var(--deep);color:#fff}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink)}
+@media (hover:hover) and (pointer:fine){
+  .btn-orange:hover{background:#f7a24a}
+  .btn-ghost:hover{background:#fff;color:var(--deep)}
+  .btn-green:hover{background:var(--green-ink)}
+  .btn-line:hover{background:var(--ink);color:#fff}
+}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px}
+.plate{background:#fff;border-radius:14px;padding:9px 14px;display:inline-block;box-shadow:0 6px 20px rgba(6,30,18,.25)}
+.plate img{width:clamp(132px,22vw,220px);height:auto}
+.top-phone{white-space:nowrap;display:inline-flex;align-items:center;gap:.5em;color:#fff;font-weight:700;text-decoration:none;background:rgba(12,59,36,.72);padding:.6em 1em;border-radius:999px;min-height:44px}
+.top-phone svg{width:18px;height:18px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--deep)}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;animation:settle .6s var(--ease-out) both}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,59,36,.97) 0%,rgba(12,59,36,.82) 34%,rgba(12,59,36,.25) 66%,rgba(12,59,36,.35) 100%),linear-gradient(90deg,rgba(12,59,36,.55),rgba(12,59,36,0) 60%)}
+.hero-in{position:relative;z-index:2;width:100%;padding-top:120px;padding-bottom:clamp(40px,7vh,80px);display:grid;grid-template-columns:1fr;gap:28px;align-items:end}
+.hero h1{font-size:clamp(2.6rem,7.2vw,5.4rem);letter-spacing:-.01em;max-width:17ch}
+.hero h1 span{display:block;animation:rise .52s var(--ease-out) both}
+.hero h1 .l2{color:var(--orange);animation-delay:.06s}
+.hero-sub{margin-top:18px;font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--on-deep);max-width:40ch;animation:rise .52s .12s var(--ease-out) both}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;animation:rise .52s .18s var(--ease-out) both}
+.status{display:inline-flex;align-items:center;gap:.55em;margin-top:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:.45em .95em .45em .5em;border-radius:999px;font-weight:500;font-size:.98rem}
+.status svg{width:24px;height:24px}
+.ticket{justify-self:start;width:min(100%,330px);background:var(--leaf);color:var(--ink);border-radius:14px;padding:18px 20px 18px 22px;transform:rotate(-3deg);box-shadow:0 18px 40px rgba(0,0,0,.35);position:relative;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;text-decoration:none;animation:tilt .6s .1s var(--ease-out) both}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:18px;height:18px;margin-top:-9px;border-radius:50%;background:var(--deep)}
+.ticket::before{left:-9px}.ticket::after{right:-9px}
+.ticket svg{width:52px;height:52px;grid-row:span 3}
+.ticket b{font-family:var(--display);font-weight:400;font-size:1.7rem;line-height:1;color:var(--deep)}
+.ticket small{font-size:.92rem;color:var(--ink-2)}
+.ticket .t-deal{font-weight:700;font-size:.98rem}
+@media (max-width:899px){.hero::after{background:linear-gradient(0deg,rgba(12,59,36,.97) 0%,rgba(12,59,36,.86) 50%,rgba(12,59,36,.6) 78%,rgba(12,59,36,.5) 100%)}}
+@media (min-width:900px){
+  .hero-in{grid-template-columns:1fr auto}
+  .ticket{justify-self:end;margin-bottom:12px}
+}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+@keyframes settle{from{transform:scale(1.06)}to{transform:none}}
+@keyframes tilt{from{transform:rotate(-7deg) translateY(10px)}to{transform:rotate(-3deg)}}
+
+/* sections */
+section{padding:clamp(72px,10vw,128px) 0}
+.sec-head{max-width:760px;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head h2{font-size:clamp(2.2rem,5.4vw,4rem);color:var(--deep)}
+.sec-head p{margin-top:18px;color:var(--ink-2);max-width:58ch}
+.on-dark{background:var(--deep);color:var(--on-deep)}
+.on-dark h2{color:#fff}
+
+/* worlds */
+.worlds{display:flex;flex-direction:column;gap:10px}
+.world{position:relative;border-radius:18px;overflow:hidden;background:var(--deep);color:#fff;min-height:96px}
+.world img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out)}
+.world::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,59,36,.94) 0%,rgba(12,59,36,.5) 42%,rgba(12,59,36,.12) 64%,rgba(12,59,36,.62) 100%);pointer-events:none}
+.world-btn{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:96px;padding:18px 22px;background:none;border:0;color:#fff;text-align:left;cursor:pointer;font:400 clamp(1.6rem,6vw,2.1rem)/1 var(--display)}
+.world-btn .plus{flex:none;width:40px;height:40px;border-radius:50%;background:var(--orange);color:var(--ink);display:grid;place-items:center;transition:transform .25s var(--ease-out)}
+.world-btn .plus svg{width:18px;height:18px}
+.world-btn[aria-expanded="true"] .plus{transform:rotate(45deg)}
+.world-btn:focus-visible{outline-offset:-6px}
+.world-body{position:relative;z-index:2;padding:0 22px 24px;max-width:46ch}
+.world-body p{color:var(--on-deep)}
+.world-body a{display:inline-block;margin-top:14px;font-weight:700;color:#fff}
+.world .tag{position:absolute;z-index:3;top:12px;right:12px;background:#fff;color:var(--ink);font:700 .75rem/1 var(--text);letter-spacing:.04em;text-transform:uppercase;padding:6px 9px;border-radius:6px}
+@media (max-width:899px){
+  .world[data-open="true"]{min-height:440px;display:flex;flex-direction:column;justify-content:flex-end}
+  .world[data-open="false"] .world-body{display:none}
+  .world[data-open="true"] .world-btn{order:-1}
+  .world[data-open="false"] .tag{top:8px;right:70px;font-size:.72rem}
+}
+@media (min-width:900px){
+  .worlds{flex-direction:row;height:min(640px,78vh);gap:12px}
+  .world{flex:1 1 0;min-width:0;min-height:0;transition:flex-grow .55s var(--ease-io)}
+  .world[data-open="true"]{flex-grow:4.2}
+  .world-btn{position:absolute;inset:0;align-items:flex-end;justify-content:flex-start;padding:26px;font-size:2rem}
+  .world[data-open="false"] .world-btn{flex-direction:column-reverse;align-items:center;justify-content:space-between;padding:22px 0}
+  .world[data-open="false"] .world-btn .lbl{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+  .world[data-open="true"] .world-btn{align-items:flex-start;justify-content:space-between;padding:26px}
+  .world[data-open="true"] .world-btn .lbl{font-size:clamp(2.4rem,3.4vw,3.2rem)}
+  .world-body{position:absolute;left:0;bottom:0;padding:28px;max-width:44ch;transition:transform .45s .15s var(--ease-out)}
+  .world[data-open="false"] .world-body{visibility:hidden;transform:translateY(12px)}
+  .world[data-open="true"] .world-body{visibility:visible}
+  .world[data-open="false"] .tag{top:74px;right:50%;transform:translateX(50%);font-size:.72rem;padding:5px 6px}
+  .world[data-open="true"] .tag{top:auto;bottom:16px;right:16px}
+  .world[data-open="true"] .world-btn{pointer-events:none}
+  @media (hover:hover) and (pointer:fine){.world[data-open="false"]:hover img{transform:scale(1.04)}}
+}
+.world[data-open="true"] .world-btn{cursor:default}
+
+/* now */
+.now-grid{display:grid;gap:40px;align-items:center}
+.now h2{font-size:clamp(3rem,10vw,7rem);color:#fff}
+.now .dates{display:flex;gap:12px;margin-top:28px}
+.now .date{background:var(--deep-2);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:14px 18px;min-width:120px}
+.now .date b{display:block;font:400 3rem/1 var(--display);color:var(--orange)}
+.now .date span{font-weight:500}
+.now .deal{margin-top:24px;font-size:1.25rem;color:#fff;font-weight:700}
+.now .note{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);color:var(--on-deep-2);max-width:52ch}
+.now .note a{color:#fff;font-weight:700}
+.badge{position:relative;width:min(78vw,380px);aspect-ratio:1;justify-self:center}
+.badge svg{width:100%;height:100%}
+.badge-txt{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--ink)}
+.badge-txt>div{width:52%;aspect-ratio:1;border-radius:50%;background:#fbb867;display:grid;place-content:center;box-shadow:0 0 0 3px #d9701a}
+.badge-txt b{display:block;font:400 clamp(2.6rem,7vw,3.8rem)/.9 var(--display)}
+.badge-txt span{font-weight:700;font-size:1rem}
+@media (min-width:900px){.now-grid{grid-template-columns:1.2fr .8fr}}
+@media (prefers-reduced-motion:no-preference){.badge>svg{animation:spin 60s linear infinite}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* year line */
+.year-scroll{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin:0 calc(var(--gut)*-1);padding-left:var(--gut);padding-right:var(--gut);scrollbar-color:var(--green) var(--line)}
+.year{position:relative;display:grid;grid-template-columns:repeat(12,minmax(84px,1fr));min-width:1040px;row-gap:22px}
+.months{display:contents}
+.m{scroll-snap-align:start;position:relative;padding-top:30px;font-weight:700;font-size:.9rem;color:var(--ink-2);border-top:2px solid var(--line)}
+.m::before{content:"";position:absolute;top:-8px;left:0;width:2px;height:14px;background:var(--line)}
+.m.has{color:var(--green-ink)}
+.m.has::before{background:var(--green);height:18px;top:-10px}
+.pins{grid-row:2}
+.pin{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 10px 26px rgba(12,59,36,.07)}
+.pin h3{font-size:1.5rem;color:var(--deep)}
+.pin p{margin-top:8px;color:var(--ink-2);font-size:1rem}
+.pin + .pin{margin-top:12px}
+.span-jan{grid-column:1 / span 3}
+.span-sum{grid-column:4 / span 6}
+.season{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--green-ink);margin-bottom:12px;font-size:.95rem}
+.season::before{content:"";flex:1;height:6px;border-radius:6px;background:var(--green);order:2;opacity:.85}
+.sum-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.sum-grid .pin + .pin{margin-top:0}
+.year-foot{margin-top:28px}
+.year-foot a{font-weight:700;color:var(--green-ink)}
+
+/* shop */
+.shop{background:#fff}
+.shop-row{display:grid;gap:28px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:clamp(28px,5vw,56px);background:var(--leaf)}
+.shop-row h2{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--deep)}
+.shop-row p{margin-top:12px;color:var(--ink-2)}
+.shop-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.shop-row .vw{margin-top:18px;font-size:.98rem}
+.shop-row .vw a{font-weight:700;color:var(--green-ink)}
+.shop-daisy{width:clamp(120px,22vw,200px);justify-self:center}
+@media (min-width:900px){.shop-row{grid-template-columns:1fr auto}}
+
+/* klanten */
+.kl-grid{display:grid;gap:36px;align-items:stretch}
+.kl-photo{border-radius:20px;overflow:hidden;min-height:340px;position:relative}
+.kl-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.kl-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.kl-list li{padding:26px 0;border-bottom:1px solid var(--line);font:400 clamp(1.6rem,3.2vw,2.3rem)/1.12 var(--display);color:var(--deep);display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.kl-list li:first-child{border-top:1px solid var(--line)}
+.kl-list li svg{width:34px;height:34px;color:var(--green);margin-top:4px}
+.kl-src{margin-top:18px;color:var(--ink-2);font-size:.95rem}
+@media (min-width:900px){.kl-grid{grid-template-columns:.8fr 1.2fr}}
+
+/* visit */
+.visit-grid{display:grid;gap:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(24px,4vw,40px)}
+.addr{font:400 clamp(1.9rem,4vw,2.8rem)/1.05 var(--display);color:var(--deep)}
+.contact-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.contact-list a{font-weight:700;color:var(--green-ink)}
+.visit-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+caption{text-align:left;font:400 1.8rem/1 var(--display);color:var(--deep);margin-bottom:12px}
+td,th{padding:12px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:500}
+td{text-align:right}
+tr.today th,tr.today td{color:var(--green-ink);font-weight:700}
+.road{margin-top:26px;width:100%;height:auto}
+@media (min-width:900px){.visit-grid{grid-template-columns:1.1fr .9fr}}
+
+footer{background:var(--deep);color:var(--on-deep-2);padding:40px 0;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer .plate img{width:170px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:0s!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="daisy" viewBox="0 0 100 100">
+      <g fill="#F3912D" stroke="#d9701a" stroke-width="2">
+        <ellipse cx="50" cy="22" rx="10" ry="20"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(45 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(90 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(135 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(180 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(225 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(270 50 50)"/>
+        <ellipse cx="50" cy="22" rx="10" ry="20" transform="rotate(315 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="14" fill="#fbb867" stroke="#d9701a" stroke-width="2"/>
+      <path d="M43 52q7 6 14 0" fill="none" stroke="#d9701a" stroke-width="2.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="squig" viewBox="0 0 120 16"><path d="M2 10c8-8 14 6 22 0s14-8 22 0 14 6 22 0 14-8 22 0 14 6 26-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8zM9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16zM4 20l9-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="plate" href="#top" aria-label="GardenMaster Rijen, naar boven"><img src="images/logo.png" width="1276" height="381" alt="GardenMaster Rijen"></a>
+    <a class="top-phone" href="tel:+31161226633"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>0161 22 66 33</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1" style="padding:0">
+    <img class="hero-photo" src="images/kas-pad.jpg" width="1800" height="1012" alt="Het pad door de kas van GardenMaster Rijen, met bloeiende forsythia en tafels vol planten">
+    <div class="wrap hero-in">
+      <div>
+        <h1 id="h1"><span class="l1">Alles voor binnen en buiten,</span> <span class="l2">net buiten Rijen.</span></h1>
+        <p class="hero-sub">Planten, bloemen, potterie en cadeaus. Ma–vr 9–18, za 9–17.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-orange" href="https://www.google.com/maps/search/GardenMaster+Rijen+Zwarte+Dijk+60+Rijen" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Route naar Zwarte Dijk 60</a>
+          <a class="btn btn-ghost" href="https://webshop.gardenmasterrijen.nl" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-bag"/></svg>Naar de webshop</a>
+        </div>
+        <p class="status" id="status" aria-live="polite"><svg aria-hidden="true"><use href="#daisy"/></svg><span id="status-txt">Ma–vr 9:00–18:00 · za 9:00–17:00</span></p>
+      </div>
+      <a class="ticket" href="#nu" data-until="2026-11-29">
+        <svg aria-hidden="true"><use href="#daisy"/></svg>
+        <b>Winterfair</b>
+        <small>28 en 29 november</small>
+        <span class="t-deal">20% korting op kerstartikelen</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="werelden" aria-labelledby="h-werelden">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-werelden">Vier werelden in één tuincentrum</h2>
+        <svg class="squiggle" aria-hidden="true"><use href="#squig"/></svg>
+        <p>Zo is de winkel ingedeeld. Open een wereld en zie wat u er vindt.</p>
+      </div>
+      <div class="worlds" id="worlds">
+        <article class="world" data-open="true">
+          <img src="images/orchidee.jpg" width="900" height="1600" alt="Bloeiende orchidee in de kas van GardenMaster Rijen">
+          <button class="world-btn" aria-expanded="true" aria-controls="w1"><span class="lbl">Plantenwereld</span><span class="plus" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button>
+          <div class="world-body" id="w1">
+            <p>Kamerplanten en tuinplanten, voor binnen en buiten. In het seizoen ook bloembollen om zelf te planten.</p>
+            <a href="https://gardenmasterrijen.nl/plantenwereld/" target="_blank" rel="noopener">Meer over de Plantenwereld</a>
+          </div>
+        </article>
+        <article class="world" data-open="false">
+          <img src="images/snijbloemen-illustratie.jpg" width="1194" height="1600" alt="Illustratie, geen foto van de winkel: herfstboeket in zinken emmers in een kas">
+          <span class="tag">Illustratie</span>
+          <button class="world-btn" aria-expanded="false" aria-controls="w2"><span class="lbl">Snijbloemen</span><span class="plus" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button>
+          <div class="world-body" id="w2">
+            <p>Snijbloemen en boeketten uit onze eigen bloemenwinkel.</p>
+            <a href="https://gardenmasterrijen.nl/snijbloemen/" target="_blank" rel="noopener">Meer over Snijbloemen</a>
+          </div>
+        </article>
+        <article class="world" data-open="false">
+          <img src="images/kas-pad.jpg" width="1800" height="1012" alt="Plantentafels en potten links in de kas van GardenMaster Rijen" style="object-position:8% 70%">
+          <button class="world-btn" aria-expanded="false" aria-controls="w3"><span class="lbl">Potterie &amp; Grond</span><span class="plus" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button>
+          <div class="world-body" id="w3">
+            <p>Potten en grond voor uw planten, binnen en in de tuin.</p>
+            <a href="https://gardenmasterrijen.nl/pot-grond/" target="_blank" rel="noopener">Meer over Potterie &amp; Grond</a>
+          </div>
+        </article>
+        <article class="world" data-open="false">
+          <img src="images/kadowereld.jpg" width="1800" height="1012" alt="De decoratie- en cadeauhoek van GardenMaster Rijen met lantaarns, vogelkooien en strobalen" style="object-position:40% 50%">
+          <button class="world-btn" aria-expanded="false" aria-controls="w4"><span class="lbl">Kadowereld</span><span class="plus" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button>
+          <div class="world-body" id="w4">
+            <p>Decoratie, neerzetsels en cadeaus. Rond de feestdagen ook kerstartikelen.</p>
+            <a href="https://gardenmasterrijen.nl/kadowereld/" target="_blank" rel="noopener">Meer over de Kadowereld</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-dark now" id="nu" aria-labelledby="h-nu" data-until="2026-11-29">
+    <div class="wrap now-grid">
+      <div>
+        <h2 id="h-nu">Winterfair</h2>
+        <svg class="squiggle" aria-hidden="true"><use href="#squig"/></svg>
+        <div class="dates">
+          <div class="date"><b>28</b><span>november</span></div>
+          <div class="date"><b>29</b><span>november</span></div>
+        </div>
+        <p class="deal">20% korting op kerstartikelen.</p>
+        <p class="note">Let ook op de speciale dagen. Bel <a href="tel:+31161226633">0161 22 66 33</a> of kijk bij de <a href="https://gardenmasterrijen.nl/tuincentrum-2/openingstijden/" target="_blank" rel="noopener">openingstijden</a>.</p>
+      </div>
+      <div class="badge" aria-hidden="true">
+        <svg><use href="#daisy"/></svg>
+        <div class="badge-txt"><div><b>20%</b><span>kerst</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" aria-labelledby="h-tips">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-tips">Tuintips door het jaar</h2>
+        <svg class="squiggle" aria-hidden="true"><use href="#squig"/></svg>
+        <p>Een paar tips uit onze rubriek Actueel, op hun plek in het jaar.</p>
+      </div>
+      <div class="year-scroll" tabindex="0" role="region" aria-label="Tuintips per maand, scroll zijwaarts">
+        <div class="year">
+          <div class="months">
+            <div class="m has">jan</div><div class="m">feb</div><div class="m">mrt</div><div class="m has">apr</div><div class="m has">mei</div><div class="m has">jun</div><div class="m has">jul</div><div class="m has">aug</div><div class="m">sep</div><div class="m">okt</div><div class="m">nov</div><div class="m">dec</div>
+          </div>
+          <div class="pins span-jan">
+            <article class="pin">
+              <h3>De vijver</h3>
+              <p>Zet een bos riet, takken of een ijsvrijhouder in het water. Sla het ijs nooit stuk: vissen kunnen er gehoorschade van krijgen.</p>
+            </article>
+            <article class="pin">
+              <h3>Bloembollen</h3>
+              <p>Ook in januari kunt u nog bloembollen planten.</p>
+            </article>
+          </div>
+          <div class="pins span-sum">
+            <p class="season">Voorjaar en zomer</p>
+            <div class="sum-grid">
+              <article class="pin"><h3>Vlijtig liesje</h3><p>Impatiens bloeit maandenlang, ook in de schaduw.</p></article>
+              <article class="pin"><h3>Lobelia</h3><p>Voor bakken en hangmanden. Geef regelmatig water.</p></article>
+              <article class="pin"><h3>Afrikaantje</h3><p>Tagetes, een vaste naam in de zomerbak.</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="year-foot"><a href="https://gardenmasterrijen.nl/actueel/" target="_blank" rel="noopener">Alle tips op Actueel</a></p>
+    </div>
+  </section>
+
+  <section class="shop" aria-labelledby="h-shop">
+    <div class="wrap">
+      <div class="shop-row">
+        <div>
+          <h2 id="h-shop">Bestel online, of blader door de folder</h2>
+          <p>Bezoek onze online shop en bestel direct.</p>
+          <div class="shop-btns">
+            <a class="btn btn-green" href="https://webshop.gardenmasterrijen.nl" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-bag"/></svg>Bestel online</a>
+            <a class="btn btn-line" href="https://gardenmasterrijen.nl/folder/" target="_blank" rel="noopener">Bekijk de folder</a>
+          </div>
+          <p class="vw">Rond de jaarwisseling: <a href="https://www.devuurwerkwinkel.nl/rijen" target="_blank" rel="noopener">vuurwerk bestellen in onze vuurwerk-webshop</a>.</p>
+        </div>
+        <svg class="shop-daisy" viewBox="0 0 100 100" aria-hidden="true"><use href="#daisy"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-kl">
+    <div class="wrap kl-grid">
+      <div class="kl-photo"><img src="images/orchidee.jpg" width="900" height="1600" alt="Orchidee in bloei in de kas van GardenMaster Rijen"></div>
+      <div>
+        <div class="sec-head" style="margin-bottom:28px">
+          <h2 id="h-kl">Wat klanten noemen</h2>
+          <svg class="squiggle" aria-hidden="true"><use href="#squig"/></svg>
+        </div>
+        <ul class="kl-list">
+          <li><svg aria-hidden="true"><use href="#i-leaf"/></svg>Een groot aanbod binnen- en tuinplanten</li>
+          <li><svg aria-hidden="true"><use href="#i-leaf"/></svg>Overzichtelijk ingedeeld</li>
+          <li><svg aria-hidden="true"><use href="#i-leaf"/></svg>Vriendelijke hulp, met een glimlach</li>
+          <li><svg aria-hidden="true"><use href="#i-leaf"/></svg>De bloemen verwelkomen u al op de parkeerplaats</li>
+        </ul>
+        <p class="kl-src">Samengevat uit reviews op Google.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="langskomen" aria-labelledby="h-visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-visit">Langskomen</h2>
+        <svg class="squiggle" aria-hidden="true"><use href="#squig"/></svg>
+        <p>Tuincentrum in Rijen, aan de Zwarte Dijk.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="card">
+          <p class="addr">Zwarte Dijk 60<br>5121 ZC Rijen</p>
+          <ul class="contact-list">
+            <li><a href="tel:+31161226633">0161 22 66 33</a></li>
+            <li><a href="mailto:info@gardenmasterrijen.nl">info@gardenmasterrijen.nl</a></li>
+          </ul>
+          <div class="visit-btns">
+            <a class="btn btn-orange" href="https://www.google.com/maps/search/GardenMaster+Rijen+Zwarte+Dijk+60+Rijen" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Route plannen</a>
+            <a class="btn btn-line" href="tel:+31161226633"><svg aria-hidden="true"><use href="#i-phone"/></svg>Bel ons</a>
+          </div>
+          <svg class="road" viewBox="0 0 560 150" role="img" aria-label="Getekende weg: Zwarte Dijk, met een bloem op nummer 60">
+            <path d="M0 120 C140 120 180 70 300 78 S470 118 560 96" fill="none" stroke="#13241A" stroke-width="22" stroke-linecap="round"/>
+            <path d="M0 120 C140 120 180 70 300 78 S470 118 560 96" fill="none" stroke="#F3F6F1" stroke-width="2" stroke-dasharray="14 12"/>
+            <text x="40" y="146" font-family="Plus Jakarta Sans,sans-serif" font-weight="700" font-size="14" fill="#3d5446">Zwarte Dijk</text>
+            <line x1="330" y1="78" x2="330" y2="44" stroke="#00904B" stroke-width="3"/>
+            <use href="#daisy" x="300" y="-10" width="60" height="60"/>
+            <text x="370" y="30" font-family="Plus Jakarta Sans,sans-serif" font-weight="700" font-size="15" fill="#007A40">nr. 60</text>
+          </svg>
+        </div>
+        <div class="card">
+          <table>
+            <caption>Openingstijden</caption>
+            <tbody>
+              <tr data-d="1"><th scope="row">maandag</th><td>9:00–18:00</td></tr>
+              <tr data-d="2"><th scope="row">dinsdag</th><td>9:00–18:00</td></tr>
+              <tr data-d="3"><th scope="row">woensdag</th><td>9:00–18:00</td></tr>
+              <tr data-d="4"><th scope="row">donderdag</th><td>9:00–18:00</td></tr>
+              <tr data-d="5"><th scope="row">vrijdag</th><td>9:00–18:00</td></tr>
+              <tr data-d="6"><th scope="row">zaterdag</th><td>9:00–17:00</td></tr>
+              <tr data-d="0"><th scope="row">zondag</th><td>gesloten</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:16px;color:var(--ink-2);font-size:.95rem">Op speciale dagen kunnen de tijden afwijken.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="plate"><img src="images/logo.png" width="1276" height="381" alt="GardenMaster Rijen"></span>
+    <p>Zwarte Dijk 60, 5121 ZC Rijen · <a href="tel:+31161226633">0161 22 66 33</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* four worlds: one open at a time */
+  var worlds=[].slice.call(document.querySelectorAll('.world'));
+  worlds.forEach(function(w){
+    var b=w.querySelector('.world-btn');
+    b.addEventListener('click',function(){
+      var wasOpen=w.getAttribute('data-open')==='true';
+      var mobile=window.matchMedia('(max-width:899px)').matches;
+      if(wasOpen && !mobile) return;
+      worlds.forEach(function(o){o.setAttribute('data-open','false');o.querySelector('.world-btn').setAttribute('aria-expanded','false');});
+      if(!wasOpen){w.setAttribute('data-open','true');b.setAttribute('aria-expanded','true');}
+    });
+  });
+
+  /* hours, Europe/Amsterdam */
+  var H={0:null,1:[9,18],2:[9,18],3:[9,18],4:[9,18],5:[9,18],6:[9,17]};
+  var names=['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+    var p={};parts.forEach(function(x){p[x.type]=x.value;});
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);
+    var now=+p.hour+(+p.minute)/60, h=H[day], txt;
+    if(h && now>=h[0] && now<h[1]) txt='Nu open tot '+h[1]+':00';
+    else if(h && now<h[0]) txt='Vandaag open vanaf '+h[0]+':00';
+    else { var d=day,i=0; do{d=(d+1)%7;i++;}while(!H[d]); txt=(i===1?'Morgen':names[d].charAt(0).toUpperCase()+names[d].slice(1))+' open vanaf '+H[d][0]+':00'; }
+    document.getElementById('status-txt').textContent=txt;
+    var row=document.querySelector('tr[data-d="'+day+'"]'); if(row) row.className='today';
+    /* hide Winterfair after its last day */
+    var today=p.year+'-'+p.month+'-'+p.day;
+    [].forEach.call(document.querySelectorAll('[data-until]'),function(el){ if(today>el.getAttribute('data-until')) el.hidden=true; });
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
