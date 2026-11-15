@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOOOY · Kapsalon Yvonne Knippen en Koffie, Rijen</title>
+<meta name="description" content="Kapsalon MOOOY aan de Hoofdstraat 33 in Rijen. Knippen, kleuren, föhnen en Olaplex. Bel 0161 24 03 58.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300;600&family=Rethink+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B0907; --paper:#F6F7F7; --blue:#D4EDF1; --mist:#ABBAC1; --blush:#FAE6E7;
+  --grey:#5E6468; --line:#DADFE1;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --display:"Lexend Exa",system-ui,sans-serif;
+  --text:"Rethink Sans",system-ui,sans-serif;
+  --gut:clamp(16px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--text);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+::selection{background:var(--blush);color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.light :focus-visible{outline-color:var(--ink)}
+html{scrollbar-color:var(--mist) var(--paper)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.9rem,4.6vw,3.4rem)}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:52px;padding:0 1.5em;border-radius:999px;font:600 1rem/1 var(--text);text-decoration:none;border:1.5px solid transparent;transition:transform .16s var(--ease-out),background-color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-blush{background:var(--blush);color:var(--ink)}
+.btn-line{border-color:rgba(246,247,247,.55);color:var(--paper)}
+.btn-ink{background:var(--ink);color:var(--paper)}
+@media (hover:hover) and (pointer:fine){
+  .btn-blush:hover{background:#fff}
+  .btn-line:hover{background:rgba(246,247,247,.12)}
+  .btn-ink:hover{background:#2a2622}
+}
+
+/* three-o cluster */
+.ooo{display:inline-flex;vertical-align:middle}
+.ooo i{width:1em;height:1em;border-radius:50%;display:block}
+.ooo i+i{margin-left:-.32em}
+.ooo i:nth-child(1){background:var(--blue)}
+.ooo i:nth-child(2){background:var(--mist);mix-blend-mode:multiply}
+.ooo i:nth-child(3){background:var(--blush);mix-blend-mode:multiply}
+.end{display:flex;justify-content:center;padding-top:clamp(48px,7vw,88px);font-size:22px}
+
+/* header */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:18px var(--gut)}
+.top .logo{display:block;width:clamp(116px,14vw,150px)}
+.top .call{color:var(--paper);font-weight:500;text-decoration:none;font-size:.95rem;display:flex;gap:.5em;align-items:center;min-height:44px}
+.top .call svg{width:16px;height:16px}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:96px 0 56px;overflow:hidden}
+.wm{display:flex;align-items:center;justify-content:center;font:300 clamp(58px,21.5vw,318px)/1 var(--display);letter-spacing:0;margin:0 auto;width:max-content;max-width:100%}
+.wm .l{display:block;transform:translateY(-.01em)}
+.wm .o{position:relative;display:block;width:.84em;height:.84em;border-radius:50%;overflow:hidden;margin:0 -.045em;box-shadow:0 0 0 max(3px,.022em) var(--ring);background:#2a2622;animation:o-in .42s var(--ease-out) backwards}
+.wm .o img{width:100%;height:100%;object-fit:cover}
+.wm .o-bar{--ring:var(--blue);z-index:3;animation-delay:.04s}
+.wm .o-cards{--ring:var(--mist);z-index:2;animation-delay:.11s}
+.wm .o-sign{--ring:var(--blush);z-index:1;animation-delay:.18s}
+.wm .l:first-child{margin-right:.05em}
+.wm .l:last-child{margin-left:.04em}
+.o-sign img{transform:scale(2.3);transform-origin:87% 22%}
+.o-cards img{object-position:42% 50%}
+@media(max-width:600px){.hero{min-height:auto;padding:148px 0 88px}}
+@keyframes o-in{from{transform:scale(.86)}to{transform:scale(1)}}
+.hero-copy{text-align:center;margin-top:clamp(28px,4.5vw,56px);animation:rise .5s var(--ease-out) .08s backwards}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+.tag{font:600 clamp(1.6rem,4.2vw,3rem)/1.1 var(--display);letter-spacing:-.02em}
+.sub{color:#C9CFD2;margin:.8em auto 0;max-width:34ch;font-size:clamp(1rem,1.6vw,1.15rem)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+
+/* picker */
+.pick{padding:clamp(72px,10vw,128px) 0}
+.pick-grid{display:grid;gap:clamp(32px,5vw,72px);margin-top:clamp(28px,4vw,48px)}
+@media(min-width:960px){.pick-grid{grid-template-columns:1fr 1.05fr;align-items:start}}
+.lead{color:var(--grey);max-width:46ch;margin-top:14px;font-size:1.1rem}
+.q{font:600 .95rem/1.3 var(--text);margin:0 0 12px}
+.q+.chips{margin-bottom:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;font:500 1rem/1 var(--text);color:var(--ink);background:#fff;border:1.5px solid var(--line);min-height:46px;padding:0 18px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:10px;transition:background-color .18s ease,border-color .18s ease,transform .14s var(--ease-out)}
+.chip:active{transform:scale(.97)}
+.chip .dot{width:12px;height:12px;border-radius:50%;border:1.5px solid var(--mist);flex:none;transition:background-color .18s ease}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--ink)}
+.chip[aria-pressed="true"] .dot{background:var(--ink);border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.chip:hover{border-color:var(--ink)}}
+.result{background:#fff;border-radius:28px;padding:clamp(24px,3.5vw,44px);position:relative;overflow:hidden;min-height:340px;box-shadow:0 18px 40px -24px rgba(11,9,7,.28)}
+.result::after{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:var(--blue);opacity:.55;z-index:0}
+.result>*{position:relative;z-index:1}
+.r-k{color:var(--grey);font-size:.95rem}
+.r-name{font:600 clamp(2.6rem,6vw,4.4rem)/1 var(--display);letter-spacing:-.03em;margin:.18em 0 .2em}
+.r-line{font-size:1.15rem;max-width:36ch}
+.days{display:flex;gap:6px;margin:22px 0 6px;flex-wrap:wrap}
+.day{display:flex;flex-direction:column;align-items:center;gap:6px;font:500 .85rem/1 var(--text);color:var(--grey);width:44px}
+.day b{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);display:block}
+.day.on{color:var(--ink)}
+.day.on b{background:var(--blush);border-color:var(--ink)}
+.day.sel b{box-shadow:0 0 0 3px var(--blue)}
+.r-also{margin-top:16px;color:var(--grey);font-size:.98rem}
+.r-also strong{color:var(--ink);font-weight:600}
+.result .btn{margin-top:24px}
+.result-body{transition:transform .22s var(--ease-out)}
+.team{margin-top:clamp(48px,6vw,80px);border-top:1.5px solid var(--ink)}
+.team h3{font-size:1.1rem;font-family:var(--text);font-weight:600;letter-spacing:0;padding:20px 0 6px}
+.team ul{list-style:none;margin:0;padding:0}
+.team li{display:grid;grid-template-columns:1fr;gap:2px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+@media(min-width:720px){.team li{grid-template-columns:200px 1fr auto;align-items:baseline}}
+.team .n{font:600 1.35rem/1.2 var(--display);letter-spacing:-.02em}
+.team .d{color:var(--grey);font-variant-numeric:tabular-nums}
+html:not(.js) .picker{display:none}
+
+/* services */
+.svc{background:var(--ink);color:var(--paper);padding:clamp(72px,10vw,128px) 0;position:relative;overflow:hidden}
+.svc-grid{display:grid;gap:40px}
+@media(min-width:960px){.svc-grid{grid-template-columns:1.3fr .7fr;align-items:center}}
+.svc ul{list-style:none;margin:28px 0 0;padding:0}
+.svc li{display:flex;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(246,247,247,.18)}
+.svc li .ooo{font-size:14px;flex:none;transform:translateY(-2px)}
+.svc .t{font:600 clamp(1.35rem,2.8vw,2.1rem)/1.15 var(--display);letter-spacing:-.02em}
+.svc .x{display:block;color:#C9CFD2;font:400 1rem/1.5 var(--text);margin-top:4px}
+.svc .note{color:#C9CFD2;margin-top:24px}
+.rings{width:100%;max-width:240px;margin:0 auto}
+@media(min-width:960px){.rings{max-width:420px}}
+
+/* salon */
+.salon{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:var(--ink)}
+.salon>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:8% 100%}
+@media(min-width:960px){.salon{justify-content:flex-end}.salon>img{object-position:30% 92%}}
+.salon .panel{position:relative;margin:0 var(--gut) var(--gut);background:var(--paper);border-radius:24px;padding:clamp(24px,3vw,40px);max-width:520px;box-shadow:0 20px 50px -20px rgba(11,9,7,.4)}
+.salon p{margin-top:12px;color:#3f4447}
+
+/* more */
+.more{padding:clamp(72px,10vw,128px) 0}
+.more-grid{display:grid;gap:clamp(32px,5vw,72px)}
+@media(min-width:960px){.more-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.more figure{margin:0;border-radius:50% 50% 28px 28px / 36% 36% 28px 28px;overflow:hidden;aspect-ratio:4/5}
+.more figure img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.more p{margin-top:16px;max-width:52ch;color:#3f4447}
+.board{margin-top:28px;background:#fff;border-radius:20px;padding:22px 24px}
+.board .k{font-weight:600;font-size:.95rem}
+.board ul{list-style:none;padding:0;margin:10px 0 0;columns:1}
+@media(min-width:560px){.board ul{columns:2;column-gap:28px}}
+.board li{padding:7px 0;border-bottom:1px solid var(--line);break-inside:avoid;display:flex;gap:10px;align-items:center}
+.board li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mist);flex:none}
+
+/* reviews */
+.rev{background:var(--blush);padding:clamp(72px,10vw,128px) 0}
+.rev-grid{display:grid;gap:36px}
+@media(min-width:960px){.rev-grid{grid-template-columns:.8fr 1.2fr;align-items:center}}
+.score{display:flex;align-items:center;gap:20px}
+.score .big{font:300 clamp(5rem,12vw,8.5rem)/1 var(--display);letter-spacing:-.04em}
+.score .stars{display:flex;gap:3px}
+.score .stars svg{width:20px;height:20px}
+.score small{display:block;color:#4a4547;font-size:1rem;margin-top:6px}
+.rev ol{list-style:none;margin:0;padding:0}
+.rev li{font:600 clamp(1.25rem,2.4vw,1.8rem)/1.25 var(--display);letter-spacing:-.02em;padding:20px 0;border-bottom:1.5px solid var(--ink);display:flex;gap:16px;align-items:baseline}
+.rev li .ooo{font-size:12px;flex:none}
+.rev .src{margin-top:18px;color:#4a4547;font-size:.95rem}
+
+/* visit */
+.visit{background:var(--ink);color:var(--paper);padding:clamp(72px,10vw,128px) 0 40px}
+.visit-grid{display:grid;gap:clamp(32px,5vw,72px)}
+@media(min-width:900px){.visit-grid{grid-template-columns:.8fr 1.2fr;align-items:center}}
+.visit figure{margin:0;border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:3/4;max-height:640px}
+.visit figure img{width:100%;height:100%;object-fit:cover;object-position:70% 30%}
+.visit address{font-style:normal;margin-top:22px;font-size:1.15rem;line-height:1.7}
+.visit address a{text-decoration-color:rgba(246,247,247,.4)}
+.hours{margin-top:28px;width:100%;max-width:440px;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours th,.hours td{text-align:left;padding:10px 0;border-bottom:1px solid rgba(246,247,247,.16);font-weight:400}
+.hours td{text-align:right}
+.hours tr.late th,.hours tr.late td{color:var(--paper);font-weight:600}
+.hours .pill{display:inline-block;margin-left:10px;background:var(--blush);color:var(--ink);font:600 .78rem/1 var(--text);padding:5px 10px;border-radius:999px;vertical-align:middle}
+.hours tr.off th,.hours tr.off td{color:#9DA4A8}
+.visit .cta{justify-content:flex-start}
+.foot{margin-top:clamp(56px,8vw,96px);padding-top:24px;border-top:1px solid rgba(246,247,247,.16);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;color:#9DA4A8;font-size:.9rem}
+.foot .ooo{font-size:16px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+
+<header class="top">
+  <a href="#" class="logo" aria-label="MOOOY, naar boven">
+    <svg viewBox="0 0 210 66" role="img" aria-hidden="true">
+      <circle cx="62" cy="27" r="19" fill="#D4EDF1"/>
+      <circle cx="92" cy="27" r="19" fill="#ABBAC1" opacity=".9"/>
+      <circle cx="122" cy="27" r="19" fill="#FAE6E7" opacity=".95"/>
+      <g fill="#F6F7F7" font-family="Lexend Exa, sans-serif" font-weight="300" font-size="30" text-anchor="middle">
+        <text x="24" y="38">M</text><text x="62" y="38" fill="#0B0907">O</text><text x="92" y="38" fill="#0B0907">O</text><text x="122" y="38" fill="#0B0907">O</text><text x="160" y="38">Y</text>
+      </g>
+      <text x="92" y="62" fill="#C9CFD2" font-family="Rethink Sans, sans-serif" font-size="10" letter-spacing="2" text-anchor="middle">more for you</text>
+    </svg>
+  </a>
+  <a class="call" href="tel:0161240358"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>0161 24 03 58</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <h1 id="h1" class="wm" aria-label="MOOOY, kapsalon in Rijen">
+    <span class="l" aria-hidden="true">M</span>
+    <span class="o o-bar"><img src="images/eiken-bar.jpg" alt="De eiken bar met houten krukken in de salon" width="1600" height="1067"></span>
+    <span class="o o-cards"><img src="images/kaartjes-mooy-jezelf.jpg" alt="Kaartjes met 'mooy jezelf!' op een eiken plankje" width="1000" height="667"></span>
+    <span class="o o-sign"><img src="images/gevel-bord.jpg" alt="Het staande MOOOY-bord voor de deur aan de Hoofdstraat" width="786" height="1400"></span>
+    <span class="l" aria-hidden="true">Y</span>
+  </h1>
+  <div class="hero-copy wrap">
+    <p class="tag">Jij bent MOOOY!</p>
+    <p class="sub">Kapsalon Yvonne Knippen en Koffie, Hoofdstraat 33 in Rijen.</p>
+    <div class="cta">
+      <a class="btn btn-blush" href="tel:0161240358"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Afspraak maken</a>
+      <a class="btn btn-line" href="tel:0161240358">Bel 0161 24 03 58</a>
+    </div>
+  </div>
+</section>
+
+<section class="pick light" id="wie" aria-labelledby="h-wie">
+  <div class="wrap">
+    <h2 id="h-wie">Wie knipt jou?</h2>
+    <p class="lead">Kies wat je wilt en op welke dag. Dan zie je wie je moet hebben.</p>
+    <div class="pick-grid">
+      <div class="picker">
+        <p class="q" id="q1">Wat wil je?</p>
+        <div class="chips" role="group" aria-labelledby="q1" data-group="svc">
+          <button class="chip" type="button" data-v="kleur" aria-pressed="true"><span class="dot"></span>Kleur</button>
+          <button class="chip" type="button" data-v="klassiek" aria-pressed="false"><span class="dot"></span>Klassiek knippen &amp; föhnen</button>
+          <button class="chip" type="button" data-v="heren" aria-pressed="false"><span class="dot"></span>Herenknipbeurt</button>
+          <button class="chip" type="button" data-v="olaplex" aria-pressed="false"><span class="dot"></span>Olaplex-herstel</button>
+        </div>
+        <p class="q" id="q2">Welke dag?</p>
+        <div class="chips" role="group" aria-labelledby="q2" data-group="day">
+          <button class="chip" type="button" data-v="di" aria-pressed="false"><span class="dot"></span>di</button>
+          <button class="chip" type="button" data-v="wo" aria-pressed="false"><span class="dot"></span>wo</button>
+          <button class="chip" type="button" data-v="do" aria-pressed="false"><span class="dot"></span>do</button>
+          <button class="chip" type="button" data-v="vr" aria-pressed="false"><span class="dot"></span>vr</button>
+          <button class="chip" type="button" data-v="za" aria-pressed="false"><span class="dot"></span>za</button>
+        </div>
+        <p class="r-k">Nog geen dag gekozen? Dan zie je alle dagen.</p>
+      </div>
+      <div class="result picker" aria-live="polite">
+        <div class="result-body" id="result"></div>
+      </div>
+    </div>
+
+    <div class="team">
+      <h3>Het team en hun dagen</h3>
+      <ul>
+        <li><span class="n">Yvonne</span><span>Eigenaar en kleurspecialist</span><span class="d">wo, do, vr</span></li>
+        <li><span class="n">Corinne</span><span>Rustig, klassiek knippen en föhnen</span><span class="d">di, wo, vr, za</span></li>
+        <li><span class="n">Lieke</span><span>Heren en Olaplex</span><span class="d">di, do, vr, za</span></li>
+        <li><span class="n">Liselotte</span><span>In opleiding via Curio</span><span class="d">wo t/m za</span></li>
+      </ul>
+    </div>
+    <div class="end" aria-hidden="true"><span class="ooo"><i></i><i></i><i></i></span></div>
+  </div>
+</section>
+
+<section class="svc" aria-labelledby="h-svc">
+  <div class="wrap svc-grid">
+    <div>
+      <h2 id="h-svc">Wat we doen</h2>
+      <ul>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Knippen<span class="x">Voor dames en heren.</span></span></li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Kleuren<span class="x">Yvonne is de kleurspecialist en werkt met topmerken.</span></span></li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Föhnen en stylen</span></li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Olaplex<span class="x">Een herstelbehandeling voor je haar.</span></span></li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Wassen en knippen</span></li>
+      </ul>
+      <p class="note">Prijzen hoor je bij je afspraak of aan de telefoon.</p>
+    </div>
+    <svg class="rings" viewBox="0 0 400 400" aria-hidden="true">
+      <circle cx="140" cy="160" r="110" fill="none" stroke="#D4EDF1" stroke-width="3"/>
+      <circle cx="260" cy="160" r="110" fill="none" stroke="#ABBAC1" stroke-width="3"/>
+      <circle cx="200" cy="262" r="110" fill="none" stroke="#FAE6E7" stroke-width="3"/>
+      <circle cx="200" cy="194" r="9" fill="#FAE6E7"/>
+    </svg>
+  </div>
+</section>
+
+<section class="salon" aria-labelledby="h-salon">
+  <img src="images/eiken-bar.jpg" alt="De eiken bar met houten krukken en witte tegels in de salon" width="1600" height="1067" loading="lazy">
+  <div class="panel">
+    <h2 id="h-salon">De salon</h2>
+    <p>Een lange eiken bar, houten krukken en witte tegels. Licht, rustig en met veel hout.</p>
+  </div>
+</section>
+
+<section class="more light" aria-labelledby="h-more">
+  <div class="wrap more-grid">
+    <figure><img src="images/kaartjes-mooy-jezelf.jpg" alt="Kaartjes met het MOOOY-logo en 'mooy jezelf!' in de salon" width="1000" height="667" loading="lazy"></figure>
+    <div>
+      <h2 id="h-more">Meer onder één dak</h2>
+      <p>Sinds 2017 werken hier zelfstandige ondernemers met elk een eigen vak samen. Meer, voor jou.</p>
+      <p>Oolaboo-producten haal je in de salon.</p>
+      <div class="board">
+        <p class="k">Op het bord bij de deur</p>
+        <ul>
+          <li>Yvonne Knippen en Koffie</li>
+          <li>BeautyExpert by Welten</li>
+          <li>Grid's Voetzorg</li>
+          <li>Gezondheidscoach Kethlin</li>
+          <li>Serona Peters Fotografie</li>
+          <li>Voetreflextherapeute Caroline</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev light" aria-labelledby="h-rev">
+  <div class="wrap rev-grid">
+    <div>
+      <h2 id="h-rev">Wat klanten zeggen</h2>
+      <div class="score" style="margin-top:24px">
+        <span class="big">4,7</span>
+        <div>
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="#0B0907" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path fill="#0B0907" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path fill="#0B0907" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path fill="#0B0907" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24"><path fill="#0B0907" fill-opacity=".35" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+          </div>
+          <small>op Google, 66 reviews</small>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ol>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span>Vakkundige kappers.</li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span>Goed advies over kleur.</li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span>Ze luisteren naar je wens en denken mee met een eigen idee.</li>
+        <li><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span>Veel klanten komen al jaren.</li>
+      </ol>
+      <p class="src">Samengevat uit reviews op Google.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="langskomen" aria-labelledby="h-visit">
+  <div class="wrap visit-grid">
+    <figure><img src="images/gevel-bord.jpg" alt="De gevel aan de Hoofdstraat met het staande MOOOY-bord" width="786" height="1400" loading="lazy"></figure>
+    <div>
+      <h2 id="h-visit">Langskomen</h2>
+      <address>
+        <a href="https://www.google.com/maps/search/MOOOY+Hoofdstraat+33+Rijen" target="_blank" rel="noopener">Hoofdstraat 33, 5121 JA Rijen</a><br>
+        <a href="tel:0161240358">0161 24 03 58</a><br>
+        <a href="mailto:info@yvonneknippenenkoffie.nl">info@yvonneknippenenkoffie.nl</a>
+      </address>
+      <table class="hours">
+        <caption class="sr">Openingstijden</caption>
+        <tbody>
+          <tr><th scope="row">dinsdag</th><td>9:30 – 17:30</td></tr>
+          <tr class="late"><th scope="row">woensdag <span class="pill">laat</span></th><td>9:30 – 20:30</td></tr>
+          <tr><th scope="row">donderdag</th><td>9:30 – 17:30</td></tr>
+          <tr class="late"><th scope="row">vrijdag <span class="pill">laat</span></th><td>9:30 – 20:30</td></tr>
+          <tr><th scope="row">zaterdag</th><td>8:00 – 14:00</td></tr>
+          <tr class="off"><th scope="row">zondag en maandag</th><td>gesloten</td></tr>
+        </tbody>
+      </table>
+      <div class="cta" style="margin-top:32px">
+        <a class="btn btn-blush" href="tel:0161240358">Bel voor een afspraak</a>
+        <a class="btn btn-line" href="mailto:info@yvonneknippenenkoffie.nl">Mail ons</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot"><span class="ooo" aria-hidden="true"><i></i><i></i><i></i></span><span>MOOOY · Yvonne Knippen en Koffie · Hoofdstraat 33, Rijen</span></div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var DAYS=["di","wo","do","vr","za"];
+  var FULL={di:"dinsdag",wo:"woensdag",do:"donderdag",vr:"vrijdag",za:"zaterdag"};
+  var P={
+    Yvonne:{line:"Eigenaar en kleurspecialist. Werkt met topmerken.",days:["wo","do","vr"]},
+    Corinne:{line:"Rustig, klassiek knippen en föhnen.",days:["di","wo","vr","za"]},
+    Lieke:{line:"Heren en Olaplex.",days:["di","do","vr","za"]},
+    Liselotte:{line:"In opleiding via Curio.",days:["wo","do","vr","za"]}
+  };
+  var SVC={kleur:["Yvonne"],klassiek:["Corinne"],heren:["Lieke"],olaplex:["Lieke"]};
+  var LABEL={kleur:"kleur",klassiek:"klassiek knippen en föhnen",heren:"een herenknipbeurt",olaplex:"Olaplex-herstel"};
+  var state={svc:"kleur",day:null};
+  var out=document.getElementById("result");
+  var tel='<a class="btn btn-ink" href="tel:0161240358"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Bel om te boeken</a>';
+  function dayRow(name){
+    return '<div class="days" aria-label="Dagen van '+name+'">'+DAYS.map(function(d){
+      var on=P[name].days.indexOf(d)>-1;
+      return '<span class="day'+(on?' on':'')+(d===state.day?' sel':'')+'"><b></b>'+d+'<span class="sr">'+(on?' aanwezig':' niet aanwezig')+'</span></span>';
+    }).join("")+'</div>';
+  }
+  function list(a){return a.length<2?a.join(""):a.slice(0,-1).join(", ")+" en "+a[a.length-1];}
+  function render(){
+    var spec=SVC[state.svc][0], d=state.day, html;
+    var here=d?Object.keys(P).filter(function(n){return P[n].days.indexOf(d)>-1;}):[];
+    if(!d || P[spec].days.indexOf(d)>-1){
+      html='<p class="r-k">Voor '+LABEL[state.svc]+(d?' op '+FULL[d]:'')+' boek je</p><p class="r-name">'+spec+'</p><p class="r-line">'+P[spec].line+'</p>'+dayRow(spec);
+      if(d && here.indexOf("Liselotte")>-1) html+='<p class="r-also">Ook in de salon: <strong>Liselotte</strong>, in opleiding.</p>';
+    } else {
+      var others=here.filter(function(n){return n!=="Liselotte";});
+      html='<p class="r-k">Op '+FULL[d]+' is '+spec+' er niet</p><p class="r-name">'+spec+'</p><p class="r-line">Voor '+LABEL[state.svc]+' kom je op '+list(P[spec].days.map(function(x){return FULL[x];}))+'.</p>'+dayRow(spec)+
+        '<p class="r-also">Wel in de salon op '+FULL[d]+': <strong>'+list(here)+'</strong>'+(others.length?'.':'')+'</p>';
+    }
+    out.innerHTML=html+tel;
+    if(out.animate && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+      out.animate([{transform:"translateY(8px)"},{transform:"none"}],{duration:220,easing:"cubic-bezier(0.23,1,0.32,1)"});
+    }
+  }
+  document.querySelectorAll(".chips").forEach(function(g){
+    var key=g.getAttribute("data-group");
+    g.addEventListener("click",function(e){
+      var b=e.target.closest(".chip"); if(!b) return;
+      var v=b.getAttribute("data-v");
+      if(key==="day" && state.day===v){ state.day=null; }
+      else if(key==="svc" && state.svc===v){ return; }
+      else state[key]=v;
+      g.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed",String(c.getAttribute("data-v")===state[key]));});
+      render();
+    });
+  });
+  render();
+})();
+</script>
+</body>
+</html>
