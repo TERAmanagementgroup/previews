@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EYES Oogheelkundekliniek voor Dieren — Breda</title>
+<meta name="description" content="Verwijskliniek voor oogproblemen bij dieren in Breda. Europees erkend specialist in de veterinaire oogheelkunde (ECVO). Alleen op afspraak, Thorbeckeplein 8.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;500;600&family=Petrona:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0C1517;--deep:#142124;--bone:#F2F0EB;--paper:#E8E5DE;--amber:#D99A3A;--green:#3FBF8A;--slate:#5E6A6C;--mist:#AEB8B9;
+--serif:"Petrona",Georgia,serif;--sans:"Funnel Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-color:var(--slate) var(--ink)}
+body{background:var(--ink);color:var(--bone);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--amber);color:var(--ink)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1220px,100% - 40px);margin-inline:auto}
+.pill{display:inline-flex;align-items:center;gap:.6em;padding:.85em 1.45em;border-radius:99px;font:600 .95rem var(--sans);text-decoration:none;transition:background .2s,border-color .2s,color .2s}
+.pill.amber{background:var(--amber);color:var(--ink)}.pill.amber:hover{background:#E8AE52}
+.pill.line{border:1px solid rgba(242,240,235,.4)}.pill.line:hover{border-color:var(--bone);background:rgba(242,240,235,.07)}
+.pill.dark{background:var(--ink);color:var(--bone)}.pill.dark:hover{background:var(--deep)}
+.pill.ol{border:1px solid rgba(12,21,23,.35);color:var(--ink)}.pill.ol:hover{border-color:var(--ink)}
+.chip{display:inline-flex;align-items:center;gap:.55em;font-size:.86rem;color:var(--mist);border:1px solid rgba(174,184,185,.3);border-radius:99px;padding:.45em 1em}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--green)}
+h2{font:300 clamp(2.2rem,5vw,4.3rem)/1.04 var(--serif);letter-spacing:-.02em;text-wrap:balance}
+h2 em{font-style:italic;color:var(--amber)}
+
+/* notice */
+.notice{background:var(--amber);color:var(--ink);font-size:.9rem;text-align:center;padding:.6em 20px;font-weight:500}
+.notice[hidden]{display:none}
+
+/* header */
+.top{display:flex;justify-content:space-between;align-items:center;padding:20px clamp(20px,4vw,48px);position:relative;z-index:3}
+.logo{display:flex;align-items:baseline;gap:.55em;text-decoration:none}
+.logo b{font:400 1.9rem/1 var(--serif);letter-spacing:-.02em}
+.logo span{font-size:.78rem;color:var(--mist);line-height:1.2;max-width:15ch}
+.top nav{display:flex;gap:26px;font-size:.92rem}
+.top nav a{text-decoration:none;color:var(--mist)}.top nav a:hover{color:var(--bone)}
+@media(max-width:820px){.top nav a:not(.tel){display:none}}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 110px);display:grid;align-items:center;overflow:hidden;isolation:isolate}
+.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:70% 50%;animation:settle .6s cubic-bezier(.16,1,.3,1) both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--ink) 0%,rgba(12,21,23,.82) 30%,rgba(12,21,23,0) 58%),linear-gradient(0deg,var(--ink) 0%,rgba(12,21,23,0) 22%)}
+.beam{position:absolute;left:68.6%;top:0;bottom:0;width:2px;z-index:-1;background:linear-gradient(180deg,rgba(255,250,235,0),rgba(255,250,235,.9) 35%,rgba(255,250,235,.9) 65%,rgba(255,250,235,0));box-shadow:0 0 18px 3px rgba(255,240,200,.35);transform-origin:top;animation:draw .7s .1s cubic-bezier(.16,1,.3,1) both;mix-blend-mode:screen}
+.hero .txt{padding:40px clamp(20px,4vw,48px) 90px;max-width:720px}
+.hero h1{font:300 clamp(2.9rem,6.6vw,6rem)/.98 var(--serif);letter-spacing:-.03em}
+.hero h1 em{color:var(--amber)}
+.hero p.sub{margin-top:24px;max-width:44ch;color:#C9CFCF;font-size:1.08rem}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.ill{position:absolute;right:16px;bottom:14px;font-size:.74rem;color:var(--bone);background:rgba(12,21,23,.7);padding:.3em .8em;border-radius:99px;letter-spacing:.02em}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes draw{from{transform:scaleY(.15)}to{transform:none}}
+@media(max-width:760px){
+ .hero{align-items:end;min-height:auto}
+ .hero .ph{position:relative;height:58vw;min-height:230px}
+ .hero .ph img{object-position:78% 50%}
+ .hero{display:block}
+ .hero::before{background:linear-gradient(0deg,var(--ink) 0%,rgba(12,21,23,0) 30%);bottom:auto;height:58vw;min-height:230px}
+ .beam{left:72%;height:58vw;min-height:230px;bottom:auto}
+ .ill{top:calc(max(58vw,230px) - 38px);bottom:auto}
+ .hero .txt{padding:8px 20px 64px}
+}
+
+/* statement */
+.state{padding:clamp(90px,12vw,160px) 0;position:relative}
+.state .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(30px,6vw,96px);align-items:end}
+.state p.big{font:300 clamp(2rem,4.2vw,3.6rem)/1.12 var(--serif);letter-spacing:-.02em}
+.state p.big em{color:var(--amber)}
+.state .col p{color:#C3CACA;margin-bottom:1em}
+.state .q{font:italic 300 1.25rem/1.4 var(--serif);color:var(--bone);border-top:1px solid rgba(242,240,235,.2);padding-top:18px}
+@media(max-width:820px){.state .grid{grid-template-columns:1fr}}
+
+/* routes */
+.routes{background:var(--bone);color:var(--ink);padding:clamp(90px,11vw,150px) 0}
+.routes .head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.routes .head p{color:#3D4749;max-width:46ch}
+.routes .grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:clamp(20px,3vw,44px);align-items:stretch}
+.route{border-top:2px solid var(--ink);padding-top:22px;display:flex;flex-direction:column}
+.route h3{font:400 clamp(1.6rem,2.4vw,2.1rem)/1.1 var(--serif);letter-spacing:-.015em;margin-bottom:14px}
+.route p{color:#3D4749;margin-bottom:14px}
+.route ul{list-style:none;margin-top:auto;border-top:1px solid rgba(12,21,23,.15)}
+.route li{padding:10px 0;border-bottom:1px solid rgba(12,21,23,.15);font-size:.95rem;display:flex;gap:10px}
+.route li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:.55em;flex:none}
+.routes figure{position:relative;border-radius:8px;overflow:hidden;min-height:360px;background:#0C1517}
+.routes figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.routes figcaption{position:absolute;left:14px;right:14px;bottom:14px;font-size:.84rem;color:var(--bone);background:rgba(12,21,23,.75);padding:.6em .9em;border-radius:6px;line-height:1.4}
+@media(max-width:960px){.routes .grid{grid-template-columns:1fr 1fr}.routes figure{grid-column:1/-1}.routes .head{grid-template-columns:1fr}}
+@media(max-width:620px){.routes .grid{grid-template-columns:1fr}}
+
+/* specialist */
+.spec{padding:clamp(90px,12vw,160px) 0;overflow:hidden}
+.spec .head{max-width:820px}
+.spec .head p{color:#C3CACA;max-width:58ch;margin-top:20px}
+.tline{position:relative;margin-top:70px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.tline::before{content:"";position:absolute;left:0;right:0;top:7px;height:2px;background:linear-gradient(90deg,rgba(255,250,235,.15),rgba(255,250,235,.85) 50%,rgba(255,250,235,.15));box-shadow:0 0 14px rgba(255,240,200,.25)}
+.stop{position:relative;padding-top:38px}
+.stop::before{content:"";position:absolute;top:0;left:0;width:16px;height:16px;border-radius:50%;background:var(--ink);border:2px solid var(--mist);transition:background .4s,border-color .4s,box-shadow .4s}
+.spec.lit .stop::before{background:var(--green);border-color:var(--green);box-shadow:0 0 0 6px rgba(63,191,138,.18)}
+.spec.lit .stop:nth-child(2)::before{transition-delay:.08s}.spec.lit .stop:nth-child(3)::before{transition-delay:.16s}.spec.lit .stop:nth-child(4)::before{transition-delay:.24s}
+.stop b{display:block;font:300 2.6rem/1 var(--serif);color:var(--amber);margin-bottom:10px}
+.stop h3{font:600 1rem/1.3 var(--sans);margin-bottom:6px}
+.stop p{color:#AEB8B9;font-size:.95rem}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:56px}
+.creds a{text-decoration:none}
+@media(max-width:860px){.tline{grid-template-columns:1fr;gap:0}.tline::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,rgba(255,250,235,.15),rgba(255,250,235,.85) 50%,rgba(255,250,235,.15))}.stop{padding:0 0 34px 44px}}
+
+/* species */
+.species{position:relative;background:var(--deep);padding:clamp(90px,11vw,150px) 0;overflow:hidden}
+.ghost{position:absolute;right:-2vw;top:50%;transform:translateY(-50%);font:300 clamp(8rem,24vw,22rem)/1 var(--serif);color:rgba(242,240,235,.045);letter-spacing:-.04em;pointer-events:none;white-space:nowrap}
+.species .grid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(30px,6vw,90px);align-items:start;position:relative}
+.species p.lead{color:#C3CACA;margin-top:20px;max-width:40ch}
+.slist{list-style:none;border-top:1px solid rgba(242,240,235,.2)}
+.slist li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:16px 0;border-bottom:1px solid rgba(242,240,235,.2)}
+.slist li span{font:300 clamp(2rem,4.2vw,3.5rem)/1.05 var(--serif);letter-spacing:-.02em}
+.slist li small{font-size:.86rem;color:var(--mist);text-align:right}
+.slist li.big span{color:var(--bone)}
+.slist li:not(.big) span{color:#D5D9D8}
+@media(max-width:820px){.species .grid{grid-template-columns:1fr}}
+
+/* team */
+.team{background:var(--bone);color:var(--ink);padding:clamp(90px,11vw,150px) 0}
+.team .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,90px);align-items:start}
+.team p.lead{color:#3D4749;margin:20px 0 40px;max-width:52ch}
+.people{list-style:none;border-top:1px solid var(--ink)}
+.people li{display:grid;grid-template-columns:minmax(0,15rem) 1fr;gap:20px;padding:22px 0;border-bottom:1px solid rgba(12,21,23,.2)}
+.people h3{font:400 1.45rem/1.15 var(--serif);letter-spacing:-.01em}
+.people h3 small{display:block;font:500 .82rem/1.4 var(--sans);color:#566062;margin-top:6px;letter-spacing:0}
+.people p{color:#33393B;font-size:.97rem}
+.team figure{position:sticky;top:30px;border-radius:8px;overflow:hidden}
+.team figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+@media(max-width:860px){.team .grid{grid-template-columns:1fr}.team figure{position:static}.people li{grid-template-columns:1fr;gap:6px}}
+
+/* talen + reviews */
+.talk{padding:clamp(90px,11vw,150px) 0}
+.talk .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px)}
+.langs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 26px}
+.langs button{font:600 .95rem var(--sans);min-width:64px;padding:.75em 1.1em;border-radius:99px;border:1px solid rgba(242,240,235,.4);background:transparent;color:var(--bone);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.langs button:hover{border-color:var(--bone)}
+.langs button[aria-pressed="true"]{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.say{min-height:9.5em;border-left:2px solid var(--green);padding-left:24px}
+.say p{font:italic 300 clamp(1.4rem,2.4vw,2rem)/1.3 var(--serif);transition:opacity .2s}
+.say small{display:block;margin-top:14px;color:var(--mist);font-size:.88rem}
+.js .say .l{display:none}.js .say .l.on{display:block}
+.rev .score{font:300 clamp(5rem,11vw,9rem)/.9 var(--serif);letter-spacing:-.04em}
+.rev .score small{font:400 1rem var(--sans);letter-spacing:0;color:var(--mist);margin-left:10px}
+.rev ul{list-style:none;margin-top:26px;border-top:1px solid rgba(242,240,235,.2)}
+.rev li{padding:14px 0;border-bottom:1px solid rgba(242,240,235,.2);color:#D5D9D8}
+.rev .src{font-size:.84rem;color:var(--mist);margin-top:14px}
+@media(max-width:860px){.talk .grid{grid-template-columns:1fr}}
+
+/* afspraak */
+.visit{background:var(--bone);color:var(--ink);padding:clamp(90px,11vw,140px) 0 0}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.hours{list-style:none;margin:30px 0;border-top:1px solid var(--ink)}
+.hours li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(12,21,23,.18);font-variant-numeric:tabular-nums}
+.hours li.off{color:#6B7476}
+.hours li.today{font-weight:600}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:26px 0 30px}
+.visit dt{color:#566062;font-size:.88rem;padding-top:.15em}
+.visit dd a{text-underline-offset:4px}
+.visit .note{font-size:.92rem;color:#3D4749;background:var(--paper);border-radius:8px;padding:14px 16px}
+.visit figure{border-radius:8px;overflow:hidden}
+.visit figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.visit figcaption{font-size:.85rem;color:#566062;margin-top:10px}
+@media(max-width:860px){.visit .grid{grid-template-columns:1fr}}
+footer{margin-top:clamp(70px,9vw,110px);background:var(--ink);color:var(--mist);padding:28px 0;font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer b{font:400 1.3rem var(--serif);color:var(--bone)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<p class="notice" id="notice">Gesloten op 9, 12, 13, 16, 17, 19 en 20 november (vakantie). We zijn wel gewoon telefonisch bereikbaar.</p>
+<header class="top">
+  <a class="logo" href="#top"><b>eyes</b><span>Oogheelkunde­kliniek voor Dieren</span></a>
+  <nav aria-label="Hoofdmenu"><a href="#verwijzing">Verwijzing</a><a href="#specialist">Specialist</a><a href="#team">Team</a><a href="#afspraak">Afspraak</a><a class="tel" href="tel:+31767370184">076 737 0184</a></nav>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="ph"><img src="images/oog-illustratie.jpg" alt="Illustratie: close-up van een hondenoog met bruine iris, gemaakt met AI. Geen foto van een patiënt." fetchpriority="high"></div>
+  <span class="beam" aria-hidden="true"></span>
+  <span class="ill">Illustratie</span>
+  <div class="txt">
+    <h1 id="h1">Alleen <em>ogen.</em><br>Daar zijn we in gespecialiseerd.</h1>
+    <p class="sub">Verwijskliniek voor oogproblemen bij dieren, aan het Thorbeckeplein in Breda. Met een Europees erkend specialist in de veterinaire oogheelkunde.</p>
+    <div class="acts"><a class="pill amber" href="tel:+31767370184">Bel 076 737 0184</a><a class="pill line" href="mailto:oogarts@eyesdierenkliniek.nl">Mail de kliniek</a></div>
+    <div class="chips"><span class="chip"><i></i>4,9 uit 125 Google-reviews</span><span class="chip"><i style="background:var(--amber)"></i>Alleen op afspraak</span></div>
+  </div>
+</section>
+
+<section class="state" aria-label="Werkwijze">
+  <div class="wrap grid">
+    <p class="big">Er is geen standaard&shy;protocol. <em>Ieder patiënt</em>, iedere eigenaar is anders.</p>
+    <div class="col">
+      <p>We nemen de tijd om tot een goede diagnose te komen. Daarna maken we, samen met u en de verwijzende dierenarts, een behandelplan dat goed én haalbaar is.</p>
+      <p>Het onderzoek doen we rustig. Dat kan alleen door elk dier met liefde en respect te benaderen.</p>
+      <p class="q">“Je merkt dat ze weten waarover ze het hebben!”</p>
+    </div>
+  </div>
+</section>
+
+<section class="routes" id="verwijzing" aria-labelledby="rt">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="rt">Zo komt uw dier bij ons.</h2>
+      <p>Zoals de naam zegt: we behandelen uitsluitend patiënten met oogproblemen. Er zijn twee redenen om bij EYES binnen te komen.</p>
+    </div>
+    <div class="grid">
+      <article class="route">
+        <h3>Verwezen door uw dierenarts</h3>
+        <p>Uw eigen dierenarts ziet iets aan het oog en verwijst u door. Wij onderzoeken, stellen de diagnose en bespreken de behandeling met u én met uw dierenarts.</p>
+        <ul><li>Oogonderzoek en diagnose</li><li>Behandelplan op maat</li><li>Operaties aan het oog</li></ul>
+      </article>
+      <article class="route">
+        <h3>Oogonderzoek voor de fok</h3>
+        <p>Als lid van het Nederlandse panel ter bestrijding van erfelijke oogafwijkingen (ECVO-panel, Raad van Beheer) onderzoekt de oogarts honden en katten vóórdat ze worden ingezet voor de fok.</p>
+        <ul><li>ECVO-oogonderzoek honden en katten</li><li>Meedenken over het fokbeleid</li><li>Nieuws over erfelijke oogziektes</li></ul>
+      </article>
+      <figure><img src="images/fluoresceine.jpg" alt="Close-up van een hondenoog tijdens onderzoek, met groene fluoresceïne-kleuring op het hoornvlies" loading="lazy"><figcaption>Een oog tijdens onderzoek, met fluoresceïne-kleuring.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="spec" id="specialist" aria-labelledby="sp">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="sp">Een specialist, geen <em>generalist.</em></h2>
+      <p>Na de studie diergeneeskunde volgt een specialist een opleiding van 3 tot 4 jaar die uitsluitend over oogheelkunde gaat. Die eindigt met het Europese ECVO-examen: erkenning voor kennis en kunde in het vak, wereldwijd. De specialisten staan in het Nederlandse en het Europese register.</p>
+    </div>
+    <div class="tline">
+      <div class="stop"><b>1994</b><h3>Dierenarts</h3><p>Anne-Marie Verbruggen studeert af aan de Faculteit Diergeneeskunde in Luik.</p></div>
+      <div class="stop"><b>3 jaar</b><h3>Oogheelkunde in Utrecht</h3><p>Verdere opleiding aan de Faculteit Diergeneeskunde in Utrecht, alleen gericht op het oog.</p></div>
+      <div class="stop"><b>2000</b><h3>ECVO-examen</h3><p>Behaald in Maisons-Alfort (Parijs). Diplomate of the European College of Veterinary Ophthalmologists.</p></div>
+      <div class="stop"><b>Nu</b><h3>Bijblijven en doorgeven</h3><p>Literatuur en congressen in binnen- en buitenland. Ze geeft lezingen, “met kunde maar ook met humor”.</p></div>
+    </div>
+    <div class="creds"><a class="chip" href="https://ecvo.org/"><i></i>ECVO Dipl.</a><a class="chip" href="https://www.ebvs.eu/"><i></i>EBVS European Specialist in Veterinary Ophthalmology</a></div>
+  </div>
+</section>
+
+<section class="species" aria-labelledby="sv">
+  <span class="ghost" aria-hidden="true">dieren</span>
+  <div class="wrap grid">
+    <div><h2 id="sv">Alle diersoorten worden <em>behandeld.</em></h2><p class="lead">Het zijn vooral honden en katten die bij ons op de vloer komen. Maar we zien ook regelmatig andere dieren, en grotere dieren bezoeken we op locatie.</p></div>
+    <ul class="slist">
+      <li class="big"><span>Honden</span><small>de meeste patiënten</small></li>
+      <li class="big"><span>Katten</span><small>ook ECVO-fokonderzoek</small></li>
+      <li><span>Konijnen</span><small>regelmatig</small></li>
+      <li><span>Vogels</span><small>regelmatig</small></li>
+      <li><span>Reptielen</span><small>regelmatig</small></li>
+      <li><span>Grotere (exotische) dieren</span><small>op locatie</small></li>
+    </ul>
+  </div>
+</section>
+
+<section class="team" id="team" aria-labelledby="tm">
+  <div class="wrap grid">
+    <div>
+      <h2 id="tm">Het team van <em>EYES.</em></h2>
+      <p class="lead">Eén oogarts, één resident (oogarts in opleiding) en twee paraveterinaire assistentes. Door hun lange samenwerking met de oogarts kennen de assistentes de oogziektes, medicijnen en operaties goed, en kunnen ze u daarover adviseren.</p>
+      <ul class="people">
+        <li><h3>Anne-Marie Verbruggen<small>Oogarts, ECVO Dipl.</small></h3><p>Europees erkend dierenarts-specialist in de oogheelkunde sinds 2000. Lid van het ECVO-panel van de Raad van Beheer.</p></li>
+        <li><h3>Lauren Goossens<small>Resident, oogarts in opleiding</small></h3><p>Afgestudeerd in Gent (2018), oogheelkunde-internship in Bristol, residency in Utrecht. Werkt deeltijds in Breda en rondt hier haar residency af onder supervisie van Anne-Marie.</p></li>
+        <li><h3>Simone Geelhoed<small>Paraveterinair en personal assistant</small></h3><p>Sinds 2003 bij oogarts Verbruggen. Passie voor oogheelkunde, anesthesie en dieren.</p></li>
+        <li><h3>Tamara Hack<small>Paraveterinair</small></h3><p>Sinds 2001 werkzaam in eerste- en tweedelijnspraktijken in West-Brabant, en kent veel patiënten en eigenaren al.</p></li>
+      </ul>
+    </div>
+    <figure><img src="images/balie.jpg" alt="Een zwarte hond wacht bij de houten balie van de kliniek, met het eyes-logo op de muur" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="talk" aria-labelledby="tk">
+  <div class="wrap grid">
+    <div>
+      <h2 id="tk">We spreken <em>uw taal.</em></h2>
+      <div class="langs" role="group" aria-label="Kies een taal">
+        <button type="button" aria-pressed="true" data-l="nl" lang="nl">NL</button>
+        <button type="button" aria-pressed="false" data-l="en" lang="en">EN</button>
+        <button type="button" aria-pressed="false" data-l="fr" lang="fr">FR</button>
+        <button type="button" aria-pressed="false" data-l="de" lang="de">DE</button>
+      </div>
+      <div class="say" aria-live="polite">
+        <div class="l on" data-l="nl" lang="nl"><p>U kunt bij ons terecht in het Nederlands, Engels, Frans en Duits.</p><small>Nederlands</small></div>
+        <div class="l" data-l="en" lang="en"><p>“We were helped in our language.” All publications and meetings are in English, so we know the terms for the eye and its diseases well.</p><small>English</small></div>
+        <div class="l" data-l="fr" lang="fr"><p>Etant francophone à la base, je me ferais un plaisir de communiquer avec vous en français.</p><small>Français</small></div>
+        <div class="l" data-l="de" lang="de"><p>Wir sprechen Deutsch!</p><small>Deutsch</small></div>
+      </div>
+    </div>
+    <div class="rev">
+      <p class="score">4,9<small>uit 125 reviews op Google</small></p>
+      <ul>
+        <li>Zeer professionele hulp bij oogproblemen.</li>
+        <li>Een kundige, vriendelijke dierenarts en lieve assistentes.</li>
+        <li>Honden worden rustig en voorzichtig behandeld.</li>
+        <li>Na lange onzekerheid eindelijk een duidelijke diagnose voor een oude kat.</li>
+      </ul>
+      <p class="src">Samengevat uit de reviews van eigenaren op Google.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="afspraak" aria-labelledby="af">
+  <div class="wrap grid">
+    <div>
+      <h2 id="af">Uitsluitend op <em>afspraak.</em></h2>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Maandag</span><span>9:00 – 17:00</span></li>
+        <li data-d="2"><span>Dinsdag</span><span>9:00 – 17:00</span></li>
+        <li data-d="3"><span>Woensdag</span><span>10:00 – 17:00</span></li>
+        <li data-d="4" class="off"><span>Donderdag</span><span>gesloten</span></li>
+        <li data-d="5"><span>Vrijdag</span><span>9:00 – 17:00</span></li>
+        <li data-d="6" class="off"><span>Zaterdag en zondag</span><span>gesloten</span></li>
+      </ul>
+      <dl>
+        <dt>Adres</dt><dd><a href="https://www.google.com/maps/search/EYES+Oogheelkundekliniek+voor+Dieren+Thorbeckeplein+8+Breda">Thorbeckeplein 8, 4812 LS Breda</a></dd>
+        <dt>Telefoon</dt><dd><a href="tel:+31767370184">076 737 0184</a></dd>
+        <dt>Mobiel</dt><dd><a href="tel:+31610460877">06 10460877</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:oogarts@eyesdierenkliniek.nl">oogarts@eyesdierenkliniek.nl</a></dd>
+      </dl>
+      <div class="acts" style="margin-top:0"><a class="pill dark" href="tel:+31767370184">Bel voor een afspraak</a><a class="pill ol" href="mailto:oogarts@eyesdierenkliniek.nl?subject=Afspraak">Mail ons</a></div>
+      <p class="note" id="note2" style="margin-top:26px">November: gesloten op 9, 12, 13, 16, 17, 19 en 20 november. Bellen voor een afspraak of een vraag kan gewoon.</p>
+    </div>
+    <figure><img src="images/wachtruimte.jpg" alt="De lichte wachtruimte van de kliniek met een hond aan de lijn"><figcaption>De wachtruimte aan het Thorbeckeplein.</figcaption></figure>
+  </div>
+  <footer><div class="wrap"><b>eyes</b><span>Oogheelkundekliniek voor Dieren · Thorbeckeplein 8, Breda · 076 737 0184</span></div></footer>
+</section>
+</main>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  // hide the November closure notes after 21 Nov 2026
+  if(new Date()>new Date('2026-11-21T00:00:00+01:00')){document.getElementById('notice').hidden=true;var n=document.getElementById('note2');if(n)n.hidden=true;}
+  // language switch
+  var btns=[].slice.call(document.querySelectorAll('.langs button')),ls=[].slice.call(document.querySelectorAll('.say .l'));
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+    ls.forEach(function(l){l.classList.toggle('on',l.dataset.l===b.dataset.l)});
+  })});
+  // today in hours
+  try{var d=new Date().getDay();var li=document.querySelector('#hours [data-d="'+(d===0?6:d)+'"]');if(li)li.classList.add('today');}catch(e){}
+  // light the timeline when it enters
+  var s=document.querySelector('.spec');
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('lit');o.disconnect()}})},{threshold:.35}).observe(s.querySelector(".tline"));}else s.classList.add('lit');
+})();
+</script>
+</body>
+</html>
