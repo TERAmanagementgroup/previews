@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mondzorg Rijen — tandarts aan het Raadhuisplein</title>
+<meta name="description" content="Mondzorg Rijen, Raadhuisplein 48 in Rijen. Tandartspraktijk voor het hele gezin, maandag tot en met woensdag open tot 20:00. Bel 0161 223 038.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,500;0,700;1,500;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14202B; --navy-2:#1C2B38; --teal:#2E9C93; --teal-d:#1D6F69; --white:#F5F3EF; --paper:#FFFDF8; --brick:#8C4A32;
+  --ink:#14202B; --ink-soft:#4F5A63; --line:#D9D6CF;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --disp:"Familjen Grotesk",system-ui,sans-serif; --text:"DM Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--text);font-weight:400;font-size:1.0625rem;line-height:1.6;background:var(--white);color:var(--ink);overflow-x:hidden}
+::selection{background:var(--teal);color:#fff}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:.6em;font:600 1rem/1 var(--text);text-decoration:none;padding:1em 1.5em;border-radius:999px;transition:transform .16s var(--ease-out),background-color .2s ease}
+.btn svg{width:1.1em;height:1.1em}
+.btn-t{background:var(--teal-d);color:#fff}
+.btn-w{border:1.5px solid rgba(245,243,239,.55);color:var(--white)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn-t:hover{background:#175A55}.btn-w:hover{background:rgba(245,243,239,.08)}}
+.h2{font:700 clamp(2.6rem,5.4vw,4.6rem)/.98 var(--disp);letter-spacing:-.025em}
+.h2 em{font-style:italic;font-weight:500;color:var(--teal-d)}
+.dark .h2 em{color:var(--teal)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;background:var(--navy);color:var(--white);display:flex;flex-direction:column;overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:60% 50%;animation:settle .6s var(--ease-out) both}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,32,43,.9),rgba(20,32,43,.55) 45%,rgba(20,32,43,.15) 80%),linear-gradient(0deg,rgba(20,32,43,.9),transparent 35%)}
+.top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0}
+.logo{display:flex;align-items:center;gap:.55em;font:700 1.3rem/1 var(--disp);letter-spacing:-.01em;text-decoration:none}
+.logo svg{width:34px;height:34px}
+.top a.ph{font:500 .95rem/1 var(--text);text-decoration:none;border-bottom:2px solid var(--teal);padding-bottom:3px}
+.hero-body{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 0}
+.h1{font:700 clamp(3.6rem,9vw,8.4rem)/.92 var(--disp);letter-spacing:-.035em;max-width:11ch}
+.h1 .ln{display:block;animation:rise .6s var(--ease-out) both}
+.h1 .ln:nth-child(2){animation-delay:.06s;font-style:italic;font-weight:500;color:#6FD3C9}
+.lead{max-width:38ch;font-size:clamp(1.05rem,1.5vw,1.25rem);margin:24px 0 30px;color:#D8DEE3}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(245,243,239,.35);margin-bottom:26px}
+.stats div{padding:16px 16px 0 0}
+.stats b{display:block;font:700 clamp(1.7rem,2.8vw,2.4rem)/1 var(--disp);letter-spacing:-.02em}
+.stats span{font-size:.85rem;color:#B9C3CB}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* WHEN */
+.when{padding:clamp(80px,10vw,130px) 0}
+.when-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.when p.sub{color:var(--ink-soft);max-width:40ch;margin:18px 0 28px}
+.days{display:flex;gap:8px;flex-wrap:wrap}
+.day{font:700 1.05rem/1 var(--disp);width:62px;height:62px;border-radius:50%;border:1.5px solid var(--navy);background:transparent;color:var(--navy);cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.day[aria-pressed="true"]{background:var(--navy);color:var(--white)}
+.day small{display:block;font:500 .6rem/1 var(--text);margin-top:3px;color:inherit;opacity:.8}
+@media (hover:hover) and (pointer:fine){.day:hover{background:#E6E3DC}.day[aria-pressed="true"]:hover{background:var(--navy)}}
+.list{margin-top:26px;list-style:none;font-size:.95rem;color:var(--ink-soft);columns:2;column-gap:30px}
+.list li{padding:4px 0;font-variant-numeric:tabular-nums}
+/* the card */
+.card{position:relative;background:var(--paper);border-radius:18px;padding:34px 34px 30px;box-shadow:0 30px 60px -30px rgba(20,32,43,.45),0 2px 6px rgba(20,32,43,.08);transform:rotate(-1.5deg);max-width:520px;margin-inline:auto}
+.card::before{content:"";position:absolute;right:24px;top:24px;width:16px;height:16px;border-radius:50%;background:var(--white);box-shadow:inset 0 1px 3px rgba(0,0,0,.25)}
+.card-top{display:flex;align-items:center;gap:.6em;font:700 1.05rem/1 var(--disp);padding-bottom:16px;border-bottom:2px solid var(--navy)}
+.card-top svg{width:26px;height:26px}
+.field{display:grid;grid-template-columns:110px 1fr;align-items:end;gap:12px;padding:16px 0 8px;border-bottom:1px solid var(--line)}
+.field span{font:500 .78rem/1 var(--text);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.field b{font:700 clamp(1.6rem,3vw,2.3rem)/1 var(--disp);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.field b.swap{animation:swap .22s var(--ease-out)}
+@keyframes swap{from{transform:translateY(10px);opacity:.3}to{transform:none;opacity:1}}
+.card-note{margin-top:18px;font-size:1.02rem;min-height:3.2em}
+.card-note strong{color:var(--teal-d)}
+.card .btn{margin-top:16px}
+
+/* VOICE */
+.voice{padding:clamp(90px,11vw,150px) 0;background:var(--navy);color:var(--white)}
+.quote{font:500 clamp(2.6rem,6.4vw,6rem)/1 var(--disp);letter-spacing:-.03em;max-width:16ch}
+.quote em{font-style:italic;color:var(--teal)}
+.quote .w{display:inline-block}
+.in .quote .w{animation:rise .6s var(--ease-out) both;animation-delay:calc(var(--i)*50ms)}
+.who{margin-top:18px;color:#B9C3CB}
+.praise{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px;margin-top:60px}
+.praise li{padding-top:18px;border-top:2px solid var(--teal);font-size:1.1rem;line-height:1.4}
+.score{margin-top:40px;display:flex;align-items:baseline;gap:14px;color:#B9C3CB}
+.score b{font:700 3rem/1 var(--disp);color:var(--white)}
+
+/* PRACTICE */
+.prac{display:grid;grid-template-columns:1.15fr 1fr;min-height:min(86vh,800px)}
+.prac-img{position:relative;overflow:hidden}
+.prac-img img{width:100%;height:100%;object-fit:cover}
+.prac-txt{padding:clamp(56px,8vw,110px) clamp(20px,5vw,80px);display:flex;flex-direction:column;justify-content:center;gap:22px}
+.prac-txt ul{list-style:none}
+.prac-txt li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line);font-size:1.12rem}
+.prac-txt li svg{flex:none;width:22px;height:22px;color:var(--teal-d);margin-top:.15em}
+.prac-txt p{color:var(--ink-soft)}
+
+/* PLACE */
+.place{position:relative;height:clamp(420px,70vh,700px);overflow:hidden;color:var(--white)}
+.place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.place::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,32,43,.85),rgba(20,32,43,0) 55%)}
+.place .wrap{position:absolute;z-index:2;left:0;right:0;bottom:clamp(30px,6vw,70px)}
+.place p{margin-top:12px;color:#D8DEE3;max-width:40ch}
+
+/* CONTACT */
+.contact{padding:clamp(80px,10vw,130px) 0 40px;background:var(--navy);color:var(--white)}
+.c-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,90px);align-items:end}
+.phone{display:inline-block;font:700 clamp(3rem,8vw,6.4rem)/.95 var(--disp);letter-spacing:-.03em;text-decoration:none;color:var(--white);margin:20px 0 26px;white-space:nowrap}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 0;border-bottom:1px solid rgba(245,243,239,.15)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--teal);font-weight:600}
+.addr{margin-top:22px}
+.addr a{text-underline-offset:4px}
+.foot{margin-top:70px;padding-top:20px;border-top:1px solid rgba(245,243,239,.15);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:#8F9BA5}
+
+@media (max-width:860px){
+  .when-grid,.prac,.c-grid{grid-template-columns:1fr}
+  .prac-img{height:360px}
+  .stats{grid-template-columns:1fr 1fr}
+  .praise{grid-template-columns:1fr 1fr;gap:20px 20px}
+  .card{transform:none;padding:26px 22px}
+  .field{grid-template-columns:90px 1fr}
+  .day{width:56px;height:56px}
+  .hero-img img{object-position:70% 50%}
+  .hero-img::after{background:linear-gradient(0deg,rgba(20,32,43,.96),rgba(20,32,43,.8) 60%,rgba(20,32,43,.6))}
+  .list{columns:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="m" viewBox="0 0 40 40"><path d="M6 32V12c0-3 3.5-4.5 5.6-2.4L20 18l8.4-8.4C30.5 7.5 34 9 34 12v20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="tick" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="hero-img"><img src="images/entree.jpg" width="2000" height="1334" alt="De glazen entree van Mondzorg Rijen in de schemering, met het logo op het glas en de balie erachter"></div>
+  <div class="wrap top">
+    <a class="logo" href="#"><svg style="color:#2E9C93"><use href="#m"/></svg>Mondzorg Rijen</a>
+    <a class="ph" href="tel:+31161223038">0161 223 038</a>
+  </div>
+  <div class="wrap hero-body">
+    <h1 class="h1"><span class="ln">Na je werk</span><span class="ln">naar de tandarts.</span></h1>
+    <p class="lead">Mondzorg Rijen aan het Raadhuisplein. Maandag tot en met woensdag open tot 20:00.</p>
+    <div class="cta">
+      <a class="btn btn-t" href="tel:+31161223038"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bel 0161 223 038</a>
+      <a class="btn btn-w" href="https://www.google.com/maps/search/Mondzorg+Rijen+Raadhuisplein+48+Rijen" target="_blank" rel="noopener">Route</a>
+    </div>
+  </div>
+  <div class="wrap stats" aria-label="In het kort">
+    <div><b>Tot 20:00</b><span>maandag t/m woensdag</span></div>
+    <div><b>4,1</b><span>gemiddeld op Google</span></div>
+    <div><b>35</b><span>Google-reviews</span></div>
+    <div><b>Raadhuisplein 48</b><span>in Rijen</span></div>
+  </div>
+</header>
+
+<main>
+<section class="when" aria-labelledby="w-h">
+  <div class="wrap when-grid">
+    <div>
+      <h2 class="h2" id="w-h">Wanneer <em>past het?</em></h2>
+      <p class="sub">Kies een dag en zie meteen hoe laat de praktijk open is. Drie avonden per week kun je tot acht uur terecht.</p>
+      <div class="days" role="group" aria-label="Kies een dag">
+        <button class="day" data-d="0" aria-pressed="false">Ma</button>
+        <button class="day" data-d="1" aria-pressed="false">Di</button>
+        <button class="day" data-d="2" aria-pressed="false">Wo</button>
+        <button class="day" data-d="3" aria-pressed="false">Do</button>
+        <button class="day" data-d="4" aria-pressed="false">Vr</button>
+      </div>
+      <ul class="list" aria-label="Alle openingstijden">
+        <li>Maandag 09:00–20:00</li><li>Dinsdag 09:00–20:00</li><li>Woensdag 09:00–20:00</li><li>Donderdag 09:00–18:30</li><li>Vrijdag 09:00–17:00</li><li>Weekend gesloten</li>
+      </ul>
+    </div>
+    <div class="card" aria-live="polite">
+      <div class="card-top"><svg style="color:#2E9C93"><use href="#m"/></svg>Mondzorg Rijen · afspraakkaart</div>
+      <div class="field"><span>Dag</span><b id="c-day">Maandag</b></div>
+      <div class="field"><span>Open</span><b id="c-open">09:00</b></div>
+      <div class="field"><span>Tot</span><b id="c-close">20:00</b></div>
+      <p class="card-note" id="c-note"><strong>Ook na werktijd.</strong> Tot acht uur ’s avonds open.</p>
+      <a class="btn btn-t" href="tel:+31161223038">Bel voor een afspraak</a>
+    </div>
+  </div>
+</section>
+
+<section class="voice dark rv" aria-labelledby="v-h">
+  <div class="wrap">
+    <p class="quote" id="v-h"><span class="w" style="--i:0">“Als</span> <span class="w" style="--i:1">een</span> <span class="w" style="--i:2"><em>warm</em></span> <span class="w" style="--i:3"><em>bad,</em></span> <span class="w" style="--i:4">vanaf</span> <span class="w" style="--i:5">de</span> <span class="w" style="--i:6">deur.”</span></p>
+    <p class="who">Zo beschrijft een patiënt de praktijk, in onze woorden.</p>
+    <ul class="praise">
+      <li>Een heel vriendelijke praktijk.</li>
+      <li>Een vrolijke balie.</li>
+      <li>Zorgzame assistentes, met humor.</li>
+      <li>De tandarts legt alles uit en voorkomt pijn.</li>
+    </ul>
+    <div class="score"><b>4,1</b><span>gemiddeld uit 35 Google-reviews</span></div>
+  </div>
+</section>
+
+<section class="prac" aria-labelledby="p-h">
+  <div class="prac-img"><img src="images/behandelkamer.jpg" width="1600" height="1100" alt="Een lichte behandelkamer van Mondzorg Rijen met de tandartsstoel en lamp"></div>
+  <div class="prac-txt">
+    <h2 class="h2" id="p-h">Tandarts voor <em>het hele gezin</em></h2>
+    <ul>
+      <li><svg><use href="#tick"/></svg><span>Algemene tandheelkunde, in lichte behandelkamers.</span></li>
+      <li><svg><use href="#tick"/></svg><span>Een team met assistentes en een praktijkmanager.</span></li>
+      <li><svg><use href="#tick"/></svg><span>Ook voor een gebitsprothese.</span></li>
+    </ul>
+    <p>Inschrijven of een afspraak maken? Bel de praktijk op 0161 223 038.</p>
+  </div>
+</section>
+
+<section class="place" aria-labelledby="pl-h">
+  <img src="images/gebouw.jpg" width="1800" height="1200" alt="Het gebouw aan het Raadhuisplein in Rijen waar Mondzorg Rijen zit">
+  <div class="wrap">
+    <h2 class="h2" id="pl-h" style="color:#fff">Aan het <em style="color:#2E9C93">Raadhuisplein.</em></h2>
+    <p>Raadhuisplein 48, 5121 JZ Rijen.</p>
+  </div>
+</section>
+</main>
+
+<footer class="contact dark" aria-labelledby="c-h">
+  <div class="wrap">
+    <div class="c-grid">
+      <div>
+        <h2 class="h2" id="c-h">Bel <em>de praktijk.</em></h2>
+        <a class="phone" href="tel:+31161223038">0161 223 038</a>
+        <div class="cta"><a class="btn btn-t" href="tel:+31161223038">Bel nu</a><a class="btn btn-w" href="https://www.google.com/maps/search/Mondzorg+Rijen+Raadhuisplein+48+Rijen" target="_blank" rel="noopener">Route</a></div>
+        <p class="addr"><a href="https://www.google.com/maps/search/Mondzorg+Rijen+Raadhuisplein+48+Rijen" target="_blank" rel="noopener">Raadhuisplein 48, 5121 JZ Rijen</a></p>
+      </div>
+      <table class="hours" aria-label="Openingstijden">
+        <tbody id="hours">
+          <tr><td>Maandag</td><td>09:00–20:00</td></tr><tr><td>Dinsdag</td><td>09:00–20:00</td></tr><tr><td>Woensdag</td><td>09:00–20:00</td></tr><tr><td>Donderdag</td><td>09:00–18:30</td></tr><tr><td>Vrijdag</td><td>09:00–17:00</td></tr><tr><td>Zaterdag</td><td>Gesloten</td></tr><tr><td>Zondag</td><td>Gesloten</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="foot"><span>Mondzorg Rijen · Raadhuisplein 48, Rijen</span><span>Foto’s: de praktijk zelf (Google Maps).</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var H=[["Maandag","09:00","20:00"],["Dinsdag","09:00","20:00"],["Woensdag","09:00","20:00"],["Donderdag","09:00","18:30"],["Vrijdag","09:00","17:00"]];
+  var notes=['<strong>Ook na werktijd.</strong> Tot acht uur ’s avonds open.','<strong>Ook na werktijd.</strong> Tot acht uur ’s avonds open.','<strong>Ook na werktijd.</strong> Tot acht uur ’s avonds open.','Open tot half zeven.','Open tot vijf uur. In het weekend is de praktijk gesloten.'];
+  var btns=[].slice.call(document.querySelectorAll('.day'));
+  function show(i){
+    btns.forEach(function(b,j){b.setAttribute('aria-pressed',j===i);});
+    [['c-day',0],['c-open',1],['c-close',2]].forEach(function(x){var el=document.getElementById(x[0]);el.textContent=H[i][x[1]];el.classList.remove('swap');void el.offsetWidth;el.classList.add('swap');});
+    document.getElementById('c-note').innerHTML=notes[i];
+  }
+  btns.forEach(function(b,i){b.addEventListener('click',function(){show(i);});});
+  var t=(new Date().getDay()+6)%7; show(t>4?0:t);
+  var rows=document.querySelectorAll('#hours tr'); if(rows[t])rows[t].classList.add('today');
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
