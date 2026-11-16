@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autobedrijf Breda · Onderhoud, reparatie en pech onderweg</title>
+<meta name="description" content="Autobedrijf Breda aan de Magnoliastraat 61. Onderhoud, reparatie en hulp bij pech, voor alle merken. 5,0 op Google. Bel 06 48 23 61 19.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,700;1,800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asph:#0F1113; --rubber:#1C1F23; --rubber-2:#262A2F; --chalk:#F1F1EE; --steel:#9AA0A8; --steel-lt:#C3C8CE;
+  --lime:#C6F432; --brick:#D9B46A; --ink-2:#4B5157; --line:#D9DAD5;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --tread:repeating-linear-gradient(115deg,#2B2F35 0 14px,transparent 14px 22px),repeating-linear-gradient(65deg,#2B2F35 0 14px,transparent 14px 22px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Rubik",system-ui,sans-serif;font-size:17px;line-height:1.55;color:var(--asph);background:var(--chalk);overflow-x:hidden}
+::selection{background:var(--lime);color:var(--asph)}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Kanit",sans-serif;font-style:italic;font-weight:800;line-height:.92;letter-spacing:-0.01em;text-transform:uppercase}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px/1 "Rubik",sans-serif;padding:17px 26px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;transition:transform .16s var(--ease-out),background-color .2s ease,border-color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-l{background:var(--lime);color:var(--asph)}
+.btn-o{border-color:rgba(241,241,238,.4);color:var(--chalk)}
+.btn-d{background:var(--asph);color:var(--chalk)}
+@media (hover:hover) and (pointer:fine){.btn-l:hover{background:#D6FA62}.btn-o:hover{border-color:var(--chalk)}.btn-d:hover{background:var(--rubber-2)}}
+.ico{width:18px;height:18px;flex:none}
+.edge{height:26px;background:var(--asph);position:relative;overflow:hidden}
+.edge::before{content:"";position:absolute;inset:4px -60px;background:var(--tread)}
+.edge.lt{background:var(--chalk)}
+.edge.lt::before{background:repeating-linear-gradient(115deg,#C9CBC6 0 14px,transparent 14px 22px),repeating-linear-gradient(65deg,#C9CBC6 0 14px,transparent 14px 22px)}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5;padding:22px 0;color:var(--chalk)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 italic 22px/1 "Kanit",sans-serif;text-transform:uppercase}
+.logo svg{width:44px;height:22px}
+.top-tel{text-decoration:none;font-weight:600;display:flex;gap:8px;align-items:center}
+
+/* hero */
+.hero{background:var(--asph);color:var(--chalk);position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;right:-10%;top:10%;width:70%;height:80%;background:radial-gradient(closest-side,rgba(198,244,50,.10),transparent);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:130px 0 70px;position:relative}
+.hero h1{font-size:clamp(64px,8.6vw,138px);animation:rise .55s var(--ease-out) both}
+.hero h1 span{display:block;color:var(--lime)}
+.lede{font-size:20px;color:var(--steel-lt);max-width:36ch;margin:26px 0 30px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid rgba(241,241,238,.2);color:var(--steel-lt);display:inline-flex;gap:8px;align-items:center}
+.pill b{color:var(--chalk);font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--steel)}
+.pill.open .dot{background:var(--lime);box-shadow:0 0 0 4px rgba(198,244,50,.18)}
+.tyre-wrap{position:relative;justify-self:end;width:min(560px,100%)}
+.tyre{width:100%;height:auto;display:block;animation:roll .6s var(--ease-out) both;filter:drop-shadow(0 40px 50px rgba(0,0,0,.6))}
+.tag{position:absolute;display:flex;align-items:center;font:600 14px "Rubik",sans-serif;white-space:nowrap}
+.tag span{background:var(--chalk);color:var(--asph);padding:8px 12px;border-radius:8px}
+.tag i{display:block;height:1px;width:56px;background:var(--steel-lt)}
+.tag::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(198,244,50,.22);flex:none}
+.tag.r{flex-direction:row-reverse}
+@keyframes rise{from{transform:translateY(14px)}}
+@keyframes roll{from{transform:translateX(40px) rotate(25deg)}}
+
+/* stats */
+.stats{background:var(--asph);color:var(--chalk);border-top:1px solid #2A2E33}
+.stats ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.stats li{padding:26px 24px 30px;border-left:1px solid #2A2E33}
+.stats li:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font:700 italic 40px/1 "Kanit",sans-serif}
+.stats span{color:var(--steel);font-size:15px}
+
+/* reasons */
+.reasons{padding:120px 0;background:var(--chalk)}
+.reasons-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:46px}
+.reasons h2{font-size:clamp(46px,6vw,88px)}
+.reasons-head p{color:var(--ink-2);max-width:44ch;font-size:18px}
+.list{list-style:none;counter-reset:r}
+.list li{display:grid;grid-template-columns:70px 1fr auto;gap:24px;align-items:center;padding:22px 0;border-top:2px solid var(--asph)}
+.list li:last-child{border-bottom:2px solid var(--asph)}
+.list svg{width:54px;height:54px}
+.list strong{font:800 italic clamp(30px,3.6vw,52px)/1 "Kanit",sans-serif;text-transform:uppercase}
+.list em{font-style:normal;color:var(--ink-2);font-size:15px;max-width:30ch;text-align:right}
+.src{font-size:13px;color:var(--ink-2);margin-top:16px}
+
+/* services */
+.serv{background:var(--rubber);color:var(--chalk);padding:120px 0}
+.serv h2{font-size:clamp(46px,6vw,88px);margin-bottom:50px}
+.rows{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #3A3F45}
+.rows article{padding:34px 30px 36px 0;border-right:1px solid #3A3F45}
+.rows article+article{padding-left:30px}
+.rows article:last-child{border-right:0}
+.rows svg{width:84px;height:84px;margin-bottom:26px}
+.rows h3{font-size:clamp(34px,3.2vw,46px);margin-bottom:14px}
+.rows p{color:var(--steel-lt)}
+.rows .q{margin-top:16px;font-size:15px;color:var(--lime)}
+
+/* 15 */
+.fast{background:var(--lime);color:var(--asph);padding:110px 0;position:relative;overflow:hidden}
+.fast-grid{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+.fast .num{font:800 italic clamp(160px,22vw,330px)/.78 "Kanit",sans-serif;letter-spacing:-0.04em}
+.fast .num small{display:block;font-size:.24em;letter-spacing:0;margin-top:14px}
+.fast p.big{font:700 italic clamp(28px,3vw,44px)/1.1 "Kanit",sans-serif;text-transform:uppercase;max-width:22ch}
+.fast p.sm{margin-top:18px;max-width:46ch;font-size:17px}
+.fast .acts{margin-top:28px}
+
+/* week */
+.week{padding:110px 0;background:var(--chalk)}
+.week-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:start}
+.week h2{font-size:clamp(46px,6vw,88px)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{border-radius:14px;padding:18px 14px 20px;background:#fff;border:1px solid var(--line);min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+.day b{font:800 italic 30px/1 "Kanit",sans-serif;text-transform:uppercase}
+.day span{font-size:15px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.day.closed{background:transparent;border-style:dashed}
+.day.today{background:var(--asph);color:var(--chalk);border-color:var(--asph)}
+.day.today span{color:var(--lime)}
+
+/* visit */
+.visit{background:var(--asph);color:var(--chalk);padding:110px 0 0;overflow:hidden}
+.visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:end}
+.visit h2{font-size:clamp(46px,6vw,88px)}
+.addr{font:700 italic clamp(28px,3vw,42px)/1.05 "Kanit",sans-serif;text-transform:uppercase;margin:24px 0 10px}
+.visit p{color:var(--steel-lt)}
+.visit .acts{margin:30px 0 110px}
+.elev{width:100%;height:auto;display:block}
+.foot{background:var(--asph);color:var(--steel);font-size:14px;padding:26px 0;border-top:1px solid #2A2E33}
+.foot .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .edge::before{animation:tread linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+    .list li{animation:slide linear both;animation-timeline:view();animation-range:entry 0% entry 90%}
+  }
+}
+@keyframes tread{from{transform:translateX(-44px)}to{transform:translateX(44px)}}
+@keyframes slide{from{transform:translateX(-24px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:900px){
+  .hero-grid,.reasons-head,.fast-grid,.week-grid,.visit-grid{grid-template-columns:1fr}
+  .tyre-wrap{justify-self:center;width:min(440px,92%);order:-1;margin-bottom:-20px}
+  .rows{grid-template-columns:1fr}
+  .rows article,.rows article+article{padding:30px 0;border-right:0;border-bottom:1px solid #3A3F45}
+  .stats ul{grid-template-columns:repeat(2,1fr)}
+  .stats li:nth-child(3){border-left:0;padding-left:0}
+  .days{grid-template-columns:repeat(4,1fr)}
+  .visit .acts{margin-bottom:60px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .hero-grid{padding:100px 0 50px}
+  .hero h1{font-size:13.6vw}
+  .logo{font-size:17px}.logo svg{width:34px}
+  .top-tel{white-space:nowrap;font-size:15px}
+  .tag{display:none}
+  .reasons,.serv,.fast,.week{padding:80px 0}
+  .list li{grid-template-columns:44px 1fr;gap:14px}
+  .list svg{width:40px;height:40px}
+  .list em{grid-column:2;text-align:left}
+  .days{grid-template-columns:repeat(2,1fr)}
+  .day{min-height:100px}
+  .stats li{padding:20px 14px 22px}
+  .stats b{font-size:32px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="star" viewBox="0 0 60 60"><defs><pattern id="tp" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><rect width="5" height="8" fill="#0F1113"/></pattern></defs><path d="M30 3l7.9 17.1 18.6 2.1-13.8 12.6 3.8 18.4L30 43.9 13.5 53.2l3.8-18.4L3.5 22.2l18.6-2.1z" fill="url(#tp)" stroke="#0F1113" stroke-width="3" stroke-linejoin="round"/></symbol>
+  <symbol id="car" viewBox="0 0 88 44"><path d="M4 32c0-6 4-8 10-9l12-9c3-2 6-3 10-3h16c5 0 9 2 12 5l8 7c8 1 12 3 12 9v4H4z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><circle cx="22" cy="36" r="6" fill="currentColor"/><circle cx="66" cy="36" r="6" fill="currentColor"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><svg aria-hidden="true" style="color:var(--lime)"><use href="#car"/></svg>Autobedrijf Breda</a>
+    <a class="top-tel" href="tel:+31648236119"><svg class="ico"><use href="#i-tel"/></svg>06 48 23 61 19</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="h1">Snel geholpen. <span>Door vakmensen.</span></h1>
+      <p class="lede">Onderhoud, reparatie en hulp bij pech, voor bijna elk merk. Aan de Magnoliastraat in Breda.</p>
+      <div class="acts">
+        <a class="btn btn-l" href="tel:+31648236119"><svg class="ico"><use href="#i-tel"/></svg>Bel 06 48 23 61 19</a>
+        <a class="btn btn-o" href="https://www.google.com/maps/search/Autobedrijf+Breda+Magnoliastraat+61+Breda" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Route</a>
+      </div>
+      <div class="chips">
+        <span class="pill"><b>5,0</b> uit 20 Google-reviews</span>
+        <span class="pill" id="open-pill"><span class="dot"></span><span id="open-txt">Ma–vr 09:00–18:00</span></span>
+      </div>
+    </div>
+    <div class="tyre-wrap" aria-hidden="true">
+      <svg class="tyre" viewBox="0 0 500 500">
+        <defs>
+          <radialGradient id="rim" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#E9ECEF"/><stop offset=".55" stop-color="#9AA0A8"/><stop offset="1" stop-color="#4B5157"/></radialGradient>
+          <radialGradient id="side" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#202328"/><stop offset=".9" stop-color="#16181B"/><stop offset="1" stop-color="#0B0C0E"/></radialGradient>
+          <g id="spoke"><path d="M244 112 L256 112 L270 205 L230 205 Z" fill="url(#rim)"/><path d="M250 112 L250 205" stroke="#3A3F45" stroke-width="2"/></g>
+        </defs>
+        <circle cx="250" cy="250" r="244" fill="#0B0C0E"/>
+        <circle cx="250" cy="250" r="232" fill="none" stroke="#24282D" stroke-width="22" stroke-dasharray="16 9"/>
+        <circle cx="250" cy="250" r="214" fill="url(#side)"/>
+        <circle cx="250" cy="250" r="200" fill="none" stroke="#2B2F35" stroke-width="1.5"/>
+        <text font-family="Kanit, sans-serif" font-style="italic" font-weight="700" font-size="15" fill="#3A3F45" letter-spacing="4"><textPath href="#arc">ONDERHOUD · REPARATIE · PECH ONDERWEG · ALLE MERKEN ·</textPath></text>
+        <path id="arc" d="M250 50 a200 200 0 1 1 -0.1 0" fill="none"/>
+        <circle cx="250" cy="250" r="160" fill="#2A2E33"/>
+        <circle cx="250" cy="250" r="152" fill="#111316"/>
+        <circle cx="250" cy="250" r="146" fill="none" stroke="url(#rim)" stroke-width="8"/>
+        <g><use href="#spoke"/><use href="#spoke" transform="rotate(72 250 250)"/><use href="#spoke" transform="rotate(144 250 250)"/><use href="#spoke" transform="rotate(216 250 250)"/><use href="#spoke" transform="rotate(288 250 250)"/></g>
+        <circle cx="250" cy="250" r="54" fill="url(#rim)"/>
+        <circle cx="250" cy="250" r="40" fill="#2A2E33"/>
+        <g fill="#9AA0A8"><circle cx="250" cy="222" r="5"/><circle cx="276.6" cy="241.3" r="5"/><circle cx="266.5" cy="272.7" r="5"/><circle cx="233.5" cy="272.7" r="5"/><circle cx="223.4" cy="241.3" r="5"/></g>
+        <circle cx="250" cy="250" r="12" fill="#C6F432"/>
+        <rect x="340" y="352" width="8" height="18" rx="2" fill="#9AA0A8" transform="rotate(-45 344 361)"/>
+      </svg>
+      <div class="tag" style="left:-6%;top:18%"><span>Alle merken</span><i></i></div>
+      <div class="tag r" style="right:-4%;top:46%"><span>Onderhoud</span><i></i></div>
+      <div class="tag" style="left:2%;top:78%"><span>Reparatie</span><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="In het kort">
+  <ul class="wrap">
+    <li><b>5,0</b><span>gemiddeld op Google</span></li>
+    <li><b>20</b><span>reviews op Google</span></li>
+    <li><b>09–18</b><span>maandag t/m vrijdag</span></li>
+    <li><b>10–17</b><span>zaterdag</span></li>
+  </ul>
+</section>
+<div class="edge" aria-hidden="true"></div>
+
+<section class="reasons" aria-labelledby="h-reasons">
+  <div class="wrap">
+    <div class="reasons-head">
+      <h2 id="h-reasons">Vijf sterren, vijf redenen</h2>
+      <p>Autobedrijf Breda heeft nog geen website. Wat we weten, komt van klanten. Dit zeggen ze het vaakst.</p>
+    </div>
+    <ul class="list">
+      <li><svg aria-hidden="true"><use href="#star"/></svg><strong>Snel geholpen</strong><em>Een klant kon dezelfde dag terecht</em></li>
+      <li><svg aria-hidden="true"><use href="#star"/></svg><strong>Vriendelijk en vakkundig</strong><em>Over het hele team</em></li>
+      <li><svg aria-hidden="true"><use href="#star"/></svg><strong>Grondig en gericht op resultaat</strong><em>Zo omschrijven klanten het werk</em></li>
+      <li><svg aria-hidden="true"><use href="#star"/></svg><strong>Kent bijna alle auto's</strong><em>Volgens klanten bijna elk merk</em></li>
+      <li><svg aria-hidden="true"><use href="#star"/></svg><strong>Denkt met je mee</strong><em>Ze kijken naar jouw situatie</em></li>
+    </ul>
+    <p class="src">Samengevat uit 20 Google-reviews, niet letterlijk geciteerd.</p>
+  </div>
+</section>
+
+<div class="edge lt" aria-hidden="true" style="background:var(--rubber)"></div>
+<section class="serv" aria-labelledby="h-serv">
+  <div class="wrap">
+    <h2 id="h-serv">Wat we doen</h2>
+    <div class="rows">
+      <article>
+        <svg viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="38" fill="none" stroke="#C6F432" stroke-width="3"/><path d="M42 14v10M42 60v10M14 42h10M60 42h10M22 22l7 7M55 55l7 7M62 22l-7 7M29 55l-7 7" stroke="#C6F432" stroke-width="3" stroke-linecap="round"/><circle cx="42" cy="42" r="10" fill="#C6F432"/></svg>
+        <h3>Onderhoud</h3>
+        <p>Beurten en onderhoud, voor bijna elk merk.</p>
+        <p class="q">Een klant: grote beurt, dezelfde dag geregeld.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 84 84" aria-hidden="true"><path d="M58 10a16 16 0 0 0-19 21L12 58a7 7 0 0 0 10 10l27-27a16 16 0 0 0 21-19l-10 10-9-2-2-9z" fill="none" stroke="#C6F432" stroke-width="3" stroke-linejoin="round"/></svg>
+        <h3>Reparatie</h3>
+        <p>Storing of slijtage? Bel en laat je auto bekijken.</p>
+        <p class="q">Klanten: grondig en resultaatgericht.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 84 84" aria-hidden="true"><path d="M42 8 78 72H6z" fill="none" stroke="#C6F432" stroke-width="3" stroke-linejoin="round"/><path d="M42 30v20" stroke="#C6F432" stroke-width="4" stroke-linecap="round"/><circle cx="42" cy="60" r="3" fill="#C6F432"/></svg>
+        <h3>Pech onderweg</h3>
+        <p>Lekke band of staat je auto stil? Bel en vraag wat er kan.</p>
+        <p class="q">Een klant: monteur was er binnen 15 minuten.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="fast" aria-labelledby="h-fast">
+  <div class="wrap fast-grid">
+    <p class="num" aria-hidden="true">15<small>minuten</small></p>
+    <div>
+      <h2 id="h-fast" class="big" style="font-size:clamp(28px,3vw,44px);line-height:1.1">Lekke band. Gebeld. Binnen een kwartier stond de monteur er.</h2>
+      <p class="sm">Zo beschrijft één klant het in een review. Een belofte is het niet, wel een beeld van hoe snel ze kunnen schakelen.</p>
+      <div class="acts"><a class="btn btn-d" href="tel:+31648236119"><svg class="ico"><use href="#i-tel"/></svg>Bel 06 48 23 61 19</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="week" aria-labelledby="h-week">
+  <div class="wrap week-grid">
+    <div><h2 id="h-week">Open</h2><p class="src" style="font-size:15px;margin-top:18px">Tijden volgens Google Maps. Bel even als je zeker wilt zijn.</p></div>
+    <div class="days" id="days">
+      <div class="day" data-d="1"><b>Ma</b><span>09:00–18:00</span></div>
+      <div class="day" data-d="2"><b>Di</b><span>09:00–18:00</span></div>
+      <div class="day" data-d="3"><b>Wo</b><span>09:00–18:00</span></div>
+      <div class="day" data-d="4"><b>Do</b><span>09:00–18:00</span></div>
+      <div class="day" data-d="5"><b>Vr</b><span>09:00–18:00</span></div>
+      <div class="day" data-d="6"><b>Za</b><span>10:00–17:00</span></div>
+      <div class="day closed" data-d="0"><b>Zo</b><span>Gesloten</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="edge" aria-hidden="true"></div>
+<section class="visit" aria-labelledby="h-visit">
+  <div class="wrap visit-grid">
+    <div>
+      <h2 id="h-visit">Langskomen</h2>
+      <p class="addr">Magnoliastraat 61<br>4814 CN Breda</p>
+      <p>Bel even vooraf, dan weet je dat er plek is.</p>
+      <div class="acts">
+        <a class="btn btn-l" href="tel:+31648236119"><svg class="ico"><use href="#i-tel"/></svg>Bel 06 48 23 61 19</a>
+        <a class="btn btn-o" href="https://www.google.com/maps/search/Autobedrijf+Breda+Magnoliastraat+61+Breda" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Route</a>
+      </div>
+    </div>
+    <svg class="elev" viewBox="0 0 640 300" role="img" aria-label="Tekening van de werkplaats: een laag geelstenen gebouw met grijze gevelband en een open roldeur">
+      <defs>
+        <pattern id="brick" width="24" height="12" patternUnits="userSpaceOnUse"><rect width="24" height="12" fill="#D9B46A"/><path d="M0 11.5H24M12 0V6M0 6H24M0 6V12M24 6V12" stroke="#B8924C" stroke-width="1"/></pattern>
+      </defs>
+      <rect x="20" y="70" width="600" height="230" fill="url(#brick)"/>
+      <rect x="10" y="58" width="620" height="16" fill="#C3C8CE"/>
+      <rect x="20" y="74" width="600" height="40" fill="#8E949B"/>
+      <g color="#1E2E5A" transform="translate(276 80)"><use href="#car" width="88" height="28"/></g>
+      <g fill="#2A3038" stroke="#E9ECEF" stroke-width="3"><rect x="44" y="140" width="150" height="70"/><rect x="214" y="140" width="110" height="70"/><rect x="520" y="140" width="80" height="70"/></g>
+      <g stroke="#E9ECEF" stroke-width="2"><path d="M94 140v70M144 140v70M269 140v70"/></g>
+      <rect x="350" y="128" width="150" height="172" fill="#0B0C0E"/>
+      <rect x="350" y="128" width="150" height="34" fill="#9AA0A8"/>
+      <path d="M350 136h150M350 145h150M350 154h150" stroke="#7D838A" stroke-width="1.5"/>
+      <rect x="350" y="162" width="150" height="138" fill="#C6F432" opacity=".18"/>
+      <g transform="translate(372 240)"><path d="M0 30c0-8 6-11 14-12l14-11c4-3 8-4 13-4h22c6 0 11 2 15 6l9 9c10 1 16 4 16 12v6H0z" fill="#1C1F23"/><circle cx="24" cy="38" r="9" fill="#0B0C0E" stroke="#9AA0A8" stroke-width="2"/><circle cx="82" cy="38" r="9" fill="#0B0C0E" stroke="#9AA0A8" stroke-width="2"/></g>
+      <rect x="0" y="296" width="640" height="4" fill="#2A2E33"/>
+    </svg>
+  </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap"><span>Autobedrijf Breda · Magnoliastraat 61, 4814 CN Breda</span><span>06 48 23 61 19</span></div></footer>
+
+<script>
+(function(){
+  var H={0:null,1:[9,18],2:[9,18],3:[9,18],4:[9,18],5:[9,18],6:[10,17]};
+  var n=new Date(),d=n.getDay(),h=n.getHours()+n.getMinutes()/60,t=H[d];
+  var el=document.querySelector('#days [data-d="'+d+'"]'); if(el) el.classList.add('today');
+  var p=document.getElementById('open-pill'),x=document.getElementById('open-txt');
+  function f(v){return (v<10?'0':'')+v+':00'}
+  if(t&&h>=t[0]&&h<t[1]){p.classList.add('open');x.textContent='Nu open, tot '+f(t[1])}
+  else if(t&&h<t[0]){x.textContent='Vandaag open vanaf '+f(t[0])}
+  else{var k=(d+1)%7;while(!H[k])k=(k+1)%7;x.textContent='Nu dicht · '+(k===(d+1)%7?'morgen':'maandag')+' vanaf '+f(H[k][0])}
+})();
+</script>
+</body>
+</html>
