@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pet Spa — hondentrimsalon in Breda</title>
+<meta name="description" content="Pet Spa, hondentrimsalon aan de Kerkhofweg 18b in Breda. Kennis van vachttypes en geduld met honden die voor het eerst komen. 4,8 op Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;800&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{--char:#18181A;--char2:#232326;--bou:#F3EEE6;--apr:#E0904F;--apr2:#EBA56A;--leaf:#3E6B4A;--grey:#8C847A;--soft:#C9C2B8;--txt:#3A3631;
+--dis:"Abhaya Libre",Georgia,serif;--sans:"Questrial",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-color:#3a3a3e var(--char)}
+body{background:var(--char);color:var(--bou);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--apr);color:var(--char)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--apr);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.pill{display:inline-flex;align-items:center;gap:.6em;padding:.85em 1.45em;border-radius:99px;font:400 .98rem var(--sans);text-decoration:none;transition:background .2s,border-color .2s}
+.pill.apr{background:var(--apr);color:var(--char)}.pill.apr:hover{background:var(--apr2)}
+.pill.ln{border:1px solid rgba(243,238,230,.45)}.pill.ln:hover{border-color:var(--bou);background:rgba(243,238,230,.07)}
+.pill.dk{background:var(--char);color:var(--bou)}.pill.dk:hover{background:var(--char2)}
+.pill svg{width:18px;height:18px}
+.comb{height:18px;background:repeating-linear-gradient(90deg,var(--apr) 0 2px,transparent 2px 9px);mask:linear-gradient(180deg,#000 0 100%);opacity:.9}
+.comb.lt{background:repeating-linear-gradient(90deg,#C9BFB2 0 2px,transparent 2px 9px)}
+h2{font:800 clamp(2.4rem,5.4vw,4.6rem)/.98 var(--dis);letter-spacing:-.015em;text-wrap:balance}
+h2 em{font-style:normal;color:var(--apr)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-rows:auto 1fr;overflow:hidden;isolation:isolate}
+.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:70% 40%;animation:settle .6s cubic-bezier(.16,1,.3,1) both}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(24,24,26,.92) 0%,rgba(24,24,26,.7) 34%,rgba(24,24,26,0) 62%),linear-gradient(0deg,rgba(24,24,26,.8) 0%,rgba(24,24,26,0) 30%)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:24px clamp(20px,4vw,56px);font-size:.95rem}
+.nav .b{font:800 1.5rem/1 var(--dis);text-decoration:none}
+.nav .r{display:flex;gap:26px}.nav .r a{text-decoration:none;color:var(--soft)}.nav .r a:hover{color:var(--bou)}
+.hero .txt{align-self:end;padding:0 clamp(20px,4vw,56px) clamp(40px,7vh,80px);max-width:780px}
+.name{font:800 clamp(5rem,15vw,14rem)/.8 var(--dis);letter-spacing:-.035em;animation:sl .55s cubic-bezier(.16,1,.3,1) both}
+.name span{color:var(--apr)}
+.hero h1{font:500 clamp(1.5rem,2.6vw,2.2rem)/1.15 var(--dis);margin-top:18px}
+.hero p.sub{margin-top:10px;color:var(--soft);max-width:44ch}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.chip{display:inline-flex;gap:10px;align-items:center;margin-top:24px;color:var(--soft);font-size:.92rem}
+.chip b{font:800 2rem/1 var(--dis);color:var(--bou)}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes sl{from{transform:translateY(10px)}to{transform:none}}
+@media(max-width:760px){
+ .hero{min-height:auto}
+ .hero .ph{position:relative;grid-row:2;height:82vw}
+ .hero .ph img{object-position:72% 40%}
+ .hero::before{background:linear-gradient(0deg,var(--char) 0%,rgba(24,24,26,0) 30%);top:70px;bottom:auto;height:82vw}
+ .hero .txt{grid-row:3;padding-top:0}
+ .nav .r a:not(.rt){display:none}
+}
+
+/* coat */
+.coat{background:var(--bou);color:var(--char);padding:clamp(90px,11vw,150px) 0}
+.coat h2 em{color:#A65A1E}
+.coat .head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:44px}
+.coat .head p{color:var(--txt);max-width:46ch}
+.stage{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,64px);align-items:center}
+.shot{position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:#DDD5C9}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.shot img[hidden]{display:block;opacity:0}
+.btns{display:grid;gap:10px}
+.btns button{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;font:800 clamp(1.6rem,2.8vw,2.4rem)/1 var(--dis);color:var(--char);background:none;border:0;border-bottom:1px solid rgba(24,24,26,.18);padding:16px 2px 18px;cursor:pointer;position:relative}
+.btns button small{font:400 .88rem var(--sans);color:var(--grey)}
+.btns button::after{content:"";position:absolute;left:0;bottom:-1px;height:10px;width:0;background:repeating-linear-gradient(90deg,var(--apr) 0 2px,transparent 2px 7px);transition:width .35s cubic-bezier(.16,1,.3,1)}
+.btns button[aria-pressed="true"]::after{width:100%}
+.btns button[aria-pressed="true"]{color:#8C4A16}
+.btns button:hover{color:#8C4A16}
+.panel{margin-top:26px;background:#fff;border-radius:12px;padding:20px 22px}
+.panel b{display:block;font:800 1.35rem/1.2 var(--dis);margin-bottom:6px}
+.panel p{color:var(--txt)}
+@media(max-width:860px){.coat .head,.stage{grid-template-columns:1fr}}
+
+/* say */
+.say{padding:clamp(90px,11vw,150px) 0}
+.say .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px);margin-top:50px}
+.say article{border-top:1px solid rgba(243,238,230,.25);padding-top:22px}
+.say article b{display:block;font:800 clamp(1.6rem,2.6vw,2.2rem)/1.05 var(--dis);margin-bottom:12px}
+.say article p{color:var(--soft)}
+.say .src{font-size:.84rem;color:var(--grey);margin-top:30px}
+@media(max-width:820px){.say .grid{grid-template-columns:1fr}}
+
+/* first */
+.first{background:var(--char2);padding:clamp(90px,11vw,140px) 0}
+.first .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.first p.lead{margin-top:20px;color:var(--soft);max-width:40ch}
+.first ol{list-style:none;counter-reset:s}
+.first li{counter-increment:s;display:grid;grid-template-columns:auto 1fr;gap:22px;padding:24px 0;border-bottom:1px solid rgba(243,238,230,.18)}
+.first li:first-child{border-top:1px solid rgba(243,238,230,.18)}
+.first li::before{content:counter(s);font:800 3.4rem/.9 var(--dis);color:var(--apr);min-width:1.2ch}
+.first h3{font:800 1.5rem/1.15 var(--dis);margin-bottom:6px}
+.first li p{color:var(--soft)}
+@media(max-width:820px){.first .grid{grid-template-columns:1fr}}
+
+/* reviews */
+.rev{background:var(--apr);color:var(--char);padding:clamp(80px,10vw,130px) 0}
+.rev .grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,7vw,110px);align-items:center}
+.rev .score{font:800 clamp(7rem,16vw,13rem)/.8 var(--dis);letter-spacing:-.04em}
+.rev .score small{display:block;font:400 1rem var(--sans);letter-spacing:0;margin-top:14px}
+.rev blockquote{font:800 clamp(1.8rem,3.6vw,3rem)/1.1 var(--dis);max-width:22ch}
+.rev .src{margin-top:16px;font-size:.86rem}
+@media(max-width:760px){.rev .grid{grid-template-columns:1fr}}
+
+/* visit */
+.visit{background:var(--bou);color:var(--char);padding:clamp(90px,11vw,140px) 0 0}
+.visit .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,90px);align-items:start}
+.visit h2 em{color:#A65A1E}
+.visit p.lead{margin:18px 0 26px;max-width:44ch;color:var(--txt);font-size:1.08rem}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;background:#fff;border-radius:14px;padding:26px 28px}
+.visit dt{font-size:.86rem;color:var(--grey);padding-top:.15em}
+.visit dd a{text-underline-offset:4px}
+footer{margin-top:clamp(70px,9vw,110px);background:var(--char);color:var(--soft);padding:26px 0;font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer b{font:800 1.3rem var(--dis);color:var(--bou)}
+@media(max-width:820px){.visit .grid{grid-template-columns:1fr}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="nav"><a class="b" href="#top" id="top">Pet Spa</a><div class="r"><a href="#vacht">Vachten</a><a href="#eerste">Eerste keer</a><a class="rt" href="#langskomen">Langskomen</a></div></div>
+  <div class="ph"><img src="images/doodle-portret.jpg" alt="Portret van een goldendoodle met apricotkleurige krullen en een rode halsband, in de salon van Pet Spa" fetchpriority="high"></div>
+  <div class="txt">
+    <p class="name" aria-hidden="true">Pet Spa<span>.</span></p>
+    <h1 id="h1">Hondentrimsalon in Breda.</h1>
+    <p class="sub">Krullen, dubbele vacht of lang haar. Met kennis van vachttypes en geduld voor honden die voor het eerst komen.</p>
+    <div class="acts">
+      <a class="pill apr" href="https://www.google.com/maps/place/Pet+Spa+%7C+Hondentrimsalon/data=!4m7!3m6!1s0x47c6a18b4281dc59:0xb08b86516b64fef5!8m2!3d51.5695762!4d4.7917976">Route naar de salon</a>
+      <a class="pill ln" href="#vacht">Welke vacht heeft jouw hond?</a>
+    </div>
+    <span class="chip"><b>4,8</b>uit 20 reviews op Google</span>
+  </div>
+</section>
+
+<div class="comb" aria-hidden="true"></div>
+
+<section class="coat" id="vacht" aria-labelledby="vc">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="vc">Welke vacht heeft <em>jouw hond?</em></h2>
+      <p>Eigenaren prijzen hoeveel Pet Spa weet van vachttypes. Kies de vacht van jouw hond en zie een van hun klanten op de trimtafel.</p>
+    </div>
+    <div class="stage">
+      <div class="shot">
+        <img src="images/krullen.jpg" alt="Een bruine krullenhond staat op de trimtafel" data-c="krul">
+        <img src="images/pomeriaan.jpg" alt="Een pomeriaan met een dikke dubbele vacht op de trimtafel" data-c="dubbel" hidden>
+        <img src="images/golden.jpg" alt="Een golden retriever met lange vacht wordt geborsteld in de salon" data-c="lang" hidden>
+      </div>
+      <div>
+        <div class="btns" role="group" aria-label="Kies een vacht">
+          <button type="button" aria-pressed="true" data-c="krul">Krullen <small>zoals deze krullenbol</small></button>
+          <button type="button" aria-pressed="false" data-c="dubbel">Dubbele vacht <small>zoals deze pomeriaan</small></button>
+          <button type="button" aria-pressed="false" data-c="lang">Lange vacht <small>zoals deze golden</small></button>
+        </div>
+        <div class="panel" aria-live="polite"><b id="pb">Krullen</b><p id="pp">Een krullenvacht vraagt om een goede coupe. Een eigenaar van een cocker x springer was erg blij met de knipbeurt.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="say" aria-labelledby="sy">
+  <div class="wrap">
+    <h2 id="sy">Wat eigenaren <em>zeggen.</em></h2>
+    <div class="grid">
+      <article><b>Kent de vachttypes</b><p>Veel kennis van verschillende vachttypes.</p></article>
+      <article><b>Lief en geduldig</b><p>Ook met honden die voor het eerst naar de trimsalon gaan, en met kleine honden die lastig te borstelen zijn.</p></article>
+      <article><b>Mooi geknipt</b><p>Eigenaren zijn blij met het resultaat. Een deel van de reviews is in het Engels geschreven.</p></article>
+    </div>
+    <p class="src">Samengevat uit de reviews op Google.</p>
+  </div>
+</section>
+
+<section class="first" id="eerste" aria-labelledby="fs">
+  <div class="wrap grid">
+    <div>
+      <h2 id="fs">Voor het eerst <em>naar de trimsalon?</em></h2>
+      <p class="lead">Spannend, voor jou en voor je hond. Juist daar krijgt Pet Spa complimenten voor: lief en geduldig, ook bij de eerste keer.</p>
+    </div>
+    <ol>
+      <li><div><h3>Vertel over je hond</h3><p>Ras, vacht en hoe hij het borstelen thuis vindt.</p></div></li>
+      <li><div><h3>Rustig op de tafel</h3><p>Met geduld, ook als het de eerste keer is.</p></div></li>
+      <li><div><h3>Ophalen</h3><p>Een schone, mooi geknipte hond mee naar huis.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="rev" aria-labelledby="rv">
+  <div class="wrap grid">
+    <p class="score" id="rv">4,8<small>uit 20 reviews op Google</small></p>
+    <div><blockquote>Veel vachtkennis, veel geduld en een mooie coupe.</blockquote><p class="src">Samengevat uit de reviews van eigenaren.</p></div>
+  </div>
+</section>
+
+<section class="visit" id="langskomen" aria-labelledby="vs">
+  <div class="wrap grid">
+    <div>
+      <h2 id="vs">Langskomen aan de <em>Kerkhofweg.</em></h2>
+      <p class="lead">De salon zit aan de Kerkhofweg 18b in Breda. Plan je route; openingstijden en afspraken staan nog nergens online, dus vraag het in de salon.</p>
+      <a class="pill dk" href="https://www.google.com/maps/place/Pet+Spa+%7C+Hondentrimsalon/data=!4m7!3m6!1s0x47c6a18b4281dc59:0xb08b86516b64fef5!8m2!3d51.5695762!4d4.7917976">Route naar de salon</a>
+    </div>
+    <dl>
+      <dt>Salon</dt><dd>Pet Spa, hondentrimsalon</dd>
+      <dt>Adres</dt><dd><a href="https://www.google.com/maps/place/Pet+Spa+%7C+Hondentrimsalon/data=!4m7!3m6!1s0x47c6a18b4281dc59:0xb08b86516b64fef5!8m2!3d51.5695762!4d4.7917976">Kerkhofweg 18b, 4835 GA Breda</a></dd>
+      <dt>Reviews</dt><dd>4,8 uit 20 op Google</dd>
+    </dl>
+  </div>
+  <footer><div class="wrap"><b>Pet Spa</b><span>Hondentrimsalon · Kerkhofweg 18b, Breda</span></div></footer>
+</section>
+</main>
+<script>
+(function(){
+  var T={krul:['Krullen','Een krullenvacht vraagt om een goede coupe. Een eigenaar van een cocker x springer was erg blij met de knipbeurt.'],
+    dubbel:['Dubbele vacht','Een dikke vacht met onderwol, zoals bij deze pomeriaan. Eigenaren prijzen hoe goed Pet Spa vachttypes kent.'],
+    lang:['Lange vacht','Lang haar dat goed geborsteld moet worden. Ook kleine honden die lastig te borstelen zijn, worden met geduld geholpen.']};
+  var bs=[].slice.call(document.querySelectorAll('.btns button')),im=[].slice.call(document.querySelectorAll('.shot img'));
+  bs.forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;
+    bs.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+    im.forEach(function(i){i.hidden=i.dataset.c!==c});
+    document.getElementById('pb').textContent=T[c][0];document.getElementById('pp').textContent=T[c][1];
+  })});
+})();
+</script>
+</body>
+</html>
