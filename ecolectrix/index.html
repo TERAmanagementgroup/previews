@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ecolectrix | Elektricien in Etten-Leur en omgeving</title>
+<meta name="description" content="Zonnepanelen, laadpalen, thuisaccu's, groepenkasten en een 24/7 storingsdienst in Etten-Leur en omgeving. Vaste tarieven en één vast aanspreekpunt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700;800;900&family=Radio+Canada:wght@400;500;600;700&family=Vollkorn:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A1420;--night:#111F2F;--line:#2A3B4E;--bone:#F2EFE7;--paper:#FAF8F2;--amber:#FFB648;--amber-d:#8A5200;--blue:#2A36B8;--mute:#AEBBC9;--mute-b:#4A5462;--ease:cubic-bezier(.23,1,.32,1);--gut:clamp(20px,4.5vw,72px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font:400 clamp(17px,1.25vw,19px)/1.55 "Radio Canada",system-ui,sans-serif;overflow-x:hidden}
+::selection{background:var(--amber);color:var(--ink)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,ul,ol{margin:0}ul,ol{padding:0;list-style:none}
+h1,h2,h3{font-family:Epilogue,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1;text-wrap:balance}
+h2{font-size:clamp(40px,6vw,88px)}
+em{font-family:Vollkorn,serif;font-style:italic;font-weight:500;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.on-bone :focus-visible,.close :focus-visible{outline-color:var(--blue)}
+.wrap{padding-inline:var(--gut);max-width:1600px;margin-inline:auto}
+section{padding-block:clamp(72px,10vw,150px)}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:8px 10px 8px 24px;border-radius:99px;font-weight:600;text-decoration:none;transition:transform .16s var(--ease),background-color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--amber)}
+.btn svg{width:17px;height:17px}
+.btn.a{background:var(--amber);color:var(--ink)}
+.btn.g{padding-right:24px;border:1px solid rgba(242,239,231,.55);color:var(--bone);background:rgba(10,20,32,.6)}
+@media(hover:hover) and (pointer:fine){.btn.a:hover{background:#FFC770}.btn.g:hover{background:rgba(30,44,60,.85)}}
+/* nav */
+.nav{position:absolute;z-index:5;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px var(--gut)}
+.mark{display:flex;align-items:center;gap:10px;font:800 22px/1 Epilogue,sans-serif;letter-spacing:-.03em;text-decoration:none}
+.mark svg{width:28px;height:28px;color:var(--amber)}
+.nav ul{display:flex;gap:30px;font-weight:500}
+.nav li a{text-decoration:none;text-underline-offset:5px}.nav li a:hover{text-decoration:underline}
+.nav .tel{font-weight:700;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+/* hero */
+.hero{position:relative;min-height:max(100svh,720px);padding:0;overflow:hidden;background:var(--ink);display:flex;flex-direction:column}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 72%;animation:settle .6s var(--ease) both}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,32,.86) 0,rgba(10,20,32,.62) 34%,rgba(10,20,32,.06) 58%,rgba(10,20,32,.42) 100%)}
+.hero .tx{position:relative;z-index:2;display:grid;grid-template-columns:auto minmax(0,380px);justify-content:space-between;gap:32px;align-items:start;padding:clamp(104px,14vh,136px) var(--gut) 0}
+.hero .side{padding-top:clamp(6px,1.2vw,18px)}
+h1{font-size:clamp(58px,9.4vw,146px);line-height:.94;font-weight:900;letter-spacing:-.04em;animation:rise .5s var(--ease) both}
+h1 em{color:var(--amber);font-weight:500}
+.lead{font-size:clamp(18px,1.45vw,21px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.tags{position:absolute;z-index:3;right:var(--gut);bottom:32px;display:grid;gap:8px;justify-items:end}
+.tags li{padding:9px 16px;border-radius:99px;background:rgba(10,20,32,.78);border:1px solid rgba(242,239,231,.24);font-weight:500;font-size:16px}
+.tags b{color:var(--amber);font-weight:700}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+/* meter */
+.meter{background:var(--night)}
+.mgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:start}
+.meter p.sub{max-width:33em;margin-top:22px;color:#D5DEE7}
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.pick button{min-height:48px;padding:0 18px;border-radius:99px;border:1px solid #58697C;background:transparent;color:var(--bone);font:600 16px "Radio Canada",sans-serif;cursor:pointer;transition:background-color .16s ease,color .16s ease,transform .16s var(--ease)}
+.pick button:active{transform:scale(.97)}
+.pick button[aria-pressed=true]{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+@media(hover:hover) and (pointer:fine){.pick button:not([aria-pressed=true]):hover{background:#22344A}}
+.dev{margin-top:26px;padding:clamp(14px,2vw,22px);border-radius:20px;background:linear-gradient(160deg,#E9E6DD,#C9C6BC);color:var(--ink);box-shadow:0 26px 60px rgba(0,0,0,.42)}
+.dev .top{display:flex;justify-content:space-between;gap:12px;padding:2px 6px 12px;font-weight:600;font-size:14px}
+.lcd{display:grid;grid-template-columns:auto 1fr;gap:18px 26px;padding:clamp(18px,2.4vw,28px);border-radius:10px;background:#15110A;box-shadow:inset 0 2px 12px #000;color:var(--amber)}
+.r{min-width:0}.r small{display:block;margin-bottom:8px;font-size:14px;font-weight:500;color:#F3D9AC}
+.num{display:flex;align-items:center;gap:.14em;height:var(--h,44px)}
+.num svg{height:100%;width:auto;transform:skewX(-5deg);overflow:visible}
+.num polygon{fill:rgba(255,182,72,.08);transition:fill .16s ease;transition-delay:var(--d,0ms)}
+.num polygon.on{fill:var(--amber)}
+.num .to{width:.8em;height:3px;margin:0 6px;background:var(--amber);flex:none}
+.big{--h:clamp(84px,9vw,128px)}.wide{grid-column:1/-1}
+.fine{margin-top:16px;color:#C4D0DB;font-size:16px;max-width:36em}
+.roof{position:relative;margin-top:clamp(0px,5vw,74px)}
+.roof img{width:100%;aspect-ratio:6/7;object-fit:cover;border-radius:18px}
+.roof ul{display:grid;gap:12px;margin-top:22px}
+.roof li{display:flex;gap:12px;padding-top:12px;border-top:1px solid var(--line)}
+.roof svg,.chk{flex:none;width:20px;height:20px;margin-top:3px;color:var(--amber)}
+/* prices */
+.on-bone{background:var(--bone);color:var(--ink)}
+.on-bone h2 em{color:var(--blue)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,7vw,110px);margin-top:clamp(36px,5vw,70px)}
+.from li{padding:20px 0 24px;border-top:2px solid var(--ink)}
+.from b{display:block;font:800 clamp(62px,8vw,116px)/1 Epilogue,sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.from span{display:block;margin-top:6px;font-weight:500}
+.from small{display:block;color:var(--mute-b);font-size:16px}
+.bill{padding:clamp(22px,3vw,40px);background:var(--paper);border-radius:6px;box-shadow:0 18px 44px rgba(10,20,32,.13)}
+.bill h3{font-size:clamp(26px,2.6vw,36px);letter-spacing:-.02em;line-height:1.08}
+.bill p{margin-top:8px;color:var(--mute-b)}
+.bill ol{margin-top:22px}
+.bill li{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px dashed #BDB9AC}
+.bill li span:first-child{min-width:0}
+.bill li small{display:block;color:var(--mute-b);font-size:15px}
+.bill li b{margin-left:auto;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;margin-top:18px;font-weight:600}
+.tot b{font:800 clamp(28px,3vw,40px)/1 Epilogue,sans-serif;letter-spacing:-.03em;white-space:nowrap}
+/* groepenkast */
+.kast{background:var(--ink)}
+.kgrid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:center}
+.shot{position:relative}
+.shot img{width:100%;aspect-ratio:1/1.03;object-fit:cover;border-radius:18px}
+.shot span{position:absolute;padding:9px 15px;border-radius:99px;background:var(--amber);color:var(--ink);font-weight:600;font-size:15px}
+.shot .s1{left:14px;top:14px}.shot .s2{right:14px;bottom:14px}
+.kast p.sub{margin-top:20px;max-width:34em;color:#D5DEE7}
+.signs{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-top:30px}
+.signs li{padding:15px 0;border-top:1px solid var(--line)}
+.signs b{display:block;font:700 20px/1.2 Epilogue,sans-serif;letter-spacing:-.01em;color:var(--amber)}
+.signs span{display:block;margin-top:5px;font-size:16.5px;color:#D5DEE7}
+.jobs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 28px}
+.jobs li{padding:8px 15px;border-radius:99px;border:1px solid #58697C;font-weight:500;font-size:16px}
+/* index */
+.idx{background:var(--blue);color:#fff}
+.idx ul{margin-top:clamp(30px,4vw,56px)}
+.idx li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 40px;align-items:baseline;padding:clamp(16px,1.8vw,24px) 0;border-top:1px solid rgba(255,255,255,.34)}
+.idx li:last-child{border-bottom:1px solid rgba(255,255,255,.34)}
+.idx h3{font-size:clamp(30px,4.1vw,62px);transition:transform .2s var(--ease)}
+.idx p{max-width:36em;color:#E7E9FB}
+@media(hover:hover) and (pointer:fine){.idx li:hover h3{transform:translateX(10px)}}
+/* storing */
+.st{background:#060C14;padding-top:0}
+.rail{display:flex;justify-content:center;gap:clamp(3px,.5vw,7px);padding:0 0 clamp(50px,7vw,90px);overflow:hidden}
+.bk{flex:none;width:clamp(42px,5.2vw,78px);height:clamp(92px,10vw,146px);padding:10px 8px;border-radius:0 0 7px 7px;background:#E6E3DA;display:flex;align-items:center;justify-content:center}
+.bk i{display:block;width:44%;height:62%;padding:3px;border-radius:3px;background:#20262E}
+.bk u{display:block;height:44%;border-radius:2px;background:#F2EFE7;transition:transform .26s var(--ease)}
+.bk.trip{background:var(--amber)}.rail.in .bk.trip u,.nojs .bk.trip u{transform:translateY(112%)}
+.sgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px)}
+.st h2{font-size:clamp(50px,8.6vw,132px);letter-spacing:-.04em}
+.st p.sub{margin-top:22px;max-width:30em;color:#D5DEE7}
+.st .btn{margin-top:28px}
+.do li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}
+.do i{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--amber);color:var(--ink);font:800 18px Epilogue,sans-serif;font-style:normal}
+.do b{display:block;font:700 22px/1.2 Epilogue,sans-serif;letter-spacing:-.01em}
+.do span{color:#D5DEE7}
+.rates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:clamp(40px,5vw,70px);padding-top:22px;border-top:1px solid var(--line)}
+.rates b{display:block;font-weight:700}.rates span{color:var(--mute);font-size:16.5px}
+/* stephan */
+.sgr{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(36px,5vw,84px);align-items:center}
+.sgr img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.sgr h2{font-size:clamp(38px,4.9vw,74px)}
+.sgr p{margin-top:18px;max-width:34em}
+.marks{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.marks li{padding:7px 13px;border:1px solid var(--ink);border-radius:99px;font-weight:500;font-size:15.5px}
+.jobsrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px);margin-top:clamp(50px,7vw,100px);padding-top:clamp(26px,3vw,40px);border-top:2px solid var(--ink)}
+.jobsrow h3{font-size:clamp(25px,2.4vw,34px);letter-spacing:-.02em;grid-column:1/-1}
+.jobsrow b{display:block;font:800 20px/1.2 Epilogue,sans-serif}
+.jobsrow p{margin-top:6px;color:var(--mute-b)}
+/* close */
+.close{background:var(--amber);color:var(--ink);padding-bottom:40px}
+.close h2{font-size:clamp(40px,5vw,76px)}
+.phone{display:block;margin:20px 0 28px;font:900 clamp(48px,11.2vw,184px)/1 Epilogue,sans-serif;letter-spacing:-.045em;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.phone:hover{text-decoration:underline;text-decoration-thickness:.05em;text-underline-offset:.08em}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:22px;border-top:2px solid var(--ink)}
+.cgrid b{display:block}.cgrid a{font-weight:600;text-underline-offset:3px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:50px;font-size:15px}
+/* reveal: transform only, content is never hidden */
+.js .rv{transform:translateY(14px);transition:transform .55s var(--ease)}
+.js .rv.in{transform:none}
+@media(max-width:900px){
+ .nav ul{display:none}
+ .hero{min-height:0}
+ .hero .ph{position:relative;order:2;inset:auto;aspect-ratio:1/1;margin-top:-34px;overflow:hidden}
+ .hero .ph img{object-position:32% 100%}
+ .hero .ph::after{background:linear-gradient(180deg,var(--ink) 0,rgba(10,20,32,.2) 34%,rgba(10,20,32,0) 60%)}
+ .hero .tx{order:1;padding-top:92px;grid-template-columns:minmax(0,1fr);gap:18px}
+ h1{white-space:nowrap;font-size:min(14vw,92px)}
+ .tags{position:relative;order:3;right:auto;bottom:auto;justify-items:start;padding:16px var(--gut) 26px;background:var(--ink)}
+ .mgrid,.pgrid,.kgrid,.sgrid,.sgr{grid-template-columns:minmax(0,1fr)}
+ .roof{margin-top:0}.roof img{aspect-ratio:4/3}
+ .idx li{grid-template-columns:minmax(0,1fr)}
+ .jobsrow,.cgrid,.rates{grid-template-columns:minmax(0,1fr)}
+ .sgr img{order:-1}
+}
+@media(max-width:560px){
+ .signs{grid-template-columns:minmax(0,1fr)}
+ .btn{width:100%;justify-content:space-between}.btn.g{justify-content:center}
+ .lcd{gap:16px 18px}.num{--h:36px}.big{--h:84px}
+ .bk:nth-child(n+8){display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero .ph img,h1{animation:none}
+ .js .rv{transform:none;transition:none}
+ .bk u,.num polygon,.idx h3{transition:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<header class="hero">
+  <nav class="nav" aria-label="Hoofdmenu">
+    <a class="mark" href="#top" id="top"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="2"/><path d="M18.5 5.5 9 18h6l-1.5 8.5L23 14h-6z" fill="currentColor"/></svg>Ecolectrix</a>
+    <ul><li><a href="#panelen">Zonnepanelen</a></li><li><a href="#prijzen">Prijzen</a></li><li><a href="#groepenkast">Groepenkast</a></li><li><a href="#storing">Storing</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a class="tel" href="tel:+31620367600">06 20367600</a>
+  </nav>
+  <div class="ph"><img src="images/hero-bus-schemer.jpg" width="2200" height="1650" alt="De witte Ecolectrix-bus op het gras bij zonsondergang, voor een overkapping met zonnepanelen" fetchpriority="high"></div>
+  <div class="tx">
+    <h1>Vast tarief.<br><em>Vast</em> gezicht.</h1>
+    <div class="side"><p class="lead">Uw elektricien in Etten-Leur en omgeving, voor zonnepanelen, laadpalen, thuisaccu's en alles in de groepenkast.</p>
+    <div class="cta">
+      <a class="btn a" href="tel:+31620367600">Bel 06 20367600 <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+      <a class="btn g" href="#panelen">Reken uw panelen uit</a>
+    </div></div>
+  </div>
+  <ul class="tags">
+    <li><b>24/7</b> storingsdienst</li>
+    <li>Installatie <b>binnen 14 dagen</b></li>
+    <li><b>20+ jaar</b> ervaring</li>
+    <li><b>4,8</b> op Google, 106 reviews</li>
+  </ul>
+</header>
+
+<main>
+<section class="meter" id="panelen"><div class="wrap mgrid">
+  <div class="rv">
+    <h2>Lees uw huis af op de meter.</h2>
+    <p class="sub">Hoeveel zonnepanelen heeft u nodig? Kies uw huishouden. De meter toont het gemiddelde verbruik, het aantal panelen en de prijsindicatie van Ecolectrix.</p>
+    <div class="pick" role="group" aria-label="Kies uw huishouden">
+      <button type="button" data-i="0" aria-pressed="false">1 persoon</button>
+      <button type="button" data-i="1" aria-pressed="false">2 personen</button>
+      <button type="button" data-i="2" aria-pressed="false">3 personen</button>
+      <button type="button" data-i="3" aria-pressed="true">4 personen</button>
+      <button type="button" data-i="4" aria-pressed="false">5 of meer</button>
+    </div>
+    <div class="dev" aria-hidden="true">
+      <div class="top"><span>Ecolectrix</span><span>Indicatie</span></div>
+      <div class="lcd">
+        <div class="r"><small>Panelen</small><div class="num big" data-n="p" data-w="2"></div></div>
+        <div class="r"><small>Verbruik per jaar, kWh</small><div class="num" style="--h:clamp(44px,5vw,70px)" data-n="k" data-w="4"></div>
+          <small style="margin-top:14px">Thuisaccu, kW</small><div class="num" style="--h:clamp(28px,3vw,40px)" data-n="a" data-w="3"></div></div>
+        <div class="r wide"><small>Prijsindicatie in euro</small><div class="num" style="--h:clamp(36px,4vw,56px)"><span class="num" style="--h:100%;height:100%" data-n="l" data-w="4"></span><span class="to"></span><span class="num" style="--h:100%;height:100%" data-n="h" data-w="4"></span></div></div>
+      </div>
+    </div>
+    <p class="fine" id="out" aria-live="polite">4 personen: ongeveer 4500 kWh per jaar, 12 panelen, prijsindicatie € 4.179 tot € 7.179, thuisaccu 5 tot 7 kW.</p>
+  </div>
+  <div class="roof rv">
+    <img src="images/dak-panelen.jpg" width="1200" height="1400" loading="lazy" alt="Bakstenen woning met zwarte zonnepanelen op het pannendak onder een blauwe lucht">
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 13 5 5L20 6"/></svg>Advies, installatie en monitoring in één pakket</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 13 5 5L20 6"/></svg>Elke installatie voeren we zelf uit</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 13 5 5L20 6"/></svg>Gratis inspectie, een jaar na plaatsing</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="on-bone" id="prijzen"><div class="wrap">
+  <h2 class="rv">De prijs staat er <em>gewoon</em> bij.</h2>
+  <div class="pgrid">
+    <ul class="from rv">
+      <li><b>€ 650</b><span>Nieuwe groepenkast, vanaf</span><small>Inclusief installatie</small></li>
+      <li><b>€ 680</b><span>Installatie laadpaal, vanaf</span><small>Vaak binnen 14 dagen, afhankelijk van de levertijd</small></li>
+      <li><b>€ 60</b><span>Uurtarief storing, ma t/m vr 08.00 tot 18.00</span><small>Exclusief btw en materiaal</small></li>
+    </ul>
+    <div class="bill rv">
+      <h3>Waar een laadpaal uit bestaat</h3>
+      <p>De kosten hangen af van uw situatie. U krijgt vooraf een duidelijke, vrijblijvende offerte.</p>
+      <ol>
+        <li><span>Laadpaal<small>11 of 22 kW, naar model en wens</small></span><b>€ 500 – 1.200</b></li>
+        <li><span>Installatie<small>Arbeid, materiaal en bekabeling</small></span><b>€ 300 – 1.300</b></li>
+        <li><span>Montagepaal<small>Optioneel, als er geen muur in de buurt is</small></span><b>€ 150 – 900</b></li>
+        <li><span>Verzwaring hoofdzekering<small>Optioneel, via de netbeheerder</small></span><b>€ 200 – 350</b></li>
+        <li><span>Graafwerk<small>Optioneel, gemiddeld per strekkende meter</small></span><b>€ 35</b></li>
+        <li><span>Dynamic load balancing<small>Optioneel, verdeelt het vermogen in huis</small></span><b>€ 150 – 250</b></li>
+        <li><span>Groepenkast vervangen<small>Optioneel, bij te weinig vrije groepen</small></span><b>€ 350 – 1.500</b></li>
+      </ol>
+      <div class="tot"><span>Gemiddeld compleet, met montage en materialen</span><b>€ 1.000 – 2.500</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="kast" id="groepenkast"><div class="wrap kgrid">
+  <div class="shot rv">
+    <img src="images/groepenkast.jpg" width="1200" height="1136" loading="lazy" alt="Nieuw geïnstalleerde groepenkast met nette rijen schakelaars en gelabelde groepen">
+    <span class="s1">NEN 1010 en NEN 3140</span><span class="s2">Eigen werk van Ecolectrix</span>
+  </div>
+  <div class="rv">
+    <h2>Het hart van uw huis.</h2>
+    <p class="sub">Toe aan een nieuwe groepenkast? Hier let u op. Twijfelt u, stuur dan een foto voor de gratis groepenkast check.</p>
+    <ul class="signs">
+      <li><b>Leeftijd</b><span>Ouder dan 20 jaar, vaak nog met draaistoppen.</span></li>
+      <li><b>Veiligheid</b><span>Knipperend licht, brandgeur, geen hoofdschakelaar of te weinig aardlekschakelaars.</span></li>
+      <li><b>Overbelasting</b><span>Steeds vaker stroomonderbrekingen of stroomuitval.</span></li>
+      <li><b>Nieuwe apparaten</b><span>Extra belasting door wat u kocht of van plan bent.</span></li>
+    </ul>
+    <ul class="jobs"><li>Vervangen</li><li>Uitbreiden</li><li>Van 1 naar 3 fase</li><li>Extra groep bijplaatsen</li></ul>
+    <a class="btn a" href="mailto:info@ecolectrix.nl?subject=Gratis%20groepenkast%20check">Vraag de gratis check aan <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+  </div>
+</div></section>
+
+<section class="idx" id="diensten"><div class="wrap">
+  <h2 class="rv">Alles achter het stopcontact.</h2>
+  <ul>
+    <li class="rv"><h3>Zonnepanelen</h3><p>Uw eigen stroom opwekken, op een dak op het zuiden of oost-west. Met schaduw adviseren we optimizers.</p></li>
+    <li class="rv"><h3>Thuisaccu</h3><p>We starten met uw panelen, uw verbruik en plannen zoals elektrisch rijden of een warmtepomp.</p></li>
+    <li class="rv"><h3>Laadpaal</h3><p>Uw gewenste merk, ook met MID-meter voor de ERE-regeling: vergoeding voor thuis laden.</p></li>
+    <li class="rv"><h3>Elektra aanleggen</h3><p>Een stopcontact, lampen ophangen of een extra kookgroep, met advies op maat.</p></li>
+    <li class="rv"><h3>Inductie aansluiten</h3><p>Over van gas naar inductie? Een aparte kookgroep of Perilex-aansluiting.</p></li>
+    <li class="rv"><h3>Elektra renovatie</h3><p>Bedrading vernieuwen, stopcontacten en lampen verplaatsen, leidingwerk in de keuken.</p></li>
+    <li class="rv"><h3>Camera's en slimme deurbel</h3><p>Uw huis beveiligen met een of meer camera's. We adviseren u graag.</p></li>
+  </ul>
+</div></section>
+
+<section class="st" id="storing">
+  <div class="rail" aria-hidden="true" id="rail"></div>
+  <div class="wrap">
+    <div class="sgrid">
+      <div class="rv">
+        <h2>Stroom eruit?</h2>
+        <p class="sub">Kortsluiting, brandlucht of een aardlekschakelaar die blijft uitvallen: de storingsdienst is 24/7 te bellen, ook in het weekend en op feestdagen.</p>
+        <a class="btn a" href="tel:+31620367600">Bel 06 20367600 <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+      </div>
+      <ol class="do rv">
+        <li><i>1</i><div><b>Schakel de stroom uit</b><span>Zet de hoofdschakelaar in uw meterkast uit.</span></div></li>
+        <li><i>2</i><div><b>Bel Ecolectrix</b><span>Vertel wat er gebeurde.</span></div></li>
+        <li><i>3</i><div><b>Blijf er vanaf</b><span>Probeer geen eigen reparaties, dat voorkomt schade en gevaar.</span></div></li>
+      </ol>
+    </div>
+    <div class="rates rv">
+      <div><b>Overdag € 60 per uur</b><span>Ma t/m vr 08.00 tot 18.00. Ook het starttarief, excl. btw en materiaal.</span></div>
+      <div><b>Avond, nacht en weekend</b><span>Tussen 18.00 en 08.00 en in het weekend komt er een toeslag bij.</span></div>
+      <div><b>Reiskosten</b><span>Geen voorrijkosten binnen 15 km rond Etten-Leur, daarbuiten € 0,35 per km.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="on-bone" id="stephan"><div class="wrap">
+  <div class="sgr">
+    <img class="rv" src="images/stephan-bus.jpg" width="1290" height="967" loading="lazy" alt="Stephan van Gelder met de armen over elkaar voor zijn Ecolectrix-bus">
+    <div class="rv">
+      <h2>U belt met Stephan.</h2>
+      <p>Stephan van Gelder heeft ruim 20 jaar ervaring als elektricien en begon in april 2023 Ecolectrix, om woningen en bedrijfsgebouwen te verduurzamen. Geen tussenpersonen: u heeft rechtstreeks contact met hem.</p>
+      <ul class="marks"><li>Lid van Techniek Nederland</li><li>Erkend door InstallQ</li><li>Wallbox certified installer</li><li>bliq partner</li></ul>
+    </div>
+  </div>
+  <div class="jobsrow rv">
+    <h3>Klussen waar klanten over schrijven</h3>
+    <div><b>Etten-Leur</b><p>Meterkast vervangen, 3-faseleiding naar de keuken en de inductiekookplaat aangesloten.</p></div>
+    <div><b>St. Willebrord</b><p>Groepenkast van 1 naar 3 fase voor een nieuw fornuis, en een storing aan de tuinverlichting.</p></div>
+    <div><b>Etten-Leur</b><p>Meterkast aangepast en een nieuwe groep aangelegd, als voorbereiding op een warmtepomp.</p></div>
+  </div>
+</div></section>
+
+<section class="close" id="contact"><div class="wrap">
+  <h2 class="rv">Klus in de planning?</h2>
+  <a class="phone" href="tel:+31620367600">06 20367600</a>
+  <div class="cgrid">
+    <div><b>Offerte per mail</b><a href="mailto:info@ecolectrix.nl?subject=Offerte%20aanvragen">info@ecolectrix.nl</a></div>
+    <div><b>Werkgebied</b>Etten-Leur, Breda en omliggende plaatsen. Geen voorrijkosten binnen 20 km rond Etten-Leur bij geplande klussen.</div>
+    <div><b>Adres</b><a href="https://www.google.com/maps/search/Ecolectrix+Orgelhof+14,+4876+ZJ+Etten-Leur">Orgelhof 14, 4876 ZJ Etten-Leur</a><br>Geen bezoekadres</div>
+  </div>
+  <div class="foot"><span>© 2026 Ecolectrix</span><span>KVK 89833430</span></div>
+</div></section>
+</main>
+<script>
+(function(){
+var S={a:'8,8 13,3 47,3 52,8 47,13 13,13',b:'55,11 60,16 60,42 55,47 50,42 50,16',c:'55,53 60,58 60,84 55,89 50,84 50,58',d:'8,92 13,87 47,87 52,92 47,97 13,97',e:'5,53 10,58 10,84 5,89 0,84 0,58',f:'5,11 10,16 10,42 5,47 0,42 0,16',g:'8,50 13,45 47,45 52,50 47,55 13,55'};
+var M={0:'abcdef',1:'bc',2:'abged',3:'abgcd',4:'fgbc',5:'afgcd',6:'afgedc',7:'abc',8:'abcdefg',9:'abcfgd','-':'g',' ':''};
+var D=[['1 persoon',6,1850,'2-3','2.589','4.289','2 tot 3'],['2 personen',8,2500,'3-5','3.279','5.079','3 tot 5'],['3 personen',10,3500,'4-6','3.979','6.379','4 tot 6'],['4 personen',12,4500,'5-7','4.179','7.179','5 tot 7'],['5 of meer personen',15,5000,'6-9','5.919','8.519','6 tot 9']];
+var N={};
+document.querySelectorAll('[data-n]').forEach(function(el){var w=+el.dataset.w,a=[];for(var i=0;i<w;i++){var s='<svg viewBox="-1 0 62 100" style="--d:'+i*25+'ms">';for(var k in S)s+='<polygon data-s="'+k+'" points="'+S[k]+'"/>';a.push(s+'</svg>')}el.innerHTML=a.join('');N[el.dataset.n]=el});
+function put(k,v){var el=N[k],t=String(v).padStart(+el.dataset.w,' ');el.querySelectorAll('svg').forEach(function(g,i){var on=M[t[i]];g.querySelectorAll('polygon').forEach(function(p){p.classList.toggle('on',on.indexOf(p.dataset.s)>-1)})})}
+var B=document.querySelectorAll('.pick button'),O=document.getElementById('out');
+function set(i,say){var d=D[i];put('p',d[1]);put('k',d[2]);put('a',d[3]);put('l',d[4].replace('.',''));put('h',d[5].replace('.',''));B.forEach(function(b,j){b.setAttribute('aria-pressed',j===i)});if(say)O.textContent=d[0]+': ongeveer '+d[2]+' kWh per jaar, '+d[1]+' panelen, prijsindicatie € '+d[4]+' tot € '+d[5]+', thuisaccu '+d[6]+' kW.'}
+B.forEach(function(b){b.addEventListener('click',function(){set(+b.dataset.i,true)})});set(3,false);
+var R=document.getElementById('rail'),h='';for(var i=0;i<13;i++)h+='<div class="bk'+(i===6?' trip':'')+'"><i><u></u></i></div>';R.innerHTML=h;
+var T=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(E){E.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});T.forEach(function(e){io.observe(e)});io.observe(R)}else{T.forEach(function(e){e.classList.add('in')});R.classList.add('in')}
+})();
+</script>
+</body>
+</html>
