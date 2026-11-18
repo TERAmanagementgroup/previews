@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VDZ Projecten | Biobased bouwen en renoveren, Rijen</title>
+<meta name="description" content="VDZ Projecten uit Rijen renoveert en bouwt biobased, betonvrij en volgens EnerPhit. Met advies, begeleiding en workshops.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Piazzolla:ital,opsz,wght@0,8..30,800;0,8..30,900;1,8..30,800&display=swap" rel="stylesheet">
+<style>
+:root{--soil:#1D1410;--bark:#3A2C26;--leaf:#1F3A2E;--hemp:#CCCF93;--gold:#E0B25F;--bone:#F5F3E7;--mut:#D6CDBD;--gut:clamp(20px,4.4vw,64px);--out:cubic-bezier(.23,1,.32,1);--d:"Piazzolla",Georgia,serif}
+*{box-sizing:border-box;margin:0}html{scrollbar-color:var(--gold) var(--soil);-webkit-text-size-adjust:100%}
+body{background:var(--soil);color:var(--bone);font:400 clamp(1.02rem,.98rem + .2vw,1.16rem)/1.6 Cabin,system-ui,sans-serif;overflow-x:clip}
+img,svg{display:block;max-width:100%}a{color:inherit;text-underline-offset:.2em}::selection{background:var(--gold);color:var(--soil)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--d);font-weight:900;line-height:1;letter-spacing:-.008em;word-spacing:.13em;text-wrap:balance}h2{font-size:clamp(2.45rem,1.4rem + 4.5vw,5.8rem)}h2 em,h1 em{font-weight:800}
+p{max-width:62ch}.wrap{padding-inline:var(--gut);max-width:1560px;margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.65em 1.5em;border-radius:99px;background:var(--gold);color:var(--soil);font-weight:600;text-decoration:none;transition:transform .16s var(--out)}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}.btn:active{transform:scale(.97)}
+@media(hover:hover) and (pointer:fine){.btn:hover{transform:translateY(-2px)}}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;isolation:isolate;overflow:hidden;background:var(--leaf)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;z-index:-2;animation:settle .6s var(--out) both}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(13,31,25,.84),rgba(13,31,25,.42) 42%,transparent 66%),linear-gradient(0deg,rgba(13,20,16,.6),transparent 34%)}
+nav{display:flex;justify-content:space-between;align-items:center;padding-block:22px;width:100%}
+.mark{font:900 1.5rem/1 var(--d);text-decoration:none}.mark span{font:500 .82rem/1 Cabin;display:block;margin-top:4px;color:var(--hemp)}
+.nl{display:flex;gap:30px;font-weight:500;align-items:center}.nl a{text-decoration:none}.nl a:not(.btn):hover{color:var(--gold)}.nl .btn{min-height:44px;padding:.3em 1.1em}
+.lead{margin-top:auto;padding-block:30px clamp(40px,7vh,76px);width:100%;animation:rise .6s var(--out) both}
+h1{font-size:clamp(4rem,1.6rem + 10vw,10.4rem);line-height:.88;max-width:7.6em}h1 em{color:var(--gold)}
+.lead p{margin-top:24px;font-size:1.18em;max-width:40ch}.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.furrow{display:block;width:100%;height:clamp(54px,7vw,104px);background:var(--soil)}
+.stop{padding-block:clamp(56px,8vw,112px) clamp(48px,6vw,84px)}.stopg{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(30px,6vw,90px);align-items:end}
+.stop h2 em{color:var(--gold)}.stop p{font-size:1.14em}.work{list-style:none;padding:0;margin-top:18px;columns:2;column-gap:28px}.work li{padding:7px 0;break-inside:avoid;color:var(--mut)}
+.field{position:relative;height:min(90vh,60vw);min-height:460px}.field img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
+.field::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(29,20,16,.76),transparent 50%)}
+.nums{position:absolute;z-index:2;left:0;right:0;bottom:clamp(24px,4vw,56px);display:flex;flex-wrap:wrap;gap:20px clamp(40px,8vw,120px)}
+.nums b{display:block;font:900 clamp(3.4rem,2rem + 6vw,8rem)/.95 var(--d);letter-spacing:-.03em}.nums span{font-weight:500}
+.mat{background:var(--hemp);color:var(--soil);padding-block:clamp(70px,9vw,128px)}.mat .i{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);gap:clamp(30px,6vw,96px);align-items:start}
+.mat h2{font-size:clamp(2rem,1.3rem + 2.7vw,3.8rem)}.mat .i>div>p{margin-top:20px}
+.words{list-style:none;padding:0}.words li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-top:2px solid rgba(29,20,16,.75);padding:6px 0 8px;font:900 clamp(3rem,1.5rem + 7vw,8.3rem)/1 var(--d);letter-spacing:-.008em}.words li span{font:500 clamp(.92rem,.9rem + .15vw,1.05rem)/1.3 Cabin;letter-spacing:0;text-align:right;max-width:21ch}
+.pil{background:var(--leaf);padding-block:clamp(70px,9vw,128px)}.pg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(30px,5vw,84px);align-items:center;margin-top:clamp(30px,4vw,56px)}
+.tabs{display:grid;gap:7px}.tabs button{display:flex;gap:14px;align-items:center;text-align:left;width:100%;min-height:56px;padding:9px 16px;font:600 1.08rem/1.2 Cabin;color:var(--bone);background:rgba(245,243,231,.09);border:0;border-radius:6px;cursor:pointer;transition:background-color .15s ease}
+.tabs button i{font:900 1.3rem/1 var(--d);font-style:normal;color:var(--hemp);width:1.1em}.tabs button[aria-pressed=true]{background:var(--hemp);color:var(--soil)}.tabs button[aria-pressed=true] i{color:var(--soil)}
+@media(hover:hover) and (pointer:fine){.tabs button:not([aria-pressed=true]):hover{background:rgba(245,243,231,.18)}}
+.say{min-height:7.2em;margin-top:18px;font-size:1.08em}.say strong{display:block;font:900 1.5rem/1.1 var(--d);margin-bottom:6px;color:var(--gold)}
+.house{background:var(--soil);border-radius:6px;padding:clamp(12px,2vw,28px)}.house svg{width:100%;height:auto}
+.ly{opacity:0;transform:scale(.97);transform-origin:50% 60%;transition:opacity .24s var(--out),transform .24s var(--out)}.ly.on{opacity:1;transform:none}.tag{font:600 27px Cabin;fill:var(--bone)}
+.man{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:88vh;background:var(--bark)}.man figure{min-height:420px}.man img{width:100%;height:100%;object-fit:cover;object-position:66% 30%}
+.man .t{padding:clamp(44px,6vw,92px) var(--gut);align-self:center}.man p{margin-top:18px}.gains{list-style:none;padding:0;margin-top:24px}.gains li{padding:9px 0;border-top:1px solid rgba(245,243,231,.26)}.man .btn{margin-top:26px}
+.ws{padding-block:clamp(70px,9vw,128px)}.wg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(30px,5vw,84px);align-items:center}.wg>img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%}
+.ws ul{list-style:none;padding:0;margin-top:26px}.ws li{padding:9px 0;border-top:1px solid rgba(245,243,231,.22)}.ws .loc{margin-top:20px;color:var(--hemp);font-weight:500}.ws>div>div>p:first-of-type{margin-top:18px}
+.end{background:var(--gold);color:var(--soil);padding-block:clamp(66px,8vw,110px) 36px}.end h2{font-size:clamp(2.7rem,1.4rem + 6vw,7.4rem)}.tel{display:block;width:max-content;max-width:100%;font:900 clamp(2.5rem,1.3rem + 5vw,6rem)/1 var(--d);margin-top:22px;text-decoration:none}.end .btn{background:var(--soil);color:var(--bone)}.end .btn.ghost{background:transparent;color:var(--soil)}
+.eg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:clamp(40px,5vw,70px);padding-top:26px;border-top:2px solid rgba(29,20,16,.7)}.eg h3{font-size:1.3rem;margin-bottom:8px}.hrs{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;font-variant-numeric:tabular-nums}.fine{margin-top:44px;font-size:.92rem}
+.call{display:none}.pre{transform:translateY(14px)}.in{transform:none;transition:transform .7s var(--out)}.wipe.pre{transform:none;clip-path:inset(0 0 12% 0)}.wipe.in{clip-path:inset(0);transition:clip-path .7s var(--out)}
+@keyframes settle{from{transform:scale(1.05)}}@keyframes rise{from{transform:translateY(14px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-property:opacity,background-color!important;scroll-behavior:auto!important}.pre,.ly{transform:none}.wipe.pre{clip-path:none}}
+@media(max-width:900px){.nl a:not(.btn){display:none}.hero>img{object-position:62% 50%}.hero::after{background:linear-gradient(0deg,rgba(13,31,25,.9) 8%,rgba(13,31,25,.32) 60%,rgba(13,31,25,.32))}.stopg,.mat .i,.pg,.man,.wg{grid-template-columns:1fr}.house{order:-1}.man figure{height:96vw;min-height:0}.wg>img{max-width:520px;margin-inline:auto}.eg{grid-template-columns:1fr}}
+@media(max-width:560px){.acts .btn{flex:1 1 100%}.work{columns:1}.words li span{display:none}.call{display:flex;position:fixed;z-index:9;left:12px;right:12px;bottom:12px;box-shadow:0 10px 28px rgba(0,0,0,.45)}.fine{padding-bottom:66px}.field{height:96vw}.nums{gap:14px 28px}.say{min-height:9.4em}}
+</style>
+</head>
+<body>
+<header class="hero">
+<img src="images/hennepzaad-hand.jpg" alt="Open hand vol hennepzaad" fetchpriority="high">
+<nav class="wrap" aria-label="Hoofdmenu"><a class="mark" href="#top" id="top">VDZ<span>Projecten</span></a><div class="nl"><a href="#pijlers">Renoveren</a><a href="#workshops">Workshops</a><a class="btn" href="tel:+31614382431">Bel ons</a></div></nav>
+<div class="wrap lead"><h1>Je huis begint <em>hier.</em></h1><p>VDZ Projecten bouwt en renoveert biobased en betonvrij, volgens de EnerPhit-methode.</p><div class="acts"><a class="btn" href="mailto:info@vdzprojecten.nl?subject=Kennismaking%20aanvragen">Kennismaking aanvragen</a><a class="btn ghost" href="tel:+31614382431">06 14382431</a></div></div>
+</header>
+<main>
+<svg class="furrow" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="#6B4A36" stroke-width="3" vector-effect="non-scaling-stroke"><path d="M0 14C240 4 420 26 720 14S1200 4 1440 16M0 38C260 26 460 50 720 38S1180 26 1440 40M0 62C220 50 480 74 720 62S1220 50 1440 64M0 86C280 74 440 98 720 86S1160 74 1440 88"/></svg>
+<section class="stop wrap"><div class="stopg"><h2>Stop met slopen. <em>Start</em> met transformeren.</h2><div><p>Echt duurzaam bouwen begint bij slim renoveren van wat er al staat. Wij vertalen je wens in logische stappen.</p><ul class="work"><li>Renovatie</li><li>Aanbouw en verbouw</li><li>Dakrenovatie</li><li>Woning van het gas af</li><li>Begeleidend advies</li><li>Workshops</li></ul></div></div></section>
+<section class="field wipe rv"><img src="images/veld-trekker.jpg" alt="Jonge plant op een akker, met op de achtergrond een trekker en mensen aan het werk" loading="lazy"><div class="nums wrap"><div><b>90%</b><span>minder energiebehoefte voor je gebouw</span></div><div><b>25 kWh</b><span>per m² per jaar, vooraf berekend</span></div></div></section>
+<section class="mat"><div class="wrap i"><div><h2>Van het land naar je muur.</h2><p>Natuurlijke materialen die ademen en vocht reguleren. De hennep wordt lokaal geteeld en verwerkt, onder andere door Van Land Naar Pand in Ulvenhout.</p></div><ul class="words"><li>Hout</li><li>Hennep<span>als kalkhennep, voor vloer en isolatie</span></li><li>Stro</li><li>Leem<span>leempleister regelt het vocht</span></li><li>Kalk</li></ul></div></section>
+<section class="pil" id="pijlers"><div class="wrap"><h2>Waar begin je? Bij de volgorde.</h2><div class="pg"><div><div class="tabs" role="group" aria-label="De vijf pijlers"></div><p class="say" aria-live="polite"></p></div><div class="house"><svg viewBox="0 0 620 500" role="img" aria-label="Doorsnede van een huis dat per pijler een laag krijgt">
+<path d="M70 215 310 40l240 175v235H70Z" fill="#2C211C" stroke="#F5F3E7" stroke-width="5" stroke-linejoin="round"/><path d="M30 450h560" stroke="#CCCF93" stroke-width="7" stroke-linecap="round"/>
+<path class="ly" data-l="4" d="M70 215 310 40l240 175v235H70Zm40 21v178h400V236L310 90Z" fill="#CCCF93" fill-rule="evenodd" opacity=".9"/>
+<g class="ly" data-l="0"><path d="M145 398h330" stroke="#E0B25F" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round"/><text class="tag" x="310" y="374" text-anchor="middle">eerst het doel</text></g>
+<g class="ly" data-l="1" fill="none" stroke="#9FD3C0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M180 235h260M414 213l26 22-26 22"/><path d="M440 295H180M206 273l-26 22 26 22"/></g>
+<path class="ly" data-l="2" d="M120 242 310 103l190 139v170H120Z" fill="none" stroke="#F5F3E7" stroke-width="5"/>
+<g class="ly" data-l="3" fill="#E0B25F"><circle cx="120" cy="242" r="11"/><circle cx="500" cy="242" r="11"/><circle cx="120" cy="412" r="11"/><circle cx="500" cy="412" r="11"/><circle cx="310" cy="103" r="11"/></g>
+</svg></div></div></div></section>
+<section class="man"><figure class="rv"><img src="images/walther.jpg" alt="Vakman in een trui van VDZ Projecten, met hennepzaad in de hand" loading="lazy"></figure><div class="t"><h2>Eerst even kennismaken.</h2><p>Walther Dingemans is al meer dan 15 jaar actief in de groene bouwwereld en is gecertificeerd via het Passive House Institute. In een kennismaking krijg je helder wat er bij jouw project komt kijken, ook als je zelf bouwt.</p><ul class="gains"><li>Duidelijkheid over haalbaarheid en aanpak</li><li>Inzicht in energiebesparende strategieën</li><li>Kennis van natuurlijke bouwmaterialen</li><li>Handvatten voor ontwerp en uitvoering</li><li>Tips om fouten en extra kosten te voorkomen</li></ul><a class="btn" href="mailto:info@vdzprojecten.nl?subject=Kennismaking%20aanvragen">Plan een kennismaking</a></div></section>
+<section class="ws wrap" id="workshops"><div class="wg"><img class="rv" src="images/handen-kalkhennep.jpg" alt="Handen in een kring, elk met een hoop kalkhennep" loading="lazy"><div><h2>Leren door het te doen.</h2><p>Workshops op een actief bouw- of renovatieproject, voor doe-het-zelvers en professionals.</p><ul><li>Hennepvloer aanleggen</li><li>Luchtdicht bouwen met dampopen systemen</li><li>Biobased renoveren</li><li>Stucen met leem</li><li>WTW-systemen</li><li>Dak-, wand- en plafondisolatie</li><li>EnerPHit-informatieworkshop</li></ul><p class="loc">Breda, Tilburg, Gilze-Rijen, Zeeland, Arnhem, Maastricht en Den Haag</p></div></div></section>
+</main>
+<footer class="end"><div class="wrap"><h2>Plant het eerste zaadje.</h2><a class="tel" href="tel:+31614382431">06 14382431</a><div class="acts"><a class="btn" href="mailto:info@vdzprojecten.nl">info@vdzprojecten.nl</a><a class="btn ghost" href="https://www.google.com/maps/search/VDZ+Projecten+bv+Jo+van+Ammersstraat+3,+5122+CK+Rijen">Route</a></div><div class="eg"><div><h3>Klanten noemen</h3><p>Op tijd opgeleverd, hard gewerkt en open voor aanpassingen. 4,8 op Google uit 41 reviews.</p></div><div><h3>Open</h3><div class="hrs"><span>Ma t/m vr</span><span>07:00 tot 17:00</span><span>Zaterdag</span><span>07:00 tot 12:00</span><span>Zondag</span><span>Gesloten</span></div></div><div><h3>Adres</h3><p>Jo van Ammersstraat 3<br>5122 CK Rijen<br>Vooral actief rond Tilburg en Breda</p></div></div><p class="fine">© VDZ Projecten</p></div></footer>
+<a class="btn call" href="tel:+31614382431">Bel 06 14382431</a>
+<script>
+(function(){
+var P=[["De juiste volgorde","Stel eerst een duidelijk doel: een stabiele temperatuur, in de winter en in de zomer. Daarna maak je de keuzes in wie, wat en hoe."],["Ventilatie met WTW","Warmte terugwinnen uit de lucht. We adviseren je woning te verwarmen met een gecontroleerd ventilatiesysteem met warmteterugwinning."],["Luchtdichte gebouwschil","Met een dampopen systeem. Blowertests laten zien hoe luchtdicht je woning is, en dat voorkomt tocht, warmteverlies en vochtproblemen."],["Vrij van thermische lekken","De plekken waar warmte ontsnapt spoor je op, onder meer met thermografische metingen, en die werk je weg."],["Thermische isolatie","100% biobased isoleren, bijvoorbeeld met kalkhennep. Goed voor je energievraag en voor een gezond binnenklimaat."]];
+var T=document.querySelector('.tabs'),S=document.querySelector('.say'),L=[].slice.call(document.querySelectorAll('.ly'));
+P.forEach(function(p,i){var b=document.createElement('button');b.type='button';b.innerHTML='<i>'+(i+1)+'</i>'+p[0];b.onclick=function(){go(i)};T.appendChild(b)});
+function go(n){[].forEach.call(T.children,function(b,i){b.setAttribute('aria-pressed',String(i===n))});L.forEach(function(l){l.classList.toggle('on',+l.dataset.l<=n)});document.querySelector('.ly[data-l="0"] text').style.display=n?'none':'';S.innerHTML='<strong>'+P[n][0]+'</strong>'+P[n][1]}
+go(0);
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver'in window){var io=new IntersectionObserver(function(E){E.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});[].forEach.call(document.querySelectorAll('.rv'),function(e){if(e.getBoundingClientRect().top>innerHeight){e.classList.add('pre');io.observe(e)}})}
+})();
+</script>
+</body></html>
