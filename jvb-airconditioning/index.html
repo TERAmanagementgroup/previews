@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JvB Airconditioning | Airco in Rijen</title>
+<meta name="description" content="Airco laten plaatsen, onderhouden of repareren? Jeffrey van Baal uit Rijen geeft eerlijk advies. Bel 06 23 64 80 88.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;700&family=Cabin:wght@400;600;700&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0B1B2E;--navy:#25456E;--deep:#142C47;--sky:#19A9E1;--ice:#BFE8F8;--unit:#F6F8F9;--line:#D9E0E5;--ink:#0F2033;--muted:#4C5F72;--led:#EC1C24;--gut:clamp(20px,4.4vw,72px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--navy) var(--night)}
+body{margin:0;background:var(--night);color:#E7EFF5;font:400 clamp(1.03rem,.98rem + .22vw,1.2rem)/1.58 Cabin,system-ui,sans-serif;overflow-x:clip}
+::selection{background:var(--sky);color:var(--night)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+h1,h2,h3,p,ul,ol{margin:0}ul,ol{padding:0;list-style:none}
+h1,h2,h3,.d{font-family:"Bai Jamjuree",Cabin,sans-serif;font-weight:700;line-height:1;letter-spacing:-.025em;text-wrap:balance}
+h2{font-size:clamp(2.4rem,5.9vw,5.75rem)}
+em{font-family:Lora,Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-.02em}
+.wrap{padding-inline:var(--gut);max-width:1680px;margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:.65em;min-height:52px;padding:.7em 1.4em;border-radius:12px;font-weight:700;text-decoration:none;border:1.5px solid transparent;transition:background-color .18s,transform .18s cubic-bezier(.2,.8,.2,1)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:1.1em;height:1.1em}
+.b1{background:var(--sky);color:var(--night)}.b1:hover{background:#4cc0ee}
+.b2{border-color:currentColor}.b2:hover{background:rgba(255,255,255,.1)}
+.num{font-variant-numeric:tabular-nums}
+
+/* the unit */
+.unit{position:relative;z-index:3;background:linear-gradient(180deg,#fff 0,var(--unit) 62%,#E4EAEE 100%);color:var(--ink);border-radius:0 0 clamp(18px,2.4vw,34px) clamp(18px,2.4vw,34px);box-shadow:0 18px 34px rgba(4,12,22,.42)}
+.ubar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(14px,1.7vw,24px) var(--gut) clamp(18px,2.4vw,34px)}
+.ubar img{width:clamp(112px,11vw,160px)}
+.ubar nav{display:flex;gap:clamp(16px,2.2vw,34px);font-weight:600}
+.ubar nav a{text-decoration:none;padding:8px 0}.ubar nav a:hover{text-decoration:underline}
+.ur{display:flex;align-items:center;gap:14px}
+.ur a{font:700 1.06rem "Bai Jamjuree",sans-serif;text-decoration:none;white-space:nowrap}
+.led{width:8px;height:8px;border-radius:50%;background:var(--led);box-shadow:0 0 0 3px rgba(236,28,36,.16)}
+.slit{height:clamp(12px,1.4vw,20px);margin-inline:var(--gut);background:#10202F;border-radius:6px 6px 0 0;transform-origin:top;position:relative;overflow:hidden;animation:flap .5s cubic-bezier(.16,1,.3,1) both}
+.slit::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 22px,rgba(255,255,255,.17) 22px 24px)}
+@keyframes flap{from{transform:scaleY(.2)}to{transform:none}}
+
+/* hero */
+.hero{position:relative;isolation:isolate;display:flex;flex-direction:column;min-height:100svh;overflow:hidden}
+.scene{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(70px,13vh,150px) var(--gut) clamp(28px,5vh,56px)}
+.scene>img{position:absolute;inset:-60px 0 0;width:100%;height:calc(100% + 60px);object-fit:cover;object-position:62% 66%;z-index:-3;animation:zoom .6s cubic-bezier(.16,1,.3,1) both}
+.scene::before{content:"";position:absolute;inset:-60px 0 0;z-index:-2;background:linear-gradient(180deg,rgba(11,27,46,.5),rgba(11,27,46,.34) 30%,rgba(11,27,46,.8) 66%,rgba(11,27,46,.96))}
+.air{position:absolute;left:var(--gut);right:var(--gut);top:0;width:calc(100% - 2*var(--gut));height:62%;z-index:-1;pointer-events:none}
+.air path{fill:none;stroke:#D8F3FF;stroke-width:1.5;stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-dasharray:70 240;animation:fall 5.5s linear infinite;opacity:.62}
+.air path:nth-child(2n){animation-duration:7s;animation-delay:-2s;opacity:.4}.air path:nth-child(3n){animation-duration:6.2s;animation-delay:-4s}
+@keyframes fall{to{stroke-dashoffset:-310}}
+@keyframes zoom{from{transform:scale(1.05)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+.hero h1{font-size:min(8.5vw,8.4rem);line-height:.95;color:#fff;max-width:13.5em;animation:rise .5s cubic-bezier(.16,1,.3,1) both}
+.hero h1 em{color:var(--ice)}
+.hb{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px 56px;margin-top:clamp(20px,3vw,38px);animation:rise .55s cubic-bezier(.16,1,.3,1) both}
+.hb p{max-width:32em;font-size:1.12em}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.facts{display:flex;gap:clamp(24px,4vw,64px)}
+.facts b{display:block;font:700 clamp(2rem,3.7vw,3.5rem)/1 "Bai Jamjuree",sans-serif;color:#fff}
+.facts span{font-size:.95rem}
+
+/* louvre */
+.vent{position:relative;height:clamp(30px,3.3vw,46px);background:linear-gradient(180deg,#fff,#E5EBEF);border-radius:0 0 14px 14px;box-shadow:0 10px 20px rgba(4,12,22,.2)}
+.vent::before{content:"";position:absolute;left:18px;right:18px;bottom:6px;height:9px;background:#10202F;border-radius:3px;transform:scaleY(.2);transform-origin:top;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.vent::after{content:"";position:absolute;right:20px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--led)}
+.vent.open::before{transform:none}
+.breeze{height:clamp(44px,6vw,90px);background:linear-gradient(180deg,rgba(25,169,225,.22),transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+
+/* picker */
+.pick{background:var(--night);padding-bottom:clamp(60px,8vw,120px)}
+.pgrid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,84px);align-items:stretch}
+.pick .in{margin:18px 0 28px;max-width:30em;color:#B7C8D6}
+.tabs{border-top:1px solid rgba(231,239,245,.26)}
+.tabs button{all:unset;box-sizing:border-box;display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;min-height:66px;padding:12px 14px;border-bottom:1px solid rgba(231,239,245,.26);cursor:pointer;font:700 clamp(1.2rem,2vw,1.75rem)/1.1 "Bai Jamjuree",sans-serif;color:#D4E0E9;transition:background-color .16s,color .16s}
+.tabs button:hover{color:#fff;background:rgba(255,255,255,.06)}
+.tabs button:focus-visible{outline:3px solid var(--sky);outline-offset:-3px}
+.tabs button[aria-pressed=true]{background:var(--unit);color:var(--ink)}
+.tabs i{width:9px;height:9px;border-radius:50%;background:transparent;flex:none}
+.tabs button[aria-pressed=true] i{background:var(--led)}
+.stage{position:relative;margin:0;min-height:clamp(320px,47vw,700px);border-radius:14px;overflow:hidden;background:var(--deep)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage img.wipe{animation:wipe .32s cubic-bezier(.16,1,.3,1)}
+@keyframes wipe{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+.stage figcaption{position:absolute;left:14px;bottom:14px;right:14px;width:fit-content;max-width:calc(100% - 28px);padding:10px 15px;border-radius:10px;background:var(--unit);color:var(--ink);font-weight:600;box-shadow:0 8px 20px rgba(4,12,22,.3)}
+
+/* jeffrey */
+.jef{background:var(--unit);color:var(--ink);padding-bottom:clamp(60px,8vw,120px)}
+.jef .vent{background:linear-gradient(180deg,var(--navy),#1b3657)}
+.jef .breeze{background:linear-gradient(180deg,rgba(25,169,225,.16),transparent)}
+.jef h2{max-width:13em}
+.jgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,6vw,110px);margin-top:clamp(28px,4vw,56px);align-items:end}
+.jgrid p{font-size:clamp(1.25rem,2.1vw,1.85rem);line-height:1.34;max-width:28em}
+.jgrid p+p{margin-top:.8em}
+.tl{position:relative;display:grid;gap:26px;padding-left:26px;border-left:3px solid var(--navy)}
+.tl li{position:relative}.tl li::before{content:"";position:absolute;left:-34px;top:.45em;width:13px;height:13px;border-radius:50%;background:var(--unit);border:3px solid var(--navy)}
+.tl li:last-child::before{background:var(--sky)}
+.tl b{display:block;font:700 clamp(2.1rem,4vw,3.75rem)/1 "Bai Jamjuree",sans-serif;color:var(--navy)}
+
+/* services */
+.do{background:var(--navy);padding-bottom:clamp(60px,8vw,120px)}
+.rows{margin-top:clamp(26px,4vw,54px);border-top:1px solid rgba(255,255,255,.3)}
+.rows li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(12px,4vw,70px);align-items:baseline;padding:clamp(20px,2.7vw,38px) 0;border-bottom:1px solid rgba(255,255,255,.3)}
+.rows h3{font-size:clamp(2rem,5vw,4.75rem);color:#fff}
+.rows p{color:#E2EBF3}
+
+/* types */
+.types{background:var(--deep);padding-bottom:clamp(60px,8vw,120px)}
+.types .sub{margin-top:16px;max-width:34em;color:#C2D2DF}
+.tg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(28px,4vw,56px);border-top:1px solid rgba(231,239,245,.26);border-left:1px solid rgba(231,239,245,.26)}
+.tg li{padding:clamp(16px,2vw,28px);border-right:1px solid rgba(231,239,245,.26);border-bottom:1px solid rgba(231,239,245,.26)}
+.tg svg{display:block;width:100%;height:clamp(110px,12vw,180px);margin-bottom:16px}
+.tg h3{font-size:clamp(1.3rem,2vw,1.8rem);color:#fff}
+.tg p{margin-top:6px;color:#C2D2DF}
+
+/* warm/cool */
+.year{display:grid;grid-template-columns:1fr 1fr}
+.year div{padding:clamp(40px,6vw,92px) var(--gut)}
+.year .c{background:var(--sky);color:var(--night)}
+.year .w{background:#D5141C;color:#fff}
+.year h2{font-size:clamp(2.4rem,6.4vw,6rem)}
+.year p{margin-top:12px;max-width:24em;font-size:1.08em;font-weight:600}
+
+/* customers */
+.cust{background:var(--unit);color:var(--ink);padding-block:clamp(60px,8vw,120px)}
+.cg{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:clamp(30px,6vw,110px);align-items:start}
+.sc{font:700 clamp(6rem,15vw,14rem)/.8 "Bai Jamjuree",sans-serif;letter-spacing:-.05em;color:var(--navy)}
+.cg .of{margin-top:16px;font-weight:700}
+.q li{padding:clamp(16px,2vw,26px) 0;border-top:1px solid var(--line);font:700 clamp(1.4rem,2.9vw,2.7rem)/1.1 "Bai Jamjuree",sans-serif;letter-spacing:-.02em}
+.q li:last-child{border-bottom:1px solid var(--line)}
+
+/* contact */
+.con{background:var(--night);padding-bottom:clamp(40px,5vw,64px)}
+.big{display:block;margin-top:16px;font:700 clamp(2.7rem,9.4vw,9.25rem)/1 "Bai Jamjuree",sans-serif;letter-spacing:-.04em;text-decoration:none;color:#fff;white-space:nowrap}
+.big:hover{color:var(--ice)}
+.cgr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px clamp(24px,5vw,80px);margin-top:clamp(30px,4vw,56px);padding-top:26px;border-top:1px solid rgba(231,239,245,.26)}
+.cgr h3{font-size:1.06rem;letter-spacing:0;margin-bottom:8px;color:var(--ice)}
+.cgr a{overflow-wrap:anywhere}
+table{border-collapse:collapse}td{padding:2px 16px 2px 0}
+tr.today td{color:#fff;font-weight:700}
+footer{background:var(--night);color:#9FB2C2;font-size:.88rem;padding:0 var(--gut) 28px}
+.call{display:none}
+
+@media (max-width:900px){
+ .ubar nav{display:none}.hero h1{font-size:13vw}
+ .pgrid,.jgrid,.cg{grid-template-columns:minmax(0,1fr)}
+ .rows li{grid-template-columns:minmax(0,1fr)}
+ .tg{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .year{grid-template-columns:1fr}
+ .cgr{grid-template-columns:minmax(0,1fr)}
+ .call{display:flex;position:fixed;z-index:9;left:12px;right:12px;bottom:12px;justify-content:center;box-shadow:0 8px 22px rgba(4,12,22,.4)}
+ footer{padding-bottom:86px}
+}
+@media (max-width:420px){.ur a{font-size:.96rem}.tg li{padding:13px}.tg h3{font-size:1.14rem}.tg p{font-size:.94rem}.facts{gap:26px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.air path{stroke-dasharray:none;opacity:.22}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="t" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 3.500h3.400l1.700 4.600-2.200 1.700a13 13 0 0 0 6.300 6.300l1.700-2.200 4.600 1.700V19a2 2 0 0 1-2.200 2A16.800 16.800 0 0 1 3 5.700a2 2 0 0 1 2-2.200z"/></symbol></svg>
+<main>
+<section class="hero">
+  <header class="unit">
+    <div class="ubar">
+      <a href="#top" id="top" aria-label="JvB Airconditioning"><img src="images/logo.png" width="440" height="233" alt="JvB Airconditioning"></a>
+      <nav aria-label="Hoofdmenu"><a href="#bij-mij">Voorbeelden</a><a href="#jeffrey">Jeffrey</a><a href="#diensten">Diensten</a><a href="#contact">Contact</a></nav>
+      <div class="ur"><span class="led" aria-hidden="true"></span><a class="num" href="tel:+31623648088">06 23 64 80 88</a></div>
+    </div>
+    <div class="slit" aria-hidden="true"></div>
+  </header>
+  <div class="scene">
+    <img src="images/zwembad.jpg" width="1600" height="1200" alt="Witte airco aan een marmeren wand naast een binnenzwembad" fetchpriority="high">
+    <svg class="air" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M40 0C60 120 10 220 70 400"/><path d="M150 0c30 110-20 240 40 400"/><path d="M270 0c-20 130 50 230 10 400"/><path d="M390 0c30 100-30 250 30 400"/><path d="M510 0c-30 120 40 240-10 400"/><path d="M630 0c30 130-30 220 30 400"/><path d="M750 0c-20 110 40 250 0 400"/><path d="M860 0c30 120-30 230 30 400"/><path d="M960 0c-20 130 30 240-10 400"/></svg>
+    <h1>Eerst <em>eerlijk</em> advies. Dan pas een airco.</h1>
+    <div class="hb">
+      <div>
+        <p>Jeffrey van Baal plaatst, onderhoudt en repareert airco's voor particulieren en bedrijven, vanuit Rijen.</p>
+        <div class="acts"><a class="btn b1" href="tel:+31623648088"><svg aria-hidden="true"><use href="#t"/></svg>Bel Jeffrey</a><a class="btn b2" href="mailto:info@jvbairconditioning.nl?subject=Vrijblijvende%20offerte%20airco">Vrijblijvende offerte</a></div>
+      </div>
+      <div class="facts"><div><b class="num">5,0</b><span>uit 54 reviews</span></div><div><b class="num">18+</b><span>jaar ervaring</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pick" id="bij-mij">
+  <div class="wrap"><div class="vent" aria-hidden="true"></div><div class="breeze"></div>
+    <div class="pgrid">
+      <div>
+        <h2>Hoe ziet dat er bij mij uit?</h2>
+        <p class="in">Kies een plek en bekijk hoe Jeffrey het ergens anders heeft opgelost.</p>
+        <div class="tabs" id="tabs" role="group" aria-label="Kies een plek"></div>
+      </div>
+      <figure class="stage"><img id="pi" src="images/schuin-dak.jpg" width="1600" height="1200" loading="lazy" alt=""><figcaption id="pc"></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="jef" id="jeffrey">
+  <div class="wrap"><div class="vent" aria-hidden="true"></div><div class="breeze"></div>
+    <h2>Hoi, ik ben Jeffrey van Baal.</h2>
+    <div class="jgrid">
+      <div>
+        <p>Na jaren als airco-monteur bij verschillende bedrijven begon ik mijn eigen bedrijf.</p>
+        <p>Iedere installatie stem ik af op jouw wensen en situatie. Geen project is te groot of te klein.</p>
+      </div>
+      <ol class="tl">
+        <li><b class="num">18 jaar</b>ervaring als airco-monteur</li>
+        <li><b class="num">2023</b>start van JvB Airconditioning</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="do" id="diensten">
+  <div class="wrap"><div class="vent" aria-hidden="true"></div><div class="breeze"></div>
+    <h2>Wat ik voor je doe.</h2>
+    <ul class="rows">
+      <li><h3>Installeren</h3><p>Professionele montage van alle typen airco's, thuis of op je werk. Eerst advies, dan een vrijblijvende offerte.</p></li>
+      <li><h3>Onderhoud</h3><p>Service en onderhoud, zodat je systeem betrouwbaar blijft en jarenlang meegaat.</p></li>
+      <li><h3>Storing</h3><p>Doet de airco het niet goed? Storingen en reparaties verhelp ik snel en efficiënt.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="types">
+  <div class="wrap"><div class="vent" aria-hidden="true"></div><div class="breeze"></div>
+    <h2>Elke ruimte zijn eigen model.</h2>
+    <p class="sub">Voor elke ruimte en elk gebruik is er een oplossing. Dit zijn vormen die Jeffrey al heeft geplaatst.</p>
+    <ul class="tg">
+      <li><svg viewBox="0 0 220 130" aria-hidden="true"><g fill="none" stroke="#E7EFF5" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8v114"/><rect x="32" y="26" width="170" height="46" rx="12"/><path d="M44 62h146"/><path stroke="#19A9E1" d="M64 86c6 12-4 20 2 32M116 86c6 12-4 20 2 32M168 86c6 12-4 20 2 32"/></g></svg><h3>Wandmodel</h3><p>Hoog aan de muur.</p></li>
+      <li><svg viewBox="0 0 220 130" aria-hidden="true"><g fill="none" stroke="#E7EFF5" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round"><path d="M12 120h196"/><rect x="58" y="32" width="104" height="86" rx="7"/><path d="M70 44h80M70 52h80M70 100h80M70 108h80"/><path stroke="#19A9E1" d="M84 22c-5-6 4-10-1-16M110 22c-5-6 4-10-1-16M136 22c-5-6 4-10-1-16"/></g></svg><h3>Vloermodel</h3><p>Laag tegen de muur.</p></li>
+      <li><svg viewBox="0 0 220 130" aria-hidden="true"><g fill="none" stroke="#E7EFF5" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22h200"/><rect x="58" y="22" width="104" height="24" rx="3"/><rect x="88" y="27" width="44" height="14"/><path stroke="#19A9E1" d="M58 60c-8 12-18 18-28 40M162 60c8 12 18 18 28 40M92 60c-3 14-6 22-8 42M128 60c3 14 6 22 8 42"/></g></svg><h3>Plafondmodel</h3><p>Weggewerkt in het plafond.</p></li>
+      <li><svg viewBox="0 0 220 130" aria-hidden="true"><g fill="none" stroke="#E7EFF5" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round"><rect x="46" y="14" width="128" height="96" rx="6"/><circle cx="100" cy="62" r="36"/><circle cx="100" cy="62" r="24"/><circle cx="100" cy="62" r="11"/><path d="M100 26v72M64 62h72"/><path d="M150 30h12M150 40h12M62 110v12M158 110v12"/></g></svg><h3>Buitendeel</h3><p>Aan de gevel, op de grond of op het dak.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="year" aria-label="Koelen en verwarmen">
+  <div class="c"><h2>Koel in juli.</h2><p>Verkoeling tijdens warme zomerdagen.</p></div>
+  <div class="w"><h2>Warm in januari.</h2><p>Comfortabele verwarming in de winter, of een oplossing die beide combineert.</p></div>
+</section>
+
+<section class="cust">
+  <div class="wrap cg">
+    <div><div class="sc num">5,0</div><p class="of">uit 54 reviews. Klanten noemen vooral:</p></div>
+    <ul class="q">
+      <li>Eerlijk advies in plaats van een verkooppraatje</li>
+      <li>Duidelijke uitleg over verschillen in merken en prijzen</li>
+      <li>Van één tot vier units per woning, en iedereen blij</li>
+      <li>Goede communicatie en snel contact</li>
+    </ul>
+  </div>
+</section>
+
+<section class="con" id="contact">
+  <div class="wrap"><div class="vent" aria-hidden="true"></div><div class="breeze"></div>
+    <h2>Vraag het Jeffrey.</h2>
+    <a class="big num" href="tel:+31623648088">06 23 64 80 88</a>
+    <div class="cgr">
+      <div><h3>Mail</h3><a href="mailto:info@jvbairconditioning.nl">info@jvbairconditioning.nl</a><div class="acts"><a class="btn b1" href="mailto:info@jvbairconditioning.nl?subject=Vrijblijvende%20offerte%20airco">Offerte vragen</a></div></div>
+      <div><h3>Waar</h3><a href="https://www.google.com/maps/search/JvB+airconditioning+Kardinaal+de+Jongstraat,+5121+JN+Rijen">Kardinaal de Jongstraat<br>5121 JN Rijen</a></div>
+      <div><h3>Bereikbaar</h3><table class="num" id="uren"><tr data-d="1 2 3 4 5"><td>ma–vr</td><td>07:30–18:00</td></tr><tr data-d="6"><td>za</td><td>08:00–12:00</td></tr><tr data-d="0"><td>zo</td><td>gesloten</td></tr></table></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>JvB Airconditioning, Rijen</footer>
+<a class="btn b1 call" href="tel:+31623648088"><svg aria-hidden="true"><use href="#t"/></svg>Bel 06 23 64 80 88</a>
+<script>
+(function(){
+ var P=[['Onder een schuin dak','schuin-dak','Wandmodel op zolder, onder het schuine dak.','Witte airco tegen een schuin plafond op een zolder met groen behang'],
+ ['Onder een houten plafond','houten-plafond','Strak tegen de wand, onder het houten plafond.','Witte airco aan een lichtbruine wand onder een houten plafond'],
+ ['Naast het zwembad','zwembad','Aan de marmeren wand van een binnenzwembad.','Witte airco aan een marmeren wand naast een binnenzwembad'],
+ ['Buiten aan de gevel','gevel','Buitendeel op beugels aan de gevel.','Buitendeel van een airco op beugels aan een bakstenen gevel']];
+ var T=document.getElementById('tabs'),I=document.getElementById('pi'),C=document.getElementById('pc'),B=[];
+ function s(i,f){var p=P[i];B.forEach(function(b,j){b.setAttribute('aria-pressed',j===i)});I.src='images/'+p[1]+'.jpg';I.alt=p[3];C.textContent=p[2];if(!f){I.classList.remove('wipe');void I.offsetWidth;I.classList.add('wipe')}}
+ P.forEach(function(p,i){var b=document.createElement('button');b.type='button';b.innerHTML='<span></span><i aria-hidden="true"></i>';b.firstChild.textContent=p[0];b.onclick=function(){s(i)};T.append(b);B.push(b)});s(0,true);
+ var d=String(new Date().getDay());document.querySelectorAll('#uren tr').forEach(function(r){if(r.dataset.d.split(' ').indexOf(d)>-1)r.className='today'});
+ var V=document.querySelectorAll('.vent');
+ if('IntersectionObserver' in window){var o=new IntersectionObserver(function(E){E.forEach(function(e){if(e.isIntersecting){e.target.classList.add('open');o.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px'});V.forEach(function(v){o.observe(v)})}else V.forEach(function(v){v.classList.add('open')});
+})();
+</script>
+</body>
+</html>
