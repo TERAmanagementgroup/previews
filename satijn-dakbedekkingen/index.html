@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satijn Dakbedekkingen | Dakdekker in Zevenbergen</title>
+<meta name="description" content="Dakreparatie, dakrenovatie en dakonderhoud in Zevenbergen en West-Brabant. 10 jaar garantie op waterdichtheid. Bel 06 55 84 02 87.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wdth,wght@75..125,400..800&family=Crimson+Pro:ital,wght@1,500&family=Sen:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--storm:#0D1824;--deep:#132536;--navy:#25496F;--steel:#C9D3DA;--zinc:#B9C4CC;--dry:#EFF2F3;--white:#FAFBFB;--ink:#101C28;--muted:#4A5B6A;--sig:#FD5521;--on-dark:#E8EEF2;--soft:#A9B9C6;--gut:clamp(20px,4.4vw,72px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--navy) var(--storm)}
+body{margin:0;background:var(--storm);color:var(--on-dark);font:400 clamp(1rem,.96rem + .2vw,1.125rem)/1.6 Sen,system-ui,sans-serif;overflow-x:clip}
+::selection{background:var(--sig);color:var(--storm)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--sig);outline-offset:3px}
+h1,h2,h3,p,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
+h1,h2,h3,.disp{font-family:"Anek Latin",Sen,sans-serif;font-stretch:125%;font-variation-settings:"wdth" 125;font-weight:800;line-height:.98;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(2.5rem,6.4vw,6rem)}
+em{font-family:"Crimson Pro",Georgia,serif;font-style:italic;font-weight:500;font-stretch:100%;font-variation-settings:normal;letter-spacing:-.01em}
+.wrap{padding-inline:var(--gut);max-width:1680px;margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:.7em;min-height:52px;padding:.7em 1.35em;border-radius:99px;font-weight:700;text-decoration:none;border:1.5px solid transparent;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}
+.btn svg{width:1.1em;height:1.1em;flex:none}
+.btn:active{transform:scale(.97)}
+.btn-sig{background:var(--sig);color:var(--storm)}.btn-sig:hover{background:#ff7145}
+.btn-line{border-color:currentColor}.btn-line:hover{background:rgba(255,255,255,.1)}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px var(--gut)}
+.mark{display:inline-block;text-decoration:none;font:italic 800 1.5rem/1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 125;letter-spacing:.09em}
+.mark svg{display:block;width:100%;height:7px;margin-bottom:3px}
+.mark small{display:block;font:italic 600 .56rem/1 Sen,sans-serif;letter-spacing:.17em;text-align:right;margin-top:3px}
+.top nav{display:flex;gap:clamp(16px,2.2vw,34px);font-weight:600;font-size:.94rem}
+.top nav a{text-decoration:none;padding:8px 0}.top nav a:hover{text-decoration:underline}
+.spoed{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:99px;background:rgba(13,24,36,.62);border:1px solid rgba(232,238,242,.5);font-weight:700;font-size:.92rem;text-decoration:none;backdrop-filter:blur(6px)}
+.spoed i{width:8px;height:8px;border-radius:50%;background:var(--sig)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:32px;padding:clamp(96px,14vh,136px) var(--gut) clamp(28px,5vh,52px);isolation:isolate;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 72%;z-index:-3;animation:settle .6s cubic-bezier(.16,1,.3,1) both}
+.hero::after{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(13,24,36,.88) 0,rgba(13,24,36,.38) 42%,rgba(13,24,36,.2) 55%,rgba(13,24,36,.82) 74%,rgba(13,24,36,.95) 100%)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.hero h1{font-size:min(12.15vw,15.6rem);line-height:.86;letter-spacing:-.035em;text-transform:uppercase;color:#fff;animation:rise .5s cubic-bezier(.16,1,.3,1) both;margin-left:-.04em}
+.hero h1 span{display:inline}
+.foot{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;animation:rise .55s cubic-bezier(.16,1,.3,1) both}
+.lead{font:700 clamp(1.5rem,2.75vw,2.75rem)/1.1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 110;max-width:21em;color:#fff}
+.lead em{font-size:1.13em}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.tags{display:grid;gap:0;border-top:1px solid rgba(232,238,242,.45)}
+.tags li{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(232,238,242,.45)}
+.tags b{font:800 clamp(1.25rem,1.9vw,1.75rem)/1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 118;color:#fff;white-space:nowrap}
+.tags span{text-align:right;font-size:.95rem}
+@keyframes settle{from{transform:scale(1.05)}to{transform:none}}
+@keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* afschot edge */
+.edge{position:relative;height:clamp(44px,5.4vw,84px);container-type:size;overflow:hidden;background:var(--b)}
+.edge::before{content:"";position:absolute;inset:0;background:var(--a);clip-path:polygon(0 0,100% 0,100% 88%,0 8%)}
+.edge::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#8d9aa4,#e4eaee 22%,#a7b3bc 48%,#eef2f4 74%,#8d9aa4);clip-path:polygon(0 8%,100% 88%,100% calc(88% + 6px),0 calc(8% + 6px))}
+.edge i{position:absolute;z-index:1;left:0;top:8%;width:9px;height:12px;margin:-11px 0 0 -4px;background:#7CC4F2;border-radius:50% 50% 50% 50%/62% 62% 42% 42%;opacity:0}
+.edge.run i{animation:run 1.7s cubic-bezier(.45,.05,.75,.6) .15s 1 both}
+@keyframes run{0%{opacity:0;transform:none}8%{opacity:1}88%{opacity:1;transform:translate(100cqw,80cqh)}100%{opacity:0;transform:translate(100cqw,80cqh)}}
+
+/* triage */
+.triage{background:var(--storm);padding-block:clamp(56px,8vw,120px)}
+.tgrid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(32px,5vw,88px);align-items:start}
+.triage .intro{max-width:34em;margin:18px 0 30px;color:var(--soft)}
+.opts{border-top:1px solid rgba(232,238,242,.28)}
+.opts button{all:unset;box-sizing:border-box;display:flex;width:100%;gap:14px;justify-content:space-between;align-items:center;min-height:60px;padding:13px 4px;border-bottom:1px solid rgba(232,238,242,.28);cursor:pointer;font-weight:600;color:var(--on-dark);transition:padding .2s cubic-bezier(.2,.8,.2,1),color .15s}
+.opts button:hover{color:#fff;padding-left:10px}
+.opts button:focus-visible{outline:3px solid var(--sig);outline-offset:-3px}
+.opts button svg{flex:none;width:22px;height:22px;opacity:.5}
+.opts button[aria-pressed=true]{color:#fff;background:var(--navy);padding-inline:14px}
+.opts button[aria-pressed=true] svg{opacity:1}
+.ans{position:sticky;top:24px;min-height:min(560px,76vh);display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding:clamp(24px,3vw,44px);border-radius:6px;background:var(--sig);color:var(--storm);transition:background-color .22s}
+.ans[data-k=wait]{background:var(--zinc)}
+.ans>div{animation:none}.ans.fresh>div{animation:ansin .22s cubic-bezier(.16,1,.3,1)}
+@keyframes ansin{from{transform:translateY(8px)}to{transform:none}}
+.ans h3{font-size:clamp(3rem,6.1vw,5.9rem);line-height:.92}
+.ans p{margin-top:18px;font-size:1.12em;max-width:27em;font-weight:600}
+.ans .btn{background:var(--storm);color:#fff;font-size:1.08rem}.ans .btn:hover{background:var(--navy)}
+.ans small{display:block;margin-top:14px;font-size:.92rem;font-weight:600}
+
+/* services */
+.serv{background:var(--deep);padding-block:clamp(56px,8vw,120px)}
+.sgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,5vw,88px);align-items:start}
+.slist{margin-top:clamp(28px,4vw,56px);border-top:1px solid rgba(232,238,242,.26)}
+.slist li{padding:clamp(18px,2.2vw,30px) 0;border-bottom:1px solid rgba(232,238,242,.26)}
+.slist h3{font-size:clamp(1.75rem,3.9vw,3.75rem);color:#fff}
+.slist p{margin-top:9px;max-width:42em;color:#BFCCD6}
+.sfig{position:sticky;top:24px;margin:0}
+.sfig img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:62% 50%;border-radius:6px}
+.sfig figcaption{margin-top:10px;font-size:.92rem;color:var(--soft)}
+
+/* materials */
+.mat{background:var(--navy);padding-block:clamp(56px,8vw,120px)}
+.mat .sub{max-width:36em;margin-top:18px;color:#DCE6EE}
+.stack{margin-top:clamp(30px,4.5vw,64px)}
+.layer{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.1fr) minmax(0,1fr);gap:clamp(16px,3vw,48px);align-items:center;border-top:1px solid rgba(255,255,255,.3);padding-block:clamp(16px,1.8vw,26px)}
+.layer h3{font-size:clamp(1.6rem,3vw,3rem);color:#fff}
+.layer .yr{display:block;margin-top:7px;font-weight:700;color:#fff}
+.layer p{color:#E5ECF2}
+.sw{height:clamp(66px,7.4vw,112px);clip-path:polygon(0 0,100% 18%,100% 100%,0 82%);background-color:#222}
+.sw.bit{background:radial-gradient(circle at 30% 40%,#6c7680 0 1px,transparent 1.6px) 0 0/7px 7px,radial-gradient(circle at 70% 70%,#3f4851 0 1.2px,transparent 1.8px) 2px 3px/9px 9px,#1D242B}
+.sw.epdm{background:linear-gradient(112deg,#101316 0 32%,#30363c 45%,#14181b 58%,#0e1113)}
+.sw.pvc{background:repeating-linear-gradient(90deg,transparent 0 94px,#9eaab3 94px 96px,#f3f5f6 96px 99px,transparent 99px),#D8DEE2}
+.sw.shi{background:linear-gradient(#0000 92%,#10161c 92%) 0 0/100% 32px,repeating-linear-gradient(90deg,#57616a 0 46px,#10161c 46px 48px,#46505a 48px 94px,#10161c 94px 96px)}
+.sw.zn{background:repeating-linear-gradient(90deg,#cfd7dc 0,#f1f4f6 18px,#a9b5be 38px,#7f8c96 41px,#cfd7dc 44px)}
+
+/* cost */
+.cost{background:var(--steel);color:var(--ink);padding-block:clamp(56px,8vw,120px)}
+.cost h2{max-width:13em}
+.bars{margin-top:clamp(32px,5vw,70px);display:grid;gap:clamp(26px,3vw,40px)}
+.bar b{display:block;font:800 clamp(2.4rem,7.4vw,7rem)/1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 112;letter-spacing:-.025em}
+.bar span{display:block;margin-bottom:8px;font-weight:700}
+.track{height:18px;margin-top:12px;background:rgba(16,28,40,.13)}
+.track i{display:block;height:100%;width:var(--w);min-width:12px;background:var(--navy);transform-origin:left}
+.bar.big .track i{background:var(--sig)}
+.cost .note{max-width:40em;margin-top:clamp(26px,3vw,40px);font-size:1.1em;font-weight:600}
+
+/* steps */
+.steps{background:var(--dry);color:var(--ink);padding-block:clamp(56px,8vw,120px)}
+.stgrid{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:clamp(32px,6vw,104px);align-items:start}
+.stfig{margin:clamp(24px,3vw,44px) 0 0}
+.stfig img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px}
+.stfig figcaption{margin-top:10px;color:var(--muted);font-size:.92rem}
+.steps ol{counter-reset:s}
+.steps ol li{counter-increment:s;display:grid;grid-template-columns:clamp(54px,6vw,92px) 1fr;gap:12px;padding:clamp(16px,1.9vw,26px) 0;border-top:1px solid rgba(16,28,40,.26)}
+.steps ol li::before{content:counter(s);font:800 clamp(2.2rem,4vw,3.75rem)/.9 "Anek Latin",sans-serif;font-variation-settings:"wdth" 118;color:var(--navy)}
+.steps h3{font-size:clamp(1.25rem,1.9vw,1.75rem);line-height:1.08;letter-spacing:-.01em}
+.steps ol p{margin-top:6px;color:var(--muted)}
+
+/* guarantee */
+.gar{background:var(--storm);padding-block:clamp(52px,7vw,104px);overflow:hidden}
+.gar .disp{display:block;font-size:min(23vw,22rem);line-height:.8;letter-spacing:-.04em;color:#fff;margin-left:-.03em}
+.gar .row{display:flex;flex-wrap:wrap;gap:20px 56px;justify-content:space-between;align-items:end;margin-top:clamp(20px,3vw,40px)}
+.gar p{font:700 clamp(1.4rem,2.9vw,2.75rem)/1.1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 110;max-width:21em;color:#fff}
+.gar small{display:block;max-width:27em;color:var(--soft);font-size:1rem;line-height:1.55}
+
+/* customers + area */
+.cust{background:var(--white);color:var(--ink);padding-block:clamp(56px,8vw,120px)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,104px)}
+.score{font:800 clamp(5.5rem,14vw,13rem)/.82 "Anek Latin",sans-serif;font-variation-settings:"wdth" 118;letter-spacing:-.04em;color:var(--navy)}
+.cust .of{margin:12px 0 28px;font-weight:700}
+.said li{padding:14px 0;border-top:1px solid rgba(16,28,40,.2);font:700 clamp(1.15rem,1.75vw,1.6rem)/1.2 "Anek Latin",sans-serif;font-variation-settings:"wdth" 105}
+.area h2{font-size:clamp(2.1rem,4.2vw,4rem)}
+.area p{margin-top:14px;color:var(--muted)}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.towns li{padding:6px 13px;border:1px solid rgba(37,73,111,.45);border-radius:99px;font-size:.94rem;font-weight:600;color:var(--navy)}
+.towns li.home{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* contact */
+.con{background:var(--dry);color:var(--ink);padding-block:clamp(56px,8vw,112px) clamp(36px,5vw,64px)}
+.con h2{font-size:clamp(2.3rem,5.6vw,5.4rem)}
+.phone{display:block;margin-top:18px;font:800 clamp(2.5rem,8.6vw,8.4rem)/1 "Anek Latin",sans-serif;font-variation-settings:"wdth" 112;letter-spacing:-.03em;color:var(--navy);text-decoration:none;white-space:nowrap}
+.phone:hover{color:#1a3653}
+.cogrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(30px,5vw,80px);align-items:end;margin-top:clamp(28px,4vw,56px)}
+.cogrid img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:40% 55%;border-radius:6px}
+.info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.info h3{font-size:1rem;letter-spacing:0;font-variation-settings:"wdth" 100;margin-bottom:6px}
+.info a{font-weight:600;overflow-wrap:anywhere}
+.info table{border-collapse:collapse}.info td{padding:1px 14px 1px 0}
+.con .acts .btn-line{color:var(--navy)}.con .acts .btn-line:hover{background:rgba(37,73,111,.1)}
+footer{background:var(--dry);color:var(--muted);font-size:.86rem;padding:20px var(--gut) 28px;border-top:1px solid rgba(16,28,40,.16)}
+.call{display:none}
+
+@media (max-width:900px){
+ .top nav{display:none}
+ .hero h1{font-size:23.4vw}.hero h1 span{display:block}
+ .foot,.tgrid,.sgrid,.stgrid,.cgrid,.cogrid{grid-template-columns:minmax(0,1fr)}
+ .ans,.sfig{position:static}.ans{min-height:360px}
+ .sfig img{aspect-ratio:3/2}
+ .layer{grid-template-columns:minmax(0,1fr);gap:10px}
+ .sw{height:58px}
+ .tags span{font-size:.9rem}
+ .call{display:flex;position:fixed;z-index:9;left:12px;right:12px;bottom:12px;justify-content:center;box-shadow:0 8px 22px rgba(6,12,19,.42)}
+ footer{padding-bottom:88px}
+}
+@media (max-width:420px){.spoed{font-size:.84rem;padding-inline:12px}.info{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.hero canvas{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 3.5h3.4l1.7 4.6-2.2 1.7a13 13 0 0 0 6.3 6.3l1.7-2.2 4.6 1.7V19a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 3 5.700 2 2 0 0 1 5 3.500z"/></symbol><symbol id="arr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol></svg>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="Satijn Dakbedekkingen, naar boven">
+    <svg viewBox="0 0 120 7" preserveAspectRatio="none" aria-hidden="true"><path d="M0 6.500 60 1l60 5.500" fill="none" stroke="currentColor" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg>
+    SATIJN<small>Dakbedekkingen</small>
+  </a>
+  <nav aria-label="Hoofdmenu"><a href="#spoed">Spoed</a><a href="#diensten">Diensten</a><a href="#materialen">Materialen</a><a href="#renovatie">Renovatie</a><a href="#contact">Contact</a></nav>
+  <a class="spoed" href="tel:+31655840287"><i></i>Daklekkage? Bel</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="images/dak-storm.jpg" width="2048" height="1536" alt="Een plat dak met nieuwe dakbedekking, gereedschap op het dak en woonhuizen op de achtergrond, onder een donkere lucht" fetchpriority="high">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <h1><span>Water</span><span>dicht</span></h1>
+  <div class="foot">
+    <div>
+      <p class="lead">Dakdekker in Zevenbergen, voor <em>waterdicht</em> vakmanschap op uw dak.</p>
+      <div class="acts">
+        <a class="btn btn-sig" href="tel:+31655840287"><svg aria-hidden="true"><use href="#tel"/></svg>06 55 84 02 87</a>
+        <a class="btn btn-line" href="mailto:info@satijndakbedekkingen.nl?subject=Gratis%20offerte%20dakwerk">Gratis offerte</a>
+      </div>
+    </div>
+    <ul class="tags">
+      <li><b>10 jaar</b><span>garantie op waterdichtheid</span></li>
+      <li><b class="num">4,9</b><span>uit 145 Google-reviews</span></li>
+      <li><b>A-kwaliteit</b><span>gecertificeerde producten</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="edge" style="--a:#0D1824;--b:#0D1824"><i></i></div>
+
+<section class="triage" id="spoed">
+  <div class="wrap tgrid">
+    <div>
+      <h2>Is het spoed?</h2>
+      <p class="intro">Niet elke lekkage vraagt om direct ingrijpen. Kies wat u ziet, dan weet u of u nu moet bellen.</p>
+      <div class="opts" id="opts" role="group" aria-label="Wat ziet u?"></div>
+    </div>
+    <div class="ans" id="ans" data-k="now" aria-live="polite"><div id="ansTop"></div><div>
+      <a class="btn" id="ansBtn" href="tel:+31655840287"><svg aria-hidden="true"><use href="#tel"/></svg><span id="ansCta">Bel 06 55 84 02 87</span></a>
+      <small>Twijfelt u? Bel gerust. Wij beoordelen de situatie telefonisch.</small>
+    </div></div>
+  </div>
+</section>
+
+<div class="edge" style="--a:#0D1824;--b:#132536"><i></i></div>
+
+<section class="serv" id="diensten">
+  <div class="wrap sgrid">
+    <div>
+      <h2>Van scheurtje tot heel nieuw dak.</h2>
+      <ul class="slist">
+        <li><h3>Dakreparatie</h3><p>Van een klein scheurtje tot grotere schade. Wij komen snel ter plaatse, voor particulieren en bedrijven.</p></li>
+        <li><h3>Dakrenovatie</h3><p>Garagedak, plat dak, schuur of bedrijfspand: oude bedekking eraf, ondergrond nagekeken, nieuwe bedekking erop.</p></li>
+        <li><h3>Dakonderhoud</h3><p>Wij controleren op zwakke plekken, verwijderen vuil en doen kleine reparaties voordat het grote worden.</p></li>
+        <li><h3>Goten en zinkwerk</h3><p>Zinken goten en hemelwaterafvoeren, nieuw of hersteld. Ook mastgoten en bakgoten op maat.</p></li>
+        <li><h3>Houtherstel</h3><p>Rot aan boeiboorden, dakbeschot of gootbekisting vervangen wij, ook met Trespa of Keralit.</p></li>
+      </ul>
+    </div>
+    <figure class="sfig">
+      <img src="images/zinken-goot.jpg" width="1500" height="844" loading="lazy" alt="Glanzende zinken dakgoot boven een voordeur aan een bakstenen huis">
+      <figcaption>Een zinken goot boven de voordeur.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="edge" style="--a:#132536;--b:#25496F"><i></i></div>
+
+<section class="mat" id="materialen">
+  <div class="wrap">
+    <h2>Elk dak zijn eigen laag.</h2>
+    <p class="sub">Platte en licht hellende daken vragen om een andere bedekking dan een tuinhuis. Wij werken met al deze materialen en adviseren wat bij uw dak past.</p>
+    <div class="stack">
+      <div class="layer"><div><h3>Bitumen</h3><span class="yr">25 tot 30 jaar waterdicht</span></div><p>Ook wel dakleer. Bij goed onderhoud lang waterdicht en eenvoudig te herstellen. Wij werken met APP en SBS.</p><div class="sw bit" aria-hidden="true"></div></div>
+      <div class="layer"><div><h3>EPDM</h3><span class="yr">Gemiddeld 40 tot 50 jaar</span></div><p>Elastisch rubber, vaak in één stuk gelegd. Daardoor weinig tot geen naden, en het is geschikt voor groendaken.</p><div class="sw epdm" aria-hidden="true"></div></div>
+      <div class="layer"><div><h3>PVC</h3><span class="yr">30 tot 40 jaar</span></div><p>Aangebracht met hete lucht, zonder open vuur. Licht van gewicht en te krijgen in lichtgrijs, antraciet en wit.</p><div class="sw pvc" aria-hidden="true"></div></div>
+      <div class="layer"><div><h3>Shingles</h3><span class="yr">Voor tuinhuis, schuur, carport</span></div><p>Licht en flexibel, in verschillende vormen en kleuren: zwart, rood, groen, bruin of grijs.</p><div class="sw shi" aria-hidden="true"></div></div>
+      <div class="layer"><div><h3>Zink</h3><span class="yr">Goten en maatwerk</span></div><p>Wij houden rekening met uitzetten en krimpen, en passen daar de juiste expansiedelen op toe.</p><div class="sw zn" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="edge" style="--a:#25496F;--b:#C9D3DA"><i></i></div>
+
+<section class="cost">
+  <div class="wrap">
+    <h2>Een scheurtje wordt duur als u <em>wacht.</em></h2>
+    <div class="bars">
+      <div class="bar"><span>Klein scheurtje in bitumen, nu gerepareerd</span><b class="num">€ 50–100</b><div class="track"><i style="--w:3.3%"></i></div></div>
+      <div class="bar big"><span>Een jaar laten liggen: rot dakbeschot, natte isolatie</span><b class="num">€ 1.500–3.000</b><div class="track"><i style="--w:100%"></i></div></div>
+    </div>
+    <p class="note">Daarom adviseren wij een jaarlijkse inspectie. Kleine gebreken verhelpen wij dan direct.</p>
+  </div>
+</section>
+
+<div class="edge" style="--a:#C9D3DA;--b:#EFF2F3"><i></i></div>
+
+<section class="steps" id="renovatie">
+  <div class="wrap stgrid">
+    <div>
+      <h2>Zo komt er een nieuw dak op.</h2>
+      <figure class="stfig">
+        <img src="images/bevestiging.jpg" width="1500" height="844" loading="lazy" alt="Grijze onderlaag op een plat dak met ronde bevestigers, emmers en gereedschap">
+        <figcaption>Onderlaag vastgezet, klaar voor de volgende laag.</figcaption>
+      </figure>
+    </div>
+    <ol>
+      <li><div><h3>Inspectie en advies</h3><p>We beoordelen de dakbedekking en de onderconstructie.</p></div></li>
+      <li><div><h3>Oude bedekking eraf</h3><p>Volledig verwijderd, en het afval voeren wij netjes af.</p></div></li>
+      <li><div><h3>Ondergrond nakijken</h3><p>Beschadigd dakbeschot of isolatie vervangen wij.</p></div></li>
+      <li><div><h3>Nieuwe dakbedekking</h3><p>A-kwaliteit bitumen, EPDM of een ander materiaal.</p></div></li>
+      <li><div><h3>Randen en aansluitingen</h3><p>Alle details worden vakkundig afgewerkt.</p></div></li>
+      <li><div><h3>Oplevering met garantie</h3><p>U ontvangt uw 10 jaar waterdichtheidsgarantie.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<div class="edge" style="--a:#EFF2F3;--b:#0D1824"><i></i></div>
+
+<section class="gar">
+  <div class="wrap">
+    <span class="disp num">10 jaar</span>
+    <div class="row">
+      <p>garantie op waterdichtheid.</p>
+      <small>Wij werken uitsluitend met gecertificeerde A-kwaliteitsproducten. In de offerte ziet u in één oogopslag welke oplossing past bij uw dak, uw woning en uw budget.</small>
+    </div>
+  </div>
+</section>
+
+<div class="edge" style="--a:#0D1824;--b:#FAFBFB"><i></i></div>
+
+<section class="cust">
+  <div class="wrap cgrid">
+    <div>
+      <div class="score num">4,9</div>
+      <p class="of">uit 145 Google-reviews. Dit noemen klanten:</p>
+      <ul class="said">
+        <li>Professioneel, van offerte tot uitvoering</li>
+        <li>Platte daken van garage en huis netjes vervangen</li>
+        <li>Duidelijke en snelle communicatie</li>
+        <li>Afspraken worden nagekomen</li>
+        <li>Ze kennen het materiaal</li>
+      </ul>
+    </div>
+    <div class="area">
+      <h2>Vanuit Zevenbergen door West-Brabant.</h2>
+      <p>Voor particulieren, bedrijven en VvE's. Wij werken onder andere in:</p>
+      <ul class="towns">
+        <li class="home">Zevenbergen</li><li>Bavel</li><li>Breda</li><li>Etten-Leur</li><li>Fijnaart</li><li>Heijningen</li><li>Hoeven</li><li>Klundert</li><li>Made</li><li>Moerdijk</li><li>Noordhoek</li><li>Oosterhout</li><li>Oud-Gastel</li><li>Oudenbosch</li><li>Prinsenbeek</li><li>Roosendaal</li><li>Standdaarbuiten</li><li>Terheijden</li><li>Ulvenhout</li><li>Wagenberg</li><li>Willemstad</li><li>Zevenbergschen Hoek</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="edge" style="--a:#FAFBFB;--b:#EFF2F3"><i></i></div>
+
+<section class="con" id="contact">
+  <div class="wrap">
+    <h2>Droog houden? Bel ons.</h2>
+    <a class="phone num" href="tel:+31655840287">06 55 84 02 87</a>
+    <div class="cogrid">
+      <img src="images/bus.jpg" width="1500" height="844" loading="lazy" alt="Witte bedrijfsbus van Satijn Dakbedekkingen met de tekst Voor waterdicht vakmanschap">
+      <div>
+        <div class="info">
+          <div><h3>Adres</h3><a href="https://www.google.com/maps/search/Satijn+Dakbedekkingen+Touwslagerij+21+C,+4762+AT+Zevenbergen">Touwslagerij 21 C<br>4762 AT Zevenbergen</a></div>
+          <div><h3>Open</h3><table class="num"><tr><td>ma–za</td><td>06:00–22:00</td></tr><tr><td>zo</td><td>gesloten</td></tr></table></div>
+          <div><h3>E-mail</h3><a href="mailto:info@satijndakbedekkingen.nl">info@satijndakbedekkingen.nl</a></div>
+          <div><h3>Offerte</h3>Gratis en vrijblijvend</div>
+        </div>
+        <div class="acts">
+          <a class="btn btn-sig" href="tel:+31655840287"><svg aria-hidden="true"><use href="#tel"/></svg>Bel direct</a>
+          <a class="btn btn-line" href="https://wa.me/31655840287">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Satijn Dakbedekkingen, Touwslagerij 21 C, Zevenbergen</footer>
+<a class="btn btn-sig call" href="tel:+31655840287"><svg aria-hidden="true"><use href="#tel"/></svg>Bel 06 55 84 02 87</a>
+
+<script>
+(function(){
+  var now={k:'now',h:'Bel nu.',cta:'Bel 06 55 84 02 87',href:'tel:+31655840287'};
+  var wait={k:'wait',h:'Laat het nakijken.',cta:'Vraag een gratis inspectie',href:'mailto:info@satijndakbedekkingen.nl?subject=Gratis%20inspectie%20dak'};
+  var items=[
+   ['Er loopt water de woning in, via plafond of muren',now,'Dit is spoed. Bij acute schade komen wij zo snel mogelijk ter plaatse.'],
+   ['De dakconstructie is zichtbaar beschadigd, bijvoorbeeld na een storm',now,'Dit is spoed. Bij acute schade komen wij zo snel mogelijk ter plaatse.'],
+   ['Er komt water bij bedrading of stopcontacten',now,'Dit is spoed, want de elektrische installatie loopt gevaar. Bel ons direct.'],
+   ['Grote waterplekken breiden zich snel uit',now,'Dit is spoed. Wij beoordelen het telefonisch en komen zo snel mogelijk.'],
+   ['Scheuren of blazen in de dakbedekking',wait,'Dit zijn zichtbare signalen van schade. Wij komen vrijblijvend langs voor een gratis inspectie.'],
+   ['Er blijven plassen op het dak staan',wait,'Plassen wijzen op verzakkingen. Wij komen vrijblijvend langs en adviseren eerlijk.'],
+   ['De goot loopt over of lekt',wait,'Een slechte goot kan tot lekkage en vochtplekken leiden. Een snelle inspectie voorkomt grotere schade.']];
+  var box=document.getElementById('opts'),ans=document.getElementById('ans'),top=document.getElementById('ansTop'),a=document.getElementById('ansBtn'),c=document.getElementById('ansCta'),bs=[];
+  function pick(i,first){var t=items[i];bs.forEach(function(b,j){b.setAttribute('aria-pressed',j===i)});ans.dataset.k=t[1].k;top.innerHTML='';var h=document.createElement('h3');h.textContent=t[1].h;var p=document.createElement('p');p.textContent=t[2];top.append(h,p);a.href=t[1].href;c.textContent=t[1].cta;if(!first){ans.classList.remove('fresh');void ans.offsetWidth;ans.classList.add('fresh')}}
+  items.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.innerHTML='<span></span><svg aria-hidden="true"><use href="#arr"/></svg>';b.firstChild.textContent=t[0];b.addEventListener('click',function(){pick(i);if(innerWidth<=900)ans.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})});box.append(b);bs.push(b)});
+  pick(0,true);
+
+  var edges=document.querySelectorAll('.edge');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('run');io.unobserve(e.target)}})},{threshold:.9});edges.forEach(function(e){io.observe(e)})}
+
+  var cv=document.getElementById('rain');
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches||!cv.getContext)return;
+  var x=cv.getContext('2d'),W,H,dr=[],on=true,r=Math.min(devicePixelRatio||1,2);
+  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*r;cv.height=H*r;x.setTransform(r,0,0,r,0,0);var n=Math.round(W/9);dr=[];for(var i=0;i<n;i++)dr.push({x:Math.random()*W*1.2,y:Math.random()*H,l:10+Math.random()*24,v:9+Math.random()*11,a:.1+Math.random()*.26})}
+  function f(){if(!on)return;x.clearRect(0,0,W,H);x.lineWidth=1;for(var i=0;i<dr.length;i++){var d=dr[i];x.strokeStyle='rgba(205,226,240,'+d.a+')';x.beginPath();x.moveTo(d.x,d.y);x.lineTo(d.x-d.l*.16,d.y+d.l);x.stroke();d.y+=d.v;d.x-=d.v*.16;if(d.y>H){d.y=-30;d.x=Math.random()*W*1.2}}requestAnimationFrame(f)}
+  size();addEventListener('resize',size);
+  new IntersectionObserver(function(e){var v=e[0].isIntersecting;if(v&&!on){on=true;f()}else on=v}).observe(cv);f();
+})();
+</script>
+</body>
+</html>
